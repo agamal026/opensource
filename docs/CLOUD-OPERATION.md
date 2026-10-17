@@ -22,12 +22,15 @@ reward eligibility, and competing implementations still need checking.
 | Durable source, branch, queue and progress | Connected GitHub repositories | Read-back of published commit, PR or comment URL |
 | Repeatable platform checks | Existing hosted CI permitted by the project | Actual jobs on the submitted revision; admission is separate |
 | Resume the goal | Hosted Scheduled task, `Advance open-source contributions` | Enabled native task and actual run history |
-| Private application evidence or unpublished patch | Existing private workspace when needed | Private receipt; only a deliberately redacted public summary |
+| Private application evidence | Existing private workspace when needed | Private receipt; only a deliberately redacted public summary |
+| Prepared public patch and review evidence | Deliberately selected branches in the contributor's fork | Immutable source and evidence commits, including remaining submission gates |
 | Hardware-specific or local-only test | Suitable authorized machine or hosted runner | Test output from the actual required platform |
 
-The PC is not a daily prerequisite. A fresh cloud session checks out public
-source and restores the next action from GitHub. Local paths, credentials,
-unsubmitted private patches, and application forms stay out of this repository.
+The PC is not a daily prerequisite for development or continuation. A fresh cloud
+session checks out public source and restores the next action from GitHub.
+Publishing into an external upstream still needs a connection that permits that
+operation. Local paths, credentials, unsubmitted private patches, and application
+forms stay out of this repository.
 [Official scheduled-task guidance](https://learn.chatgpt.com/docs/automations)
 explains that web tasks can use connected tools and saved context, but do not
 retain a local folder or worktree between runs. A hosted task resumes bounded
@@ -48,7 +51,13 @@ sessions; it is not a continuously running private server.
    Automated review never substitutes for required personal review.
 4. If nothing is selected, screen the next few suitable targets: current problem,
    competing patches, license and contribution rules, expected outcome, feasible
-   validation, and benefit conditions. Confirm selection for paid assignments.
+   validation, accepted submission channel, and benefit conditions. Confirm
+   selection for paid assignments. The current tracker counts GitHub upstream
+   PRs. Keep targets using another process parked until that process can be
+   handled and counted truthfully; do not submit to the wrong channel to satisfy
+   a tracker. For example, [Linux's guide](https://docs.kernel.org/process/submitting-patches.html)
+   directs patches to maintainers and mailing lists by email. The initial
+   100-target pool can therefore need replacements as screening progresses.
    Limit a crowded unpaid investigation to 30 minutes, then park it if no distinct
    useful contribution emerges.
 5. Publish the checkpoint and campaign record. Verify the remote result, run
@@ -59,6 +68,12 @@ Keep at most one main upstream implementation and one useful owned-tool change
 active. Research and independent review can run in parallel. Test the actual
 risks and required gates; do not rerun unchanged successful matrices or rebuild
 the workbench instead of advancing upstream work.
+
+Publish small permitted checkpoints after establishing a reproduction and after
+obtaining a reviewable fix, before long validation. Record the exact base or
+proposed revision, commands and outcomes already observed, remaining work, and a
+verified recovery location. Preserve restricted material in an available durable
+private destination. This reduces the work lost if a session is interrupted.
 
 ## Sustainable selection and effort
 
@@ -100,12 +115,38 @@ learning only when the person reviews or practices the work.
 
 ## Access checks and blocked actions
 
-On 2026-10-17 the GitHub connector successfully read the hub and external PRs.
-Attempts to post reviewed follow-ups in [npm #9954](https://github.com/npm/cli/pull/9954)
-and [libavif #3413](https://github.com/AOMediaCodec/libavif/pull/3413) returned HTTP
-403, `Resource not accessible by integration`. Neither comment was posted.
-The drafts and required actions are retained in
-[the campaign-start checkpoint](../progress/2026-10-17-campaign-start.md).
+On 2026-10-17 the GitHub connector read the hub and external PRs, and published
+owned source and branches. It rejected the two external follow-up comments with
+HTTP 403, `Resource not accessible by integration`. The earlier failure remains
+documented in [the campaign-start checkpoint](../progress/2026-10-17-campaign-start.md).
+
+Later in the same session, the already authorized PC GitHub CLI served as an
+explicit publishing bridge. The
+[npm CI-admission question](https://github.com/npm/cli/pull/9954#issuecomment-6241492647)
+was posted at 21:35:40 UTC, and the
+[libavif CLA-association question](https://github.com/AOMediaCodec/libavif/pull/3413#issuecomment-6241498834)
+at 21:36:01 UTC. Both were read back through the cloud connector. Do not post
+these drafts again. The underlying admission and CLA checks still need their
+respective maintainers or administrators to act.
+
+The bridge also created the public H2 fork because no fork-creation operation
+was exposed by the cloud connector. The cloud connector then published the
+reviewed four-file patch at
+[`9d7a0ad`](https://github.com/agamal026/h2database/commit/9d7a0ad26f8a53654e0ce106a80f702ae5840a28)
+on `fix/4456-any-parameter-types`. Creating a branch uses `create_branch`;
+`update_ref` only moved an existing branch in this session. No credential was
+copied from the PC. Future fully cloud-based upstream publication still needs
+the relevant supported write capability; a successful owned-repository push
+does not establish it.
+
+The [H2 review draft](https://github.com/agamal026/h2database/pull/1) is in the
+contributor's fork and receives no external-submission credit. Its complete
+[evidence checkpoint](https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md)
+is on `review/4456-evidence`. Recover the source commit and these text artifacts
+from GitHub. Focused checks and automated review are complete; the final full
+upstream suite, remaining build/documentation gates, and truthful contributor
+statement remain unresolved. Keep this prepared work parked if a personal or
+access dependency blocks it, and advance the next useful unblocked task.
 
 Read access does not establish write access. When an action is forbidden,
 preserve the tested patch or draft, record the blocked operation, and continue
@@ -124,6 +165,9 @@ daily in **Europe/Vienna**, with flexible scheduling around **08:00**. Its saved
 prompt matches [the published continuation prompt](CONTINUATION-PROMPT.md).
 The two existing project-tracker tasks were preserved. No scheduled execution
 of this new task has occurred yet; check native run history for actual outcomes.
+After editing a task, read back both its prompt and cadence and verify the
+intended daily schedule. Updating instructions alone is not evidence that the
+schedule remained unchanged.
 
 The prompt reads current repository instructions, advances the strongest
 unblocked contribution, and publishes evidence and the next action. Notify for
@@ -133,5 +177,7 @@ runs against actual tool access, then adjust the queue or procedure using the
 results. Do not create duplicate workers or modify the separate project tracker.
 
 Pause or edit `Advance open-source contributions` in Scheduled to change future
-runs. No always-on PC or local service is required. The retired dedicated
-bug-bounty project remains outside this campaign.
+runs. Cloud work and evidence recovery do not require an always-on PC or local
+service. Unavailable publishing permissions remain explicit blockers, not a
+reason to lose the patch or repeat the same forbidden call. The retired
+dedicated bug-bounty project remains outside this campaign.

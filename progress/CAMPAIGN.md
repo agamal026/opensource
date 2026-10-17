@@ -16,9 +16,9 @@ This offline report checks record structure and consistency. Verify what the lin
 | --- | ---: | ---: |
 | target | 99 | 100 |
 | screened | 0 | 1 |
-| selected | 1 | 1 |
-| reproduced | 0 | 0 |
-| validated | 0 | 0 |
+| selected | 0 | 1 |
+| reproduced | 0 | 1 |
+| validated | 1 | 1 |
 | submitted | 0 | 0 |
 | accepted | 0 | 0 |
 
@@ -81,19 +81,23 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [h2database/h2database](<https://github.com/h2database/h2database>)
 
-Batch 1 · current stage: **selected**.
+Batch 1 · current stage: **validated**.
 
 Investigate \#4456: adding a VARCHAR index changes the result of a numeric comparison with a parameter array\.
 
-Next action: Reproduce \#4456 on f2922a7766ec2472bc65d5e5ab4086390a76a42c in the cloud, add a regression, validate a focused fix, and review the authorship/licensing requirement before submission\. No issue\-specific cash offer is verified\.
+Next action: Recover the published four\-file fix and review evidence from agamal026/h2database; focused tests and automated review passed\. Before an upstream PR, resolve the incomplete final full suite and build/documentation gates plus the truthful contributor statement\. The draft in the contributor fork is not an upstream submission\. Park while a personal/access dependency blocks progress; no issue\-specific cash offer is verified\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/h2database/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/h2database/h2database>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/h2database/project.yaml>).
-- 2026-10-17 **screened**: [evidence 1](<https://github.com/h2database/h2database/issues/4456>); [evidence 2](<https://github.com/h2database/h2database/pulls>); [policy\_ref](<https://h2database.com/html/build.html#submitting_source_code_changes>).
+- 2026-10-17 **screened**: [evidence 1](<https://github.com/h2database/h2database/issues/4456>); [evidence 2](<https://github.com/h2database/h2database/pulls>); [policy\_ref](<https://h2database.com/html/build.html#providing_patches>).
 - 2026-10-17 **selected**: [evidence 1](<https://github.com/h2database/h2database/issues/4456>); [selection\_ref](<https://github.com/h2database/h2database/issues/4456>).
+- 2026-10-17 **reproduced**: [evidence 1](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/logs/baseline-original-reproducer.log>); [evidence 2](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/logs/baseline-final-regression.log>); [source f2922a7766ec2472bc65d5e5ab4086390a76a42c](<https://github.com/h2database/h2database/commit/f2922a7766ec2472bc65d5e5ab4086390a76a42c>).
+  Validation command: java \-ea \-cp &quot;$H2\_PROOF/baseline\-classes:$H2\_PROOF/classes:$H2\_SOURCE/h2/temp:$H2\_SOURCE/h2/ext/\*&quot; RunRegression4456; result: **reproduced**; [validation record](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/COMMANDS.md#original-production-negative-control>).
+- 2026-10-17 **validated**: [evidence 1](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#what-actually-passed>); [evidence 2](<https://github.com/agamal026/h2database/pull/1>); [review\_ref](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#status-and-exact-source>); [source 9d7a0ad26f8a53654e0ce106a80f702ae5840a28](<https://github.com/agamal026/h2database/commit/9d7a0ad26f8a53654e0ce106a80f702ae5840a28>).
+  Validation command: java \-ea \-Xmx128m \-cp &quot;$H2\_PROOF/classes:$H2\_SOURCE/h2/temp:$H2\_SOURCE/h2/ext/\*&quot; RunSelectedH2Tests org\.h2\.test\.jdbc\.TestPreparedStatement org\.h2\.test\.db\.TestIndex org\.h2\.test\.db\.TestCompoundIndexSearch org\.h2\.test\.db\.TestCompoundIndexParamSearch org\.h2\.test\.db\.TestOptimizations; result: **passed**; [validation record](<https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/receipts/final-verification-commands.json>).
 
 ### [json\-c/json\-c](<https://github.com/json-c/json-c>)
 
@@ -1417,13 +1421,13 @@ Batch 10 · current stage: **target**.
 
 Linux kernel: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked for the current GitHub\-PR submission workflow: Linux expects patches by email to maintainers and mailing lists\. Follow the canonical process if selected later; do not create a GitHub PR to satisfy this tracker\. Select another compatible source\-backed target for current implementation\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 1 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
-- 2026-10-17 **target**: [evidence 1](<https://github.com/torvalds/linux>); [evidence 2](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>).
+- 2026-10-17 **target**: [evidence 1](<https://github.com/torvalds/linux>); [evidence 2](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>); [evidence 3](<https://docs.kernel.org/process/submitting-patches.html>).
 
 ### [TYPO3/typo3](<https://github.com/TYPO3/typo3>)
 

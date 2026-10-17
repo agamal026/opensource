@@ -24,7 +24,10 @@ read new PR feedback, failing checks and pending admission or CLA blockers.
 Address a maintainer's requested change before starting unrelated work. Resume
 one active upstream implementation, or screen and choose one useful,
 cloud-testable task from the queue after checking current policy, competing
-solutions and actual selection conditions. Keep at most one main upstream
+solutions, the accepted submission channel and actual selection conditions.
+The current tracker counts GitHub upstream PRs; park incompatible targets such
+as Linux's email-based submission workflow instead of using the wrong channel.
+Keep at most one main upstream
 implementation and one necessary owned-tool improvement active. Timebox crowded
 unpaid proposal investigations to 30 minutes; park those without a distinct
 supported contribution. Prioritize finished upstream work over more tracker
@@ -32,6 +35,9 @@ features. Use independent agent review when it adds useful scrutiny.
 
 Reproduce the failure, implement a focused fix, run meaningful before/after and
 required upstream tests, and preserve the exact source revision and limitations.
+Make small durable checkpoints after the reproduction and reviewable fix, before
+long validation, including completed evidence, incomplete gates and a verified
+recovery location. Respect the public/private publication rules at each step.
 Read and follow each project's current contribution and AI-use policy. Publish
 reviewed code in my authorized repositories and submit tested upstream PRs and
 substantive review follow-ups when the required permissions and reviews are
@@ -40,11 +46,30 @@ duplicates, and verify the returned public URL. Never claim human review,
 authorship, platform coverage, a legal signature, maintainer acceptance or payment
 without its actual evidence.
 
-On October 17, the GitHub connector could read PRs but rejected comments to
-npm/cli#9954 and AOMediaCodec/libavif#3413 with HTTP 403. Their exact drafts are in
-the campaign-start checkpoint. Respect any remaining access block; do not repeat
-forbidden writes on every run, copy credentials from a PC, or silently switch
-connections. Preserve a reviewable patch or draft and continue unblocked work.
+On October 17, the GitHub connector rejected external comments with HTTP 403.
+The already authorized PC GitHub CLI was explicitly used as a publishing bridge
+for two follow-ups, and the cloud connector verified their public records:
+https://github.com/npm/cli/pull/9954#issuecomment-6241492647 and
+https://github.com/AOMediaCodec/libavif/pull/3413#issuecomment-6241498834.
+Do not post those drafts again; await a response or materially changed evidence.
+The bridge created the H2 fork, after which cloud tools published the patch at
+https://github.com/agamal026/h2database/commit/9d7a0ad26f8a53654e0ce106a80f702ae5840a28
+on branch fix/4456-any-parameter-types. Recover this work and the latest linked
+review evidence from GitHub before implementing it again. The contributor-side
+draft is https://github.com/agamal026/h2database/pull/1. Evidence is at
+https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md
+on branch review/4456-evidence. Focused tests and automated review passed;
+complete final-patch upstream CI, remaining build/documentation gates and a
+truthful contributor statement are still needed. These dated facts are recovery
+anchors: use current canonical state and the latest checkpoint to decide what
+remains. A published fork or contributor-side review PR is not an upstream PR.
+
+Owned branch publication works, but external write access and future fork
+creation remain separate capabilities. Respect any remaining access block; do
+not repeat forbidden writes on every run, copy credentials from a PC, or silently
+switch connections. Preserve a reviewable patch or draft and continue unblocked
+work. If a prepared change needs personal action, checkpoint and park it while
+advancing the next useful unblocked task; do not rebuild it on each run.
 Ask for a concrete missing connection or personal review only after preparing
 the actual result to review. Do not make purchases, financial transactions,
 contracts or new credential arrangements as part of routine continuation.

@@ -1,0 +1,102 @@
+{
+  "checked_at": "2026-10-17T21:59:28.860464+00:00",
+  "python": "3.12.14",
+  "parent_commit": "5567ff729e85d3b8b8fad5413cf0e13a75a7fc7b",
+  "scope": "Hub code/data/generated-report checks only; H2 retains its separate passing and incomplete validation evidence.",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.616,
+      "log_sha256": "69b404a9d9a7cb2ba5c95c608e3340226e5e692ce25322fb4a64d4fc7e606b42",
+      "tests_run": 81,
+      "summary": "OK"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.048,
+      "log_sha256": "80f3e621d982644aa95f91098574c32c8318b2c04d3a22e1c18c001be8ea70f8"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "render",
+        "--output",
+        "progress/STATUS.md",
+        "--check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.045,
+      "log_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "validate"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.07,
+      "log_sha256": "3cd7c62b5c046d546fa051b56c9e94bcc3dee184f36914db8412e08620071560"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "report",
+        "--output",
+        "progress/CAMPAIGN.md",
+        "--check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.078,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "duration_seconds": 0.006,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "files": [
+    {
+      "path": "tools/contribution_campaign.py",
+      "sha256": "a21ca577663029ae7ca4f4afb1b3123188677f7863a86d432bea6c3412f76da4"
+    },
+    {
+      "path": "tests/test_contribution_campaign.py",
+      "sha256": "521febaab5045a3349af87083c66e308e4a1d22193c9dc0bf23720a25d3eeba1"
+    },
+    {
+      "path": "data/campaign.json",
+      "sha256": "1b7348175b0c00fdd0c2a208252ee13440c20b2d65338ca60957c1e5f40c2717"
+    },
+    {
+      "path": "progress/CAMPAIGN.md",
+      "sha256": "6f8603832dde7af0043c400ced4347a6466a80f8790fb53cd6cc247a1b309b4c"
+    },
+    {
+      "path": "docs/CONTINUATION-PROMPT.md",
+      "sha256": "0db3943eab7c26a302d4c29f6cc6ecea4a2380f6ae90442f83610909e86607c8"
+    }
+  ]
+}

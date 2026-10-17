@@ -24,6 +24,9 @@ unpaid proposal investigations as described in `GOAL.md`.
 - Run the commands in `CONTRIBUTING.md` before publishing a change.
 - Record the exact source revision, validation scope, and remaining dependency
   when handing work to another session. Preserve historical evidence.
+- Make a durable checkpoint after a reproduction and after a reviewable fix,
+  before starting long validation. Keep incomplete checks explicit and respect
+  the publication scope below; an end-of-session note is not the only checkpoint.
 
 ## Publication scope
 

@@ -1,5 +1,9 @@
 # 2026-10-17 — Start the continuous contribution campaign
 
+Later same-day results are in the
+[cloud and H2 checkpoint](2026-10-17-cloud-h2-checkpoint.md), including successful
+delivery of the two comments that were blocked at this initial checkpoint.
+
 ## Scope and result accounting
 
 The user requested useful, proven work submitted to 100 beneficial external

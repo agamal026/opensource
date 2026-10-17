@@ -61,7 +61,7 @@
       "repository": "h2database/h2database",
       "batch": 1,
       "summary": "Investigate #4456: adding a VARCHAR index changes the result of a numeric comparison with a parameter array.",
-      "next_action": "Reproduce #4456 on f2922a7766ec2472bc65d5e5ab4086390a76a42c in the cloud, add a regression, validate a focused fix, and review the authorship/licensing requirement before submission. No issue-specific cash offer is verified.",
+      "next_action": "Recover the published four-file fix and review evidence from agamal026/h2database; focused tests and automated review passed. Before an upstream PR, resolve the incomplete final full suite and build/documentation gates plus the truthful contributor statement. The draft in the contributor fork is not an upstream submission. Park while a personal/access dependency blocks progress; no issue-specific cash offer is verified.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -88,7 +88,7 @@
             "https://github.com/h2database/h2database/issues/4456",
             "https://github.com/h2database/h2database/pulls"
           ],
-          "policy_ref": "https://h2database.com/html/build.html#submitting_source_code_changes"
+          "policy_ref": "https://h2database.com/html/build.html#providing_patches"
         },
         {
           "stage": "selected",
@@ -97,6 +97,37 @@
             "https://github.com/h2database/h2database/issues/4456"
           ],
           "selection_ref": "https://github.com/h2database/h2database/issues/4456"
+        },
+        {
+          "stage": "reproduced",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/logs/baseline-original-reproducer.log",
+            "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/logs/baseline-final-regression.log"
+          ],
+          "source_commit": "f2922a7766ec2472bc65d5e5ab4086390a76a42c",
+          "source_ref": "https://github.com/h2database/h2database/commit/f2922a7766ec2472bc65d5e5ab4086390a76a42c",
+          "validation": {
+            "command": "java -ea -cp \"$H2_PROOF/baseline-classes:$H2_PROOF/classes:$H2_SOURCE/h2/temp:$H2_SOURCE/h2/ext/*\" RunRegression4456",
+            "result": "reproduced",
+            "ref": "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/COMMANDS.md#original-production-negative-control"
+          }
+        },
+        {
+          "stage": "validated",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#what-actually-passed",
+            "https://github.com/agamal026/h2database/pull/1"
+          ],
+          "source_commit": "9d7a0ad26f8a53654e0ce106a80f702ae5840a28",
+          "source_ref": "https://github.com/agamal026/h2database/commit/9d7a0ad26f8a53654e0ce106a80f702ae5840a28",
+          "validation": {
+            "command": "java -ea -Xmx128m -cp \"$H2_PROOF/classes:$H2_SOURCE/h2/temp:$H2_SOURCE/h2/ext/*\" RunSelectedH2Tests org.h2.test.jdbc.TestPreparedStatement org.h2.test.db.TestIndex org.h2.test.db.TestCompoundIndexSearch org.h2.test.db.TestCompoundIndexParamSearch org.h2.test.db.TestOptimizations",
+            "result": "passed",
+            "ref": "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/receipts/final-verification-commands.json"
+          },
+          "review_ref": "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#status-and-exact-source"
         }
       ],
       "benefits": []
@@ -2697,7 +2728,7 @@
       "repository": "torvalds/linux",
       "batch": 10,
       "summary": "Linux kernel: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked for the current GitHub-PR submission workflow: Linux expects patches by email to maintainers and mailing lists. Follow the canonical process if selected later; do not create a GitHub PR to satisfy this tracker. Select another compatible source-backed target for current implementation.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2714,7 +2745,8 @@
           "date": "2026-10-17",
           "refs": [
             "https://github.com/torvalds/linux",
-            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+            "https://docs.kernel.org/process/submitting-patches.html"
           ]
         }
       ],
