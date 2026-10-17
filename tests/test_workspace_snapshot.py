@@ -179,6 +179,61 @@ class WorkspaceSnapshotTests(unittest.TestCase):
         self.assert_no_private_details(text)
         self.assertNotIn("private-secret", text)
 
+    def test_duplicate_workspace_key_cannot_hide_missing_checkout(self) -> None:
+        self.config.write_text(
+            '{"schema_version":1,"workspaces":[{"id":"important","path":"missing-worktree"}],'
+            '"workspaces":[]}',
+            encoding="utf-8",
+        )
+        with mock.patch.object(snapshot, "_git") as git:
+            code, text, stderr = self.run_cli()
+        git.assert_not_called()
+        self.assertEqual((code, stderr), (2, ""))
+        data = json.loads(text)
+        self.assertFalse(data["complete"])
+        self.assertEqual(data["workspaces"], [])
+        self.assertEqual(data["error"], "duplicate_config_key")
+        self.assertNotIn("missing-worktree", text)
+
+    def test_duplicate_nested_path_or_id_cannot_change_workspace_selection(self) -> None:
+        for entry in (
+            '{"id":"important","path":"missing-worktree","path":' + json.dumps(str(self.repo)) + '}',
+            '{"id":"important","id":"replacement","path":' + json.dumps(str(self.repo)) + '}',
+        ):
+            with self.subTest(entry=entry):
+                self.config.write_text('{"schema_version":1,"workspaces":[' + entry + ']}', encoding="utf-8")
+                with mock.patch.object(snapshot, "_git") as git:
+                    code, text, stderr = self.run_cli()
+                git.assert_not_called()
+                self.assertEqual((code, stderr), (2, ""))
+                data = json.loads(text)
+                self.assertFalse(data["complete"])
+                self.assertEqual(data["workspaces"], [])
+                self.assertEqual(data["error"], "duplicate_config_key")
+                self.assert_no_private_details(text)
+
+    def test_invalid_config_preserves_existing_output_and_does_not_create_output(self) -> None:
+        output = self.root / "output" / "workspace-state.json"
+        self.assertEqual(self.run_cli("--output", str(output)), (0, "", ""))
+        previous = output.read_bytes()
+        missing_output = self.root / "not-created" / "workspace-state.json"
+        for invalid, category in (
+            ('{"schema_version":1,"workspaces":[],"workspaces":[]}', "duplicate_config_key"),
+            ('{"private-secret":invalid}', "invalid_config_json"),
+            ('{"schema_version":2,"workspaces":[]}', "unsupported_config_version"),
+        ):
+            self.config.write_text(invalid, encoding="utf-8")
+            for destination in (output, missing_output):
+                with self.subTest(category=category, existing=destination == output):
+                    with mock.patch.object(snapshot, "_git") as git:
+                        code, stdout, stderr = self.run_cli("--output", str(destination))
+                    git.assert_not_called()
+                    self.assertEqual((code, stdout, stderr), (2, "", f"error: {category}\n"))
+                    self.assertEqual(output.read_bytes(), previous)
+                    self.assertFalse(missing_output.parent.exists())
+                    self.assert_no_private_details(stderr)
+                    self.assertNotIn("private-secret", stderr)
+
     def test_relative_paths_tilde_and_no_environment_expansion(self) -> None:
         self.write_config([{"id": "relative", "path": "../" + self.repo.name}])
         data, code = snapshot.capture(self.config)

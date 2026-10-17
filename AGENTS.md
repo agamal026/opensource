@@ -1,8 +1,17 @@
 # Working in this repository
 
 Use this hub to maintain original tools and accurate open-source contribution
-records. Read `README.md`, `progress/STATUS.md`, `docs/ROADMAP.md`, and the latest
-dated progress entry before continuing work.
+records. Start every resumed session with [GOAL.md](GOAL.md),
+[docs/OPPORTUNITIES.md](docs/OPPORTUNITIES.md), and the latest dated progress
+entry. Then read `README.md`, `progress/STATUS.md`, and `docs/ROADMAP.md` before
+continuing work.
+
+## Work selection
+
+Use the goal and opportunity evidence to choose the next useful task. Keep at
+most one main upstream implementation and one owned-tool improvement active.
+Verify that paid work is selectable before implementation, and timebox crowded
+unpaid proposal investigations as described in `GOAL.md`.
 
 ## Source and validation
 
@@ -31,6 +40,10 @@ patches distinct. A successful check does not establish maintainer acceptance.
 Report check failures, pending admission, and unavailable results explicitly.
 Count an external merge from its actual upstream merge evidence; claims of
 independent validation need their own evidence.
+
+Keep advertised benefits, verified eligibility, applications, grants, activated
+access, and payments distinct. Record human learning only when the contributor
+personally reviews or practices the work; agent output alone cannot establish it.
 
 Respect each upstream's current contribution policy, including personal human
 review and legal signatures when required. Additional automated review cannot

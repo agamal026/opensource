@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-17",
+  "scope": "Curated public screening for agamal026's open-source work. Application and outcome states describe only evidence recorded here; this is not a private application inventory or a live feed.",
+  "opportunities": [
+    {
+      "id": "google-patch-rewards-libzip",
+      "priority": 1,
+      "program": "Google Patch Rewards: existing libzip contribution",
+      "stage": "awaiting_retention_recheck",
+      "benefit": {
+        "kinds": ["cash"],
+        "advertised": "Tier 1 base awards: USD 500, 2000, 7500 or 15000, at the panel's discretion. No candidate amount is established.",
+        "term": "Per qualifying accepted security improvement; one full month without reverts is required."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "Full reward eligibility of the existing libzip crypto-clearing contribution",
+        "evidence": "Project scope verified: libzip is explicitly Tier 1. The maintainer acknowledged integration of c3ba909e296e824f794e26d36379174524af74b8. The full retention period, qualifying security benefit and other program conditions still require assessment."
+      },
+      "application": {"state": "unknown", "scope": "No application history is asserted by this public screening record."},
+      "outcome": {"state": "none", "scope": "No award or payment verified in this public record."},
+      "next_action": "At the checkpoint, verify upstream retention and current rules, then assess the accepted hardening separately from the still-open CI remainder of PR 576.",
+      "recheck_at": "2026-10-22T13:12:13Z",
+      "sources": [
+        "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md",
+        "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+        "https://github.com/nih-at/libzip/commit/c3ba909e296e824f794e26d36379174524af74b8",
+        "https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699"
+      ]
+    },
+    {
+      "id": "github-actions-public",
+      "priority": 2,
+      "program": "GitHub Actions for public repositories",
+      "stage": "in_use",
+      "benefit": {
+        "kinds": ["compute"],
+        "advertised": "Free standard GitHub-hosted runner execution in public repositories.",
+        "term": "Ongoing public-repository benefit; larger runners and storage have separate billing terms."
+      },
+      "eligibility": {
+        "state": "verified",
+        "scope": "Standard hosted runner use in the public agamal026/opensource repository",
+        "evidence": "Published workflow run 39058303362 succeeded on three Ubuntu Python jobs and one Windows Python job at 2e74518ebdbdeb25f26e5951a7bddce2fc0c1b2b."
+      },
+      "application": {"state": "not_applied", "scope": "Ordinary public standard-runner use requires no separate OSS program application."},
+      "outcome": {"state": "activated", "scope": "Actual standard public-repository CI execution is verified; no cash payment or paid runner/storage entitlement is claimed."},
+      "next_action": "Continue using the existing offline validation matrix; add jobs only for a concrete coverage gap.",
+      "sources": [
+        "https://docs.github.com/en/billing/concepts/product-billing/github-actions",
+        "https://github.com/agamal026/opensource/actions/runs/39058303362"
+      ]
+    },
+    {
+      "id": "codecov-public",
+      "priority": 3,
+      "program": "Codecov for open source",
+      "stage": "evaluate_if_needed",
+      "benefit": {
+        "kinds": ["developer_service"],
+        "advertised": "Free coverage reporting with unlimited public repositories and uploads.",
+        "term": "Ongoing free public-repository tier."
+      },
+      "eligibility": {
+        "state": "verified",
+        "scope": "Published public-OSS repository criterion only",
+        "evidence": "The owned hub and pinned-json are public MIT projects. Service access, any required repository authorization and integration have not been verified."
+      },
+      "application": {"state": "unknown", "scope": "No account setup or program application evidence recorded."},
+      "outcome": {"state": "none", "scope": "No coverage-service activation or uploaded report verified."},
+      "next_action": "Measure useful test coverage locally first; consider reporting for the hub or pinned-json if it will expose meaningful untested behavior.",
+      "sources": [
+        "https://about.codecov.io/for/open-source/",
+        "https://about.codecov.io/pricing/",
+        "https://github.com/agamal026/opensource",
+        "https://github.com/agamal026/pinned-json"
+      ]
+    },
+    {
+      "id": "nlnet-codesupply",
+      "priority": 4,
+      "program": "NLnet CodeSupply",
+      "stage": "assess_project_fit",
+      "benefit": {
+        "kinds": ["cash"],
+        "advertised": "EUR 5000 to 50000 for a first project grant.",
+        "term": "Competitive project funding, paid after completed milestones, without an upfront payment; review normally takes three to five months after the call deadline."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "A future software supply-chain metadata project and its applicant/team",
+        "evidence": "Fixture/provenance tooling is a possible starting point, not an established qualifying proposal. A clear CodeSupply fit, open deliverables and European dimension are required; the usual geographic route allocates at least 60% of funds to participants from Horizon Europe-eligible countries. No residence or team eligibility is inferred."
+      },
+      "application": {"state": "unknown", "scope": "No CodeSupply application evidence recorded."},
+      "outcome": {"state": "none", "scope": "No grant agreement or milestone payment verified."},
+      "next_action": "Assess one original, useful metadata/provenance project before drafting. The applicant must own and understand the work; disclose application AI use with logs and material development assistance with provenance. Purely AI-generated outcomes are not payable grant work.",
+      "deadline_at": "2026-11-03T11:00:00Z",
+      "sources": [
+        "https://nlnet.nl/codesupply/",
+        "https://nlnet.nl/codesupply/guideforapplicants/",
+        "https://nlnet.nl/codesupply/eligibility/",
+        "https://nlnet.nl/codesupply/faq/",
+        "https://nlnet.nl/foundation/policies/generativeAI/",
+        "https://nlnet.nl/propose/"
+      ]
+    },
+    {
+      "id": "github-copilot-oss",
+      "priority": 5,
+      "program": "GitHub Copilot Pro for open-source maintainers",
+      "stage": "check_account_eligibility",
+      "benefit": {
+        "kinds": ["subscription"],
+        "advertised": "Free Copilot Pro for eligible maintainers of popular open-source repositories.",
+        "term": "Eligibility is reevaluated monthly."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "The account's current Copilot maintainer benefit",
+        "evidence": "Owned releases establish maintained projects, but popularity-based eligibility has not been verified. Authored upstream PRs do not establish upstream maintainer status."
+      },
+      "application": {"state": "unknown", "scope": "No eligibility-screen or enrollment evidence recorded."},
+      "outcome": {"state": "none", "scope": "No complimentary Copilot access verified."},
+      "next_action": "Check the account's actual eligibility in Copilot settings once; retain a dated result before claiming the benefit.",
+      "sources": [
+        "https://docs.github.com/en/copilot/how-tos/copilot-on-github/set-up-copilot/enable-copilot/set-up-for-teachers-and-os-maintainers",
+        "https://github.com/agamal026/pinned-json/releases/tag/v0.1.0",
+        "https://github.com/agamal026/raydium-cpmm-arb-monitor/releases/tag/v0.1.1"
+      ]
+    },
+    {
+      "id": "openai-codex-oss",
+      "priority": 6,
+      "program": "OpenAI Codex for OSS",
+      "stage": "assess_maintainer_fit",
+      "benefit": {
+        "kinds": ["subscription", "compute"],
+        "advertised": "Six months of ChatGPT Pro including Codex; optional API credits for qualifying maintainer workflows, with no fixed credit amount promised.",
+        "term": "Time-limited, discretionary support through rolling review."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "A primary/core maintainer application based on the owned projects",
+        "evidence": "Public releases and CI provide maintenance evidence. Broad adoption or ecosystem importance has not been established, and upstream contribution history does not establish maintainer authority there."
+      },
+      "application": {"state": "unknown", "scope": "No Codex for OSS application evidence recorded; no other program's history is imported."},
+      "outcome": {"state": "none", "scope": "No Codex for OSS grant, new subscription entitlement or API-credit allocation verified."},
+      "next_action": "Document real maintenance and downstream use, identify a concrete workflow need, and compare incremental value with existing subscriptions before considering an application.",
+      "sources": [
+        "https://openai.com/form/codex-for-oss/",
+        "https://developers.openai.com/community/codex-for-oss",
+        "https://learn.chatgpt.com/docs/codex-for-oss-terms"
+      ]
+    },
+    {
+      "id": "circleci-oss",
+      "priority": 7,
+      "program": "CircleCI open-source credits",
+      "stage": "evaluate_if_needed",
+      "benefit": {
+        "kinds": ["compute"],
+        "advertised": "Up to 400000 Linux credits per month for public repositories in qualifying Free Plan organizations.",
+        "term": "Monthly. Official sources conflict on macOS credits (25000 versus 30000); macOS/Windows allocation is unverified."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "An owned public repository under the required CircleCI plan",
+        "evidence": "Public repositories exist; CircleCI organization plan, supported workflow and actual credit allocation have not been checked."
+      },
+      "application": {"state": "unknown", "scope": "No CircleCI setup or benefit-request evidence recorded."},
+      "outcome": {"state": "none", "scope": "No credit allocation or CircleCI execution verified."},
+      "next_action": "Consider only for a concrete validation need; verify the actual plan and platform allocation before relying on it. Upstream workflow admission remains a separate maintainer decision.",
+      "sources": [
+        "https://circleci.com/open-source/",
+        "https://circleci.com/docs/guides/plans-pricing/credits/",
+        "https://circleci.com/docs/guides/integration/oss/"
+      ]
+    },
+    {
+      "id": "jetbrains-oss",
+      "priority": 8,
+      "program": "JetBrains support for established open-source projects",
+      "stage": "assess_project_and_license_fit",
+      "benefit": {
+        "kinds": ["subscription"],
+        "advertised": "Complimentary All Products Pack for approved established open-source projects.",
+        "term": "One-year OSS license; renewal requires approval and use is restricted to qualifying noncommercial OSS work."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "Established-project support and the intended licensed work",
+        "evidence": "Active development and broad ecosystem impact are relevant; broad impact is not established for the owned tools. Paid bounty work must not be assumed to fit a noncommercial license."
+      },
+      "application": {"state": "unknown", "scope": "No JetBrains OSS application or license evidence recorded."},
+      "outcome": {"state": "none", "scope": "No complimentary IDE license activated or approved in this record."},
+      "next_action": "Check project maturity and intended use. The separate individual noncommercial IDE route may fit learning or unpaid work; confirm its current restrictions before use.",
+      "sources": [
+        "https://www.jetbrains.com/community/opensource/",
+        "https://www.jetbrains.com/legal/docs/toolbox/license_opensource/",
+        "https://sales.jetbrains.com/hc/en-gb/articles/18950890312210-The-free-non-commercial-licensing-FAQ"
+      ]
+    },
+    {
+      "id": "expensify-app-104027",
+      "priority": 9,
+      "program": "Expensify/App issue 104027",
+      "stage": "investigated_no_distinct_proposal",
+      "benefit": {
+        "kinds": ["cash"],
+        "advertised": "USD 175 advertised on the issue.",
+        "term": "One selected assignment, subject to hiring, acceptance, deployment and payment rules; investigation time is not guaranteed compensation."
+      },
+      "eligibility": {
+        "state": "unverified",
+        "scope": "A selectable assignment and contributor payment eligibility",
+        "evidence": "There were 26 proposal comments and no contractor selection observed. Source inspection at ef784ba78226f211bbaa5d6698a5a162c20221e9 found no distinct proposal justified beyond existing proposals. Verified Upwork eligibility and hiring are not established."
+      },
+      "application": {"state": "not_applied", "scope": "This investigation produced no issue proposal, pull request or job application."},
+      "outcome": {"state": "none", "scope": "No assignment, accepted change or payment; no runtime reproduction, patch or test execution was performed in this investigation."},
+      "next_action": "Park implementation and monitor substantive selection or new evidence during a future session. Proposals must differ meaningfully; selection and hiring precede a PR. Human understanding and manual-test evidence remain required.",
+      "sources": [
+        "https://github.com/Expensify/App/issues/104027",
+        "https://github.com/Expensify/App/issues/104027#issuecomment-6228351983",
+        "https://github.com/Expensify/App/blob/ef784ba78226f211bbaa5d6698a5a162c20221e9/src/libs/navigateAfterOnboarding.ts",
+        "https://github.com/Expensify/App/blob/main/contributingGuides/CONTRIBUTING.md",
+        "https://github.com/Expensify/App/blob/main/contributingGuides/AI_ETIQUETTE.md"
+      ]
+    },
+    {
+      "id": "anthropic-claude-oss",
+      "priority": 10,
+      "program": "Claude for Open Source",
+      "stage": "deferred_account_age",
+      "benefit": {
+        "kinds": ["subscription"],
+        "advertised": "Six months of Claude Max 20x for approved applicants.",
+        "term": "No automatic renewal; rolling program subject to closure or its 10000-recipient cap."
+      },
+      "eligibility": {
+        "state": "not_eligible",
+        "scope": "The current mandatory two-year GitHub-account age requirement",
+        "evidence": "Public API created_at for agamal026 is 2025-01-26T19:46:19Z; the two-year anniversary is 2027-01-26T19:46:19Z. Other activity, impact, age and jurisdiction requirements have not been established."
+      },
+      "application": {"state": "unknown", "scope": "No Claude for Open Source application evidence recorded; no other program's history is imported."},
+      "outcome": {"state": "none", "scope": "No Claude OSS grant or activated subscription verified."},
+      "next_action": "Defer. At the anniversary, recheck whether the program remains open and assess all current criteria using genuine public contribution or project-impact evidence.",
+      "recheck_at": "2027-01-26T19:46:19Z",
+      "sources": [
+        "https://claude.com/contact-sales/claude-for-oss",
+        "https://www.anthropic.com/claude-for-oss-terms",
+        "https://api.github.com/users/agamal026"
+      ]
+    }
+  ]
+}

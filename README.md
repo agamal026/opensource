@@ -3,13 +3,20 @@
 Tools, reusable skills, progress, and contributions maintained by
 [@agamal026](https://github.com/agamal026).
 
+The [goal](GOAL.md) is to pursue useful open-source work with a documented route
+to financial benefits, subscriptions, or compute credits while improving skills,
+workflows, and tools. Advertised benefits, eligibility, and realized outcomes are
+tracked separately.
+
 This repository makes it practical to resume work from a verifiable checkpoint:
 inspect the current local checkouts, refresh public pull-request observations,
 and carry the next useful change through validation. It also indexes the original
 projects and upstream work already in progress.
 
-**Start with [current status](progress/STATUS.md), the
-[roadmap](docs/ROADMAP.md), and the [continuation guide](docs/CONTINUING.md).**
+**Start every resumed session with [the goal](GOAL.md),
+[opportunity notes](docs/OPPORTUNITIES.md), and the latest dated entry in
+[progress](progress/).** Then read [current status](progress/STATUS.md), the
+[roadmap](docs/ROADMAP.md), and the [continuation guide](docs/CONTINUING.md).
 
 ## Tools in this repository
 
@@ -92,7 +99,7 @@ evidence without republishing the patch.
 | `skills/` | Versioned workflow skills; read the skill file directly or install it in your agent's skill directory. |
 | `data/` | Curated public project/PR registry and reviewed GitHub observation snapshot. |
 | `progress/` | Generated status and dated work logs. |
-| `docs/` | Continuation, improvement roadmap, and contribution review guidance. |
+| `docs/` | Opportunity screening, continuation, improvement roadmap, and contribution review guidance. |
 | `config/` | Portable examples without machine-specific configuration. |
 | `.local/` | Ignored working configuration and candidate observations. |
 

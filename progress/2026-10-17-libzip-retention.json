@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-10-17T19:00:18.195105+00:00",
+  "repository": "nih-at/libzip",
+  "source_head": "6ca9f31961919e25688663f13a4b8d42ed7d06c1",
+  "accepted_commit": "c3ba909e296e824f794e26d36379174524af74b8",
+  "accepted_commit_is_ancestor": true,
+  "commits_after_acceptance": 50,
+  "maintainer_acknowledgment": {
+    "url": "https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699",
+    "created_at": "2026-09-22T13:12:13Z",
+    "wording_summary": "Maintainer confirms integration of crypto-clear fixes; remaining AppVeyor work is separate."
+  },
+  "attribution": "The accepted implementation was authored by Dieter Baron and states Based on PR #576. THANKS retains agamal026. PR #576 is not represented as fully merged.",
+  "retention": {
+    "file_blobs": [
+      {
+        "path": "lib/zip_crypto.c",
+        "accepted_blob": "c2c521e599c61b06362f618eea65a759bdfde89d",
+        "head_blob": "c2c521e599c61b06362f618eea65a759bdfde89d",
+        "identical": true
+      },
+      {
+        "path": "regress/programs/crypto_clear.c",
+        "accepted_blob": "a721bb49528bb5d87c0bf7cbd7b49752ad8c26b2",
+        "head_blob": "a721bb49528bb5d87c0bf7cbd7b49752ad8c26b2",
+        "identical": true
+      },
+      {
+        "path": "regress/crypto_clear.test",
+        "accepted_blob": "3c8f74474cbcb5161ac61a05a21b25b8367e7128",
+        "head_blob": "3c8f74474cbcb5161ac61a05a21b25b8367e7128",
+        "identical": true
+      },
+      {
+        "path": "config.h.in",
+        "accepted_blob": "6e4f3efba950480313257cb7cc652fbec9da9fc5",
+        "head_blob": "15852ccf96688a31133c15bff947c000d898adaf",
+        "identical": false
+      },
+      {
+        "path": "lib/CMakeLists.txt",
+        "accepted_blob": "cfddbef5490b24b2a738536407d7f21e3b0906f3",
+        "head_blob": "6baaadd5de4adb48926ca108884d8f32b1c68f92",
+        "identical": false
+      },
+      {
+        "path": "regress/CMakeLists.txt",
+        "accepted_blob": "767fbbc35cebe86c6765b69e5b1559cb5b6ac632",
+        "head_blob": "900736c796f7b4db88d4c4d2e9986932c8791eb5",
+        "identical": false
+      },
+      {
+        "path": "lib/zipint.h",
+        "accepted_blob": "25abcb130e252f9e8ecfbdfaaa13c59621b58947",
+        "head_blob": "5de9052f9899c1e04ef961b569b0d3e78974b200",
+        "identical": false
+      },
+      {
+        "path": "lib/zip_winzip_aes.c",
+        "accepted_blob": "3e604a63c2b0c8b2eb9f46683a7d5761cc43f643",
+        "head_blob": "7f0402fcebfd24f1c71c5a55b4e84af63d1c5fe1",
+        "identical": false
+      },
+      {
+        "path": "lib/zip_set_default_password.c",
+        "accepted_blob": "4d8487052dfadf7a9a0ef3264c7bd80b1b53bb1b",
+        "head_blob": "4d8487052dfadf7a9a0ef3264c7bd80b1b53bb1b",
+        "identical": true
+      },
+      {
+        "path": "CMakeLists.txt",
+        "accepted_blob": "93e65e19b237ea6c56ee91bb0e3f2c244d40497a",
+        "head_blob": "08c8b062230a1cb2602cad2d823e12af84788542",
+        "identical": false
+      },
+      {
+        "path": "THANKS",
+        "accepted_blob": "a79dd559a4cb640aa3b77ada062ed9aff2bb8f70",
+        "head_blob": "f18505b6ae2a4ca94750bc12e61159c3ce4dbdb1",
+        "identical": false
+      }
+    ],
+    "helper_and_regression_commits_since_acceptance": [],
+    "thanks_credit_present": true,
+    "review": "Current config still defines explicit-clear feature checks; library and regression source entries remain; zipint retains native dispatch and volatile fallback. Later AES changes add failure-path clearing and reuse cleanup. File-wide changes to config, build files and THANKS are not described as byte-identical."
+  },
+  "validation": {
+    "environment": {
+      "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+      "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+      "cmake": "cmake version 4.4.4"
+    },
+    "source_sha256": {
+      "lib/zip_crypto.c": "860c2566089012c10875584b12ff385e9a73855251b6f7000a03487af979a011",
+      "regress/programs/crypto_clear.c": "0c40b9710203560412daab69ed0d2e1993b2908cbc7930bdab8327cf8b05252e",
+      "regress/crypto_clear.test": "790fdca559583645d71d9729c27f8d237a8564d757cf3015ccc6899e7dca151f",
+      "config.h.in": "c27d2ebaf5fd03296f3b5a13ba9df8b8f88721794a9d6f450baa0e60836aa56c",
+      "lib/CMakeLists.txt": "5822f4c71e37446d4a9966208043e7496dd6b0db87de1a65add9cb8d5cece0d8",
+      "regress/CMakeLists.txt": "1b95532ae31c70bf5e73c53decc6460198f3fcc3e68c7a7a17e088fae6509793",
+      "lib/zipint.h": "653ad29845c5e349b02928997d463cecaf61f53840bfc9217b48eef667d68957",
+      "lib/zip_winzip_aes.c": "3bd36357fe86db930f56f7e3c3fb4ba0d8b0031cfbbd9e64ca01f9d2bcb7c533",
+      "lib/zip_set_default_password.c": "af09308b7673b1e194536b137959b6851b66331a78b2e0db62a249279520a62d",
+      "THANKS": "37d6e0435ba38ed79b4f49f68b31b56b7ab7235bf49074b067d8824ea88aaef8"
+    },
+    "configurations": [
+      {
+        "name": "native",
+        "configure_command": [
+          "cmake",
+          "-S",
+          "${SOURCE}",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_FLAGS_RELEASE=-O3 -DNDEBUG -flto",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_TOOLS=OFF",
+          "-DBUILD_DOC=OFF",
+          "-DBUILD_REGRESS=OFF",
+          "-DBUILD_OSSFUZZ=OFF",
+          "-DBUILD_EXAMPLES=OFF",
+          "-DENABLE_COMMONCRYPTO=OFF",
+          "-DENABLE_GNUTLS=OFF",
+          "-DENABLE_OPENSSL=OFF",
+          "-DENABLE_WINDOWS_CRYPTO=OFF",
+          "-DENABLE_BZIP2=OFF",
+          "-DENABLE_LZMA=OFF",
+          "-DENABLE_ZSTD=OFF",
+          "-B",
+          "${BUILD_ROOT}/native"
+        ],
+        "configure_exit": 0,
+        "selection": [
+          "#define HAVE_EXPLICIT_BZERO",
+          "/* #undef HAVE_EXPLICIT_MEMSET */"
+        ],
+        "steps": [
+          {
+            "name": "build_static_library",
+            "command": [
+              "cmake",
+              "--build",
+              "${BUILD_ROOT}/native",
+              "--target",
+              "zip",
+              "--parallel",
+              "2"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "compile_crypto_clear",
+            "command": [
+              "gcc",
+              "-std=gnu99",
+              "-O3",
+              "-flto",
+              "-DNDEBUG",
+              "-Wall",
+              "-Wextra",
+              "-Werror",
+              "-I${BUILD_ROOT}/native",
+              "-I${BUILD_ROOT}/native/lib",
+              "-I${SOURCE}/lib",
+              "${SOURCE}/regress/programs/crypto_clear.c",
+              "${SOURCE}/lib/zip_crypto.c",
+              "-o",
+              "${BUILD_ROOT}/native/crypto_clear-focused"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "run_crypto_clear",
+            "command": [
+              "${BUILD_ROOT}/native/crypto_clear-focused"
+            ],
+            "exit": 0
+          }
+        ]
+      },
+      {
+        "name": "fallback",
+        "configure_command": [
+          "cmake",
+          "-S",
+          "${SOURCE}",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DCMAKE_C_FLAGS_RELEASE=-O3 -DNDEBUG -flto",
+          "-DBUILD_SHARED_LIBS=OFF",
+          "-DBUILD_TOOLS=OFF",
+          "-DBUILD_DOC=OFF",
+          "-DBUILD_REGRESS=OFF",
+          "-DBUILD_OSSFUZZ=OFF",
+          "-DBUILD_EXAMPLES=OFF",
+          "-DENABLE_COMMONCRYPTO=OFF",
+          "-DENABLE_GNUTLS=OFF",
+          "-DENABLE_OPENSSL=OFF",
+          "-DENABLE_WINDOWS_CRYPTO=OFF",
+          "-DENABLE_BZIP2=OFF",
+          "-DENABLE_LZMA=OFF",
+          "-DENABLE_ZSTD=OFF",
+          "-B",
+          "${BUILD_ROOT}/fallback",
+          "-DHAVE_EXPLICIT_BZERO=0",
+          "-DHAVE_EXPLICIT_MEMSET=0"
+        ],
+        "configure_exit": 0,
+        "selection": [
+          "/* #undef HAVE_EXPLICIT_BZERO */",
+          "/* #undef HAVE_EXPLICIT_MEMSET */"
+        ],
+        "steps": [
+          {
+            "name": "build_static_library",
+            "command": [
+              "cmake",
+              "--build",
+              "${BUILD_ROOT}/fallback",
+              "--target",
+              "zip",
+              "--parallel",
+              "2"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "compile_crypto_clear",
+            "command": [
+              "gcc",
+              "-std=gnu99",
+              "-O3",
+              "-flto",
+              "-DNDEBUG",
+              "-Wall",
+              "-Wextra",
+              "-Werror",
+              "-I${BUILD_ROOT}/fallback",
+              "-I${BUILD_ROOT}/fallback/lib",
+              "-I${SOURCE}/lib",
+              "${SOURCE}/regress/programs/crypto_clear.c",
+              "${SOURCE}/lib/zip_crypto.c",
+              "-o",
+              "${BUILD_ROOT}/fallback/crypto_clear-focused"
+            ],
+            "exit": 0
+          },
+          {
+            "name": "run_crypto_clear",
+            "command": [
+              "${BUILD_ROOT}/fallback/crypto_clear-focused"
+            ],
+            "exit": 0
+          }
+        ]
+      }
+    ],
+    "range_cases": [
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "scope": "Static zip library builds and direct compilation/execution of upstream crypto_clear range regression at -O3 -flto; no CTest/nihtest invocation, full encryption integration, other compiler or other platform result.",
+    "limits": [
+      "Builds used static libraries with optional compression and encryption backends disabled.",
+      "The unchanged upstream range regression was compiled and run directly; no CTest/nihtest result is claimed.",
+      "These observable-buffer tests alone do not establish resistance to dead-store elimination when all subsequent reads are absent.",
+      "This was a cloud Linux build; the PC currently lacks a C compiler and CMake.",
+      "No source changes or upstream submission were made."
+    ]
+  },
+  "reward_readiness": {
+    "earliest_conservative_recheck_utc": "2026-10-22T13:12:13Z",
+    "eligible_month_established": false,
+    "reward_eligibility_established": false,
+    "new_submission_made": false,
+    "award_or_payment_verified": false,
+    "remaining": "At or after the recheck time, refresh retention, scope/rules, current attribution, personal submission history/limits, final report and applicant/payment eligibility before submission."
+  },
+  "sources": {
+    "commit": "https://github.com/nih-at/libzip/commit/c3ba909e296e824f794e26d36379174524af74b8",
+    "compare": "https://github.com/nih-at/libzip/compare/c3ba909e296e824f794e26d36379174524af74b8...6ca9f31961919e25688663f13a4b8d42ed7d06c1",
+    "rules": "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md",
+    "scope": "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+  }
+}

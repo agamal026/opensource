@@ -65,3 +65,20 @@ Those claims need separate direct evidence.
 Local mappings use `config/workspaces.example.json` as a model. Checkpoint
 snapshots include only allowlisted Git-state fields and stay in `.local/` unless
 deliberately reviewed for publication.
+
+Workspace configuration rejects duplicate JSON keys at every object depth.
+Configuration errors return exit code 2 before Git inspection. With a file
+destination (`--output PATH`, where `PATH` is not `-`), the command preserves an
+existing checkpoint file, creates no new output file, and writes a sanitized
+error category to stderr. When `--output` is omitted or set to `-`, it emits
+the diagnostic JSON on stdout. A valid configuration with an unavailable
+checkout still writes its partial snapshot with `complete: false` and returns 1.
+
+## Curated opportunities: `data/opportunities.json`
+
+This separate, manually reviewed registry records current program terms and
+opportunity assessments. See [the opportunity review](OPPORTUNITIES.md) for its
+schema and source links. `oss_status.py` does not validate or refresh this file.
+Keep advertised amounts separate from verified payments and activated services;
+eligibility, selection, and outcomes require their own evidence. Public records
+must not contain private application forms, payment details, or account receipts.

@@ -2,7 +2,8 @@
 
 ## Recover current state
 
-Read `AGENTS.md`, the latest entry in `progress/`, and the roadmap. Locate the
+Read `AGENTS.md`, [the goal](../GOAL.md), [the opportunity review](OPPORTUNITIES.md),
+the latest entry in `progress/`, and the roadmap. Locate the
 actual worktree instead of assuming that a cloud terminal contains the PC's
 files. If reconnecting over Tailscale, confirm the intended host and existing
 authenticated access. Keep connection details in local configuration.
@@ -32,6 +33,12 @@ The output contains labels, branches, revisions, and change counts. It excludes
 paths, remote URLs, filenames, diffs, and Git identity. It is a checkpoint, not a
 backup: inspect relevant local diffs before changing them. Review labels before
 sharing a snapshot. Partial results have `complete: false` and a nonzero exit code.
+
+Duplicate keys, malformed JSON, and other configuration errors return 2 before
+Git inspection. When writing to a file, these errors leave the previous
+checkpoint intact and print a sanitized category to stderr. Check the command's
+exit status and the snapshot timestamp before using an existing output: a
+preserved file describes the earlier successful attempt.
 
 ## Refresh upstream observations
 

@@ -35,11 +35,21 @@ class SnapshotError(Exception):
         self.category = category
 
 
+def _unique_config_pairs(pairs: list[tuple[str, Any]]) -> dict[str, Any]:
+    result: dict[str, Any] = {}
+    for key, value in pairs:
+        if key in result:
+            # Do not include user-supplied key names in a public-safe error.
+            raise SnapshotError("duplicate_config_key")
+        result[key] = value
+    return result
+
+
 def load_config(config_path: Path) -> list[tuple[str, Path]]:
     """Validate the complete config before inspecting any repository."""
     try:
         with config_path.open(encoding="utf-8") as handle:
-            config = json.load(handle)
+            config = json.load(handle, object_pairs_hook=_unique_config_pairs)
     except OSError:
         raise SnapshotError("config_unavailable") from None
     except (ValueError, UnicodeError):
@@ -240,7 +250,7 @@ class _ArgumentParser(argparse.ArgumentParser):
 def main(argv: list[str] | None = None) -> int:
     parser = _ArgumentParser(description=__doc__, prog="workspace_snapshot.py")
     parser.add_argument("--config", required=True, type=Path, help="Local workspace config JSON")
-    parser.add_argument("--output", type=Path, help="Atomic JSON output; omit or use - for stdout")
+    parser.add_argument("--output", type=Path, help="Atomic JSON output, retained on config errors; omit or use - for stdout")
     arguments = parser.parse_args(argv)
     config_path = Path(os.path.expanduser(str(arguments.config)))
     output_path = Path(os.path.expanduser(str(arguments.output))) if arguments.output is not None else None
@@ -249,6 +259,9 @@ def main(argv: list[str] | None = None) -> int:
             print("error: output_would_overwrite_config", file=sys.stderr)
             return 2
         snapshot, exit_code = capture(config_path)
+        if exit_code == 2 and output_path is not None and str(output_path) != "-":
+            print(f"error: {snapshot['error']}", file=sys.stderr)
+            return 2
         serialized = json.dumps(snapshot, indent=2, ensure_ascii=True) + "\n"
         if output_path is None or str(output_path) == "-":
             sys.stdout.write(serialized)
