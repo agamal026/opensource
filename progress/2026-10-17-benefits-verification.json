@@ -22,11 +22,34 @@
     ]
   },
   "pc_synchronization": {
-    "status": "unverified",
-    "desired_source_commit": "f146d3f8b688837aa078fb4e3807fa50b6c02fce",
+    "status": "verified",
+    "checked_at": "2026-10-17T19:46:11.482433Z",
     "previously_verified_commit": "2e74518ebdbdeb25f26e5951a7bddce2fc0c1b2b",
-    "reason": "The Browser connector reported that the originating browser context was unavailable before the final PC command could run.",
-    "next_action": "Restore the connected browser context and Tailscale SSH terminal, inspect current PC state, fast-forward to the latest reviewed main, run offline validation and workspace capture, preserve the local mapping and original evidence, and restore terminal echo in any retained shell."
+    "observed_before_commit": "f146d3f8b688837aa078fb4e3807fa50b6c02fce",
+    "verified_head": "0cbb7543bc32c822fc825bb5ac68e0d833e7f582",
+    "verified_tree": "03e45a650cd26c06578be42cc98ca875454a5d82",
+    "environment": {"os": "Ubuntu 26.04.1 LTS", "python": "3.14.4"},
+    "fast_forward_only": true,
+    "clean": true,
+    "offline_tests": {"run": 51, "passed": 51, "failed": 0, "errors": 0, "skipped": 0},
+    "commands": [
+      {"argv": ["python3", "-m", "unittest", "discover", "-s", "tests", "-v"], "exit_code": 0},
+      {"argv": ["python3", "tools/oss_status.py", "validate"], "exit_code": 0},
+      {"argv": ["python3", "tools/oss_status.py", "render", "--output", "progress/STATUS.md", "--check"], "exit_code": 0},
+      {"argv": ["python3", "tools/workspace_snapshot.py", "--config", ".local/workspaces.json", "--output", ".local/workspace-state.json"], "exit_code": 0},
+      {"argv": ["git", "diff", "--check"], "exit_code": 0}
+    ],
+    "workspace_snapshot": {"complete": true, "count": 6},
+    "local_mapping_preserved": true,
+    "original_plan_prior_receipt_and_prepared_patch_preserved": true,
+    "source_sha256": {
+      "tools/workspace_snapshot.py": "f2db6b7be73088d19559e5f038c5afbd145bf4df92c37934bbc98b5f1bbc3460",
+      "tests/test_workspace_snapshot.py": "e69eb4b200209cedfdcc537926189dd0cdb3fa4ebd5a4168381cd3aeac8eb024"
+    },
+    "handoff_written_at": "2026-10-17T19:47:21.889417Z",
+    "dated_local_handoff_and_navigation_append_verified": true,
+    "terminal_echo_enabled": true,
+    "scope": "Validation ran at verified_head. The PC was already on observed_before_commit when reconnected. Before/after hashes confirmed preservation of the local mapping, original plan, prior benefit-goal receipt and five prepared patch/review files. Actual logs and a new dated handoff remain in the original local workspace. Publishing this receipt produces a later commit; historical source and CI records above retain their original revisions. No live upstream refresh was performed during this reconnect."
   },
   "outcomes": {
     "new_cash_payment_verified": false,
