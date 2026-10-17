@@ -1,5 +1,12 @@
 # Goal: useful open-source work, verified benefits, and better skills
 
+Submit useful, validated contributions to **100 distinct external open-source
+projects**, follow through on their review and maintenance, and pursue evidenced
+financial or service benefits. This campaign starts on **2026-10-17**. Its
+[queue and evidence](data/campaign.json) and [generated progress](progress/CAMPAIGN.md)
+separate researched targets from qualified submissions. Earlier work remains in
+the historical contribution records and does not become a new submission.
+
 Find and contribute to open-source projects with a credible route to paid work,
 rewards, software subscriptions, or compute credits. Improve the contributor's
 skills, workflows, and reusable tools through that work. Choose opportunities
@@ -61,6 +68,13 @@ applications remain private and separate from these open-source programs.
 
 ## How to work toward the goal
 
+Use the **GPT cloud execution environment and connected GitHub account** as the
+default workspace. GitHub holds the durable source, queue, validation evidence,
+and next actions; a fresh session must recover them instead of assuming that a
+temporary checkout survived. Follow [cloud operation](docs/CLOUD-OPERATION.md).
+Use a local PC only when a selected task actually needs unpublished local files,
+private records, or hardware/platform access unavailable in the cloud.
+
 Keep at most **one main upstream implementation and one owned-tool improvement**
 active. Preserve pending patches and their evidence when selecting the next
 task. The prepared libavif contribution retains its
@@ -74,8 +88,15 @@ Carry the selected contribution through relevant tests and a reviewable result.
 
 End each session with the actual change, validation and source revision, benefit
 state, learning evidence, and next action. Follow
-[the continuation guide](docs/CONTINUING.md) for publication and handoff. Work
-runs during authorized sessions; no background execution or outcome is promised.
+[the continuation guide](docs/CONTINUING.md) for publication and handoff. Scheduled
+continuation uses the hosted task described in the cloud-operation record; a
+saved goal file alone does not start background execution. Each run must confirm
+what it actually executed and record any access or runtime block.
+
+After reaching 100 qualified submitted projects, continue reviews, maintenance,
+and benefit follow-through for that portfolio. Do not increase the target merely
+to generate more submissions. The target is a useful portfolio, not a daily PR
+quota; a patch must solve a supported problem and meet its upstream's rules.
 
 ## Preserve the existing accounting
 

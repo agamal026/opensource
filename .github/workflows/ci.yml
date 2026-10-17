@@ -41,5 +41,9 @@ jobs:
         run: python tools/oss_status.py validate
       - name: Verify generated status
         run: python tools/oss_status.py render --output progress/STATUS.md --check
+      - name: Validate contribution campaign
+        run: python tools/contribution_campaign.py validate
+      - name: Verify generated campaign
+        run: python tools/contribution_campaign.py report --output progress/CAMPAIGN.md --check
       - name: Check whitespace
         run: git diff --check

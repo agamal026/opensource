@@ -3,9 +3,12 @@
 ## Recover current state
 
 Read `AGENTS.md`, [the goal](../GOAL.md), [the opportunity review](OPPORTUNITIES.md),
-the latest entry in `progress/`, and the roadmap. Locate the
-actual worktree instead of assuming that a cloud terminal contains the PC's
-files. If reconnecting over Tailscale, confirm the intended host and existing
+the latest entry in `progress/`, and the roadmap. For the ongoing campaign, use
+[cloud operation](CLOUD-OPERATION.md) and the public campaign queue first. Clone
+the current public repositories into a fresh cloud workspace when necessary;
+do not require the PC for work whose source and evidence are already published.
+Locate the actual worktree instead of assuming that a cloud terminal contains
+the PC's files. If a task needs the PC, confirm the intended host and existing
 authenticated access. Keep connection details in local configuration.
 
 Initialize local configuration only if it is absent; existing checkout mappings
@@ -42,8 +45,13 @@ preserved file describes the earlier successful attempt.
 
 ## Refresh upstream observations
 
-Use an existing authenticated GitHub CLI session. The refresh queries the
+Use an existing authenticated GitHub CLI session when one is available. The refresh queries the
 explicit PR coordinates in the public catalog.
+
+A cloud session can instead use the connected GitHub tools to read the exact
+registered PRs, their discussions and their checks. Keep the resulting method
+and timestamp explicit. Read access does not establish permission to submit a
+comment or PR. Do not extract credentials from a PC to make a cloud command work.
 
 ```sh
 python3 tools/oss_status.py refresh

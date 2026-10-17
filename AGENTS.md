@@ -4,7 +4,9 @@ Use this hub to maintain original tools and accurate open-source contribution
 records. Start every resumed session with [GOAL.md](GOAL.md),
 [docs/OPPORTUNITIES.md](docs/OPPORTUNITIES.md), and the latest dated progress
 entry. Then read `README.md`, `progress/STATUS.md`, and `docs/ROADMAP.md` before
-continuing work.
+continuing work. For the continuous 100-project campaign, also read
+`docs/CLOUD-OPERATION.md`, `data/campaign.json`, and `progress/CAMPAIGN.md`.
+The default executor is a fresh GPT cloud session; the connected PC is optional.
 
 ## Work selection
 

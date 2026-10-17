@@ -13,6 +13,8 @@ required. Use a branch for ongoing work and retain unrelated edits.
 python3 -m unittest discover -s tests -v
 python3 tools/oss_status.py validate
 python3 tools/oss_status.py render --output progress/STATUS.md --check
+python3 tools/contribution_campaign.py validate --input data/campaign.json
+python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check
 git diff --check
 ```
 
@@ -46,7 +48,9 @@ keys, grant forms, or browser state into this repository.
 
 Follow each external project's license, review, and AI-use rules. This hub's CI
 cannot establish a human signature or personal review. Refreshes are deliberate
-work-session actions; no timed task is installed here.
+work-session actions. The hosted continuation task is managed through Scheduled;
+the repository's tools do not install timers or submit external changes as a
+side effect.
 
 The original code and documentation here use MIT. Linked projects retain their
 own licenses and contribution processes.

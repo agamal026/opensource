@@ -8,6 +8,12 @@ to financial benefits, subscriptions, or compute credits while improving skills,
 workflows, and tools. Advertised benefits, eligibility, and realized outcomes are
 tracked separately.
 
+The current campaign aims for **100 distinct external projects with validated
+work submitted**, followed by review, maintenance, and benefit follow-through.
+See the [campaign progress](progress/CAMPAIGN.md), [source-backed queue](data/campaign.json),
+and [cloud operating procedure](docs/CLOUD-OPERATION.md). GPT cloud sessions are
+the default executor; GitHub provides durable state between sessions.
+
 This repository makes it practical to resume work from a verifiable checkpoint:
 inspect the current local checkouts, refresh public pull-request observations,
 and carry the next useful change through validation. It also indexes the original
@@ -24,6 +30,7 @@ projects and upstream work already in progress.
 | --- | --- |
 | [oss_status.py](tools/oss_status.py) | Validate the public registry, read current PR/check results through GitHub CLI, and generate a reproducible Markdown status report. |
 | [workspace_snapshot.py](tools/workspace_snapshot.py) | Record local Git branches, revisions, and change counts without copying paths, filenames, diffs, remote URLs, or credentials into the output. |
+| [contribution_campaign.py](tools/contribution_campaign.py) | Validate evidence for the 100-project campaign and report researched targets, qualified submissions, acceptance, historical work, and realized benefits separately. |
 | [resume-open-source](skills/resume-open-source/SKILL.md) | Reusable agent workflow for recovering a checkpoint, choosing an unblocked task, verifying it, and writing a useful handoff. |
 
 Python **3.10 or newer** is required. The tools have no Python package

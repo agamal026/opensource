@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-17T21:17:25+00:00",
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux"
+  },
+  "base_commit": "9a74f31395e4543cebe55ba9598c648bc35d2c38",
+  "tested_files": {
+    "tools/contribution_campaign.py": "a21ca577663029ae7ca4f4afb1b3123188677f7863a86d432bea6c3412f76da4",
+    "tests/test_contribution_campaign.py": "521febaab5045a3349af87083c66e308e4a1d22193c9dc0bf23720a25d3eeba1",
+    "data/campaign.json": "f11a7227e7fe5b4e91255766729541b96c34d8128e65b3281b2b7df9fd190b3e",
+    "data/campaign-sources.json": "b3f9ceccec9d923b648bd7316d7ede43a331df2a21de09022ff29a1e8a4c0fe0"
+  },
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 81,
+      "summary": "OK"
+    },
+    {
+      "command": "python3 tools/oss_status.py validate",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 tools/contribution_campaign.py validate",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 tools/contribution_campaign.py report --output progress/CAMPAIGN.md --check",
+      "exit_code": 0
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    }
+  ],
+  "scope": "Offline campaign accounting and existing hub regressions. Linked-evidence truth and upstream code correctness need their own evidence."
+}

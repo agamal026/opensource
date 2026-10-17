@@ -1,0 +1,2778 @@
+{
+  "schema_version": 1,
+  "owner": "agamal026",
+  "started_on": "2026-10-17",
+  "updated_on": "2026-10-17",
+  "target_count": 100,
+  "historical_submissions": [
+    {
+      "repository": "nih-at/libzip",
+      "pr_url": "https://github.com/nih-at/libzip/pull/576",
+      "submitted_on": "2026-09-06",
+      "refs": [
+        "https://github.com/nih-at/libzip/pull/576"
+      ]
+    },
+    {
+      "repository": "nginx/nginx",
+      "pr_url": "https://github.com/nginx/nginx/pull/1734",
+      "submitted_on": "2026-09-06",
+      "refs": [
+        "https://github.com/nginx/nginx/pull/1734"
+      ]
+    },
+    {
+      "repository": "libevent/libevent",
+      "pr_url": "https://github.com/libevent/libevent/pull/1916",
+      "submitted_on": "2026-09-07",
+      "refs": [
+        "https://github.com/libevent/libevent/pull/1916"
+      ]
+    },
+    {
+      "repository": "AOMediaCodec/libavif",
+      "pr_url": "https://github.com/AOMediaCodec/libavif/pull/3350",
+      "submitted_on": "2026-09-06",
+      "refs": [
+        "https://github.com/AOMediaCodec/libavif/pull/3350"
+      ],
+      "accepted_on": "2026-09-09",
+      "acceptance_ref": "https://github.com/AOMediaCodec/libavif/pull/3350"
+    },
+    {
+      "repository": "npm/cli",
+      "pr_url": "https://github.com/npm/cli/pull/9954",
+      "submitted_on": "2026-09-06",
+      "refs": [
+        "https://github.com/npm/cli/pull/9954"
+      ]
+    },
+    {
+      "repository": "AOMediaCodec/libavif",
+      "pr_url": "https://github.com/AOMediaCodec/libavif/pull/3413",
+      "submitted_on": "2026-10-13",
+      "refs": [
+        "https://github.com/AOMediaCodec/libavif/pull/3413"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "repository": "h2database/h2database",
+      "batch": 1,
+      "summary": "Investigate #4456: adding a VARCHAR index changes the result of a numeric comparison with a parameter array.",
+      "next_action": "Reproduce #4456 on f2922a7766ec2472bc65d5e5ab4086390a76a42c in the cloud, add a regression, validate a focused fix, and review the authorship/licensing requirement before submission. No issue-specific cash offer is verified.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/h2database/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/h2database/h2database",
+            "https://github.com/google/oss-fuzz/blob/master/projects/h2database/project.yaml"
+          ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/h2database/h2database/issues/4456",
+            "https://github.com/h2database/h2database/pulls"
+          ],
+          "policy_ref": "https://h2database.com/html/build.html#submitting_source_code_changes"
+        },
+        {
+          "stage": "selected",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/h2database/h2database/issues/4456"
+          ],
+          "selection_ref": "https://github.com/h2database/h2database/issues/4456"
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "nih-at/libzip",
+      "batch": 1,
+      "summary": "libzip: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Follow the existing submission and its precise blockers first; preserve historical evidence. Select a new distinct contribution only after checking current review feedback and policy.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/nih-at/libzip",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "npm/cli",
+      "batch": 1,
+      "summary": "npm: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Follow the existing submission and its precise blockers first; preserve historical evidence. Select a new distinct contribution only after checking current review feedback and policy.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/npm/cli",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "AOMediaCodec/libavif",
+      "batch": 1,
+      "summary": "libavif: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Follow the existing submission and its precise blockers first; preserve historical evidence. Select a new distinct contribution only after checking current review feedback and policy.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/AOMediaCodec/libavif",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libevent/libevent",
+      "batch": 1,
+      "summary": "libevent: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Follow the existing submission and its precise blockers first; preserve historical evidence. Select a new distinct contribution only after checking current review feedback and policy.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/libevent/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libevent/libevent",
+            "https://github.com/google/oss-fuzz/blob/master/projects/libevent/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "nginx/nginx",
+      "batch": 1,
+      "summary": "nginx: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Follow the existing submission and its precise blockers first; preserve historical evidence. Select a new distinct contribution only after checking current review feedback and policy.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/nginx/nginx",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "json-c/json-c",
+      "batch": 1,
+      "summary": "json-c: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Do not duplicate #984: PR #986 already addresses it. Select a different uncovered problem or respond to a maintainer request for independent validation.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/json-c/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/json-c/json-c",
+            "https://github.com/google/oss-fuzz/blob/master/projects/json-c/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pytest-dev/iniconfig",
+      "batch": 1,
+      "summary": "iniconfig: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/iniconfig/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pytest-dev/iniconfig",
+            "https://github.com/google/oss-fuzz/blob/master/projects/iniconfig/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "rthalley/dnspython",
+      "batch": 1,
+      "summary": "dnspython: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/dnspython/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/rthalley/dnspython",
+            "https://github.com/google/oss-fuzz/blob/master/projects/dnspython/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "abseil/abseil-py",
+      "batch": 1,
+      "summary": "abseil-py: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Park #428 until the intended allow_overwrite semantics are clarified; a scalar-style guard would break repeated multi-value flags. Look for a distinct unblocked defect.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/abseil-py/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/abseil/abseil-py",
+            "https://github.com/google/oss-fuzz/blob/master/projects/abseil-py/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pypa/pip",
+      "batch": 2,
+      "summary": "pip: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pypa/pip",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "yaml/libyaml",
+      "batch": 2,
+      "summary": "libyaml: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/libyaml/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/yaml/libyaml",
+            "https://github.com/google/oss-fuzz/blob/master/projects/libyaml/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libexpat/libexpat",
+      "batch": 2,
+      "summary": "expat: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/expat/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libexpat/libexpat",
+            "https://github.com/google/oss-fuzz/blob/master/projects/expat/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libarchive/libarchive",
+      "batch": 2,
+      "summary": "libarchive: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/libarchive/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libarchive/libarchive",
+            "https://github.com/google/oss-fuzz/blob/master/projects/libarchive/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libssh2/libssh2",
+      "batch": 2,
+      "summary": "libssh2: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/libssh2/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libssh2/libssh2",
+            "https://github.com/google/oss-fuzz/blob/master/projects/libssh2/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "c-ares/c-ares",
+      "batch": 2,
+      "summary": "ares: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/c-ares/c-ares",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "lz4/lz4",
+      "batch": 2,
+      "summary": "lz4: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/lz4/lz4",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "facebook/zstd",
+      "batch": 2,
+      "summary": "zstdlib: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/facebook/zstd",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "tukaani-project/xz",
+      "batch": 2,
+      "summary": "xz: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/tukaani-project/xz",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pallets/jinja",
+      "batch": 2,
+      "summary": "Jinja: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pallets/jinja",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "angular/angular",
+      "batch": 3,
+      "summary": "Angular: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/angular/angular",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/avro",
+      "batch": 3,
+      "summary": "avro: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/avro/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/avro",
+            "https://github.com/google/oss-fuzz/blob/master/projects/avro/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-bcel",
+      "batch": 3,
+      "summary": "apache-commons-bcel: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-bcel/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-bcel",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-bcel/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-beanutils",
+      "batch": 3,
+      "summary": "apache-commons-beanutils: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-beanutils/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-beanutils",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-beanutils/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-cli",
+      "batch": 3,
+      "summary": "apache-commons-cli: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-cli/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-cli",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-cli/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-collections",
+      "batch": 3,
+      "summary": "apache-commons-collections: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-collections/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-collections",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-collections/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-compress",
+      "batch": 3,
+      "summary": "apache-commons-compress: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-compress/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-compress",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-compress/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-csv",
+      "batch": 3,
+      "summary": "apache-commons-csv: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-csv/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-csv",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-csv/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-fileupload",
+      "batch": 3,
+      "summary": "apache-commons-fileupload: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-fileupload/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-fileupload",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-fileupload/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-imaging",
+      "batch": 3,
+      "summary": "apache-commons-imaging: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-imaging/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-imaging",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-imaging/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-jxpath",
+      "batch": 4,
+      "summary": "apache-commons-jxpath: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-jxpath/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-jxpath",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-jxpath/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-lang",
+      "batch": 4,
+      "summary": "apache-commons-lang: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-lang/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-lang",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-lang/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-net",
+      "batch": 4,
+      "summary": "apache-commons-net: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-net/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-net",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-net/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-text",
+      "batch": 4,
+      "summary": "apache-commons-text: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-text/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-text",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-text/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/commons-validator",
+      "batch": 4,
+      "summary": "apache-commons-validator: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-validator/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/commons-validator",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-validator/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/cxf",
+      "batch": 4,
+      "summary": "apache-cxf: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-cxf/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/cxf",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-cxf/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/httpd",
+      "batch": 4,
+      "summary": "Apache httpd: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/httpd",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/poi",
+      "batch": 4,
+      "summary": "apache-poi: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-poi/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/poi",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-poi/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/shiro",
+      "batch": 4,
+      "summary": "apache-shiro: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-shiro/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/shiro",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-shiro/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/tika",
+      "batch": 4,
+      "summary": "apache-tika: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/apache-tika/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/tika",
+            "https://github.com/google/oss-fuzz/blob/master/projects/apache-tika/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "apache/wicket",
+      "batch": 5,
+      "summary": "Wicket: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/apache/wicket",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "auth0/java-jwt",
+      "batch": 5,
+      "summary": "java-jwt: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/java-jwt/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/auth0/java-jwt",
+            "https://github.com/google/oss-fuzz/blob/master/projects/java-jwt/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "axboe/liburing",
+      "batch": 5,
+      "summary": "liburing: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/axboe/liburing",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "civiform/civiform",
+      "batch": 5,
+      "summary": "CiviForm: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/civiform/civiform",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "cncf/xds",
+      "batch": 5,
+      "summary": "xds: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/cncf/xds",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "curl/curl",
+      "batch": 5,
+      "summary": "curl: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/curl/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/curl/curl",
+            "https://github.com/google/oss-fuzz/blob/master/projects/curl/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "dart-lang/sdk",
+      "batch": 5,
+      "summary": "Dart: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/dart-lang/sdk",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "django/django",
+      "batch": 5,
+      "summary": "Django: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/django/django",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "dovecot/core",
+      "batch": 5,
+      "summary": "Dovecot: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/dovecot/core",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "drupal/drupal",
+      "batch": 5,
+      "summary": "Drupal: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/drupal/drupal",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "eggert/tz",
+      "batch": 6,
+      "summary": "tz: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/eggert/tz",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "emberjs/ember.js",
+      "batch": 6,
+      "summary": "Ember: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/emberjs/ember.js",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "FasterXML/jackson-core",
+      "batch": 6,
+      "summary": "jackson-core: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/jackson-core/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/FasterXML/jackson-core",
+            "https://github.com/google/oss-fuzz/blob/master/projects/jackson-core/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "FasterXML/jackson-databind",
+      "batch": 6,
+      "summary": "jackson-databind: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/jackson-databind/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/FasterXML/jackson-databind",
+            "https://github.com/google/oss-fuzz/blob/master/projects/jackson-databind/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "git/git",
+      "batch": 6,
+      "summary": "git: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/git/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/git/git",
+            "https://github.com/google/oss-fuzz/blob/master/projects/git/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "golang/go",
+      "batch": 6,
+      "summary": "Go: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/golang/go",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/brotli",
+      "batch": 6,
+      "summary": "brotli: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/brotli/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/brotli",
+            "https://github.com/google/oss-fuzz/blob/master/projects/brotli/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/flatbuffers",
+      "batch": 6,
+      "summary": "flatbuffers: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/flatbuffers",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/gson",
+      "batch": 6,
+      "summary": "gson: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/gson/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/gson",
+            "https://github.com/google/oss-fuzz/blob/master/projects/gson/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/guava",
+      "batch": 6,
+      "summary": "guava: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/guava/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/guava",
+            "https://github.com/google/oss-fuzz/blob/master/projects/guava/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/nsjail",
+      "batch": 7,
+      "summary": "nsjail: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/nsjail",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "google/re2",
+      "batch": 7,
+      "summary": "re2: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/google/re2",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "grpc/grpc",
+      "batch": 7,
+      "summary": "grpc: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/grpc/grpc",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "grpc/grpc-proto",
+      "batch": 7,
+      "summary": "grpc_proto: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/grpc/grpc-proto",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "gwtproject/gwt",
+      "batch": 7,
+      "summary": "GWT: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/gwtproject/gwt",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "harfbuzz/harfbuzz",
+      "batch": 7,
+      "summary": "harfbuzz: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/harfbuzz/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/harfbuzz/harfbuzz",
+            "https://github.com/google/oss-fuzz/blob/master/projects/harfbuzz/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "html5lib/html5lib-python",
+      "batch": 7,
+      "summary": "html5lib-python: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/html5lib-python/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/html5lib/html5lib-python",
+            "https://github.com/google/oss-fuzz/blob/master/projects/html5lib-python/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "isc-projects/bind9",
+      "batch": 7,
+      "summary": "BIND: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/isc-projects/bind9",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "isc-projects/dhcp",
+      "batch": 7,
+      "summary": "ISC DHCP: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/isc-projects/dhcp",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "javaparser/javaparser",
+      "batch": 7,
+      "summary": "javaparser: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/javaparser/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/javaparser/javaparser",
+            "https://github.com/google/oss-fuzz/blob/master/projects/javaparser/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "jhy/jsoup",
+      "batch": 8,
+      "summary": "jsoup: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/jsoup/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/jhy/jsoup",
+            "https://github.com/google/oss-fuzz/blob/master/projects/jsoup/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "joomla/joomla-cms",
+      "batch": 8,
+      "summary": "Joomla: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/joomla/joomla-cms",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "jquery/jquery",
+      "batch": 8,
+      "summary": "jQuery: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/jquery/jquery",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "keycloak/keycloak",
+      "batch": 8,
+      "summary": "keycloak: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/keycloak/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/keycloak/keycloak",
+            "https://github.com/google/oss-fuzz/blob/master/projects/keycloak/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "knockout/knockout",
+      "batch": 8,
+      "summary": "Knockout: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/knockout/knockout",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libgit2/libgit2",
+      "batch": 8,
+      "summary": "libgit2: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/libgit2/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libgit2/libgit2",
+            "https://github.com/google/oss-fuzz/blob/master/projects/libgit2/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libjpeg-turbo/libjpeg-turbo",
+      "batch": 8,
+      "summary": "libjpeg-turbo: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libjpeg-turbo/libjpeg-turbo",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "libjxl/libjxl",
+      "batch": 8,
+      "summary": "jpegxl: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/libjxl/libjxl",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "lxml/lxml",
+      "batch": 8,
+      "summary": "lxml: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/lxml/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/lxml/lxml",
+            "https://github.com/google/oss-fuzz/blob/master/projects/lxml/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "magento/magento2",
+      "batch": 8,
+      "summary": "Magento: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/magento/magento2",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "netty/netty",
+      "batch": 9,
+      "summary": "netty: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/netty/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/netty/netty",
+            "https://github.com/google/oss-fuzz/blob/master/projects/netty/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "ntp-project/ntp",
+      "batch": 9,
+      "summary": "University of Delaware NTPD: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/ntp-project/ntp",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "numpy/numpy",
+      "batch": 9,
+      "summary": "numpy: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/numpy/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/numpy/numpy",
+            "https://github.com/google/oss-fuzz/blob/master/projects/numpy/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "opencart/opencart",
+      "batch": 9,
+      "summary": "OpenCart: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/opencart/opencart",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pallets/flask",
+      "batch": 9,
+      "summary": "Flask: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pallets/flask",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pallets/werkzeug",
+      "batch": 9,
+      "summary": "Werkzeug: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pallets/werkzeug",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pandas-dev/pandas",
+      "batch": 9,
+      "summary": "pandas: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/pandas/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pandas-dev/pandas",
+            "https://github.com/google/oss-fuzz/blob/master/projects/pandas/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pnggroup/libpng",
+      "batch": 9,
+      "summary": "libpng: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pnggroup/libpng",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "Polymer/polymer",
+      "batch": 9,
+      "summary": "Polymer: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/Polymer/polymer",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "PrestaShop/PrestaShop",
+      "batch": 9,
+      "summary": "PrestaShop: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/PrestaShop/PrestaShop",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "protobuf-c/protobuf-c",
+      "batch": 10,
+      "summary": "protobuf-c: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/protobuf-c/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/protobuf-c/protobuf-c",
+            "https://github.com/google/oss-fuzz/blob/master/projects/protobuf-c/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "protocolbuffers/protobuf",
+      "batch": 10,
+      "summary": "protobuf: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/protocolbuffers/protobuf",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "pyca/cryptography",
+      "batch": 10,
+      "summary": "cryptography: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/cryptography/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/pyca/cryptography",
+            "https://github.com/google/oss-fuzz/blob/master/projects/cryptography/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "python-pillow/Pillow",
+      "batch": 10,
+      "summary": "pillow: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/pillow/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/python-pillow/Pillow",
+            "https://github.com/google/oss-fuzz/blob/master/projects/pillow/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "python/cpython",
+      "batch": 10,
+      "summary": "cpython3: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 2 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/oss-fuzz/blob/master/projects/cpython3/project.yaml",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/python/cpython",
+            "https://github.com/google/oss-fuzz/blob/master/projects/cpython3/project.yaml"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "tensorflow/tensorflow",
+      "batch": 10,
+      "summary": "tensorflow: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/tensorflow/tensorflow",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "the-tcpdump-group/libpcap",
+      "batch": 10,
+      "summary": "libpcap: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/the-tcpdump-group/libpcap",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "torvalds/linux",
+      "batch": 10,
+      "summary": "Linux kernel: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/torvalds/linux",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "TYPO3/typo3",
+      "batch": 10,
+      "summary": "Typo3: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/TYPO3/typo3",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    },
+    {
+      "repository": "unicode-org/icu",
+      "batch": 10,
+      "summary": "icu: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
+      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "benefit_route": {
+        "kind": "cash",
+        "qualification": "conditional",
+        "checked_on": "2026-10-17",
+        "summary": "Tier 1 project scope verified. Patch-specific security value, participant eligibility, acceptance, award and payment remain unverified.",
+        "refs": [
+          "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+          "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md"
+        ]
+      },
+      "milestones": [
+        {
+          "stage": "target",
+          "date": "2026-10-17",
+          "refs": [
+            "https://github.com/unicode-org/icu",
+            "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
+          ]
+        }
+      ],
+      "benefits": []
+    }
+  ]
+}
