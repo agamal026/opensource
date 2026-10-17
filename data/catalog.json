@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "owner": "agamal026",
+  "baseline_date": "2026-10-13",
+  "projects": [
+    {
+      "id": "pinned-json",
+      "repository": "agamal026/pinned-json",
+      "description": "Offline Python library and CLI that verifies a separately trusted manifest digest and emits JSON fixtures as their original bytes. Python 3.10+ on Linux; v0.1.0 is an alpha prerelease.",
+      "license": "MIT",
+      "release_tag": "v0.1.0",
+      "release_url": "https://github.com/agamal026/pinned-json/releases/tag/v0.1.0",
+      "ci_url": "https://github.com/agamal026/pinned-json/actions/runs/38886522956"
+    },
+    {
+      "id": "raydium-cpmm-arb-monitor",
+      "repository": "agamal026/raydium-cpmm-arb-monitor",
+      "description": "Read-only Node.js/TypeScript CLI for Raydium CPMM pool discovery and estimated cross-pool spreads. Node 22+; v0.1.1 fixes response-body timeouts. It does not execute trades.",
+      "license": "MIT",
+      "release_tag": "v0.1.1",
+      "release_url": "https://github.com/agamal026/raydium-cpmm-arb-monitor/releases/tag/v0.1.1",
+      "ci_url": "https://github.com/agamal026/raydium-cpmm-arb-monitor/actions/runs/38885587743"
+    }
+  ],
+  "contributions": [
+    {
+      "id": "libavif-3413",
+      "repository": "AOMediaCodec/libavif",
+      "number": 3413,
+      "url": "https://github.com/AOMediaCodec/libavif/pull/3413",
+      "summary": "Correct automatic output-format selection for grayscale JPEGs with ICC profiles.",
+      "notes": [
+        "The recorded individual CLA and the GitHub CLA check are separate evidence; retain the actual check result until its association is resolved."
+      ]
+    },
+    {
+      "id": "libzip-576",
+      "repository": "nih-at/libzip",
+      "number": 576,
+      "url": "https://github.com/nih-at/libzip/pull/576",
+      "summary": "Restore AppVeyor x86/ARM builds after the related portable crypto-clearing fix was integrated.",
+      "notes": [
+        "The maintainer confirmed the crypto-clearing integration separately: https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699 . The open CI remainder must not be reported as a fully merged PR.",
+        "Windows/CI support was invited at https://github.com/nih-at/libzip/pull/576#issuecomment-5698019796 . This is a contribution invitation, not appointment as an upstream maintainer."
+      ]
+    },
+    {
+      "id": "npm-9954",
+      "repository": "npm/cli",
+      "number": 9954,
+      "url": "https://github.com/npm/cli/pull/9954",
+      "summary": "Warn about incomplete lockfile provenance in Arborist.",
+      "notes": [
+        "Record upstream workflow admission and maintainer feedback before claiming readiness."
+      ]
+    },
+    {
+      "id": "nginx-1734",
+      "repository": "nginx/nginx",
+      "number": 1734,
+      "url": "https://github.com/nginx/nginx/pull/1734",
+      "summary": "Add a total timeout for receiving a client request body.",
+      "notes": [
+        "Companion tests: https://github.com/agamal026/nginx-tests/commit/b3a6c55 . Companion documentation: https://github.com/agamal026/nginx.org/commit/308a9143e2bada4f479d806ca6116ce25f8c8b19 .",
+        "Bounded local proof and an approved CLA do not establish that every upstream configuration has passed."
+      ]
+    },
+    {
+      "id": "libevent-1916",
+      "repository": "libevent/libevent",
+      "number": 1916,
+      "url": "https://github.com/libevent/libevent/pull/1916",
+      "summary": "Replace the bundled ARC4 random-number generator with operating-system randomness.",
+      "notes": [
+        "The published PR records remaining platform, real-chroot, and concurrency coverage limits."
+      ]
+    },
+    {
+      "id": "libavif-3350",
+      "repository": "AOMediaCodec/libavif",
+      "number": 3350,
+      "url": "https://github.com/AOMediaCodec/libavif/pull/3350",
+      "summary": "Make codec-option updates atomic when allocation fails.",
+      "notes": [
+        "Merged on 2026-09-09, before the 2026-10-13 continuation baseline. Retained as prior contribution history."
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "id": "libavif-2428",
+      "repository": "AOMediaCodec/libavif",
+      "issue": 2428,
+      "url": "https://github.com/AOMediaCodec/libavif/issues/2428",
+      "title": "Tolerate unsupported non-essential pixi versions while preserving item-property indexes.",
+      "stage": "human_review_pending",
+      "next_action": "The contributor must personally review the prepared parser change, fixture, tests, and PR text under AOMedia's contribution policy. Then refresh the exact source and upstream state before authorized submission."
+    },
+    {
+      "id": "libavif-2780",
+      "repository": "AOMediaCodec/libavif",
+      "issue": 2780,
+      "url": "https://github.com/AOMediaCodec/libavif/issues/2780",
+      "title": "Investigate Xcode object-library targets and duplicate source basenames.",
+      "stage": "parked",
+      "next_action": "Resume after macOS/Xcode workflow admission permits actual static/shared and libyuv-off validation. Linux or Ninja results do not establish Xcode correctness."
+    }
+  ]
+}

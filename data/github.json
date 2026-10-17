@@ -1,0 +1,590 @@
+{
+  "observed_at": "2026-10-17T18:07:06Z",
+  "pull_requests": [
+    {
+      "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
+      "checks": [
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-android-jni",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430320/job/102673244045"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-disable-gtest (ubuntu-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430219/job/102673242008"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-linux-oldest-cmake",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430355/job/102673246466"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-mingw (clang64)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430544/job/102673249389"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-mingw (ucrt64)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430544/job/102673249098"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (macos-latest, false)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430333/job/102673245457"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 0)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241591"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 1)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241557"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 2)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241565"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, false)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430333/job/102673245638"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, true)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430333/job/102673245619"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 0)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241575"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 1)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241438"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 2)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430205/job/102673241372"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (macos-latest, libyuv LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430422/job/102673247977"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (macos-latest, libyuv OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430422/job/102673248111"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (ubuntu-latest, libyuv LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430422/job/102673248006"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (ubuntu-latest, libyuv OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430422/job/102673247659"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local-fuzztest (ubuntu-latest, LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430349/job/102673245735"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local-fuzztest (ubuntu-latest, OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430349/job/102673245892"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-run-golden-tests (ubuntu-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430261/job/102673243072"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-run-golden-tests (ubuntu-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430533/job/102673249482"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static (macos-latest, Debug)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430345/job/102673246052"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static (macos-latest, Release)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430345/job/102673246309"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static (ubuntu-latest, Debug)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430345/job/102673246227"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static (ubuntu-latest, Release)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430345/job/102673246182"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-av2 (LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430358/job/102673253221"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-av2 (OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430358/job/102673253070"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (macos-latest, address)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673247642"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (macos-latest, thread)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673247939"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (macos-latest, undefined)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673247857"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (ubuntu-latest, address)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673247771"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (ubuntu-latest, thread)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673247815"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-static-sanitized (ubuntu-latest, undefined)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430362/job/102673248127"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows (windows-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430471/job/102673276625"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows (windows-latest, -G Ninja)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430471/job/102673276872"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-installed (clang-cl)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430262/job/102673243364"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-installed (msvc)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430262/job/102673243561"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-shared-local (clang-cl)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430340/job/102673245642"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-shared-local (msvc)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430340/job/102673245798"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "clang-format-check",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430321/job/102673244058"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "cmake-format-check",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/34413430321/job/102673243806"
+        }
+      ],
+      "head_sha": "04a56971f8994627dd5685b58c9ebfe299d01f97",
+      "id": "libavif-3350",
+      "is_draft": false,
+      "merged_at": "2026-09-09T23:21:10Z",
+      "number": 3350,
+      "repository": "AOMediaCodec/libavif",
+      "review_decision": "",
+      "state": "MERGED",
+      "title": "Keep codec option updates atomic on allocation failure",
+      "updated_at": "2026-09-09T23:21:10Z",
+      "url": "https://github.com/AOMediaCodec/libavif/pull/3350"
+    },
+    {
+      "base_sha": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
+      "checks": [
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-android-jni",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453428896/job/115489896289"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-linux-oldest-cmake",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429041/job/115490112196"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-mingw (clang64)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429024/job/115489897433"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-mingw (ucrt64)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429024/job/115489896821"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (macos-latest, false)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453428982/job/115489896595"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 0)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489904673"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 1)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489905174"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, 2)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489905099"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, false)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453428982/job/115489896931"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (ubuntu-latest, true)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453428982/job/115489897886"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 0)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489905121"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 1)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489905116"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-installed (windows-latest, 2)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429145/job/115489905265"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (macos-latest, libyuv LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429037/job/115490508965"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (macos-latest, libyuv OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429037/job/115490508850"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (ubuntu-latest, libyuv LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429037/job/115490508493"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local (ubuntu-latest, libyuv OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429037/job/115490508986"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local-fuzztest (ubuntu-latest, LOCAL)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429118/job/115489897884"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-local-fuzztest (ubuntu-latest, OFF)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429118/job/115489896883"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-run-golden-tests (ubuntu-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429006/job/115489897142"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-shared-run-golden-tests (ubuntu-latest)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429538/job/115489898267"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-installed (clang-cl)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429359/job/115489899649"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "build-windows-installed (msvc)",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429359/job/115489899229"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "clang-format-check",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896133"
+        },
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "cmake-format-check",
+          "status": "COMPLETED",
+          "url": "https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896433"
+        },
+        {
+          "conclusion": "",
+          "kind": "status_context",
+          "name": "CLA bot check",
+          "status": "FAILURE",
+          "url": "https://aomedia.org/license/individual-contributor-license-agreement/"
+        }
+      ],
+      "head_sha": "93ef0a32c07741c34bb515295f5be3d270cca02d",
+      "id": "libavif-3413",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 3413,
+      "repository": "AOMediaCodec/libavif",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "Fix automatic format selection for grayscale JPEGs with ICC profiles",
+      "updated_at": "2026-10-13T19:43:27Z",
+      "url": "https://github.com/AOMediaCodec/libavif/pull/3413"
+    },
+    {
+      "base_sha": "d82464a277d0f42703702c4dfd9af6af38595a83",
+      "checks": [],
+      "head_sha": "14e56a95e1d524d8500da73bb49f9b0c80397057",
+      "id": "libevent-1916",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 1916,
+      "repository": "libevent/libevent",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "Replace the bundled ARC4 RNG with operating-system randomness",
+      "updated_at": "2026-10-15T13:13:47Z",
+      "url": "https://github.com/libevent/libevent/pull/1916"
+    },
+    {
+      "base_sha": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
+      "checks": [
+        {
+          "conclusion": "",
+          "kind": "status_context",
+          "name": "continuous-integration/appveyor/pr",
+          "status": "SUCCESS",
+          "url": "https://ci.appveyor.com/project/nih-at/libzip/builds/54772589"
+        }
+      ],
+      "head_sha": "5aeb57b6e922934125008756998b3ce2a93ba498",
+      "id": "libzip-576",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 576,
+      "repository": "nih-at/libzip",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "CI: restore AppVeyor x86 and ARM builds",
+      "updated_at": "2026-10-13T18:42:17Z",
+      "url": "https://github.com/nih-at/libzip/pull/576"
+    },
+    {
+      "base_sha": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
+      "checks": [
+        {
+          "conclusion": "SUCCESS",
+          "kind": "check_run",
+          "name": "F5 Contributor License Agreement (CLA)",
+          "status": "COMPLETED",
+          "url": "https://github.com/nginx/nginx/actions/runs/35681728612/job/106599923641"
+        }
+      ],
+      "head_sha": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
+      "id": "nginx-1734",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 1734,
+      "repository": "nginx/nginx",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "Core: add a total client request body timeout.",
+      "updated_at": "2026-10-15T12:33:23Z",
+      "url": "https://github.com/nginx/nginx/pull/1734"
+    },
+    {
+      "base_sha": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
+      "checks": [],
+      "head_sha": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
+      "id": "npm-9954",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 9954,
+      "repository": "npm/cli",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "feat(arborist): warn on incomplete lockfile provenance",
+      "updated_at": "2026-10-15T14:24:47Z",
+      "url": "https://github.com/npm/cli/pull/9954"
+    }
+  ],
+  "schema_version": 1
+}

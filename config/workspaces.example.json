@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "workspaces": [
+    {
+      "id": "opensource",
+      "path": ".."
+    },
+    {
+      "id": "libavif",
+      "path": "~/src/libavif"
+    },
+    {
+      "id": "libzip",
+      "path": "~/src/libzip"
+    }
+  ]
+}
