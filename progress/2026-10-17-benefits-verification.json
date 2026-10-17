@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-17",
+  "source_commit": "f146d3f8b688837aa078fb4e3807fa50b6c02fce",
+  "source_tree": "1ff05511f3b74937923f0ec3fcdc65ebec018f27",
+  "cloud_checkout": {
+    "verified_head": "f146d3f8b688837aa078fb4e3807fa50b6c02fce",
+    "clean": true,
+    "offline_tests_passed": 51
+  },
+  "hosted_ci": {
+    "url": "https://github.com/agamal026/opensource/actions/runs/39061075686",
+    "run_id": 39061075686,
+    "status": "completed",
+    "conclusion": "success",
+    "scope": "Offline regressions, public catalog/snapshot validation, generated status and whitespace. Job logs were checked for test totals.",
+    "jobs": [
+      {"id": 117478989595, "platform": "ubuntu-latest", "python": "3.10", "passed": 51, "skipped": 0, "conclusion": "success"},
+      {"id": 117478989511, "platform": "ubuntu-latest", "python": "3.12", "passed": 51, "skipped": 0, "conclusion": "success"},
+      {"id": 117478989520, "platform": "ubuntu-latest", "python": "3.14", "passed": 51, "skipped": 0, "conclusion": "success"},
+      {"id": 117478989342, "platform": "windows-latest", "python": "3.12", "passed": 49, "skipped": 2, "conclusion": "success"}
+    ]
+  },
+  "pc_synchronization": {
+    "status": "unverified",
+    "desired_source_commit": "f146d3f8b688837aa078fb4e3807fa50b6c02fce",
+    "previously_verified_commit": "2e74518ebdbdeb25f26e5951a7bddce2fc0c1b2b",
+    "reason": "The Browser connector reported that the originating browser context was unavailable before the final PC command could run.",
+    "next_action": "Restore the connected browser context and Tailscale SSH terminal, inspect current PC state, fast-forward to the latest reviewed main, run offline validation and workspace capture, preserve the local mapping and original evidence, and restore terminal echo in any retained shell."
+  },
+  "outcomes": {
+    "new_cash_payment_verified": false,
+    "new_subscription_award_verified": false,
+    "new_external_merge_verified": false
+  }
+}
