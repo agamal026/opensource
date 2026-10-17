@@ -6,11 +6,11 @@
     {
       "id": "pinned-json",
       "repository": "agamal026/pinned-json",
-      "description": "Offline Python library and CLI that verifies a separately trusted manifest digest and emits JSON fixtures as their original bytes. Python 3.10+ on Linux; v0.1.0 is an alpha prerelease.",
+      "description": "Offline Python library and CLI that verifies a separately trusted manifest digest and emits JSON fixtures as their original bytes. Python 3.10+ on Linux; v0.1.1 is an alpha prerelease fixing traversal through directories without listing permission.",
       "license": "MIT",
-      "release_tag": "v0.1.0",
-      "release_url": "https://github.com/agamal026/pinned-json/releases/tag/v0.1.0",
-      "ci_url": "https://github.com/agamal026/pinned-json/actions/runs/38886522956"
+      "release_tag": "v0.1.1",
+      "release_url": "https://github.com/agamal026/pinned-json/releases/tag/v0.1.1",
+      "ci_url": "https://github.com/agamal026/pinned-json/actions/runs/39065995086"
     },
     {
       "id": "raydium-cpmm-arb-monitor",

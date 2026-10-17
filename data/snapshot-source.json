@@ -1,7 +1,8 @@
 {
-  "check_collection": "Actual CheckRun and StatusContext nodes from statusCheckRollup.contexts with complete pagination. Workflow-run admission was not converted into check objects. The 70 returned contexts are identical to the initial REST observation.",
+  "check_collection": "Actual CheckRun and StatusContext nodes from statusCheckRollup.contexts with complete pagination. All 70 returned contexts and all six complete PR observations match the previous observation. Workflow-run admission was not converted into check objects.",
   "collected_with_live_cli": true,
-  "command": "python3 tools/oss_status.py refresh",
+  "command": "python3 tools/oss_status.py refresh --output <local-output>/github.json",
+  "command_path_note": "The private output directory is omitted. The exact candidate bytes were verified using snapshot_sha256 before publication.",
   "initial_observation": {
     "commit": "326875639e2da6aa22835dec92b2a6e752f4dab8",
     "comparison": "All six PR states, titles, timestamps, head/base revisions and returned checks were unchanged. The live source additionally reported APPROVED for libavif-3350 and REVIEW_REQUIRED for libevent-1916, nginx-1734 and npm-9954.",
@@ -10,7 +11,14 @@
     "source": "GitHub connector REST observation"
   },
   "metadata_collection": "Public pull-request metadata and the current last commit check rollup were queried with explicit GraphQL fields. Every repository was verified public; every returned commit OID matched its recorded PR head. Refresh and validation completed successfully for all six registered PRs.",
-  "observed_at": "2026-10-17T18:22:53Z",
+  "observed_at": "2026-10-17T20:01:04Z",
+  "previous_observation": {
+    "commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
+    "comparison": "All six complete pull-request observations are unchanged; only the observation timestamp advanced.",
+    "observed_at": "2026-10-17T18:22:53Z",
+    "provenance_url": "https://github.com/agamal026/opensource/blob/77627bfdf5d61674f7738db16e5fae164e391cb5/data/snapshot-source.json",
+    "snapshot_sha256": "f12d73c664b05fed255ca4acb0374212d291864e8ead8c82fb7548a8d60f2756"
+  },
   "python_version": "3.14.4",
   "records": [
     {
@@ -71,10 +79,10 @@
   "review_decision_meaning": "Values come from GitHub GraphQL reviewDecision. A null value is represented as an empty string and displayed as not reported; no absence of review requirements is inferred.",
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "f12d73c664b05fed255ca4acb0374212d291864e8ead8c82fb7548a8d60f2756",
+  "snapshot_sha256": "4777a8ee8c0d3e363b7f7cc214042eb63d1072ac22714cd2fb48d5995c0095cb",
   "source": "GitHub CLI GraphQL refresh",
   "tool_sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
-  "tool_source_commit": "326875639e2da6aa22835dec92b2a6e752f4dab8",
+  "tool_source_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
   "transport": "gh api graphql --hostname github.com --method POST --input -",
   "transport_version": "gh 2.46.0"
 }

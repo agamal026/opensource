@@ -1,6 +1,6 @@
 # Open-source progress
 
-Observed at: 2026-10-17T18:22:53Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-17T20:01:04Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
@@ -168,7 +168,7 @@ Cataloged release and CI links are references. This command refreshes pull reque
 
 | Project | Description | Declared license | Release | CI |
 | --- | --- | --- | --- | --- |
-| [agamal026/pinned\-json](<https://github.com/agamal026/pinned-json>) | Offline Python library and CLI that verifies a separately trusted manifest digest and emits JSON fixtures as their original bytes\. Python 3\.10\+ on Linux; v0\.1\.0 is an alpha prerelease\. | MIT | [v0\.1\.0](<https://github.com/agamal026/pinned-json/releases/tag/v0.1.0>) | [CI](<https://github.com/agamal026/pinned-json/actions/runs/38886522956>) |
+| [agamal026/pinned\-json](<https://github.com/agamal026/pinned-json>) | Offline Python library and CLI that verifies a separately trusted manifest digest and emits JSON fixtures as their original bytes\. Python 3\.10\+ on Linux; v0\.1\.1 is an alpha prerelease fixing traversal through directories without listing permission\. | MIT | [v0\.1\.1](<https://github.com/agamal026/pinned-json/releases/tag/v0.1.1>) | [CI](<https://github.com/agamal026/pinned-json/actions/runs/39065995086>) |
 | [agamal026/raydium\-cpmm\-arb\-monitor](<https://github.com/agamal026/raydium-cpmm-arb-monitor>) | Read\-only Node\.js/TypeScript CLI for Raydium CPMM pool discovery and estimated cross\-pool spreads\. Node 22\+; v0\.1\.1 fixes response\-body timeouts\. It does not execute trades\. | MIT | [v0\.1\.1](<https://github.com/agamal026/raydium-cpmm-arb-monitor/releases/tag/v0.1.1>) | [CI](<https://github.com/agamal026/raydium-cpmm-arb-monitor/actions/runs/38885587743>) |
 
 ## Candidate work

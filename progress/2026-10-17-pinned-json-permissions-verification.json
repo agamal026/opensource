@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-10-17",
+  "record_state": "published_source_ci_and_release_verified",
+  "repository": "agamal026/pinned-json",
+  "source": {
+    "base_commit": "ac03f31bfb157051d7b0bab366169a69eacd8779",
+    "candidate_version": "0.1.1",
+    "maturity": "alpha",
+    "candidate_patch_sha256": "aee2890b2b84be785ab1c9b7118b8c85a1005e49a4b69a97cd760cd2a7839dd7",
+    "patch_definition": "git diff --binary HEAD from the recorded base, before staging or committing",
+    "changed_files_sha256": {
+      "CHANGELOG.md": "b88d28bf9e0fc6786fbfd2e702fcf0de662baffd6de563c7ec818fbe12d7747f",
+      "PROVENANCE.md": "b81a59fede2d0480078ea9d37ff6b8d100ed52cf2fe7a7c00eaa7c02cf11c89d",
+      "README.md": "efd97005cb2380bfd884f508d26f3f04871d205463b863dbade511b039d672ca",
+      "pyproject.toml": "eac43dd28f24819cc276731d5cd39a698b98c18d10c1235dbd47f30e029c38dc",
+      "src/pinned_json/core.py": "aed8713f7f953f089e7208e1f8f4e38fb9ef32c4fcafc26a429029459500bde8",
+      "tests/test_core.py": "e878d6dbbb387c15e19b2f76a736f3aeeecae325f80f3526f5b55e2c06eaa880"
+    },
+    "published_commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "published_tree": "342f5271800441d47296fcd0aa0ec78c7d2f2a46"
+  },
+  "change": {
+    "scope": "Use O_PATH for the two directory-opening sites, retaining O_DIRECTORY, O_NOFOLLOW and O_CLOEXEC. Final regular-file opening and content validation remain unchanged.",
+    "regression_cases": [
+      "execute-only selected root",
+      "execute-only root ancestor",
+      "execute-only nested fixture directory",
+      "denied directory search permission",
+      "denied fixture read permission"
+    ],
+    "publication_scope": "Owned-project correctness fix; no external upstream contribution is established."
+  },
+  "cloud_validation": {
+    "platform": "Linux",
+    "python": "3.12.14",
+    "effective_uid": 65534,
+    "permission_evidence": "Actual directory listing and known-file read operations establish the relevant permission denial; tests do not infer enforcement from UID or mode bits alone.",
+    "portable_command_note": "Commands use python3 and repository-relative source paths in place of execution-specific interpreter and checkout paths.",
+    "baseline_new_regressions": {
+      "completed_at": "2026-10-17T20:07:01.158639Z",
+      "implementation_commit": "ac03f31bfb157051d7b0bab366169a69eacd8779",
+      "portable_command": "PYTHONPATH=src python3 -m unittest discover -s tests -v -k execute_only -k permission",
+      "exit_code": 1,
+      "tests_run": 5,
+      "passed": 2,
+      "assertion_failures": 0,
+      "errors": 3,
+      "skipped": 0,
+      "interpretation": "The three execute-only cases raised FILE_ACCESS_ERROR after independent file-read and directory-listing probes. Both access-denial guards passed."
+    },
+    "fixed_full_suite": {
+      "completed_at": "2026-10-17T20:08:12.295254Z",
+      "source_reference": "source.candidate_patch_sha256 and source.changed_files_sha256",
+      "portable_command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+      "exit_code": 0,
+      "tests_run": 36,
+      "passed": 36,
+      "assertion_failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "privileged_permission_probe": {
+      "completed_at": "2026-10-17T20:08:55.376860Z",
+      "effective_uid": 0,
+      "scope": "A separate privileged invocation in which actual permission probes demonstrated bypass.",
+      "portable_command": "PYTHONPATH=src python3 -m unittest discover -s tests -v -k execute_only -k permission",
+      "exit_code": 0,
+      "tests_run": 5,
+      "passed": 0,
+      "assertion_failures": 0,
+      "errors": 0,
+      "skipped": 5,
+      "skip_reason": "Permission restrictions are bypassed in this environment"
+    },
+    "whitespace_check_exit": 0
+  },
+  "independent_review": {
+    "status": "completed",
+    "method": "Separate agent, static review of all six changed files",
+    "scope": "Directory flags, unchanged final-file handling, actual permission probes, cleanup ordering, library and CLI contracts, README, changelog, provenance and Alpha metadata",
+    "concrete_remaining_issues_found": 0,
+    "tests_rerun_by_reviewer": false,
+    "human_learning_or_personal_review_established": false
+  },
+  "pc_validation": {
+    "status": "passed",
+    "platform": "Linux",
+    "python": "3.14.4",
+    "effective_uid": 1000,
+    "source_commit_equivalent": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "source_at_test": "Recorded baseline plus the unchanged candidate patch; patch and all six file hashes matched before testing.",
+    "started_at": "2026-10-17T20:14:46.619722Z",
+    "result_written_at": "2026-10-17T20:14:47.452744Z",
+    "method": "unittest discovery and TextTestRunner with the source directory inherited by CLI subprocesses through PYTHONPATH",
+    "portable_equivalent_command": "PYTHONPATH=src python3 -m unittest discover -s tests -v",
+    "tests_run": 36,
+    "passed": 36,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "whitespace_exit": 0,
+    "initial_harness_correction": "The first runner changed sys.path only, so 13 CLI assertions failed because subprocesses could not import pinned_json. The initial logs were preserved. Exporting PYTHONPATH corrected the runner; no package or test source changed.",
+    "baseline_reproduction": "Before applying the fix, direct file reads succeeded and directory listing was denied for the root, a root ancestor and a nested fixture directory; the library and both CLI operations rejected those cases with FILE_ACCESS_ERROR."
+  },
+  "publication": {
+    "status": "published",
+    "commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "tree": "342f5271800441d47296fcd0aa0ec78c7d2f2a46",
+    "url": "https://github.com/agamal026/pinned-json/commit/93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "method": "Reviewed staged Git tree matched the API-created tree; main advanced with the expected previous SHA and without force."
+  },
+  "hosted_ci": {
+    "id": 39065995086,
+    "url": "https://github.com/agamal026/pinned-json/actions/runs/39065995086",
+    "source_commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "id": 117493675207,
+        "name": "test (3.14)",
+        "url": "https://github.com/agamal026/pinned-json/actions/runs/39065995086/job/117493675207",
+        "started_at": "2026-10-17T20:16:18Z",
+        "completed_at": "2026-10-17T20:16:30Z",
+        "conclusion": "success",
+        "tests_run": 36,
+        "skipped": 0,
+        "permission_tests_passed": 5,
+        "documented_example": "passed",
+        "result_evidence": "job steps and decoded logs inspected"
+      },
+      {
+        "id": 117493675411,
+        "name": "test (3.10)",
+        "url": "https://github.com/agamal026/pinned-json/actions/runs/39065995086/job/117493675411",
+        "started_at": "2026-10-17T20:16:18Z",
+        "completed_at": "2026-10-17T20:16:28Z",
+        "conclusion": "success",
+        "tests_run": 36,
+        "skipped": 0,
+        "permission_tests_passed": 5,
+        "documented_example": "passed",
+        "result_evidence": "job steps and decoded logs inspected"
+      },
+      {
+        "id": 117493675428,
+        "name": "test (3.12)",
+        "url": "https://github.com/agamal026/pinned-json/actions/runs/39065995086/job/117493675428",
+        "started_at": "2026-10-17T20:16:18Z",
+        "completed_at": "2026-10-17T20:16:28Z",
+        "conclusion": "success",
+        "tests_run": 36,
+        "skipped": 0,
+        "permission_tests_passed": 5,
+        "documented_example": "passed",
+        "result_evidence": "job steps and decoded logs inspected"
+      }
+    ],
+    "package_installation": "The workflow ran python -m pip install . before its full suite; the src-layout tests imported the installed package without a PYTHONPATH override."
+  },
+  "release": {
+    "id": 416037812,
+    "tag": "v0.1.1",
+    "url": "https://github.com/agamal026/pinned-json/releases/tag/v0.1.1",
+    "published_at": "2026-10-17T20:19:57Z",
+    "source_commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "prerelease": true,
+    "status": "published_and_download_verified",
+    "actual_tag_commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "download_completed_at": "2026-10-17T20:21:33.594719Z",
+    "download_verification": "All three published assets were downloaded again. Their bytes, lengths and SHA-256 values matched the local build outputs and GitHub asset digests.",
+    "verified_assets": [
+      {
+        "name": "pinned_json-0.1.1-py3-none-any.whl",
+        "size": 8643,
+        "sha256": "a8c88b9d982e6e70ac4f621eed954e9833c06d5ba0e7373fc5f16e8a0c9bee36",
+        "url": "https://github.com/agamal026/pinned-json/releases/download/v0.1.1/pinned_json-0.1.1-py3-none-any.whl"
+      },
+      {
+        "name": "pinned_json-0.1.1.tar.gz",
+        "size": 11148,
+        "sha256": "9bdfd5c87bd9b8b26b5a02ac73c9bd3f96abf1c73970deeaa92e6c323f7485d0",
+        "url": "https://github.com/agamal026/pinned-json/releases/download/v0.1.1/pinned_json-0.1.1.tar.gz"
+      },
+      {
+        "name": "SHA256SUMS",
+        "size": 192,
+        "sha256": "c1fc291e15bcb3e4220fd6f60b5bb47da2776825a4f50c18b9a64b4db55f5739",
+        "url": "https://github.com/agamal026/pinned-json/releases/download/v0.1.1/SHA256SUMS"
+      }
+    ]
+  },
+  "paid_screen": {
+    "result": "The bounded screen did not yield a suitable selectable paid assignment.",
+    "new_assignment_selected": false,
+    "context": "Existing public opportunity notes remain separate dated screening evidence; no new candidate-specific eligibility or payment claim is included here."
+  },
+  "outcomes": {
+    "new_cash_payment_verified": false,
+    "new_subscription_verified": false,
+    "new_compute_credits_verified": false,
+    "new_adoption_verified": false,
+    "new_external_merge_verified": false,
+    "personal_learning_assessed": false
+  },
+  "limits": [
+    "The library supports Linux; hosted CI covered Python 3.10, 3.12 and 3.14.",
+    "Privileged environments can bypass filesystem permissions; explicit test skips are not permission-validation passes. All five permission tests actually passed in the recorded unprivileged and hosted runs.",
+    "Cloud and PC full suites exercised source checkouts. Hosted CI installed the package before its full suite. The separately attached release wheel was built from the attached source distribution, installed in an isolated environment, and checked against the documented exact-byte CLI example.",
+    "Technical work and agent review do not establish personal learning, external acceptance, adoption or financial outcomes."
+  ],
+  "sources": [
+    "https://github.com/agamal026/pinned-json/commit/ac03f31bfb157051d7b0bab366169a69eacd8779",
+    "https://github.com/agamal026/pinned-json/blob/ac03f31bfb157051d7b0bab366169a69eacd8779/src/pinned_json/core.py",
+    "https://github.com/agamal026/pinned-json/blob/ac03f31bfb157051d7b0bab366169a69eacd8779/README.md",
+    "https://github.com/agamal026/pinned-json/blob/ac03f31bfb157051d7b0bab366169a69eacd8779/CONTRIBUTING.md",
+    "https://github.com/agamal026/pinned-json/commit/93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "https://github.com/agamal026/pinned-json/actions/runs/39065995086",
+    "https://github.com/agamal026/pinned-json/releases/tag/v0.1.1",
+    "https://man7.org/linux/man-pages/man2/open.2.html",
+    "https://pip.pypa.io/en/stable/topics/python-option/"
+  ],
+  "initial_cloud_packaging": {
+    "wheel": {
+      "built": true,
+      "installed": true,
+      "installed_version": "0.1.1",
+      "build_command": ".venv/bin/python -m pip install --no-cache-dir --no-index --no-build-isolation --no-deps .",
+      "build_context": "Local virtual environment with available setuptools and wheel; no dependency downloads.",
+      "retained_archive_available": false,
+      "scope": "pip built a temporary wheel and installed it. The temporary archive is no longer retained; this does not verify a future release asset."
+    },
+    "source_distribution": {
+      "built": false,
+      "tested": false,
+      "status": "not_performed_in_initial_cloud_check"
+    },
+    "installed_cli_example": {
+      "completed_at": "2026-10-17T20:10:03.906453Z",
+      "effective_uid": 65534,
+      "verified_package_version": "0.1.1",
+      "root": "examples/demo",
+      "manifest_sha256": "a628ac4a58c386a3e11da73b63a850001f1334fb0e261dae9f203aa76d43a9e3",
+      "verify": {
+        "exit_code": 0,
+        "stdout_bytes": 0,
+        "stderr_bytes": 0
+      },
+      "emit": {
+        "case_id": "demo",
+        "exit_code": 0,
+        "stdout_bytes": 273,
+        "stderr_bytes": 0,
+        "exact_bytes_match": true,
+        "sha256": "5789728c34fc198294db2ec174fe020ecef309118ffa3329aa4685e00fb1522d"
+      },
+      "full_suite_run_against_installed_distribution": false
+    }
+  },
+  "packaging": {
+    "status": "passed",
+    "platform": "Linux",
+    "python": "3.14.4",
+    "effective_uid": 1000,
+    "build_frontend": "build 1.6.1",
+    "source_commit_equivalent": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "started_at": "2026-10-17T20:18:15.522664Z",
+    "completed_at": "2026-10-17T20:18:20.716542Z",
+    "build_method": "python -m build produced the source distribution, then built the wheel from that source distribution.",
+    "environment_setup": "The initial virtual-environment creation stopped because ensurepip was unavailable. Existing pip 26.2.1 then managed isolated environments created with --without-pip through its --python option. No system package installation was required; the initial log remains preserved.",
+    "commands_exit_codes": {
+      "create_build_environment": 0,
+      "install_build_tools": 0,
+      "build_sdist_and_wheel": 0,
+      "create_install_environment": 0,
+      "install_wheel_without_dependencies": 0
+    },
+    "archive_review": "Archive member lists contained only package source, tests, project documentation, license and generated package metadata. Wheel and source-distribution core hashes matched the reviewed source; the source-distribution test hash also matched.",
+    "wheel_built_from_sdist": true,
+    "installed_version": "0.1.1",
+    "installed_core_sha256": "aed8713f7f953f089e7208e1f8f4e38fb9ef32c4fcafc26a429029459500bde8",
+    "installed_cli_example": {
+      "manifest_sha256": "a628ac4a58c386a3e11da73b63a850001f1334fb0e261dae9f203aa76d43a9e3",
+      "verify_exit": 0,
+      "verify_stdout_bytes": 0,
+      "verify_stderr_bytes": 0,
+      "emit_exit": 0,
+      "emit_stderr_bytes": 0,
+      "emitted_bytes": 273,
+      "emitted_sha256": "5789728c34fc198294db2ec174fe020ecef309118ffa3329aa4685e00fb1522d",
+      "exact_original_bytes": true
+    },
+    "full_suite_against_installed_distribution": false
+  },
+  "pc_checkout_sync": {
+    "status": "completed",
+    "branch": "main",
+    "commit": "93b9c46a324097a0cc43f16cbf31e16269e8139d",
+    "clean": true,
+    "completed_at": "2026-10-17T20:20:30.438962Z",
+    "method": "Clean canonical checkout advanced by fast-forward after fetching the expected published main."
+  },
+  "upstream_observation": {
+    "observed_at": "2026-10-17T20:01:04Z",
+    "tool_source_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
+    "snapshot_sha256": "4777a8ee8c0d3e363b7f7cc214042eb63d1072ac22714cd2fb48d5995c0095cb",
+    "records": 6,
+    "check_contexts": 70,
+    "comparison": "All six complete PR observations matched the previous snapshot; only observed_at changed.",
+    "previous_observed_at": "2026-10-17T18:22:53Z",
+    "refresh_exit": 0,
+    "validation_exit": 0,
+    "source_record": "data/snapshot-source.json"
+  },
+  "hub_validation": {
+    "base_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
+    "python": "3.12.14",
+    "completed_at": "2026-10-17T20:24:47.868509+00:00",
+    "tests_run": 51,
+    "tests_result": "passed",
+    "commands": [
+      {
+        "name": "tests",
+        "exit": 0
+      },
+      {
+        "name": "catalog",
+        "exit": 0
+      },
+      {
+        "name": "status",
+        "exit": 0
+      },
+      {
+        "name": "whitespace",
+        "exit": 0
+      }
+    ],
+    "snapshot_provenance_consistent": true,
+    "scope": "Required CONTRIBUTING checks completed before publication. This receipt-only result was then added; no tool source or generated inputs changed."
+  }
+}

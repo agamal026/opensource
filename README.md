@@ -71,7 +71,7 @@ and unavailable checkouts. Keep the configuration local.
 
 | Project | Released work | Validation evidence |
 | --- | --- | --- |
-| [pinned-json](https://github.com/agamal026/pinned-json) | [v0.1.0 alpha prerelease](https://github.com/agamal026/pinned-json/releases/tag/v0.1.0): offline exact-byte JSON fixtures with a separately trusted manifest pin. Python 3.10+ on Linux. | [31 offline tests and the documented example](https://github.com/agamal026/pinned-json/actions/runs/38886522956), Python 3.10/3.12/3.14. |
+| [pinned-json](https://github.com/agamal026/pinned-json) | [v0.1.1 alpha prerelease](https://github.com/agamal026/pinned-json/releases/tag/v0.1.1): offline exact-byte JSON fixtures; fixes traversal through directories without listing permission. Python 3.10+ on Linux. | [36 offline tests and the documented example](https://github.com/agamal026/pinned-json/actions/runs/39065995086), Python 3.10/3.12/3.14. |
 | [raydium-cpmm-arb-monitor](https://github.com/agamal026/raydium-cpmm-arb-monitor) | [v0.1.1](https://github.com/agamal026/raydium-cpmm-arb-monitor/releases/tag/v0.1.1): read-only CPMM pool monitoring; fixes response-body timeouts. Node 22+. | [11 offline tests](https://github.com/agamal026/raydium-cpmm-arb-monitor/actions/runs/38885587743), Node 22/24 on Linux and Windows. |
 
 These projects retain their own source repositories and MIT licenses. The monitor
