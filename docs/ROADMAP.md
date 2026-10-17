@@ -25,6 +25,7 @@ in [progress](../progress/) at the start of every resumed session.
 | 1 | Investigate a paid issue with current sponsor evidence that is unassigned or explicitly selectable. | Current sponsor offer, assignment availability, acceptance/payment terms, a reproduction, and a scoped implementation opportunity. |
 | 1 | Resolve real issues or concrete feedback on owned tools. | Reproduction, focused regression, review, relevant CI, and a release containing the fix when appropriate. |
 | 1 | Complete personal review of prepared libavif #2428. | Contributor review of exact parser, fixture, tests, and PR text; refreshed source/upstream preflight before submission. |
+| 1 | Resolve the prepared H2 #4456 contribution's remaining gates. | [Exact source and completed Java 11/17 CI evidence](../progress/2026-10-17-h2-final-ci-checkpoint.md), truthful contributor statement, and disposition of the documented docs/non-CI limits. Park personal/access dependencies while advancing useful unblocked work. |
 | 2 | Respond to substantive feedback on the five open upstream PRs. | Actual review request and validation of the resulting change; respect workflow admission and maintainer timing. |
 | 2 | Support libzip Windows/CI work when needed. | Requested diagnosis or change, reproducible result, and maintainer disposition. |
 | 2 | Pursue a fitting subscription or credit program for an actual project need. | Verified current criteria and project fit; record application, grant, and activated access separately. |

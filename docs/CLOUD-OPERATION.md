@@ -140,13 +140,20 @@ the relevant supported write capability; a successful owned-repository push
 does not establish it.
 
 The [H2 review draft](https://github.com/agamal026/h2database/pull/1) is in the
-contributor's fork and receives no external-submission credit. Its complete
-[evidence checkpoint](https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md)
-is on `review/4456-evidence`. Recover the source commit and these text artifacts
-from GitHub. Focused checks and automated review are complete; the final full
-upstream suite, remaining build/documentation gates, and truthful contributor
-statement remain unresolved. Keep this prepared work parked if a personal or
-access dependency blocks it, and advance the next useful unblocked task.
+contributor's fork and receives no external-submission credit. Recover the exact
+source, the unchanged [initial evidence](https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md),
+and the [completed CI/documentation follow-up](https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md)
+from GitHub. The complete upstream CI-selected suite passed on Java 11 and 17 in
+[run 39073428774](https://github.com/agamal026/h2database/actions/runs/39073428774),
+at the unchanged source commit `9d7a0ad`. Its five unexecuted classes and the
+Java 11 background memory diagnostic remain explicit. The latter did not fail
+the job; its exact cause is unresolved and the inspected exact-base log lacks
+it. Final `jar docs` still fails at a formatting finding in a byte-identical
+upstream file. The non-CI and full documentation/release limits, plus the
+truthful contributor statement, remain unresolved. Do not rerun the unchanged
+successful CI matrix simply to recover its result. Keep this prepared work
+parked if a personal or access dependency blocks it, and advance the next useful
+unblocked task using the [latest screening exclusions](CANDIDATE-SCREENING-2026-10-17.md).
 
 Read access does not establish write access. When an action is forbidden,
 preserve the tested patch or draft, record the blocked operation, and continue
@@ -161,13 +168,21 @@ the expected previous commit.
 
 The hosted task **Advance open-source contributions** was created and read back
 as **enabled** at **2026-10-17T21:12:24Z**. It starts on **2026-10-18** and runs
-daily in **Europe/Vienna**, with flexible scheduling around **08:00**. Its saved
+daily at **08:00 Europe/Vienna**. Its saved
 prompt matches [the published continuation prompt](CONTINUATION-PROMPT.md).
 The two existing project-tracker tasks were preserved. No scheduled execution
 of this new task has occurred yet; check native run history for actual outcomes.
 After editing a task, read back both its prompt and cadence and verify the
 intended daily schedule. Updating instructions alone is not evidence that the
 schedule remained unchanged.
+
+The final read-back at **2026-10-17T22:45:21Z** independently confirmed the
+enabled daily schedule, unchanged published prompt and no execution yet. An
+earlier final check had found an hourly cadence; the intended daily schedule
+was restored and read back. The cause of that later cadence change is not
+established. The two other tasks remained unchanged. Keep this observation in
+the first-run review instead of assuming that an earlier schedule check proves
+all later state.
 
 The prompt reads current repository instructions, advances the strongest
 unblocked contribution, and publishes evidence and the next action. Notify for

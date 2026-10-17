@@ -61,7 +61,7 @@
       "repository": "h2database/h2database",
       "batch": 1,
       "summary": "Investigate #4456: adding a VARCHAR index changes the result of a numeric comparison with a parameter array.",
-      "next_action": "Recover the published four-file fix and review evidence from agamal026/h2database; focused tests and automated review passed. Before an upstream PR, resolve the incomplete final full suite and build/documentation gates plus the truthful contributor statement. The draft in the contributor fork is not an upstream submission. Park while a personal/access dependency blocks progress; no issue-specific cash offer is verified.",
+      "next_action": "Recover source 9d7a0ad and the immutable initial and supplemental evidence from agamal026/h2database. The complete upstream CI-selected suite passed on Java 11 and 17. Preserve the unresolved Java 11 background memory diagnostic, failed documentation gate on an unchanged baseline file, and incomplete non-CI validation. Resolve the truthful contributor statement and remaining required validation before an upstream PR. The contributor-fork draft is not an upstream submission. Park for a personal/access dependency and advance useful unblocked work; no issue-specific cash offer is verified.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -118,14 +118,17 @@
           "date": "2026-10-17",
           "refs": [
             "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#what-actually-passed",
-            "https://github.com/agamal026/h2database/pull/1"
+            "https://github.com/agamal026/h2database/pull/1",
+            "https://github.com/agamal026/h2database/actions/runs/39073428774",
+            "https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md",
+            "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/receipts/final-verification-commands.json"
           ],
           "source_commit": "9d7a0ad26f8a53654e0ce106a80f702ae5840a28",
           "source_ref": "https://github.com/agamal026/h2database/commit/9d7a0ad26f8a53654e0ce106a80f702ae5840a28",
           "validation": {
-            "command": "java -ea -Xmx128m -cp \"$H2_PROOF/classes:$H2_SOURCE/h2/temp:$H2_SOURCE/h2/ext/*\" RunSelectedH2Tests org.h2.test.jdbc.TestPreparedStatement org.h2.test.db.TestIndex org.h2.test.db.TestCompoundIndexSearch org.h2.test.db.TestCompoundIndexParamSearch org.h2.test.db.TestOptimizations",
+            "command": "./build.sh jar testCI",
             "result": "passed",
-            "ref": "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/receipts/final-verification-commands.json"
+            "ref": "https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/hosted-ci/receipt.json"
           },
           "review_ref": "https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md#status-and-exact-source"
         }

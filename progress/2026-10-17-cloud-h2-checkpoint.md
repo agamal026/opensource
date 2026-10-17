@@ -1,5 +1,10 @@
 # 2026-10-17 — Cloud continuation, delivered follow-ups and H2 review
 
+**Later result:** the [final CI checkpoint](2026-10-17-h2-final-ci-checkpoint.md)
+records successful Java 11/17 CI, the retained diagnostic, the documentation
+failure and the published supplemental evidence. This entry preserves the
+earlier observations, including the run while it was still in progress.
+
 ## Result and accounting
 
 Cloud development and owned-repository publication are working. The campaign

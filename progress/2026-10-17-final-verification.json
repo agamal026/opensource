@@ -1,0 +1,219 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-17T22:46:17.803103+00:00",
+  "base_hub_commit": "afa0dbaf3ffb1cfb0d7861817b47fbff8e6ebc6b",
+  "python_version": "3.12.14",
+  "scope": "Required offline hub validation for the final campaign/data/documentation checkpoint; no implementation changes or new tests. Hosted checks of the new commit must be read separately.",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_at": "2026-10-17T22:46:16.965607+00:00",
+      "finished_at": "2026-10-17T22:46:17.574636+00:00",
+      "duration_seconds": 0.609,
+      "exit_code": 0,
+      "output_sha256": "f6ea1ce9a0dccf6297d722d5e745d780b68b29bc6a2323ffee9e67923373eebd",
+      "summary": [
+        "----------------------------------------------------------------------",
+        "Ran 81 tests in 0.521s",
+        "",
+        "OK"
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "validate"
+      ],
+      "started_at": "2026-10-17T22:46:17.574760+00:00",
+      "finished_at": "2026-10-17T22:46:17.618594+00:00",
+      "duration_seconds": 0.044,
+      "exit_code": 0,
+      "output_sha256": "80f3e621d982644aa95f91098574c32c8318b2c04d3a22e1c18c001be8ea70f8",
+      "summary": [
+        "Valid: 2 projects, 6 pull requests, 2 candidates"
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "render",
+        "--output",
+        "progress/STATUS.md",
+        "--check"
+      ],
+      "started_at": "2026-10-17T22:46:17.618660+00:00",
+      "finished_at": "2026-10-17T22:46:17.663817+00:00",
+      "duration_seconds": 0.045,
+      "exit_code": 0,
+      "output_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508",
+      "summary": [
+        "Up to date: progress/STATUS.md"
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "validate",
+        "--input",
+        "data/campaign.json"
+      ],
+      "started_at": "2026-10-17T22:46:17.663883+00:00",
+      "finished_at": "2026-10-17T22:46:17.722595+00:00",
+      "duration_seconds": 0.059,
+      "exit_code": 0,
+      "output_sha256": "3cd7c62b5c046d546fa051b56c9e94bcc3dee184f36914db8412e08620071560",
+      "summary": [
+        "Campaign is valid: 100 targets; 0 / 100 qualified submitted repositories."
+      ]
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "report",
+        "--input",
+        "data/campaign.json",
+        "--output",
+        "progress/CAMPAIGN.md",
+        "--check"
+      ],
+      "started_at": "2026-10-17T22:46:17.722658+00:00",
+      "finished_at": "2026-10-17T22:46:17.788528+00:00",
+      "duration_seconds": 0.066,
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": []
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_at": "2026-10-17T22:46:17.788615+00:00",
+      "finished_at": "2026-10-17T22:46:17.794534+00:00",
+      "duration_seconds": 0.006,
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": []
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "started_at": "2026-10-17T22:47:35.014649+00:00",
+      "finished_at": "2026-10-17T22:47:35.019065+00:00",
+      "duration_seconds": 0.004,
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "summary": []
+    }
+  ],
+  "tested_files": [
+    {
+      "path": "data/campaign.json",
+      "bytes": 131468,
+      "sha256": "4469c8255bfb6957d7a36657391377f5b673ef60fc8421d9172190e904c4bd2b"
+    },
+    {
+      "path": "docs/CLOUD-OPERATION.md",
+      "bytes": 12825,
+      "sha256": "17c4cf8bfdfeba78365eb5590801c6484451f1e422141c82ffd9fc3d02de476a"
+    },
+    {
+      "path": "docs/OPPORTUNITIES.md",
+      "bytes": 10150,
+      "sha256": "bd1beafde7e096406e2285e44aa8aa71bafa3adc4fc01d6b54163a31cadb9f25"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "bytes": 4068,
+      "sha256": "ee07a0a1ab457f632e8ed605affca0450d83ca65b833440138ca8672dc03105a"
+    },
+    {
+      "path": "docs/CANDIDATE-SCREENING-2026-10-17.md",
+      "bytes": 5798,
+      "sha256": "c4b90410c1bc3d52b1964ed97e6e5ec314ae6dc2573eb95ce9bb9f242367b6bf"
+    },
+    {
+      "path": "progress/CAMPAIGN.md",
+      "bytes": 108049,
+      "sha256": "170d868f64848fc139bfb8b981738baa77c16828028fda34e7745ac37570ac7b"
+    },
+    {
+      "path": "progress/2026-10-17-cloud-h2-checkpoint.md",
+      "bytes": 10337,
+      "sha256": "59ab2db2e86e8d4a919d3da15d58034a696b27aad331057f785c4f2d36ee89db"
+    },
+    {
+      "path": "progress/2026-10-17-h2-final-ci-checkpoint.md",
+      "bytes": 8570,
+      "sha256": "38cbf896bbdd13ef549eccc78c9df7524c6c6aa754af97efdc284a9190a36671"
+    }
+  ],
+  "unchanged_tool_and_test_files": [
+    {
+      "path": "tools/oss_status.py",
+      "sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e"
+    },
+    {
+      "path": "tools/workspace_snapshot.py",
+      "sha256": "f2db6b7be73088d19559e5f038c5afbd145bf4df92c37934bbc98b5f1bbc3460"
+    },
+    {
+      "path": "tools/contribution_campaign.py",
+      "sha256": "a21ca577663029ae7ca4f4afb1b3123188677f7863a86d432bea6c3412f76da4"
+    },
+    {
+      "path": "tests/test_contribution_campaign.py",
+      "sha256": "521febaab5045a3349af87083c66e308e4a1d22193c9dc0bf23720a25d3eeba1"
+    }
+  ],
+  "continuation_readback": {
+    "verified_at": "2026-10-17 22:45:21 UTC",
+    "title": "Advance open-source contributions",
+    "is_enabled": true,
+    "schedule": "BEGIN:VEVENT\nDTSTART;TZID=Europe/Vienna:20261018T080000\nRRULE:FREQ=DAILY;BYHOUR=8;BYMINUTE=0;BYSECOND=0\nEND:VEVENT",
+    "timing_mode": "exact_schedule",
+    "last_run_time": null,
+    "prompt_matches_published_file": true,
+    "other_tasks_unchanged": true,
+    "correction": "A final read found an hourly cadence with the unchanged continuation prompt. Restored the intended daily schedule and independently read back schedule, prompt and enabled state. No execution had occurred. The cause of the later cadence change is not established."
+  },
+  "evidence_publication": {
+    "source_commit": "9d7a0ad26f8a53654e0ce106a80f702ae5840a28",
+    "supplement_commit": "f190120801a23792717d6a2f0690b61398a5bafc",
+    "supplement_tree": "01e007eba7a8a776ae4b564d04dca9d83c8fc443",
+    "parent": "0feb07c57de0641cda13ad69de24ecf88fc4c917",
+    "remote_ref_tree_parent_verified": true,
+    "source_branch_unchanged": true,
+    "draft_pr": "https://github.com/agamal026/h2database/pull/1",
+    "draft_pr_body_readback": true,
+    "draft_pr_updated_at": "2026-10-17T22:39:57Z"
+  },
+  "complete_review_archive": {
+    "bytes": 203483,
+    "sha256": "8cb6378143b7b6f4f881cf816fc6012eaf6e320f4288c4d633a43f284c9442a3",
+    "zip_entries": 67,
+    "payload_files": 65,
+    "original_files_unchanged": 49,
+    "supplemental_files": 15,
+    "integrity": "passed",
+    "initial_evidence_commit": "0feb07c57de0641cda13ad69de24ecf88fc4c917",
+    "supplemental_evidence_commit": "f190120801a23792717d6a2f0690b61398a5bafc"
+  }
+}

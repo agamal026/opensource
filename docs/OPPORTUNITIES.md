@@ -6,6 +6,12 @@
 scoped eligibility, applications and outcomes separately. Recheck current terms
 and assignment availability before acting.
 
+The [late October 17 screening](CANDIDATE-SCREENING-2026-10-17.md) selected no
+new paid or Java/backend task. It records claimed, crowded, closed and
+incompatible leads so future runs can start with a different suitable issue.
+The [H2 final CI checkpoint](../progress/2026-10-17-h2-final-ci-checkpoint.md)
+preserves the prepared contribution and its remaining personal/technical gates.
+
 ## Cash opportunities
 
 | Opportunity | Advertised benefit | Current assessment and next action |
