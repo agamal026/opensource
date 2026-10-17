@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/agamal026/opensource",
+  "validated_source_commit": "326875639e2da6aa22835dec92b2a6e752f4dab8",
+  "validated_source_tree": "e7d589a14239986623e548265464b5c92b15f6b3",
+  "source_files_sha256": {
+    "tools/oss_status.py": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
+    "tools/workspace_snapshot.py": "8c0252ea63966c1b8e9a276de72d8fa9626b5a0cebc0eba9df57c848747f7b94"
+  },
+  "local_verification": {
+    "started_at": "2026-10-17T18:22:48Z",
+    "completed_at": "2026-10-17T18:22:53Z",
+    "platform": "Linux",
+    "python": "3.14.4",
+    "github_cli": "2.46.0",
+    "offline_tests": {"total": 48, "passed": 48, "skipped": 0, "failed": 0},
+    "successful_commands": [
+      "python3 -m unittest discover -s tests -v",
+      "python3 tools/oss_status.py validate",
+      "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+      "python3 tools/workspace_snapshot.py --config .local/workspaces.json --output .local/workspace-state.json",
+      "python3 tools/oss_status.py refresh",
+      "python3 tools/oss_status.py validate --snapshot .local/github.json",
+      "python3 tools/oss_status.py render --snapshot .local/github.json --output .local/STATUS.md"
+    ],
+    "git_worktree_clean_after_validation": true,
+    "workspace_snapshot_complete": true,
+    "workspace_count": 6,
+    "workspace_mapping_published": false
+  },
+  "live_refresh": {
+    "observed_at": "2026-10-17T18:22:53Z",
+    "snapshot_sha256": "f12d73c664b05fed255ca4acb0374212d291864e8ead8c82fb7548a8d60f2756",
+    "pull_requests": 6,
+    "check_contexts": 70,
+    "provenance_file": "data/snapshot-source.json",
+    "comparison_with_initial_snapshot": "PR metadata and checks were unchanged. GitHub reported APPROVED for libavif-3350 and REVIEW_REQUIRED for libevent-1916, nginx-1734 and npm-9954."
+  },
+  "hosted_ci": {
+    "run_id": 39057163883,
+    "url": "https://github.com/agamal026/opensource/actions/runs/39057163883",
+    "head_sha": "326875639e2da6aa22835dec92b2a6e752f4dab8",
+    "conclusion": "success",
+    "jobs": [
+      {"name": "Python 3.10 on ubuntu-latest", "job_id": 117467382694, "conclusion": "success", "tests_passed": 48, "tests_skipped": 0},
+      {"name": "Python 3.12 on ubuntu-latest", "job_id": 117467382965, "conclusion": "success", "tests_passed": 48, "tests_skipped": 0},
+      {"name": "Python 3.14 on ubuntu-latest", "job_id": 117467382885, "conclusion": "success", "tests_passed": 48, "tests_skipped": 0},
+      {"name": "Python 3.12 on windows-latest", "job_id": 117467382873, "conclusion": "success", "tests_passed": 46, "tests_skipped": 2}
+    ],
+    "windows_skip_reasons": ["Windows filenames cannot contain newline characters.", "The fsmonitor execution proof uses a POSIX shell hook."],
+    "all_jobs_validated_records_and_generated_report": true
+  },
+  "scope": "This receipt verifies the workbench tools and selected public records. The existing libavif patch's retained evidence was checked separately; its historical upstream tests were not rerun by this workbench validation."
+}

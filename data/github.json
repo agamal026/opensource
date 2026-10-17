@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-17T18:07:06Z",
+  "observed_at": "2026-10-17T18:22:53Z",
   "pull_requests": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -305,7 +305,7 @@
       "merged_at": "2026-09-09T23:21:10Z",
       "number": 3350,
       "repository": "AOMediaCodec/libavif",
-      "review_decision": "",
+      "review_decision": "APPROVED",
       "state": "MERGED",
       "title": "Keep codec option updates atomic on allocation failure",
       "updated_at": "2026-09-09T23:21:10Z",
@@ -518,7 +518,7 @@
       "merged_at": null,
       "number": 1916,
       "repository": "libevent/libevent",
-      "review_decision": "",
+      "review_decision": "REVIEW_REQUIRED",
       "state": "OPEN",
       "title": "Replace the bundled ARC4 RNG with operating-system randomness",
       "updated_at": "2026-10-15T13:13:47Z",
@@ -564,7 +564,7 @@
       "merged_at": null,
       "number": 1734,
       "repository": "nginx/nginx",
-      "review_decision": "",
+      "review_decision": "REVIEW_REQUIRED",
       "state": "OPEN",
       "title": "Core: add a total client request body timeout.",
       "updated_at": "2026-10-15T12:33:23Z",
@@ -579,7 +579,7 @@
       "merged_at": null,
       "number": 9954,
       "repository": "npm/cli",
-      "review_decision": "",
+      "review_decision": "REVIEW_REQUIRED",
       "state": "OPEN",
       "title": "feat(arborist): warn on incomplete lockfile provenance",
       "updated_at": "2026-10-15T14:24:47Z",

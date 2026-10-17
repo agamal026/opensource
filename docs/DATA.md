@@ -32,6 +32,26 @@ Refreshes are transactional across registered PRs. A failure preserves the prior
 output, so a partial refresh is never published as complete. A committed snapshot
 can become stale; its timestamp remains visible in the generated report.
 
+## Snapshot provenance: `data/snapshot-source.json`
+
+This companion record describes the exact bytes currently in `data/github.json`.
+When promoting a reviewed snapshot, update both files in the same change. Record
+the observation time, snapshot SHA-256, collection method, tool source revision,
+runtime versions, and the relevant collection scope or limits. Link separate
+validation evidence when available. The source revision identifies the code that
+ran; it need not be the later commit that publishes its output.
+
+`oss_status.py refresh` writes the snapshot only. Its schema validator checks the
+catalog and snapshot, not this provenance record, so review the companion for
+consistency before publication. Preserve historical source claims in Git and use
+commit-specific links when describing an earlier observation. A current-file
+link can change as new snapshots are promoted.
+
+Keep unavailable fields distinct from observed values. The first REST observation
+could not supply `review_decision`; a later GraphQL observation supplied some of
+those values. This additional source coverage does not establish that the review
+decisions themselves changed between collection times.
+
 ## Reports and checkpoints
 
 Generate `progress/STATUS.md` with `tools/oss_status.py render`. Validate it with

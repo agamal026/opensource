@@ -51,15 +51,33 @@ upstream discussion if new feedback needs action; the snapshot contains no
 comment bodies.
 
 The refresh writes only after every registered PR is retrieved and validated.
-A failed query leaves the previous output file intact. Empty or unknown checks
-must not be described as passed. The tool reports the rollup returned by GitHub
-CLI; this does not prove that every possible workflow or platform ran.
+A failed query leaves the previous output file intact. It traverses check-context
+pages and rejects changed PR metadata, inconsistent counts, repeated checks or
+cursors, and incomplete pagination. It aborts above 10,000 contexts instead of
+truncating them. Empty or unknown checks must not be described as passed. The
+returned rollup does not prove that every possible workflow or platform ran.
 
-After reviewing the candidate, promote those exact bytes and regenerate:
+After reviewing the candidate, promote those exact bytes:
 
 ```sh
 python3 -c 'from pathlib import Path; Path("data/github.json").write_bytes(Path(".local/github.json").read_bytes())'
+```
+
+Update `data/snapshot-source.json` in the same change. Record the promoted
+snapshot's `observed_at` and SHA-256, the actual collection method, tool source
+revision and runtime versions, and any collection limits or unavailable fields.
+Keep those facts tied to the run that produced the promoted bytes. A refresh
+changes the snapshot only; it does not update its companion provenance. Do not
+leave REST collection claims attached to a snapshot produced by GraphQL.
+
+Preserve earlier observations and provenance through commit-specific links in
+the dated progress log. See [the data conventions](DATA.md) for the distinction
+between the current snapshot and historical evidence. Then regenerate and check:
+
+```sh
+python3 tools/oss_status.py validate
 python3 tools/oss_status.py render --output progress/STATUS.md
+python3 tools/oss_status.py render --output progress/STATUS.md --check
 ```
 
 The refresh uses [`gh api graphql`](https://cli.github.com/manual/gh_api) with

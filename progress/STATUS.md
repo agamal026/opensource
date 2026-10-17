@@ -1,6 +1,6 @@
 # Open-source progress
 
-Observed at: 2026-10-17T18:07:06Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-17T18:22:53Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
@@ -16,12 +16,12 @@ Check results describe only the rollup returned by GitHub for each recorded head
 
 | Pull request | State | Returned checks | Review decision | Updated (UTC) |
 | --- | --- | --- | --- | --- |
-| [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | not reported | 2026-09-09T23:21:10Z |
+| [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | approved | 2026-09-09T23:21:10Z |
 | [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-13T19:43:27Z |
-| [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | not reported | 2026-10-15T13:13:47Z |
-| [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | not reported | 2026-10-15T12:33:23Z |
+| [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
+| [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | review required | 2026-10-15T12:33:23Z |
 | [nih\-at/libzip \#576](<https://github.com/nih-at/libzip/pull/576>) | open | 1 passed | not reported | 2026-10-13T18:42:17Z |
-| [npm/cli \#9954](<https://github.com/npm/cli/pull/9954>) | open | unknown (no checks returned) | not reported | 2026-10-15T14:24:47Z |
+| [npm/cli \#9954](<https://github.com/npm/cli/pull/9954>) | open | unknown (no checks returned) | review required | 2026-10-15T14:24:47Z |
 
 ### AOMediaCodec/libavif #3350: Keep codec option updates atomic on allocation failure
 
