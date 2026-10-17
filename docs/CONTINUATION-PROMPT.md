@@ -3,6 +3,9 @@
 The native task uses the following instructions. Cadence belongs in its schedule,
 not in a loop inside this prompt.
 
+The user confirmed **hourly contributions** on October 18, 2026, Vienna time.
+Older dated entries describe earlier daily scheduling decisions.
+
 ---
 
 Continue my ongoing goal to submit useful, proven contributions to 100 distinct
@@ -11,6 +14,10 @@ financial or subscription benefits, and improve reusable skills and workflows.
 Use GPT's cloud execution environment and my connected GitHub account as the
 default. Do not require my PC when the source and evidence are already available
 in connected repositories.
+
+Keep my explicitly confirmed hourly contribution schedule. Earlier daily
+scheduling notes are historical and do not authorize changing it back. Use the
+native task's current schedule; do not install another timer or duplicate worker.
 
 Start from https://github.com/agamal026/opensource. Read the current AGENTS.md,
 GOAL.md, docs/CLOUD-OPERATION.md, data/campaign.json, progress/CAMPAIGN.md,
@@ -32,6 +39,12 @@ implementation and one necessary owned-tool improvement active. Timebox crowded
 unpaid proposal investigations to 30 minutes; park those without a distinct
 supported contribution. Prioritize finished upstream work over more tracker
 features. Use independent agent review when it adds useful scrutiny.
+
+Keep scheduled sessions bounded and leave a durable checkpoint before the next
+hourly run. If another session is visibly advancing the selected implementation,
+use read-only follow-through or a separate necessary task instead of editing the
+same branch concurrently. Reuse recorded successful checks for unchanged source;
+new review feedback or a concrete remaining risk should justify further runs.
 
 Reproduce the failure, implement a focused fix, run meaningful before/after and
 required upstream tests, and preserve the exact source revision and limitations.
@@ -58,11 +71,18 @@ on branch fix/4456-any-parameter-types. Recover this work and the latest linked
 review evidence from GitHub before implementing it again. The contributor-side
 draft is https://github.com/agamal026/h2database/pull/1. Evidence is at
 https://github.com/agamal026/h2database/blob/0feb07c57de0641cda13ad69de24ecf88fc4c917/contribution-review/4456/README.md
-on branch review/4456-evidence. Focused tests and automated review passed;
-complete final-patch upstream CI, remaining build/documentation gates and a
-truthful contributor statement are still needed. These dated facts are recovery
-anchors: use current canonical state and the latest checkpoint to decide what
-remains. A published fork or contributor-side review PR is not an upstream PR.
+on branch review/4456-evidence. Focused tests and automated review passed. The
+complete upstream CI-selected suite on the exact final source also passed Java
+11 and Java 17 in https://github.com/agamal026/h2database/actions/runs/39073428774.
+The immutable supplement is
+https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md.
+It retains the unresolved Java 11 background memory diagnostic, five unexecuted
+classes, and the failed documentation command at an unchanged baseline file.
+Other non-CI limits and the truthful contributor statement remain pending. Keep
+the prepared H2 work parked while personal/access dependencies block it and
+advance a useful unblocked contribution. These dated facts are recovery anchors:
+use current canonical state and the latest checkpoint to decide what remains.
+A published fork or contributor-side review PR is not an upstream PR.
 
 Owned branch publication works, but external write access and future fork
 creation remain separate capabilities. Respect any remaining access block; do

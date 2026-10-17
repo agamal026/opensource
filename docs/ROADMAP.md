@@ -46,7 +46,7 @@ Maintain original projects in their canonical repositories with supported-runtim
 CI and focused release notes. Record external use only when directly observed.
 Ownership and CI passes do not establish upstream responsibility or adoption.
 
-Hosted continuation is configured through the daily task documented in
+Hosted continuation is configured through the hourly task documented in
 [cloud operation](CLOUD-OPERATION.md#schedule-and-notifications). Read its actual
 run history to verify execution. Private funding work stays in its original
 workspace with its existing authorization and evidence rules.

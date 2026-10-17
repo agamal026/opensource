@@ -166,23 +166,24 @@ the expected previous commit.
 
 ## Schedule and notifications
 
-The hosted task **Advance open-source contributions** was created and read back
-as **enabled** at **2026-10-17T21:12:24Z**. It starts on **2026-10-18** and runs
-daily at **08:00 Europe/Vienna**. Its saved
-prompt matches [the published continuation prompt](CONTINUATION-PROMPT.md).
-The two existing project-tracker tasks were preserved. No scheduled execution
-of this new task has occurred yet; check native run history for actual outcomes.
-After editing a task, read back both its prompt and cadence and verify the
-intended daily schedule. Updating instructions alone is not evidence that the
-schedule remained unchanged.
+The user explicitly confirmed **hourly contributions** on **October 18, 2026,
+at 01:08 Europe/Vienna**. The existing **Advance open-source contributions** task
+was already enabled with `FREQ=HOURLY;INTERVAL=1;BYMINUTE=0` when read after that
+request. Keep this hourly cadence. Earlier dated progress describes previous
+daily-schedule decisions; it does not authorize restoring them.
 
-The final read-back at **2026-10-17T22:45:21Z** independently confirmed the
-enabled daily schedule, unchanged published prompt and no execution yet. An
-earlier final check had found an hourly cadence; the intended daily schedule
-was restored and read back. The cause of that later cadence change is not
-established. The two other tasks remained unchanged. Keep this observation in
-the first-run review instead of assuming that an earlier schedule check proves
-all later state.
+The saved instructions match [the continuation prompt](CONTINUATION-PROMPT.md).
+Preserve the two other project-tracker tasks. After any authorized task edit,
+read back both the instructions and the hourly cadence. Check native run history
+for actual execution; an enabled schedule alone does not establish completed
+work. No execution had occurred when the hourly preference was confirmed.
+
+Keep each scheduled work session bounded and publish a useful checkpoint before
+the next run. If another session is visibly advancing the same implementation,
+use read-only follow-through or a separate necessary task instead of editing its
+branch concurrently. Reuse successful checks of unchanged source. Further tests
+or comments need new evidence, substantive feedback, or a concrete remaining
+risk. Inspect the first executions to confirm recovery and tool availability.
 
 The prompt reads current repository instructions, advances the strongest
 unblocked contribution, and publishes evidence and the next action. Notify for

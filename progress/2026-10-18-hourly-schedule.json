@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "user_confirmation_local": "2026-10-18T01:08:19+02:00",
+  "verified_at": "2026-10-17 23:15:41 UTC",
+  "title": "Advance open-source contributions",
+  "is_enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261017T231353Z\nRRULE:FREQ=HOURLY;INTERVAL=1;BYMINUTE=0\nEND:VEVENT",
+  "default_timezone": "Europe/Vienna",
+  "last_run_time": null,
+  "prompt_matches_published_file": true,
+  "other_tasks_unchanged": true,
+  "scope": "The user explicitly confirmed hourly contributions. The task was already hourly; its hourly recurrence was retained while continuation instructions were updated. Earlier daily-schedule records remain historical.",
+  "hub_validation": {
+    "checked_at": "2026-10-17T23:16:45.646940+00:00",
+    "base_commit": "9a5e452888ecdbef5d51a661321ff9f766d2af20",
+    "scope": "Required hub checks; source/tools/campaign data unchanged by this schedule and prose update.",
+    "commands": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "----------------------------------------------------------------------",
+          "Ran 81 tests in 0.492s",
+          "",
+          "OK"
+        ]
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "validate"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "Valid: 2 projects, 6 pull requests, 2 candidates"
+        ]
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "render",
+          "--output",
+          "progress/STATUS.md",
+          "--check"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "Up to date: progress/STATUS.md"
+        ]
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "validate",
+          "--input",
+          "data/campaign.json"
+        ],
+        "exit_code": 0,
+        "summary": [
+          "Campaign is valid: 100 targets; 0 / 100 qualified submitted repositories."
+        ]
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "report",
+          "--input",
+          "data/campaign.json",
+          "--output",
+          "progress/CAMPAIGN.md",
+          "--check"
+        ],
+        "exit_code": 0,
+        "summary": []
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "summary": []
+      }
+    ]
+  }
+}
