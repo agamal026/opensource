@@ -1,6 +1,6 @@
 # Contribution campaign
 
-Started: 2026-10-17. Records reviewed through: 2026-10-17.
+Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
 **Goal progress: 0 / 100 distinct external repositories with qualified campaign submissions.**
 
@@ -14,10 +14,10 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 99 | 100 |
-| screened | 0 | 1 |
-| selected | 0 | 1 |
-| reproduced | 0 | 1 |
+| target | 98 | 100 |
+| screened | 0 | 2 |
+| selected | 0 | 2 |
+| reproduced | 1 | 2 |
 | validated | 1 | 1 |
 | submitted | 0 | 0 |
 | accepted | 0 | 0 |
@@ -32,7 +32,7 @@ This offline report checks record structure and consistency. Verify what the lin
 | 4 | 10 | 0 | 0 | 0 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 0 | 0 | 0 | 0 |
-| 7 | 10 | 0 | 0 | 0 | 0 |
+| 7 | 10 | 1 | 1 | 0 | 0 |
 | 8 | 10 | 0 | 0 | 0 | 0 |
 | 9 | 10 | 0 | 0 | 0 | 0 |
 | 10 | 10 | 0 | 0 | 0 | 0 |
@@ -1025,17 +1025,21 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [javaparser/javaparser](<https://github.com/javaparser/javaparser>)
 
-Batch 7 · current stage: **target**.
+Batch 7 · current stage: **reproduced**.
 
-javaparser: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+Fix \#4074: preserve the existing separator before a class when removing the last of multiple imports with the lexical\-preserving printer\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Recover the saved javaparser\-4074\-review\-package\.zip and verify its recorded patch/source hashes\. The full Linux/Java 17 AlsoSlowTests reactor passed 5,831 tests with 35 skips; generator and style gates passed\. Keep this prepared work parked until a supported publishing connection can create the contributor fork and publish the exact tested source commit, then send the required issue announcement and upstream PR\. Reuse unchanged successful validation\. The hub excludes unpublished external patches\. No issue\-specific bounty or realized benefit is verified\.
 
-Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
+Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope was previously verified\. This formatting fix has no verified security\-reward eligibility, advertised issue bounty, award or payment; participant eligibility and upstream acceptance remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/javaparser/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/javaparser/javaparser>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/javaparser/project.yaml>).
+- 2026-10-17 **screened**: [evidence 1](<https://github.com/javaparser/javaparser/issues/4074>); [evidence 2](<https://github.com/javaparser/javaparser/pull/2704>); [evidence 3](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md>); [policy\_ref](<https://github.com/javaparser/javaparser/blob/dc6bc07155cb0d0d7a8a427b76411848eb862136/CONTRIBUTING.md>).
+- 2026-10-17 **selected**: [evidence 1](<https://github.com/javaparser/javaparser/issues/4074>); [evidence 2](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md>); [selection\_ref](<https://github.com/javaparser/javaparser/issues/4074>).
+- 2026-10-17 **reproduced**: [evidence 1](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md>); [evidence 2](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074-validation.json>); [source dc6bc07155cb0d0d7a8a427b76411848eb862136](<https://github.com/javaparser/javaparser/commit/dc6bc07155cb0d0d7a8a427b76411848eb862136>).
+  Validation command: \./mvnw \-B \-ntp \-pl javaparser\-core\-testing \-am test \-Dtest=Issue4074Test,LexicalPreservingPrinterTest,DifferenceApplyRemovedRulesCompleteTest,DifferenceApplyLeftoverRulesTest,MethodDeclarationTransformationsTest,CompilationUnitTransformationsTest \-Dsurefire\.failIfNoSpecifiedTests=false; result: **reproduced**; [validation record](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074-validation.json>).
 
 ### [jhy/jsoup](<https://github.com/jhy/jsoup>)
 

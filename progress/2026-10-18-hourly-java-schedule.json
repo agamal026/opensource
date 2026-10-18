@@ -1,0 +1,17 @@
+{
+  "verified_at": "2026-10-18 00:20:50 UTC",
+  "title": "Advance open-source contributions",
+  "is_enabled": true,
+  "schedule": "BEGIN:VEVENT\nDTSTART:20261017T231353\nRRULE:FREQ=HOURLY;INTERVAL=1;BYMINUTE=0\nEND:VEVENT",
+  "default_timezone": "Europe/Vienna",
+  "prompt_sha256": "eef8fcd45bbd20dbc100e4a49323591a75e6377f0ef518bc42e72a44fa091fed",
+  "prompt_characters": 8419,
+  "prompt_matches_prepared_document": true,
+  "hourly_recurrence_preserved": true,
+  "other_tasks_unchanged": true,
+  "last_run_time": "2026-10-18T00:13:36.263598+00:00",
+  "next_run_time": null,
+  "schedule_normalization": "The service removed the UTC suffix from DTSTART while preserving the hourly RRULE and Europe/Vienna timezone. Hourly interval and minute-zero recurrence are unchanged.",
+  "note": "Task configuration and the service's recorded last-run timestamp are verified. No execution result or successful contribution is inferred from that timestamp. No duplicate worker created.",
+  "recovery_ref": "https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md"
+}

@@ -84,6 +84,21 @@ advance a useful unblocked contribution. These dated facts are recovery anchors:
 use current canonical state and the latest checkpoint to decide what remains.
 A published fork or contributor-side review PR is not an upstream PR.
 
+Recover the prepared JavaParser #4074 work from
+https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md.
+The complete unpublished patch and evidence are saved separately as
+javaparser-4074-review-package.zip; its archive, patch and source hashes are in
+the linked validation summary. Use available file tools to recover that exact
+packet when no verified source-fork link exists. Both generators, style gates,
+and the full Linux/Java 17 AlsoSlowTests reactor passed (5,831 tests, 35 skips).
+Do not rebuild matching source merely to resume. No contributor fork, issue
+announcement or upstream PR exists at this checkpoint. The campaign remains
+reproduced until the actual tested candidate source commit is published.
+Keep unpublished external patches outside this hub under AGENTS.md. Park this
+prepared work if its publishing access or saved packet remains unavailable.
+Before starting another implementation that needs a new fork, verify a usable
+publication route; prefer existing writable forks while access remains blocked.
+
 Owned branch publication works, but external write access and future fork
 creation remain separate capabilities. Respect any remaining access block; do
 not repeat forbidden writes on every run, copy credentials from a PC, or silently
