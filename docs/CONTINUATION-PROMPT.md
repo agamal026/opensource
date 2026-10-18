@@ -1,7 +1,11 @@
 # Hosted continuation prompt
 
-The native task uses the following instructions. Cadence belongs in its schedule,
-not in a loop inside this prompt.
+These public recovery instructions accompany the existing native task. Its newer
+operating additions and private recovery notes remain in their existing scope.
+Follow its latest **completion-only** notification rule: save intermediate
+progress and blockers in the handoff, and report campaign completion only after
+verifying the 100 qualifying submissions. Cadence belongs in the native schedule,
+not in a loop inside this guide.
 
 The user confirmed **hourly contributions** on October 18, 2026, Vienna time.
 Older dated entries describe earlier daily scheduling decisions.
@@ -84,20 +88,32 @@ advance a useful unblocked contribution. These dated facts are recovery anchors:
 use current canonical state and the latest checkpoint to decide what remains.
 A published fork or contributor-side review PR is not an upstream PR.
 
-Recover the prepared JavaParser #4074 work from
-https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md.
-The complete unpublished patch and evidence are saved separately as
-javaparser-4074-review-package.zip; its archive, patch and source hashes are in
-the linked validation summary. Use available file tools to recover that exact
-packet when no verified source-fork link exists. Both generators, style gates,
-and the full Linux/Java 17 AlsoSlowTests reactor passed (5,831 tests, 35 skips).
-Do not rebuild matching source merely to resume. No contributor fork, issue
-announcement or upstream PR exists at this checkpoint. The campaign remains
-reproduced until the actual tested candidate source commit is published.
-Keep unpublished external patches outside this hub under AGENTS.md. Park this
-prepared work if its publishing access or saved packet remains unavailable.
-Before starting another implementation that needs a new fork, verify a usable
-publication route; prefer existing writable forks while access remains blocked.
+JavaParser #4074 is now submitted upstream as
+https://github.com/javaparser/javaparser/pull/5175, created on October 18 at
+10:07:13 UTC, still open and not a draft at the 10:19:27 UTC read-back. Recover source
+https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2
+and the immutable evidence packet at
+https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md.
+The published tree matches the tested tree. Both generators, style gates and
+the full Linux/Java 17 AlsoSlowTests reactor passed: 5,831 tests, zero failures
+or errors, 35 skips, all nine modules successful, and 20 new cases. Reuse that
+unchanged result; no full upstream hosted matrix pass is established. At
+10:19:27 UTC, AppVeyor build 54919188 reported success; its underlying logs were
+not inspected. GitHub Actions runs 39117999673 and 39117999726 still required
+authorization, and their two job lists independently returned zero jobs.
+The issue announcement is already posted at
+https://github.com/javaparser/javaparser/issues/4074#issuecomment-6248510250.
+The workflow-admission follow-up was posted once at 10:13:18 UTC:
+https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643.
+Do not duplicate either comment without a reply or material change. Read the
+latest submission checkpoint, actual CI state and substantive feedback before
+acting. The campaign records one qualified submitted project, with no acceptance
+or realized benefit. H2 remains parked as above.
+Owned source/evidence writes succeeded through the connector; its upstream PR
+create request returned HTTP 403. The authorized authenticated connected browser
+completed this PR, followed by canonical read-back. That does not establish
+future connector or fork-creation permission. Before an implementation needing a
+new fork, verify a usable publication route; prefer existing writable forks.
 
 Owned branch publication works, but external write access and future fork
 creation remain separate capabilities. Respect any remaining access block; do
@@ -124,7 +140,7 @@ remote commit and actual CI outcome, and record the next action. Preserve
 historical evidence and private records. Count the 100-project goal only from
 qualifying evidence-backed submissions, separately from researched targets and
 old submissions. After 100, continue maintaining the portfolio and following
-through on benefits instead of expanding the target. Notify me for meaningful
-completed work, accepted contributions, confirmed benefits, material failures or
-a concrete required decision. Keep unchanged routine checks quiet. Do not create
+through on benefits instead of expanding the target. Follow the existing task's
+completion-only notification rule and preserve intermediate results, blockers
+and nonurgent decisions in the durable handoff. Do not create
 duplicate workers or modify the separate project-tracker schedules.

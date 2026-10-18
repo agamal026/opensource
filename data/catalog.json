@@ -84,6 +84,18 @@
       "notes": [
         "Merged on 2026-09-09, before the 2026-10-13 continuation baseline. Retained as prior contribution history."
       ]
+    },
+    {
+      "id": "javaparser-5175",
+      "notes": [
+        "Published source: https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2 . The exact tested tree and automated review are retained at https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md .",
+        "Previously completed Linux/Java 17 AlsoSlowTests validation passed 5,831 tests with 35 skips and all nine reactor modules successful. This is reused local evidence, not execution of the upstream hosted matrix.",
+        "At 2026-10-18T10:19:27Z, AppVeyor reported success without underlying log inspection. Both GitHub Actions runs still required authorization and their job lists returned zero jobs. Submission does not establish acceptance or benefit eligibility."
+      ],
+      "number": 5175,
+      "repository": "javaparser/javaparser",
+      "summary": "Preserve the existing separator before a type when the lexical-preserving printer removes the last of multiple imports.",
+      "url": "https://github.com/javaparser/javaparser/pull/5175"
     }
   ],
   "candidates": [

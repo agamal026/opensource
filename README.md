@@ -87,8 +87,11 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The registry tracks existing PRs to **libavif, libzip, npm, nginx, and libevent**,
+The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, and JavaParser**,
 plus the prepared libavif `pixi` contribution and parked Xcode investigation.
+[JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) is the first
+qualified submission in the current campaign; its [submission checkpoint](progress/2026-10-18-javaparser-5175-submission.md)
+separates completed local validation from pending hosted CI and review.
 [Current status](progress/STATUS.md) links each upstream record and its observed
 checks. Dates are snapshots, not a promise of continuous monitoring.
 

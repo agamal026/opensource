@@ -1,0 +1,287 @@
+{
+  "admission_follow_up": {
+    "author": "agamal026",
+    "body_matches_after_crlf_normalization": true,
+    "created_at": "2026-10-18T10:13:18Z",
+    "duplicate_count": 0,
+    "method": "Posted once through the same authorized authenticated connected browser after a fresh empty PR-comment read and visible maintainer-approval requirement; coordinator verified the canonical connector read-back.",
+    "next_action": "Do not duplicate this follow-up without a reply or material change.",
+    "relation_to_initial_observation": "The initial 10:10:37 UTC PR observation preceded this 10:13:18 UTC comment. The later 10:19:27 UTC PR read-back reports one comment.",
+    "scope": "Requests authorization of the two recorded workflow runs and links existing local proof. It does not change source, PR body or validation results.",
+    "url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643"
+  },
+  "announcement": {
+    "author": "agamal026",
+    "body_match_verified": true,
+    "created_at": "2026-10-18T09:59:27Z",
+    "url": "https://github.com/javaparser/javaparser/issues/4074#issuecomment-6248510250"
+  },
+  "campaign_accounting": {
+    "currently_at_stage": {
+      "accepted": 0,
+      "reproduced": 0,
+      "screened": 0,
+      "selected": 0,
+      "submitted": 1,
+      "target": 98,
+      "validated": 1
+    },
+    "h2": "Remains validated and parked with its personal contributor-statement and documented remaining gates; the owned draft is not an upstream submission.",
+    "historical_distinct_repositories": 5,
+    "historical_submissions": 6,
+    "qualified_submitted_repositories": 1,
+    "research_queue_repositories": 100,
+    "target_count": 100,
+    "verified_campaign_cash_receipts": 0,
+    "verified_new_benefits": 0
+  },
+  "checks": {
+    "check_runs": [],
+    "check_runs_observed_at": "2026-10-18T10:10:37Z",
+    "commit_statuses": [
+      {
+        "context": "continuous-integration/appveyor/pr",
+        "created_at": "2026-10-18T10:18:10Z",
+        "description": "AppVeyor build succeeded",
+        "state": "success",
+        "target_url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188",
+        "updated_at": "2026-10-18T10:18:10Z"
+      }
+    ],
+    "commit_statuses_observed_at": "2026-10-18T10:19:27Z",
+    "github_actions_jobs": [
+      {
+        "run_id": 39117999673,
+        "total_count": 0
+      },
+      {
+        "run_id": 39117999726,
+        "total_count": 0
+      }
+    ],
+    "github_actions_jobs_observed_at": "2026-10-18T10:19:27Z",
+    "scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
+    "workflow_runs": [
+      {
+        "conclusion": "action_required",
+        "created_at": "2026-10-18T10:07:17Z",
+        "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "id": 39117999673,
+        "name": "Check codegen and formatting",
+        "run_attempt": 1,
+        "status": "completed",
+        "updated_at": "2026-10-18T10:07:17Z",
+        "url": "https://github.com/javaparser/javaparser/actions/runs/39117999673"
+      },
+      {
+        "conclusion": "action_required",
+        "created_at": "2026-10-18T10:07:17Z",
+        "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "id": 39117999726,
+        "name": "Build and test (using maven)",
+        "run_attempt": 1,
+        "status": "completed",
+        "updated_at": "2026-10-18T10:07:17Z",
+        "url": "https://github.com/javaparser/javaparser/actions/runs/39117999726"
+      }
+    ]
+  },
+  "collection": "Publication and canonical GET read-back performed by the coordinator; the hub editor used the supplied observation without new API queries.",
+  "evidence": {
+    "archive_internal_paths": [
+      "final-reactor-slow/maven.log",
+      "final-reactor-slow/summary.json",
+      "final-reactor-slow/receipt.json"
+    ],
+    "archive_sha256": "53b6045723923e76da627a82e19245a83c617bf97f842a520498c37a8372d0bc",
+    "artifact_scope": "The four linked artifacts are published directly. Full run logs and receipts are inside the review ZIP; archive-internal paths are not GitHub blob URLs.",
+    "checksums_verified": 871,
+    "commit": "be86f30a136fddc1e741fdcb36094bbbbfaaa454",
+    "errors": 0,
+    "execution_scope": "Previously completed Linux/Temurin Java 17.0.20.1 AlsoSlowTests reactor; reused unchanged evidence, not a new run.",
+    "failures": 0,
+    "index_url": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md",
+    "new_regression_cases": 20,
+    "normalized_validation_command": "./mvnw --errors --show-version -B -ntp --log-file \"$REVIEW_PACKET/final-reactor-slow/maven.log\" clean test --activate-profiles AlsoSlowTests",
+    "patch_sha256": "0cb1bfaaf7ea00dc7bceea187373c0b6843c4f6f350ad93bbc743468985f60b9",
+    "published_artifacts": {
+      "archive": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/javaparser-4074-review-package.zip",
+      "automated_review": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/AUTOMATED_REVIEW.md",
+      "index": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md",
+      "reactor_summary": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/FINAL-REACTOR.json"
+    },
+    "raw_maven_log_sha256": "b3691d527a7539384101b29cdacc653dd270712556fdb5a4cb6b04290773c998",
+    "reactor_modules_successful": 9,
+    "skipped": 35,
+    "tested_tree_matches_published": true,
+    "tests": 5831
+  },
+  "hub_validation": {
+    "affected_gate_rechecks": [
+      {
+        "command": "python3 tools/contribution_campaign.py validate --input data/campaign.json",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:24:32.016277Z",
+        "output_sha256": "b0880560d64d3c13431febf279d1bd00c0eb6b49d2b36eb69e0ec407ff782b97",
+        "started_at": "2026-10-18T10:24:31.945336Z",
+        "terminal_summary": "Campaign is valid: 100 targets; 1 / 100 qualified submitted repositories."
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:24:32.107423Z",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T10:24:32.016350Z",
+        "terminal_summary": ""
+      }
+    ],
+    "commands": [
+      {
+        "command": "python3 -m unittest discover -s tests -v",
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "finished_at": "2026-10-18T10:22:19.396334Z",
+        "output_sha256": "76593b83e86e988f024dbc93e6d8d8762a53878584c1151754bb002063489dab",
+        "skipped": 0,
+        "started_at": "2026-10-18T10:22:18.377508Z",
+        "terminal_summary": "\n----------------------------------------------------------------------\nRan 81 tests in 0.841s\n\nOK",
+        "tests_run": 81
+      },
+      {
+        "command": "python3 tools/oss_status.py validate",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:22:19.457647Z",
+        "output_sha256": "7253669024be84219770a73694e8d0b34978179b9a44b3d7d30885b0ec238d97",
+        "started_at": "2026-10-18T10:22:19.396833Z",
+        "terminal_summary": "Valid: 2 projects, 7 pull requests, 2 candidates"
+      },
+      {
+        "command": "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:22:19.600991Z",
+        "output_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508",
+        "started_at": "2026-10-18T10:22:19.457728Z",
+        "terminal_summary": "Up to date: progress/STATUS.md"
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py validate --input data/campaign.json",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:22:19.695898Z",
+        "output_sha256": "b0880560d64d3c13431febf279d1bd00c0eb6b49d2b36eb69e0ec407ff782b97",
+        "started_at": "2026-10-18T10:22:19.601417Z",
+        "terminal_summary": "Campaign is valid: 100 targets; 1 / 100 qualified submitted repositories."
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:22:19.785821Z",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T10:22:19.695983Z",
+        "terminal_summary": ""
+      },
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T10:22:19.796001Z",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T10:22:19.785963Z",
+        "terminal_summary": ""
+      }
+    ],
+    "completed_at": "2026-10-18T10:22:19.796832Z",
+    "errors": 0,
+    "failures": 0,
+    "latest_campaign_verification_at": "2026-10-18T10:24:32.107423Z",
+    "python_version": "3.12.14",
+    "scope": "The six prescribed CONTRIBUTING commands initially passed at 10:22 UTC. A subsequent public-evidence-link/normalized-command correction changed campaign references, and a notification-precedence note changed documentation. The two affected campaign gates were rerun successfully below; the unchanged implementation and 81-test suite were not rerun. Terminal results were added after execution.",
+    "skipped": 0,
+    "status": "passed",
+    "tests_run": 81
+  },
+  "initial_observation": {
+    "check_runs_count": 0,
+    "commit_statuses": [
+      {
+        "context": "continuous-integration/appveyor/pr",
+        "created_at": "2026-10-18T10:07:19Z",
+        "state": "pending",
+        "target_url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188",
+        "updated_at": "2026-10-18T10:07:19Z"
+      }
+    ],
+    "observed_at": "2026-10-18T10:10:37Z",
+    "pr_comments": 0,
+    "pull_request_updated_at": "2026-10-18T10:07:13Z",
+    "scope": "Initial pending status retained as historical evidence; superseded by the later commit-status observation below."
+  },
+  "limits": [
+    "Previously passing JavaParser tests and automated review were reused for the identical published source tree; no new source tests were run for this checkpoint.",
+    "Both GitHub Actions runs still require authorization and independently report zero jobs at 10:19:27 UTC. AppVeyor reported success for the same build; its underlying job logs were not inspected, so no full platform coverage claim follows.",
+    "No personal review, upstream acceptance, merge, issue bounty, security-reward qualification, earnings or newly activated benefit is established.",
+    "Preserve the October 13 baseline, November 12 review date, and earliest libzip recheck at 2026-10-22T13:12:13Z."
+  ],
+  "observed_at": "2026-10-18T10:19:27Z",
+  "publication_capabilities": {
+    "owned_source_and_evidence": "Published through the GitHub connector.",
+    "scope_limit": "This successful browser submission does not establish connector permission to create external PRs or future forks. No credentials or browser state are included.",
+    "upstream_pr": "The connector create request returned HTTP 403, Resource not accessible by integration. The already authorized authenticated connected browser completed publication, followed by canonical read-back."
+  },
+  "pull_request": {
+    "additions": 142,
+    "author": "agamal026",
+    "base_ref": "master",
+    "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+    "body_matches_reviewed": true,
+    "changed_files": 2,
+    "comments": 1,
+    "commits": 1,
+    "created_at": "2026-10-18T10:07:13Z",
+    "deletions": 1,
+    "draft": false,
+    "head_ref": "fix/4074-preserve-import-spacing",
+    "head_repository": "agamal026/javaparser",
+    "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+    "maintainer_can_modify": false,
+    "mergeable": true,
+    "merged": false,
+    "merged_at": null,
+    "number": 5175,
+    "repository": "javaparser/javaparser",
+    "review_comments": 0,
+    "state": "open",
+    "title": "Preserve spacing before the type when removing the last import",
+    "updated_at": "2026-10-18T10:13:18Z",
+    "url": "https://github.com/javaparser/javaparser/pull/5175"
+  },
+  "schema_version": 1,
+  "snapshot_provenance": {
+    "file": "data/github.json",
+    "historical_check_contexts_retained": 70,
+    "historical_records_observed_at": "2026-10-17T20:01:04Z",
+    "historical_records_retained": 6,
+    "new_record_observed_at": "2026-10-18T10:19:27Z",
+    "provenance_file": "data/snapshot-source.json",
+    "sha256": "75cd2880d1ad12cfc9bac949c5d4758ef2285c35d9ccbde33dd174bb20aa11b6"
+  },
+  "source": {
+    "commit_url": "https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2",
+    "files": [
+      {
+        "additions": 116,
+        "blob_sha": "dbcb0c7de44f21e6f125fdab47e66e81afef638a",
+        "deletions": 0,
+        "path": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue4074Test.java",
+        "status": "added"
+      },
+      {
+        "additions": 26,
+        "blob_sha": "cd6e1816894a0c8aebf269a852407c97da628b66",
+        "deletions": 1,
+        "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+        "status": "modified"
+      }
+    ],
+    "tree": "be582247d3fdd80bf6e72c7dca6a52922cbd19a7"
+  }
+}

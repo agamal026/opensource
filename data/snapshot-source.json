@@ -1,88 +1,141 @@
 {
-  "check_collection": "Actual CheckRun and StatusContext nodes from statusCheckRollup.contexts with complete pagination. All 70 returned contexts and all six complete PR observations match the previous observation. Workflow-run admission was not converted into check objects.",
-  "collected_with_live_cli": true,
-  "command": "python3 tools/oss_status.py refresh --output <local-output>/github.json",
-  "command_path_note": "The private output directory is omitted. The exact candidate bytes were verified using snapshot_sha256 before publication.",
-  "initial_observation": {
-    "commit": "326875639e2da6aa22835dec92b2a6e752f4dab8",
-    "comparison": "All six PR states, titles, timestamps, head/base revisions and returned checks were unchanged. The live source additionally reported APPROVED for libavif-3350 and REVIEW_REQUIRED for libevent-1916, nginx-1734 and npm-9954.",
-    "observed_at": "2026-10-17T18:07:06Z",
-    "provenance_url": "https://github.com/agamal026/opensource/blob/326875639e2da6aa22835dec92b2a6e752f4dab8/data/snapshot-source.json",
-    "source": "GitHub connector REST observation"
+  "bounded_metadata_follow_up": {
+    "external_prs": [
+      "https://github.com/npm/cli/pull/9954",
+      "https://github.com/AOMediaCodec/libavif/pull/3413",
+      "https://github.com/libevent/libevent/pull/1916",
+      "https://github.com/nginx/nginx/pull/1734",
+      "https://github.com/nih-at/libzip/pull/576"
+    ],
+    "finished_at": "2026-10-18T09:43:48Z",
+    "owned_draft": "https://github.com/agamal026/h2database/pull/1",
+    "scope": "Separate live metadata and merged discussion/review timelines for the five existing open external PRs plus the owned H2 draft. No new or edited feedback since 2026-10-17T23:11:30Z; heads unchanged. This was not a refresh of all six historical records or their 70 check contexts.",
+    "started_at": "2026-10-18T09:42:53Z",
+    "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
   },
-  "metadata_collection": "Public pull-request metadata and the current last commit check rollup were queried with explicit GraphQL fields. Every repository was verified public; every returned commit OID matched its recorded PR head. Refresh and validation completed successfully for all six registered PRs.",
-  "observed_at": "2026-10-17T20:01:04Z",
-  "previous_observation": {
-    "commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
-    "comparison": "All six complete pull-request observations are unchanged; only the observation timestamp advanced.",
-    "observed_at": "2026-10-17T18:22:53Z",
-    "provenance_url": "https://github.com/agamal026/opensource/blob/77627bfdf5d61674f7738db16e5fae164e391cb5/data/snapshot-source.json",
-    "snapshot_sha256": "f12d73c664b05fed255ca4acb0374212d291864e8ead8c82fb7548a8d60f2756"
+  "check_collection": "The six historical records retain their 70 previously collected check contexts. JavaParser records one AppVeyor StatusContext reporting success at 10:19:27 UTC. Its underlying AppVeyor logs were not inspected. Zero CheckRuns were returned in the initial 10:10:37 UTC observation; the two GitHub Actions job lists separately returned zero jobs at 10:19:27 UTC and approval remains pending. Workflow admission was not converted into check objects.",
+  "collected_with_live_cli": false,
+  "metadata_collection": "Six existing PR records remain unchanged from 2026-10-17T20:01:04Z. JavaParser #5175 was added from the coordinator-supplied 10:10:37 UTC read-back and updated with the 2026-10-18T10:19:27Z PR/commit-status observation.",
+  "new_observation": {
+    "initial_observed_at": "2026-10-18T10:10:37Z",
+    "latest_scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
+    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
+    "observed_at": "2026-10-18T10:19:27Z",
+    "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
   },
-  "python_version": "3.14.4",
+  "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below.",
+  "observed_at": "2026-10-18T10:19:27Z",
   "records": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
       "check_contexts_returned": 42,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "04a56971f8994627dd5685b58c9ebfe299d01f97",
       "id": "libavif-3350",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 3350,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "AOMediaCodec/libavif",
       "review_decision": "APPROVED"
     },
     {
       "base_sha": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
       "check_contexts_returned": 26,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "93ef0a32c07741c34bb515295f5be3d270cca02d",
       "id": "libavif-3413",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 3413,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "AOMediaCodec/libavif",
       "review_decision": ""
     },
     {
       "base_sha": "d82464a277d0f42703702c4dfd9af6af38595a83",
       "check_contexts_returned": 0,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "14e56a95e1d524d8500da73bb49f9b0c80397057",
       "id": "libevent-1916",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 1916,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "libevent/libevent",
       "review_decision": "REVIEW_REQUIRED"
     },
     {
       "base_sha": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
       "check_contexts_returned": 1,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "5aeb57b6e922934125008756998b3ce2a93ba498",
       "id": "libzip-576",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 576,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "nih-at/libzip",
       "review_decision": ""
     },
     {
       "base_sha": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
       "check_contexts_returned": 1,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
       "id": "nginx-1734",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 1734,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "nginx/nginx",
       "review_decision": "REVIEW_REQUIRED"
     },
     {
       "base_sha": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
       "check_contexts_returned": 0,
+      "checks_observed_at": "2026-10-17T20:01:04Z",
+      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
       "head_sha": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
       "id": "npm-9954",
+      "metadata_observed_at": "2026-10-17T20:01:04Z",
       "number": 9954,
+      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
       "repository": "npm/cli",
       "review_decision": "REVIEW_REQUIRED"
+    },
+    {
+      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+      "check_contexts_returned": 1,
+      "check_runs_observed_at": "2026-10-18T10:10:37Z",
+      "checks_observed_at": "2026-10-18T10:19:27Z",
+      "collection": "Coordinator-supplied canonical GitHub connector GET read-back. Current commit status reports AppVeyor success, without underlying log inspection. The initial observation returned zero check runs; current GitHub Actions job lists return zero jobs and approval remains pending.",
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "id": "javaparser-5175",
+      "metadata_observed_at": "2026-10-18T10:19:27Z",
+      "number": 5175,
+      "repository": "javaparser/javaparser",
+      "review_decision": "",
+      "review_decision_collection": "Not collected in the supplied REST observation; represented as not reported, without inferring approval or review requirements.",
+      "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
     }
   ],
-  "review_decision_meaning": "Values come from GitHub GraphQL reviewDecision. A null value is represented as an empty string and displayed as not reported; no absence of review requirements is inferred.",
+  "retained_observation": {
+    "check_contexts_retained": 70,
+    "command": "python3 tools/oss_status.py refresh --output <local-output>/github.json",
+    "observed_at": "2026-10-17T20:01:04Z",
+    "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
+    "python_version": "3.14.4",
+    "snapshot_sha256": "4777a8ee8c0d3e363b7f7cc214042eb63d1072ac22714cd2fb48d5995c0095cb",
+    "snapshot_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/github.json",
+    "source": "GitHub CLI GraphQL refresh",
+    "tool_sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
+    "tool_source_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
+    "transport": "gh api graphql --hostname github.com --method POST --input -",
+    "transport_version": "gh 2.46.0"
+  },
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "4777a8ee8c0d3e363b7f7cc214042eb63d1072ac22714cd2fb48d5995c0095cb",
-  "source": "GitHub CLI GraphQL refresh",
-  "tool_sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
-  "tool_source_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
-  "transport": "gh api graphql --hostname github.com --method POST --input -",
-  "transport_version": "gh 2.46.0"
+  "snapshot_sha256": "75cd2880d1ad12cfc9bac949c5d4758ef2285c35d9ccbde33dd174bb20aa11b6",
+  "source": "Composite reviewed snapshot: six retained historical CLI observations and one new JavaParser connector observation."
 }

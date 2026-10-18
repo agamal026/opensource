@@ -1975,7 +1975,7 @@
       "repository": "javaparser/javaparser",
       "batch": 7,
       "summary": "Fix #4074: preserve the existing separator before a class when removing the last of multiple imports with the lexical-preserving printer.",
-      "next_action": "Recover the saved javaparser-4074-review-package.zip and verify its recorded patch/source hashes. The full Linux/Java 17 AlsoSlowTests reactor passed 5,831 tests with 35 skips; generator and style gates passed. Keep this prepared work parked until a supported publishing connection can create the contributor fork and publish the exact tested source commit, then send the required issue announcement and upstream PR. Reuse unchanged successful validation. The hub excludes unpublished external patches. No issue-specific bounty or realized benefit is verified.",
+      "next_action": "Follow upstream PR #5175 at exact head 2a437e500bf54024772dd9f3d6d4149506defed2. The issue announcement and PR were published and read back on October 18. At 10:19:27 UTC, AppVeyor build 54919188 reported success; its underlying logs were not inspected. The formatting and Maven GitHub Actions runs still required maintainer authorization, and both job lists returned zero jobs. Await admission and substantive review, then address concrete feedback. Reuse the published Linux/Java 17 validation and automated review for unchanged source. Connector PR creation returned HTTP 403; an authorized authenticated browser completed this submission, which does not establish future connector or fork-creation permission. No issue bounty, acceptance, reward qualification or realized benefit is verified. The admission follow-up is already posted at https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643; do not repeat it without a reply or material change.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2028,6 +2028,34 @@
             "result": "reproduced",
             "ref": "https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074-validation.json"
           }
+        },
+        {
+          "date": "2026-10-18",
+          "refs": [
+            "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md",
+            "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/FINAL-REACTOR.json",
+            "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/javaparser-4074-review-package.zip"
+          ],
+          "review_ref": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/AUTOMATED_REVIEW.md",
+          "source_commit": "2a437e500bf54024772dd9f3d6d4149506defed2",
+          "source_ref": "https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2",
+          "stage": "validated",
+          "validation": {
+            "command": "./mvnw --errors --show-version -B -ntp --log-file \"$REVIEW_PACKET/final-reactor-slow/maven.log\" clean test --activate-profiles AlsoSlowTests",
+            "ref": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/FINAL-REACTOR.json",
+            "result": "passed"
+          }
+        },
+        {
+          "date": "2026-10-18",
+          "pr_url": "https://github.com/javaparser/javaparser/pull/5175",
+          "refs": [
+            "https://github.com/javaparser/javaparser/pull/5175",
+            "https://github.com/javaparser/javaparser/issues/4074#issuecomment-6248510250",
+            "https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2"
+          ],
+          "source_commit": "2a437e500bf54024772dd9f3d6d4149506defed2",
+          "stage": "submitted"
         }
       ],
       "benefits": []

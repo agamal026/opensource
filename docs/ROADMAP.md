@@ -25,9 +25,9 @@ in [progress](../progress/) at the start of every resumed session.
 | 1 | Investigate a paid issue with current sponsor evidence that is unassigned or explicitly selectable. | Current sponsor offer, assignment availability, acceptance/payment terms, a reproduction, and a scoped implementation opportunity. |
 | 1 | Resolve real issues or concrete feedback on owned tools. | Reproduction, focused regression, review, relevant CI, and a release containing the fix when appropriate. |
 | 1 | Complete personal review of prepared libavif #2428. | Contributor review of exact parser, fixture, tests, and PR text; refreshed source/upstream preflight before submission. |
-| 1 | Publish the prepared JavaParser #4074 contribution through its contributor fork. | [Exact patch identity and completed generator/style/full-reactor validation](https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md); restore supported publishing access, verify the actual source commit, fulfill the issue announcement and submit upstream. Keep the unpublished packet outside the hub and reuse unchanged checks. |
+| 1 | Follow through on submitted [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175). | [Exact published source, reused validation and submission read-back](../progress/2026-10-18-javaparser-5175-submission.md); follow GitHub Actions authorization/results and substantive review; AppVeyor reported success without underlying log inspection. Reuse unchanged passing tests. Submission does not establish acceptance or a reward. |
 | 1 | Resolve the prepared H2 #4456 contribution's remaining gates. | [Exact source and completed Java 11/17 CI evidence](../progress/2026-10-17-h2-final-ci-checkpoint.md), truthful contributor statement, and disposition of the documented docs/non-CI limits. Park personal/access dependencies while advancing useful unblocked work. |
-| 2 | Respond to substantive feedback on the five open upstream PRs. | Actual review request and validation of the resulting change; respect workflow admission and maintainer timing. |
+| 2 | Respond to substantive feedback on the six open upstream PRs. | Actual review request and validation of the resulting change; respect workflow admission and maintainer timing. |
 | 2 | Support libzip Windows/CI work when needed. | Requested diagnosis or change, reproducible result, and maintainer disposition. |
 | 2 | Pursue a fitting subscription or credit program for an actual project need. | Verified current criteria and project fit; record application, grant, and activated access separately. |
 | 3 | Resume Xcode investigation after workflow admission. | Real macOS/Xcode results for static/shared behavior and the libyuv-off duplicate-basename case. |
@@ -35,8 +35,10 @@ in [progress](../progress/) at the start of every resumed session.
 ## Improvement rules
 
 Keep one main upstream implementation and one owned-tool improvement active.
-While fork access is blocked, verify a usable publication route before starting
-another implementation and prefer already writable contributor forks.
+Verify a usable publication route before starting another implementation that
+needs a new fork. The successful JavaParser browser submission does not establish
+connector permission for external PRs or future forks; prefer already writable
+contributor forks when practical.
 Timebox crowded unpaid proposal screening and park investigations without a
 supported route to selection. Use `GOAL.md` to distinguish technical results,
 realized benefits, and evidence of the contributor's personal learning.

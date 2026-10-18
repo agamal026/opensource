@@ -1,12 +1,12 @@
 # Open-source progress
 
-Observed at: 2026-10-17T20:01:04Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-18T10:19:27Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
 ## Upstream contributions
 
-Registered pull requests: 6; open: 5; merged: 1; closed without merge: 0.
+Registered pull requests: 7; open: 6; merged: 1; closed without merge: 0.
 
 Registered PRs with a recorded merge on or after 2026-10-13: 0.
 
@@ -18,6 +18,7 @@ Check results describe only the rollup returned by GitHub for each recorded head
 | --- | --- | --- | --- | --- |
 | [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | approved | 2026-09-09T23:21:10Z |
 | [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-13T19:43:27Z |
+| [javaparser/javaparser \#5175](<https://github.com/javaparser/javaparser/pull/5175>) | open | 1 passed | not reported | 2026-10-18T10:13:18Z |
 | [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
 | [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | review required | 2026-10-15T12:33:23Z |
 | [nih\-at/libzip \#576](<https://github.com/nih-at/libzip/pull/576>) | open | 1 passed | not reported | 2026-10-13T18:42:17Z |
@@ -115,6 +116,21 @@ Correct automatic output\-format selection for grayscale JPEGs with ICC profiles
 | [build\-windows\-installed \(msvc\)](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429359/job/115489899229>) | check run | COMPLETED | SUCCESS | passed |
 | [clang\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896133>) | check run | COMPLETED | SUCCESS | passed |
 | [cmake\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896433>) | check run | COMPLETED | SUCCESS | passed |
+
+### javaparser/javaparser #5175: Preserve spacing before the type when removing the last import
+
+Preserve the existing separator before a type when the lexical\-preserving printer removes the last of multiple imports\.
+
+- Source: [pull request](<https://github.com/javaparser/javaparser/pull/5175>)
+- Head commit: `2a437e500bf54024772dd9f3d6d4149506defed2`
+- Base commit: `dc6bc07155cb0d0d7a8a427b76411848eb862136`
+- Catalog note: Published source: https://github\.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2 \. The exact tested tree and automated review are retained at https://github\.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution\-review/4074/README\.md \.
+- Catalog note: Previously completed Linux/Java 17 AlsoSlowTests validation passed 5,831 tests with 35 skips and all nine reactor modules successful\. This is reused local evidence, not execution of the upstream hosted matrix\.
+- Catalog note: At 2026\-10\-18T10:19:27Z, AppVeyor reported success without underlying log inspection\. Both GitHub Actions runs still required authorization and their job lists returned zero jobs\. Submission does not establish acceptance or benefit eligibility\.
+
+| Check | Kind | Raw status | Conclusion | Interpretation |
+| --- | --- | --- | --- | --- |
+| [continuous\-integration/appveyor/pr](<https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188>) | status context | SUCCESS | not reported | passed |
 
 ### libevent/libevent #1916: Replace the bundled ARC4 RNG with operating\-system randomness
 

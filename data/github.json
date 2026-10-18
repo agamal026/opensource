@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-17T20:01:04Z",
+  "observed_at": "2026-10-18T10:19:27Z",
   "pull_requests": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -584,6 +584,29 @@
       "title": "feat(arborist): warn on incomplete lockfile provenance",
       "updated_at": "2026-10-15T14:24:47Z",
       "url": "https://github.com/npm/cli/pull/9954"
+    },
+    {
+      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+      "checks": [
+        {
+          "conclusion": "",
+          "kind": "status_context",
+          "name": "continuous-integration/appveyor/pr",
+          "status": "SUCCESS",
+          "url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188"
+        }
+      ],
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "id": "javaparser-5175",
+      "is_draft": false,
+      "merged_at": null,
+      "number": 5175,
+      "repository": "javaparser/javaparser",
+      "review_decision": "",
+      "state": "OPEN",
+      "title": "Preserve spacing before the type when removing the last import",
+      "updated_at": "2026-10-18T10:13:18Z",
+      "url": "https://github.com/javaparser/javaparser/pull/5175"
     }
   ],
   "schema_version": 1

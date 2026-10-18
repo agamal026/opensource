@@ -2,7 +2,7 @@
 
 Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
-**Goal progress: 0 / 100 distinct external repositories with qualified campaign submissions.**
+**Goal progress: 1 / 100 distinct external repositories with qualified campaign submissions.**
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -17,9 +17,9 @@ This offline report checks record structure and consistency. Verify what the lin
 | target | 98 | 100 |
 | screened | 0 | 2 |
 | selected | 0 | 2 |
-| reproduced | 1 | 2 |
-| validated | 1 | 1 |
-| submitted | 0 | 0 |
+| reproduced | 0 | 2 |
+| validated | 1 | 2 |
+| submitted | 1 | 1 |
 | accepted | 0 | 0 |
 
 ## Batches
@@ -32,7 +32,7 @@ This offline report checks record structure and consistency. Verify what the lin
 | 4 | 10 | 0 | 0 | 0 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 0 | 0 | 0 | 0 |
-| 7 | 10 | 1 | 1 | 0 | 0 |
+| 7 | 10 | 1 | 1 | 1 | 0 |
 | 8 | 10 | 0 | 0 | 0 | 0 |
 | 9 | 10 | 0 | 0 | 0 | 0 |
 | 10 | 10 | 0 | 0 | 0 | 0 |
@@ -1025,11 +1025,11 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [javaparser/javaparser](<https://github.com/javaparser/javaparser>)
 
-Batch 7 · current stage: **reproduced**.
+Batch 7 · current stage: **submitted**.
 
 Fix \#4074: preserve the existing separator before a class when removing the last of multiple imports with the lexical\-preserving printer\.
 
-Next action: Recover the saved javaparser\-4074\-review\-package\.zip and verify its recorded patch/source hashes\. The full Linux/Java 17 AlsoSlowTests reactor passed 5,831 tests with 35 skips; generator and style gates passed\. Keep this prepared work parked until a supported publishing connection can create the contributor fork and publish the exact tested source commit, then send the required issue announcement and upstream PR\. Reuse unchanged successful validation\. The hub excludes unpublished external patches\. No issue\-specific bounty or realized benefit is verified\.
+Next action: Follow upstream PR \#5175 at exact head 2a437e500bf54024772dd9f3d6d4149506defed2\. The issue announcement and PR were published and read back on October 18\. At 10:19:27 UTC, AppVeyor build 54919188 reported success; its underlying logs were not inspected\. The formatting and Maven GitHub Actions runs still required maintainer authorization, and both job lists returned zero jobs\. Await admission and substantive review, then address concrete feedback\. Reuse the published Linux/Java 17 validation and automated review for unchanged source\. Connector PR creation returned HTTP 403; an authorized authenticated browser completed this submission, which does not establish future connector or fork\-creation permission\. No issue bounty, acceptance, reward qualification or realized benefit is verified\. The admission follow\-up is already posted at https://github\.com/javaparser/javaparser/pull/5175\#issuecomment\-6248629643; do not repeat it without a reply or material change\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope was previously verified\. This formatting fix has no verified security\-reward eligibility, advertised issue bounty, award or payment; participant eligibility and upstream acceptance remain unverified\.
 
@@ -1040,6 +1040,9 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jav
 - 2026-10-17 **selected**: [evidence 1](<https://github.com/javaparser/javaparser/issues/4074>); [evidence 2](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md>); [selection\_ref](<https://github.com/javaparser/javaparser/issues/4074>).
 - 2026-10-17 **reproduced**: [evidence 1](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074.md>); [evidence 2](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074-validation.json>); [source dc6bc07155cb0d0d7a8a427b76411848eb862136](<https://github.com/javaparser/javaparser/commit/dc6bc07155cb0d0d7a8a427b76411848eb862136>).
   Validation command: \./mvnw \-B \-ntp \-pl javaparser\-core\-testing \-am test \-Dtest=Issue4074Test,LexicalPreservingPrinterTest,DifferenceApplyRemovedRulesCompleteTest,DifferenceApplyLeftoverRulesTest,MethodDeclarationTransformationsTest,CompilationUnitTransformationsTest \-Dsurefire\.failIfNoSpecifiedTests=false; result: **reproduced**; [validation record](<https://github.com/agamal026/opensource/blob/aec8a5eb1983230f1bb7470a51b2e7bc53ef0f70/progress/2026-10-18-javaparser-4074-validation.json>).
+- 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md>); [evidence 2](<https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/FINAL-REACTOR.json>); [evidence 3](<https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/javaparser-4074-review-package.zip>); [review\_ref](<https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/AUTOMATED_REVIEW.md>); [source 2a437e500bf54024772dd9f3d6d4149506defed2](<https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2>).
+  Validation command: \./mvnw \-\-errors \-\-show\-version \-B \-ntp \-\-log\-file &quot;$REVIEW\_PACKET/final\-reactor\-slow/maven\.log&quot; clean test \-\-activate\-profiles AlsoSlowTests; result: **passed**; [validation record](<https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/FINAL-REACTOR.json>).
+- 2026-10-18 **submitted**: [evidence 1](<https://github.com/javaparser/javaparser/pull/5175>); [evidence 2](<https://github.com/javaparser/javaparser/issues/4074#issuecomment-6248510250>); [evidence 3](<https://github.com/agamal026/javaparser/commit/2a437e500bf54024772dd9f3d6d4149506defed2>); [pr\_url](<https://github.com/javaparser/javaparser/pull/5175>); validated source 2a437e500bf54024772dd9f3d6d4149506defed2.
 
 ### [jhy/jsoup](<https://github.com/jhy/jsoup>)
 
