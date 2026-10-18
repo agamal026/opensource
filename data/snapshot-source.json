@@ -13,17 +13,18 @@
     "started_at": "2026-10-18T09:42:53Z",
     "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
   },
-  "check_collection": "The six historical records retain their 70 previously collected check contexts. JavaParser retains its one AppVeyor StatusContext from 2026-10-18T10:19:27Z; its zero CheckRuns from 10:10:37 UTC and zero GitHub Actions jobs from 10:19:27 UTC were not refreshed. Jackson adds one Gitar CheckRun reporting success in the 2026-10-18T12:11:13Z packet, with zero StatusContexts. Gitar functional validation was not enabled. Its upstream workflow returned zero jobs and requires authorization; workflow admission and fork CI were not converted into upstream check objects.",
+  "check_collection": "The eight existing rows retain 72 check contexts: 70 historical contexts, one JavaParser AppVeyor StatusContext, and one Jackson Gitar CheckRun at their original per-record dates. LZ4 has 54 CheckRuns and one pending AppVeyor StatusContext observed through 2026-10-18T13:13:26Z. Its checks and all 54 actual job records show 48 successes and six in progress; six workflows succeeded and three remained in progress. No complete upstream matrix pass or refreshed older check result is implied.",
   "collected_with_live_cli": false,
-  "metadata_collection": "The six historical PR records remain unchanged from 2026-10-17T20:01:04Z. The JavaParser PR row remains unchanged from 2026-10-18T10:19:27Z. Jackson #6302 was added from the coordinator-supplied canonical observation collected through 2026-10-18T12:11:13Z. Earlier metadata and check observations retain their individual dates.",
+  "metadata_collection": "The six historical PR rows remain unchanged from 2026-10-17T20:01:04Z, JavaParser from 2026-10-18T10:19:27Z, and Jackson from 2026-10-18T12:11:13Z. LZ4 #1890 was observed over 2026-10-18T13:13:17Z\u20132026-10-18T13:13:26Z. The separate 12:37 metadata-only follow-through is recorded in the dated receipt and does not refresh these retained rows.",
   "new_observation": {
-    "latest_scope": "Jackson #6302 PR metadata, one successful Gitar CheckRun, zero StatusContexts, its bot comment and one admission follow-up. Gitar functional validation was not enabled. Upstream Build and Deploy Snapshot remained action_required and its actual job list returned zero jobs. No submitted reviews were returned.",
-    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
-    "observed_at": "2026-10-18T12:11:13Z",
-    "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
+    "latest_scope": "At 2026-10-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures. Six of nine workflows were successful; three and AppVeyor remained pending. Actual job and step metadata were inspected for all nine workflows. The initial 13:07:28 comment/review observation was retained rather than refreshed. No complete matrix pass is established.",
+    "method": "Canonical GitHub connector GET observations collected by an independent agent over 13:13:17\u201313:13:26 UTC, checked and normalized by the coordinator. The eight older PR rows were not refreshed.",
+    "observed_at": "2026-10-18T13:13:26Z",
+    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json",
+    "evidence_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md"
   },
   "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below.",
-  "observed_at": "2026-10-18T12:11:13Z",
+  "observed_at": "2026-10-18T13:13:26Z",
   "records": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -133,8 +134,30 @@
       "review_decision_collection": "No submitted reviews were returned; the Gitar bot comment is not a submitted approval. No GraphQL review decision was collected, so the normalized PR row leaves it unreported.",
       "status_contexts_returned": 0,
       "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
+    },
+    {
+      "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+      "check_contexts_returned": 55,
+      "check_runs_returned": 54,
+      "checks_observed_at": "2026-10-18T13:13:26Z",
+      "collection": "Canonical GitHub GET observations over 13:13:17\u201313:13:26 UTC, not an atomic snapshot. Normalize 54 CheckRuns separately from the pending AppVeyor StatusContext. All 54 actual jobs and their step metadata were inspected. Completion is still pending; the initial 13:07:28 comment/review lists were not refreshed.",
+      "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+      "id": "lz4-1890",
+      "metadata_observed_at": "2026-10-18T13:13:26Z",
+      "number": 1890,
+      "repository": "lz4/lz4",
+      "review_decision": "",
+      "review_decision_collection": "Submitted reviews were empty in the initial 13:07:28 observation; they were not fetched again by the CI observer. No GraphQL review decision was collected, so approval or review requirements are not inferred.",
+      "status_contexts_returned": 1,
+      "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json"
     }
   ],
+  "retained_jackson_observation": {
+    "latest_scope": "Jackson #6302 PR metadata, one successful Gitar CheckRun, zero StatusContexts, its bot comment and one admission follow-up. Gitar functional validation was not enabled. Upstream Build and Deploy Snapshot remained action_required and its actual job list returned zero jobs. No submitted reviews were returned.",
+    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
+    "observed_at": "2026-10-18T12:11:13Z",
+    "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
+  },
   "retained_javaparser_observation": {
     "initial_observed_at": "2026-10-18T10:10:37Z",
     "latest_scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
@@ -158,6 +181,12 @@
   },
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "1e7b5f70f17882b6682b8816419f564faf5fe1fac484e703cea7b67f8b74385f",
-  "source": "Composite reviewed snapshot: six retained historical CLI observations, the retained JavaParser connector observation, and one new Jackson databind connector observation. Not a full live snapshot refresh."
+  "snapshot_sha256": "083c817f492164dd34f71a3a440ce74463352361211ced8f680e9c3a9efade83",
+  "source": "Composite reviewed snapshot: six retained historical CLI observations, retained JavaParser and Jackson connector observations, and one new LZ4 connector observation. Not a full live snapshot refresh.",
+  "initial_lz4_observation": {
+    "latest_scope": "LZ4 #1890 PR metadata, 54 CheckRuns with two successes and queued/running jobs, one pending AppVeyor StatusContext, nine admitted workflow records, and empty comment/review lists. No full upstream matrix pass is established.",
+    "method": "Coordinator-supplied canonical GitHub connector GET responses, normalized into the existing public schema; oss_status.py refresh was not run for this update.",
+    "observed_at": "2026-10-18T13:07:28Z",
+    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json"
+  }
 }

@@ -2,7 +2,7 @@
 
 Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
-**Goal progress: 2 / 100 distinct external repositories with qualified campaign submissions.**
+**Goal progress: 3 / 100 distinct external repositories with qualified campaign submissions.**
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -14,12 +14,12 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 97 | 100 |
-| screened | 0 | 3 |
-| selected | 0 | 3 |
-| reproduced | 0 | 3 |
-| validated | 1 | 3 |
-| submitted | 2 | 2 |
+| target | 96 | 100 |
+| screened | 0 | 4 |
+| selected | 0 | 4 |
+| reproduced | 0 | 4 |
+| validated | 1 | 4 |
+| submitted | 3 | 3 |
 | accepted | 0 | 0 |
 
 ## Batches
@@ -27,7 +27,7 @@ This offline report checks record structure and consistency. Verify what the lin
 | Batch | Targets | Screened | Selected | Qualified submitted | Accepted |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1 | 10 | 1 | 1 | 0 | 0 |
-| 2 | 10 | 0 | 0 | 0 | 0 |
+| 2 | 10 | 1 | 1 | 1 | 0 |
 | 3 | 10 | 0 | 0 | 0 | 0 |
 | 4 | 10 | 0 | 0 | 0 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
@@ -269,17 +269,24 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/lib
 
 ### [lz4/lz4](<https://github.com/lz4/lz4>)
 
-Batch 2 · current stage: **target**.
+Batch 2 · current stage: **submitted**.
 
-lz4: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected\.
+Fix \#1889: accept the Linux kernel four\-zero\-byte end marker in legacy LZ4 decoding and listing, preserving following\-frame handling and queued output cleanup\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Follow upstream PR \#1890 at exact head f83be8241c6042a0f9b500da927f68caa905fc92\. At 2026\-10\-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures\. Six of nine workflows were successful; three and AppVeyor remained pending\. No admission request is needed\. Read actual remaining CI results and substantive feedback, then address concrete changes\. Reuse published Linux threaded/nonthreaded regression and 10\-test listing results for unchanged source\. The broader CLI command failed at test\-lz4\-blocksize, reproduced with the unchanged upstream binary; do not label it passing\. No patch\-specific security\-reward eligibility, bounty, upstream acceptance or realized benefit is established\.
 
-Benefit route: **cash / conditional**, checked 2026-10-17. Tier 1 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
+Benefit route: **cash / conditional**, checked 2026-10-18. Tier 1 project scope rechecked on October 18: LZ4 is explicitly listed among Other essential libraries\. This compatibility fix has no demonstrated patch\-specific security benefit or reward eligibility; issue bounty, participant eligibility, upstream acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/lz4/lz4>); [evidence 2](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>).
+- 2026-10-18 **screened**: [evidence 1](<https://github.com/lz4/lz4/issues/1889>); [evidence 2](<https://github.com/lz4/lz4/blob/e7c36223415219c0a18ea75e3fe2eb5d267ee667/README.md>); [evidence 3](<https://github.com/lz4/lz4/blob/e7c36223415219c0a18ea75e3fe2eb5d267ee667/doc/lz4_Frame_format.md>); [policy\_ref](<https://github.com/lz4/lz4/blob/e7c36223415219c0a18ea75e3fe2eb5d267ee667/SECURITY.md>).
+- 2026-10-18 **selected**: [evidence 1](<https://github.com/lz4/lz4/issues/1889>); [evidence 2](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md>); [selection\_ref](<https://github.com/lz4/lz4/issues/1889>).
+- 2026-10-18 **reproduced**: [evidence 1](<https://github.com/agamal026/lz4/blob/f9f961ec521cb16ef602e0178f0f19a9f899f058/contribution-review/1889/baseline/BASELINE.md>); [source 28ca6d54d6e14c8546ebd24eb671b968b568a099](<https://github.com/agamal026/lz4/commit/28ca6d54d6e14c8546ebd24eb671b968b568a099>).
+  Validation command: sh test\-lz4\-multiple\-legacy\.sh; result: **reproduced**; [validation record](<https://github.com/agamal026/lz4/blob/f9f961ec521cb16ef602e0178f0f19a9f899f058/contribution-review/1889/baseline/BASELINE.md>).
+- 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md>); [evidence 2](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/VALIDATION.json>); [evidence 3](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/baseline-blocksize-control.json>); [review\_ref](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/AUTOMATED_REVIEW.md>); [source f83be8241c6042a0f9b500da927f68caa905fc92](<https://github.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92>).
+  Validation command: sh test\-lz4\-multiple\-legacy\.sh; result: **passed**; [validation record](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/VALIDATION.json>).
+- 2026-10-18 **submitted**: [evidence 1](<https://github.com/lz4/lz4/pull/1890>); [evidence 2](<https://github.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92>); [evidence 3](<https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md>); [pr\_url](<https://github.com/lz4/lz4/pull/1890>); validated source f83be8241c6042a0f9b500da927f68caa905fc92.
 
 ### [pallets/jinja](<https://github.com/pallets/jinja>)
 

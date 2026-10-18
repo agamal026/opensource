@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-18T12:11:13Z",
+  "observed_at": "2026-10-18T13:13:26Z",
   "pull_requests": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -628,6 +628,407 @@
           "status": "COMPLETED",
           "conclusion": "SUCCESS",
           "url": "https://github.com/FasterXML/jackson-databind/runs/117671129240"
+        }
+      ]
+    },
+    {
+      "id": "lz4-1890",
+      "repository": "lz4/lz4",
+      "number": 1890,
+      "url": "https://github.com/lz4/lz4/pull/1890",
+      "title": "Accept zero end markers in legacy LZ4 streams",
+      "state": "OPEN",
+      "is_draft": false,
+      "updated_at": "2026-10-18T13:06:55Z",
+      "merged_at": null,
+      "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+      "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+      "review_decision": "",
+      "checks": [
+        {
+          "kind": "check_run",
+          "name": "Clang Static Analyzer",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439589"
+        },
+        {
+          "kind": "check_run",
+          "name": "Cppcheck Static Analysis",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556"
+        },
+        {
+          "kind": "check_run",
+          "name": "Valgrind Memory Analysis",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489"
+        },
+        {
+          "kind": "check_run",
+          "name": "Unicode Linting",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439478"
+        },
+        {
+          "kind": "check_run",
+          "name": "Build Examples",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439364"
+        },
+        {
+          "kind": "check_run",
+          "name": "Environment Info (ubuntu-latest)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434160"
+        },
+        {
+          "kind": "check_run",
+          "name": "Environment Info (ubuntu-24.04)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434116"
+        },
+        {
+          "kind": "check_run",
+          "name": "Environment Info (ubuntu-22.04)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434090"
+        },
+        {
+          "kind": "check_run",
+          "name": "Git Version Tag Check",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683433878"
+        },
+        {
+          "kind": "check_run",
+          "name": "MemorySanitizer (x64)",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857"
+        },
+        {
+          "kind": "check_run",
+          "name": "UndefinedBehaviorSanitizer (x64)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433851"
+        },
+        {
+          "kind": "check_run",
+          "name": "Block Device Compression Test",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433847"
+        },
+        {
+          "kind": "check_run",
+          "name": "ThreadSanitizer (x64)",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807"
+        },
+        {
+          "kind": "check_run",
+          "name": "UndefinedBehaviorSanitizer (x86)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433805"
+        },
+        {
+          "kind": "check_run",
+          "name": "ARM (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433779"
+        },
+        {
+          "kind": "check_run",
+          "name": "AddressSanitizer (x64)",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771"
+        },
+        {
+          "kind": "check_run",
+          "name": "Custom Configuration Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433726"
+        },
+        {
+          "kind": "check_run",
+          "name": "Extended Tests (integration)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433718"
+        },
+        {
+          "kind": "check_run",
+          "name": "Memory Usage Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433691"
+        },
+        {
+          "kind": "check_run",
+          "name": "PPC64LE (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433683"
+        },
+        {
+          "kind": "check_run",
+          "name": "ABI Compatibility Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433672"
+        },
+        {
+          "kind": "check_run",
+          "name": "Core Tests (windows-latest, Release)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433649"
+        },
+        {
+          "kind": "check_run",
+          "name": "Version Compatibility Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433642"
+        },
+        {
+          "kind": "check_run",
+          "name": "RISC-V (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433634"
+        },
+        {
+          "kind": "check_run",
+          "name": "Benchmark Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433622"
+        },
+        {
+          "kind": "check_run",
+          "name": "Makefile Standard Variables Test",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433619"
+        },
+        {
+          "kind": "check_run",
+          "name": "Core Tests (ubuntu-latest, Debug)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433618"
+        },
+        {
+          "kind": "check_run",
+          "name": "M68K (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433616"
+        },
+        {
+          "kind": "check_run",
+          "name": "Extended Tests (static_lib)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433615"
+        },
+        {
+          "kind": "check_run",
+          "name": "Extended Tests (cmake_versions)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433608"
+        },
+        {
+          "kind": "check_run",
+          "name": "Make CMake",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433594"
+        },
+        {
+          "kind": "check_run",
+          "name": "Fuzzer Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433588"
+        },
+        {
+          "kind": "check_run",
+          "name": "ARM64 (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433574"
+        },
+        {
+          "kind": "check_run",
+          "name": "Core Tests (ubuntu-latest, Release)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433563"
+        },
+        {
+          "kind": "check_run",
+          "name": "OSS-Fuzz (address)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433558"
+        },
+        {
+          "kind": "check_run",
+          "name": "SPARC (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433555"
+        },
+        {
+          "kind": "check_run",
+          "name": "MIPS (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433553"
+        },
+        {
+          "kind": "check_run",
+          "name": "S390X (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433543"
+        },
+        {
+          "kind": "check_run",
+          "name": "OSS-Fuzz (memory)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433536"
+        },
+        {
+          "kind": "check_run",
+          "name": "PPC (QEMU)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433528"
+        },
+        {
+          "kind": "check_run",
+          "name": "cc on ubuntu-latest",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433526"
+        },
+        {
+          "kind": "check_run",
+          "name": "Meson + Ninja (MSVC, shared library)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433518"
+        },
+        {
+          "kind": "check_run",
+          "name": "gcc-14 on ubuntu-24.04",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433511"
+        },
+        {
+          "kind": "check_run",
+          "name": "clang-18 on ubuntu-24.04",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433506"
+        },
+        {
+          "kind": "check_run",
+          "name": "clang-14 on ubuntu-22.04",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433487"
+        },
+        {
+          "kind": "check_run",
+          "name": "LZ4 Frame Tests",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433485"
+        },
+        {
+          "kind": "check_run",
+          "name": "clang on ubuntu-latest",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433477"
+        },
+        {
+          "kind": "check_run",
+          "name": "gcc on ubuntu-latest",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433470"
+        },
+        {
+          "kind": "check_run",
+          "name": "Core Tests (macos-latest, Release)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433455"
+        },
+        {
+          "kind": "check_run",
+          "name": "windows-2022 Visual Studio",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433448"
+        },
+        {
+          "kind": "check_run",
+          "name": "macOS",
+          "status": "IN_PROGRESS",
+          "conclusion": "",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433"
+        },
+        {
+          "kind": "check_run",
+          "name": "OSS-Fuzz (undefined)",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433410"
+        },
+        {
+          "kind": "check_run",
+          "name": "gcc-11 on ubuntu-22.04",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433405"
+        },
+        {
+          "kind": "check_run",
+          "name": "Meson + Ninja",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433309"
+        },
+        {
+          "kind": "status_context",
+          "name": "continuous-integration/appveyor/pr",
+          "status": "PENDING",
+          "conclusion": "",
+          "url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919754"
         }
       ]
     }

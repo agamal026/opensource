@@ -1,12 +1,12 @@
 # Open-source progress
 
-Observed at: 2026-10-18T12:11:13Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-18T13:13:26Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
 ## Upstream contributions
 
-Registered pull requests: 8; open: 7; merged: 1; closed without merge: 0.
+Registered pull requests: 9; open: 8; merged: 1; closed without merge: 0.
 
 Registered PRs with a recorded merge on or after 2026-10-13: 0.
 
@@ -21,6 +21,7 @@ Check results describe only the rollup returned by GitHub for each recorded head
 | [FasterXML/jackson\-databind \#6302](<https://github.com/FasterXML/jackson-databind/pull/6302>) | open | 1 passed | not reported | 2026-10-18T12:10:40Z |
 | [javaparser/javaparser \#5175](<https://github.com/javaparser/javaparser/pull/5175>) | open | 1 passed | not reported | 2026-10-18T10:13:18Z |
 | [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
+| [lz4/lz4 \#1890](<https://github.com/lz4/lz4/pull/1890>) | open | 7 pending; 48 passed | not reported | 2026-10-18T13:06:55Z |
 | [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | review required | 2026-10-15T12:33:23Z |
 | [nih\-at/libzip \#576](<https://github.com/nih-at/libzip/pull/576>) | open | 1 passed | not reported | 2026-10-13T18:42:17Z |
 | [npm/cli \#9954](<https://github.com/npm/cli/pull/9954>) | open | unknown (no checks returned) | review required | 2026-10-15T14:24:47Z |
@@ -156,6 +157,75 @@ Replace the bundled ARC4 random\-number generator with operating\-system randomn
 - Head commit: `14e56a95e1d524d8500da73bb49f9b0c80397057`
 - Base commit: `d82464a277d0f42703702c4dfd9af6af38595a83`
 - Catalog note: The published PR records remaining platform, real\-chroot, and concurrency coverage limits\.
+
+### lz4/lz4 #1890: Accept zero end markers in legacy LZ4 streams
+
+Fix \#1889: accept the Linux kernel four\-zero\-byte end marker in legacy LZ4 decoding and listing, preserving following\-frame handling and queued output cleanup\.
+
+- Source: [pull request](<https://github.com/lz4/lz4/pull/1890>)
+- Head commit: `f83be8241c6042a0f9b500da927f68caa905fc92`
+- Base commit: `e7c36223415219c0a18ea75e3fe2eb5d267ee667`
+- Catalog note: Published source: https://github\.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92 \. Exact source, failed baseline, local validation and independent automated review: https://github\.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution\-review/1889/README\.md \.
+- Catalog note: Linux x86\-64 GCC 13\.3\.0 builds and the extended legacy regression passed in threaded and nonthreaded modes; the existing listing suite passed 10 tests with no failures, errors or skips\. The broader CLI command failed at test\-lz4\-blocksize, reproduced with the unchanged upstream binary\. No complete upstream suite pass is claimed\.
+- Catalog note: At 2026\-10\-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures\. Six of nine workflows were successful; three and AppVeyor remained pending\. The dated CI supplement is https://github\.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution\-review/1889/UPSTREAM\_CI\.md \. No complete matrix pass is established; no admission follow\-up is needed\. Upstream acceptance and Tier 1 project scope remain separate from patch\-specific reward eligibility or payment\.
+
+| Check | Kind | Raw status | Conclusion | Interpretation |
+| --- | --- | --- | --- | --- |
+| [ABI Compatibility Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433672>) | check run | COMPLETED | SUCCESS | passed |
+| [ARM \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433779>) | check run | COMPLETED | SUCCESS | passed |
+| [ARM64 \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433574>) | check run | COMPLETED | SUCCESS | passed |
+| [AddressSanitizer \(x64\)](<https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771>) | check run | IN\_PROGRESS | not reported | pending |
+| [Benchmark Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433622>) | check run | COMPLETED | SUCCESS | passed |
+| [Block Device Compression Test](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433847>) | check run | COMPLETED | SUCCESS | passed |
+| [Build Examples](<https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439364>) | check run | COMPLETED | SUCCESS | passed |
+| [Clang Static Analyzer](<https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439589>) | check run | COMPLETED | SUCCESS | passed |
+| [Core Tests \(macos\-latest, Release\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433455>) | check run | COMPLETED | SUCCESS | passed |
+| [Core Tests \(ubuntu\-latest, Debug\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433618>) | check run | COMPLETED | SUCCESS | passed |
+| [Core Tests \(ubuntu\-latest, Release\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433563>) | check run | COMPLETED | SUCCESS | passed |
+| [Core Tests \(windows\-latest, Release\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433649>) | check run | COMPLETED | SUCCESS | passed |
+| [Cppcheck Static Analysis](<https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556>) | check run | IN\_PROGRESS | not reported | pending |
+| [Custom Configuration Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433726>) | check run | COMPLETED | SUCCESS | passed |
+| [Environment Info \(ubuntu\-22\.04\)](<https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434090>) | check run | COMPLETED | SUCCESS | passed |
+| [Environment Info \(ubuntu\-24\.04\)](<https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434116>) | check run | COMPLETED | SUCCESS | passed |
+| [Environment Info \(ubuntu\-latest\)](<https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434160>) | check run | COMPLETED | SUCCESS | passed |
+| [Extended Tests \(cmake\_versions\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433608>) | check run | COMPLETED | SUCCESS | passed |
+| [Extended Tests \(integration\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433718>) | check run | COMPLETED | SUCCESS | passed |
+| [Extended Tests \(static\_lib\)](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433615>) | check run | COMPLETED | SUCCESS | passed |
+| [Fuzzer Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433588>) | check run | COMPLETED | SUCCESS | passed |
+| [Git Version Tag Check](<https://github.com/lz4/lz4/actions/runs/39130134670/job/117683433878>) | check run | COMPLETED | SUCCESS | passed |
+| [LZ4 Frame Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433485>) | check run | COMPLETED | SUCCESS | passed |
+| [M68K \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433616>) | check run | COMPLETED | SUCCESS | passed |
+| [MIPS \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433553>) | check run | COMPLETED | SUCCESS | passed |
+| [Make CMake](<https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433594>) | check run | COMPLETED | SUCCESS | passed |
+| [Makefile Standard Variables Test](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433619>) | check run | COMPLETED | SUCCESS | passed |
+| [Memory Usage Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433691>) | check run | COMPLETED | SUCCESS | passed |
+| [MemorySanitizer \(x64\)](<https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857>) | check run | IN\_PROGRESS | not reported | pending |
+| [Meson \+ Ninja](<https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433309>) | check run | COMPLETED | SUCCESS | passed |
+| [Meson \+ Ninja \(MSVC, shared library\)](<https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433518>) | check run | COMPLETED | SUCCESS | passed |
+| [OSS\-Fuzz \(address\)](<https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433558>) | check run | COMPLETED | SUCCESS | passed |
+| [OSS\-Fuzz \(memory\)](<https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433536>) | check run | COMPLETED | SUCCESS | passed |
+| [OSS\-Fuzz \(undefined\)](<https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433410>) | check run | COMPLETED | SUCCESS | passed |
+| [PPC \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433528>) | check run | COMPLETED | SUCCESS | passed |
+| [PPC64LE \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433683>) | check run | COMPLETED | SUCCESS | passed |
+| [RISC\-V \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433634>) | check run | COMPLETED | SUCCESS | passed |
+| [S390X \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433543>) | check run | COMPLETED | SUCCESS | passed |
+| [SPARC \(QEMU\)](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433555>) | check run | COMPLETED | SUCCESS | passed |
+| [ThreadSanitizer \(x64\)](<https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807>) | check run | IN\_PROGRESS | not reported | pending |
+| [UndefinedBehaviorSanitizer \(x64\)](<https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433851>) | check run | COMPLETED | SUCCESS | passed |
+| [UndefinedBehaviorSanitizer \(x86\)](<https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433805>) | check run | COMPLETED | SUCCESS | passed |
+| [Unicode Linting](<https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439478>) | check run | COMPLETED | SUCCESS | passed |
+| [Valgrind Memory Analysis](<https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489>) | check run | IN\_PROGRESS | not reported | pending |
+| [Version Compatibility Tests](<https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433642>) | check run | COMPLETED | SUCCESS | passed |
+| [cc on ubuntu\-latest](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433526>) | check run | COMPLETED | SUCCESS | passed |
+| [clang on ubuntu\-latest](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433477>) | check run | COMPLETED | SUCCESS | passed |
+| [clang\-14 on ubuntu\-22\.04](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433487>) | check run | COMPLETED | SUCCESS | passed |
+| [clang\-18 on ubuntu\-24\.04](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433506>) | check run | COMPLETED | SUCCESS | passed |
+| [continuous\-integration/appveyor/pr](<https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919754>) | status context | PENDING | not reported | pending |
+| [gcc on ubuntu\-latest](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433470>) | check run | COMPLETED | SUCCESS | passed |
+| [gcc\-11 on ubuntu\-22\.04](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433405>) | check run | COMPLETED | SUCCESS | passed |
+| [gcc\-14 on ubuntu\-24\.04](<https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433511>) | check run | COMPLETED | SUCCESS | passed |
+| [macOS](<https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433>) | check run | IN\_PROGRESS | not reported | pending |
+| [windows\-2022 Visual Studio](<https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433448>) | check run | COMPLETED | SUCCESS | passed |
 
 ### nginx/nginx #1734: Core: add a total client request body timeout\.
 

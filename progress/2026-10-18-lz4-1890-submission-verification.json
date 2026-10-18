@@ -1,0 +1,1751 @@
+{
+  "benefit_route": {
+    "checked_on": "2026-10-18",
+    "note": "LZ4 explicitly Tier1 Other essential libraries; OSS-Fuzz also present. No patch-specific security reward eligibility, bounty, acceptance or income established.",
+    "oss_fuzz_ref": "https://github.com/google/oss-fuzz/blob/master/projects/lz4/project.yaml",
+    "rules_ref": "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md",
+    "scope_ref": "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md",
+    "status": "conditional",
+    "tier": "Tier 1"
+  },
+  "campaign_accounting": {
+    "currently_at_stage": {
+      "accepted": 0,
+      "reproduced": 0,
+      "screened": 0,
+      "selected": 0,
+      "submitted": 3,
+      "target": 96,
+      "validated": 1
+    },
+    "h2": "Validated and parked with existing personal contributor-statement and documented remaining gates. Owned draft excluded from submission credit.",
+    "historical_distinct_repositories": 5,
+    "historical_submissions": 6,
+    "qualified_submitted_repositories": 3,
+    "research_queue_repositories": 100,
+    "submitted_projects": [
+      "javaparser/javaparser",
+      "FasterXML/jackson-databind",
+      "lz4/lz4"
+    ],
+    "target_count": 100,
+    "verified_cash_receipts": 0,
+    "verified_new_benefits": 0
+  },
+  "collection": "Coordinator created and canonically read back the upstream PR, source blobs, evidence directory and initial CI state. The hub editor transcribed supplied facts and read the already reviewed public packet; no new upstream API queries or source tests were made for this hub update. A later independent agent collected upstream PR/check/status/workflow/job metadata over 13:13:17\u201313:13:26 UTC; the coordinator verified its exact source, counts and published supplement and refreshed only the LZ4 snapshot.",
+  "continuation": {
+    "baseline_date": "2026-10-13",
+    "cadence": "Existing hourly native task preserved.",
+    "libzip_earliest_recheck": "2026-10-22T13:12:13Z",
+    "notification_rule": "Proceed with the first 100 contributions, self improve, report back only when done.",
+    "other_tasks": "Preserve all other existing tasks and their schedules.",
+    "review_date": "2026-11-12",
+    "scope": "No native schedule action performed by the hub editor. No libzip reward recheck occurred before its threshold."
+  },
+  "evidence": {
+    "archive_members": [
+      "AUTOMATED_REVIEW.md",
+      "README.md",
+      "SHA256SUMS",
+      "VALIDATION.json",
+      "baseline-blocksize-control.json",
+      "baseline-blocksize-control.log",
+      "broader-commands.json",
+      "cli-essentials.log",
+      "final-build.log",
+      "final-focused-commands.json",
+      "final-mt.log",
+      "final-nomt.log",
+      "listing-suite.log",
+      "source.patch"
+    ],
+    "archive_sha256": "a9c949d75ce3f17c760db3f52acc928f16206640635713e32fca12bb50440024",
+    "automated_review": {
+      "human_review": false,
+      "identity_reconciled_at": "2026-10-18T13:01:49Z",
+      "required_source_changes": 0,
+      "scope": "Independent automated source review, not a separate execution of the test suite or an audit of build logs.",
+      "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/AUTOMATED_REVIEW.md"
+    },
+    "canonical_files_verified": 16,
+    "canonical_verified_at": "2026-10-18T13:05:19Z",
+    "commit": "9016232b3f5ef31764c6b4ae30f201da1ecaa445",
+    "index_url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md",
+    "published_artifacts": {
+      "ARCHIVE_SHA256.txt": {
+        "bytes": 86,
+        "sha256": "4e24962eef11983017bbd7251acf0687ab3a1c08f5dca5af9847d8137382918c",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/ARCHIVE_SHA256.txt"
+      },
+      "AUTOMATED_REVIEW.md": {
+        "bytes": 11066,
+        "sha256": "c47e018f7142329d455b6c3654eb10bb44f3fdc27d27e342352dad50b33032fb",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/AUTOMATED_REVIEW.md"
+      },
+      "README.md": {
+        "bytes": 5488,
+        "sha256": "aca298faf87d88e332b32602d2e68f5041b6b064394da8775243af479bdbdeab",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md"
+      },
+      "SHA256SUMS": {
+        "bytes": 1111,
+        "sha256": "de82497a696bb8285d3df97affc8faf619ee4d2a4ee0212dfe5b4e25c4122db1",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/SHA256SUMS"
+      },
+      "VALIDATION.json": {
+        "bytes": 8206,
+        "sha256": "78f8130a0d3f2c017e9c9f6d3140046db38697ee6daf0a7e80c147dcc873e332",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/VALIDATION.json"
+      },
+      "baseline-blocksize-control.json": {
+        "bytes": 399,
+        "sha256": "d6cfda6b635a76a73da92418da0582fcf5805b97d281e0dd36e7bb29536d8cc8",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/baseline-blocksize-control.json"
+      },
+      "baseline-blocksize-control.log": {
+        "bytes": 18631,
+        "sha256": "9a9cdfbc51a0924847d042e2577124df88fe404779af284d58aa0ef4af28e9e8",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/baseline-blocksize-control.log"
+      },
+      "broader-commands.json": {
+        "bytes": 854,
+        "sha256": "fbfccb2e92c37330a81df1a609062c7228ece46db33f0328a51ce9669f2f5fb3",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/broader-commands.json"
+      },
+      "cli-essentials.log": {
+        "bytes": 55022,
+        "sha256": "10cc155ce6a513c94e67744ba75de63359631af902f66ad9aa2b9ccb521acebe",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/cli-essentials.log"
+      },
+      "final-build.log": {
+        "bytes": 2409,
+        "sha256": "d742a76608941c79cd5db5d533cd6f2447bd5e1be0dc70e5d4f3faa4519ac657",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/final-build.log"
+      },
+      "final-focused-commands.json": {
+        "bytes": 1223,
+        "sha256": "023e5b47ca266ec82603355f1853504ac5e1f9edf37732a162ee7120f965d670",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/final-focused-commands.json"
+      },
+      "final-mt.log": {
+        "bytes": 6927,
+        "sha256": "9931316a6df553daec4d760682f36e3a52fe7261773e7ae63b66bb2c41796f45",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/final-mt.log"
+      },
+      "final-nomt.log": {
+        "bytes": 6818,
+        "sha256": "930ad6c91ce852dc79b047631201220233ed1e1e5264ce68ac8c231a8b5c9a11",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/final-nomt.log"
+      },
+      "listing-suite.log": {
+        "bytes": 9524,
+        "sha256": "0dc6206d791f4f8db93e815104d85ef416f973286da654f5110326e6ca60e4f4",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/listing-suite.log"
+      },
+      "source.patch": {
+        "bytes": 5721,
+        "sha256": "e3d185a16f863e26756d3477427ac3375d765248b792894e1f0a201d8213c228",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/source.patch"
+      },
+      "validation-logs.zip": {
+        "bytes": 27870,
+        "sha256": "a9c949d75ce3f17c760db3f52acc928f16206640635713e32fca12bb50440024",
+        "url": "https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/validation-logs.zip"
+      }
+    },
+    "scope": "Sixteen files are published directly, including validation-logs.zip. Links below use actual published filenames. The ZIP repeats the allowlisted packet; binaries and generated fixtures are excluded.",
+    "tree": "ea2006c384faf97515e02a0d4bc5473cd4dfd647"
+  },
+  "follow_through": {
+    "canonical_get_count": 7,
+    "finished_at": "2026-10-18T12:37:01Z",
+    "records": [
+      {
+        "base": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+        "comments": 2,
+        "draft": false,
+        "head": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+        "merged": false,
+        "number": 6302,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "FasterXML/jackson-databind",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-18T12:10:40Z",
+        "url": "https://github.com/FasterXML/jackson-databind/pull/6302"
+      },
+      {
+        "base": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+        "comments": 1,
+        "draft": false,
+        "head": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "merged": false,
+        "number": 5175,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "javaparser/javaparser",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-18T10:13:18Z",
+        "url": "https://github.com/javaparser/javaparser/pull/5175"
+      },
+      {
+        "base": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
+        "comments": 1,
+        "draft": false,
+        "head": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
+        "merged": false,
+        "number": 9954,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "npm/cli",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-17T21:35:40Z",
+        "url": "https://github.com/npm/cli/pull/9954"
+      },
+      {
+        "base": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
+        "comments": 1,
+        "draft": false,
+        "head": "93ef0a32c07741c34bb515295f5be3d270cca02d",
+        "merged": false,
+        "number": 3413,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "AOMediaCodec/libavif",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-17T21:36:01Z",
+        "url": "https://github.com/AOMediaCodec/libavif/pull/3413"
+      },
+      {
+        "base": "d82464a277d0f42703702c4dfd9af6af38595a83",
+        "comments": 0,
+        "draft": false,
+        "head": "14e56a95e1d524d8500da73bb49f9b0c80397057",
+        "merged": false,
+        "number": 1916,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "libevent/libevent",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-15T13:13:47Z",
+        "url": "https://github.com/libevent/libevent/pull/1916"
+      },
+      {
+        "base": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
+        "comments": 3,
+        "draft": false,
+        "head": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
+        "merged": false,
+        "number": 1734,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "nginx/nginx",
+        "review_comments": 0,
+        "state": "open",
+        "updated_at": "2026-10-15T12:33:23Z",
+        "url": "https://github.com/nginx/nginx/pull/1734"
+      },
+      {
+        "base": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
+        "comments": 8,
+        "draft": false,
+        "head": "5aeb57b6e922934125008756998b3ce2a93ba498",
+        "merged": false,
+        "number": 576,
+        "observed_at": "2026-10-18T12:37:01Z",
+        "repository": "nih-at/libzip",
+        "review_comments": 6,
+        "state": "open",
+        "updated_at": "2026-10-13T18:42:17Z",
+        "url": "https://github.com/nih-at/libzip/pull/576"
+      }
+    ],
+    "result": "No head/base/state/draft/merge, updated_at or comment-count delta against the prior live observations. All seven PRs remain open, non-draft and unmerged.",
+    "scope": "Bounded metadata-only follow-through. No discussion bodies, submitted reviews, check rollups or workflow jobs were fetched, and no comments were posted. Existing snapshot rows and check observations retain their original dates.",
+    "started_at": "2026-10-18T12:37:00Z"
+  },
+  "hub_publication": {
+    "expected_parent": "40b789ae697c22460b9d62e370cdfc3fd08d9381",
+    "scope": "Eleven deliberately selected hub files. The coordinator will publish with an expected-head nonforced update, verify the resulting canonical commit/tree/blobs and actual hosted workflow outcome, then record those identities in the existing native continuation checkpoint. This pre-publication receipt does not claim a future commit or CI outcome.",
+    "status": "prepared_for_publication"
+  },
+  "hub_validation": {
+    "base_commit": "40b789ae697c22460b9d62e370cdfc3fd08d9381",
+    "offline_tests": 81,
+    "results": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.551878+00:00",
+        "output": "test_check_missing_report_does_not_create_it (test_contribution_campaign.CampaignOutputTests.test_check_missing_report_does_not_create_it) ... ok\ntest_duplicate_json_keys_and_nonfinite_numbers_preserve_output (test_contribution_campaign.CampaignOutputTests.test_duplicate_json_keys_and_nonfinite_numbers_preserve_output) ... ok\ntest_invalid_input_preserves_report_without_creating_output_directories (test_contribution_campaign.CampaignOutputTests.test_invalid_input_preserves_report_without_creating_output_directories) ... ok\ntest_output_cannot_overwrite_input (test_contribution_campaign.CampaignOutputTests.test_output_cannot_overwrite_input) ... ok\ntest_replace_failure_preserves_prior_report_and_removes_temporary_file (test_contribution_campaign.CampaignOutputTests.test_replace_failure_preserves_prior_report_and_removes_temporary_file) ... ok\ntest_successful_atomic_report_and_check_preserve_exact_bytes (test_contribution_campaign.CampaignOutputTests.test_successful_atomic_report_and_check_preserve_exact_bytes) ... ok\ntest_unpaired_json_surrogates_fail_before_stdout_or_file_output (test_contribution_campaign.CampaignOutputTests.test_unpaired_json_surrogates_fail_before_stdout_or_file_output) ... ok\ntest_valid_supplementary_unicode_survives_json_and_utf8_output (test_contribution_campaign.CampaignOutputTests.test_valid_supplementary_unicode_survives_json_and_utf8_output) ... ok\ntest_validate_and_stdout_report_are_offline_and_leave_no_files (test_contribution_campaign.CampaignOutputTests.test_validate_and_stdout_report_are_offline_and_leave_no_files) ... ok\ntest_acceptance_requires_upstream_acceptance_for_the_submission (test_contribution_campaign.CampaignValidationTests.test_acceptance_requires_upstream_acceptance_for_the_submission) ... ok\ntest_batch_report_keeps_full_goal_and_validates_unshown_records (test_contribution_campaign.CampaignValidationTests.test_batch_report_keeps_full_goal_and_validates_unshown_records) ... ok\ntest_boolean_numbers_unknown_fields_and_credential_urls_fail (test_contribution_campaign.CampaignValidationTests.test_boolean_numbers_unknown_fields_and_credential_urls_fail) ... ok\ntest_case_insensitive_duplicate_targets_across_batches_are_rejected (test_contribution_campaign.CampaignValidationTests.test_case_insensitive_duplicate_targets_across_batches_are_rejected) ... ok\ntest_claimed_benefit_route_requires_qualification_sources (test_contribution_campaign.CampaignValidationTests.test_claimed_benefit_route_requires_qualification_sources) ... ok\ntest_complete_history_counts_submission_and_acceptance_separately (test_contribution_campaign.CampaignValidationTests.test_complete_history_counts_submission_and_acceptance_separately) ... ok\ntest_dates_cannot_invent_history_or_future_milestones (test_contribution_campaign.CampaignValidationTests.test_dates_cannot_invent_history_or_future_milestones) ... ok\ntest_duplicate_benefit_ids_cannot_double_count_across_targets (test_contribution_campaign.CampaignValidationTests.test_duplicate_benefit_ids_cannot_double_count_across_targets) ... ok\ntest_empty_campaign_does_not_invent_progress (test_contribution_campaign.CampaignValidationTests.test_empty_campaign_does_not_invent_progress) ... ok\ntest_goal_is_not_a_cap_on_research_queue (test_contribution_campaign.CampaignValidationTests.test_goal_is_not_a_cap_on_research_queue) ... ok\ntest_grants_and_activations_require_their_own_evidence (test_contribution_campaign.CampaignValidationTests.test_grants_and_activations_require_their_own_evidence) ... ok\ntest_history_is_preserved_without_fabricated_validation_or_new_credit (test_contribution_campaign.CampaignValidationTests.test_history_is_preserved_without_fabricated_validation_or_new_credit) ... ok\ntest_nonexact_and_nonpositive_financial_values_are_rejected (test_contribution_campaign.CampaignValidationTests.test_nonexact_and_nonpositive_financial_values_are_rejected) ... ok\ntest_owned_repositories_cannot_inflate_external_goal (test_contribution_campaign.CampaignValidationTests.test_owned_repositories_cannot_inflate_external_goal) ... ok\ntest_paid_cash_requires_receipt_and_exact_amount (test_contribution_campaign.CampaignValidationTests.test_paid_cash_requires_receipt_and_exact_amount) ... ok\ntest_paid_totals_exclude_ads_grants_history_and_non_cash (test_contribution_campaign.CampaignValidationTests.test_paid_totals_exclude_ads_grants_history_and_non_cash) ... ok\ntest_render_is_deterministic_and_escapes_user_text (test_contribution_campaign.CampaignValidationTests.test_render_is_deterministic_and_escapes_user_text) ... ok\ntest_selection_requires_policy_and_selection_evidence (test_contribution_campaign.CampaignValidationTests.test_selection_requires_policy_and_selection_evidence) ... ok\ntest_submission_requires_matching_pr_evidence_and_validated_revision (test_contribution_campaign.CampaignValidationTests.test_submission_requires_matching_pr_evidence_and_validated_revision) ... ok\ntest_unsupported_skipped_and_repeated_stages_are_rejected (test_contribution_campaign.CampaignValidationTests.test_unsupported_skipped_and_repeated_stages_are_rejected) ... ok\ntest_validation_requires_exact_source_test_and_review_records (test_contribution_campaign.CampaignValidationTests.test_validation_requires_exact_source_test_and_review_records) ... ok\ntest_commit_statuses_are_independent_of_checkrun_conclusions (test_oss_status.CheckInterpretationTests.test_commit_statuses_are_independent_of_checkrun_conclusions) ... ok\ntest_incomplete_run_does_not_pass_from_a_success_conclusion (test_oss_status.CheckInterpretationTests.test_incomplete_run_does_not_pass_from_a_success_conclusion) ... ok\ntest_mixed_success_failure_and_required_action_remain_visible (test_oss_status.CheckInterpretationTests.test_mixed_success_failure_and_required_action_remain_visible) ... ok\ntest_non_passing_conclusions_are_not_successes (test_oss_status.CheckInterpretationTests.test_non_passing_conclusions_are_not_successes) ... ok\ntest_unknown_and_no_checks_never_report_success (test_oss_status.CheckInterpretationTests.test_unknown_and_no_checks_never_report_success) ... ok\ntest_failed_replace_cleans_temporary_file_and_keeps_existing_bytes (test_oss_status.RefreshTests.test_failed_replace_cleans_temporary_file_and_keeps_existing_bytes) ... ok\ntest_fetches_more_than_100_contexts_and_keeps_late_failure (test_oss_status.RefreshTests.test_fetches_more_than_100_contexts_and_keeps_late_failure) ... ok\ntest_gh_2_46_transport_avoids_unsupported_pr_view_field_registry (test_oss_status.RefreshTests.test_gh_2_46_transport_avoids_unsupported_pr_view_field_registry) ... ok\ntest_graphql_errors_null_objects_and_private_repository_are_not_published (test_oss_status.RefreshTests.test_graphql_errors_null_objects_and_private_repository_are_not_published) ... ok\ntest_later_invalid_response_preserves_old_snapshot (test_oss_status.RefreshTests.test_later_invalid_response_preserves_old_snapshot) ... ok\ntest_later_query_failure_preserves_old_snapshot_and_omits_error_body (test_oss_status.RefreshTests.test_later_query_failure_preserves_old_snapshot_and_omits_error_body) ... ok\ntest_missing_cli_timeout_and_invalid_json_do_not_create_output (test_oss_status.RefreshTests.test_missing_cli_timeout_and_invalid_json_do_not_create_output) ... ok\ntest_missing_rollup_field_is_error_but_null_is_unknown (test_oss_status.RefreshTests.test_missing_rollup_field_is_error_but_null_is_unknown) ... ok\ntest_missing_rollup_or_commit_and_mismatched_head_fail_closed (test_oss_status.RefreshTests.test_missing_rollup_or_commit_and_mismatched_head_fail_closed) ... ok\ntest_normalizes_both_check_types_and_drops_unrequested_fields (test_oss_status.RefreshTests.test_normalizes_both_check_types_and_drops_unrequested_fields) ... ok\ntest_null_graphql_rollup_and_empty_contexts_remain_unknown (test_oss_status.RefreshTests.test_null_graphql_rollup_and_empty_contexts_remain_unknown) ... ok\ntest_pagination_inconsistency_preserves_previous_snapshot (test_oss_status.RefreshTests.test_pagination_inconsistency_preserves_previous_snapshot) ... ok\ntest_unknown_union_member_is_retained_conservatively (test_oss_status.RefreshTests.test_unknown_union_member_is_retained_conservatively) ... ok\ntest_cli_render_check_detects_staleness_without_writing (test_oss_status.RenderingTests.test_cli_render_check_detects_staleness_without_writing) ... ok\ntest_markdown_escapes_metadata_and_preserves_exact_commit_ids (test_oss_status.RenderingTests.test_markdown_escapes_metadata_and_preserves_exact_commit_ids) ... ok\ntest_merge_date_comparison_excludes_old_merge_and_does_not_claim_goal_completion (test_oss_status.RenderingTests.test_merge_date_comparison_excludes_old_merge_and_does_not_claim_goal_completion) ... ok\ntest_refresh_cli_defaults_to_untracked_local_snapshot (test_oss_status.RenderingTests.test_refresh_cli_defaults_to_untracked_local_snapshot) ... ok\ntest_report_is_deterministic_under_input_order_changes (test_oss_status.RenderingTests.test_report_is_deterministic_under_input_order_changes) ... ok\ntest_commit_ids_require_exact_full_sha (test_oss_status.ValidationTests.test_commit_ids_require_exact_full_sha) ... ok\ntest_dates_are_real_and_temporally_consistent (test_oss_status.ValidationTests.test_dates_are_real_and_temporally_consistent) ... ok\ntest_duplicate_ids_and_coordinates_are_rejected (test_oss_status.ValidationTests.test_duplicate_ids_and_coordinates_are_rejected) ... ok\ntest_merge_metadata_cannot_contradict_state_or_update (test_oss_status.ValidationTests.test_merge_metadata_cannot_contradict_state_or_update) ... ok\ntest_mismatched_or_unsafe_urls_are_rejected (test_oss_status.ValidationTests.test_mismatched_or_unsafe_urls_are_rejected) ... ok\ntest_own_projects_cannot_inflate_upstream_contribution_counts (test_oss_status.ValidationTests.test_own_projects_cannot_inflate_upstream_contribution_counts) ... ok\ntest_partial_releases_and_duplicate_own_projects_are_rejected (test_oss_status.ValidationTests.test_partial_releases_and_duplicate_own_projects_are_rejected) ... ok\ntest_snapshot_must_match_all_registered_pull_requests_exactly (test_oss_status.ValidationTests.test_snapshot_must_match_all_registered_pull_requests_exactly) ... ok\ntest_types_unknown_fields_and_duplicate_json_keys_are_rejected (test_oss_status.ValidationTests.test_types_unknown_fields_and_duplicate_json_keys_are_rejected) ... ok\ntest_valid_catalog_and_complete_snapshot (test_oss_status.ValidationTests.test_valid_catalog_and_complete_snapshot) ... ok\ntest_truncated_rename_and_invalid_output_are_rejected (test_workspace_snapshot.PorcelainParserTests.test_truncated_rename_and_invalid_output_are_rejected) ... ok\ntest_atomic_output_replacement_and_failure_preserves_previous_result (test_workspace_snapshot.WorkspaceSnapshotTests.test_atomic_output_replacement_and_failure_preserves_previous_result) ... ok\ntest_clean_repository_and_exact_output_allowlist (test_workspace_snapshot.WorkspaceSnapshotTests.test_clean_repository_and_exact_output_allowlist) ... ok\ntest_config_and_cli_errors_are_sanitized (test_workspace_snapshot.WorkspaceSnapshotTests.test_config_and_cli_errors_are_sanitized) ... ok\ntest_detached_head_and_unborn_branch (test_workspace_snapshot.WorkspaceSnapshotTests.test_detached_head_and_unborn_branch) ... ok\ntest_duplicate_ids_rejected_before_git_and_no_paths_leak (test_workspace_snapshot.WorkspaceSnapshotTests.test_duplicate_ids_rejected_before_git_and_no_paths_leak) ... ok\ntest_duplicate_nested_path_or_id_cannot_change_workspace_selection (test_workspace_snapshot.WorkspaceSnapshotTests.test_duplicate_nested_path_or_id_cannot_change_workspace_selection) ... ok\ntest_duplicate_workspace_key_cannot_hide_missing_checkout (test_workspace_snapshot.WorkspaceSnapshotTests.test_duplicate_workspace_key_cannot_hide_missing_checkout) ... ok\ntest_git_does_not_refresh_index_or_use_inherited_git_paths (test_workspace_snapshot.WorkspaceSnapshotTests.test_git_does_not_refresh_index_or_use_inherited_git_paths) ... ok\ntest_invalid_config_preserves_existing_output_and_does_not_create_output (test_workspace_snapshot.WorkspaceSnapshotTests.test_invalid_config_preserves_existing_output_and_does_not_create_output) ... ok\ntest_missing_git_and_timeout_are_sanitized (test_workspace_snapshot.WorkspaceSnapshotTests.test_missing_git_and_timeout_are_sanitized) ... ok\ntest_newlines_in_workspace_rename_and_untracked_paths (test_workspace_snapshot.WorkspaceSnapshotTests.test_newlines_in_workspace_rename_and_untracked_paths) ... ok\ntest_output_cannot_overwrite_config (test_workspace_snapshot.WorkspaceSnapshotTests.test_output_cannot_overwrite_config) ... ok\ntest_partial_result_for_missing_directory_and_nonrepo (test_workspace_snapshot.WorkspaceSnapshotTests.test_partial_result_for_missing_directory_and_nonrepo) ... ok\ntest_posix_fsmonitor_hook_is_not_called (test_workspace_snapshot.WorkspaceSnapshotTests.test_posix_fsmonitor_hook_is_not_called) ... ok\ntest_relative_paths_tilde_and_no_environment_expansion (test_workspace_snapshot.WorkspaceSnapshotTests.test_relative_paths_tilde_and_no_environment_expansion) ... ok\ntest_staged_unstaged_rename_and_untracked_with_spaces (test_workspace_snapshot.WorkspaceSnapshotTests.test_staged_unstaged_rename_and_untracked_with_spaces) ... ok\ntest_unresolved_merge_is_tracked_but_not_staged (test_workspace_snapshot.WorkspaceSnapshotTests.test_unresolved_merge_is_tracked_but_not_staged) ... ok\n\n----------------------------------------------------------------------\nRan 81 tests in 1.307s\n\nOK\n",
+        "output_sha256": "71f91ce9e9dff50fcccf85098f9b0b73f34041fe054efdbad21ddcd77f9868d2",
+        "started_at": "2026-10-18T13:22:50.010155+00:00"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "validate"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.613886+00:00",
+        "output": "Valid: 2 projects, 9 pull requests, 2 candidates\n",
+        "output_sha256": "41505a6508df19e26b3fe9c3a9c867a61c35d053191231fb0af7e5548537480d",
+        "started_at": "2026-10-18T13:22:51.552025+00:00"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "render",
+          "--output",
+          "progress/STATUS.md",
+          "--check"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.691579+00:00",
+        "output": "Up to date: progress/STATUS.md\n",
+        "output_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508",
+        "started_at": "2026-10-18T13:22:51.613978+00:00"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "validate",
+          "--input",
+          "data/campaign.json"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.771600+00:00",
+        "output": "Campaign is valid: 100 targets; 3 / 100 qualified submitted repositories.\n",
+        "output_sha256": "26e2cb6ddb9cad89eab3dcf36f5c3e9fbb37891f53ccaf08d1b0be908acfd1e0",
+        "started_at": "2026-10-18T13:22:51.692034+00:00"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "report",
+          "--input",
+          "data/campaign.json",
+          "--output",
+          "progress/CAMPAIGN.md",
+          "--check"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.917859+00:00",
+        "output": "",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T13:22:51.771676+00:00"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T13:22:51.936341+00:00",
+        "output": "",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T13:22:51.918225+00:00"
+      }
+    ],
+    "scope": "Six required commands executed on this prepared hub update, not a reused historical run. Full command output and timestamps follow. Publication-dependent CI is checked after the commit exists.",
+    "status": "passed"
+  },
+  "initial_upstream_observation": {
+    "admission_follow_up": "Not needed; actual job checks are queued or running and nine workflows were admitted. No admission comment was posted.",
+    "check_run_count": 54,
+    "check_run_states": {
+      "in_progress": 20,
+      "queued": 32,
+      "success": 2
+    },
+    "check_runs": [
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439589",
+        "id": 117683439589,
+        "name": "Clang Static Analyzer",
+        "started_at": "2026-10-18T13:07:02Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556",
+        "id": 117683439556,
+        "name": "Cppcheck Static Analysis",
+        "started_at": "2026-10-18T13:07:02Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489",
+        "id": 117683439489,
+        "name": "Valgrind Memory Analysis",
+        "started_at": "2026-10-18T13:07:02Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439478",
+        "id": 117683439478,
+        "name": "Unicode Linting",
+        "started_at": "2026-10-18T13:07:02Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439364",
+        "id": 117683439364,
+        "name": "Build Examples",
+        "started_at": "2026-10-18T13:07:02Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434160",
+        "id": 117683434160,
+        "name": "Environment Info (ubuntu-latest)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434116",
+        "id": 117683434116,
+        "name": "Environment Info (ubuntu-24.04)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683434090",
+        "id": 117683434090,
+        "name": "Environment Info (ubuntu-22.04)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670/job/117683433878",
+        "id": 117683433878,
+        "name": "Git Version Tag Check",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857",
+        "id": 117683433857,
+        "name": "MemorySanitizer (x64)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433851",
+        "id": 117683433851,
+        "name": "UndefinedBehaviorSanitizer (x64)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433847",
+        "id": 117683433847,
+        "name": "Block Device Compression Test",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807",
+        "id": 117683433807,
+        "name": "ThreadSanitizer (x64)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433805",
+        "id": 117683433805,
+        "name": "UndefinedBehaviorSanitizer (x86)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433779",
+        "id": 117683433779,
+        "name": "ARM (QEMU)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771",
+        "id": 117683433771,
+        "name": "AddressSanitizer (x64)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433726",
+        "id": 117683433726,
+        "name": "Custom Configuration Tests",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433718",
+        "id": 117683433718,
+        "name": "Extended Tests (integration)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433691",
+        "id": 117683433691,
+        "name": "Memory Usage Tests",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433683",
+        "id": 117683433683,
+        "name": "PPC64LE (QEMU)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433672",
+        "id": 117683433672,
+        "name": "ABI Compatibility Tests",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433649",
+        "id": 117683433649,
+        "name": "Core Tests (windows-latest, Release)",
+        "started_at": "2026-10-18T13:07:23Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433642",
+        "id": 117683433642,
+        "name": "Version Compatibility Tests",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433634",
+        "id": 117683433634,
+        "name": "RISC-V (QEMU)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433622",
+        "id": 117683433622,
+        "name": "Benchmark Tests",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": "2026-10-18T13:07:08Z",
+        "conclusion": "success",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433619",
+        "id": 117683433619,
+        "name": "Makefile Standard Variables Test",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "completed"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433618",
+        "id": 117683433618,
+        "name": "Core Tests (ubuntu-latest, Debug)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433616",
+        "id": 117683433616,
+        "name": "M68K (QEMU)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433615",
+        "id": 117683433615,
+        "name": "Extended Tests (static_lib)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433608",
+        "id": 117683433608,
+        "name": "Extended Tests (cmake_versions)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": "2026-10-18T13:07:22Z",
+        "conclusion": "success",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433594",
+        "id": 117683433594,
+        "name": "Make CMake",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "completed"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433588",
+        "id": 117683433588,
+        "name": "Fuzzer Tests",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433574",
+        "id": 117683433574,
+        "name": "ARM64 (QEMU)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433563",
+        "id": 117683433563,
+        "name": "Core Tests (ubuntu-latest, Release)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433558",
+        "id": 117683433558,
+        "name": "OSS-Fuzz (address)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433555",
+        "id": 117683433555,
+        "name": "SPARC (QEMU)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433553",
+        "id": 117683433553,
+        "name": "MIPS (QEMU)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433543",
+        "id": 117683433543,
+        "name": "S390X (QEMU)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433536",
+        "id": 117683433536,
+        "name": "OSS-Fuzz (memory)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433528",
+        "id": 117683433528,
+        "name": "PPC (QEMU)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433526",
+        "id": 117683433526,
+        "name": "cc on ubuntu-latest",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433518",
+        "id": 117683433518,
+        "name": "Meson + Ninja (MSVC, shared library)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433511",
+        "id": 117683433511,
+        "name": "gcc-14 on ubuntu-24.04",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433506",
+        "id": 117683433506,
+        "name": "clang-18 on ubuntu-24.04",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433487",
+        "id": 117683433487,
+        "name": "clang-14 on ubuntu-22.04",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505/job/117683433485",
+        "id": 117683433485,
+        "name": "LZ4 Frame Tests",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433477",
+        "id": 117683433477,
+        "name": "clang on ubuntu-latest",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433470",
+        "id": 117683433470,
+        "name": "gcc on ubuntu-latest",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482/job/117683433455",
+        "id": 117683433455,
+        "name": "Core Tests (macos-latest, Release)",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433448",
+        "id": 117683433448,
+        "name": "windows-2022 Visual Studio",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433",
+        "id": 117683433433,
+        "name": "macOS",
+        "started_at": "2026-10-18T13:07:16Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134556/job/117683433410",
+        "id": 117683433410,
+        "name": "OSS-Fuzz (undefined)",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483/job/117683433405",
+        "id": 117683433405,
+        "name": "gcc-11 on ubuntu-22.04",
+        "started_at": "2026-10-18T13:07:01Z",
+        "status": "queued"
+      },
+      {
+        "completed_at": null,
+        "conclusion": null,
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134480/job/117683433309",
+        "id": 117683433309,
+        "name": "Meson + Ninja",
+        "started_at": "2026-10-18T13:07:03Z",
+        "status": "in_progress"
+      }
+    ],
+    "comments": [],
+    "commit_statuses": [
+      {
+        "context": "continuous-integration/appveyor/pr",
+        "created_at": "2026-10-18T13:07:01Z",
+        "description": "Waiting for AppVeyor build to complete",
+        "id": 56630625026,
+        "state": "pending",
+        "target_url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919754",
+        "updated_at": "2026-10-18T13:07:01Z"
+      }
+    ],
+    "limits": "Initial observation only. Two completed checks report success; no complete upstream matrix pass, sanitizer coverage or AppVeyor success is established by this observation.",
+    "observed_at": "2026-10-18T13:07:28Z",
+    "review_decision_scope": "The submitted-review list is empty. No GraphQL review decision was supplied, so the normalized snapshot leaves it unreported.",
+    "submitted_reviews": [],
+    "workflow_runs": [
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483",
+        "id": 39130134483,
+        "name": "Compiler Tests",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502",
+        "id": 39130134502,
+        "name": "Code Quality",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501",
+        "id": 39130134501,
+        "name": "Cross Platform",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482",
+        "id": 39130134482,
+        "name": "CMake Build Tests",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134480",
+        "id": 39130134480,
+        "name": "Build Systems",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505",
+        "id": 39130134505,
+        "name": "Core Tests",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533",
+        "id": 39130134533,
+        "name": "Sanitizers",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134556",
+        "id": 39130134556,
+        "name": "OSS-Fuzz",
+        "status": "queued"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670",
+        "id": 39130134670,
+        "name": "Release & Environment",
+        "status": "queued"
+      }
+    ]
+  },
+  "issue_url": "https://github.com/lz4/lz4/issues/1889",
+  "latest_upstream_observation": {
+    "actual_job_outcomes": {
+      "in_progress": 6,
+      "success": 48
+    },
+    "archive_bytes": 13270,
+    "archive_member_scope": "These are ZIP-internal paths. Complete selected API observations and all job/step records are preserved inside observation.json.",
+    "archive_members": [
+      "observation.json",
+      "SHA256SUMS"
+    ],
+    "archive_sha256": "7d07820fa991a6735f038b6412b79f37927509e63a0b59753770e9c121b3934f",
+    "archive_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/upstream-ci-2026-10-18.zip",
+    "canonical_verification": "All 18 direct blobs matched: the original 16 evidence files plus UPSTREAM_CI.md and the CI ZIP. The source branch remains f83be8241c6042a0f9b500da927f68caa905fc92.",
+    "canonical_verified_at": "2026-10-18T13:19:45Z",
+    "check_run_outcomes": {
+      "in_progress": 6,
+      "success": 48
+    },
+    "collection": {
+      "failed_job_log_requests": 0,
+      "local_tests_executed_by_observer": false,
+      "method": "GitHub canonical REST GET endpoints, retrieved through the connected GitHub tool",
+      "mutations_performed": false,
+      "pagination": "All collection endpoints used per_page=100. Returned item counts equal the reported totals for each collection.",
+      "window_note": "PR, CheckRun, commit-status, and workflow endpoints were collected first; actual job metadata for all nine workflow runs was collected next, within the recorded observation window. These are separate observations, not an atomic snapshot.",
+      "workflow_reruns_requested": false
+    },
+    "completed_at": "2026-10-18T13:13:26Z",
+    "evidence_commit": "77b69464c6c9afb253eb8c186ac404afbc43e87b",
+    "evidence_tree": "b57334c92774b7b9b00f49cb0da12cfdb1b087fc",
+    "evidence_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md",
+    "limits": [
+      "CI was still running. This observation is not a claim that the complete upstream matrix passed.",
+      "This observer inspected API job and step metadata and did not execute the reported CI tests.",
+      "Successful job conclusions do not independently establish that every individual regression case ran; successful job logs were not fetched.",
+      "AppVeyor was observed only through GitHub's commit status; provider job details and logs were not inspected.",
+      "This is automated observation, not human review, maintainer acceptance, merge, or confirmation of a financial benefit.",
+      "No source changes, upstream comments, reruns, or publications were performed by this observation task."
+    ],
+    "observation_bytes": 225056,
+    "observation_sha256": "02eee9917be10d2e3d57a1d02b329ba0b47be6690c9cc67e37217a5ea63632d2",
+    "pending": {
+      "check_runs": [
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556",
+          "id": 117683439556,
+          "name": "Cppcheck Static Analysis",
+          "status": "in_progress"
+        },
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489",
+          "id": 117683439489,
+          "name": "Valgrind Memory Analysis",
+          "status": "in_progress"
+        },
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857",
+          "id": 117683433857,
+          "name": "MemorySanitizer (x64)",
+          "status": "in_progress"
+        },
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807",
+          "id": 117683433807,
+          "name": "ThreadSanitizer (x64)",
+          "status": "in_progress"
+        },
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771",
+          "id": 117683433771,
+          "name": "AddressSanitizer (x64)",
+          "status": "in_progress"
+        },
+        {
+          "conclusion": null,
+          "details_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433",
+          "id": 117683433433,
+          "name": "macOS",
+          "status": "in_progress"
+        }
+      ],
+      "commit_statuses": [
+        {
+          "context": "continuous-integration/appveyor/pr",
+          "state": "pending",
+          "target_url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919754",
+          "updated_at": "2026-10-18T13:07:01Z"
+        }
+      ],
+      "workflow_jobs": [
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439489",
+          "id": 117683439489,
+          "name": "Valgrind Memory Analysis",
+          "started_at": "2026-10-18T13:10:51Z",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502/job/117683439556",
+          "id": 117683439556,
+          "name": "Cppcheck Static Analysis",
+          "started_at": "2026-10-18T13:08:55Z",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501/job/117683433433",
+          "id": 117683433433,
+          "name": "macOS",
+          "started_at": "2026-10-18T13:07:16Z",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433771",
+          "id": 117683433771,
+          "name": "AddressSanitizer (x64)",
+          "started_at": "2026-10-18T13:11:23Z",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433807",
+          "id": 117683433807,
+          "name": "ThreadSanitizer (x64)",
+          "started_at": "2026-10-18T13:10:20Z",
+          "status": "in_progress"
+        },
+        {
+          "completed_at": null,
+          "conclusion": null,
+          "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+          "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533/job/117683433857",
+          "id": 117683433857,
+          "name": "MemorySanitizer (x64)",
+          "started_at": "2026-10-18T13:10:34Z",
+          "status": "in_progress"
+        }
+      ]
+    },
+    "source_commit": "f83be8241c6042a0f9b500da927f68caa905fc92",
+    "started_at": "2026-10-18T13:13:17Z",
+    "summary": {
+      "actual_workflow_jobs": "All 54 actual workflow jobs were inspected: 48 successful and 6 in progress.",
+      "check_runs": "54 total: 48 successful, 6 in progress; none queued or failed in this snapshot.",
+      "external_status": "AppVeyor build 54919754 remained pending.",
+      "overall_ci_pass_claimed": false,
+      "pull_request_state": "open",
+      "workflow_runs": "Nine runs: six completed successfully and three still in progress."
+    },
+    "workflow_outcomes": {
+      "in_progress": 3,
+      "success": 6
+    },
+    "workflow_runs": [
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134480",
+        "id": 39130134480,
+        "name": "Build Systems",
+        "path": ".github/workflows/build-systems.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:13:17Z"
+      },
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134670",
+        "id": 39130134670,
+        "name": "Release & Environment",
+        "path": ".github/workflows/release-environment.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:10:50Z"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134502",
+        "id": 39130134502,
+        "name": "Code Quality",
+        "path": ".github/workflows/code-quality.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "in_progress",
+        "updated_at": "2026-10-18T13:10:51Z"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134501",
+        "id": 39130134501,
+        "name": "Cross Platform",
+        "path": ".github/workflows/cross-platform.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "in_progress",
+        "updated_at": "2026-10-18T13:11:03Z"
+      },
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134505",
+        "id": 39130134505,
+        "name": "Core Tests",
+        "path": ".github/workflows/core-tests.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:11:50Z"
+      },
+      {
+        "conclusion": null,
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134533",
+        "id": 39130134533,
+        "name": "Sanitizers",
+        "path": ".github/workflows/sanitizers.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "in_progress",
+        "updated_at": "2026-10-18T13:11:24Z"
+      },
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134556",
+        "id": 39130134556,
+        "name": "OSS-Fuzz",
+        "path": ".github/workflows/oss-fuzz.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:12:05Z"
+      },
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134482",
+        "id": 39130134482,
+        "name": "CMake Build Tests",
+        "path": ".github/workflows/cmake-test.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:12:16Z"
+      },
+      {
+        "conclusion": "success",
+        "created_at": "2026-10-18T13:07:00Z",
+        "event": "pull_request",
+        "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+        "html_url": "https://github.com/lz4/lz4/actions/runs/39130134483",
+        "id": 39130134483,
+        "name": "Compiler Tests",
+        "path": ".github/workflows/compilers.yml",
+        "run_attempt": 1,
+        "run_started_at": "2026-10-18T13:07:00Z",
+        "status": "completed",
+        "updated_at": "2026-10-18T13:12:57Z"
+      }
+    ]
+  },
+  "observed_at": "2026-10-18T13:13:26Z",
+  "policy": {
+    "limits": "No observed additional contributor gate is inferred from missing files. The work addresses an existing public compatibility issue; no demonstrated security vulnerability is claimed.",
+    "ref": "https://github.com/lz4/lz4/blob/e7c36223415219c0a18ea75e3fe2eb5d267ee667/SECURITY.md",
+    "scope": "Exact untruncated base tree screened and root README/programs README/tests README/SECURITY read; no CONTRIBUTING, AGENTS, CLAUDE, AI or PR template found. No AI ban/personal review requirement/CLA/signoff observed in retrieved guidance. Security reports private; this is existing public compatibility issue, not a demonstrated security vulnerability. Base unchanged at final preflight."
+  },
+  "preservation_checks": {
+    "all_8_existing_catalog_contributions_unchanged": true,
+    "all_8_existing_pr_snapshot_rows_unchanged": true,
+    "all_8_existing_provenance_rows_unchanged": true,
+    "all_99_other_campaign_projects_unchanged": true,
+    "comparison_base_commit": "40b789ae697c22460b9d62e370cdfc3fd08d9381",
+    "historical_submissions_unchanged": true,
+    "original_lz4_target_milestone_unchanged": true,
+    "owned_projects_and_candidates_unchanged": true,
+    "retained_observation_objects_unchanged": true,
+    "scope": "Read-only structural comparisons against unchanged parent40b789a, checked again by the coordinator after the final LZ4 CI refresh.",
+    "snapshot_hash_matches_provenance": true,
+    "validated_and_submitted_source_match": true
+  },
+  "publication_method": "GitHub connector created owned fork source/evidence; external PR create returned HTTP 403 Resource not accessible by integration; previously authorized Chrome bridge submitted actual reviewed PR with maintainer edits disabled. Canonical API verified exact body/head/base/three blobs. No legal assent, new permissions or fork Actions enabled.",
+  "pull_request": {
+    "additions": 64,
+    "base_ref": "dev",
+    "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+    "body_exact_match": true,
+    "changed_files": 3,
+    "comments": 0,
+    "created_at": "2026-10-18T13:06:55Z",
+    "deletions": 2,
+    "draft": false,
+    "head_ref": "fix/1889-legacy-zero-terminator",
+    "head_repository": "agamal026/lz4",
+    "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+    "maintainer_can_modify": false,
+    "merged": false,
+    "number": 1890,
+    "review_comments": 0,
+    "state": "open",
+    "title": "Accept zero end markers in legacy LZ4 streams",
+    "updated_at": "2026-10-18T13:06:55Z",
+    "url": "https://github.com/lz4/lz4/pull/1890"
+  },
+  "schema_version": 1,
+  "screening_handoff": {
+    "collection": "Coordinator-supplied bounded public screens plus the independent libyaml source/policy inspection. These are exclusions or research reserves, not selected or submitted work.",
+    "commons_cli_reserve": {
+      "base_commit": "bc23215cff121397c6c473a0633e5a7b77055511",
+      "issue_url": "https://issues.apache.org/jira/browse/CLI-306",
+      "limits": "Reserved for further inspection only. No runtime reproduction, benefit refresh or selection milestone.",
+      "overlap_issue": "CLI-221",
+      "overlap_review_needed": "https://github.com/apache/commons-cli/pull/382",
+      "source_observation": "A recognized numeric option such as -2 can be swallowed as a value for a preceding hasArgs option because isArgument accepts isNegativeNumber even when isOption is true. This is source inspection, not runtime reproduction.",
+      "state": "Open and unassigned at the supplied screen; nine open PRs were screened with no CLI-306 title/body match."
+    },
+    "jsoup": {
+      "disposition": "Do not start or post jsoup work in this automated workflow. The observed policy rejects fully or partly AI-assisted contributions, including AI-written code and issue, PR or discussion text.",
+      "policy_url": "https://github.com/jhy/jsoup/blob/4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865/.github/CONTRIBUTING.md",
+      "prior_claim": "https://github.com/jhy/jsoup/issues/2638#issuecomment-6017720355"
+    },
+    "libyaml_parked": {
+      "base_commit": "90a56d4500aa1a1798514c5cb55c3ad4cb095f94",
+      "design_risks": "Scanner indentation misses indentless sequence collection depth; raw parser states also omit implicit flow-sequence mapping depth, while the current mark stack omits both. Adding a parser field would change the public struct ABI. A true event-depth correction and event/load reproducer remain to be developed.",
+      "disposition": "Research checkout only, unchanged and unselected, with no fork or source changes.",
+      "issue_url": "https://github.com/yaml/libyaml/issues/358",
+      "validation": "No tests or builds run by the independent source reviewer."
+    },
+    "observed_on": "2026-10-18",
+    "occupied_scopes": [
+      {
+        "disposition": "Existing claim; do not duplicate.",
+        "evidence_url": "https://github.com/pallets/jinja/issues/2176#issuecomment-6248978143",
+        "issue_url": "https://github.com/pallets/jinja/issues/2176"
+      },
+      {
+        "disposition": "Existing claim; do not duplicate.",
+        "evidence_url": "https://github.com/pallets/jinja/issues/2269#issuecomment-6247868152",
+        "issue_url": "https://github.com/pallets/jinja/issues/2269"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/python-pillow/Pillow/pull/10222",
+        "issue_url": "https://github.com/python-pillow/Pillow/issues/10220"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/python-pillow/Pillow/pull/10229",
+        "issue_url": "https://github.com/python-pillow/Pillow/issues/10228"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/auth0/java-jwt/pull/813",
+        "issue_url": "https://github.com/auth0/java-jwt/issues/806"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/auth0/java-jwt/pull/790",
+        "issue_url": "https://github.com/auth0/java-jwt/issues/782"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/google/guava/pull/8169",
+        "issue_url": "https://github.com/google/guava/issues/7319"
+      },
+      {
+        "disposition": "Existing linked implementation.",
+        "evidence_url": "https://github.com/libexpat/libexpat/pull/1427",
+        "issue_url": "https://github.com/libexpat/libexpat/issues/1419"
+      },
+      {
+        "disposition": "Reporter already has a patch; no competing implementation selected.",
+        "issue_url": "https://github.com/libexpat/libexpat/issues/1430"
+      }
+    ],
+    "retained_prior_exclusions": [
+      "progress/2026-10-18-jackson-6302-submission.md#additional-screening-for-the-next-session",
+      "progress/2026-10-18-1100-continuation.md",
+      "progress/2026-10-18-javaparser-5175-submission.md#bounded-next-candidate-screen"
+    ],
+    "unresolved_scopes": [
+      {
+        "disposition": "Assigned to RonnyPfannschmidt; policy remains unsettled. Not selected.",
+        "issue_url": "https://github.com/pytest-dev/iniconfig/issues/83"
+      },
+      {
+        "disposition": "Comment points to PR #8260; its final disposition was not established. Not selected.",
+        "evidence_url": "https://github.com/google/guava/issues/7328#issuecomment-4043154106",
+        "issue_url": "https://github.com/google/guava/issues/7328",
+        "linked_pr": "https://github.com/google/guava/pull/8260"
+      },
+      {
+        "disposition": "Intended behavior remains unresolved. Not selected.",
+        "issue_url": "https://github.com/google/guava/issues/6226"
+      },
+      {
+        "disposition": "Parked while repository guidance on suspected security/private reporting and signoff is assessed. No signature or permission was assumed.",
+        "issue_url": "https://github.com/c-ares/c-ares/issues/1331"
+      }
+    ]
+  },
+  "selection": {
+    "assignees": [],
+    "comments": 0,
+    "competing_title_body_scope_found": false,
+    "current_open_pr_count": 38,
+    "issue": 1889,
+    "observed_at": "2026-10-18T13:02:57Z",
+    "state": "open",
+    "timeline_count": 0,
+    "upstream_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667"
+  },
+  "snapshot_provenance": {
+    "file": "data/github.json",
+    "historical_rows_observed_at": "2026-10-17T20:01:04Z",
+    "jackson_observed_at": "2026-10-18T12:11:13Z",
+    "javaparser_observed_at": "2026-10-18T10:19:27Z",
+    "new_lz4_check_runs": 54,
+    "new_lz4_observed_at": "2026-10-18T13:13:26Z",
+    "new_lz4_status_contexts": 1,
+    "old_check_contexts_retained": 72,
+    "old_pr_rows_retained": 8,
+    "provenance_file": "data/snapshot-source.json",
+    "scope": "Composite snapshot. The separate 12:37 metadata-only reads do not refresh retained check observations or old snapshot rows.",
+    "sha256": "083c817f492164dd34f71a3a440ce74463352361211ced8f680e9c3a9efade83"
+  },
+  "source": {
+    "commit": "f83be8241c6042a0f9b500da927f68caa905fc92",
+    "commit_url": "https://github.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92",
+    "files": [
+      {
+        "additions": 5,
+        "deletions": 2,
+        "filename": "doc/lz4_Frame_format.md",
+        "sha": "c8122eb8ba00e994442b2fd2e681cdd38c25bcc8"
+      },
+      {
+        "additions": 3,
+        "deletions": 0,
+        "filename": "programs/lz4io.c",
+        "sha": "554d3cbc183f0f1c4c11364a95cfbc120010ad29"
+      },
+      {
+        "additions": 56,
+        "deletions": 0,
+        "filename": "tests/test-lz4-multiple-legacy.sh",
+        "sha": "98c4a91c3430d556f7fa3e1151b5960ceaa7e19e"
+      }
+    ],
+    "patch_sha256": "e3d185a16f863e26756d3477427ac3375d765248b792894e1f0a201d8213c228",
+    "source_file_hashes": [
+      {
+        "git_blob": "554d3cbc183f0f1c4c11364a95cfbc120010ad29",
+        "path": "programs/lz4io.c",
+        "sha256": "ed8abe6fbd1bc12eccac2c9caa230bcd3c410eb58d923d2a9f42245091601b99"
+      },
+      {
+        "git_blob": "98c4a91c3430d556f7fa3e1151b5960ceaa7e19e",
+        "path": "tests/test-lz4-multiple-legacy.sh",
+        "sha256": "36ec36744138a8fcdd462fa3289176c57c6a5fed072528bb45a3daa156701df9"
+      },
+      {
+        "git_blob": "c8122eb8ba00e994442b2fd2e681cdd38c25bcc8",
+        "path": "doc/lz4_Frame_format.md",
+        "sha256": "a446b28b1a8cb844ba975d8f968a9ae4444e3f1321791594df621a089d72bab0"
+      }
+    ],
+    "test_unchanged_from_test_only_baseline": true,
+    "tree": "9aaafc0ed65b523f84046e88b09f21e2ddb5b003",
+    "upstream_base": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+    "upstream_branch": "dev"
+  },
+  "validation": {
+    "baseline_blocksize_control": {
+      "command": "sh tests/test-lz4-blocksize.sh",
+      "exit_code": 1,
+      "finished_at": "2026-10-18T12:55:33.393926+00:00",
+      "log": "baseline-blocksize-control.log",
+      "name": "baseline-blocksize-control",
+      "sha256": "9a9cdfbc51a0924847d042e2577124df88fe404779af284d58aa0ef4af28e9e8",
+      "source_commit": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+      "started_at": "2026-10-18T12:55:28.700386+00:00"
+    },
+    "baseline_evidence_commit": "f9f961ec521cb16ef602e0178f0f19a9f899f058",
+    "baseline_evidence_url": "https://github.com/agamal026/lz4/blob/f9f961ec521cb16ef602e0178f0f19a9f899f058/contribution-review/1889/baseline/BASELINE.md",
+    "broader_environment": {
+      "LZ4_NBWORKERS": "2"
+    },
+    "broader_failure": {
+      "baseline_binary_sha256": "7e6c862d3c44998f182aed1d91713d46416bc8cf8a322df6ae1dbfc2713789ba",
+      "baseline_script_unchanged": true,
+      "comparison": "high-compression linked blocks, -T1 versus -T4",
+      "full_suite_pass": false,
+      "observed_difference": "byte 5, line 1",
+      "same_failure_reproduced_with_unchanged_upstream_binary": true,
+      "target": "test-lz4-blocksize"
+    },
+    "broader_results": [
+      {
+        "command": [
+          "make",
+          "--no-print-directory",
+          "-C",
+          "tests",
+          "-j2",
+          "test-lz4-essentials",
+          "test-lz4-sparse",
+          "test-lz4-skippable",
+          "CFLAGS=-O2 -Werror"
+        ],
+        "exit_code": 2,
+        "finished_at": "2026-10-18T12:54:07.439084+00:00",
+        "log": "cli-essentials.log",
+        "name": "cli-essentials",
+        "sha256": "1a8b148676eefbeadb90c0ce5d1f6a66bd984f74029fb245789162336d36efd2",
+        "started_at": "2026-10-18T12:53:56.138865+00:00"
+      },
+      {
+        "command": [
+          "python3",
+          "tests/test-lz4-list.py"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:54:07.779116+00:00",
+        "log": "listing-suite.log",
+        "name": "listing-suite",
+        "sha256": "90bed185a1b152c10319ede41380ba99c0fb4129c43e786a4c2ce59f67e9b489",
+        "started_at": "2026-10-18T12:54:07.439605+00:00"
+      }
+    ],
+    "environment": {
+      "compiler": "GCC 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04)",
+      "make": "GNU Make 4.3",
+      "os_arch": "Linux x86-64"
+    },
+    "focused_results": [
+      {
+        "command": [
+          "make",
+          "-C",
+          "programs",
+          "--no-print-directory",
+          "-j2",
+          "lz4",
+          "lz4-nomt",
+          "V=1",
+          "CFLAGS=-O2 -Werror"
+        ],
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:52:04.753671+00:00",
+        "log": "final-build.log",
+        "name": "build",
+        "started_at": "2026-10-18T12:52:02.963326+00:00"
+      },
+      {
+        "binary_sha256": "32d79a3b5dbf312de0a67a062d65f9a4fef2a4d2ab57313b1d608f033acd0ba1",
+        "command": "sh tests/test-lz4-multiple-legacy.sh",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:52:05.605860+00:00",
+        "log": "final-mt.log",
+        "log_sha256": "9931316a6df553daec4d760682f36e3a52fe7261773e7ae63b66bb2c41796f45",
+        "name": "regression-mt",
+        "started_at": "2026-10-18T12:52:04.754301+00:00"
+      },
+      {
+        "binary_sha256": "cbf3bd2865fb65b811e2cb09efdc48d9d9a5474d418cc36cd2f0e743e84f73d8",
+        "command": "sh tests/test-lz4-multiple-legacy.sh",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:52:06.358149+00:00",
+        "log": "final-nomt.log",
+        "log_sha256": "930ad6c91ce852dc79b047631201220233ed1e1e5264ce68ac8c231a8b5c9a11",
+        "name": "regression-nomt",
+        "started_at": "2026-10-18T12:52:05.607462+00:00"
+      }
+    ],
+    "issue_url": "https://github.com/lz4/lz4/issues/1889",
+    "limits": [
+      "No hosted workflow result is established by this packet.",
+      "No cross-platform, full sanitizer, or complete upstream suite pass is claimed.",
+      "The broader CLI command failed; its only observed make failure was reproduced on the unchanged baseline.",
+      "No upstream acceptance, personal review, reward eligibility, or payment is established."
+    ],
+    "listing_environment": {
+      "TMPDIR": "<evidence>/listing-temp"
+    },
+    "listing_summary": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 10
+    },
+    "logs": [
+      {
+        "original_bytes": 2409,
+        "original_sha256": "d742a76608941c79cd5db5d533cd6f2447bd5e1be0dc70e5d4f3faa4519ac657",
+        "path": "final-build.log",
+        "path_normalized": false,
+        "published_bytes": 2409,
+        "published_sha256": "d742a76608941c79cd5db5d533cd6f2447bd5e1be0dc70e5d4f3faa4519ac657"
+      },
+      {
+        "original_bytes": 6927,
+        "original_sha256": "9931316a6df553daec4d760682f36e3a52fe7261773e7ae63b66bb2c41796f45",
+        "path": "final-mt.log",
+        "path_normalized": false,
+        "published_bytes": 6927,
+        "published_sha256": "9931316a6df553daec4d760682f36e3a52fe7261773e7ae63b66bb2c41796f45"
+      },
+      {
+        "original_bytes": 6818,
+        "original_sha256": "930ad6c91ce852dc79b047631201220233ed1e1e5264ce68ac8c231a8b5c9a11",
+        "path": "final-nomt.log",
+        "path_normalized": false,
+        "published_bytes": 6818,
+        "published_sha256": "930ad6c91ce852dc79b047631201220233ed1e1e5264ce68ac8c231a8b5c9a11"
+      },
+      {
+        "original_bytes": 55082,
+        "original_sha256": "1a8b148676eefbeadb90c0ce5d1f6a66bd984f74029fb245789162336d36efd2",
+        "path": "cli-essentials.log",
+        "path_normalized": true,
+        "published_bytes": 55022,
+        "published_sha256": "10cc155ce6a513c94e67744ba75de63359631af902f66ad9aa2b9ccb521acebe"
+      },
+      {
+        "original_bytes": 12110,
+        "original_sha256": "90bed185a1b152c10319ede41380ba99c0fb4129c43e786a4c2ce59f67e9b489",
+        "path": "listing-suite.log",
+        "path_normalized": true,
+        "published_bytes": 9524,
+        "published_sha256": "0dc6206d791f4f8db93e815104d85ef416f973286da654f5110326e6ca60e4f4"
+      },
+      {
+        "original_bytes": 18631,
+        "original_sha256": "9a9cdfbc51a0924847d042e2577124df88fe404779af284d58aa0ef4af28e9e8",
+        "path": "baseline-blocksize-control.log",
+        "path_normalized": false,
+        "published_bytes": 18631,
+        "published_sha256": "9a9cdfbc51a0924847d042e2577124df88fe404779af284d58aa0ef4af28e9e8"
+      }
+    ],
+    "publication_normalization": "Only absolute checkout/evidence directory prefixes in two logs were replaced with <checkout> or <evidence>. All other bytes, including terminal control characters, were retained. Original receipts retain original log hashes; the logs array gives both original and published hashes.",
+    "regression_execution": {
+      "command_from_working_directory": "sh test-lz4-multiple-legacy.sh",
+      "explanation": "Receipt command labels are checkout-relative; the shell scripts actually ran from tests with PATH selecting the saved mode binary.",
+      "mt_environment": {
+        "LZ4_NBWORKERS": "2"
+      },
+      "nomt_environment": {
+        "LZ4_NBWORKERS": "unset"
+      },
+      "path_order": [
+        "saved executable named lz4 for selected build mode",
+        "<checkout>/tests",
+        "existing PATH"
+      ],
+      "working_directory": "<checkout>/tests"
+    },
+    "review": {
+      "human_review": false,
+      "kind": "independent automated source review",
+      "path": "AUTOMATED_REVIEW.md",
+      "required_changes": 0
+    },
+    "schema_version": 1,
+    "source_commit": "f83be8241c6042a0f9b500da927f68caa905fc92",
+    "source_files": [
+      {
+        "git_blob": "554d3cbc183f0f1c4c11364a95cfbc120010ad29",
+        "path": "programs/lz4io.c",
+        "sha256": "ed8abe6fbd1bc12eccac2c9caa230bcd3c410eb58d923d2a9f42245091601b99"
+      },
+      {
+        "git_blob": "98c4a91c3430d556f7fa3e1151b5960ceaa7e19e",
+        "path": "tests/test-lz4-multiple-legacy.sh",
+        "sha256": "36ec36744138a8fcdd462fa3289176c57c6a5fed072528bb45a3daa156701df9"
+      },
+      {
+        "git_blob": "c8122eb8ba00e994442b2fd2e681cdd38c25bcc8",
+        "path": "doc/lz4_Frame_format.md",
+        "sha256": "a446b28b1a8cb844ba975d8f968a9ae4444e3f1321791594df621a089d72bab0"
+      }
+    ],
+    "source_patch_sha256": "e3d185a16f863e26756d3477427ac3375d765248b792894e1f0a201d8213c228",
+    "source_tree": "9aaafc0ed65b523f84046e88b09f21e2ddb5b003",
+    "test_only_baseline_commit": "28ca6d54d6e14c8546ebd24eb671b968b568a099",
+    "upstream_base": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+    "upstream_branch": "dev"
+  }
+}

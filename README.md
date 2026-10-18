@@ -87,7 +87,7 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, JavaParser, and Jackson databind**,
+The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, JavaParser, Jackson databind, and LZ4**,
 plus the prepared libavif `pixi` contribution and parked Xcode investigation.
 [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) is the first
 qualified submission in the current campaign; its [submission checkpoint](progress/2026-10-18-javaparser-5175-submission.md)
@@ -96,6 +96,10 @@ separates completed local validation from pending hosted CI and review.
 is the second qualified campaign submission. Its [submission checkpoint](progress/2026-10-18-jackson-6302-submission.md)
 records two failing baselines, the exact final source, 53 regression cases passing
 across four fork builds, and pending upstream workflow admission and review.
+[LZ4 #1890](https://github.com/lz4/lz4/pull/1890) is the third qualified submission.
+Its [submission checkpoint](progress/2026-10-18-lz4-1890-submission.md) records
+passing threaded/nonthreaded regressions and listing tests, a broader CLI failure
+reproduced on unchanged upstream source, and admitted upstream CI in progress.
 [Current status](progress/STATUS.md) links each upstream record and its observed
 checks. Dates are snapshots, not a promise of continuous monitoring.
 

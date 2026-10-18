@@ -11,12 +11,15 @@ Cadence belongs in the native schedule, not in a loop inside this guide.
 The user confirmed **hourly contributions** on October 18, 2026, Vienna time.
 Older dated entries describe earlier daily scheduling decisions.
 
-The latest [Jackson #6302 submission checkpoint](../progress/2026-10-18-jackson-6302-submission.md)
-records the second qualified campaign submission, its exact source and passing
-fork validation, and pending upstream admission and review. Also retain the
-[11:00 UTC October 18 checkpoint](../progress/2026-10-18-1100-continuation.md)
-and its three excluded candidate issues. Read these before repeating screening
-or unchanged validation. The campaign now has two qualified submissions.
+The latest [LZ4 #1890 submission checkpoint](../progress/2026-10-18-lz4-1890-submission.md)
+records the third qualified campaign submission, passing focused validation, a
+broader failure reproduced on unchanged upstream source, and admitted upstream
+CI in progress. It also records the current screening exclusions and the
+12:37 UTC metadata-only follow-through. Retain the earlier
+[Jackson checkpoint](../progress/2026-10-18-jackson-6302-submission.md) and
+[11:00 checkpoint](../progress/2026-10-18-1100-continuation.md). Read these before
+repeating screening or unchanged validation. The campaign now has three
+qualified submissions.
 
 ---
 
@@ -143,10 +146,34 @@ list returned zero jobs. One admission follow-up is already posted at
 https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236.
 Do not duplicate it without a reply or material change. Read the latest
 submission checkpoint and canonical feedback before acting. CLA acceptance
-remains unverified and is required before upstream acceptance. The campaign now
-records two qualified submissions and no accepted campaign project or realized
+remains unverified and is required before upstream acceptance. That checkpoint
+recorded two qualified submissions and no accepted campaign project or realized
 benefit. No issue bounty or patch-specific security-reward eligibility is
 established for this serialization correctness fix.
+
+LZ4 #1889 is submitted upstream as https://github.com/lz4/lz4/pull/1890, created
+on October 18 at 13:06:55 UTC. Recover exact source
+https://github.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92
+and the immutable evidence packet at
+https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md.
+The fix accepts the existing kernel extension's four-zero-byte legacy end
+marker in both decoders and listing. Linux threaded/nonthreaded regressions and
+the 10-test listing suite pass. The broader CLI command failed at
+test-lz4-blocksize, and the unchanged upstream binary reproduced that failure;
+do not claim a complete suite pass. At 13:13:26 UTC, all 54 upstream CheckRuns and all 54 actual job
+records showed 48 successes and six in progress, with no failures. Six of nine
+workflows had succeeded; three and AppVeyor remained pending. The latest
+checkpoint links the immutable hosted CI supplement. No admission request is needed. Read current CI and
+substantive feedback before changing or retesting the source. Tier 1 project
+scope was rechecked on October 18, but this compatibility fix has no demonstrated
+patch-specific security benefit, reward eligibility, bounty, acceptance or
+payment. The campaign has three qualified submissions and no realized benefit.
+
+Current jsoup policy rejects both fully and partly AI-assisted code and AI-written
+issues, PRs and discussion. Do not start or post jsoup work under this automated
+workflow. The latest checkpoint links the exact policy, reserves Apache Commons
+CLI-306 for further overlap/reproduction checks, and parks libyaml #358 pending
+deeper event-depth accounting. None of that screening adds submission credit.
 
 Owned branch publication works, but external write access and future fork
 creation remain separate capabilities. Respect any remaining access block; do

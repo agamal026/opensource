@@ -108,6 +108,18 @@
         "The final fork CI passed all 53 new regression invocations on Linux JDK 17/21/25 and Windows JDK 17. Full-suite totals are 7,574 on JDK 17 and 7,576 on JDK 21/25, with zero failures or errors and one skip per build. Linux JDK 17 also passed static Android API compatibility; no device execution is claimed.",
         "At 2026-10-18T12:11:13Z, the upstream Gitar CheckRun reported success, but its bot comment states functional validation was not enabled. Build and Deploy Snapshot required maintainer authorization and returned zero jobs. One admission follow-up is already posted at https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236 . Do not duplicate it without new evidence. CLA acceptance, upstream acceptance, issue bounty, patch-specific reward eligibility and realized benefits remain unverified."
       ]
+    },
+    {
+      "id": "lz4-1890",
+      "repository": "lz4/lz4",
+      "number": 1890,
+      "url": "https://github.com/lz4/lz4/pull/1890",
+      "summary": "Fix #1889: accept the Linux kernel four-zero-byte end marker in legacy LZ4 decoding and listing, preserving following-frame handling and queued output cleanup.",
+      "notes": [
+        "Published source: https://github.com/agamal026/lz4/commit/f83be8241c6042a0f9b500da927f68caa905fc92 . Exact source, failed baseline, local validation and independent automated review: https://github.com/agamal026/lz4/blob/9016232b3f5ef31764c6b4ae30f201da1ecaa445/contribution-review/1889/README.md .",
+        "Linux x86-64 GCC 13.3.0 builds and the extended legacy regression passed in threaded and nonthreaded modes; the existing listing suite passed 10 tests with no failures, errors or skips. The broader CLI command failed at test-lz4-blocksize, reproduced with the unchanged upstream binary. No complete upstream suite pass is claimed.",
+        "At 2026-10-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures. Six of nine workflows were successful; three and AppVeyor remained pending. The dated CI supplement is https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md . No complete matrix pass is established; no admission follow-up is needed. Upstream acceptance and Tier 1 project scope remain separate from patch-specific reward eligibility or payment."
+      ]
     }
   ],
   "candidates": [
