@@ -2,13 +2,19 @@
 
 These public recovery instructions accompany the existing native task. Its newer
 operating additions and private recovery notes remain in their existing scope.
-Follow its latest **completion-only** notification rule: save intermediate
-progress and blockers in the handoff, and report campaign completion only after
-verifying the 100 qualifying submissions. Cadence belongs in the native schedule,
-not in a loop inside this guide.
+Follow the user's latest instruction: "Proceed with the first 100 contributions,
+self improve, report back only when done." Keep this **completion-only**
+notification rule: save intermediate progress and blockers in the handoff, and
+report campaign completion only after verifying the 100 qualifying submissions.
+Cadence belongs in the native schedule, not in a loop inside this guide.
 
 The user confirmed **hourly contributions** on October 18, 2026, Vienna time.
 Older dated entries describe earlier daily scheduling decisions.
+
+The [11:00 UTC October 18 checkpoint](../progress/2026-10-18-1100-continuation.md)
+records the latest follow-through and three newly excluded candidate issues.
+Read it before repeating screening. The campaign remains at one qualified
+submission; no new implementation was selected in that bounded session.
 
 ---
 
@@ -143,4 +149,4 @@ old submissions. After 100, continue maintaining the portfolio and following
 through on benefits instead of expanding the target. Follow the existing task's
 completion-only notification rule and preserve intermediate results, blockers
 and nonurgent decisions in the durable handoff. Do not create
-duplicate workers or modify the separate project-tracker schedules.
+duplicate workers or modify other existing tasks or their schedules.

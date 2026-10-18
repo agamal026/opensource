@@ -173,10 +173,10 @@ request. Keep this hourly cadence. Earlier dated progress describes previous
 daily-schedule decisions; it does not authorize restoring them.
 
 The saved instructions match [the continuation prompt](CONTINUATION-PROMPT.md).
-Preserve the two other project-tracker tasks. After any authorized task edit,
-read back both the instructions and the hourly cadence. Check native run history
-for actual execution; an enabled schedule alone does not establish completed
-work. No execution had occurred when the hourly preference was confirmed.
+Preserve all other existing tasks and their schedules. After any authorized task
+edit, read back both the instructions and the hourly cadence. Check native run
+history for actual execution; an enabled schedule alone does not establish
+completed work. No execution had occurred when the hourly preference was confirmed.
 
 Keep each scheduled work session bounded and publish a useful checkpoint before
 the next run. If another session is visibly advancing the same implementation,
@@ -186,11 +186,13 @@ or comments need new evidence, substantive feedback, or a concrete remaining
 risk. Inspect the first executions to confirm recovery and tool availability.
 
 The prompt reads current repository instructions, advances the strongest
-unblocked contribution, and publishes evidence and the next action. Notify for
-a submission, acceptance, confirmed benefit, material failure, or concrete
-required user action. Keep unchanged routine checks quiet. Review the first few
-runs against actual tool access, then adjust the queue or procedure using the
-results. Do not create duplicate workers or modify the separate project tracker.
+unblocked contribution, and publishes evidence and the next action. Follow the
+user's latest instruction: "Proceed with the first 100 contributions, self improve,
+report back only when done." Save intermediate results, blockers and nonurgent
+decisions in the durable handoff. Report campaign completion only after verifying
+the 100 qualifying submissions. Review the first few runs against actual tool
+access, then adjust the queue or procedure using the results. Do not create
+duplicate workers or modify other existing tasks or their schedules.
 
 Pause or edit `Advance open-source contributions` in Scheduled to change future
 runs. Cloud work and evidence recovery do not require an always-on PC or local

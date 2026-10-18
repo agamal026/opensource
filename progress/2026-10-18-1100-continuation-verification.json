@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "packet": "oss-20261018T1100Z-continuation",
+  "observed_through": "2026-10-18T11:07:19Z",
+  "source_hub_commit": "9571428a0b18279ac005472621cec3d0de422b4d",
+  "campaign": {
+    "qualified_submitted_projects": 1,
+    "target_projects": 100,
+    "accepted_projects": 0,
+    "verified_campaign_benefits": 0,
+    "new_upstream_submissions_this_packet": 0,
+    "ledger_changed": false
+  },
+  "historical_followthrough": {
+    "specialist_window": {
+      "from": "2026-10-18T11:03:40Z",
+      "to": "2026-10-18T11:04:24Z"
+    },
+    "root_metadata_recheck": "2026-10-18T11:07:19Z",
+    "feedback_cutoff": "2026-10-18T09:43:48Z",
+    "new_or_edited_feedback_found": false,
+    "ci_statuses_refreshed": false,
+    "rows": [
+      {
+        "repository": "npm/cli",
+        "number": 9954,
+        "url": "https://github.com/npm/cli/pull/9954",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "head": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
+        "base": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
+        "updated_at": "2026-10-17T21:35:40Z",
+        "comments": 1,
+        "review_comments": 0
+      },
+      {
+        "repository": "AOMediaCodec/libavif",
+        "number": 3413,
+        "url": "https://github.com/AOMediaCodec/libavif/pull/3413",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "head": "93ef0a32c07741c34bb515295f5be3d270cca02d",
+        "base": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
+        "updated_at": "2026-10-17T21:36:01Z",
+        "comments": 1,
+        "review_comments": 0
+      },
+      {
+        "repository": "libevent/libevent",
+        "number": 1916,
+        "url": "https://github.com/libevent/libevent/pull/1916",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "head": "14e56a95e1d524d8500da73bb49f9b0c80397057",
+        "base": "d82464a277d0f42703702c4dfd9af6af38595a83",
+        "updated_at": "2026-10-15T13:13:47Z",
+        "comments": 0,
+        "review_comments": 0
+      },
+      {
+        "repository": "nginx/nginx",
+        "number": 1734,
+        "url": "https://github.com/nginx/nginx/pull/1734",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "head": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
+        "base": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
+        "updated_at": "2026-10-15T12:33:23Z",
+        "comments": 3,
+        "review_comments": 0
+      },
+      {
+        "repository": "nih-at/libzip",
+        "number": 576,
+        "url": "https://github.com/nih-at/libzip/pull/576",
+        "state": "open",
+        "draft": false,
+        "merged": false,
+        "head": "5aeb57b6e922934125008756998b3ce2a93ba498",
+        "base": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
+        "updated_at": "2026-10-13T18:42:17Z",
+        "comments": 8,
+        "review_comments": 6
+      }
+    ]
+  },
+  "javaparser": {
+    "pr": "https://github.com/javaparser/javaparser/pull/5175",
+    "head": "2a437e500bf54024772dd9f3d6d4149506defed2",
+    "base": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "new_feedback": false,
+    "appveyor": {
+      "state": "success",
+      "url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188",
+      "status_updated_at": "2026-10-18T10:18:10Z",
+      "underlying_logs_inspected": false
+    },
+    "github_actions": [
+      {
+        "id": 39117999673,
+        "url": "https://github.com/javaparser/javaparser/actions/runs/39117999673",
+        "status": "completed",
+        "conclusion": "action_required",
+        "run_attempt": 1,
+        "updated_at": "2026-10-18T10:07:17Z"
+      },
+      {
+        "id": 39117999726,
+        "url": "https://github.com/javaparser/javaparser/actions/runs/39117999726",
+        "status": "completed",
+        "conclusion": "action_required",
+        "run_attempt": 1,
+        "updated_at": "2026-10-18T10:07:17Z"
+      }
+    ],
+    "tests_reused": true,
+    "tests_reexecuted": false,
+    "existing_approval_request": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
+    "additional_comments_posted": false
+  },
+  "screening": {
+    "packet": "oss-20261018T1100Z-select",
+    "screened_through": "2026-10-18T11:05:59Z",
+    "concrete_candidates": 3,
+    "selected_candidates": 0,
+    "candidates": [
+      {
+        "issue": "https://github.com/tscircuit/checks/issues/434",
+        "decision": "covered_by_existing_open_pr",
+        "competing_pr": "https://github.com/tscircuit/checks/pull/435",
+        "competing_head": "46839ff576bf298213e66b64804972b1c0529ce6"
+      },
+      {
+        "issue": "https://github.com/tscircuit/dsn-converter/issues/556",
+        "decision": "claimed_by_existing_open_pr",
+        "competing_pr": "https://github.com/tscircuit/dsn-converter/pull/559",
+        "competing_head": "6ef86fb31762414c99b08816709cb9472194bbb7"
+      },
+      {
+        "issue": "https://github.com/tscircuit/circuit-json-to-bom-csv/issues/8",
+        "decision": "overlapping_open_pr_and_unresolved_format_scope",
+        "competing_pr": "https://github.com/tscircuit/circuit-json-to-bom-csv/pull/9",
+        "competing_head": "0d177798f5c05a8f15cd156639ff2fafb8274c6a",
+        "discussion": "https://github.com/tscircuit/circuit-json-to-bom-csv/issues/8#issuecomment-3640468376"
+      }
+    ],
+    "independent_competing_pr_verification": true,
+    "new_forks_created": 0,
+    "patches_implemented": 0,
+    "other_authors_tests_reexecuted": false,
+    "benefit": {
+      "program": "tscircuit contributor sponsorship",
+      "terms": "https://docs.tscircuit.com/contributing/bounties-and-sponsorship",
+      "contribution_guide": "https://docs.tscircuit.com/contributing/getting-started-as-a-contributor",
+      "issue_specific_payment_verified": false,
+      "user_eligibility_verified": false,
+      "enrollment_verified": false,
+      "award_verified": false,
+      "payment_verified": false
+    }
+  },
+  "owned_documentation_correction": {
+    "files": [
+      "docs/CLOUD-OPERATION.md",
+      "docs/CONTINUATION-PROMPT.md"
+    ],
+    "defect": "The cloud guide still instructed intermediate campaign notifications despite the latest completion-only instruction, and preservation instructions named a stale subset of other tasks.",
+    "resulting_behavior": "Preserve the completion-only notification rule and all other existing tasks and schedules."
+  },
+  "validation": {
+    "status": "passed",
+    "scope": "The existing six hub validation commands, for this documentation and record update. No external-source tests executed. Raw local logs are scratch verification aids; they are not separate public GitHub blob paths.",
+    "results": [
+      {
+        "command": [
+          "python3",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-v"
+        ],
+        "started_at": "2026-10-18T11:09:48.298112+00:00",
+        "finished_at": "2026-10-18T11:09:49.547434+00:00",
+        "exit_code": 0,
+        "output_bytes": 13443,
+        "output_sha256": "c71d87736d9a2fd3aab98be62fd1dfac01634c9edccc73e325bf08e028cf1b7d",
+        "tests": 81,
+        "result_tail": ") ... ok\ntest_unresolved_merge_is_tracked_but_not_staged (test_workspace_snapshot.WorkspaceSnapshotTests.test_unresolved_merge_is_tracked_but_not_staged) ... ok\n\n----------------------------------------------------------------------\nRan 81 tests in 1.107s\n\nOK\n"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "validate"
+        ],
+        "started_at": "2026-10-18T11:09:49.548089+00:00",
+        "finished_at": "2026-10-18T11:09:49.637196+00:00",
+        "exit_code": 0,
+        "output_bytes": 49,
+        "output_sha256": "7253669024be84219770a73694e8d0b34978179b9a44b3d7d30885b0ec238d97"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/oss_status.py",
+          "render",
+          "--output",
+          "progress/STATUS.md",
+          "--check"
+        ],
+        "started_at": "2026-10-18T11:09:49.637482+00:00",
+        "finished_at": "2026-10-18T11:09:49.747462+00:00",
+        "exit_code": 0,
+        "output_bytes": 31,
+        "output_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "validate",
+          "--input",
+          "data/campaign.json"
+        ],
+        "started_at": "2026-10-18T11:09:49.747757+00:00",
+        "finished_at": "2026-10-18T11:09:49.836007+00:00",
+        "exit_code": 0,
+        "output_bytes": 74,
+        "output_sha256": "b0880560d64d3c13431febf279d1bd00c0eb6b49d2b36eb69e0ec407ff782b97"
+      },
+      {
+        "command": [
+          "python3",
+          "tools/contribution_campaign.py",
+          "report",
+          "--input",
+          "data/campaign.json",
+          "--output",
+          "progress/CAMPAIGN.md",
+          "--check"
+        ],
+        "started_at": "2026-10-18T11:09:49.836340+00:00",
+        "finished_at": "2026-10-18T11:09:49.934751+00:00",
+        "exit_code": 0,
+        "output_bytes": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "started_at": "2026-10-18T11:09:49.935134+00:00",
+        "finished_at": "2026-10-18T11:09:49.939635+00:00",
+        "exit_code": 0,
+        "output_bytes": 0,
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ]
+  }
+}
