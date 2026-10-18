@@ -1,0 +1,269 @@
+{
+  "schema_version": 1,
+  "record_type": "selected_public_contribution_validation_summary",
+  "checkpoint_date": "2026-10-18",
+  "repository": "javaparser/javaparser",
+  "issue": 4074,
+  "campaign_stage": "reproduced",
+  "status": "Local validation complete; tested candidate source commit not published.",
+  "references": {
+    "issue": "https://github.com/javaparser/javaparser/issues/4074",
+    "selection": "https://github.com/agamal026/opensource/blob/main/progress/2026-10-18-paid-screen.md",
+    "policy": "https://github.com/javaparser/javaparser/blob/dc6bc07155cb0d0d7a8a427b76411848eb862136/CONTRIBUTING.md",
+    "prior_work": "https://github.com/javaparser/javaparser/pull/2704"
+  },
+  "prior_work_attribution": "MysterAitch's PR #2704 informed the investigation. Rejection of a local adaptation does not establish a test verdict on the complete historical PR.",
+  "source": {
+    "base_commit": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+    "base_ref": "https://github.com/javaparser/javaparser/commit/dc6bc07155cb0d0d7a8a427b76411848eb862136",
+    "candidate_commit": null,
+    "patch_sha256": "0cb1bfaaf7ea00dc7bceea187373c0b6843c4f6f350ad93bbc743468985f60b9",
+    "patch_bytes": 7710,
+    "candidate_tree": "be582247d3fdd80bf6e72c7dca6a52922cbd19a7",
+    "recovered_tree": "be582247d3fdd80bf6e72c7dca6a52922cbd19a7",
+    "files_sha256": {
+      "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java": "2f2332d18e4aa3f3a3ffd05b728c316fa076acda041eeec4431e25f6688a5ffd",
+      "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue4074Test.java": "728756173731ad002590c82f706a8664bfff97456f0e4a87c96f6454a0dbe996"
+    },
+    "general_difference_file_restored_to_base": true
+  },
+  "test_file_versions_sha256": {
+    "original_one_case": "744bfe1718ec2d1ad1c8247efc4205f93af75cc2e16c1fd991ff3248e8dde90e",
+    "expanded_twelve_cases": "e3dfa6cd1a0f8ffd0432d6f3a6bc6d889e418742a9a64d4f95f0f0731a504f42",
+    "focused_eighteen_cases": "41243bec344fac2829c0c3b7070332b1be3d74378cd1f9aff0ab25c74da201b5",
+    "twenty_cases_before_formatting": "8380d49e42f93d8afe8df37f34fb85d4664913910d3403d19102779e5c44a600",
+    "twenty_cases_final_formatted": "728756173731ad002590c82f706a8664bfff97456f0e4a87c96f6454a0dbe996"
+  },
+  "recorded_runs": [
+    {
+      "record": "baseline-regression-runtime-ca",
+      "finished_at": "2026-10-17T23:31:43.236789Z",
+      "tests": 1,
+      "failures": 1,
+      "errors": 0,
+      "skips": 0,
+      "exit_code": 1,
+      "test_version": "original_one_case",
+      "scope": "Reported example on baseline production."
+    },
+    {
+      "record": "baseline-expanded",
+      "finished_at": "2026-10-17T23:32:54.328820Z",
+      "tests": 202,
+      "failures": 6,
+      "errors": 0,
+      "skips": 4,
+      "exit_code": 1,
+      "test_version": "expanded_twelve_cases",
+      "scope": "Baseline production; twelve new cases and selected existing controls."
+    },
+    {
+      "record": "candidate-horizontal-cleanup",
+      "finished_at": "2026-10-17T23:33:40.538316Z",
+      "tests": 202,
+      "failures": 2,
+      "errors": 0,
+      "skips": 4,
+      "exit_code": 1,
+      "test_version": "expanded_twelve_cases",
+      "scope": "Rejected local experiment; two new no-blank-line regressions."
+    },
+    {
+      "record": "candidate-import-separator",
+      "finished_at": "2026-10-17T23:39:12.315891Z",
+      "tests": 208,
+      "failures": 0,
+      "errors": 0,
+      "skips": 4,
+      "exit_code": 0,
+      "test_version": "focused_eighteen_cases",
+      "scope": "Revised production; eighteen new cases and selected existing controls."
+    },
+    {
+      "record": "core-suite",
+      "finished_at": "2026-10-17T23:40:44.744242Z",
+      "tests": 2924,
+      "failures": 0,
+      "errors": 0,
+      "skips": 8,
+      "exit_code": 0,
+      "test_version": "twenty_cases_before_formatting",
+      "scope": "Core testing module and required reactor dependencies; before final test formatting."
+    }
+  ],
+  "completed_build_checks": [
+    {
+      "record": "codegen-metamodel-module",
+      "finished_at": "2026-10-17T23:52:57.136453Z",
+      "working_directory": "javaparser-core-metamodel-generator",
+      "command": "../mvnw --errors --show-version -B -ntp clean package -P run-generators -DskipTests",
+      "exit_code": 0,
+      "terminal_maven_success": true,
+      "tests_skipped": true
+    },
+    {
+      "record": "codegen-core-module",
+      "finished_at": "2026-10-17T23:56:22.221339Z",
+      "working_directory": "javaparser-core-generators",
+      "command": "../mvnw --errors --show-version -B -ntp --log-file \"$REVIEW_LOG\" clean package -P run-generators -DskipTests",
+      "exit_code": 0,
+      "terminal_maven_success": true,
+      "tests_skipped": true
+    },
+    {
+      "record": "codegen-post-core-install",
+      "finished_at": "2026-10-17T23:57:37.011171Z",
+      "working_directory": "repository root",
+      "command": "./mvnw --errors --show-version -B -ntp --log-file \"$REVIEW_LOG\" clean install -DskipTests",
+      "exit_code": 0,
+      "terminal_maven_success": true,
+      "tests_skipped": true
+    },
+    {
+      "record": "spotless-apply",
+      "finished_at": "2026-10-17T23:58:28.041213Z",
+      "command": "./mvnw -B -ntp --log-file \"$REVIEW_LOG\" spotless:apply",
+      "exit_code": 0,
+      "terminal_maven_success": true
+    },
+    {
+      "record": "style-verification",
+      "finished_at": "2026-10-17T23:59:18.574467Z",
+      "command": "./mvnw -B -ntp --log-file \"$REVIEW_LOG\" checkstyle:check spotless:check",
+      "exit_code": 0,
+      "terminal_maven_success": true,
+      "reactor_modules_succeeded": 9,
+      "checkstyle_violations": 0,
+      "spotless_changes_required": 0
+    }
+  ],
+  "final_run": {
+    "started_at": "2026-10-17T23:59:50.452912Z",
+    "finished_at": "2026-10-18T00:02:22.893877Z",
+    "command": "./mvnw --errors --show-version -B -ntp --log-file \"$REVIEW_LOG\" clean test --activate-profiles AlsoSlowTests",
+    "command_note": "REVIEW_LOG is an illustrative replacement for the original log destination; all other arguments are preserved.",
+    "runtime": {
+      "os": "Linux",
+      "java": "Temurin 17.0.20.1",
+      "maven": "3.10.0"
+    },
+    "exit_code": 0,
+    "terminal_maven_success": true,
+    "reactor_modules_succeeded": 9,
+    "modules": [
+      {
+        "module": "javaparser-core-testing",
+        "tests": 2924,
+        "failures": 0,
+        "errors": 0,
+        "skips": 8
+      },
+      {
+        "module": "javaparser-core-testing-bdd",
+        "tests": 625,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0
+      },
+      {
+        "module": "javaparser-core-generators",
+        "tests": 3,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0
+      },
+      {
+        "module": "javaparser-core-serialization",
+        "tests": 11,
+        "failures": 0,
+        "errors": 0,
+        "skips": 0
+      },
+      {
+        "module": "javaparser-symbol-solver-testing",
+        "tests": 2268,
+        "failures": 0,
+        "errors": 0,
+        "skips": 27
+      }
+    ],
+    "totals": {
+      "tests": 5831,
+      "failures": 0,
+      "errors": 0,
+      "skips": 35
+    },
+    "per_group_summaries": 617,
+    "per_group_sum_matches_module_aggregates": true,
+    "regression": {
+      "tests": 20,
+      "failures": 0,
+      "errors": 0,
+      "skips": 0,
+      "test_version": "twenty_cases_final_formatted"
+    },
+    "authoritative_log": {
+      "name": "maven.log",
+      "bytes": 1161407,
+      "lines": 12774,
+      "sha256": "b3691d527a7539384101b29cdacc653dd270712556fdb5a4cb6b04290773c998"
+    },
+    "receipt_console_log": {
+      "name": "build.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "surefire_warning": {
+      "retained": true,
+      "diagnostic_type": "Native-stream corruption warning",
+      "records": 324,
+      "payloads": "All captured payloads are informational JVM G1 GC messages.",
+      "other_payloads": 0,
+      "exception_oom_or_fatal_diagnostics": 0,
+      "dumpstream_bytes": 68968,
+      "dumpstream_sha256": "1370b90b080ee4b8a563098ef5d51bdb92f802aa82a940f028e7236e8ea5710a"
+    }
+  },
+  "retained_limits": [
+    "Initial DNS and TLS failures stopped before tests; they are not baseline assertion results.",
+    "The initial metamodel script exited 1 without a conclusive diagnostic; that attempt remains unclassified.",
+    "A later prerequisite clean failed while deleting generated BDD output; a subsequent prerequisite build succeeded with tests skipped.",
+    "Two intermediate post-metamodel installs exited 0 without terminal Maven confirmation in their captured logs. That logging limitation remains separate from the later confirmed final install.",
+    "The earlier core-suite copied text reports were incomplete for nested/display-named groups; its full log supports the aggregate.",
+    "Redirected Maven commands use substantive maven.log files; receipt log_sha256 values identify the empty captured console logs.",
+    "This is Linux/Java 17 validation, not the upstream hosted OS/JDK matrix. CRLF test inputs do not establish Windows execution."
+  ],
+  "review": {
+    "kind": "automated source and evidence review",
+    "blocking_source_findings": 0,
+    "personal_review_claimed": false,
+    "legal_assent_claimed": false
+  },
+  "publication": {
+    "packet_name": "javaparser-4074-review-package.zip",
+    "packet_retained_separately": true,
+    "unpublished_patch_in_hub": false,
+    "upstream_pr_url": null,
+    "work_announcement_sent": false,
+    "access_at_checkpoint": "Available connector has no fork-creation operation; former publishing bridge unavailable; cloud GitHub session signed out.",
+    "needed_action": "User restores an authorized GitHub connection through secure sign-in; then publish and verify the tested source commit and fulfill upstream submission steps.",
+    "contributor_fork_exists": false,
+    "packet_sha256": "53b6045723923e76da627a82e19245a83c617bf97f842a520498c37a8372d0bc",
+    "packet_bytes": 886410,
+    "packet_entries": 872,
+    "packet_saved": true
+  },
+  "accounting": {
+    "new_upstream_submissions": 0,
+    "verified_earnings": 0,
+    "realized_benefits": 0,
+    "issue_specific_bounty_verified": false,
+    "security_reward_eligibility_verified": false,
+    "maintainer_acceptance_claimed": false
+  },
+  "continuation": {
+    "cadence": "hourly",
+    "unchanged_patch_validation": "Reuse completed checks only when recovered patch and source hashes match; do not rebuild merely to resume.",
+    "next_action": "Keep publication parked until supported authentication is available, preserve the prepared packet, and advance useful unblocked work."
+  }
+}
