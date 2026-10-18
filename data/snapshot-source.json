@@ -13,18 +13,17 @@
     "started_at": "2026-10-18T09:42:53Z",
     "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
   },
-  "check_collection": "The eight existing rows retain 72 check contexts: 70 historical contexts, one JavaParser AppVeyor StatusContext, and one Jackson Gitar CheckRun at their original per-record dates. LZ4 has 54 CheckRuns and one pending AppVeyor StatusContext observed through 2026-10-18T13:13:26Z. Its checks and all 54 actual job records show 48 successes and six in progress; six workflows succeeded and three remained in progress. No complete upstream matrix pass or refreshed older check result is implied.",
+  "check_collection": "Retain six historical records/70 contexts at 2026-10-17T20:01:04Z. JavaParser retains successful AppVeyor plus two action_required/zero-job runs at 13:40. Jackson current head has seven CheckRuns: four successful builds, two skipped downstream triggers and successful Gitar; four full logs show 74 passing cases/full-suite zero failures/errors. Zero legacy status contexts. LZ4 retains 54 successful CheckRuns/jobs, nine successful workflows and successful AppVeyor at 14:11:25-14:11:26. Earlier Jackson admission gates and LZ4 failure remain historical.",
   "collected_with_live_cli": false,
-  "metadata_collection": "The six historical PR rows remain unchanged from 2026-10-17T20:01:04Z, JavaParser from 2026-10-18T10:19:27Z, and Jackson from 2026-10-18T12:11:13Z. LZ4 #1890 was observed over 2026-10-18T13:13:17Z\u20132026-10-18T13:13:26Z. The separate 12:37 metadata-only follow-through is recorded in the dated receipt and does not refresh these retained rows.",
+  "metadata_collection": "Jackson final PR/body metadata was verified at 2026-10-18T15:25:01Z: five issue comments/two inline comments. Helper reply individually verified 15:16:13; earlier complete discussion/review lists retain 13:37 dates. LZ4 final body/head/base/state readback was verified after its 14:41:45 update without a captured clock; full metadata/CI remains separately dated 14:11. JavaParser remains at 13:37-13:40. Historical rows retain all prior values/dates.",
   "new_observation": {
-    "latest_scope": "At 2026-10-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures. Six of nine workflows were successful; three and AppVeyor remained pending. Actual job and step metadata were inspected for all nine workflows. The initial 13:07:28 comment/review observation was retained rather than refreshed. No complete matrix pass is established.",
-    "method": "Canonical GitHub connector GET observations collected by an independent agent over 13:13:17\u201313:13:26 UTC, checked and normalized by the coordinator. The eight older PR rows were not refreshed.",
-    "observed_at": "2026-10-18T13:13:26Z",
-    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json",
-    "evidence_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md"
+    "observed_at": "2026-10-18T15:25:01Z",
+    "method": "Composite canonical final Jackson PR/body readback and separately audited upstream workflow/check/job/log data; retained LZ4, JavaParser and historical observations.",
+    "latest_scope": "Jackson source 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 targets 3.1. Final body/head/base verified at 15:25:01; upstream attempt 2 passed four builds, with two skipped downstream jobs and seven CheckRuns, observed 15:13:35-15:13:36, logs retrieved by 15:13:49. LZ4 CI remains dated 14:11 and final body update 14:41:45 has no captured readback clock. Six historical rows remain unchanged.",
+    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
   },
   "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below.",
-  "observed_at": "2026-10-18T13:13:26Z",
+  "observed_at": "2026-10-18T15:25:01Z",
   "records": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -107,49 +106,73 @@
     {
       "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
       "check_contexts_returned": 1,
-      "check_runs_observed_at": "2026-10-18T10:10:37Z",
-      "checks_observed_at": "2026-10-18T10:19:27Z",
-      "collection": "Coordinator-supplied canonical GitHub connector GET read-back. Current commit status reports AppVeyor success, without underlying log inspection. The initial observation returned zero check runs; current GitHub Actions job lists return zero jobs and approval remains pending.",
+      "check_runs_observed_at": "2026-10-18T13:40:00.252Z",
+      "checks_observed_at": "2026-10-18T13:40:00.252Z",
+      "collection": "Canonical metadata and discussion/review GETs show no new feedback, one existing admission comment and no submitted reviews. Fresh checks returned zero CheckRuns and one successful AppVeyor StatusContext. Both known Actions runs remain action_required and each actual job list returned zero jobs.",
       "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
       "id": "javaparser-5175",
-      "metadata_observed_at": "2026-10-18T10:19:27Z",
+      "metadata_observed_at": "2026-10-18T13:37:19.929Z",
       "number": 5175,
       "repository": "javaparser/javaparser",
       "review_decision": "",
-      "review_decision_collection": "Not collected in the supplied REST observation; represented as not reported, without inferring approval or review requirements.",
-      "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
+      "review_decision_collection": "No submitted reviews were returned and no GraphQL reviewDecision was collected; the normalized field remains unreported.",
+      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
+      "status_contexts_observed_at": "2026-10-18T13:40:00.214Z",
+      "reviews_observed_at": "2026-10-18T13:38:53.166Z",
+      "check_runs_returned": 0,
+      "status_contexts_returned": 1
     },
     {
-      "base_sha": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
-      "check_contexts_returned": 1,
-      "check_runs_returned": 1,
-      "checks_observed_at": "2026-10-18T12:11:13Z",
-      "collection": "Coordinator-supplied canonical GitHub connector GET read-back collected through the stated observation time. Gitar reported success with functional validation not enabled. Upstream Build and Deploy Snapshot was action_required and its actual job list returned zero jobs. Successful fork validation is separate evidence.",
-      "head_sha": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+      "base_sha": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+      "check_contexts_returned": 7,
+      "check_runs_returned": 7,
+      "checks_observed_at": "2026-10-18T15:13:36Z",
+      "collection": "Source retargeted to 3.1; final body/head/base verified. Upstream attempt 2 succeeded in all four actual builds; two downstream trigger jobs skipped. Four full logs confirm 53 original plus 21 compatibility cases pass, full-suite zero failures/errors/one skip; Linux17 Android API check passes. Earlier admission gates remain historical.",
+      "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
       "id": "jackson-databind-6302",
-      "metadata_observed_at": "2026-10-18T12:11:13Z",
+      "metadata_observed_at": "2026-10-18T15:25:01Z",
       "number": 6302,
       "repository": "FasterXML/jackson-databind",
       "review_decision": "",
-      "review_decision_collection": "No submitted reviews were returned; the Gitar bot comment is not a submitted approval. No GraphQL review decision was collected, so the normalized PR row leaves it unreported.",
+      "review_decision_collection": "Existing maintainer review is COMMENTED; one author helper reply verified at 15:16:13. No GraphQL reviewDecision or human approval inferred.",
       "status_contexts_returned": 0,
-      "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
+      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
+      "check_runs_observed_at": "2026-10-18T15:13:36Z",
+      "status_contexts_observed_at": "2026-10-18T15:13:36Z",
+      "reviews_observed_at": "2026-10-18T13:37:47.408Z",
+      "completed_hosted_evidence_url": "https://github.com/agamal026/jackson-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution-review/6299/3.1-upstream/README.md"
     },
     {
       "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
       "check_contexts_returned": 55,
       "check_runs_returned": 54,
-      "checks_observed_at": "2026-10-18T13:13:26Z",
-      "collection": "Canonical GitHub GET observations over 13:13:17\u201313:13:26 UTC, not an atomic snapshot. Normalize 54 CheckRuns separately from the pending AppVeyor StatusContext. All 54 actual jobs and their step metadata were inspected. Completion is still pending; the initial 13:07:28 comment/review lists were not refreshed.",
-      "head_sha": "f83be8241c6042a0f9b500da927f68caa905fc92",
+      "checks_observed_at": "2026-10-18T14:11:26Z",
+      "collection": "Independent canonical GitHub GET collection at 14:11:25-14:11:26 UTC rechecked the corrected PR head before all 54 CheckRuns, one successful AppVeyor StatusContext, nine workflows and 54 actual jobs. Every job/check/workflow succeeded. The full decoded successful TSan log was audited through 14:13:24 UTC and its checkout tree matches source. Other successful job logs and underlying AppVeyor logs were not inspected.",
+      "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
       "id": "lz4-1890",
-      "metadata_observed_at": "2026-10-18T13:13:26Z",
+      "metadata_observed_at": null,
       "number": 1890,
       "repository": "lz4/lz4",
       "review_decision": "",
-      "review_decision_collection": "Submitted reviews were empty in the initial 13:07:28 observation; they were not fetched again by the CI observer. No GraphQL review decision was collected, so approval or review requirements are not inferred.",
+      "review_decision_collection": "The current PR metadata has zero issue/inline comment counts. The empty submitted-review list remains dated 13:38 from the first observer; it was not fetched again by the CI observer. No GraphQL reviewDecision was collected, so the normalized field remains unreported.",
       "status_contexts_returned": 1,
-      "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json"
+      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
+      "check_runs_observed_at": "2026-10-18T14:11:26Z",
+      "status_contexts_observed_at": "2026-10-18T14:11:26Z",
+      "reviews_observed_at": "2026-10-18T13:38:53.297Z",
+      "completed_hosted_evidence_url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
+      "retained_full_metadata_observed_at": "2026-10-18T14:11:26Z",
+      "final_body_readback": {
+        "updated_at": "2026-10-18T14:41:45Z",
+        "canonical_verified_at": null,
+        "observation_clock_note": "Canonical matching readback was verified by the coordinator; its exact readback clock was not captured.",
+        "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+        "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+        "state": "open",
+        "issue_comment_count": 0,
+        "change": "PR body links completed hosted packet 7751a987 and reports 54 jobs/CheckRuns, nine workflows and AppVeyor success.",
+        "comment_posted": false
+      }
     }
   ],
   "retained_jackson_observation": {
@@ -181,12 +204,54 @@
   },
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "083c817f492164dd34f71a3a440ce74463352361211ced8f680e9c3a9efade83",
-  "source": "Composite reviewed snapshot: six retained historical CLI observations, retained JavaParser and Jackson connector observations, and one new LZ4 connector observation. Not a full live snapshot refresh.",
+  "snapshot_sha256": "7485202bbadb2df79a228bf459b90296d38aae5a9b4f97f2def8811f1f523022",
+  "source": "Composite reviewed snapshot: six retained historical CLI records and three refreshed contributor PR records from canonical connector GET observations. This is not a full live collection of every registered PR.",
   "initial_lz4_observation": {
     "latest_scope": "LZ4 #1890 PR metadata, 54 CheckRuns with two successes and queued/running jobs, one pending AppVeyor StatusContext, nine admitted workflow records, and empty comment/review lists. No full upstream matrix pass is established.",
     "method": "Coordinator-supplied canonical GitHub connector GET responses, normalized into the existing public schema; oss_status.py refresh was not run for this update.",
     "observed_at": "2026-10-18T13:07:28Z",
     "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json"
+  },
+  "retained_lz4_observation_1313": {
+    "latest_scope": "At 2026-10-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures. Six of nine workflows were successful; three and AppVeyor remained pending. Actual job and step metadata were inspected for all nine workflows. The initial 13:07:28 comment/review observation was retained rather than refreshed. No complete matrix pass is established.",
+    "method": "Canonical GitHub connector GET observations collected by an independent agent over 13:13:17–13:13:26 UTC, checked and normalized by the coordinator. The eight older PR rows were not refreshed.",
+    "observed_at": "2026-10-18T13:13:26Z",
+    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json",
+    "evidence_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md"
+  },
+  "bounded_metadata_follow_up_1337": {
+    "started_at": "2026-10-18T13:37:19.087Z",
+    "finished_at": "2026-10-18T13:37:19.982Z",
+    "external_prs": [
+      "https://github.com/npm/cli/pull/9954",
+      "https://github.com/AOMediaCodec/libavif/pull/3413",
+      "https://github.com/libevent/libevent/pull/1916",
+      "https://github.com/nginx/nginx/pull/1734",
+      "https://github.com/nih-at/libzip/pull/576"
+    ],
+    "scope": "Five canonical PR metadata GETs; no head/base/update-time or comment-count changes against the previous live observation. No discussions, reviews, checks, jobs or reward evidence were refreshed for these five PRs. The older merged record was not queried.",
+    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
+  },
+  "pre_correction_followthrough_observation_1340": {
+    "observed_at": "2026-10-18T13:40:00.876Z",
+    "method": "Independent canonical GitHub connector GET observations, curated from complete source records. No oss_status.py refresh call or GitHub CLI collection was performed.",
+    "latest_scope": "Only JavaParser #5175, Jackson #6302 and LZ4 #1890 were refreshed for metadata, comments/reviews, checks/statuses and actual workflow job lists. LZ4 has 53 successful jobs and one confirmed ThreadSanitizer failure. Jackson has new branch/helper requests and a CLA reminder. JavaParser has no new feedback. The six historical snapshot rows retain their old dates and values.",
+    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
+  },
+  "corrected_lz4_hosted_evidence": {
+    "commit": "7751a987a7199b696902630b16d8e831880e9451",
+    "tree": "26c43584a573c3b0ec837f98b3c933d60aa43f89",
+    "parent": "a96c638dc9160f43544c8cd8414624cb2c166730",
+    "branch": "evidence/1889-tsan-hosted",
+    "index_url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
+    "observation_from": "2026-10-18T14:11:25Z",
+    "observation_through": "2026-10-18T14:11:26Z",
+    "scope": "Immutable completed hosted evidence supplement; its publication does not change the source head or any metadata/check observation date. Full monitor receipt and decoded TSan log are archive members; only curated facts are copied into the hub."
+  },
+  "retained_followthrough_observation_1411": {
+    "observed_at": "2026-10-18T14:11:26Z",
+    "method": "Composite canonical GitHub connector observations: initial three-PR follow-through followed by a separate independent head-checked corrected-LZ4 CI collection and full decoded TSan log audit.",
+    "latest_scope": "Only three campaign PR records are refreshed. LZ4 now records corrected head 0917e70420429ea2acab6aaac48cffdf4e827440 at 14:11:25-14:11:26 UTC: all 54 actual jobs, 54 CheckRuns and nine workflows succeeded; AppVeyor reports success. The full TSan log confirms the actual legacy regression. JavaParser and Jackson retain their separate 13:37-13:40 observations; all six historical records retain their old dates and values.",
+    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
   }
 }
