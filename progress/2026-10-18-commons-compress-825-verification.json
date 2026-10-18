@@ -1,0 +1,411 @@
+{
+  "schema_version": 1,
+  "title": "Commons Compress #825: submission and complete owned validation",
+  "observed_at": "2026-10-18T17:18:51.611Z",
+  "source": {
+    "observed_at": "2026-10-18T17:15:56.900Z",
+    "url": "https://github.com/apache/commons-compress/pull/825",
+    "number": 825,
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "created_at": "2026-10-18T17:15:07Z",
+    "updated_at": "2026-10-18T17:15:07Z",
+    "head": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+    "base": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+    "base_branch": "master",
+    "source_tree": "9c0430eb9a40f5f493132589e6fef3b7ffcbe494",
+    "maintainer_can_modify": false,
+    "changed_files": 6,
+    "additions": 190,
+    "deletions": 3,
+    "files": [
+      {
+        "path": "src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStream.java",
+        "sha": "b09bc3c235ce1730cf8968fa6722905ad6f07e65",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 0
+      },
+      {
+        "path": "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+        "sha": "38b8da4c2d477b084664f151a88c468f0466f55e",
+        "status": "modified",
+        "additions": 10,
+        "deletions": 0
+      },
+      {
+        "path": "src/test/java/org/apache/commons/compress/compressors/FramedCompressorInputStreamStatisticsTest.java",
+        "sha": "0f18d24916f8dc19f9937987478aadb5336d6f6c",
+        "status": "added",
+        "additions": 160,
+        "deletions": 0
+      },
+      {
+        "path": "src/test/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStreamTest.java",
+        "sha": "b999779f03f0b76402171372a0b2a56d56bc979c",
+        "status": "modified",
+        "additions": 4,
+        "deletions": 2
+      },
+      {
+        "path": "src/test/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorRoundtripTest.java",
+        "sha": "05b6f973c48a35be712d1dbbe07c044817db427b",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 0
+      },
+      {
+        "path": "src/test/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStreamTest.java",
+        "sha": "7f5fb2b247c1686be325e34739149300508c9d93",
+        "status": "modified",
+        "additions": 3,
+        "deletions": 1
+      }
+    ],
+    "body_verified": true
+  },
+  "latest_pr_metadata": {
+    "observed_at": "2026-10-18T17:18:51.611Z",
+    "updated_at": "2026-10-18T17:18:39Z",
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "head": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+    "base": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+    "base_branch": "master",
+    "body_matches_reviewed_submission": true,
+    "issue_comments": 1,
+    "inline_comments": 0,
+    "review_decision": "not collected; no submitted review returned at the earlier bounded collection"
+  },
+  "evidence": {
+    "baseline": {
+      "source_commit": "191c9e8ce0fb7c478f64bd8912fc56d9747eca5d",
+      "production_base": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "tests": 89,
+      "failures": 39,
+      "errors": 0,
+      "skipped": 0,
+      "shared_counter_invocations_failed": 10,
+      "url": "https://github.com/agamal026/commons-compress/blob/191c9e8ce0fb7c478f64bd8912fc56d9747eca5d/contribution-review/framed-statistics/baseline/README.md"
+    },
+    "local": {
+      "evidence_commit": "6505ee953046ebda57a40d91d520214c1cf6b1bd",
+      "focused": {
+        "tests": 89,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "same_test_bytes_as_baseline": true,
+        "execution_identity": "Prepared six-file working tree; hashes exactly match published source."
+      },
+      "default_build": {
+        "tests": 4791,
+        "failures": 2,
+        "errors": 0,
+        "skipped": 26,
+        "source": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+        "limitation": "Stopped on two existing TAR fixture UID/GID assertions before later verification goals."
+      },
+      "unchanged_upstream_control": {
+        "tests": 2,
+        "failures": 2,
+        "errors": 0,
+        "skipped": 0,
+        "source": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+        "source_edits": []
+      },
+      "nonroot_build_executed": false,
+      "url": "https://github.com/agamal026/commons-compress/blob/6505ee953046ebda57a40d91d520214c1cf6b1bd/contribution-review/framed-statistics/local-verification/README.md"
+    },
+    "hosted": {
+      "evidence_commit": "078e0a6a958ba1cf74387031867ae3eeb4450c8d",
+      "url": "https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md",
+      "maven_run": "https://github.com/agamal026/commons-compress/actions/runs/39147450534",
+      "run_attempt": 1,
+      "source": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "tested_merge": "76d0130283eb142314cf11bb42825798e9279a05",
+      "tested_tree": "75180283dda44c16550c644a7df3f88545424ac4",
+      "successful_maven_jobs": 19,
+      "ordinary_jobs": 18,
+      "experimental_java28_job": "success",
+      "relevant_tests_per_job": 89,
+      "full_tests_per_job": 4791,
+      "failures_per_job": 0,
+      "errors_per_job": 0,
+      "skips_per_job": {
+        "ubuntu": 26,
+        "windows": 30,
+        "macos": 28
+      },
+      "rat_checkstyle_pmd_japicmp_successes": 19,
+      "javadoc_successes": 16,
+      "existing_java8_profile_javadoc_omissions": 3,
+      "last_log_retrieved_at": "2026-10-18T17:07:10.758Z",
+      "review": "Independent automated full-log audit; no personal human review.",
+      "codeql": "Successful analysis; its skipped-test build is not counted as regression validation.",
+      "dependency_review": "Attempt 1 failed on disabled dependency graph; attempt 2 passed after enabling that capability and retrying only the failed job.",
+      "published_log_archive": {
+        "bytes": 439350,
+        "sha256": "218eee795b29e8aa44c5868921f2ffb588046d03b67e4a1719e35eba36d2f1de",
+        "git_blob_sha": "a77406ff94e5d152cb435cdb2e0b5599544f0542",
+        "archive_entries": 23,
+        "url": "https://raw.githubusercontent.com/agamal026/commons-compress/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/job-logs.zip"
+      },
+      "last_status_updated_at": "2026-10-18T17:06:21Z",
+      "last_job_completed_at": "2026-10-18T17:06:20Z"
+    }
+  },
+  "upstream_workflows": [
+    {
+      "id": 39148712206,
+      "url": "https://github.com/apache/commons-compress/actions/runs/39148712206",
+      "name": "CodeQL",
+      "source": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-10-18T17:15:12Z",
+      "updated_at": "2026-10-18T17:15:12Z",
+      "actual_jobs": 0,
+      "jobs_observed_at": "2026-10-18T17:16:50.883Z"
+    },
+    {
+      "id": 39148712273,
+      "url": "https://github.com/apache/commons-compress/actions/runs/39148712273",
+      "name": "Dependency Review",
+      "source": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-10-18T17:15:12Z",
+      "updated_at": "2026-10-18T17:15:12Z",
+      "actual_jobs": 0,
+      "jobs_observed_at": "2026-10-18T17:16:50.883Z"
+    },
+    {
+      "id": 39148712364,
+      "url": "https://github.com/apache/commons-compress/actions/runs/39148712364",
+      "name": "Java CI",
+      "source": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "run_attempt": 1,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-10-18T17:15:12Z",
+      "updated_at": "2026-10-18T17:15:12Z",
+      "actual_jobs": 0,
+      "jobs_observed_at": "2026-10-18T17:16:50.883Z"
+    }
+  ],
+  "upstream_checks": {
+    "check_runs": 0,
+    "status_contexts": 0,
+    "legacy_combined_state": "pending",
+    "limit": "An empty legacy status collection is not evidence of a pending executed build. The three workflow admission gates are recorded separately."
+  },
+  "upstream_feedback": {
+    "comments_before_followup": 0,
+    "inline_comments": 0,
+    "submitted_reviews": 0,
+    "observed_at": "2026-10-18T17:16:50.883Z",
+    "admission_request": {
+      "observed_at": "2026-10-18T17:18:51.611Z",
+      "id": 6252813089,
+      "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+      "created_at": "2026-10-18T17:18:39Z",
+      "updated_at": "2026-10-18T17:18:39Z",
+      "body_verified": true,
+      "total_issue_comments": 1,
+      "pr_updated_at": "2026-10-18T17:18:39Z"
+    },
+    "duplicate_requests_posted": 0
+  },
+  "jira_backlink": {
+    "url": "https://issues.apache.org/jira/browse/COMPRESS-726",
+    "api_url": "https://issues.apache.org/jira/rest/api/2/issue/COMPRESS-726/comment?maxResults=100",
+    "observed_at": "2026-10-18T17:17:03.871365Z",
+    "returned": 4,
+    "total": 4,
+    "matching_pr_backlinks": 0,
+    "status": "Outstanding; no Jira backlink was posted."
+  },
+  "policy": {
+    "contribution_guide": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/CONTRIBUTING.md",
+    "template": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/.github/pull_request_template.md",
+    "ai_guidance": "https://www.apache.org/legal/generative-tooling.html",
+    "ai_disclosed": true,
+    "scope": "Typical two-reader bug fix linked to the pre-existing counter report; does not implement or close the occupied size-limit proposal.",
+    "human_review_claimed": false,
+    "legal_signature_claimed": false
+  },
+  "accounting": {
+    "campaign_targets": 100,
+    "submitted_before": 3,
+    "submitted_after": 4,
+    "accepted_campaign_projects": 0,
+    "historical_submissions_preserved": 6,
+    "verified_realized_benefits": [],
+    "benefit_limit": "Conditional project scope only; no issue bounty, patch-specific security-reward qualification, participant eligibility, award or payment established."
+  },
+  "publication": {
+    "local": {
+      "observed_at": "2026-10-18T17:04:36.436Z",
+      "sha": "6505ee953046ebda57a40d91d520214c1cf6b1bd",
+      "tree": "7a795706104b6165f48efc5014a13ed13e93a3bd",
+      "parent": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "branch": "evidence/framed-statistics-local",
+      "files": [
+        {
+          "path": "contribution-review/framed-statistics/local-verification/README.md",
+          "sha256": "85c3f44332ffcd449b4126630c39b61392fd26049bfc13122425b63c8ea78e05",
+          "sha": "11cd9f005a8d63caf73d2a392fc463c8b60bf8b6"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/ci-setup.json",
+          "sha256": "5687f59ad05cb8a3e102f1b236355585f13b60465183967a9b0a851e147974d3",
+          "sha": "e545c98b1902a38b62235761fba89803f56608a3"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/default-maven.log",
+          "sha256": "b4c7f6e8e3341e002188831d8019ff3d7a6f2e2a1d40fb7c563171293e9df18d",
+          "sha": "d0a83f056a73fe3025e37a3dd214ad8b6cc647e0"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/focused-maven.log",
+          "sha256": "705a74d88e579db4ef24e1b371ef89c4440ad82680eaa594ce58ae28d5fb13de",
+          "sha": "5e054218a5374359ee9628459c48e7663eb3ff4b"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/source-review.json",
+          "sha256": "376ea4fb0fa5792ab1b98aa3e20b9f93ddc61a474ca9d57727b2bb53ebcbb860",
+          "sha": "a009458bd1eea44c6eadbc929048766901cb7379"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/upstream-ownership-control.log",
+          "sha256": "e68ee9d69448b7611770ab9edc274939c63cb3848b0d323256dc2edf04157c0f",
+          "sha": "61304c3cecc017d4ef04563226f175a735b9116a"
+        },
+        {
+          "path": "contribution-review/framed-statistics/local-verification/verification.json",
+          "sha256": "20a6673ac896a124a8b98ed645f75a77711043bddb2704d3d888da2be2f7b2bb",
+          "sha": "d1438ca28930735dc5c33ad646cf5a70ef63fb61"
+        }
+      ],
+      "content_verified": true,
+      "tree_verified": true,
+      "branch_verified": true
+    },
+    "hosted": {
+      "observed_at": "2026-10-18T17:14:27.997Z",
+      "sha": "078e0a6a958ba1cf74387031867ae3eeb4450c8d",
+      "tree": "af58561c0032c66929011de98db3dac550719d67",
+      "parent": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "branch": "evidence/framed-statistics-hosted",
+      "files": [
+        {
+          "path": "contribution-review/framed-statistics/hosted-verification/README.md",
+          "encoding": "utf-8",
+          "bytes": 2819,
+          "sha256": "544e7feee762a4dd16a9635a16bdc95c2d3b7328788c17fbafc58959a6ce42f4",
+          "git_blob_sha": "169082fbc3fc553d3fadcbba3919384e895dc60b"
+        },
+        {
+          "path": "contribution-review/framed-statistics/hosted-verification/job-logs.zip",
+          "encoding": "base64",
+          "bytes": 439350,
+          "sha256": "218eee795b29e8aa44c5868921f2ffb588046d03b67e4a1719e35eba36d2f1de",
+          "git_blob_sha": "a77406ff94e5d152cb435cdb2e0b5599544f0542"
+        },
+        {
+          "path": "contribution-review/framed-statistics/hosted-verification/log-manifest.json",
+          "encoding": "utf-8",
+          "bytes": 4381,
+          "sha256": "005122bf87217fdf58ab518b71d0f24e55211fd4994507d5998ba278b69ca284",
+          "git_blob_sha": "d2d7e47aab13d317f8c842237cb67bd605c4ee28"
+        },
+        {
+          "path": "contribution-review/framed-statistics/hosted-verification/verification.json",
+          "encoding": "utf-8",
+          "bytes": 90884,
+          "sha256": "21ee15ca8159d65486333eb3159dfdb4c3d5bc3b2110000a0481f2af89c99b4f",
+          "git_blob_sha": "c35c2d513856cc0614d02b40f21f4358e413452c"
+        }
+      ],
+      "exact_text_and_binary_contents_verified": true,
+      "binary_readback": {
+        "bytes": 439350,
+        "sha256": "218eee795b29e8aa44c5868921f2ffb588046d03b67e4a1719e35eba36d2f1de",
+        "git_blob_sha": "a77406ff94e5d152cb435cdb2e0b5599544f0542",
+        "archive_entries": 23,
+        "url": "https://raw.githubusercontent.com/agamal026/commons-compress/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/job-logs.zip"
+      },
+      "tree_verified": true,
+      "branch_verified": true
+    }
+  },
+  "next_action": "Follow the three upstream admission gates and substantive maintainer feedback. Do not duplicate comment 6252813089. Reuse exact-source proof unless source, base, feedback or actual CI changes. Add the outstanding Jira backlink when the write capability is available.",
+  "limitations": [
+    "Owned CI success does not establish upstream execution, maintainer acceptance, human review or benefits.",
+    "No optional reruns were requested after the complete owned Maven matrix succeeded.",
+    "The owned validation draft and evidence branches receive no external-contribution credit."
+  ],
+  "hub_validation": {
+    "observed_at": "2026-10-18T17:32:25.632868Z",
+    "code_source_commit": "e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a",
+    "python_version": "3.12.14",
+    "git_version": "git version 2.51.1",
+    "validated_input_sha256": {
+      "data/campaign.json": "3b4029b22a7f31060bc9ecd8034cdd8b88a34c68f57bc02ceb2ee8c9d785bc02",
+      "data/catalog.json": "8055ac5b5a4c91aab22cdc2bf87eccde4d639beedff58add85bbb68635829edd",
+      "data/github.json": "18c7a35de204580ef327d658a653f69d2fb8ca93e5588af21a60ee3824550357",
+      "data/snapshot-source.json": "143203506766fe52a332f0d2a05f292973dbf8b105aeb274fe8f73f119b4135f",
+      "progress/STATUS.md": "da9422c5458a2856e3827170a7779bdaeca22e28c9c913ad59d62b1e25e4c023",
+      "progress/CAMPAIGN.md": "5c002f4b9b84f97818dbb4a497b9d0a2886464df050a8165aba59bc84d4902f5"
+    },
+    "gates": [
+      {
+        "command": "python3 -m unittest discover -s tests -v",
+        "started_at": "2026-10-18T17:32:24.098609Z",
+        "finished_at": "2026-10-18T17:32:25.217750Z",
+        "exit_code": 0,
+        "tests": 81
+      },
+      {
+        "command": "python3 tools/oss_status.py validate",
+        "started_at": "2026-10-18T17:32:25.217822Z",
+        "finished_at": "2026-10-18T17:32:25.311966Z",
+        "exit_code": 0,
+        "result": "Valid: 2 projects, 10 pull requests, 2 candidates"
+      },
+      {
+        "command": "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+        "started_at": "2026-10-18T17:32:25.312040Z",
+        "finished_at": "2026-10-18T17:32:25.387695Z",
+        "exit_code": 0,
+        "result": "Up to date: progress/STATUS.md"
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py validate --input data/campaign.json",
+        "started_at": "2026-10-18T17:32:25.387967Z",
+        "finished_at": "2026-10-18T17:32:25.522682Z",
+        "exit_code": 0,
+        "result": "Campaign is valid: 100 targets; 4 / 100 qualified submitted repositories."
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check",
+        "started_at": "2026-10-18T17:32:25.522757Z",
+        "finished_at": "2026-10-18T17:32:25.616069Z",
+        "exit_code": 0,
+        "result": ""
+      },
+      {
+        "command": "git diff --check",
+        "started_at": "2026-10-18T17:32:25.616356Z",
+        "finished_at": "2026-10-18T17:32:25.630898Z",
+        "exit_code": 0
+      }
+    ],
+    "scope": "The six required local hub gates ran against the selected working-tree data and generated reports, using unchanged hub tools at code_source_commit. This receipt is added afterward. It does not claim hosted execution or acceptance of the external contribution."
+  }
+}

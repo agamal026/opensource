@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-18T15:25:01Z",
+  "observed_at": "2026-10-18T17:18:51.611Z",
   "pull_requests": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -1073,6 +1073,21 @@
           "url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919870"
         }
       ]
+    },
+    {
+      "id": "commons-compress-825",
+      "repository": "apache/commons-compress",
+      "number": 825,
+      "url": "https://github.com/apache/commons-compress/pull/825",
+      "title": "[COMPRESS-726] Count returned bytes in framed LZ4 and Snappy streams",
+      "state": "OPEN",
+      "is_draft": false,
+      "updated_at": "2026-10-18T17:18:39Z",
+      "merged_at": null,
+      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "review_decision": "",
+      "checks": []
     }
   ],
   "schema_version": 1

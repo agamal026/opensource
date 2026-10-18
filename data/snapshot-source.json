@@ -13,17 +13,36 @@
     "started_at": "2026-10-18T09:42:53Z",
     "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
   },
-  "check_collection": "Retain six historical records/70 contexts at 2026-10-17T20:01:04Z. JavaParser retains successful AppVeyor plus two action_required/zero-job runs at 13:40. Jackson current head has seven CheckRuns: four successful builds, two skipped downstream triggers and successful Gitar; four full logs show 74 passing cases/full-suite zero failures/errors. Zero legacy status contexts. LZ4 retains 54 successful CheckRuns/jobs, nine successful workflows and successful AppVeyor at 14:11:25-14:11:26. Earlier Jackson admission gates and LZ4 failure remain historical.",
+  "check_collection": "Commons Compress #825 returned literal zero CheckRuns and zero StatusContexts, so its normalized checks array is empty. Three separate Actions runs are action_required and each returned zero actual jobs; they are not synthesized as CheckRuns. Its 19 successful owned-fork Maven jobs are separate validation evidence, not upstream execution. The prior nine rows retain all 133 check/status contexts: 70 historical, one JavaParser, seven Jackson and 55 LZ4. The 16:08 follow-through confirmed unchanged current workflow/check outcomes for the latter three; it did not replace earlier full job/log audits.",
   "collected_with_live_cli": false,
-  "metadata_collection": "Jackson final PR/body metadata was verified at 2026-10-18T15:25:01Z: five issue comments/two inline comments. Helper reply individually verified 15:16:13; earlier complete discussion/review lists retain 13:37 dates. LZ4 final body/head/base/state readback was verified after its 14:41:45 update without a captured clock; full metadata/CI remains separately dated 14:11. JavaParser remains at 13:37-13:40. Historical rows retain all prior values/dates.",
+  "metadata_collection": "Commons Compress #825 was created at 2026-10-18T17:15:07Z and verified open/non-draft at 17:15:56.900 UTC. One admission comment at 17:18:39 was verified at 17:18:51.611 UTC, with unchanged head/base/body. The 16:08-16:11 bounded follow-through found no new or edited feedback or source/base changes for Jackson, LZ4 and JavaParser. Five older open PRs had separate unchanged metadata comparisons only; their normalized rows and checks were not refreshed, and the historical merged PR was not queried.",
   "new_observation": {
-    "observed_at": "2026-10-18T15:25:01Z",
-    "method": "Composite canonical final Jackson PR/body readback and separately audited upstream workflow/check/job/log data; retained LZ4, JavaParser and historical observations.",
-    "latest_scope": "Jackson source 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 targets 3.1. Final body/head/base verified at 15:25:01; upstream attempt 2 passed four builds, with two skipped downstream jobs and seven CheckRuns, observed 15:13:35-15:13:36, logs retrieved by 15:13:49. LZ4 CI remains dated 14:11 and final body update 14:41:45 has no captured readback clock. Six historical rows remain unchanged.",
-    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
+    "observed_at": "2026-10-18T17:18:51.611Z",
+    "method": "Coordinator-supplied canonical Commons Compress PR, CheckRun, StatusContext, workflow/job and admission-comment observations, normalized into the existing schema. The prior nine rows are retained without regeneration.",
+    "latest_scope": "Fresh Commons Compress #825 head 7e6477880259d60d4dfa60a5e34e4ea7875176b1 at base 611cad06b66842692870c6ae98f50de7ce4f25d5; open/non-draft, one admission comment, no observed reviews or inline comments, zero CheckRuns and zero StatusContexts. Three upstream runs remain action_required with zero jobs. No upstream execution, approval, acceptance or benefit is inferred.",
+    "verification_file": "progress/2026-10-18-commons-compress-825-verification.json",
+    "supporting_verification_files": [
+      "progress/2026-10-18-1608-screen-followthrough.json"
+    ],
+    "normalized_row_sha256": "bfeeadad28d112ebcafeb71321732bf5ffa3a0d746a73a43d81f8759f2910a4e",
+    "normalized_row_bytes": 500,
+    "recorded_batch_clocks": {
+      "initial_pr_files_source_checks_statuses_actions": {
+        "observed_at": "2026-10-18T17:15:56.104Z",
+        "normalized_verified_at": "2026-10-18T17:15:56.900Z"
+      },
+      "issue_inline_reviews_and_three_job_lists": {
+        "observed_at": "2026-10-18T17:16:50.883Z"
+      },
+      "final_pr_and_issue_comments": {
+        "observed_at": "2026-10-18T17:18:50.934Z",
+        "normalized_verified_at": "2026-10-18T17:18:51.611Z"
+      },
+      "scope": "These are recorded batch clocks. Unavailable individual response-completion times are not inferred."
+    }
   },
-  "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below.",
-  "observed_at": "2026-10-18T15:25:01Z",
+  "observation_scope": "The top-level observed_at is the latest included Commons Compress metadata readback, not a fresh collection time for every record. The prior nine normalized rows and all their per-record dates and provenance remain unchanged. Separate follow-through and new-submission receipts specify their own observation scope.",
+  "observed_at": "2026-10-18T17:18:51.611Z",
   "records": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -173,6 +192,71 @@
         "change": "PR body links completed hosted packet 7751a987 and reports 54 jobs/CheckRuns, nine workflows and AppVeyor success.",
         "comment_posted": false
       }
+    },
+    {
+      "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "check_contexts_returned": 0,
+      "check_runs_returned": 0,
+      "status_contexts_returned": 0,
+      "checks_observed_at": "2026-10-18T17:15:56.104Z",
+      "check_runs_observed_at": "2026-10-18T17:15:56.104Z",
+      "status_contexts_observed_at": "2026-10-18T17:15:56.104Z",
+      "check_observation_note": "These are recorded batch observation times for the canonical initial PR/files/commit/CheckRun/status/Actions collection. Individual response-completion clocks were not captured; normalized readback was verified at 2026-10-18T17:15:56.900Z. Zero CheckRuns and StatusContexts are literal returned counts.",
+      "collection": "Fresh Commons Compress #825 metadata and literal empty check/status collections. Three separately inspected Actions runs require action and have zero jobs. Owned-fork validation and its full logs are recorded separately; no upstream test pass or acceptance is established.",
+      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "id": "commons-compress-825",
+      "metadata_observed_at": "2026-10-18T17:18:51.611Z",
+      "number": 825,
+      "repository": "apache/commons-compress",
+      "review_decision": "",
+      "review_decision_collection": "No submitted reviews or inline comments were observed. No GraphQL reviewDecision or human approval is inferred; the normalized field remains unreported.",
+      "reviews_observed_at": "2026-10-18T17:16:50.883Z",
+      "verification_file": "progress/2026-10-18-commons-compress-825-verification.json",
+      "canonical_metadata_url": "https://api.github.com/repos/apache/commons-compress/pulls/825",
+      "owned_fork_hosted_evidence_url": "https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md",
+      "upstream_actions": {
+        "classification": "Workflow-run observations, not CheckRuns",
+        "run_count": 3,
+        "conclusion": "action_required",
+        "actual_jobs_returned": 0,
+        "runs": [
+          {
+            "id": 39148712206,
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712206",
+            "conclusion": "action_required",
+            "actual_jobs_returned": 0
+          },
+          {
+            "id": 39148712273,
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712273",
+            "conclusion": "action_required",
+            "actual_jobs_returned": 0
+          },
+          {
+            "id": 39148712364,
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712364",
+            "conclusion": "action_required",
+            "actual_jobs_returned": 0
+          }
+        ],
+        "runs_batch_observed_at": "2026-10-18T17:15:56.104Z",
+        "actual_job_lists_batch_observed_at": "2026-10-18T17:16:50.883Z",
+        "observation_clock_scope": "Recorded batch times, not individual response-completion clocks."
+      },
+      "admission_comment": {
+        "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+        "created_at": "2026-10-18T17:18:39Z",
+        "canonical_verified_at": "2026-10-18T17:18:51.611Z",
+        "issue_comments_returned": 1,
+        "inline_comments_observed": 0,
+        "submitted_reviews_observed": 0,
+        "instruction": "Do not duplicate the existing admission request.",
+        "batch_observed_at": "2026-10-18T17:18:50.934Z",
+        "retained_review_collection_batch_observed_at": "2026-10-18T17:16:50.883Z"
+      },
+      "review_observation_note": "The complete issue-comment, inline-comment, submitted-review and three job-list collection has a recorded batch observation clock of 2026-10-18T17:16:50.883Z; no individual response-completion clock is asserted.",
+      "metadata_batch_observed_at": "2026-10-18T17:18:50.934Z",
+      "metadata_observation_note": "metadata_observed_at is the final normalized PR/issue-comment readback verification time; the corresponding recorded batch clock is 2026-10-18T17:18:50.934Z."
     }
   ],
   "retained_jackson_observation": {
@@ -204,8 +288,8 @@
   },
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "7485202bbadb2df79a228bf459b90296d38aae5a9b4f97f2def8811f1f523022",
-  "source": "Composite reviewed snapshot: six retained historical CLI records and three refreshed contributor PR records from canonical connector GET observations. This is not a full live collection of every registered PR.",
+  "snapshot_sha256": "18c7a35de204580ef327d658a653f69d2fb8ca93e5588af21a60ee3824550357",
+  "source": "Composite reviewed snapshot: six historical CLI rows and three existing campaign PR rows retained unchanged, plus the newly observed Commons Compress #825 row from canonical GitHub responses. Separate bounded follow-through confirms the prior three campaign outcomes without replacing their normalized values or original observation dates. This is not a full live refresh of all ten PRs.",
   "initial_lz4_observation": {
     "latest_scope": "LZ4 #1890 PR metadata, 54 CheckRuns with two successes and queued/running jobs, one pending AppVeyor StatusContext, nine admitted workflow records, and empty comment/review lists. No full upstream matrix pass is established.",
     "method": "Coordinator-supplied canonical GitHub connector GET responses, normalized into the existing public schema; oss_status.py refresh was not run for this update.",
@@ -253,5 +337,56 @@
     "method": "Composite canonical GitHub connector observations: initial three-PR follow-through followed by a separate independent head-checked corrected-LZ4 CI collection and full decoded TSan log audit.",
     "latest_scope": "Only three campaign PR records are refreshed. LZ4 now records corrected head 0917e70420429ea2acab6aaac48cffdf4e827440 at 14:11:25-14:11:26 UTC: all 54 actual jobs, 54 CheckRuns and nine workflows succeeded; AppVeyor reports success. The full TSan log confirms the actual legacy regression. JavaParser and Jackson retain their separate 13:37-13:40 observations; all six historical records retain their old dates and values.",
     "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
+  },
+  "retained_observation_2026_10_18_1525": {
+    "observed_at": "2026-10-18T15:25:01Z",
+    "method": "Composite canonical final Jackson PR/body readback and separately audited upstream workflow/check/job/log data; retained LZ4, JavaParser and historical observations.",
+    "latest_scope": "Jackson source 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 targets 3.1. Final body/head/base verified at 15:25:01; upstream attempt 2 passed four builds, with two skipped downstream jobs and seven CheckRuns, observed 15:13:35-15:13:36, logs retrieved by 15:13:49. LZ4 CI remains dated 14:11 and final body update 14:41:45 has no captured readback clock. Six historical rows remain unchanged.",
+    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
+  },
+  "retained_snapshot_scope_2026_10_18_1525": {
+    "observed_at": "2026-10-18T15:25:01Z",
+    "snapshot_sha256": "7485202bbadb2df79a228bf459b90296d38aae5a9b4f97f2def8811f1f523022",
+    "provenance_sha256": "eef9e29635f0fe8acc1676514fbfaf68ef693ec1b1ad05397fd5d9f58d7df36a",
+    "snapshot_url": "https://github.com/agamal026/opensource/blob/e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a/data/github.json",
+    "provenance_url": "https://github.com/agamal026/opensource/blob/e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a/data/snapshot-source.json",
+    "source": "Composite reviewed snapshot: six retained historical CLI records and three refreshed contributor PR records from canonical connector GET observations. This is not a full live collection of every registered PR.",
+    "metadata_collection": "Jackson final PR/body metadata was verified at 2026-10-18T15:25:01Z: five issue comments/two inline comments. Helper reply individually verified 15:16:13; earlier complete discussion/review lists retain 13:37 dates. LZ4 final body/head/base/state readback was verified after its 14:41:45 update without a captured clock; full metadata/CI remains separately dated 14:11. JavaParser remains at 13:37-13:40. Historical rows retain all prior values/dates.",
+    "check_collection": "Retain six historical records/70 contexts at 2026-10-17T20:01:04Z. JavaParser retains successful AppVeyor plus two action_required/zero-job runs at 13:40. Jackson current head has seven CheckRuns: four successful builds, two skipped downstream triggers and successful Gitar; four full logs show 74 passing cases/full-suite zero failures/errors. Zero legacy status contexts. LZ4 retains 54 successful CheckRuns/jobs, nine successful workflows and successful AppVeyor at 14:11:25-14:11:26. Earlier Jackson admission gates and LZ4 failure remain historical.",
+    "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below."
+  },
+  "bounded_followthrough_2026_10_18_1608": {
+    "started_at": "2026-10-18T16:08:17.249Z",
+    "finished_at": "2026-10-18T16:11:15.089Z",
+    "verification_file": "progress/2026-10-18-1608-screen-followthrough.json",
+    "verification_sha256": "41ca8c8a75187cf96cea04e745ea68d9820fbb58ecc1e0da90a20e79ef909179",
+    "current_prs": [
+      "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "https://github.com/lz4/lz4/pull/1890",
+      "https://github.com/javaparser/javaparser/pull/5175"
+    ],
+    "scope": "Complete current discussion/review collections and workflow/check/status metadata for three current campaign PRs, plus two JavaParser job lists. No new actionable feedback or source/base change. Jackson and LZ4 remain successful with earlier execution evidence retained; JavaParser retains two action_required runs with zero jobs.",
+    "historical_metadata_only": "Five older open PRs had unchanged selected metadata against the prior bounded observation. Their discussions, reviews, checks, workflow jobs, full logs and reward eligibility were not refreshed; the historical merged record was not queried.",
+    "effect_on_snapshot": "No prior normalized row, review outcome or per-record observation date was replaced."
+  },
+  "three_project_screen_2026_10_18_1606": {
+    "verification_file": "progress/2026-10-18-1608-screen-followthrough.json",
+    "verification_sha256": "41ca8c8a75187cf96cea04e745ea68d9820fbb58ecc1e0da90a20e79ef909179",
+    "scope": "The linked screening summary retains its original source-read and compilation times. Later Commons Compress implementation and submission evidence is in the separate Commons verification receipt.",
+    "decisions": [
+      {
+        "repository": "apache/commons-compress",
+        "decision": "Selected scoped framed-output counter correction; subsequent external PR #825 is recorded separately."
+      },
+      {
+        "repository": "apache/commons-io",
+        "decision": "IO-754 reserve pending reproduction; not in the current 100-project campaign and no IO tests executed."
+      },
+      {
+        "repository": "jhy/jsoup",
+        "decision": "Excluded by the pinned policy rejecting AI-generated code and issue/PR/discussion text."
+      }
+    ],
+    "benefit_scope": "Commons Compress and Commons IO have only conditional project-level OSS-Fuzz/Patch Rewards scope; no patch-specific security qualification, participant eligibility, application, award, activated subscription or payment is established."
   }
 }

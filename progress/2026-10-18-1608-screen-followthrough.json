@@ -1,0 +1,688 @@
+{
+  "schema_version": 1,
+  "title": "2026-10-18 contribution follow-through and three-project screen",
+  "compiled_at_utc": "2026-10-18T16:46:50Z",
+  "hub_checkpoint": "e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a",
+  "scope": "Public summary compiled from four existing receipts. It records their observation times and findings; compilation performed no new upstream lookup. Selected Compress implementation, execution and publication results belong in a separate later record.",
+  "input_lineage": [
+    {
+      "receipt": "review-followthrough.json",
+      "bytes": 84578,
+      "sha256": "d493a710924380dcd1eb318ba7b1cba851f7723b82bb661d957f9a0bae50a367"
+    },
+    {
+      "receipt": "commons-compress-screen.json",
+      "bytes": 42286,
+      "sha256": "e1ef87b0f0a749376cba3d9c877978b46fe93c7af63026938204993e5a4b3f0e"
+    },
+    {
+      "receipt": "commons-io-screen.json",
+      "bytes": 26266,
+      "sha256": "c5246bf549f6a0c32a7ca6f2cf7fa6fdbb775b2fadbd12b23d3de5c44bf1e66a"
+    },
+    {
+      "receipt": "jsoup-screen.json",
+      "bytes": 3867,
+      "sha256": "9a1bc5e8accdd59ee1d9b75d170f4702f4def798511400881cf03c762cd2e1e6"
+    }
+  ],
+  "lineage_limit": "Receipt filenames identify hashed source inputs; this summary does not assert that the full input receipts are published alongside it.",
+  "follow_through": {
+    "observed_between": [
+      "2026-10-18T16:08:17.249Z",
+      "2026-10-18T16:11:15.089Z"
+    ],
+    "scope": "Three current campaign PRs: complete current discussion/review collections, workflow-run and commit check/status metadata, plus two JavaParser job-list reads. Five older PRs: metadata only.",
+    "outcome": "No new actionable maintainer feedback, source/base change or new failing CI found within this bounded collection.",
+    "current_projects": [
+      {
+        "repository": "FasterXML/jackson-databind",
+        "pull_request": "https://github.com/FasterXML/jackson-databind/pull/6302",
+        "comparison_cutoff": "2026-10-18T15:25:01Z",
+        "metadata_observed_at": "2026-10-18T16:08:17.831Z",
+        "collections_observed_between": [
+          "2026-10-18T16:08:52.706Z",
+          "2026-10-18T16:09:37.500Z"
+        ],
+        "state": "open",
+        "merged": false,
+        "head": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+        "base": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+        "base_branch": "3.1",
+        "github_merge_ref_sha": "21d5d2915c92b1d3ffdd765567d0b3b2d55e00cf",
+        "merge_ref_limit": "The merge-ref SHA is not evidence of an accepted or merged PR.",
+        "feedback_counts": {
+          "issue_comments": 5,
+          "inline_comments": 2,
+          "reviews": 2
+        },
+        "review_states": {
+          "COMMENTED": 2
+        },
+        "new_or_edited_discussion_records": 0,
+        "head_changed": false,
+        "base_changed": false,
+        "outcome": "No new or edited discussion or review records, head/base change, or failing current workflow/check. PR remains open; the known two COMMENTED reviews do not establish approval.",
+        "ci_metadata": {
+          "workflow_count": 1,
+          "workflow_conclusions": {
+            "success": 1
+          },
+          "check_run_count": 7,
+          "check_run_conclusions": {
+            "skipped": 2,
+            "success": 5
+          },
+          "legacy_combined_state": "pending",
+          "legacy_status_count": 0,
+          "runs": [
+            {
+              "id": 39138054220,
+              "html_url": "https://github.com/FasterXML/jackson-databind/actions/runs/39138054220",
+              "run_attempt": 2,
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "legacy_status_limit": "The legacy endpoint's pending state has zero status records. It does not mean the successful Actions workflow is pending."
+        },
+        "canonical_metadata_url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302",
+        "canonical_collection_refs": [
+          {
+            "collection": "issue_comments",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/issues/6302/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.761Z"
+          },
+          {
+            "collection": "inline_comments",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.706Z"
+          },
+          {
+            "collection": "reviews",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/reviews?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.824Z"
+          },
+          {
+            "collection": "workflows",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/actions/runs?head_sha=38261628a27c109e6e49c916cdb0f7e8bf7bbf45&event=pull_request&per_page=100",
+            "observed_at": "2026-10-18T16:08:52.706Z"
+          },
+          {
+            "collection": "checks",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/check-runs?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.414Z"
+          },
+          {
+            "collection": "statuses",
+            "url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/status?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.500Z"
+          }
+        ],
+        "review_limit": "The two known COMMENTED reviews refer to historical source de533c218b30a86ac9e74a6627b7224c2a0d2987: one maintainer review and the author's reply. No final-source human approval or CLA acceptance is established."
+      },
+      {
+        "repository": "lz4/lz4",
+        "pull_request": "https://github.com/lz4/lz4/pull/1890",
+        "comparison_cutoff": "2026-10-18T14:41:45Z",
+        "metadata_observed_at": "2026-10-18T16:08:17.995Z",
+        "collections_observed_between": [
+          "2026-10-18T16:08:52.643Z",
+          "2026-10-18T16:09:37.498Z"
+        ],
+        "state": "open",
+        "merged": false,
+        "head": "0917e70420429ea2acab6aaac48cffdf4e827440",
+        "base": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+        "base_branch": "dev",
+        "github_merge_ref_sha": "9eb241584f5019e048346682cdd8bd2ac76b0100",
+        "merge_ref_limit": "The merge-ref SHA is not evidence of an accepted or merged PR.",
+        "feedback_counts": {
+          "issue_comments": 0,
+          "inline_comments": 0,
+          "reviews": 0
+        },
+        "review_states": {},
+        "new_or_edited_discussion_records": 0,
+        "head_changed": false,
+        "base_changed": false,
+        "outcome": "No discussion or review records, head/base change, or failing current workflow/check. PR remains open; successful CI does not establish acceptance.",
+        "ci_metadata": {
+          "workflow_count": 9,
+          "workflow_conclusions": {
+            "success": 9
+          },
+          "check_run_count": 54,
+          "check_run_conclusions": {
+            "success": 54
+          },
+          "legacy_combined_state": "success",
+          "legacy_status_count": 1,
+          "runs": [
+            {
+              "id": 39133845170,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845170",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845143,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845143",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845148,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845148",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845146,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845146",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845159,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845159",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845154,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845154",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845188,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845188",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845224,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845224",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "id": 39133845150,
+              "html_url": "https://github.com/lz4/lz4/actions/runs/39133845150",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        "canonical_metadata_url": "https://api.github.com/repos/lz4/lz4/pulls/1890",
+        "canonical_collection_refs": [
+          {
+            "collection": "issue_comments",
+            "url": "https://api.github.com/repos/lz4/lz4/issues/1890/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.675Z"
+          },
+          {
+            "collection": "inline_comments",
+            "url": "https://api.github.com/repos/lz4/lz4/pulls/1890/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.643Z"
+          },
+          {
+            "collection": "reviews",
+            "url": "https://api.github.com/repos/lz4/lz4/pulls/1890/reviews?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.663Z"
+          },
+          {
+            "collection": "workflows",
+            "url": "https://api.github.com/repos/lz4/lz4/actions/runs?head_sha=0917e70420429ea2acab6aaac48cffdf4e827440&event=pull_request&per_page=100",
+            "observed_at": "2026-10-18T16:08:52.790Z"
+          },
+          {
+            "collection": "checks",
+            "url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/check-runs?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.484Z"
+          },
+          {
+            "collection": "statuses",
+            "url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/status?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.498Z"
+          }
+        ]
+      },
+      {
+        "repository": "javaparser/javaparser",
+        "pull_request": "https://github.com/javaparser/javaparser/pull/5175",
+        "comparison_cutoff": "2026-10-18T13:40:00.876Z",
+        "metadata_observed_at": "2026-10-18T16:08:18.107Z",
+        "collections_observed_between": [
+          "2026-10-18T16:08:52.645Z",
+          "2026-10-18T16:09:37.381Z"
+        ],
+        "state": "open",
+        "merged": false,
+        "head": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "base": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+        "base_branch": "master",
+        "github_merge_ref_sha": "798218bf81ac512d9a44cb3e9378ffd88964db5e",
+        "merge_ref_limit": "The merge-ref SHA is not evidence of an accepted or merged PR.",
+        "feedback_counts": {
+          "issue_comments": 1,
+          "inline_comments": 0,
+          "reviews": 0
+        },
+        "review_states": {},
+        "new_or_edited_discussion_records": 0,
+        "head_changed": false,
+        "base_changed": false,
+        "outcome": "No new or edited discussion or review records or head/base change. Both upstream Actions runs still have action_required and zero actual jobs; no upstream test pass is claimed.",
+        "ci_metadata": {
+          "workflow_count": 2,
+          "workflow_conclusions": {
+            "action_required": 2
+          },
+          "check_run_count": 0,
+          "check_run_conclusions": {},
+          "legacy_combined_state": "success",
+          "legacy_status_count": 1,
+          "runs": [
+            {
+              "id": 39117999673,
+              "html_url": "https://github.com/javaparser/javaparser/actions/runs/39117999673",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "action_required"
+            },
+            {
+              "id": 39117999726,
+              "html_url": "https://github.com/javaparser/javaparser/actions/runs/39117999726",
+              "run_attempt": 1,
+              "status": "completed",
+              "conclusion": "action_required"
+            }
+          ],
+          "actual_jobs": [
+            {
+              "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999673/jobs?per_page=100",
+              "observed_at": "2026-10-18T16:09:37.381Z",
+              "count": 0
+            },
+            {
+              "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999726/jobs?per_page=100",
+              "observed_at": "2026-10-18T16:09:37.344Z",
+              "count": 0
+            }
+          ]
+        },
+        "canonical_metadata_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175",
+        "canonical_collection_refs": [
+          {
+            "collection": "issue_comments",
+            "url": "https://api.github.com/repos/javaparser/javaparser/issues/5175/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.645Z"
+          },
+          {
+            "collection": "inline_comments",
+            "url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/comments?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.824Z"
+          },
+          {
+            "collection": "reviews",
+            "url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/reviews?per_page=100",
+            "observed_at": "2026-10-18T16:08:52.733Z"
+          },
+          {
+            "collection": "workflows",
+            "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs?head_sha=2a437e500bf54024772dd9f3d6d4149506defed2&event=pull_request&per_page=100",
+            "observed_at": "2026-10-18T16:08:52.659Z"
+          },
+          {
+            "collection": "checks",
+            "url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/check-runs?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.350Z"
+          },
+          {
+            "collection": "statuses",
+            "url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/status?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.300Z"
+          },
+          {
+            "collection": "actual_jobs",
+            "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999673/jobs?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.381Z"
+          },
+          {
+            "collection": "actual_jobs",
+            "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999726/jobs?per_page=100",
+            "observed_at": "2026-10-18T16:09:37.344Z"
+          }
+        ]
+      }
+    ],
+    "reused_execution_evidence": [
+      {
+        "project": "Jackson",
+        "head": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+        "url": "https://github.com/agamal026/jackson-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution-review/6299/3.1-upstream/README.md",
+        "scope": "Earlier exact-tree four-build log audit establishes 74 passing contribution cases, full suites 5883/5885 with zero failures/errors and one skip; Linux17 Android API compatibility passed. Job logs were not fetched again."
+      },
+      {
+        "project": "LZ4",
+        "head": "0917e70420429ea2acab6aaac48cffdf4e827440",
+        "url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
+        "scope": "Earlier 54 actual jobs and full TSan log audit retained. No job/log reconstruction for unchanged successful workflows."
+      },
+      {
+        "project": "JavaParser",
+        "head": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "url": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md",
+        "scope": "Earlier Linux/Java17 reactor proof retained; current two Actions runs still require action with zero actual jobs."
+      }
+    ],
+    "historical_metadata_only": {
+      "records": [
+        {
+          "pull_request": "https://github.com/npm/cli/pull/9954",
+          "canonical_metadata_url": "https://api.github.com/repos/npm/cli/pulls/9954",
+          "observed_at": "2026-10-18T16:09:37.788Z",
+          "state": "open",
+          "head": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
+          "base": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
+          "base_branch": "latest",
+          "issue_comment_count": 1,
+          "inline_comment_count": 0,
+          "metadata_changed": false
+        },
+        {
+          "pull_request": "https://github.com/AOMediaCodec/libavif/pull/3413",
+          "canonical_metadata_url": "https://api.github.com/repos/AOMediaCodec/libavif/pulls/3413",
+          "observed_at": "2026-10-18T16:09:37.564Z",
+          "state": "open",
+          "head": "93ef0a32c07741c34bb515295f5be3d270cca02d",
+          "base": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
+          "base_branch": "main",
+          "issue_comment_count": 1,
+          "inline_comment_count": 0,
+          "metadata_changed": false
+        },
+        {
+          "pull_request": "https://github.com/libevent/libevent/pull/1916",
+          "canonical_metadata_url": "https://api.github.com/repos/libevent/libevent/pulls/1916",
+          "observed_at": "2026-10-18T16:09:37.633Z",
+          "state": "open",
+          "head": "14e56a95e1d524d8500da73bb49f9b0c80397057",
+          "base": "d82464a277d0f42703702c4dfd9af6af38595a83",
+          "base_branch": "master",
+          "issue_comment_count": 0,
+          "inline_comment_count": 0,
+          "metadata_changed": false
+        },
+        {
+          "pull_request": "https://github.com/nginx/nginx/pull/1734",
+          "canonical_metadata_url": "https://api.github.com/repos/nginx/nginx/pulls/1734",
+          "observed_at": "2026-10-18T16:09:37.652Z",
+          "state": "open",
+          "head": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
+          "base": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
+          "base_branch": "master",
+          "issue_comment_count": 3,
+          "inline_comment_count": 0,
+          "metadata_changed": false
+        },
+        {
+          "pull_request": "https://github.com/nih-at/libzip/pull/576",
+          "canonical_metadata_url": "https://api.github.com/repos/nih-at/libzip/pulls/576",
+          "observed_at": "2026-10-18T16:09:37.499Z",
+          "state": "open",
+          "head": "5aeb57b6e922934125008756998b3ce2a93ba498",
+          "base": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
+          "base_branch": "main",
+          "issue_comment_count": 8,
+          "inline_comment_count": 6,
+          "metadata_changed": false
+        }
+      ],
+      "outcome": "All five metadata comparisons are unchanged.",
+      "limits": "These five reads did not refresh comments, review bodies, checks, workflow jobs, full logs or reward eligibility. Unchanged comment counts do not establish no new actionable feedback. The older merged libavif PR was not queried."
+    },
+    "limits": [
+      "Jackson and LZ4 successful metadata reuse already audited execution evidence; their job lists and full logs were not fetched again.",
+      "Underlying AppVeyor logs were not inspected. Earlier LZ4 failures and Jackson failed attempts remain historical.",
+      "No new source change, test execution, workflow rerun, review approval, CLA acceptance, upstream merge or realized benefit is established.",
+      "Libzip reward recheck remains not due before 2026-10-22T13:12:13Z."
+    ]
+  },
+  "project_screens": [
+    {
+      "repository": "apache/commons-compress",
+      "decision": "selected_for_scoped_follow_on_work",
+      "screen_disposition": "recommended_for_bounded_reproduction_by_coordinator",
+      "selection_scope": "Framed LZ4 and framed Snappy getUncompressedCount() output statistics only. Coordinator selection is recorded here; implementation results are not included.",
+      "observed": {
+        "started_utc": "2026-10-18T16:08:16Z",
+        "public_source_reads_complete_by_utc": "2026-10-18T16:16:34Z",
+        "receipt_prepared_utc": "2026-10-18T16:20:18Z"
+      },
+      "source": {
+        "default_branch": "master",
+        "commit_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+        "tree_sha": "adac2329e8e707305cb56940e326d6c18f33f083",
+        "commit_url": "https://github.com/apache/commons-compress/commit/611cad06b66842692870c6ae98f50de7ce4f25d5",
+        "git_data_url": "https://api.github.com/repos/apache/commons-compress/git/commits/611cad06b66842692870c6ae98f50de7ce4f25d5",
+        "project_version": "1.29.0-SNAPSHOT"
+      },
+      "source_and_policy_ids": [
+        {
+          "path": "src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStream.java",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStream.java",
+          "calculated_git_blob_sha1": "e3f2424d245f7234d0ac8073c7b6f792ea14a08c",
+          "sha256": "2ea4c1a10d8773c40c396a3903a14338f455d6596a31e5c079c525127e7f4a98"
+        },
+        {
+          "path": "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+          "calculated_git_blob_sha1": "26467216077a56c590de3442929b6a0d66ebf976",
+          "sha256": "8034810900e103b277923187821bbfd63bc770ed0a8c57aa2a04daa23bb92702"
+        },
+        {
+          "path": "src/main/java/org/apache/commons/compress/compressors/CompressorInputStream.java",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/src/main/java/org/apache/commons/compress/compressors/CompressorInputStream.java",
+          "calculated_git_blob_sha1": "11b7e0328444c7b99a5be784f75fcbc7f3ab2714",
+          "sha256": "35af950c0948df222dc252c0fa64b18e650f416a6cdb80aa59198a0b0e43de9c"
+        },
+        {
+          "path": "src/main/java/org/apache/commons/compress/utils/InputStreamStatistics.java",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/src/main/java/org/apache/commons/compress/utils/InputStreamStatistics.java",
+          "calculated_git_blob_sha1": "63998d6e1a813253155c1d2917ee4ef90043d246",
+          "sha256": "a647fa073c650440ba72a36cbd8070d57c180b3b48b079093c71b4557fd9c4e4"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/CONTRIBUTING.md",
+          "calculated_git_blob_sha1": "f7ed9eb79c91e4d292a388e45d95410b3b25afb8",
+          "sha256": "80b82a623f696ed039c3ab9ade90beec0cfe186ed37a599d57ba66b37a42cee0"
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/.github/pull_request_template.md",
+          "calculated_git_blob_sha1": "9ff35c83e7903c05f00f998fe7d0e4602f2d6d7f",
+          "sha256": "e89645a12658b22fb28ebcc7cf5b41833191fd17dcf3638b601c41035dd365ac"
+        },
+        {
+          "path": ".github/GH-ROBOTS.txt",
+          "url": "https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/.github/GH-ROBOTS.txt",
+          "calculated_git_blob_sha1": "64a88674fe412ed3c30394c14bb1f0316567d390",
+          "sha256": "2b84a5a595f02723b8e31fc7895c30a81f7ea21ecd0b8e76a0160070d28ab635"
+        }
+      ],
+      "report": {
+        "issue_url": "https://issues.apache.org/jira/browse/COMPRESS-726",
+        "comment_url": "https://issues.apache.org/jira/browse/COMPRESS-726?focusedCommentId=18092163&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel",
+        "comment_id": "18092163",
+        "reported_at": "2026-06-28T18:11:40.268+0000",
+        "summary": "Existing public discussion identifies inaccurate framed counters separately from the occupied decompressed-size-limit proposal.",
+        "dedicated_counter_issue_found": false
+      },
+      "competition": {
+        "open_pr_count": 26,
+        "open_prs_url": "https://api.github.com/repos/apache/commons-compress/pulls?state=open&per_page=100",
+        "recent_closed_pr_count": 100,
+        "recent_closed_prs_url": "https://api.github.com/repos/apache/commons-compress/pulls?state=closed&sort=updated&direction=desc&per_page=100",
+        "related_pr": "https://github.com/apache/commons-compress/pull/777",
+        "related_pr_head": "bac8b3018fe620f8ed483250a312a75c9395ac9c",
+        "separation": "PR 777 implements size limiting and expressly excludes these inaccurate counters. The inspected seven-file diff does not change either framed decoder or the inherited getUncompressedCount logic.",
+        "result": "No competing framed-counter fix identified within the documented search; no exhaustive absence claim."
+      },
+      "validation_scope": "The screening reviewer performed source analysis, not runtime tests. Later reproduction and patch-validation results are separate.",
+      "submission_scope": "master topic branch, minimal Jira-linked fix, regression failing without the fix, successful default mvn and normal GitHub/Jira submission. A dedicated counter ticket was not established by this screen."
+    },
+    {
+      "repository": "apache/commons-io",
+      "decision": "reserve_pending_reproduction",
+      "in_current_100_project_campaign": false,
+      "campaign_change_made": false,
+      "observed": {
+        "started_at_utc": "2026-10-18T16:07:56Z",
+        "completed_at_utc": "2026-10-18T16:19:33Z"
+      },
+      "source": {
+        "branch": "master",
+        "commit": "7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9",
+        "version": "2.23.0-SNAPSHOT"
+      },
+      "source_and_policy_ids": [
+        {
+          "path": ".github/GH-ROBOTS.txt",
+          "git_blob": "64a88674fe412ed3c30394c14bb1f0316567d390",
+          "url": "https://github.com/apache/commons-io/blob/7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9/.github/GH-ROBOTS.txt"
+        },
+        {
+          "path": ".github/pull_request_template.md",
+          "git_blob": "9ff35c83e7903c05f00f998fe7d0e4602f2d6d7f",
+          "url": "https://github.com/apache/commons-io/blob/7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9/.github/pull_request_template.md"
+        },
+        {
+          "path": "CONTRIBUTING.md",
+          "git_blob": "babb08bb3946c28ef8bb5449676a2523fb8b269a",
+          "url": "https://github.com/apache/commons-io/blob/7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9/CONTRIBUTING.md"
+        },
+        {
+          "path": "src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java",
+          "git_blob": "feb221c09013a1e0f36a33c002358b6f80f6882d",
+          "url": "https://github.com/apache/commons-io/blob/7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9/src/main/java/org/apache/commons/io/filefilter/WildcardFileFilter.java"
+        },
+        {
+          "path": "src/main/java/org/apache/commons/io/FileUtils.java",
+          "git_blob": "b6df905c7fd4f0dfe5d571c552900d75ce9d8684",
+          "url": "https://github.com/apache/commons-io/blob/7df2ddfc90ee35a5dbeb9c490b431d4d0e4faef9/src/main/java/org/apache/commons/io/FileUtils.java"
+        }
+      ],
+      "issue": {
+        "key": "IO-754",
+        "url": "https://issues.apache.org/jira/browse/IO-754",
+        "status": "Open",
+        "assignee": null,
+        "updated_at": "2022-06-23T12:50:22.139+0000",
+        "full_comment_count_read": 7,
+        "maintainer_invitation_url": "https://issues.apache.org/jira/browse/IO-754?focusedCommentId=17435976&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-17435976",
+        "maintainer_invitation_comment_id": "17435976",
+        "invitation_date": "2021-10-29T13:11:20.228+0000",
+        "summary": "A maintainer welcomed a fix preserving both legacy File overrides and newer Path behavior. Current source still bypasses accept(File) overrides through the path-based iteration route."
+      },
+      "competition": {
+        "open_pr_count": 30,
+        "searches": [
+          {
+            "url": "https://api.github.com/search/issues?q=repo%3Aapache%2Fcommons-io%20is%3Apr%20%22IO-754%22&per_page=100",
+            "total_count": 0,
+            "incomplete_results": false
+          },
+          {
+            "url": "https://api.github.com/search/issues?q=repo%3Aapache%2Fcommons-io%20is%3Apr%20WildcardFileFilter%20accept&per_page=100",
+            "total_count": 0,
+            "incomplete_results": false
+          }
+        ],
+        "result": "No active claim in the seven issue comments and no matching PR found in the bounded inventory and searches. Unpublished work is not ruled out."
+      },
+      "remaining_reproduction": "Run a deterministic baseline with mixed-case filenames and a WildcardFileFilter subclass overriding only accept(File); assert both selected files and override invocation. Preserve Path overrides, normal matching and non-default filesystem behavior.",
+      "tests_executed_by_screen": false,
+      "implementation_started_by_screen": false
+    },
+    {
+      "repository": "jhy/jsoup",
+      "decision": "excluded_ai_contribution_policy",
+      "observed_at_utc": "2026-10-18T16:26:09Z",
+      "source": {
+        "commit": "4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865",
+        "commit_url": "https://github.com/jhy/jsoup/commit/4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865",
+        "tree": "23fbdd3d62c67c923a353588c999df852f35d6b9",
+        "policy_path": ".github/CONTRIBUTING.md",
+        "policy_url": "https://github.com/jhy/jsoup/blob/4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865/.github/CONTRIBUTING.md",
+        "policy_git_blob": "e4827ae691598ccd0ae0a71e74cb5b44cd8194d3",
+        "policy_blob_bytes": 1488,
+        "decoded_policy_sha256": "b103ce64a8775f048632e34543a0af20a7bd7dfd7e37c9125b119b7506664c64",
+        "decoded_policy_git_blob_verified": true
+      },
+      "policy_summary": "The pinned guide rejects wholly or partly AI-generated code and AI-written issue, PR and discussion text. PR submission also represents sole authorship. No such submission or representation was made.",
+      "additional_claim": {
+        "issue_url": "https://github.com/jhy/jsoup/issues/2638",
+        "comment_url": "https://github.com/jhy/jsoup/issues/2638#issuecomment-6017720355",
+        "comment_id": 6017720355,
+        "author_public_handle": "Lomidrev0",
+        "created_at": "2026-10-06T13:50:19Z",
+        "scope": "The retained October 6 comment records a work claim. Later completion or withdrawal was not checked because the policy exclusion already decides the screen."
+      },
+      "further_financial_search": false,
+      "tests_executed_by_screen": false,
+      "implementation_started_by_screen": false
+    }
+  ],
+  "commons_policy": {
+    "applies_to": [
+      "apache/commons-compress",
+      "apache/commons-io"
+    ],
+    "contribution_guides": "Both pinned guides normally target master, request a Jira report when none exists, and require a regression plus successful default mvn. This does not create a pre-existing-ticket or prior-personal-approval requirement.",
+    "cla": "Both guides explicitly exempt small patches and typical bug fixes from a separate CLA. No signed status or legal assent is established; the actual eventual patch must fit the exception.",
+    "ai": "Both PR templates require disclosure of AI tool and scope. ASF guidance requires sufficient output rights, compatible licensing and appropriate provenance. Automated review remains labelled automated; no human review is claimed.",
+    "ai_guidance_url": "https://www.apache.org/legal/generative-tooling.html",
+    "security_url": "https://commons.apache.org/security.html",
+    "conduct_url": "https://www.apache.org/foundation/policies/conduct.html",
+    "policy_limit": "This summary records the screened policies, not a blanket licence or eligibility certification for future work."
+  },
+  "benefit_scope": {
+    "classification": "conditional_project_scope_only",
+    "official_integration_refs": [
+      "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-compress/project.yaml",
+      "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-io/project.yaml"
+    ],
+    "official_program_rules": "https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md",
+    "terms": "Existing OSS-Fuzz projects are in Patch Rewards Tier 2 for qualifying security improvements. Demonstrated security benefit, upstream acceptance and one unreverted month precede application; age, frequency, participant and other program terms apply. New integrations and fuzz harnesses are excluded and awards remain discretionary.",
+    "patch_specific_security_qualification": "not demonstrated by these screens",
+    "paid_assignment_verified": false,
+    "participant_eligibility_verified": false,
+    "reward_application_submitted_by_screens": false,
+    "award_verified": false,
+    "payment_verified": false,
+    "subscription_offer_verified": false
+  },
+  "summary_actions": {
+    "external_reads_performed_during_compilation": 0,
+    "source_edits": 0,
+    "test_executions": 0,
+    "forks_created": 0,
+    "external_posts": 0,
+    "hub_edits": 0,
+    "publication_performed": false,
+    "review_mode": "Automated documentation from existing receipts; no human review claimed."
+  }
+}

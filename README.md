@@ -87,7 +87,7 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, JavaParser, Jackson databind, and LZ4**,
+The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, JavaParser, Jackson databind, LZ4, and Commons Compress**,
 plus the prepared libavif `pixi` contribution and parked Xcode investigation.
 [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) is the first
 qualified submission in the current campaign; its [submission checkpoint](progress/2026-10-18-javaparser-5175-submission.md)
@@ -100,6 +100,13 @@ across four fork builds, and pending upstream workflow admission and review.
 Its [submission checkpoint](progress/2026-10-18-lz4-1890-submission.md) records
 passing threaded/nonthreaded regressions and listing tests, a broader CLI failure
 reproduced on unchanged upstream source, and admitted upstream CI in progress.
+[Commons Compress #825](https://github.com/apache/commons-compress/pull/825) is
+the fourth qualified submission. Its
+[verified checkpoint](progress/2026-10-18-commons-compress-825.md) records the
+framed LZ4/Snappy counter fix, failing baseline, 19 successful owned default
+Maven jobs, and three upstream workflows awaiting maintainer admission.
+That checkpoint also links the later Jackson and LZ4 validation and current
+review follow-through; the earlier submission notes retain their original dates.
 [Current status](progress/STATUS.md) links each upstream record and its observed
 checks. Dates are snapshots, not a promise of continuous monitoring.
 

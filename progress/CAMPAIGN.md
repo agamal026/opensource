@@ -2,7 +2,7 @@
 
 Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
-**Goal progress: 3 / 100 distinct external repositories with qualified campaign submissions.**
+**Goal progress: 4 / 100 distinct external repositories with qualified campaign submissions.**
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -14,12 +14,12 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 96 | 100 |
-| screened | 0 | 4 |
-| selected | 0 | 4 |
-| reproduced | 0 | 4 |
-| validated | 1 | 4 |
-| submitted | 3 | 3 |
+| target | 94 | 100 |
+| screened | 1 | 6 |
+| selected | 0 | 5 |
+| reproduced | 0 | 5 |
+| validated | 1 | 5 |
+| submitted | 4 | 4 |
 | accepted | 0 | 0 |
 
 ## Batches
@@ -28,12 +28,12 @@ This offline report checks record structure and consistency. Verify what the lin
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1 | 10 | 1 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 0 |
-| 3 | 10 | 0 | 0 | 0 | 0 |
+| 3 | 10 | 1 | 1 | 1 | 0 |
 | 4 | 10 | 0 | 0 | 0 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 1 | 1 | 1 | 0 |
 | 7 | 10 | 1 | 1 | 1 | 0 |
-| 8 | 10 | 0 | 0 | 0 | 0 |
+| 8 | 10 | 1 | 0 | 0 | 0 |
 | 9 | 10 | 0 | 0 | 0 | 0 |
 | 10 | 10 | 0 | 0 | 0 | 0 |
 
@@ -430,17 +430,24 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apa
 
 ### [apache/commons\-compress](<https://github.com/apache/commons-compress>)
 
-Batch 3 · current stage: **target**.
+Batch 3 · current stage: **submitted**.
 
-apache\-commons\-compress: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+Correct framed LZ4/Snappy getUncompressedCount\(\) output statistics: the defect reported in COMPRESS\-726 comment 18092163 and excluded from PR \#777 is reproduced, the focused correction passed owned\-fork validation, and upstream PR \#825 is submitted\. Upstream CI admission and maintainer acceptance remain pending\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Follow review and CI admission on https://github\.com/apache/commons\-compress/pull/825, created on October 18 at 17:15:07 UTC and verified at 17:15:56\.900 UTC as open and non\-draft\. The submitted six\-file change has 190 additions and 3 deletions at source 7e6477880259d60d4dfa60a5e34e4ea7875176b1, tree 9c0430eb9a40f5f493132589e6fef3b7ffcbe494, based on upstream 611cad06b66842692870c6ae98f50de7ce4f25d5\. At the 17:15\-17:16 UTC upstream collection, CodeQL run https://github\.com/apache/commons\-compress/actions/runs/39148712206, Dependency Review run https://github\.com/apache/commons\-compress/actions/runs/39148712273 and Java CI run https://github\.com/apache/commons\-compress/actions/runs/39148712364 required action, with zero actual jobs each; no upstream CI pass or acceptance is established\. One CI admission request was posted at 17:18:39 UTC and verified at 17:18:51\.611 UTC: https://github\.com/apache/commons\-compress/pull/825\#issuecomment\-6252813089 \. Do not duplicate that request\. No reviews or inline comments were observed; the PR head, base and body are unchanged\. Reuse the completed owned Maven run https://github\.com/agamal026/commons\-compress/actions/runs/39147450534: all 19 jobs passed the unchanged default command, each reporting 4,791 tests, 0 failures and 0 errors, with 26 skips on Linux, 30 on Windows and 28 on macOS; all 89 relevant tests passed without skips in each job\. All 19 passed RAT, Checkstyle, PMD and japicmp\. Javadoc passed in 16 jobs and was omitted by the existing Java 8 profile in three\. Owned CodeQL passed; Dependency Review passed on attempt 2 after the dependency graph was enabled\. Preserve its failed attempt 1, the test\-only baseline with 39 expected failures among 89 tests, and the local default\-build result with two TAR ownership failures under UID 0 reproduced by the same two selected tests on unchanged upstream\. The reciprocal Jira backlink was absent from the four returned COMPRESS\-726 comments at 17:17 UTC and remains pending; this focused PR does not complete the separate decompression\-limit feature\. Do not repeat implementation or successful validation on unchanged source; respond to substantive feedback and record any admission result separately\. Benefit scope remains conditional Tier 2 only: no issue bounty, patch\-specific security value, reward eligibility, award or payment is verified\. No personal human approval or legal signature is asserted\.
 
-Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
+Benefit route: **cash / conditional**, checked 2026-10-18. Tier 2 project scope rechecked through the existing OSS\-Fuzz project\. This statistics correction has no verified issue bounty, patch\-specific security value or reward eligibility\. Participant eligibility, upstream acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-compress/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-compress>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-compress/project.yaml>).
+- 2026-10-18 **screened**: [evidence 1](<https://issues.apache.org/jira/browse/COMPRESS-726?focusedCommentId=18092163&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel>); [evidence 2](<https://github.com/apache/commons-compress/pull/777>); [evidence 3](<https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/.github/pull_request_template.md>); [evidence 4](<https://www.apache.org/legal/generative-tooling.html>); [policy\_ref](<https://github.com/apache/commons-compress/blob/611cad06b66842692870c6ae98f50de7ce4f25d5/CONTRIBUTING.md>).
+- 2026-10-18 **selected**: [evidence 1](<https://issues.apache.org/jira/browse/COMPRESS-726?focusedCommentId=18092163&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel>); [evidence 2](<https://github.com/apache/commons-compress/pull/777>); [selection\_ref](<https://issues.apache.org/jira/browse/COMPRESS-726?focusedCommentId=18092163&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel>).
+- 2026-10-18 **reproduced**: [evidence 1](<https://github.com/agamal026/commons-compress/blob/191c9e8ce0fb7c478f64bd8912fc56d9747eca5d/contribution-review/framed-statistics/baseline/README.md>); [evidence 2](<https://github.com/apache/commons-compress/commit/611cad06b66842692870c6ae98f50de7ce4f25d5>); [source 191c9e8ce0fb7c478f64bd8912fc56d9747eca5d](<https://github.com/agamal026/commons-compress/commit/191c9e8ce0fb7c478f64bd8912fc56d9747eca5d>).
+  Validation command: mvn \-\-batch\-mode \-\-no\-transfer\-progress \-\-errors \-\-show\-version \-Dtest=FramedCompressorInputStreamStatisticsTest,FramedLZ4CompressorInputStreamTest,FramedLZ4CompressorRoundtripTest,FramedSnappyCompressorInputStreamTest test; result: **reproduced**; [validation record](<https://github.com/agamal026/commons-compress/blob/191c9e8ce0fb7c478f64bd8912fc56d9747eca5d/contribution-review/framed-statistics/baseline/README.md>).
+- 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md>); [evidence 2](<https://github.com/agamal026/commons-compress/blob/6505ee953046ebda57a40d91d520214c1cf6b1bd/contribution-review/framed-statistics/local-verification/source-review.json>); [evidence 3](<https://github.com/agamal026/commons-compress/actions/runs/39147450534>); [review\_ref](<https://github.com/agamal026/commons-compress/blob/6505ee953046ebda57a40d91d520214c1cf6b1bd/contribution-review/framed-statistics/local-verification/source-review.json>); [source 7e6477880259d60d4dfa60a5e34e4ea7875176b1](<https://github.com/agamal026/commons-compress/commit/7e6477880259d60d4dfa60a5e34e4ea7875176b1>).
+  Validation command: mvn \-\-errors \-\-show\-version \-\-batch\-mode \-\-no\-transfer\-progress; result: **passed**; [validation record](<https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md>).
+- 2026-10-18 **submitted**: [evidence 1](<https://github.com/apache/commons-compress/pull/825>); [evidence 2](<https://github.com/agamal026/commons-compress/commit/7e6477880259d60d4dfa60a5e34e4ea7875176b1>); [evidence 3](<https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md>); [pr\_url](<https://github.com/apache/commons-compress/pull/825>); validated source 7e6477880259d60d4dfa60a5e34e4ea7875176b1.
 
 ### [apache/commons\-csv](<https://github.com/apache/commons-csv>)
 
@@ -1060,17 +1067,18 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jav
 
 ### [jhy/jsoup](<https://github.com/jhy/jsoup>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 jsoup: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Excluded from this AI\-assisted contribution workflow: the current project policy rejects AI\-generated code in whole or part and AI\-written text in issues, PRs and discussions\. Do not implement or submit code or text to jsoup through this workflow\. Retain the target and its history; reconsider only if the project policy changes or a compatible independently authored contribution route is established\. Policy rechecked at 4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865 on October 18, 2026\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jsoup/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/jhy/jsoup>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/jsoup/project.yaml>).
+- 2026-10-18 **screened**: [evidence 1](<https://github.com/jhy/jsoup/blob/4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865/.github/CONTRIBUTING.md>); [policy\_ref](<https://github.com/jhy/jsoup/blob/4cf664cdb2e9d2cc2d40fdf3bb9c0be0be22f865/.github/CONTRIBUTING.md>).
 
 ### [joomla/joomla\-cms](<https://github.com/joomla/joomla-cms>)
 

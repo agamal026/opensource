@@ -1,12 +1,12 @@
 # Open-source progress
 
-Observed at: 2026-10-18T15:25:01Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-18T17:18:51.611Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
 ## Upstream contributions
 
-Registered pull requests: 9; open: 8; merged: 1; closed without merge: 0.
+Registered pull requests: 10; open: 9; merged: 1; closed without merge: 0.
 
 Registered PRs with a recorded merge on or after 2026-10-13: 0.
 
@@ -18,6 +18,7 @@ Check results describe only the rollup returned by GitHub for each recorded head
 | --- | --- | --- | --- | --- |
 | [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | approved | 2026-09-09T23:21:10Z |
 | [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-13T19:43:27Z |
+| [apache/commons\-compress \#825](<https://github.com/apache/commons-compress/pull/825>) | open | unknown (no checks returned) | not reported | 2026-10-18T17:18:39Z |
 | [FasterXML/jackson\-databind \#6302](<https://github.com/FasterXML/jackson-databind/pull/6302>) | open | 5 passed; 2 skipped | not reported | 2026-10-18T15:24:42Z |
 | [javaparser/javaparser \#5175](<https://github.com/javaparser/javaparser/pull/5175>) | open | 1 passed | not reported | 2026-10-18T10:13:18Z |
 | [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
@@ -119,6 +120,22 @@ Correct automatic output\-format selection for grayscale JPEGs with ICC profiles
 | [clang\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896133>) | check run | COMPLETED | SUCCESS | passed |
 | [cmake\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896433>) | check run | COMPLETED | SUCCESS | passed |
 
+### apache/commons\-compress #825: \[COMPRESS\-726\] Count returned bytes in framed LZ4 and Snappy streams
+
+Correct framed LZ4 and Snappy getUncompressedCount\(\) to report decompressed output while preserving existing compressed and legacy counters\.
+
+- Source: [pull request](<https://github.com/apache/commons-compress/pull/825>)
+- Head commit: `7e6477880259d60d4dfa60a5e34e4ea7875176b1`
+- Base commit: `611cad06b66842692870c6ae98f50de7ce4f25d5`
+- Catalog note: External PR \#825 was created at 2026\-10\-18T17:15:07Z and canonically verified at 17:15:56\.900 UTC as open and non\-draft\. Published source: https://github\.com/agamal026/commons\-compress/commit/7e6477880259d60d4dfa60a5e34e4ea7875176b1 , based on master 611cad06b66842692870c6ae98f50de7ce4f25d5; six files, 190 additions and three deletions\. This is the framed\-output counter correction described separately in https://issues\.apache\.org/jira/browse/COMPRESS\-726?focusedCommentId=18092163&amp;page=com\.atlassian\.jira\.plugin\.system\.issuetabpanels:comment\-tabpanel , not the existing size\-limit proposal in PR \#777\.
+- Catalog note: The exact\-base test\-only baseline ran 89 relevant tests with 39 counter failures, zero errors and zero skips: https://github\.com/agamal026/commons\-compress/blob/191c9e8ce0fb7c478f64bd8912fc56d9747eca5d/contribution\-review/framed\-statistics/baseline/README\.md \.
+- Catalog note: On the corrected source, the same 89 relevant tests passed locally\. The full local run recorded 4,791 tests, two TAR ownership failures and 26 skips; exact\-base controls reproduced those same two failures\. The full local run is not reported as passing\. Evidence: https://github\.com/agamal026/commons\-compress/blob/6505ee953046ebda57a40d91d520214c1cf6b1bd/contribution\-review/framed\-statistics/local\-verification/README\.md \.
+- Catalog note: In the contributor\-owned fork, all 19 jobs running the default Maven goal passed on the corrected source\. Each ran 4,791 tests with zero failures or errors, including all 89 relevant tests; skips were 26 on Linux, 30 on Windows and 28 on macOS\. Javadoc passed in 16 jobs and was omitted by the configured Java 8 profile in three\. All 22 full decoded logs are preserved at https://github\.com/agamal026/commons\-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution\-review/framed\-statistics/hosted\-verification/README\.md \. These are owned\-fork results, not upstream execution\.
+- Catalog note: The initial upstream observations returned action\_required for all three workflow runs, with zero actual jobs: https://github\.com/apache/commons\-compress/actions/runs/39148712206 , https://github\.com/apache/commons\-compress/actions/runs/39148712273 and https://github\.com/apache/commons\-compress/actions/runs/39148712364 \. No upstream validation pass is established\.
+- Catalog note: One admission request was posted at 2026\-10\-18T17:18:39Z and canonically verified at 17:18:51\.611 UTC: https://github\.com/apache/commons\-compress/pull/825\#issuecomment\-6252813089 \. Head, base and PR body were unchanged; the PR remained open and non\-draft, with one issue comment and no observed inline comments or submitted reviews\. Do not duplicate the request\.
+- Catalog note: At the October 18 17:17 UTC Jira read, none of the four comments on COMPRESS\-726 linked PR \#825; the requested Jira backlink remains outstanding\. No account access, personal signature, CLA acceptance or human approval is claimed\.
+- Catalog note: Commons Compress has an existing OSS\-Fuzz integration: https://github\.com/google/oss\-fuzz/blob/master/projects/apache\-commons\-compress/project\.yaml \. The conditional Tier 2 route in https://github\.com/google/bughunters/blob/main/bughunters/articles/about/rules/open\-source/patch\-rewards\-program\-rules\.md still requires demonstrated security benefit, upstream acceptance and one unreverted month before application\. No paid assignment, participant eligibility, patch\-specific reward qualification, application, award, subscription, acceptance or payment is verified\.
+
 ### FasterXML/jackson\-databind #6302: Write an empty array when singleton container content is filtered out
 
 Write an empty array when content filtering suppresses an unwrapped singleton, while preserving configured exception wrapping\.
@@ -134,6 +151,7 @@ Write an empty array when content filtering suppresses an unwrapped singleton, w
 - Catalog note: The actual 3\.1 backport/helper source 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 is published upstream at base 5d64697ef018099e3d5f951668752ec9d4ffabf9 \(12 files, 776 additions, no deletions; all blobs verified\)\. The baseline produced one failure and 32 errors among 53 cases per build; c2366f stopped at test compilation with zero executed tests; 60218d executed 74 with 72 passes/two compatibility assertion failures\. A separately reviewed fixture\-only correction retains all original 53 cases and compares unwrapped behavior with the established wrapped path\. Final owned workflow 39137464915 passed all 74 cases in all four builds\. Before/after evidence: https://github\.com/agamal026/jackson\-databind/blob/3e832d88429ddd257b144fb1a811eebb3a3a91e2/contribution\-review/6299/3\.1\-followup/README\.md
 - Catalog note: Upstream workflow 39138054220 attempt 2 completed successfully at 2026\-10\-18T15:10:36Z; metadata/log audit at 15:13:35\-15:13:49 established four successful builds, two skipped downstream triggers and seven CheckRuns including successful Gitar\. All 74 cases passed per build, with full totals 5,883 on JDK 17 and 5,885 on JDK 21/25, zero failures/errors and one skip\. Linux JDK 17 passed Android API compatibility\. Evidence: https://github\.com/agamal026/jackson\-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution\-review/6299/3\.1\-upstream/README\.md \. The earlier action\_required/zero\-job observation is historical\. Empty legacy statuses do not represent a pending workflow\.
 - Catalog note: Final PR body updated at 15:24:42 UTC and canonically verified at 15:25:01; open/non\-draft, five issue comments and two inline comments\. One substantive helper reply was posted at 15:16:02 and verified at 15:16:13: https://github\.com/FasterXML/jackson\-databind/pull/6302\#discussion\_r4307557870 \. Old owned 3\.x draft is closed/archived; owned validation draft \#2 stays open/draft and receives no campaign credit\. Existing maintainer review is COMMENTED; CLA acceptance, human approval, upstream acceptance and benefits remain unverified\.
+- Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, the current 3\.1 head 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 and base were unchanged, with no new or edited discussion/review records\. The upstream workflow remained successful; seven CheckRuns showed five successes and two skips\. The empty legacy status collection's pending state is not pending Actions work\. Earlier exact\-tree four\-build logs are reused without a new job/log audit\. Both known reviews remain COMMENTED, including the author's reply; no human approval, CLA acceptance or upstream acceptance is established\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -156,6 +174,7 @@ Preserve the existing separator before a type when the lexical\-preserving print
 - Catalog note: Previously completed Linux/Java 17 AlsoSlowTests validation passed 5,831 tests with 35 skips and all nine reactor modules successful\. This is reused local evidence, not execution of the upstream hosted matrix\.
 - Catalog note: At 2026\-10\-18T10:19:27Z, AppVeyor reported success without underlying log inspection\. Both GitHub Actions runs still required authorization and their job lists returned zero jobs\. Submission does not establish acceptance or benefit eligibility\.
 - Catalog note: At the October 18 13:37\-13:40 UTC follow\-through, the submitted head remained 2a437e500bf54024772dd9f3d6d4149506defed2\. The only comment was the existing admission request; no inline comments or submitted reviews were returned\. Both Actions runs remained action\_required and their actual job lists each returned zero jobs\. AppVeyor still reported success without underlying log inspection\. Do not duplicate the existing request\.
+- Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, head 2a437e500bf54024772dd9f3d6d4149506defed2 and its master base were unchanged; no new or edited discussion/review records were found\. Both upstream Actions runs remained action\_required, and both current job\-list reads returned zero jobs\. The successful legacy AppVeyor status was retained without log inspection\. Earlier Linux/Java 17 reactor proof remains separate from unexecuted upstream checks; no duplicate request, rerun, acceptance or benefit is established\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -184,6 +203,7 @@ Fix \#1889: accept the Linux kernel four\-zero\-byte end marker in legacy LZ4 de
 - Catalog note: A separate GCC 13 ThreadSanitizer control reproduced the race on unchanged upstream e7c36223415219c0a18ea75e3fe2eb5d267ee667 using an ordinary 26 MiB legacy stream, exit 66: https://github\.com/agamal026/lz4/blob/a7f764a75f381654296c2d6e55d9c89478c21400/contribution\-review/1889/tsan\-baseline/README\.md \. Correction 0917e70420429ea2acab6aaac48cffdf4e827440 is now verified in upstream PR \#1890\. Eight actual local commands passed, including the same TSan control, the complete TSan legacy regression and normal threaded/nonthreaded regressions: https://github\.com/agamal026/lz4/blob/a96c638dc9160f43544c8cd8414624cb2c166730/contribution\-review/1889/tsan\-followup/README\.md \. At 14:11:25\-14:11:26 UTC, all 54 actual jobs, 54 CheckRuns and nine workflows succeeded on corrected source; AppVeyor also reports success\. The full successful TSan log confirms all end\-marker cases and assertions without a TSan diagnostic: https://github\.com/lz4/lz4/actions/runs/39133845170/job/117694255444 \. The earlier failed source and broader local CLI limitation remain recorded; this does not establish acceptance or reward eligibility\.
 - Catalog note: The completed corrected hosted matrix and full successful TSan log are preserved at https://github\.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution\-review/1889/tsan\-hosted/README\.md \. Evidence commit 7751a987a7199b696902630b16d8e831880e9451 has five verified direct blobs\. Its 258,638\-byte ZIP has SHA\-256 9375604c1dcf8f545a12c5b24ac4130fe2be3d1f6ec5b1d1b3ac594f7b86d265 and contains the complete monitoring receipt and decoded job log\. The observed CI time remains October 18 14:11:25\-14:11:26 UTC; evidence publication does not refresh that observation\.
 - Catalog note: Final PR body update at 2026\-10\-18T14:41:45Z links completed hosted packet 7751a987 and reports 54 successful jobs/CheckRuns, nine workflows and AppVeyor success\. Canonical matching body/head/base/open\-state readback was verified; its exact clock was not captured\. No comment was posted\. Full CI observation remains 14:11:25\-14:11:26 UTC\.
+- Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, corrected head 0917e70420429ea2acab6aaac48cffdf4e827440 and its dev base were unchanged; no issue comments, inline comments or submitted reviews were returned\. All nine current workflows and 54 CheckRuns remained successful, with one successful legacy AppVeyor status\. The earlier 54\-job and full TSan log audit is reused; job lists and logs were not fetched again\. No comment, rerun, upstream acceptance or benefit is established\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |
