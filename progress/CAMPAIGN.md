@@ -2,7 +2,7 @@
 
 Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
-**Goal progress: 4 / 100 distinct external repositories with qualified campaign submissions.**
+**Goal progress: 5 / 100 distinct external repositories with qualified campaign submissions.**
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -14,12 +14,12 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 94 | 100 |
-| screened | 1 | 6 |
-| selected | 0 | 5 |
-| reproduced | 0 | 5 |
-| validated | 1 | 5 |
-| submitted | 4 | 4 |
+| target | 93 | 100 |
+| screened | 1 | 7 |
+| selected | 0 | 6 |
+| reproduced | 0 | 6 |
+| validated | 1 | 6 |
+| submitted | 5 | 5 |
 | accepted | 0 | 0 |
 
 ## Batches
@@ -29,7 +29,7 @@ This offline report checks record structure and consistency. Verify what the lin
 | 1 | 10 | 1 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 0 |
 | 3 | 10 | 1 | 1 | 1 | 0 |
-| 4 | 10 | 0 | 0 | 0 | 0 |
+| 4 | 10 | 1 | 1 | 1 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 1 | 1 | 1 | 0 |
 | 7 | 10 | 1 | 1 | 1 | 0 |
@@ -434,7 +434,7 @@ Batch 3 · current stage: **submitted**.
 
 Correct framed LZ4/Snappy getUncompressedCount\(\) output statistics: the defect reported in COMPRESS\-726 comment 18092163 and excluded from PR \#777 is reproduced, the focused correction passed owned\-fork validation, and upstream PR \#825 is submitted\. Upstream CI admission and maintainer acceptance remain pending\.
 
-Next action: Follow review and CI admission on https://github\.com/apache/commons\-compress/pull/825, created on October 18 at 17:15:07 UTC and verified at 17:15:56\.900 UTC as open and non\-draft\. The submitted six\-file change has 190 additions and 3 deletions at source 7e6477880259d60d4dfa60a5e34e4ea7875176b1, tree 9c0430eb9a40f5f493132589e6fef3b7ffcbe494, based on upstream 611cad06b66842692870c6ae98f50de7ce4f25d5\. At the 17:15\-17:16 UTC upstream collection, CodeQL run https://github\.com/apache/commons\-compress/actions/runs/39148712206, Dependency Review run https://github\.com/apache/commons\-compress/actions/runs/39148712273 and Java CI run https://github\.com/apache/commons\-compress/actions/runs/39148712364 required action, with zero actual jobs each; no upstream CI pass or acceptance is established\. One CI admission request was posted at 17:18:39 UTC and verified at 17:18:51\.611 UTC: https://github\.com/apache/commons\-compress/pull/825\#issuecomment\-6252813089 \. Do not duplicate that request\. No reviews or inline comments were observed; the PR head, base and body are unchanged\. Reuse the completed owned Maven run https://github\.com/agamal026/commons\-compress/actions/runs/39147450534: all 19 jobs passed the unchanged default command, each reporting 4,791 tests, 0 failures and 0 errors, with 26 skips on Linux, 30 on Windows and 28 on macOS; all 89 relevant tests passed without skips in each job\. All 19 passed RAT, Checkstyle, PMD and japicmp\. Javadoc passed in 16 jobs and was omitted by the existing Java 8 profile in three\. Owned CodeQL passed; Dependency Review passed on attempt 2 after the dependency graph was enabled\. Preserve its failed attempt 1, the test\-only baseline with 39 expected failures among 89 tests, and the local default\-build result with two TAR ownership failures under UID 0 reproduced by the same two selected tests on unchanged upstream\. The reciprocal Jira backlink was absent from the four returned COMPRESS\-726 comments at 17:17 UTC and remains pending; this focused PR does not complete the separate decompression\-limit feature\. Do not repeat implementation or successful validation on unchanged source; respond to substantive feedback and record any admission result separately\. Benefit scope remains conditional Tier 2 only: no issue bounty, patch\-specific security value, reward eligibility, award or payment is verified\. No personal human approval or legal signature is asserted\.
+Next action: Follow review and CI admission on https://github\.com/apache/commons\-compress/pull/825, created on October 18 at 17:15:07 UTC and verified at 17:15:56\.900 UTC as open and non\-draft\. The submitted six\-file change has 190 additions and 3 deletions at source 7e6477880259d60d4dfa60a5e34e4ea7875176b1, tree 9c0430eb9a40f5f493132589e6fef3b7ffcbe494, based on upstream 611cad06b66842692870c6ae98f50de7ce4f25d5\. At the 17:15\-17:16 UTC upstream collection, CodeQL run https://github\.com/apache/commons\-compress/actions/runs/39148712206, Dependency Review run https://github\.com/apache/commons\-compress/actions/runs/39148712273 and Java CI run https://github\.com/apache/commons\-compress/actions/runs/39148712364 required action, with zero actual jobs each; no upstream CI pass or acceptance is established\. One CI admission request was posted at 17:18:39 UTC and verified at 17:18:51\.611 UTC: https://github\.com/apache/commons\-compress/pull/825\#issuecomment\-6252813089 \. Do not duplicate that request\. No reviews or inline comments were observed; the PR head, base and body are unchanged\. Reuse the completed owned Maven run https://github\.com/agamal026/commons\-compress/actions/runs/39147450534: all 19 jobs passed the unchanged default command, each reporting 4,791 tests, 0 failures and 0 errors, with 26 skips on Linux, 30 on Windows and 28 on macOS; all 89 relevant tests passed without skips in each job\. All 19 passed RAT, Checkstyle, PMD and japicmp\. Javadoc passed in 16 jobs and was omitted by the existing Java 8 profile in three\. Owned CodeQL passed; Dependency Review passed on attempt 2 after the dependency graph was enabled\. Preserve its failed attempt 1, the test\-only baseline with 39 expected failures among 89 tests, and the local default\-build result with two TAR ownership failures under UID 0 reproduced by the same two selected tests on unchanged upstream\. The earlier 17:17 UTC read checked only comments\. A fresh October 18 21:17 UTC browser read verified the reciprocal PR \#825 link in the COMPRESS\-726 Issue Links panel, so no backlink action remains\. This focused PR does not complete the separate decompression\-limit feature\. Do not repeat implementation or successful validation on unchanged source; respond to substantive feedback and record any admission result separately\. Benefit scope remains conditional Tier 2 only: no issue bounty, patch\-specific security value, reward eligibility, award or payment is verified\. No personal human approval or legal signature is asserted\.
 
 Benefit route: **cash / conditional**, checked 2026-10-18. Tier 2 project scope rechecked through the existing OSS\-Fuzz project\. This statistics correction has no verified issue bounty, patch\-specific security value or reward eligibility\. Participant eligibility, upstream acceptance, award and payment remain unverified\.
 
@@ -507,17 +507,24 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apa
 
 ### [apache/commons\-lang](<https://github.com/apache/commons-lang>)
 
-Batch 4 · current stage: **target**.
+Batch 4 · current stage: **submitted**.
 
-apache\-commons\-lang: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+Correct LANG\-1323: TypeUtils generic\-array and parameterized types now use hashes compatible with equal JDK reflection types\. The focused fix, failing baseline, required default build and 18 ordinary hosted jobs are verified; upstream PR \#1826 is submitted and awaits review/CI admission\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Follow substantive review and CI admission on https://github\.com/apache/commons\-lang/pull/1826 at source 9f75a9a6c2fcbc3d287a170827f2efe861cbe90d, based on c89cdf682fe21b0c39759cf58186ed5336a105d4\. Created 2026\-10\-18T21:10:52Z; canonical read\-back verified open, non\-draft, two commits and two changed files \(69 additions, 10 deletions\)\. At 21:17 UTC, upstream Java CI 39166682960, CodeQL 39166682974 and Dependency Review 39166682962 required action and each actual job list contained zero jobs\. One admission request was posted at 21:18:33 UTC: https://github\.com/apache/commons\-lang/pull/1826\#issuecomment\-6255266077 \. Do not duplicate it\. Reuse https://github\.com/agamal026/commons\-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution\-review/LANG\-1323/README\.md: all 14 new cases fail before the fix and pass after; focused TypeUtilsTest has 510 cases, zero failures/errors and one existing skip\. The complete default Maven build has 316 suites and 88,157 cases, zero failures/errors and 18 skips; all default gates completed\. All 18 ordinary hosted Java 8/11/17/21/25/27 jobs on Ubuntu/Windows/macOS passed\. The tolerated Java 28 job failed in 40 date\-parser cases; an exact unchanged\-base control reproduces all 40 summaries in the two affected classes\. Keep the separate JaCoCo diagnostics, incomplete experimental\-log retrieval, initial Dependency Review failure and initial local Javadoc certificate failure explicit\. The Jira Issue Links panel already links PR \#1826, verified October 18 around 21:17 UTC; no backlink action remains\. The owned draft \#1 retains evidence and is not another submission\. No upstream acceptance, issue bounty, patch\-specific security qualification or realized benefit is verified\. Pending external review does not hold the implementation slot; after actionable follow\-ups, screen the next eligible queued contribution\.
 
-Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
+Benefit route: **cash / conditional**, checked 2026-10-17. Previously verified conditional Tier 2 project scope only\. This interoperability correction has no verified paid assignment, patch\-specific security qualification, participant eligibility, acceptance, award or payment\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-lang/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-lang>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-lang/project.yaml>).
+- 2026-10-18 **screened**: [evidence 1](<https://issues.apache.org/jira/browse/LANG-1323>); [evidence 2](<https://github.com/apache/commons-lang/pull/1807#discussion_r4177989738>); [evidence 3](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/pre-submission-screen.json>); [evidence 4](<https://www.apache.org/legal/generative-tooling.html>); [policy\_ref](<https://github.com/apache/commons-lang/blob/c89cdf682fe21b0c39759cf58186ed5336a105d4/CONTRIBUTING.md>).
+- 2026-10-18 **selected**: [evidence 1](<https://issues.apache.org/jira/browse/LANG-1323>); [evidence 2](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/pre-submission-screen.json>); [selection\_ref](<https://issues.apache.org/jira/browse/LANG-1323>).
+- 2026-10-18 **reproduced**: [evidence 1](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/baseline.json>); [evidence 2](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/README.md>); [source 203b78fc407c5a651a42abbcd0d69d36ad348558](<https://github.com/agamal026/commons-lang/commit/203b78fc407c5a651a42abbcd0d69d36ad348558>).
+  Validation command: mvn \-\-settings &lt;private\-runtime\-settings&gt; \-\-batch\-mode \-\-no\-transfer\-progress \-Dmaven\.repo\.local=&lt;local\-cache&gt; \-U \-Dtest=TypeUtilsTest\#testHashCodeMatchesJdk test; result: **reproduced**; [validation record](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/baseline.json>).
+- 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/README.md>); [evidence 2](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/source-review.json>); [evidence 3](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/continuation-audit.json>); [evidence 4](<https://github.com/agamal026/commons-lang/actions/runs/39162942665>); [review\_ref](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/source-review.json>); [source 9f75a9a6c2fcbc3d287a170827f2efe861cbe90d](<https://github.com/agamal026/commons-lang/commit/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d>).
+  Validation command: mvn \-\-settings &lt;private\-runtime\-settings&gt; \-\-batch\-mode \-\-no\-transfer\-progress \-Dmaven\.repo\.local=&lt;local\-cache&gt; \-Ddoclint=all; result: **passed**; [validation record](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/default-maven-final/README.md>).
+- 2026-10-18 **submitted**: [evidence 1](<https://github.com/apache/commons-lang/pull/1826>); [evidence 2](<https://github.com/agamal026/commons-lang/commit/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d>); [evidence 3](<https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/README.md>); [pr\_url](<https://github.com/apache/commons-lang/pull/1826>); validated source 9f75a9a6c2fcbc3d287a170827f2efe861cbe90d.
 
 ### [apache/commons\-net](<https://github.com/apache/commons-net>)
 

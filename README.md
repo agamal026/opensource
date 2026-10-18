@@ -20,8 +20,8 @@ and carry the next useful change through validation. It also indexes the origina
 projects and upstream work already in progress.
 
 **Start every resumed session with [the goal](GOAL.md),
-[opportunity notes](docs/OPPORTUNITIES.md), and the latest dated entry in
-[progress](progress/).** Then read [current status](progress/STATUS.md), the
+[opportunity notes](docs/OPPORTUNITIES.md), and the checkpoint named by
+[data/continuation.json](data/continuation.json).** Then read [current status](progress/STATUS.md), the
 [roadmap](docs/ROADMAP.md), and the [continuation guide](docs/CONTINUING.md).
 
 ## Tools in this repository
@@ -87,28 +87,26 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The registry tracks PRs to **libavif, libzip, npm, nginx, libevent, JavaParser, Jackson databind, LZ4, and Commons Compress**,
-plus the prepared libavif `pixi` contribution and parked Xcode investigation.
-[JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) is the first
-qualified submission in the current campaign; its [submission checkpoint](progress/2026-10-18-javaparser-5175-submission.md)
-separates completed local validation from pending hosted CI and review.
-[Jackson databind #6302](https://github.com/FasterXML/jackson-databind/pull/6302)
-is the second qualified campaign submission. Its [submission checkpoint](progress/2026-10-18-jackson-6302-submission.md)
-records two failing baselines, the exact final source, 53 regression cases passing
-across four fork builds, and pending upstream workflow admission and review.
-[LZ4 #1890](https://github.com/lz4/lz4/pull/1890) is the third qualified submission.
-Its [submission checkpoint](progress/2026-10-18-lz4-1890-submission.md) records
-passing threaded/nonthreaded regressions and listing tests, a broader CLI failure
-reproduced on unchanged upstream source, and admitted upstream CI in progress.
-[Commons Compress #825](https://github.com/apache/commons-compress/pull/825) is
-the fourth qualified submission. Its
-[verified checkpoint](progress/2026-10-18-commons-compress-825.md) records the
-framed LZ4/Snappy counter fix, failing baseline, 19 successful owned default
-Maven jobs, and three upstream workflows awaiting maintainer admission.
-That checkpoint also links the later Jackson and LZ4 validation and current
-review follow-through; the earlier submission notes retain their original dates.
-[Current status](progress/STATUS.md) links each upstream record and its observed
-checks. Dates are snapshots, not a promise of continuous monitoring.
+The registry covers historical work in libavif, libzip, npm, nginx and libevent,
+plus **five qualified campaign submissions**. The
+[latest verified checkpoint](progress/2026-10-18-commons-lang-1826.md) and
+[current resume record](data/continuation.json) identify completed work and what
+can advance next. No current campaign project is recorded as accepted, and no
+realized benefit is established.
+
+| Campaign contribution | Current verified follow-through |
+| --- | --- |
+| [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) | Local validation complete; AppVeyor success; two Actions workflows await admission. |
+| [Jackson databind #6302](https://github.com/FasterXML/jackson-databind/pull/6302) | Requested 3.1 backport/helper work complete; upstream builds pass; CLA/acceptance pending. |
+| [LZ4 #1890](https://github.com/lz4/lz4/pull/1890) | Corrected source has 54 successful CheckRuns, including TSan; review pending. |
+| [Commons Compress #825](https://github.com/apache/commons-compress/pull/825) | 19 owned default Maven jobs pass; upstream admission pending; Jira backlink present. |
+| [Commons Lang #1826](https://github.com/apache/commons-lang/pull/1826) | Required default build and 18 ordinary hosted jobs pass; experimental Java 28 limitation documented; upstream admission pending; Jira backlink present. |
+
+These are October 18 observations. The [dated snapshot](data/snapshot-source.json)
+records exact collection times and source coverage; earlier submission notes
+retain their original dates and limits. [Current status](progress/STATUS.md)
+links all registered upstream records and checks. Waiting for review does not
+reserve an implementation writer or justify repeated unchanged tests.
 
 The prepared `pixi` patch remains in its original local worktree. Its contributor
 must personally review the exact code, fixture, tests, and PR text before

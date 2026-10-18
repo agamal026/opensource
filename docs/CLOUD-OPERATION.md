@@ -6,7 +6,8 @@ Complete useful, validated submissions to 100 distinct external projects, then
 continue their review, maintenance, and benefit follow-through. Start with
 [GOAL.md](../GOAL.md), [campaign progress](../progress/CAMPAIGN.md),
 [the queue](../data/campaign.json), [existing PR status](../progress/STATUS.md),
-and the most recent dated progress entry. The repository is the checkpoint;
+and the checkpoint named in [data/continuation.json](../data/continuation.json).
+That record is a cooperative handoff, not an enforced lock. The repository is the checkpoint;
 temporary cloud files are working copies.
 
 The initial [research snapshot](../data/campaign-sources.json) identifies 100
@@ -172,11 +173,13 @@ was already enabled with `FREQ=HOURLY;INTERVAL=1;BYMINUTE=0` when read after tha
 request. Keep this hourly cadence. Earlier dated progress describes previous
 daily-schedule decisions; it does not authorize restoring them.
 
-The saved instructions match [the continuation prompt](CONTINUATION-PROMPT.md).
+The public operating instructions are in [the continuation prompt](CONTINUATION-PROMPT.md).
+The native task also retains private recovery records that must not be copied here.
+The current resume pointer is [data/continuation.json](../data/continuation.json).
 Preserve all other existing tasks and their schedules. After any authorized task
-edit, read back both the instructions and the hourly cadence. Check native run
-history for actual execution; an enabled schedule alone does not establish
-completed work. No execution had occurred when the hourly preference was confirmed.
+edit, read back both the instructions and the hourly cadence. Inspect available native run metadata and verified repository checkpoints for
+actual execution; an enabled schedule or last-run timestamp alone does not
+establish completed work. The initial no-execution observation was historical.
 
 Keep each scheduled work session bounded and publish a useful checkpoint before
 the next run. If another session is visibly advancing the same implementation,

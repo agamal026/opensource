@@ -1,0 +1,652 @@
+{
+  "schema_version": 1,
+  "title": "Fresh read-only follow-through for four current open-source campaign submissions",
+  "compiled_at_utc": "2026-10-18T21:03:03Z",
+  "audit_completed_by_utc": "2026-10-18T21:01:50Z",
+  "timestamp_semantics": "Per-request wall-clock timestamps were not captured. observed_by_utc values are measured UTC clock reads immediately after the respective read groups, not invented exact request times. 21:01:15Z bounds metadata/discussion/workflow/check/status/thread reads; 21:01:50Z also bounds the five admission job reads and the TSan evidence README read.",
+  "hub_checkpoint": "973863dc6ebd92622d024604cc03cf8041865d54",
+  "comparison_sources": [
+    "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-commons-compress-825.md",
+    "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-1608-screen-followthrough.json"
+  ],
+  "scope": "Four current campaign PRs only. Historical six submissions excluded. No upstream mutations, source edits, workflow runs or reruns.",
+  "actions": {
+    "upstream_writes": 0,
+    "source_changes": 0,
+    "tests_executed": 0,
+    "comments_posted": 0,
+    "workflow_runs_started": 0
+  },
+  "projects": [
+    {
+      "repository": "javaparser/javaparser",
+      "number": 5175,
+      "pull_request_url": "https://github.com/javaparser/javaparser/pull/5175",
+      "metadata_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175",
+      "fresh_metadata_and_collections_observed_by_utc": "2026-10-18T21:01:15Z",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null,
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "head_branch": "fix/4074-preserve-import-spacing",
+      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+      "base_branch": "master",
+      "metadata_updated_at": "2026-10-18T10:13:18Z",
+      "mechanical_mergeable": true,
+      "mergeable_state": "blocked",
+      "comparison": {
+        "source": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-1608-screen-followthrough.json",
+        "source_observation_cutoff_utc": "2026-10-18T16:09:37.381Z",
+        "head_unchanged": true,
+        "base_unchanged": true,
+        "discussion_counts_unchanged": true,
+        "new_or_edited_discussion_records_after_checkpoint_cutoff": 0,
+        "new_actionable_feedback_found": false
+      },
+      "discussion": {
+        "scope": "Connector normalized timeline combining issue comments, inline review comments and submitted reviews; compared with PR metadata counts and prior recorded collections.",
+        "tool": "github_fetch_pr_comments",
+        "issue_comment_count": 1,
+        "inline_comment_count": 0,
+        "submitted_review_count": 0,
+        "review_states": {},
+        "latest_record_update_utc": "2026-10-18T10:13:18Z",
+        "collection_urls": {
+          "issue_comments": "https://api.github.com/repos/javaparser/javaparser/issues/5175/comments?per_page=100",
+          "inline_comments": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/comments?per_page=100",
+          "reviews": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/reviews?per_page=100"
+        },
+        "records": [
+          {
+            "id": 6248629643,
+            "url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
+            "author": "agamal026",
+            "created_at": "2026-10-18T10:13:18Z",
+            "updated_at": "2026-10-18T10:13:18Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          }
+        ]
+      },
+      "ci": {
+        "head_sha_requested": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "workflow_scope": "Fresh github_fetch_commit_workflow_runs call, filtered by this head and pull-request trigger; wrapper returns first page only.",
+        "workflow_collection_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs?head_sha=2a437e500bf54024772dd9f3d6d4149506defed2&event=pull_request",
+        "returned_workflow_count": 2,
+        "workflow_conclusions": {
+          "action_required": 2
+        },
+        "workflows": [
+          {
+            "id": 39117999673,
+            "name": "Check codegen and formatting",
+            "status": "completed",
+            "conclusion": "action_required",
+            "url": "https://github.com/javaparser/javaparser/actions/runs/39117999673"
+          },
+          {
+            "id": 39117999726,
+            "name": "Build and test (using maven)",
+            "status": "completed",
+            "conclusion": "action_required",
+            "url": "https://github.com/javaparser/javaparser/actions/runs/39117999726"
+          }
+        ],
+        "checks_scope": "Fresh GET, per_page=100; returned array count equals total_count.",
+        "checks_url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/check-runs?per_page=100",
+        "total_check_run_count": 0,
+        "returned_check_run_count": 0,
+        "check_conclusions": {},
+        "check_head_identities_match": true,
+        "legacy_status_scope": "Fresh github_get_commit_combined_status; normalized response provides individual statuses only.",
+        "legacy_status_url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/status",
+        "legacy_status_count": 1,
+        "legacy_statuses": [
+          {
+            "context": "continuous-integration/appveyor/pr",
+            "state": "success",
+            "target_url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188"
+          }
+        ],
+        "admission_job_collection_reads": [
+          {
+            "run_id": 39117999673,
+            "observed_by_utc": "2026-10-18T21:01:50Z",
+            "tool": "github_fetch_workflow_run_jobs",
+            "scope": "Latest attempt, first page; empty collection",
+            "canonical_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999673/jobs",
+            "returned_job_count": 0
+          },
+          {
+            "run_id": 39117999726,
+            "observed_by_utc": "2026-10-18T21:01:50Z",
+            "tool": "github_fetch_workflow_run_jobs",
+            "scope": "Latest attempt, first page; empty collection",
+            "canonical_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999726/jobs",
+            "returned_job_count": 0
+          }
+        ],
+        "full_job_logs_refetched": false,
+        "workflow_rerun_or_approval_sent": false
+      },
+      "existing_ci_admission_request": {
+        "url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
+        "duplicate_sent": false,
+        "continuation": "Retain existing request; await maintainer admission."
+      }
+    },
+    {
+      "repository": "FasterXML/jackson-databind",
+      "number": 6302,
+      "pull_request_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "metadata_url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302",
+      "fresh_metadata_and_collections_observed_by_utc": "2026-10-18T21:01:15Z",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null,
+      "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+      "head_branch": "fix/6299-filtered-single-element",
+      "base_sha": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+      "base_branch": "3.1",
+      "metadata_updated_at": "2026-10-18T15:24:42Z",
+      "mechanical_mergeable": true,
+      "mergeable_state": "clean",
+      "comparison": {
+        "source": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-1608-screen-followthrough.json",
+        "source_observation_cutoff_utc": "2026-10-18T16:09:37.500Z",
+        "head_unchanged": true,
+        "base_unchanged": true,
+        "discussion_counts_unchanged": true,
+        "new_or_edited_discussion_records_after_checkpoint_cutoff": 0,
+        "new_actionable_feedback_found": false
+      },
+      "discussion": {
+        "scope": "Connector normalized timeline combining issue comments, inline review comments and submitted reviews; compared with PR metadata counts and prior recorded collections.",
+        "tool": "github_fetch_pr_comments",
+        "issue_comment_count": 5,
+        "inline_comment_count": 2,
+        "submitted_review_count": 2,
+        "review_states": {
+          "COMMENTED": 2
+        },
+        "latest_record_update_utc": "2026-10-18T15:16:03Z",
+        "collection_urls": {
+          "issue_comments": "https://api.github.com/repos/FasterXML/jackson-databind/issues/6302/comments?per_page=100",
+          "inline_comments": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/comments?per_page=100",
+          "reviews": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/reviews?per_page=100"
+        },
+        "records": [
+          {
+            "id": 6249752236,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236",
+            "author": "agamal026",
+            "created_at": "2026-10-18T12:10:40Z",
+            "updated_at": "2026-10-18T12:10:40Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6250227789,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6250227789",
+            "author": "pjfanning",
+            "created_at": "2026-10-18T13:01:39Z",
+            "updated_at": "2026-10-18T13:02:22Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6250307295,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6250307295",
+            "author": "pjfanning",
+            "created_at": "2026-10-18T13:09:58Z",
+            "updated_at": "2026-10-18T13:09:58Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 4307148911,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#discussion_r4307148911",
+            "author": "pjfanning",
+            "created_at": "2026-10-18T13:11:18Z",
+            "updated_at": "2026-10-18T13:11:18Z",
+            "review_state": null,
+            "kind": "inline_comment"
+          },
+          {
+            "id": 5563125328,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#pullrequestreview-5563125328",
+            "author": "pjfanning",
+            "created_at": "2026-10-18T13:11:18Z",
+            "updated_at": null,
+            "review_state": "COMMENTED",
+            "kind": "submitted_review"
+          },
+          {
+            "id": 6251348082,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6251348082",
+            "author": "gitar-bot[bot]",
+            "created_at": "2026-10-18T14:55:09Z",
+            "updated_at": "2026-10-18T14:55:09Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6251505409,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6251505409",
+            "author": "github-actions[bot]",
+            "created_at": "2026-10-18T15:10:49Z",
+            "updated_at": "2026-10-18T15:10:49Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 4307557870,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#discussion_r4307557870",
+            "author": "agamal026",
+            "created_at": "2026-10-18T15:16:02Z",
+            "updated_at": "2026-10-18T15:16:03Z",
+            "review_state": null,
+            "kind": "inline_comment"
+          },
+          {
+            "id": 5563638447,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#pullrequestreview-5563638447",
+            "author": "agamal026",
+            "created_at": "2026-10-18T15:16:02Z",
+            "updated_at": null,
+            "review_state": "COMMENTED",
+            "kind": "submitted_review"
+          }
+        ]
+      },
+      "ci": {
+        "head_sha_requested": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+        "workflow_scope": "Fresh github_fetch_commit_workflow_runs call, filtered by this head and pull-request trigger; wrapper returns first page only.",
+        "workflow_collection_url": "https://api.github.com/repos/FasterXML/jackson-databind/actions/runs?head_sha=38261628a27c109e6e49c916cdb0f7e8bf7bbf45&event=pull_request",
+        "returned_workflow_count": 1,
+        "workflow_conclusions": {
+          "success": 1
+        },
+        "workflows": [
+          {
+            "id": 39138054220,
+            "name": "Build and Deploy Snapshot",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/FasterXML/jackson-databind/actions/runs/39138054220"
+          }
+        ],
+        "checks_scope": "Fresh GET, per_page=100; returned array count equals total_count.",
+        "checks_url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/check-runs?per_page=100",
+        "total_check_run_count": 7,
+        "returned_check_run_count": 7,
+        "check_conclusions": {
+          "skipped": 2,
+          "success": 5
+        },
+        "check_head_identities_match": true,
+        "legacy_status_scope": "Fresh github_get_commit_combined_status; normalized response provides individual statuses only.",
+        "legacy_status_url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/status",
+        "legacy_status_count": 0,
+        "legacy_statuses": [],
+        "admission_job_collection_reads": [],
+        "full_job_logs_refetched": false,
+        "workflow_rerun_or_approval_sent": false,
+        "check_summary": {
+          "successful_builds": [
+            "Windows JDK 17",
+            "Ubuntu JDK 17",
+            "Ubuntu JDK 21",
+            "Ubuntu JDK 25"
+          ],
+          "other_successful_check": "Gitar",
+          "skipped_checks": [
+            "Trigger v3 dep builds",
+            "Trigger v2 dep builds"
+          ]
+        }
+      },
+      "review_thread_read": {
+        "observed_by_utc": "2026-10-18T21:01:15Z",
+        "tool": "github_list_pull_request_review_threads",
+        "thread_count": 1,
+        "thread": {
+          "id": "PRRT_kwDOAC5e2c6tqvAx",
+          "is_resolved": true,
+          "is_outdated": true,
+          "resolved_by": "pjfanning",
+          "path": "src/main/java/tools/jackson/databind/ser/jdk/EnumSetSerializer.java",
+          "discussion_url": "https://github.com/FasterXML/jackson-databind/pull/6302#discussion_r4307148911"
+        },
+        "limit": "Resolution timestamp is unavailable; current resolved state is not classified as a new event since checkpoint."
+      },
+      "remaining_dependency": {
+        "kind": "CLA acceptance not established",
+        "maintainer_request_url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6250307295",
+        "limit": "No human approval or legal assent inferred from successful CI, Gitar text, or COMMENTED reviews."
+      }
+    },
+    {
+      "repository": "lz4/lz4",
+      "number": 1890,
+      "pull_request_url": "https://github.com/lz4/lz4/pull/1890",
+      "metadata_url": "https://api.github.com/repos/lz4/lz4/pulls/1890",
+      "fresh_metadata_and_collections_observed_by_utc": "2026-10-18T21:01:15Z",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null,
+      "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+      "head_branch": "fix/1889-legacy-zero-terminator",
+      "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+      "base_branch": "dev",
+      "metadata_updated_at": "2026-10-18T14:41:45Z",
+      "mechanical_mergeable": true,
+      "mergeable_state": "clean",
+      "comparison": {
+        "source": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-1608-screen-followthrough.json",
+        "source_observation_cutoff_utc": "2026-10-18T16:09:37.498Z",
+        "head_unchanged": true,
+        "base_unchanged": true,
+        "discussion_counts_unchanged": true,
+        "new_or_edited_discussion_records_after_checkpoint_cutoff": 0,
+        "new_actionable_feedback_found": false
+      },
+      "discussion": {
+        "scope": "Connector normalized timeline combining issue comments, inline review comments and submitted reviews; compared with PR metadata counts and prior recorded collections.",
+        "tool": "github_fetch_pr_comments",
+        "issue_comment_count": 0,
+        "inline_comment_count": 0,
+        "submitted_review_count": 0,
+        "review_states": {},
+        "latest_record_update_utc": null,
+        "collection_urls": {
+          "issue_comments": "https://api.github.com/repos/lz4/lz4/issues/1890/comments?per_page=100",
+          "inline_comments": "https://api.github.com/repos/lz4/lz4/pulls/1890/comments?per_page=100",
+          "reviews": "https://api.github.com/repos/lz4/lz4/pulls/1890/reviews?per_page=100"
+        },
+        "records": []
+      },
+      "ci": {
+        "head_sha_requested": "0917e70420429ea2acab6aaac48cffdf4e827440",
+        "workflow_scope": "Fresh github_fetch_commit_workflow_runs call, filtered by this head and pull-request trigger; wrapper returns first page only.",
+        "workflow_collection_url": "https://api.github.com/repos/lz4/lz4/actions/runs?head_sha=0917e70420429ea2acab6aaac48cffdf4e827440&event=pull_request",
+        "returned_workflow_count": 9,
+        "workflow_conclusions": {
+          "success": 9
+        },
+        "workflows": [
+          {
+            "id": 39133845170,
+            "name": "Sanitizers",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845170"
+          },
+          {
+            "id": 39133845143,
+            "name": "Build Systems",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845143"
+          },
+          {
+            "id": 39133845148,
+            "name": "Code Quality",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845148"
+          },
+          {
+            "id": 39133845146,
+            "name": "Cross Platform",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845146"
+          },
+          {
+            "id": 39133845159,
+            "name": "Compiler Tests",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845159"
+          },
+          {
+            "id": 39133845154,
+            "name": "Release & Environment",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845154"
+          },
+          {
+            "id": 39133845188,
+            "name": "Core Tests",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845188"
+          },
+          {
+            "id": 39133845224,
+            "name": "CMake Build Tests",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845224"
+          },
+          {
+            "id": 39133845150,
+            "name": "OSS-Fuzz",
+            "status": "completed",
+            "conclusion": "success",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845150"
+          }
+        ],
+        "checks_scope": "Fresh GET, per_page=100; returned array count equals total_count.",
+        "checks_url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/check-runs?per_page=100",
+        "total_check_run_count": 54,
+        "returned_check_run_count": 54,
+        "check_conclusions": {
+          "success": 54
+        },
+        "check_head_identities_match": true,
+        "legacy_status_scope": "Fresh github_get_commit_combined_status; normalized response provides individual statuses only.",
+        "legacy_status_url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/status",
+        "legacy_status_count": 1,
+        "legacy_statuses": [
+          {
+            "context": "continuous-integration/appveyor/pr",
+            "state": "success",
+            "target_url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919870"
+          }
+        ],
+        "admission_job_collection_reads": [],
+        "full_job_logs_refetched": false,
+        "workflow_rerun_or_approval_sent": false
+      }
+    },
+    {
+      "repository": "apache/commons-compress",
+      "number": 825,
+      "pull_request_url": "https://github.com/apache/commons-compress/pull/825",
+      "metadata_url": "https://api.github.com/repos/apache/commons-compress/pulls/825",
+      "fresh_metadata_and_collections_observed_by_utc": "2026-10-18T21:01:15Z",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null,
+      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "head_branch": "fix/framed-uncompressed-count",
+      "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "base_branch": "master",
+      "metadata_updated_at": "2026-10-18T17:18:39Z",
+      "mechanical_mergeable": true,
+      "mergeable_state": "unstable",
+      "comparison": {
+        "source": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/progress/2026-10-18-commons-compress-825.md",
+        "source_observation_cutoff_utc": "2026-10-18T17:18:51Z",
+        "head_unchanged": true,
+        "base_unchanged": true,
+        "discussion_counts_unchanged": true,
+        "new_or_edited_discussion_records_after_checkpoint_cutoff": 0,
+        "new_actionable_feedback_found": false
+      },
+      "discussion": {
+        "scope": "Connector normalized timeline combining issue comments, inline review comments and submitted reviews; compared with PR metadata counts and prior recorded collections.",
+        "tool": "github_fetch_pr_comments",
+        "issue_comment_count": 1,
+        "inline_comment_count": 0,
+        "submitted_review_count": 0,
+        "review_states": {},
+        "latest_record_update_utc": "2026-10-18T17:18:39Z",
+        "collection_urls": {
+          "issue_comments": "https://api.github.com/repos/apache/commons-compress/issues/825/comments?per_page=100",
+          "inline_comments": "https://api.github.com/repos/apache/commons-compress/pulls/825/comments?per_page=100",
+          "reviews": "https://api.github.com/repos/apache/commons-compress/pulls/825/reviews?per_page=100"
+        },
+        "records": [
+          {
+            "id": 6252813089,
+            "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+            "author": "agamal026",
+            "created_at": "2026-10-18T17:18:39Z",
+            "updated_at": "2026-10-18T17:18:39Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          }
+        ]
+      },
+      "ci": {
+        "head_sha_requested": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+        "workflow_scope": "Fresh github_fetch_commit_workflow_runs call, filtered by this head and pull-request trigger; wrapper returns first page only.",
+        "workflow_collection_url": "https://api.github.com/repos/apache/commons-compress/actions/runs?head_sha=7e6477880259d60d4dfa60a5e34e4ea7875176b1&event=pull_request",
+        "returned_workflow_count": 3,
+        "workflow_conclusions": {
+          "action_required": 3
+        },
+        "workflows": [
+          {
+            "id": 39148712206,
+            "name": "CodeQL",
+            "status": "completed",
+            "conclusion": "action_required",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712206"
+          },
+          {
+            "id": 39148712273,
+            "name": "Dependency Review",
+            "status": "completed",
+            "conclusion": "action_required",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712273"
+          },
+          {
+            "id": 39148712364,
+            "name": "Java CI",
+            "status": "completed",
+            "conclusion": "action_required",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712364"
+          }
+        ],
+        "checks_scope": "Fresh GET, per_page=100; returned array count equals total_count.",
+        "checks_url": "https://api.github.com/repos/apache/commons-compress/commits/7e6477880259d60d4dfa60a5e34e4ea7875176b1/check-runs?per_page=100",
+        "total_check_run_count": 0,
+        "returned_check_run_count": 0,
+        "check_conclusions": {},
+        "check_head_identities_match": true,
+        "legacy_status_scope": "Fresh github_get_commit_combined_status; normalized response provides individual statuses only.",
+        "legacy_status_url": "https://api.github.com/repos/apache/commons-compress/commits/7e6477880259d60d4dfa60a5e34e4ea7875176b1/status",
+        "legacy_status_count": 0,
+        "legacy_statuses": [],
+        "admission_job_collection_reads": [
+          {
+            "run_id": 39148712206,
+            "observed_by_utc": "2026-10-18T21:01:50Z",
+            "tool": "github_fetch_workflow_run_jobs",
+            "scope": "Latest attempt, first page; empty collection",
+            "canonical_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712206/jobs",
+            "returned_job_count": 0
+          },
+          {
+            "run_id": 39148712273,
+            "observed_by_utc": "2026-10-18T21:01:50Z",
+            "tool": "github_fetch_workflow_run_jobs",
+            "scope": "Latest attempt, first page; empty collection",
+            "canonical_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712273/jobs",
+            "returned_job_count": 0
+          },
+          {
+            "run_id": 39148712364,
+            "observed_by_utc": "2026-10-18T21:01:50Z",
+            "tool": "github_fetch_workflow_run_jobs",
+            "scope": "Latest attempt, first page; empty collection",
+            "canonical_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712364/jobs",
+            "returned_job_count": 0
+          }
+        ],
+        "full_job_logs_refetched": false,
+        "workflow_rerun_or_approval_sent": false
+      },
+      "existing_ci_admission_request": {
+        "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+        "duplicate_sent": false,
+        "continuation": "Retain existing request; await maintainer admission."
+      }
+    }
+  ],
+  "inherited_execution_evidence": [
+    {
+      "repository": "javaparser/javaparser",
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "url": "https://github.com/agamal026/javaparser/blob/be86f30a136fddc1e741fdcb36094bbbbfaaa454/contribution-review/4074/README.md",
+      "scope": "Previously recorded Linux/Java17 reactor proof. Link retained from checkpoint; full packet and logs not re-read.",
+      "fresh_upstream_execution_claim": false
+    },
+    {
+      "repository": "FasterXML/jackson-databind",
+      "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+      "url": "https://github.com/agamal026/jackson-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution-review/6299/3.1-upstream/README.md",
+      "scope": "Earlier four-build exact-tree upstream evidence retained at unchanged source. Full logs not re-read.",
+      "fresh_upstream_execution_claim": false
+    },
+    {
+      "repository": "lz4/lz4",
+      "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+      "url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
+      "scope": "README freshly re-read; it records earlier full TSan log audit plus 54 successful actual jobs. Underlying logs and other actual-job collections not re-read.",
+      "original_execution_observation_window_utc": [
+        "2026-10-18T14:11:25Z",
+        "2026-10-18T14:11:26Z"
+      ],
+      "tsan_job_url": "https://github.com/lz4/lz4/actions/runs/39133845170/job/117694255444",
+      "tsan_job_completed_at_utc": "2026-10-18T14:10:01Z",
+      "source_and_merge_tree": "26cbd5018554777b0b36efd53e76616d9e006b1d",
+      "correction_to_inherited_task_description": "The earlier TSan issue is resolved for this current head. The retained hosted packet reports the full TSan CLI step successful, with no TSan warning, summary or fatal diagnostic. It is not a current CI blocker.",
+      "fresh_upstream_execution_claim": false
+    },
+    {
+      "repository": "apache/commons-compress",
+      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "url": "https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md",
+      "scope": "Previously recorded owned-fork 19-job default Maven matrix retained from checkpoint. Does not establish upstream execution; full packet and logs not re-read.",
+      "fresh_upstream_execution_claim": false
+    }
+  ],
+  "outcome": {
+    "submitted_current_campaign_projects": 4,
+    "verified_accepted_current_campaign_projects": 0,
+    "verified_realized_benefits": 0,
+    "new_actionable_maintainer_feedback_found": false,
+    "source_or_base_changes_found": false,
+    "new_ci_failure_found": false,
+    "next_action": "Continue bounded queue work and future feedback monitoring through existing hourly task; preserve the current evidence and already-posted admission requests."
+  },
+  "limits": [
+    "No payment account, reward provider or subscription account was queried; no award, payment or activated benefit was established within this PR audit.",
+    "Successful checks and mechanical mergeability do not establish acceptance or maintainer approval.",
+    "A zero-record legacy status response does not mean successful Actions jobs are pending.",
+    "AppVeyor success is a separate legacy status; its underlying logs were not inspected.",
+    "Workflow wrapper returns pull-request-triggered runs from the first page only; no claim is made about other events or historical pagination.",
+    "Only five admission-gated job collections were freshly read. Successful job execution details for Jackson, LZ4 and owned Commons Compress validation remain attributed to earlier evidence.",
+    "The six historical PRs were not refreshed and receive no current campaign credit."
+  ]
+}

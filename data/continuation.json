@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-18T21:32:23.490080Z",
+  "scope": "100 distinct external open-source projects; review, maintenance and verified benefit follow-through",
+  "latest_checkpoint": "progress/2026-10-18-commons-lang-1826.md",
+  "campaign_ledger": "data/campaign.json",
+  "campaign_report": "progress/CAMPAIGN.md",
+  "pr_snapshot": "data/github.json",
+  "snapshot_provenance": "data/snapshot-source.json",
+  "ownership": {
+    "active_implementation": null,
+    "active_source_writer": null,
+    "semantics": "Cooperative handoff only; verify current work and pending operations before taking a source-writing task. External review/admission alone does not reserve a source writer."
+  },
+  "scheduler": {
+    "task_title": "Advance open-source contributions",
+    "execution": "existing native task",
+    "cadence": "hourly",
+    "timezone": "Europe/Vienna",
+    "enabled_observed": true,
+    "observed_at": "2026-10-18T21:29:10Z",
+    "last_run_time_reported": "2026-10-18T21:06:08.837380+00:00",
+    "execution_limit": "Last-run metadata alone does not establish completion; no full native run history was exposed. Preserve schedule and other tasks."
+  },
+  "latest_completed_contribution": {
+    "repository": "apache/commons-lang",
+    "issue_url": "https://issues.apache.org/jira/browse/LANG-1323",
+    "pr_url": "https://github.com/apache/commons-lang/pull/1826",
+    "state": "submitted_awaiting_review_and_ci_admission",
+    "source_commit": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+    "upstream_base": "c89cdf682fe21b0c39759cf58186ed5336a105d4",
+    "source_ref": "https://github.com/agamal026/commons-lang/commit/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+    "evidence_ref": "https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/README.md",
+    "admission_comment_url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077",
+    "jira_backlink": "verified_present",
+    "owned_validation_pr": "https://github.com/agamal026/commons-lang/pull/1",
+    "owned_validation_role": "Non-counting evidence draft; do not merge.",
+    "upstream_workflows": [
+      {
+        "id": 39166682960,
+        "name": "Java CI",
+        "state": "action_required",
+        "actual_jobs": 0
+      },
+      {
+        "id": 39166682974,
+        "name": "CodeQL",
+        "state": "action_required",
+        "actual_jobs": 0
+      },
+      {
+        "id": 39166682962,
+        "name": "Dependency Review",
+        "state": "action_required",
+        "actual_jobs": 0
+      }
+    ],
+    "workflow_observed_at": "2026-10-18T21:17:11.578Z",
+    "reusable_validation": [
+      "14 failing baseline cases; corrected TypeUtilsTest 510 cases with one existing disabled test",
+      "Required default Maven build: 88,157 cases, zero failures/errors, 18 skips and all default gates completed",
+      "18 ordinary hosted Java/OS jobs passed; experimental Java 28 failed and its 40 date-parser failures match the limited unchanged-base control",
+      "Source review, failed attempts and full available logs retained in the evidence packet"
+    ]
+  },
+  "follow_through": [
+    {
+      "pr_url": "https://github.com/javaparser/javaparser/pull/5175",
+      "resume_when": "New substantive feedback or admitted workflow results",
+      "admission_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643"
+    },
+    {
+      "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "resume_when": "New substantive feedback or actual CLA/acceptance evidence",
+      "note": "Current 3.1 builds passed; earlier admission and backport work are complete. Personal legal action remains separate."
+    },
+    {
+      "pr_url": "https://github.com/lz4/lz4/pull/1890",
+      "resume_when": "New substantive feedback or regression",
+      "note": "Current hosted TSan and all 54 CheckRuns passed; earlier TSan failure is historical."
+    },
+    {
+      "pr_url": "https://github.com/apache/commons-compress/pull/825",
+      "resume_when": "New substantive feedback or admitted workflow results",
+      "admission_comment_url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+      "jira_backlink": "verified_present"
+    }
+  ],
+  "parked": [
+    {
+      "work": "h2database/h2database #4456",
+      "resume_when": "Truthful contributor statement and unresolved required validation are satisfied",
+      "evidence_ref": "https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md"
+    },
+    {
+      "work": "libavif human-review/CLA dependencies",
+      "resume_when": "Actual personal review or legal evidence becomes available through existing private records",
+      "public_guide": "docs/LIBAVIF-2428-REVIEW.md"
+    },
+    {
+      "work": "jsoup automated contributions",
+      "resume_when": "A verified changed upstream policy permits this workflow",
+      "note": "Known policy rejects AI-assisted code and AI-written submissions; do not post."
+    }
+  ],
+  "next_action": {
+    "first": "Refresh the recorded Lang workflow IDs and substantive feedback across existing PRs; handle an actionable request before unrelated source work.",
+    "otherwise": "Screen at most three unblocked candidates from data/campaign.json using the retained screening exclusions; choose one useful cloud-testable fix with a supported publication route.",
+    "reserve": "Commons IO IO-754 has an earlier source-only reserve screen in progress/2026-10-18-1608-screen-followthrough.json; reproduction, current preflight and any deliberate target substitution are still required before counting.",
+    "do_not_repeat": "Do not recreate Lang PR #1826, duplicate admission comments, rerun unchanged passing matrices or rebuild orchestration.",
+    "budget": {
+      "target_session_minutes_including_handoff": 40,
+      "candidate_limit": 3,
+      "focused_correction_cycle_limit": 3,
+      "main_implementation_writers": 1
+    }
+  },
+  "dated_followups": [
+    {
+      "work": "Existing libzip retention/reward evidence",
+      "not_before": "2026-10-22T13:12:13Z",
+      "required": "Fresh upstream retention and current program/participant/patch eligibility; date alone is not eligibility or payment."
+    },
+    {
+      "work": "Seven-day campaign selection review",
+      "not_before": "2026-10-24",
+      "required": "Actual effort, submissions, acceptance, review burden and realized benefits; unknown amounts stay unknown."
+    }
+  ],
+  "completion_report": {
+    "delivered": false,
+    "condition": "100 independently verified qualifying distinct external submissions; historical work and owned drafts excluded.",
+    "afterwards": "Maintain portfolio and benefit follow-through without increasing the target."
+  }
+}

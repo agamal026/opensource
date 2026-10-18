@@ -1,7 +1,8 @@
 # Working in this repository
 
 Use this hub to maintain original tools and accurate open-source contribution
-records. Start every resumed session with [GOAL.md](GOAL.md),
+records. Resolve the current handoff from [data/continuation.json](data/continuation.json)
+instead of guessing from progress filenames. Start every resumed session with [GOAL.md](GOAL.md),
 [docs/OPPORTUNITIES.md](docs/OPPORTUNITIES.md), and the latest dated progress
 entry. Then read `README.md`, `progress/STATUS.md`, and `docs/ROADMAP.md` before
 continuing work. For the continuous 100-project campaign, also read

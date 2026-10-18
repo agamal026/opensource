@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-18T21:32:23.490080Z",
+  "prior_hub_commit": "973863dc6ebd92622d024604cc03cf8041865d54",
+  "upstream_submission": {
+    "url": "https://github.com/apache/commons-lang/pull/1826",
+    "created_at": "2026-10-18T21:10:52Z",
+    "state": "open",
+    "draft": false,
+    "merged": false,
+    "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+    "base_sha": "c89cdf682fe21b0c39759cf58186ed5336a105d4",
+    "commits": 2,
+    "changed_files": 2,
+    "additions": 69,
+    "deletions": 10,
+    "body_matches_prepared": true,
+    "maintainer_can_modify": false
+  },
+  "evidence_publication": {
+    "commit": "6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c",
+    "branch": "contribution-review/LANG-1323",
+    "selected_blobs_verified": 25,
+    "outside_evidence_subtree_unchanged": true,
+    "ref_readback_verified": true,
+    "readme_readback_verified": true,
+    "independent_audit": "https://github.com/agamal026/commons-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution-review/LANG-1323/continuation-audit.json"
+  },
+  "new_runtime_validation_this_session": {
+    "maven_invocations": 0,
+    "source_workflow_reruns": 0,
+    "scope": "Recovered completed exact-source execution; independent audit before publication."
+  },
+  "admission_comment": {
+    "url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077",
+    "created_at": "2026-10-18T21:18:33Z",
+    "verified": true,
+    "preflight_issue_comments": 0,
+    "preflight_inline_comments": 0,
+    "preflight_reviews": 0
+  },
+  "jira_backlinks": {
+    "observed_window_utc": [
+      "2026-10-18T21:14:53Z",
+      "2026-10-18T21:18:33Z"
+    ],
+    "source": "Visible Issue Links panel, signed-out browser view",
+    "LANG-1323": "https://github.com/apache/commons-lang/pull/1826",
+    "COMPRESS-726": "https://github.com/apache/commons-compress/pull/825",
+    "new_jira_mutations": 0,
+    "prior_limit": "Earlier Compress observation inspected comments only."
+  },
+  "snapshot": {
+    "path": "data/github.json",
+    "sha256": "7b8f37154d56d1a8e10e17aace57f930948b0c56618d2bbe75aa5fa5e3a5dd45",
+    "provenance": "data/snapshot-source.json",
+    "full_batch_completed_at": "2026-10-18T21:17:12.925Z",
+    "lang_supplement_completed_at": "2026-10-18T21:23:43.906Z",
+    "registered_prs": 11,
+    "current_campaign_submitted": 5,
+    "current_campaign_accepted": 0,
+    "realized_benefits": []
+  },
+  "hub_validation": {
+    "state": "passed",
+    "recorded_after": "2026-10-18T21:29:10Z",
+    "tests_passed": 81,
+    "gates": [
+      {
+        "command": "python3 -m unittest discover -s tests -v",
+        "exit_code": 0,
+        "summary": "81 tests passed"
+      },
+      {
+        "command": "python3 tools/oss_status.py validate",
+        "exit_code": 0,
+        "summary": "Valid: 2 projects, 11 pull requests, 2 candidates"
+      },
+      {
+        "command": "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+        "exit_code": 0,
+        "summary": "Up to date: progress/STATUS.md"
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py validate --input data/campaign.json",
+        "exit_code": 0,
+        "summary": "Campaign is valid: 100 targets; 5 / 100 qualified submitted repositories."
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check",
+        "exit_code": 0,
+        "summary": "Passed"
+      },
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "summary": "Passed"
+      }
+    ],
+    "scope": "Required existing offline suite and generated-report/ledger gates. Subsequent receipt/prose edits do not change code or generated inputs."
+  },
+  "publication_limit": "This receipt is part of the proposed hub commit. Its remote ref and actual CI are verified after publication; no future execution is asserted here."
+}

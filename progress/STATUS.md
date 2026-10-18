@@ -1,12 +1,12 @@
 # Open-source progress
 
-Observed at: 2026-10-18T17:18:51.611Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-18T21:23:43.906Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
 ## Upstream contributions
 
-Registered pull requests: 10; open: 9; merged: 1; closed without merge: 0.
+Registered pull requests: 11; open: 10; merged: 1; closed without merge: 0.
 
 Registered PRs with a recorded merge on or after 2026-10-13: 0.
 
@@ -16,16 +16,17 @@ Check results describe only the rollup returned by GitHub for each recorded head
 
 | Pull request | State | Returned checks | Review decision | Updated (UTC) |
 | --- | --- | --- | --- | --- |
-| [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | approved | 2026-09-09T23:21:10Z |
-| [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-13T19:43:27Z |
+| [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | not reported | 2026-09-09T23:21:10Z |
+| [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-18T16:12:33Z |
 | [apache/commons\-compress \#825](<https://github.com/apache/commons-compress/pull/825>) | open | unknown (no checks returned) | not reported | 2026-10-18T17:18:39Z |
+| [apache/commons\-lang \#1826](<https://github.com/apache/commons-lang/pull/1826>) | open | unknown (no checks returned) | not reported | 2026-10-18T21:18:33Z |
 | [FasterXML/jackson\-databind \#6302](<https://github.com/FasterXML/jackson-databind/pull/6302>) | open | 5 passed; 2 skipped | not reported | 2026-10-18T15:24:42Z |
 | [javaparser/javaparser \#5175](<https://github.com/javaparser/javaparser/pull/5175>) | open | 1 passed | not reported | 2026-10-18T10:13:18Z |
-| [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
+| [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | not reported | 2026-10-15T13:13:47Z |
 | [lz4/lz4 \#1890](<https://github.com/lz4/lz4/pull/1890>) | open | 55 passed | not reported | 2026-10-18T14:41:45Z |
-| [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | review required | 2026-10-15T12:33:23Z |
+| [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | not reported | 2026-10-15T12:33:23Z |
 | [nih\-at/libzip \#576](<https://github.com/nih-at/libzip/pull/576>) | open | 1 passed | not reported | 2026-10-13T18:42:17Z |
-| [npm/cli \#9954](<https://github.com/npm/cli/pull/9954>) | open | unknown (no checks returned) | review required | 2026-10-15T14:24:47Z |
+| [npm/cli \#9954](<https://github.com/npm/cli/pull/9954>) | open | unknown (no checks returned) | not reported | 2026-10-17T21:35:40Z |
 
 ### AOMediaCodec/libavif #3350: Keep codec option updates atomic on allocation failure
 
@@ -135,6 +136,23 @@ Correct framed LZ4 and Snappy getUncompressedCount\(\) to report decompressed ou
 - Catalog note: One admission request was posted at 2026\-10\-18T17:18:39Z and canonically verified at 17:18:51\.611 UTC: https://github\.com/apache/commons\-compress/pull/825\#issuecomment\-6252813089 \. Head, base and PR body were unchanged; the PR remained open and non\-draft, with one issue comment and no observed inline comments or submitted reviews\. Do not duplicate the request\.
 - Catalog note: At the October 18 17:17 UTC Jira read, none of the four comments on COMPRESS\-726 linked PR \#825; the requested Jira backlink remains outstanding\. No account access, personal signature, CLA acceptance or human approval is claimed\.
 - Catalog note: Commons Compress has an existing OSS\-Fuzz integration: https://github\.com/google/oss\-fuzz/blob/master/projects/apache\-commons\-compress/project\.yaml \. The conditional Tier 2 route in https://github\.com/google/bughunters/blob/main/bughunters/articles/about/rules/open\-source/patch\-rewards\-program\-rules\.md still requires demonstrated security benefit, upstream acceptance and one unreverted month before application\. No paid assignment, participant eligibility, patch\-specific reward qualification, application, award, subscription, acceptance or payment is verified\.
+- Catalog note: At the October 18 21:17 UTC follow\-through, COMPRESS\-726 visibly listed https://github\.com/apache/commons\-compress/pull/825 in Issue Links\. The earlier observation checked only comments and did not establish absence of a reciprocal link\. The backlink requirement is satisfied; no duplicate comment or Jira account action is needed\.
+- Catalog note: October 18 21:01 UTC independent follow\-through found unchanged head/base and no actionable new discussion\. The subsequent all\-registry snapshot and its per\-record timestamps are in data/github\.json and data/snapshot\-source\.json; prior full validation evidence retains its original scope\. No new source change or repeat CI run was needed\.
+
+### apache/commons\-lang #1826: \[LANG\-1323\] Align built type hashes with JDK reflection
+
+Make TypeUtils generic\-array and parameterized hashes compatible with equal JDK reflection types, including cross\-representation HashMap and HashSet lookup\.
+
+- Source: [pull request](<https://github.com/apache/commons-lang/pull/1826>)
+- Head commit: `9f75a9a6c2fcbc3d287a170827f2efe861cbe90d`
+- Base commit: `c89cdf682fe21b0c39759cf58186ed5336a105d4`
+- Catalog note: Upstream PR created 2026\-10\-18T21:10:52Z and verified open/non\-draft, with source 9f75a9a6c2fcbc3d287a170827f2efe861cbe90d based on c89cdf682fe21b0c39759cf58186ed5336a105d4; two commits, two files, 69 additions and 10 deletions\. The wildcard fix from PR \#1807 remains intact\. Source: https://github\.com/agamal026/commons\-lang/commit/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d \.
+- Catalog note: Completed exact\-source evidence: https://github\.com/agamal026/commons\-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution\-review/LANG\-1323/README\.md \. All 14 new regression cases fail on unchanged production and pass with the fix\. Focused TypeUtilsTest: 510 cases, zero failures/errors, one existing disabled test\. Independent automated review is not personal human review\.
+- Catalog note: The full required local default Maven build completed on Temurin 17\.0\.20\.1\+1/Maven 3\.9\.16: 316 suites, 88,157 cases, zero failures/errors, 18 skips; RAT, Checkstyle, japicmp, SpotBugs, PMD, JaCoCo and Javadoc completed\. The initial Javadoc trust\-store failure is retained; its correction changed only the execution environment\.
+- Catalog note: All 18 ordinary hosted Maven jobs on Java 8/11/17/21/25/27 and Ubuntu/Windows/macOS passed: https://github\.com/agamal026/commons\-lang/actions/runs/39162942665 \. The tolerated Java 28 job failed in 40 date\-parser cases while TypeUtilsTest passed\. A control at the exact unchanged upstream base reproduced all 40 failure summaries in two classes: https://github\.com/agamal026/commons\-lang/actions/runs/39163962620 \. Separate JaCoCo diagnostics and incomplete experimental\-log retrieval remain explicit\. CodeQL completed; Dependency Review passed on retry after its prerequisite was enabled\. See https://github\.com/agamal026/commons\-lang/blob/6fd756a0fa747006553f86ca1bc9e3ce4b4d6d7c/contribution\-review/LANG\-1323/hosted/README\.md \.
+- Catalog note: At the 21:17 UTC collection, three upstream workflows required action and each actual job list contained zero jobs\. No upstream execution pass is established\. One admission request was posted at 21:18:33 UTC and read back: https://github\.com/apache/commons\-lang/pull/1826\#issuecomment\-6255266077 \. Do not repeat it without a response or material change\.
+- Catalog note: The LANG\-1323 Issue Links panel already links this PR, verified in the signed\-out browser view around 21:17 UTC: https://issues\.apache\.org/jira/browse/LANG\-1323 \. No new Jira comment or account was needed\. Owned draft https://github\.com/agamal026/commons\-lang/pull/1 now links the upstream submission and completed evidence; it remains a non\-counting validation draft\.
+- Catalog note: No maintainer acceptance, personal review, legal signature, paid assignment, patch\-specific reward eligibility, grant, activated access or payment is established\.
 
 ### FasterXML/jackson\-databind #6302: Write an empty array when singleton container content is filtered out
 
@@ -152,10 +170,11 @@ Write an empty array when content filtering suppresses an unwrapped singleton, w
 - Catalog note: Upstream workflow 39138054220 attempt 2 completed successfully at 2026\-10\-18T15:10:36Z; metadata/log audit at 15:13:35\-15:13:49 established four successful builds, two skipped downstream triggers and seven CheckRuns including successful Gitar\. All 74 cases passed per build, with full totals 5,883 on JDK 17 and 5,885 on JDK 21/25, zero failures/errors and one skip\. Linux JDK 17 passed Android API compatibility\. Evidence: https://github\.com/agamal026/jackson\-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution\-review/6299/3\.1\-upstream/README\.md \. The earlier action\_required/zero\-job observation is historical\. Empty legacy statuses do not represent a pending workflow\.
 - Catalog note: Final PR body updated at 15:24:42 UTC and canonically verified at 15:25:01; open/non\-draft, five issue comments and two inline comments\. One substantive helper reply was posted at 15:16:02 and verified at 15:16:13: https://github\.com/FasterXML/jackson\-databind/pull/6302\#discussion\_r4307557870 \. Old owned 3\.x draft is closed/archived; owned validation draft \#2 stays open/draft and receives no campaign credit\. Existing maintainer review is COMMENTED; CLA acceptance, human approval, upstream acceptance and benefits remain unverified\.
 - Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, the current 3\.1 head 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 and base were unchanged, with no new or edited discussion/review records\. The upstream workflow remained successful; seven CheckRuns showed five successes and two skips\. The empty legacy status collection's pending state is not pending Actions work\. Earlier exact\-tree four\-build logs are reused without a new job/log audit\. Both known reviews remain COMMENTED, including the author's reply; no human approval, CLA acceptance or upstream acceptance is established\.
+- Catalog note: October 18 21:01 UTC independent follow\-through found unchanged head/base and no actionable new discussion\. The subsequent all\-registry snapshot and its per\-record timestamps are in data/github\.json and data/snapshot\-source\.json; prior full validation evidence retains its original scope\. No new source change or repeat CI run was needed\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |
-| [Gitar](<https://github.com/FasterXML/jackson-databind/runs/117706532128>) | check run | COMPLETED | SUCCESS | passed |
+| [Gitar](<https://app.gitar.ai>) | check run | COMPLETED | SUCCESS | passed |
 | [Trigger v2 dep builds](<https://github.com/FasterXML/jackson-databind/actions/runs/39138054220/job/117710178535>) | check run | COMPLETED | SKIPPED | skipped |
 | [Trigger v3 dep builds](<https://github.com/FasterXML/jackson-databind/actions/runs/39138054220/job/117710178712>) | check run | COMPLETED | SKIPPED | skipped |
 | [build \(17, ubuntu\-24\.04\)](<https://github.com/FasterXML/jackson-databind/actions/runs/39138054220/job/117709602754>) | check run | COMPLETED | SUCCESS | passed |
@@ -175,6 +194,7 @@ Preserve the existing separator before a type when the lexical\-preserving print
 - Catalog note: At 2026\-10\-18T10:19:27Z, AppVeyor reported success without underlying log inspection\. Both GitHub Actions runs still required authorization and their job lists returned zero jobs\. Submission does not establish acceptance or benefit eligibility\.
 - Catalog note: At the October 18 13:37\-13:40 UTC follow\-through, the submitted head remained 2a437e500bf54024772dd9f3d6d4149506defed2\. The only comment was the existing admission request; no inline comments or submitted reviews were returned\. Both Actions runs remained action\_required and their actual job lists each returned zero jobs\. AppVeyor still reported success without underlying log inspection\. Do not duplicate the existing request\.
 - Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, head 2a437e500bf54024772dd9f3d6d4149506defed2 and its master base were unchanged; no new or edited discussion/review records were found\. Both upstream Actions runs remained action\_required, and both current job\-list reads returned zero jobs\. The successful legacy AppVeyor status was retained without log inspection\. Earlier Linux/Java 17 reactor proof remains separate from unexecuted upstream checks; no duplicate request, rerun, acceptance or benefit is established\.
+- Catalog note: October 18 21:01 UTC independent follow\-through found unchanged head/base and no actionable new discussion\. The subsequent all\-registry snapshot and its per\-record timestamps are in data/github\.json and data/snapshot\-source\.json; prior full validation evidence retains its original scope\. No new source change or repeat CI run was needed\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |
@@ -204,6 +224,7 @@ Fix \#1889: accept the Linux kernel four\-zero\-byte end marker in legacy LZ4 de
 - Catalog note: The completed corrected hosted matrix and full successful TSan log are preserved at https://github\.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution\-review/1889/tsan\-hosted/README\.md \. Evidence commit 7751a987a7199b696902630b16d8e831880e9451 has five verified direct blobs\. Its 258,638\-byte ZIP has SHA\-256 9375604c1dcf8f545a12c5b24ac4130fe2be3d1f6ec5b1d1b3ac594f7b86d265 and contains the complete monitoring receipt and decoded job log\. The observed CI time remains October 18 14:11:25\-14:11:26 UTC; evidence publication does not refresh that observation\.
 - Catalog note: Final PR body update at 2026\-10\-18T14:41:45Z links completed hosted packet 7751a987 and reports 54 successful jobs/CheckRuns, nine workflows and AppVeyor success\. Canonical matching body/head/base/open\-state readback was verified; its exact clock was not captured\. No comment was posted\. Full CI observation remains 14:11:25\-14:11:26 UTC\.
 - Catalog note: At the October 18 16:08\-16:11 UTC bounded follow\-through, corrected head 0917e70420429ea2acab6aaac48cffdf4e827440 and its dev base were unchanged; no issue comments, inline comments or submitted reviews were returned\. All nine current workflows and 54 CheckRuns remained successful, with one successful legacy AppVeyor status\. The earlier 54\-job and full TSan log audit is reused; job lists and logs were not fetched again\. No comment, rerun, upstream acceptance or benefit is established\.
+- Catalog note: October 18 21:01 UTC independent follow\-through found unchanged head/base and no actionable new discussion\. The subsequent all\-registry snapshot and its per\-record timestamps are in data/github\.json and data/snapshot\-source\.json; prior full validation evidence retains its original scope\. No new source change or repeat CI run was needed\.
 
 | Check | Kind | Raw status | Conclusion | Interpretation |
 | --- | --- | --- | --- | --- |

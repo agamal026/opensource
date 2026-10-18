@@ -1,392 +1,1121 @@
 {
-  "bounded_metadata_follow_up": {
-    "external_prs": [
-      "https://github.com/npm/cli/pull/9954",
-      "https://github.com/AOMediaCodec/libavif/pull/3413",
-      "https://github.com/libevent/libevent/pull/1916",
-      "https://github.com/nginx/nginx/pull/1734",
-      "https://github.com/nih-at/libzip/pull/576"
+  "accounting": {
+    "benefit_claim": "No award, payment, activated subscription or other realized benefit was established by this read-only PR snapshot.",
+    "current_campaign_pr_count": 5,
+    "historical_excluded_ids": [
+      "libavif-3350",
+      "libavif-3413",
+      "libevent-1916",
+      "libzip-576",
+      "nginx-1734",
+      "npm-9954"
     ],
-    "finished_at": "2026-10-18T09:43:48Z",
-    "owned_draft": "https://github.com/agamal026/h2database/pull/1",
-    "scope": "Separate live metadata and merged discussion/review timelines for the five existing open external PRs plus the owned H2 draft. No new or edited feedback since 2026-10-17T23:11:30Z; heads unchanged. This was not a refresh of all six historical records or their 70 check contexts.",
-    "started_at": "2026-10-18T09:42:53Z",
-    "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
+    "historical_exclusion_changed": false,
+    "registered_pr_count": 11,
+    "scope": "Catalog observations do not independently validate campaign qualification. No campaign.json changes or historical reclassification occurred.",
+    "states": {
+      "MERGED": 1,
+      "OPEN": 10
+    },
+    "verified_current_campaign_pr_merges": 0
   },
-  "check_collection": "Commons Compress #825 returned literal zero CheckRuns and zero StatusContexts, so its normalized checks array is empty. Three separate Actions runs are action_required and each returned zero actual jobs; they are not synthesized as CheckRuns. Its 19 successful owned-fork Maven jobs are separate validation evidence, not upstream execution. The prior nine rows retain all 133 check/status contexts: 70 historical, one JavaParser, seven Jackson and 55 LZ4. The 16:08 follow-through confirmed unchanged current workflow/check outcomes for the latter three; it did not replace earlier full job/log audits.",
+  "catalog_scope": {
+    "catalog_addition_required_at_validation": true,
+    "fresh_snapshot_coordinate_count": 11,
+    "new_coordinate": {
+      "id": "commons-lang-1826",
+      "number": 1826,
+      "repository": "apache/commons-lang"
+    },
+    "original_coordinate_count": 10,
+    "validation": "Validated with the current catalog plus the new Commons Lang coordinate in memory. The hub catalog and its curated notes were not changed by this adapter."
+  },
+  "check_collection": "All 133 normalized contexts are freshly read: 130 passed, one failed CLA status and two skipped checks. Every check/status response returned its complete total_count within one 100-item page. Actual workflow runs are separate and never synthesized as CheckRuns. Empty check arrays remain unknown. All check/status observations remain dated to the earlier full batch; the later Lang supplement does not refresh them.",
   "collected_with_live_cli": false,
-  "metadata_collection": "Commons Compress #825 was created at 2026-10-18T17:15:07Z and verified open/non-draft at 17:15:56.900 UTC. One admission comment at 17:18:39 was verified at 17:18:51.611 UTC, with unchanged head/base/body. The 16:08-16:11 bounded follow-through found no new or edited feedback or source/base changes for Jackson, LZ4 and JavaParser. Five older open PRs had separate unchanged metadata comparisons only; their normalized rows and checks were not refreshed, and the historical merged PR was not queried.",
-  "new_observation": {
-    "observed_at": "2026-10-18T17:18:51.611Z",
-    "method": "Coordinator-supplied canonical Commons Compress PR, CheckRun, StatusContext, workflow/job and admission-comment observations, normalized into the existing schema. The prior nine rows are retained without regeneration.",
-    "latest_scope": "Fresh Commons Compress #825 head 7e6477880259d60d4dfa60a5e34e4ea7875176b1 at base 611cad06b66842692870c6ae98f50de7ce4f25d5; open/non-draft, one admission comment, no observed reviews or inline comments, zero CheckRuns and zero StatusContexts. Three upstream runs remain action_required with zero jobs. No upstream execution, approval, acceptance or benefit is inferred.",
-    "verification_file": "progress/2026-10-18-commons-compress-825-verification.json",
-    "supporting_verification_files": [
-      "progress/2026-10-18-1608-screen-followthrough.json"
+  "collection_method": "Read-only mcp__codex_apps__github_fetch public GitHub REST GETs; three supplementary github_fetch_pr_comments reads. No CLI refresh, GraphQL query, tests, reruns or external mutations.",
+  "collection_started_at": "2026-10-18T21:16:20.759Z",
+  "full_collection_completed_at": "2026-10-18T21:17:12.925Z",
+  "limits": [
+    "REST CheckRun collection uses the endpoint's default latest filter. Legacy statuses come from the combined endpoint's latest context records. Historical attempts are not enumerated.",
+    "review_decision is unreported for this collection, not inferred from review text or previously reported GraphQL values.",
+    "Fresh workflow/job metadata does not replace earlier full-log execution audits.",
+    "Only current campaign workflow lists were refreshed. Historical PR workflow/job lists and full logs were not refreshed.",
+    "Only Lang, historical libavif #3413 and npm #9954 full discussion timelines were refreshed during this collection. The prior separate four-campaign audit covers earlier current discussion reads.",
+    "Underlying AppVeyor and CLA-bot systems were not queried; only their public GitHub status contexts were read.",
+    "Workflow admission is distinct from an executing or successful job. Repeated CI requests and reruns were not sent.",
+    "Jira issue links are outside this snapshot and are recorded separately by the coordinator.",
+    "The Lang post-admission supplement updates only its metadata and discussion; it does not update the full-batch cutoff or any check/job timestamp."
+  ],
+  "metadata_collection": "Two fresh REST metadata reads per PR bracket check collection and confirm unchanged head/base. The final read supplies each normalized metadata row. Three targeted discussion collections cover new Lang and changed historical libavif/npm metadata; other full discussions retain earlier audit scope. The subsequent Lang-only supplement verifies the single admission comment and unchanged head/base/open/non-draft state; its per-record metadata clock supersedes only the earlier Lang metadata clock, which remains recorded separately.",
+  "normalization": {
+    "adapter": "normalize_snapshot.py",
+    "adapter_scope": "Offline REST-to-normalizer field mapping; prepared alongside candidate files, with no hub checkout edits. This adapter and collection-input hash describe the initial full batch. The later Lang-only metadata supplement is explicitly recorded below and was schema-validated with the same pinned tool.",
+    "adapter_sha256": "67998e4bce4f1b01b1ef9756ef1e7f7c24d72392ae17f96a29bd92611b8b4b8e",
+    "collection_input_scope": "Sanitized public allowlisted metadata, current checks/statuses and per-request provenance; no PR bodies, credentials, session data or private material. It describes the initial full batch, before the separate Lang-only supplement.",
+    "collection_input_sha256": "e45ba32f42219cc997a938917256ac356e480c691bb125c9d4da519af7633eab",
+    "functions_called": [
+      "normalize_pr",
+      "validate_catalog",
+      "validate_snapshot",
+      "check_outcome"
     ],
-    "normalized_row_sha256": "bfeeadad28d112ebcafeb71321732bf5ffa3a0d746a73a43d81f8759f2910a4e",
-    "normalized_row_bytes": 500,
-    "recorded_batch_clocks": {
-      "initial_pr_files_source_checks_statuses_actions": {
-        "observed_at": "2026-10-18T17:15:56.104Z",
-        "normalized_verified_at": "2026-10-18T17:15:56.900Z"
-      },
-      "issue_inline_reviews_and_three_job_lists": {
-        "observed_at": "2026-10-18T17:16:50.883Z"
-      },
-      "final_pr_and_issue_comments": {
-        "observed_at": "2026-10-18T17:18:50.934Z",
-        "normalized_verified_at": "2026-10-18T17:18:51.611Z"
-      },
-      "scope": "These are recorded batch clocks. Unavailable individual response-completion times are not inferred."
-    }
+    "git_version": "git version 2.51.1",
+    "javascript_runtime_version": "Not exposed by functions.exec",
+    "managed_connector_version": "Not exposed by the managed connector",
+    "python_version": "3.12.14",
+    "sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
+    "source_commit": "973863dc6ebd92622d024604cc03cf8041865d54",
+    "source_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/tools/oss_status.py",
+    "tool": "tools/oss_status.py"
   },
-  "observation_scope": "The top-level observed_at is the latest included Commons Compress metadata readback, not a fresh collection time for every record. The prior nine normalized rows and all their per-record dates and provenance remain unchanged. Separate follow-through and new-submission receipts specify their own observation scope.",
-  "observed_at": "2026-10-18T17:18:51.611Z",
+  "observation_scope": "The full eleven-PR collection completed at 2026-10-18T21:17:12.925Z. Only Commons Lang metadata and its normalized discussion timeline were subsequently read through 2026-10-18T21:23:43.906Z. No check, status, workflow, job or log was refreshed in the supplement. The top-level observed_at is the latest included supplemental observation, not a fresh collection time for every record.",
+  "observed_at": "2026-10-18T21:23:43.906Z",
+  "post_collection_supplements": [
+    {
+      "admission_comment": {
+        "created_at": "2026-10-18T21:18:33Z",
+        "id": 6255266077,
+        "updated_at": "2026-10-18T21:18:33Z",
+        "url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077"
+      },
+      "completed_at": "2026-10-18T21:23:43.906Z",
+      "discussion": {
+        "inline_comment_count": 0,
+        "issue_comment_count": 1,
+        "observed_at": "2026-10-18T21:23:43.715Z",
+        "record_urls": [
+          "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077"
+        ],
+        "started_at": "2026-10-18T21:23:43.149Z",
+        "submitted_review_count": 0,
+        "total_normalized_records": 1
+      },
+      "metadata": {
+        "base_sha": "c89cdf682fe21b0c39759cf58186ed5336a105d4",
+        "draft": false,
+        "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+        "inline_comments": 0,
+        "issue_comments": 1,
+        "merged": false,
+        "observed_at": "2026-10-18T21:23:43.905Z",
+        "started_at": "2026-10-18T21:23:43.149Z",
+        "state": "open",
+        "updated_at": "2026-10-18T21:18:33Z",
+        "url": "https://api.github.com/repos/apache/commons-lang/pulls/1826"
+      },
+      "scope": "Post-admission metadata and full normalized discussion read only. No CI, workflow, job, log or other PR collection was refreshed."
+    }
+  ],
+  "prior_snapshot": {
+    "observed_at": "2026-10-18T17:18:51.611Z",
+    "provenance_sha256": "143203506766fe52a332f0d2a05f292973dbf8b105aeb274fe8f73f119b4135f",
+    "provenance_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/snapshot-source.json",
+    "scope": "Prior values remain historical evidence in the pinned files. No old metadata or checks are relabeled as newly observed.",
+    "snapshot_sha256": "18c7a35de204580ef327d658a653f69d2fb8ca93e5588af21a60ee3824550357",
+    "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json"
+  },
   "records": [
     {
-      "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
-      "check_contexts_returned": 42,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "04a56971f8994627dd5685b58c9ebfe299d01f97",
-      "id": "libavif-3350",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 3350,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "AOMediaCodec/libavif",
-      "review_decision": "APPROVED"
-    },
-    {
-      "base_sha": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
-      "check_contexts_returned": 26,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "93ef0a32c07741c34bb515295f5be3d270cca02d",
-      "id": "libavif-3413",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 3413,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "AOMediaCodec/libavif",
-      "review_decision": ""
-    },
-    {
-      "base_sha": "d82464a277d0f42703702c4dfd9af6af38595a83",
+      "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "base_stable_across_collection": true,
       "check_contexts_returned": 0,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "14e56a95e1d524d8500da73bb49f9b0c80397057",
-      "id": "libevent-1916",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 1916,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "libevent/libevent",
-      "review_decision": "REVIEW_REQUIRED"
-    },
-    {
-      "base_sha": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
-      "check_contexts_returned": 1,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "5aeb57b6e922934125008756998b3ce2a93ba498",
-      "id": "libzip-576",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 576,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "nih-at/libzip",
-      "review_decision": ""
-    },
-    {
-      "base_sha": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
-      "check_contexts_returned": 1,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
-      "id": "nginx-1734",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 1734,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "nginx/nginx",
-      "review_decision": "REVIEW_REQUIRED"
-    },
-    {
-      "base_sha": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
-      "check_contexts_returned": 0,
-      "checks_observed_at": "2026-10-17T20:01:04Z",
-      "collection": "Retained unchanged from the historical CLI snapshot; not refreshed for this publication.",
-      "head_sha": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
-      "id": "npm-9954",
-      "metadata_observed_at": "2026-10-17T20:01:04Z",
-      "number": 9954,
-      "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-      "repository": "npm/cli",
-      "review_decision": "REVIEW_REQUIRED"
-    },
-    {
-      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
-      "check_contexts_returned": 1,
-      "check_runs_observed_at": "2026-10-18T13:40:00.252Z",
-      "checks_observed_at": "2026-10-18T13:40:00.252Z",
-      "collection": "Canonical metadata and discussion/review GETs show no new feedback, one existing admission comment and no submitted reviews. Fresh checks returned zero CheckRuns and one successful AppVeyor StatusContext. Both known Actions runs remain action_required and each actual job list returned zero jobs.",
-      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
-      "id": "javaparser-5175",
-      "metadata_observed_at": "2026-10-18T13:37:19.929Z",
-      "number": 5175,
-      "repository": "javaparser/javaparser",
-      "review_decision": "",
-      "review_decision_collection": "No submitted reviews were returned and no GraphQL reviewDecision was collected; the normalized field remains unreported.",
-      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
-      "status_contexts_observed_at": "2026-10-18T13:40:00.214Z",
-      "reviews_observed_at": "2026-10-18T13:38:53.166Z",
+      "check_outcomes": {},
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.061Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
       "check_runs_returned": 0,
-      "status_contexts_returned": 1
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/apache/commons-compress/commits/7e6477880259d60d4dfa60a5e34e4ea7875176b1/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.061Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-18T17:18:39Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-18T17:18:39Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "head_stable_across_collection": true,
+      "id": "commons-compress-825",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.480Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 1,
+      "metadata_observed_at": "2026-10-18T21:17:12.341Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/apache/commons-compress/pulls/825",
+      "number": 825,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "repository": "apache/commons-compress",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.054Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/apache/commons-compress/commits/7e6477880259d60d4dfa60a5e34e4ea7875176b1/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-18T17:18:39Z",
+      "upstream_actions": {
+        "classification": "Separate workflow-run metadata; never synthesized as CheckRuns",
+        "observed_at": "2026-10-18T21:16:46.849Z",
+        "returned": 3,
+        "runs": [
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.616Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712206/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+            "id": 39148712206,
+            "name": "CodeQL",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712206"
+          },
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.544Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712273/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+            "id": 39148712273,
+            "name": "Dependency Review",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712273"
+          },
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.568Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712364/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+            "id": 39148712364,
+            "name": "Java CI",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-compress/actions/runs/39148712364"
+          }
+        ],
+        "scope": "Fresh pull_request-triggered workflow collection for exact head, per_page=100; returned count equals total_count.",
+        "started_at": "2026-10-18T21:16:46.377Z",
+        "total_count": 3,
+        "url": "https://api.github.com/repos/apache/commons-compress/actions/runs?head_sha=7e6477880259d60d4dfa60a5e34e4ea7875176b1&event=pull_request&per_page=100&page=1"
+      }
+    },
+    {
+      "additional_discussion_read": {
+        "inline_comment_count": 0,
+        "issue_comment_count": 1,
+        "observed_at": "2026-10-18T21:23:43.715Z",
+        "record_urls": [
+          "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077"
+        ],
+        "scope": "Fresh normalized issue comments, inline comments and submitted reviews after the single coordinator admission comment. No GraphQL reviewDecision is inferred.",
+        "started_at": "2026-10-18T21:23:43.149Z",
+        "submitted_review_count": 0,
+        "tool": "github_fetch_pr_comments",
+        "total_normalized_records": 1
+      },
+      "admission_comment": {
+        "created_at": "2026-10-18T21:18:33Z",
+        "id": 6255266077,
+        "instruction": "Do not duplicate the existing admission request.",
+        "updated_at": "2026-10-18T21:18:33Z",
+        "url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077",
+        "verified_at": "2026-10-18T21:23:43.715Z"
+      },
+      "base_sha": "c89cdf682fe21b0c39759cf58186ed5336a105d4",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 0,
+      "check_outcomes": {},
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.153Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
+      "check_runs_returned": 0,
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/apache/commons-lang/commits/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.153Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection. Lang-only metadata and discussion were later supplemented; its check/status and workflow/job observations retain the initial batch dates.",
+      "final_metadata_started_at": "2026-10-18T21:23:43.149Z",
+      "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+      "head_stable_across_collection": true,
+      "id": "commons-lang-1826",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.451Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 1,
+      "metadata_observed_at": "2026-10-18T21:23:43.905Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/apache/commons-lang/pulls/1826",
+      "number": 1826,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "post_mutation_supplement_scope": "Post-admission metadata and full normalized discussion read only. No CI, workflow, job, log or other PR collection was refreshed.",
+      "prior_full_batch_discussion_read": {
+        "inline_comment_count": 0,
+        "issue_comment_count": 0,
+        "observed_at": "2026-10-18T21:17:11.659Z",
+        "record_urls": [],
+        "scope": "Normalized issue comments, inline comments and review submissions. This is separate from GraphQL reviewDecision.",
+        "started_at": "2026-10-18T21:17:11.097Z",
+        "submitted_review_count": 0,
+        "tool": "github_fetch_pr_comments",
+        "total_normalized_records": 0
+      },
+      "prior_full_batch_final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "prior_full_batch_metadata_observed_at": "2026-10-18T21:17:12.925Z",
+      "repository": "apache/commons-lang",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.044Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/apache/commons-lang/commits/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "submitted_identity_matches_coordinator_source": true,
+      "updated_at": "2026-10-18T21:18:33Z",
+      "upstream_actions": {
+        "classification": "Separate workflow-run metadata; never synthesized as CheckRuns",
+        "observed_at": "2026-10-18T21:16:46.891Z",
+        "returned": 3,
+        "runs": [
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.578Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682960/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+            "id": 39166682960,
+            "name": "Java CI",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-lang/actions/runs/39166682960"
+          },
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.573Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682974/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+            "id": 39166682974,
+            "name": "CodeQL",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-lang/actions/runs/39166682974"
+          },
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.571Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682962/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+            "id": 39166682962,
+            "name": "Dependency Review",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/apache/commons-lang/actions/runs/39166682962"
+          }
+        ],
+        "scope": "Fresh pull_request-triggered workflow collection for exact head, per_page=100; returned count equals total_count.",
+        "started_at": "2026-10-18T21:16:46.377Z",
+        "total_count": 3,
+        "url": "https://api.github.com/repos/apache/commons-lang/actions/runs?head_sha=9f75a9a6c2fcbc3d287a170827f2efe861cbe90d&event=pull_request&per_page=100&page=1"
+      }
     },
     {
       "base_sha": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+      "base_stable_across_collection": true,
       "check_contexts_returned": 7,
+      "check_outcomes": {
+        "passed": 5,
+        "skipped": 2
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.288Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
       "check_runs_returned": 7,
-      "checks_observed_at": "2026-10-18T15:13:36Z",
-      "collection": "Source retargeted to 3.1; final body/head/base verified. Upstream attempt 2 succeeded in all four actual builds; two downstream trigger jobs skipped. Four full logs confirm 53 original plus 21 compatibility cases pass, full-suite zero failures/errors/one skip; Linux17 Android API check passes. Earlier admission gates remain historical.",
+      "check_runs_total": 7,
+      "check_runs_url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.288Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-18T15:24:42Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": false,
+        "previous_updated_at": "2026-10-18T15:24:42Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
       "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+      "head_stable_across_collection": true,
       "id": "jackson-databind-6302",
-      "metadata_observed_at": "2026-10-18T15:25:01Z",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.341Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 2,
+      "metadata_issue_comment_count": 5,
+      "metadata_observed_at": "2026-10-18T21:17:12.303Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302",
       "number": 6302,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
       "repository": "FasterXML/jackson-databind",
       "review_decision": "",
-      "review_decision_collection": "Existing maintainer review is COMMENTED; one author helper reply verified at 15:16:13. No GraphQL reviewDecision or human approval inferred.",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.073Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
       "status_contexts_returned": 0,
-      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
-      "check_runs_observed_at": "2026-10-18T15:13:36Z",
-      "status_contexts_observed_at": "2026-10-18T15:13:36Z",
-      "reviews_observed_at": "2026-10-18T13:37:47.408Z",
-      "completed_hosted_evidence_url": "https://github.com/agamal026/jackson-databind/blob/d4b18b11fea2be9088b7ad19c768ae31998e2aed/contribution-review/6299/3.1-upstream/README.md"
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-18T15:24:42Z",
+      "upstream_actions": {
+        "classification": "Separate workflow-run metadata; never synthesized as CheckRuns",
+        "observed_at": "2026-10-18T21:16:46.852Z",
+        "returned": 1,
+        "runs": [
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+            "id": 39138054220,
+            "name": "Build and Deploy Snapshot",
+            "run_attempt": 2,
+            "status": "completed",
+            "url": "https://github.com/FasterXML/jackson-databind/actions/runs/39138054220"
+          }
+        ],
+        "scope": "Fresh pull_request-triggered workflow collection for exact head, per_page=100; returned count equals total_count.",
+        "started_at": "2026-10-18T21:16:46.377Z",
+        "total_count": 1,
+        "url": "https://api.github.com/repos/FasterXML/jackson-databind/actions/runs?head_sha=38261628a27c109e6e49c916cdb0f7e8bf7bbf45&event=pull_request&per_page=100&page=1"
+      }
+    },
+    {
+      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 1,
+      "check_outcomes": {
+        "passed": 1
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.041Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
+      "check_runs_returned": 0,
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.041Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-18T10:13:18Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-18T10:13:18Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "head_stable_across_collection": true,
+      "id": "javaparser-5175",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.554Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 1,
+      "metadata_observed_at": "2026-10-18T21:17:12.370Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175",
+      "number": 5175,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "repository": "javaparser/javaparser",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:45.961Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 1,
+      "status_contexts_total": 1,
+      "status_contexts_url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-18T10:13:18Z",
+      "upstream_actions": {
+        "classification": "Separate workflow-run metadata; never synthesized as CheckRuns",
+        "observed_at": "2026-10-18T21:16:46.908Z",
+        "returned": 2,
+        "runs": [
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.526Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999673/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+            "id": 39117999673,
+            "name": "Check codegen and formatting",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/javaparser/javaparser/actions/runs/39117999673"
+          },
+          {
+            "actual_job_collection": {
+              "observed_at": "2026-10-18T21:17:11.529Z",
+              "returned": 0,
+              "scope": "Fresh latest-attempt job metadata; no log fetch or execution action.",
+              "started_at": "2026-10-18T21:17:11.096Z",
+              "total_count": 0,
+              "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999726/jobs?per_page=100&page=1"
+            },
+            "conclusion": "action_required",
+            "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+            "id": 39117999726,
+            "name": "Build and test (using maven)",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/javaparser/javaparser/actions/runs/39117999726"
+          }
+        ],
+        "scope": "Fresh pull_request-triggered workflow collection for exact head, per_page=100; returned count equals total_count.",
+        "started_at": "2026-10-18T21:16:46.377Z",
+        "total_count": 2,
+        "url": "https://api.github.com/repos/javaparser/javaparser/actions/runs?head_sha=2a437e500bf54024772dd9f3d6d4149506defed2&event=pull_request&per_page=100&page=1"
+      }
+    },
+    {
+      "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 42,
+      "check_outcomes": {
+        "passed": 42
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.252Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
+      "check_runs_returned": 42,
+      "check_runs_total": 42,
+      "check_runs_url": "https://api.github.com/repos/AOMediaCodec/libavif/commits/04a56971f8994627dd5685b58c9ebfe299d01f97/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.252Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-09-09T23:21:10Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-09-09T23:21:10Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "04a56971f8994627dd5685b58c9ebfe299d01f97",
+      "head_stable_across_collection": true,
+      "id": "libavif-3350",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.313Z",
+      "is_draft": false,
+      "merged_at": "2026-09-09T23:21:10Z",
+      "metadata_inline_comment_count": 7,
+      "metadata_issue_comment_count": 0,
+      "metadata_observed_at": "2026-10-18T21:17:12.143Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/AOMediaCodec/libavif/pulls/3350",
+      "number": 3350,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "prior_graphql_review_decision": {
+        "disposition": "Historical observation retained here. It was not refreshed, revoked or changed by the REST collection; current field is unreported.",
+        "observed_at": "2026-10-17T20:01:04Z",
+        "source_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/snapshot-source.json",
+        "value": "APPROVED"
+      },
+      "repository": "AOMediaCodec/libavif",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "MERGED",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.060Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/AOMediaCodec/libavif/commits/04a56971f8994627dd5685b58c9ebfe299d01f97/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-09-09T23:21:10Z"
+    },
+    {
+      "additional_discussion_read": {
+        "inline_comment_count": 0,
+        "issue_comment_count": 2,
+        "observed_at": "2026-10-18T21:17:11.663Z",
+        "record_urls": [
+          "https://github.com/AOMediaCodec/libavif/pull/3413#issuecomment-6241498834",
+          "https://github.com/AOMediaCodec/libavif/pull/3413#issuecomment-6252132217"
+        ],
+        "scope": "Normalized issue comments, inline comments and review submissions. This is separate from GraphQL reviewDecision.",
+        "started_at": "2026-10-18T21:17:11.097Z",
+        "submitted_review_count": 0,
+        "tool": "github_fetch_pr_comments",
+        "total_normalized_records": 2
+      },
+      "base_sha": "c9cb32dbbaa3394d9f57afd2b4965ab0e56aaa62",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 26,
+      "check_outcomes": {
+        "failed": 1,
+        "passed": 25
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.233Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.573Z",
+      "check_runs_returned": 25,
+      "check_runs_total": 25,
+      "check_runs_url": "https://api.github.com/repos/AOMediaCodec/libavif/commits/93ef0a32c07741c34bb515295f5be3d270cca02d/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.233Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-18T16:12:33Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-13T19:43:27Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "93ef0a32c07741c34bb515295f5be3d270cca02d",
+      "head_stable_across_collection": true,
+      "id": "libavif-3413",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.486Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 2,
+      "metadata_observed_at": "2026-10-18T21:17:12.289Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/AOMediaCodec/libavif/pulls/3413",
+      "number": 3413,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "repository": "AOMediaCodec/libavif",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.099Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.573Z",
+      "status_contexts_returned": 1,
+      "status_contexts_total": 1,
+      "status_contexts_url": "https://api.github.com/repos/AOMediaCodec/libavif/commits/93ef0a32c07741c34bb515295f5be3d270cca02d/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-18T16:12:33Z"
+    },
+    {
+      "base_sha": "d82464a277d0f42703702c4dfd9af6af38595a83",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 0,
+      "check_outcomes": {},
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.180Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
+      "check_runs_returned": 0,
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/libevent/libevent/commits/14e56a95e1d524d8500da73bb49f9b0c80397057/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.180Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-15T13:13:47Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-15T13:13:47Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "14e56a95e1d524d8500da73bb49f9b0c80397057",
+      "head_stable_across_collection": true,
+      "id": "libevent-1916",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.454Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 0,
+      "metadata_observed_at": "2026-10-18T21:17:12.409Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/libevent/libevent/pulls/1916",
+      "number": 1916,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "prior_graphql_review_decision": {
+        "disposition": "Historical observation retained here. It was not refreshed, revoked or changed by the REST collection; current field is unreported.",
+        "observed_at": "2026-10-17T20:01:04Z",
+        "source_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/snapshot-source.json",
+        "value": "REVIEW_REQUIRED"
+      },
+      "repository": "libevent/libevent",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:45.993Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/libevent/libevent/commits/14e56a95e1d524d8500da73bb49f9b0c80397057/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-15T13:13:47Z"
+    },
+    {
+      "base_sha": "564f17974a45aba8b3d852f40a279e0b6ff82a80",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 1,
+      "check_outcomes": {
+        "passed": 1
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.060Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.573Z",
+      "check_runs_returned": 0,
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/nih-at/libzip/commits/5aeb57b6e922934125008756998b3ce2a93ba498/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.060Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-13T18:42:17Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-13T18:42:17Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "5aeb57b6e922934125008756998b3ce2a93ba498",
+      "head_stable_across_collection": true,
+      "id": "libzip-576",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.350Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 6,
+      "metadata_issue_comment_count": 8,
+      "metadata_observed_at": "2026-10-18T21:17:12.216Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/nih-at/libzip/pulls/576",
+      "number": 576,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "repository": "nih-at/libzip",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.059Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.573Z",
+      "status_contexts_returned": 1,
+      "status_contexts_total": 1,
+      "status_contexts_url": "https://api.github.com/repos/nih-at/libzip/commits/5aeb57b6e922934125008756998b3ce2a93ba498/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-13T18:42:17Z"
     },
     {
       "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+      "base_stable_across_collection": true,
       "check_contexts_returned": 55,
+      "check_outcomes": {
+        "passed": 55
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.373Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
       "check_runs_returned": 54,
-      "checks_observed_at": "2026-10-18T14:11:26Z",
-      "collection": "Independent canonical GitHub GET collection at 14:11:25-14:11:26 UTC rechecked the corrected PR head before all 54 CheckRuns, one successful AppVeyor StatusContext, nine workflows and 54 actual jobs. Every job/check/workflow succeeded. The full decoded successful TSan log was audited through 14:13:24 UTC and its checkout tree matches source. Other successful job logs and underlying AppVeyor logs were not inspected.",
+      "check_runs_total": 54,
+      "check_runs_url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.373Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-18T14:41:45Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": false,
+        "previous_updated_at": "2026-10-18T14:41:45Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
       "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+      "head_stable_across_collection": true,
       "id": "lz4-1890",
-      "metadata_observed_at": null,
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.360Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 0,
+      "metadata_observed_at": "2026-10-18T21:17:12.226Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/lz4/lz4/pulls/1890",
       "number": 1890,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
       "repository": "lz4/lz4",
       "review_decision": "",
-      "review_decision_collection": "The current PR metadata has zero issue/inline comment counts. The empty submitted-review list remains dated 13:38 from the first observer; it was not fetched again by the CI observer. No GraphQL reviewDecision was collected, so the normalized field remains unreported.",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.078Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
       "status_contexts_returned": 1,
-      "verification_file": "progress/2026-10-18-review-followthrough-verification.json",
-      "check_runs_observed_at": "2026-10-18T14:11:26Z",
-      "status_contexts_observed_at": "2026-10-18T14:11:26Z",
-      "reviews_observed_at": "2026-10-18T13:38:53.297Z",
-      "completed_hosted_evidence_url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
-      "retained_full_metadata_observed_at": "2026-10-18T14:11:26Z",
-      "final_body_readback": {
-        "updated_at": "2026-10-18T14:41:45Z",
-        "canonical_verified_at": null,
-        "observation_clock_note": "Canonical matching readback was verified by the coordinator; its exact readback clock was not captured.",
-        "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
-        "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
-        "state": "open",
-        "issue_comment_count": 0,
-        "change": "PR body links completed hosted packet 7751a987 and reports 54 jobs/CheckRuns, nine workflows and AppVeyor success.",
-        "comment_posted": false
+      "status_contexts_total": 1,
+      "status_contexts_url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-18T14:41:45Z",
+      "upstream_actions": {
+        "classification": "Separate workflow-run metadata; never synthesized as CheckRuns",
+        "observed_at": "2026-10-18T21:16:46.921Z",
+        "returned": 9,
+        "runs": [
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845170,
+            "name": "Sanitizers",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845170"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845143,
+            "name": "Build Systems",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845143"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845148,
+            "name": "Code Quality",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845148"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845146,
+            "name": "Cross Platform",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845146"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845159,
+            "name": "Compiler Tests",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845159"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845154,
+            "name": "Release & Environment",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845154"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845188,
+            "name": "Core Tests",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845188"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845224,
+            "name": "CMake Build Tests",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845224"
+          },
+          {
+            "actual_job_collection": {
+              "refreshed": false,
+              "scope": "No fresh job or full-log read; earlier execution evidence remains separately dated."
+            },
+            "conclusion": "success",
+            "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+            "id": 39133845150,
+            "name": "OSS-Fuzz",
+            "run_attempt": 1,
+            "status": "completed",
+            "url": "https://github.com/lz4/lz4/actions/runs/39133845150"
+          }
+        ],
+        "scope": "Fresh pull_request-triggered workflow collection for exact head, per_page=100; returned count equals total_count.",
+        "started_at": "2026-10-18T21:16:46.377Z",
+        "total_count": 9,
+        "url": "https://api.github.com/repos/lz4/lz4/actions/runs?head_sha=0917e70420429ea2acab6aaac48cffdf4e827440&event=pull_request&per_page=100&page=1"
       }
     },
     {
-      "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
-      "check_contexts_returned": 0,
-      "check_runs_returned": 0,
-      "status_contexts_returned": 0,
-      "checks_observed_at": "2026-10-18T17:15:56.104Z",
-      "check_runs_observed_at": "2026-10-18T17:15:56.104Z",
-      "status_contexts_observed_at": "2026-10-18T17:15:56.104Z",
-      "check_observation_note": "These are recorded batch observation times for the canonical initial PR/files/commit/CheckRun/status/Actions collection. Individual response-completion clocks were not captured; normalized readback was verified at 2026-10-18T17:15:56.900Z. Zero CheckRuns and StatusContexts are literal returned counts.",
-      "collection": "Fresh Commons Compress #825 metadata and literal empty check/status collections. Three separately inspected Actions runs require action and have zero jobs. Owned-fork validation and its full logs are recorded separately; no upstream test pass or acceptance is established.",
-      "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
-      "id": "commons-compress-825",
-      "metadata_observed_at": "2026-10-18T17:18:51.611Z",
-      "number": 825,
-      "repository": "apache/commons-compress",
+      "base_sha": "231a60ee3e90a43b829b9ca0a3013a8359b98d7e",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 1,
+      "check_outcomes": {
+        "passed": 1
+      },
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.060Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.574Z",
+      "check_runs_returned": 1,
+      "check_runs_total": 1,
+      "check_runs_url": "https://api.github.com/repos/nginx/nginx/commits/cba808773e79f4e329d25e5c70c4262f8f590ad1/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.069Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-15T12:33:23Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-15T12:33:23Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
+      },
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "cba808773e79f4e329d25e5c70c4262f8f590ad1",
+      "head_stable_across_collection": true,
+      "id": "nginx-1734",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.521Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 3,
+      "metadata_observed_at": "2026-10-18T21:17:12.398Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/nginx/nginx/pulls/1734",
+      "number": 1734,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "prior_graphql_review_decision": {
+        "disposition": "Historical observation retained here. It was not refreshed, revoked or changed by the REST collection; current field is unreported.",
+        "observed_at": "2026-10-17T20:01:04Z",
+        "source_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/snapshot-source.json",
+        "value": "REVIEW_REQUIRED"
+      },
+      "repository": "nginx/nginx",
       "review_decision": "",
-      "review_decision_collection": "No submitted reviews or inline comments were observed. No GraphQL reviewDecision or human approval is inferred; the normalized field remains unreported.",
-      "reviews_observed_at": "2026-10-18T17:16:50.883Z",
-      "verification_file": "progress/2026-10-18-commons-compress-825-verification.json",
-      "canonical_metadata_url": "https://api.github.com/repos/apache/commons-compress/pulls/825",
-      "owned_fork_hosted_evidence_url": "https://github.com/agamal026/commons-compress/blob/078e0a6a958ba1cf74387031867ae3eeb4450c8d/contribution-review/framed-statistics/hosted-verification/README.md",
-      "upstream_actions": {
-        "classification": "Workflow-run observations, not CheckRuns",
-        "run_count": 3,
-        "conclusion": "action_required",
-        "actual_jobs_returned": 0,
-        "runs": [
-          {
-            "id": 39148712206,
-            "url": "https://github.com/apache/commons-compress/actions/runs/39148712206",
-            "conclusion": "action_required",
-            "actual_jobs_returned": 0
-          },
-          {
-            "id": 39148712273,
-            "url": "https://github.com/apache/commons-compress/actions/runs/39148712273",
-            "conclusion": "action_required",
-            "actual_jobs_returned": 0
-          },
-          {
-            "id": 39148712364,
-            "url": "https://github.com/apache/commons-compress/actions/runs/39148712364",
-            "conclusion": "action_required",
-            "actual_jobs_returned": 0
-          }
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.069Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/nginx/nginx/commits/cba808773e79f4e329d25e5c70c4262f8f590ad1/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-15T12:33:23Z"
+    },
+    {
+      "additional_discussion_read": {
+        "inline_comment_count": 0,
+        "issue_comment_count": 1,
+        "observed_at": "2026-10-18T21:17:11.659Z",
+        "record_urls": [
+          "https://github.com/npm/cli/pull/9954#issuecomment-6241492647"
         ],
-        "runs_batch_observed_at": "2026-10-18T17:15:56.104Z",
-        "actual_job_lists_batch_observed_at": "2026-10-18T17:16:50.883Z",
-        "observation_clock_scope": "Recorded batch times, not individual response-completion clocks."
+        "scope": "Normalized issue comments, inline comments and review submissions. This is separate from GraphQL reviewDecision.",
+        "started_at": "2026-10-18T21:17:11.097Z",
+        "submitted_review_count": 0,
+        "tool": "github_fetch_pr_comments",
+        "total_normalized_records": 1
       },
-      "admission_comment": {
-        "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
-        "created_at": "2026-10-18T17:18:39Z",
-        "canonical_verified_at": "2026-10-18T17:18:51.611Z",
-        "issue_comments_returned": 1,
-        "inline_comments_observed": 0,
-        "submitted_reviews_observed": 0,
-        "instruction": "Do not duplicate the existing admission request.",
-        "batch_observed_at": "2026-10-18T17:18:50.934Z",
-        "retained_review_collection_batch_observed_at": "2026-10-18T17:16:50.883Z"
+      "base_sha": "c9876d7ea7150b0702e4151210b9fa1a8dbc7fbf",
+      "base_stable_across_collection": true,
+      "check_contexts_returned": 0,
+      "check_outcomes": {},
+      "check_runs_head_identity_verified": true,
+      "check_runs_observed_at": "2026-10-18T21:16:46.125Z",
+      "check_runs_request_started_at": "2026-10-18T21:16:45.573Z",
+      "check_runs_returned": 0,
+      "check_runs_total": 0,
+      "check_runs_url": "https://api.github.com/repos/npm/cli/commits/2e9c31473c5e7557f4a506a586f4a1b1f1f7c770/check-runs?per_page=100&page=1",
+      "checks_observed_at": "2026-10-18T21:16:46.125Z",
+      "collection": "Fresh complete REST PR metadata, current head CheckRuns (default latest filter), and combined latest-per-context legacy statuses. Each returned count equals its collection total_count. PR head and base were re-read after check collection.",
+      "comparison_with_prior_snapshot": {
+        "base_unchanged": true,
+        "current_updated_at": "2026-10-17T21:35:40Z",
+        "head_unchanged": true,
+        "normalized_checks_unchanged": true,
+        "previous_updated_at": "2026-10-15T14:24:47Z",
+        "snapshot_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/github.json",
+        "state_unchanged": true
       },
-      "review_observation_note": "The complete issue-comment, inline-comment, submitted-review and three job-list collection has a recorded batch observation clock of 2026-10-18T17:16:50.883Z; no individual response-completion clock is asserted.",
-      "metadata_batch_observed_at": "2026-10-18T17:18:50.934Z",
-      "metadata_observation_note": "metadata_observed_at is the final normalized PR/issue-comment readback verification time; the corresponding recorded batch clock is 2026-10-18T17:18:50.934Z."
+      "final_metadata_started_at": "2026-10-18T21:17:11.663Z",
+      "head_sha": "2e9c31473c5e7557f4a506a586f4a1b1f1f7c770",
+      "head_stable_across_collection": true,
+      "id": "npm-9954",
+      "initial_metadata_observed_at": "2026-10-18T21:16:21.630Z",
+      "is_draft": false,
+      "merged_at": null,
+      "metadata_inline_comment_count": 0,
+      "metadata_issue_comment_count": 1,
+      "metadata_observed_at": "2026-10-18T21:17:12.431Z",
+      "metadata_started_at": "2026-10-18T21:16:20.759Z",
+      "metadata_url": "https://api.github.com/repos/npm/cli/pulls/9954",
+      "number": 9954,
+      "pages_read": {
+        "check_runs": 1,
+        "status_contexts": 1
+      },
+      "prior_graphql_review_decision": {
+        "disposition": "Historical observation retained here. It was not refreshed, revoked or changed by the REST collection; current field is unreported.",
+        "observed_at": "2026-10-17T20:01:04Z",
+        "source_url": "https://github.com/agamal026/opensource/blob/973863dc6ebd92622d024604cc03cf8041865d54/data/snapshot-source.json",
+        "value": "REVIEW_REQUIRED"
+      },
+      "repository": "npm/cli",
+      "review_decision": "",
+      "review_decision_collection": "REST does not expose GraphQL reviewDecision. The current field is unreported; no value is inferred from reviews, branch policy, mergeability, CI, or prior observations.",
+      "state": "OPEN",
+      "status_contexts_observed_at": "2026-10-18T21:16:46.018Z",
+      "status_contexts_request_started_at": "2026-10-18T21:16:45.574Z",
+      "status_contexts_returned": 0,
+      "status_contexts_total": 0,
+      "status_contexts_url": "https://api.github.com/repos/npm/cli/commits/2e9c31473c5e7557f4a506a586f4a1b1f1f7c770/status?per_page=100&page=1",
+      "status_head_identity_verified": true,
+      "updated_at": "2026-10-17T21:35:40Z"
     }
   ],
-  "retained_jackson_observation": {
-    "latest_scope": "Jackson #6302 PR metadata, one successful Gitar CheckRun, zero StatusContexts, its bot comment and one admission follow-up. Gitar functional validation was not enabled. Upstream Build and Deploy Snapshot remained action_required and its actual job list returned zero jobs. No submitted reviews were returned.",
-    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
-    "observed_at": "2026-10-18T12:11:13Z",
-    "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
-  },
-  "retained_javaparser_observation": {
-    "initial_observed_at": "2026-10-18T10:10:37Z",
-    "latest_scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
-    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
-    "observed_at": "2026-10-18T10:19:27Z",
-    "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
-  },
-  "retained_observation": {
-    "check_contexts_retained": 70,
-    "command": "python3 tools/oss_status.py refresh --output <local-output>/github.json",
-    "observed_at": "2026-10-17T20:01:04Z",
-    "provenance_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/snapshot-source.json",
-    "python_version": "3.14.4",
-    "snapshot_sha256": "4777a8ee8c0d3e363b7f7cc214042eb63d1072ac22714cd2fb48d5995c0095cb",
-    "snapshot_url": "https://github.com/agamal026/opensource/blob/34e15f46ce506ba4cd052a015eb93e3f12cf1fd0/data/github.json",
-    "source": "GitHub CLI GraphQL refresh",
-    "tool_sha256": "83eef6f25fd842cb118cfe49fa44d80c23b7394bd5306dd12e221911bfe59c8e",
-    "tool_source_commit": "77627bfdf5d61674f7738db16e5fae164e391cb5",
-    "transport": "gh api graphql --hostname github.com --method POST --input -",
-    "transport_version": "gh 2.46.0"
-  },
+  "review_decision_collection": "All eleven current review_decision values are empty because no GraphQL reviewDecision source was queried. Four prior nonempty GraphQL values are preserved in per-record historical provenance. This source-coverage change does not establish a review decision changed.",
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "18c7a35de204580ef327d658a653f69d2fb8ca93e5588af21a60ee3824550357",
-  "source": "Composite reviewed snapshot: six historical CLI rows and three existing campaign PR rows retained unchanged, plus the newly observed Commons Compress #825 row from canonical GitHub responses. Separate bounded follow-through confirms the prior three campaign outcomes without replacing their normalized values or original observation dates. This is not a full live refresh of all ten PRs.",
-  "initial_lz4_observation": {
-    "latest_scope": "LZ4 #1890 PR metadata, 54 CheckRuns with two successes and queued/running jobs, one pending AppVeyor StatusContext, nine admitted workflow records, and empty comment/review lists. No full upstream matrix pass is established.",
-    "method": "Coordinator-supplied canonical GitHub connector GET responses, normalized into the existing public schema; oss_status.py refresh was not run for this update.",
-    "observed_at": "2026-10-18T13:07:28Z",
-    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json"
-  },
-  "retained_lz4_observation_1313": {
-    "latest_scope": "At 2026-10-18T13:13:26Z, all 54 upstream CheckRuns and all 54 actual workflow jobs showed 48 successes and six in progress, with no failures. Six of nine workflows were successful; three and AppVeyor remained pending. Actual job and step metadata were inspected for all nine workflows. The initial 13:07:28 comment/review observation was retained rather than refreshed. No complete matrix pass is established.",
-    "method": "Canonical GitHub connector GET observations collected by an independent agent over 13:13:17–13:13:26 UTC, checked and normalized by the coordinator. The eight older PR rows were not refreshed.",
-    "observed_at": "2026-10-18T13:13:26Z",
-    "verification_file": "progress/2026-10-18-lz4-1890-submission-verification.json",
-    "evidence_url": "https://github.com/agamal026/lz4/blob/77b69464c6c9afb253eb8c186ac404afbc43e87b/contribution-review/1889/UPSTREAM_CI.md"
-  },
-  "bounded_metadata_follow_up_1337": {
-    "started_at": "2026-10-18T13:37:19.087Z",
-    "finished_at": "2026-10-18T13:37:19.982Z",
-    "external_prs": [
-      "https://github.com/npm/cli/pull/9954",
-      "https://github.com/AOMediaCodec/libavif/pull/3413",
-      "https://github.com/libevent/libevent/pull/1916",
-      "https://github.com/nginx/nginx/pull/1734",
-      "https://github.com/nih-at/libzip/pull/576"
-    ],
-    "scope": "Five canonical PR metadata GETs; no head/base/update-time or comment-count changes against the previous live observation. No discussions, reviews, checks, jobs or reward evidence were refreshed for these five PRs. The older merged record was not queried.",
-    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
-  },
-  "pre_correction_followthrough_observation_1340": {
-    "observed_at": "2026-10-18T13:40:00.876Z",
-    "method": "Independent canonical GitHub connector GET observations, curated from complete source records. No oss_status.py refresh call or GitHub CLI collection was performed.",
-    "latest_scope": "Only JavaParser #5175, Jackson #6302 and LZ4 #1890 were refreshed for metadata, comments/reviews, checks/statuses and actual workflow job lists. LZ4 has 53 successful jobs and one confirmed ThreadSanitizer failure. Jackson has new branch/helper requests and a CLA reminder. JavaParser has no new feedback. The six historical snapshot rows retain their old dates and values.",
-    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
-  },
-  "corrected_lz4_hosted_evidence": {
-    "commit": "7751a987a7199b696902630b16d8e831880e9451",
-    "tree": "26c43584a573c3b0ec837f98b3c933d60aa43f89",
-    "parent": "a96c638dc9160f43544c8cd8414624cb2c166730",
-    "branch": "evidence/1889-tsan-hosted",
-    "index_url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
-    "observation_from": "2026-10-18T14:11:25Z",
-    "observation_through": "2026-10-18T14:11:26Z",
-    "scope": "Immutable completed hosted evidence supplement; its publication does not change the source head or any metadata/check observation date. Full monitor receipt and decoded TSan log are archive members; only curated facts are copied into the hub."
-  },
-  "retained_followthrough_observation_1411": {
-    "observed_at": "2026-10-18T14:11:26Z",
-    "method": "Composite canonical GitHub connector observations: initial three-PR follow-through followed by a separate independent head-checked corrected-LZ4 CI collection and full decoded TSan log audit.",
-    "latest_scope": "Only three campaign PR records are refreshed. LZ4 now records corrected head 0917e70420429ea2acab6aaac48cffdf4e827440 at 14:11:25-14:11:26 UTC: all 54 actual jobs, 54 CheckRuns and nine workflows succeeded; AppVeyor reports success. The full TSan log confirms the actual legacy regression. JavaParser and Jackson retain their separate 13:37-13:40 observations; all six historical records retain their old dates and values.",
-    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
-  },
-  "retained_observation_2026_10_18_1525": {
-    "observed_at": "2026-10-18T15:25:01Z",
-    "method": "Composite canonical final Jackson PR/body readback and separately audited upstream workflow/check/job/log data; retained LZ4, JavaParser and historical observations.",
-    "latest_scope": "Jackson source 38261628a27c109e6e49c916cdb0f7e8bf7bbf45 targets 3.1. Final body/head/base verified at 15:25:01; upstream attempt 2 passed four builds, with two skipped downstream jobs and seven CheckRuns, observed 15:13:35-15:13:36, logs retrieved by 15:13:49. LZ4 CI remains dated 14:11 and final body update 14:41:45 has no captured readback clock. Six historical rows remain unchanged.",
-    "verification_file": "progress/2026-10-18-review-followthrough-verification.json"
-  },
-  "retained_snapshot_scope_2026_10_18_1525": {
-    "observed_at": "2026-10-18T15:25:01Z",
-    "snapshot_sha256": "7485202bbadb2df79a228bf459b90296d38aae5a9b4f97f2def8811f1f523022",
-    "provenance_sha256": "eef9e29635f0fe8acc1676514fbfaf68ef693ec1b1ad05397fd5d9f58d7df36a",
-    "snapshot_url": "https://github.com/agamal026/opensource/blob/e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a/data/github.json",
-    "provenance_url": "https://github.com/agamal026/opensource/blob/e483dfc7f5292b43adf98f1abc8cb20ec05f6c7a/data/snapshot-source.json",
-    "source": "Composite reviewed snapshot: six retained historical CLI records and three refreshed contributor PR records from canonical connector GET observations. This is not a full live collection of every registered PR.",
-    "metadata_collection": "Jackson final PR/body metadata was verified at 2026-10-18T15:25:01Z: five issue comments/two inline comments. Helper reply individually verified 15:16:13; earlier complete discussion/review lists retain 13:37 dates. LZ4 final body/head/base/state readback was verified after its 14:41:45 update without a captured clock; full metadata/CI remains separately dated 14:11. JavaParser remains at 13:37-13:40. Historical rows retain all prior values/dates.",
-    "check_collection": "Retain six historical records/70 contexts at 2026-10-17T20:01:04Z. JavaParser retains successful AppVeyor plus two action_required/zero-job runs at 13:40. Jackson current head has seven CheckRuns: four successful builds, two skipped downstream triggers and successful Gitar; four full logs show 74 passing cases/full-suite zero failures/errors. Zero legacy status contexts. LZ4 retains 54 successful CheckRuns/jobs, nine successful workflows and successful AppVeyor at 14:11:25-14:11:26. Earlier Jackson admission gates and LZ4 failure remain historical.",
-    "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below."
-  },
-  "bounded_followthrough_2026_10_18_1608": {
-    "started_at": "2026-10-18T16:08:17.249Z",
-    "finished_at": "2026-10-18T16:11:15.089Z",
-    "verification_file": "progress/2026-10-18-1608-screen-followthrough.json",
-    "verification_sha256": "41ca8c8a75187cf96cea04e745ea68d9820fbb58ecc1e0da90a20e79ef909179",
-    "current_prs": [
-      "https://github.com/FasterXML/jackson-databind/pull/6302",
-      "https://github.com/lz4/lz4/pull/1890",
-      "https://github.com/javaparser/javaparser/pull/5175"
-    ],
-    "scope": "Complete current discussion/review collections and workflow/check/status metadata for three current campaign PRs, plus two JavaParser job lists. No new actionable feedback or source/base change. Jackson and LZ4 remain successful with earlier execution evidence retained; JavaParser retains two action_required runs with zero jobs.",
-    "historical_metadata_only": "Five older open PRs had unchanged selected metadata against the prior bounded observation. Their discussions, reviews, checks, workflow jobs, full logs and reward eligibility were not refreshed; the historical merged record was not queried.",
-    "effect_on_snapshot": "No prior normalized row, review outcome or per-record observation date was replaced."
-  },
-  "three_project_screen_2026_10_18_1606": {
-    "verification_file": "progress/2026-10-18-1608-screen-followthrough.json",
-    "verification_sha256": "41ca8c8a75187cf96cea04e745ea68d9820fbb58ecc1e0da90a20e79ef909179",
-    "scope": "The linked screening summary retains its original source-read and compilation times. Later Commons Compress implementation and submission evidence is in the separate Commons verification receipt.",
-    "decisions": [
-      {
-        "repository": "apache/commons-compress",
-        "decision": "Selected scoped framed-output counter correction; subsequent external PR #825 is recorded separately."
-      },
-      {
-        "repository": "apache/commons-io",
-        "decision": "IO-754 reserve pending reproduction; not in the current 100-project campaign and no IO tests executed."
-      },
-      {
-        "repository": "jhy/jsoup",
-        "decision": "Excluded by the pinned policy rejecting AI-generated code and issue/PR/discussion text."
-      }
-    ],
-    "benefit_scope": "Commons Compress and Commons IO have only conditional project-level OSS-Fuzz/Patch Rewards scope; no patch-specific security qualification, participant eligibility, application, award, activated subscription or payment is established."
-  }
+  "snapshot_sha256": "7b8f37154d56d1a8e10e17aace57f930948b0c56618d2bbe75aa5fa5e3a5dd45",
+  "source": "Complete eleven-PR REST metadata and current-head check/status collection through 2026-10-18T21:17:12.925Z, followed by a separately dated Commons Lang metadata/discussion supplement after the coordinator posted one CI-admission comment. All other observations retain their individual full-batch timestamps. GraphQL reviewDecision remains unreported.",
+  "supplementary_findings": [
+    {
+      "comment_created_at": "2026-10-18T16:12:33Z",
+      "finding": "The maintainer reports contacting the contributor by email about the CLA. The failing CLA context remains. No email was accessed, comment sent or legal assent inferred.",
+      "id": "libavif-3413",
+      "url": "https://github.com/AOMediaCodec/libavif/pull/3413#issuecomment-6252132217"
+    },
+    {
+      "admission_comment_url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077",
+      "finding": "Submitted head and base match the coordinator source. At the full-batch observation, three upstream workflows required admission and their job collections were empty, with zero CheckRuns and StatusContexts. The later supplement verified one coordinator admission comment, zero inline comments/reviews, and unchanged source/open state; no CI observation was refreshed.",
+      "id": "commons-lang-1826"
+    },
+    {
+      "finding": "All nine current workflows and 54 CheckRuns remain successful; the separate AppVeyor status succeeds. Earlier full TSan success applies to this unchanged head and is not a current blocker.",
+      "full_log_refetched": false,
+      "id": "lz4-1890",
+      "inherited_execution_evidence_url": "https://github.com/agamal026/lz4/blob/7751a987a7199b696902630b16d8e831880e9451/contribution-review/1889/tsan-hosted/README.md",
+      "original_execution_observation": "2026-10-18T14:11:25Z to 2026-10-18T14:11:26Z"
+    }
+  ],
+  "timestamp_semantics": "UTC timestamps sampled with JavaScript Date immediately before and after individual awaited connector reads. Date was checked against the UTC clock tool at 21:15:17 UTC. Top-level observation is collection completion; per-record timestamps identify actual read completion, not source event time."
 }
