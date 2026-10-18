@@ -1,12 +1,12 @@
 # Open-source progress
 
-Observed at: 2026-10-18T10:19:27Z. Baseline date: 2026-10-13 (UTC).
+Observed at: 2026-10-18T12:11:13Z. Baseline date: 2026-10-13 (UTC).
 
 This report is generated from the public catalog and a dated GitHub snapshot. It is not a live status page.
 
 ## Upstream contributions
 
-Registered pull requests: 7; open: 6; merged: 1; closed without merge: 0.
+Registered pull requests: 8; open: 7; merged: 1; closed without merge: 0.
 
 Registered PRs with a recorded merge on or after 2026-10-13: 0.
 
@@ -18,6 +18,7 @@ Check results describe only the rollup returned by GitHub for each recorded head
 | --- | --- | --- | --- | --- |
 | [AOMediaCodec/libavif \#3350](<https://github.com/AOMediaCodec/libavif/pull/3350>) | merged | 42 passed | approved | 2026-09-09T23:21:10Z |
 | [AOMediaCodec/libavif \#3413](<https://github.com/AOMediaCodec/libavif/pull/3413>) | open | 1 failed; 25 passed | not reported | 2026-10-13T19:43:27Z |
+| [FasterXML/jackson\-databind \#6302](<https://github.com/FasterXML/jackson-databind/pull/6302>) | open | 1 passed | not reported | 2026-10-18T12:10:40Z |
 | [javaparser/javaparser \#5175](<https://github.com/javaparser/javaparser/pull/5175>) | open | 1 passed | not reported | 2026-10-18T10:13:18Z |
 | [libevent/libevent \#1916](<https://github.com/libevent/libevent/pull/1916>) | open | unknown (no checks returned) | review required | 2026-10-15T13:13:47Z |
 | [nginx/nginx \#1734](<https://github.com/nginx/nginx/pull/1734>) | open | 1 passed | review required | 2026-10-15T12:33:23Z |
@@ -116,6 +117,21 @@ Correct automatic output\-format selection for grayscale JPEGs with ICC profiles
 | [build\-windows\-installed \(msvc\)](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429359/job/115489899229>) | check run | COMPLETED | SUCCESS | passed |
 | [clang\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896133>) | check run | COMPLETED | SUCCESS | passed |
 | [cmake\-format\-check](<https://github.com/AOMediaCodec/libavif/actions/runs/38453429058/job/115489896433>) | check run | COMPLETED | SUCCESS | passed |
+
+### FasterXML/jackson\-databind #6302: Write an empty array when singleton container content is filtered out
+
+Write an empty array when content filtering suppresses an unwrapped singleton, while preserving configured exception wrapping\.
+
+- Source: [pull request](<https://github.com/FasterXML/jackson-databind/pull/6302>)
+- Head commit: `de533c218b30a86ac9e74a6627b7224c2a0d2987`
+- Base commit: `d2d5526ee317cbc0300c29e3257a6e9690774d96`
+- Catalog note: Published source: https://github\.com/agamal026/jackson\-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987 \. The exact source, before/after hosted validation and independent automated review are retained at https://github\.com/agamal026/jackson\-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution\-review/6299/README\.md \.
+- Catalog note: The final fork CI passed all 53 new regression invocations on Linux JDK 17/21/25 and Windows JDK 17\. Full\-suite totals are 7,574 on JDK 17 and 7,576 on JDK 21/25, with zero failures or errors and one skip per build\. Linux JDK 17 also passed static Android API compatibility; no device execution is claimed\.
+- Catalog note: At 2026\-10\-18T12:11:13Z, the upstream Gitar CheckRun reported success, but its bot comment states functional validation was not enabled\. Build and Deploy Snapshot required maintainer authorization and returned zero jobs\. One admission follow\-up is already posted at https://github\.com/FasterXML/jackson\-databind/pull/6302\#issuecomment\-6249752236 \. Do not duplicate it without new evidence\. CLA acceptance, upstream acceptance, issue bounty, patch\-specific reward eligibility and realized benefits remain unverified\.
+
+| Check | Kind | Raw status | Conclusion | Interpretation |
+| --- | --- | --- | --- | --- |
+| [Gitar](<https://github.com/FasterXML/jackson-databind/runs/117671129240>) | check run | COMPLETED | SUCCESS | passed |
 
 ### javaparser/javaparser #5175: Preserve spacing before the type when removing the last import
 

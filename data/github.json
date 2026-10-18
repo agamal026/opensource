@@ -1,5 +1,5 @@
 {
-  "observed_at": "2026-10-18T10:19:27Z",
+  "observed_at": "2026-10-18T12:11:13Z",
   "pull_requests": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -607,6 +607,29 @@
       "title": "Preserve spacing before the type when removing the last import",
       "updated_at": "2026-10-18T10:13:18Z",
       "url": "https://github.com/javaparser/javaparser/pull/5175"
+    },
+    {
+      "id": "jackson-databind-6302",
+      "repository": "FasterXML/jackson-databind",
+      "number": 6302,
+      "url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "title": "Write an empty array when singleton container content is filtered out",
+      "state": "OPEN",
+      "is_draft": false,
+      "updated_at": "2026-10-18T12:10:40Z",
+      "merged_at": null,
+      "head_sha": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+      "base_sha": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+      "review_decision": "",
+      "checks": [
+        {
+          "kind": "check_run",
+          "name": "Gitar",
+          "status": "COMPLETED",
+          "conclusion": "SUCCESS",
+          "url": "https://github.com/FasterXML/jackson-databind/runs/117671129240"
+        }
+      ]
     }
   ],
   "schema_version": 1

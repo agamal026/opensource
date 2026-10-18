@@ -96,6 +96,18 @@
       "repository": "javaparser/javaparser",
       "summary": "Preserve the existing separator before a type when the lexical-preserving printer removes the last of multiple imports.",
       "url": "https://github.com/javaparser/javaparser/pull/5175"
+    },
+    {
+      "id": "jackson-databind-6302",
+      "repository": "FasterXML/jackson-databind",
+      "number": 6302,
+      "url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "summary": "Write an empty array when content filtering suppresses an unwrapped singleton, while preserving configured exception wrapping.",
+      "notes": [
+        "Published source: https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987 . The exact source, before/after hosted validation and independent automated review are retained at https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md .",
+        "The final fork CI passed all 53 new regression invocations on Linux JDK 17/21/25 and Windows JDK 17. Full-suite totals are 7,574 on JDK 17 and 7,576 on JDK 21/25, with zero failures or errors and one skip per build. Linux JDK 17 also passed static Android API compatibility; no device execution is claimed.",
+        "At 2026-10-18T12:11:13Z, the upstream Gitar CheckRun reported success, but its bot comment states functional validation was not enabled. Build and Deploy Snapshot required maintainer authorization and returned zero jobs. One admission follow-up is already posted at https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236 . Do not duplicate it without new evidence. CLA acceptance, upstream acceptance, issue bounty, patch-specific reward eligibility and realized benefits remain unverified."
+      ]
     }
   ],
   "candidates": [

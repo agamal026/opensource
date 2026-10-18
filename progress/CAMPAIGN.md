@@ -2,7 +2,7 @@
 
 Started: 2026-10-17. Records reviewed through: 2026-10-18.
 
-**Goal progress: 1 / 100 distinct external repositories with qualified campaign submissions.**
+**Goal progress: 2 / 100 distinct external repositories with qualified campaign submissions.**
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -14,12 +14,12 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 98 | 100 |
-| screened | 0 | 2 |
-| selected | 0 | 2 |
-| reproduced | 0 | 2 |
-| validated | 1 | 2 |
-| submitted | 1 | 1 |
+| target | 97 | 100 |
+| screened | 0 | 3 |
+| selected | 0 | 3 |
+| reproduced | 0 | 3 |
+| validated | 1 | 3 |
+| submitted | 2 | 2 |
 | accepted | 0 | 0 |
 
 ## Batches
@@ -31,7 +31,7 @@ This offline report checks record structure and consistency. Verify what the lin
 | 3 | 10 | 0 | 0 | 0 | 0 |
 | 4 | 10 | 0 | 0 | 0 | 0 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
-| 6 | 10 | 0 | 0 | 0 | 0 |
+| 6 | 10 | 1 | 1 | 1 | 0 |
 | 7 | 10 | 1 | 1 | 1 | 0 |
 | 8 | 10 | 0 | 0 | 0 | 0 |
 | 9 | 10 | 0 | 0 | 0 | 0 |
@@ -801,17 +801,24 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jac
 
 ### [FasterXML/jackson\-databind](<https://github.com/FasterXML/jackson-databind>)
 
-Batch 6 · current stage: **target**.
+Batch 6 · current stage: **submitted**.
 
-jackson\-databind: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+Fix \#6299: write a valid empty array when content inclusion suppresses the sole element of an unwrapped container, preserving configured content\-filter exception wrapping\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Follow upstream PR \#6302 at exact head de533c218b30a86ac9e74a6627b7224c2a0d2987\. At 2026\-10\-18T12:11:13Z, Gitar reported success with no issues and medium risk; functional validation was not enabled\. Upstream Build and Deploy Snapshot run 39125996146 required maintainer authorization and its actual job list returned zero jobs\. The admission follow\-up is already posted at https://github\.com/FasterXML/jackson\-databind/pull/6302\#issuecomment\-6249752236; do not repeat it without a reply or material change\. Read admission/results and substantive feedback, then address concrete changes\. Reuse the published four\-job fork validation and independent automated review for unchanged source: all 53 new cases pass, with zero full\-suite failures or errors and one skip per build\. CLA acceptance remains unverified and is required before upstream acceptance\. No issue bounty, patch\-specific reward qualification, upstream acceptance or realized benefit is verified\.
 
-Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
+Benefit route: **cash / conditional**, checked 2026-10-18. Tier 2 project scope checked on October 18\. This serialization correctness fix has no verified issue bounty or patch\-specific security\-reward qualification; participant eligibility, upstream acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jackson-databind/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/FasterXML/jackson-databind>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/jackson-databind/project.yaml>).
+- 2026-10-18 **screened**: [evidence 1](<https://github.com/FasterXML/jackson-databind/issues/6299>); [evidence 2](<https://github.com/FasterXML/jackson-databind/blob/d2d5526ee317cbc0300c29e3257a6e9690774d96/CLAUDE.md>); [policy\_ref](<https://github.com/FasterXML/jackson/blob/main/CONTRIBUTING.md>).
+- 2026-10-18 **selected**: [evidence 1](<https://github.com/FasterXML/jackson-databind/issues/6299>); [evidence 2](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md>); [selection\_ref](<https://github.com/FasterXML/jackson-databind/issues/6299>).
+- 2026-10-18 **reproduced**: [evidence 1](<https://github.com/agamal026/jackson-databind/actions/runs/39124036186>); [evidence 2](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/VALIDATION.json>); [source 342f5dbae53a7b44ec7327fd6def30808f8a1047](<https://github.com/agamal026/jackson-databind/commit/342f5dbae53a7b44ec7327fd6def30808f8a1047>).
+  Validation command: \./mvnw \-B \-ff \-ntp verify; result: **reproduced**; [validation record](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md#before-and-after>).
+- 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md>); [evidence 2](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/VALIDATION.json>); [evidence 3](<https://github.com/agamal026/jackson-databind/actions/runs/39124679661>); [review\_ref](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/AUTOMATED_REVIEW.md>); [source de533c218b30a86ac9e74a6627b7224c2a0d2987](<https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987>).
+  Validation command: \./mvnw \-B \-ff \-ntp verify; result: **passed**; [validation record](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md#before-and-after>).
+- 2026-10-18 **submitted**: [evidence 1](<https://github.com/FasterXML/jackson-databind/pull/6302>); [evidence 2](<https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987>); [evidence 3](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md>); [pr\_url](<https://github.com/FasterXML/jackson-databind/pull/6302>); validated source de533c218b30a86ac9e74a6627b7224c2a0d2987.
 
 ### [git/git](<https://github.com/git/git>)
 

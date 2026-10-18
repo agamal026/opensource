@@ -1,0 +1,687 @@
+{
+  "admission_follow_up": {
+    "author": "agamal026",
+    "body": "Could a maintainer approve the GitHub Actions run for this first-time contribution? Run 39125996146 is awaiting approval and has no jobs yet. The four-platform fork validation for the same source revision passed; the results and logs are linked in the PR description. Thank you.",
+    "body_read_back_verified": true,
+    "created_at": "2026-10-18T12:10:40Z",
+    "next_action": "Await a reply or material change; do not duplicate the admission request.",
+    "posted_once": true,
+    "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236"
+  },
+  "campaign_accounting": {
+    "benefit_route": "Conditional project scope only, checked on 2026-10-18. No issue bounty, patch-specific security-reward qualification, participant eligibility, upstream acceptance, award or payment is established.",
+    "currently_at_stage": {
+      "accepted": 0,
+      "reproduced": 0,
+      "screened": 0,
+      "selected": 0,
+      "submitted": 2,
+      "target": 97,
+      "validated": 1
+    },
+    "h2": "Remains validated and parked with its personal contributor-statement and documented remaining gates; the contributor-fork draft is not an upstream submission.",
+    "historical_distinct_repositories": 5,
+    "historical_submissions": 6,
+    "qualified_submitted_projects": [
+      "javaparser/javaparser",
+      "FasterXML/jackson-databind"
+    ],
+    "qualified_submitted_repositories": 2,
+    "research_queue_repositories": 100,
+    "target_count": 100,
+    "verified_campaign_cash_receipts": 0,
+    "verified_new_benefits": 0
+  },
+  "collection": "Publication and canonical GitHub connector GET read-back performed by the coordinator. The hub editor transcribed the supplied observation and read the already prepared public evidence packet; it made no new GitHub API queries or upstream test runs.",
+  "continuation": {
+    "baseline_date": "2026-10-13",
+    "cadence": "Existing hourly native schedule preserved.",
+    "libzip_earliest_recheck": "2026-10-22T13:12:13Z",
+    "limits": "No legal signature, human review, upstream acceptance, reward entitlement or guaranteed future unattended execution is claimed.",
+    "notification_rule": "Proceed with the first 100 contributions, self improve, report back only when done.",
+    "other_tasks": "Preserve all other existing tasks and their schedules.",
+    "review_date": "2026-11-12"
+  },
+  "contributor_draft": {
+    "body_update_read_back_verified": true,
+    "is_draft": true,
+    "scope": "Coordinator updated the owned draft to link external PR #6302, final source/evidence and completed fork validation. It remains excluded from campaign submission counts.",
+    "url": "https://github.com/agamal026/jackson-databind/pull/1"
+  },
+  "evidence": {
+    "archive_internal_paths": [
+      "AUTOMATED_REVIEW.md",
+      "README.md",
+      "SHA256SUMS",
+      "VALIDATION.json",
+      "baseline-hosted/audit.json",
+      "baseline-hosted/job-117665313618.log",
+      "baseline-hosted/job-117665313774.log",
+      "baseline-hosted/job-117665313783.log",
+      "baseline-hosted/job-117665313857.log",
+      "baseline-hosted/jobs.json",
+      "exception-baseline/audit.json",
+      "exception-baseline/job-117666801298.log",
+      "final-hosted/audit.json",
+      "final-hosted/job-117667201103.log",
+      "final-hosted/job-117667201282.log",
+      "final-hosted/job-117667201285.log",
+      "final-hosted/job-117667201332.log",
+      "final-hosted/jobs.json",
+      "source/SOURCE_FILES.json",
+      "source/jackson-databind-6299.patch"
+    ],
+    "artifact_scope": "Only the four linked files are published directly. Source patches, full decoded logs, job metadata and audits are inside the ZIP; archive-internal paths are not GitHub blob URLs.",
+    "automated_review_decision": "ACCEPT on de533c218b30a86ac9e74a6627b7224c2a0d2987; no outstanding required source changes. This is independent automated source review, not personal human review.",
+    "branch": "evidence/6299-filtered-single-element",
+    "canonical_directory_verified_by": "Coordinator matched the four canonical file sizes and Git blob IDs with the prepared public packet.",
+    "commit": "942fb1328e72dd76cf58a32b194d9d3783baad16",
+    "index_url": "https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md",
+    "published_artifacts": {
+      "AUTOMATED_REVIEW.md": {
+        "bytes": 7893,
+        "sha256": "aa17abf2a68845c87b861bb37301fa59f4ac2f8cf049446a1e2d36a3d98d7d71",
+        "url": "https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/AUTOMATED_REVIEW.md"
+      },
+      "README.md": {
+        "bytes": 8931,
+        "sha256": "8d13e9cc3e6b0d882af0908d86873a214a719b24100fad5210b147dd8c4af94a",
+        "url": "https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md"
+      },
+      "VALIDATION.json": {
+        "bytes": 10312,
+        "sha256": "2d99d25c9fe927da4b018bb8e7555dac54dba540f99b98418a4249b3e5db81df",
+        "url": "https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/VALIDATION.json"
+      },
+      "jackson-databind-6299-evidence.zip": {
+        "bytes": 416739,
+        "sha256": "df69e69cbf2d097ae2511175c8cc578e9d0516dd04705bcf18dbfacbc0a2bc9b",
+        "url": "https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/jackson-databind-6299-evidence.zip"
+      }
+    },
+    "tree": "3e109c3b904f27ad9a4ed54b6dd7db623ff74941"
+  },
+  "historical_follow_through": {
+    "cutoff": "2026-10-18T11:07:19Z",
+    "finished_at": "2026-10-18T11:18:28Z",
+    "limits": "This metadata check does not refresh historical discussion bodies, review decisions or check rollups. The seven existing snapshot rows and their observation dates remain unchanged.",
+    "method": "Five metadata-only canonical GET requests. No head/base or comment-count delta; no PR updated after the cutoff. No additional discussion or CI reads were made in this bounded check.",
+    "started_at": "2026-10-18T11:18:27Z",
+    "urls": [
+      "https://github.com/npm/cli/pull/9954",
+      "https://github.com/AOMediaCodec/libavif/pull/3413",
+      "https://github.com/libevent/libevent/pull/1916",
+      "https://github.com/nginx/nginx/pull/1734",
+      "https://github.com/nih-at/libzip/pull/576"
+    ]
+  },
+  "hub_publication": {
+    "scope": "This is a local reviewable hub update. No new hub commit, remote CI run or public publication outcome is claimed before coordinator publication.",
+    "status": "pending"
+  },
+  "hub_validation": {
+    "commands": [
+      {
+        "command": "python3 -m unittest discover -s tests -v",
+        "errors": 0,
+        "exit_code": 0,
+        "failures": 0,
+        "finished_at": "2026-10-18T12:18:19.953269Z",
+        "output_sha256": "1ad37b516d8fc1f535328182b839037257f37293a01c707ee770877bd6b4a4f8",
+        "skipped": 0,
+        "started_at": "2026-10-18T12:18:18.777000Z",
+        "terminal_summary": "\n----------------------------------------------------------------------\nRan 81 tests in 1.035s\n\nOK",
+        "tests_run": 81
+      },
+      {
+        "command": "python3 tools/oss_status.py validate",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:18:20.020321Z",
+        "output_sha256": "f221c1961166f486fd46d4352058295e731035dd1934d37355101311cb38a416",
+        "started_at": "2026-10-18T12:18:19.953592Z",
+        "terminal_summary": "Valid: 2 projects, 8 pull requests, 2 candidates"
+      },
+      {
+        "command": "python3 tools/oss_status.py render --output progress/STATUS.md --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:18:20.096632Z",
+        "output_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508",
+        "started_at": "2026-10-18T12:18:20.020407Z",
+        "terminal_summary": "Up to date: progress/STATUS.md"
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py validate --input data/campaign.json",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:18:20.179766Z",
+        "output_sha256": "0825a8d21b0f5269c3cab0204d9536af34cd824b0f6aef380cc7cc4533562b4f",
+        "started_at": "2026-10-18T12:18:20.096686Z",
+        "terminal_summary": "Campaign is valid: 100 targets; 2 / 100 qualified submitted repositories."
+      },
+      {
+        "command": "python3 tools/contribution_campaign.py report --input data/campaign.json --output progress/CAMPAIGN.md --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:18:20.291398Z",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T12:18:20.179826Z",
+        "terminal_summary": ""
+      },
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "finished_at": "2026-10-18T12:18:20.303716Z",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "started_at": "2026-10-18T12:18:20.291460Z",
+        "terminal_summary": ""
+      }
+    ],
+    "completed_at": "2026-10-18T12:18:20.303716Z",
+    "errors": 0,
+    "failures": 0,
+    "python_version": "3.12.14",
+    "scope": "All six prescribed CONTRIBUTING commands ran once against the completed metadata and generated-report update. No Jackson tests were rerun. Actual terminal receipts were added after execution; the dated narrative was then updated to report these observed results. The coordinator subsequently added only the bounded next-candidate screen to this dated evidence pair; validated metadata, generated reports, tools and tests were unchanged. Final staged whitespace review follows before publication.",
+    "skipped": 0,
+    "status": "passed",
+    "tests_run": 81
+  },
+  "issue_url": "https://github.com/FasterXML/jackson-databind/issues/6299",
+  "next_candidate_screen": {
+    "agent_window": {
+      "finished_at": "2026-10-18T12:18:18Z",
+      "started_at": "2026-10-18T12:16:28Z"
+    },
+    "benefit_limits": "The conditional project-scope route observations from October 17 were not refreshed. No issue bounty, patch eligibility or earnings were established.",
+    "coordinator_verified_at": "2026-10-18T12:20:11Z",
+    "outcome": "No new defect selected.",
+    "policy_limits": "Jackson contribution/assistant guidance was read. Gson policy discovery remained unresolved after three unavailable file paths; competition already excludes these issues. A different Gson selection still needs actual current policy discovery.",
+    "records": [
+      {
+        "competing_head": "e724c33bd47fb4f18f933a4019cacd7657d630a9",
+        "competing_pr": "https://github.com/FasterXML/jackson-core/pull/1763",
+        "competing_state": "open",
+        "decision": "Exclude the currently occupied issue scope; no new implementation or selection milestone.",
+        "issue_url": "https://github.com/FasterXML/jackson-core/issues/1761",
+        "repository": "FasterXML/jackson-core"
+      },
+      {
+        "competing_head": "a37d86d249584ec725f50fd9e8f218700b4bb8bf",
+        "competing_pr": "https://github.com/FasterXML/jackson-core/pull/1648",
+        "competing_state": "open",
+        "decision": "Exclude the currently occupied issue scope; no new implementation or selection milestone.",
+        "issue_url": "https://github.com/FasterXML/jackson-core/issues/1640",
+        "repository": "FasterXML/jackson-core"
+      },
+      {
+        "competing_head": "3f16bcfccd8ed057dd6565fdbc2d9bc2fadbeb72",
+        "competing_pr": "https://github.com/google/gson/pull/3123",
+        "competing_state": "open",
+        "decision": "Exclude the currently occupied issue scope; no new implementation or selection milestone.",
+        "issue_url": "https://github.com/google/gson/issues/3122",
+        "repository": "google/gson"
+      },
+      {
+        "competing_head": "719804c13fcd206bd579c83a60a73a3fe8173937",
+        "competing_pr": "https://github.com/google/gson/pull/3129",
+        "competing_state": "open",
+        "decision": "Exclude the currently occupied issue scope; no new implementation or selection milestone.",
+        "issue_url": "https://github.com/google/gson/issues/3128",
+        "repository": "google/gson"
+      }
+    ],
+    "scope": "Two-project bounded screen; 10 agent public GET attempts yielded seven useful responses. The coordinator independently read all four competing PRs and confirmed that each is open and explicitly fixes the corresponding issue. Other authors' validation claims were not treated as tests run here."
+  },
+  "observed_at": "2026-10-18T12:11:13Z",
+  "preservation_checks": {
+    "all_7_existing_catalog_contributions_unchanged": true,
+    "all_7_existing_pr_snapshot_rows_unchanged": true,
+    "all_7_existing_provenance_rows_unchanged": true,
+    "all_99_other_campaign_projects_unchanged": true,
+    "comparison_base_commit": "fd4537ef94d02e30731a9407cde066628a7e7ddd",
+    "historical_submissions_unchanged": true,
+    "new_pr_row_equals_coordinator_packet": true,
+    "retained_observation_objects_unchanged": true,
+    "validated_and_submitted_source_match": true
+  },
+  "pull_request": {
+    "additions": 394,
+    "base_ref": "3.x",
+    "base_sha": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+    "body_matches_reviewed": true,
+    "changed_files": 10,
+    "checks": [
+      {
+        "conclusion": "SUCCESS",
+        "kind": "check_run",
+        "name": "Gitar",
+        "status": "COMPLETED",
+        "url": "https://github.com/FasterXML/jackson-databind/runs/117671129240"
+      }
+    ],
+    "comments": 2,
+    "created_at": "2026-10-18T12:07:28Z",
+    "deletions": 0,
+    "head_ref": "fix/6299-filtered-single-element",
+    "head_repository": "agamal026/jackson-databind",
+    "head_sha": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+    "id": "jackson-databind-6302",
+    "is_draft": false,
+    "maintainer_can_modify": false,
+    "merged_at": null,
+    "number": 6302,
+    "repository": "FasterXML/jackson-databind",
+    "review_comments": 0,
+    "review_decision": "",
+    "state": "OPEN",
+    "title": "Write an empty array when singleton container content is filtered out",
+    "updated_at": "2026-10-18T12:10:40Z",
+    "url": "https://github.com/FasterXML/jackson-databind/pull/6302"
+  },
+  "schema_version": 1,
+  "screening": {
+    "contribution_policy": "https://github.com/FasterXML/jackson/blob/main/CONTRIBUTING.md",
+    "date": "2026-10-18",
+    "excluded_candidate": {
+      "claim_comment": "https://github.com/jhy/jsoup/issues/2638#issuecomment-6017720355",
+      "decision": "Screened out because of an existing claim. No duplicate implementation or campaign milestone was added.",
+      "issue_url": "https://github.com/jhy/jsoup/issues/2638"
+    },
+    "policy_limit": "The central contribution guide was checked at its current main URL; no immutable policy permalink was recorded. CLA acceptance remains unverified and is required before upstream acceptance.",
+    "repository_guidance": "https://github.com/FasterXML/jackson-databind/blob/d2d5526ee317cbc0300c29e3257a6e9690774d96/CLAUDE.md",
+    "selected_issue": "https://github.com/FasterXML/jackson-databind/issues/6299"
+  },
+  "snapshot_provenance": {
+    "file": "data/github.json",
+    "historical_check_contexts_retained": 70,
+    "historical_pr_records": 6,
+    "historical_records_observed_at": "2026-10-17T20:01:04Z",
+    "new_check_runs": 1,
+    "new_record_observed_at": "2026-10-18T12:11:13Z",
+    "new_status_contexts": 0,
+    "provenance_file": "data/snapshot-source.json",
+    "retained_javaparser_observed_at": "2026-10-18T10:19:27Z",
+    "retained_javaparser_status_contexts": 1,
+    "retained_pr_records": 7,
+    "scope": "Composite observation; the latest top-level date applies to the new Jackson observation, not to a full refresh of every PR or check.",
+    "sha256": "1e7b5f70f17882b6682b8816419f564faf5fe1fac484e703cea7b67f8b74385f"
+  },
+  "source": {
+    "additions": 394,
+    "base_commit": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+    "changed_files": 10,
+    "commit": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+    "commit_url": "https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987",
+    "deletions": 0,
+    "patch_sha256": "4e92003969feedb3df738bb4544a0cbf6e41a1f7d3e74c49f7fbc1a59e34efd8",
+    "production_files": 9,
+    "regression_test": {
+      "bytes": 12917,
+      "git_blob": "fe6aec0b8143469a843a3097918b992391fc82da",
+      "path": "src/test/java/tools/jackson/databind/ser/filter/JsonIncludeUnwrappedContainer6299Test.java",
+      "sha256": "173bca7131ff03859d7d7d55dc80a10824d740467ee45d3ded4c14d33829e185"
+    },
+    "regression_test_files": 1,
+    "tested_merge": {
+      "parents": [
+        "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+        "de533c218b30a86ac9e74a6627b7224c2a0d2987"
+      ],
+      "sha": "ffdc7267fb85cc13bdf946840a2623ab898e0d35",
+      "tree": "d9550ccd43d7acf13d6e5405728c3f155a53a1df"
+    },
+    "tested_merge_tree_matches_source": true,
+    "tree": "d9550ccd43d7acf13d6e5405728c3f155a53a1df"
+  },
+  "upstream_checks": {
+    "bot_comment": {
+      "created_at": "2026-10-18T12:08:53Z",
+      "functional_validation": "not enabled",
+      "reported_issues": 0,
+      "risk": "medium",
+      "rules_evaluated": 0,
+      "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249735858"
+    },
+    "check_runs": [
+      {
+        "conclusion": "SUCCESS",
+        "kind": "check_run",
+        "name": "Gitar",
+        "status": "COMPLETED",
+        "url": "https://github.com/FasterXML/jackson-databind/runs/117671129240"
+      }
+    ],
+    "observed_at": "2026-10-18T12:11:13Z",
+    "review_decision_scope": "No GraphQL review decision was collected. No submitted reviews were returned. Gitar is a bot comment and a CheckRun, not a submitted approval or evidence of human review.",
+    "scope": "One successful upstream Gitar CheckRun is recorded. The separate upstream Build and Deploy Snapshot workflow is completed/action_required and its actual job-list GET returned zero jobs. No upstream build/test execution is established.",
+    "status_contexts": [],
+    "submitted_reviews_count": 0,
+    "workflow_runs": [
+      {
+        "conclusion": "action_required",
+        "id": 39125996146,
+        "jobs_returned": 0,
+        "name": "Build and Deploy Snapshot",
+        "status": "completed",
+        "url": "https://github.com/FasterXML/jackson-databind/actions/runs/39125996146"
+      }
+    ]
+  },
+  "validation": {
+    "command": "./mvnw -B -ff -ntp verify",
+    "corrected_baseline": {
+      "audited_at": "2026-10-18T11:46:50.791174+00:00",
+      "jobs": [
+        {
+          "actual_checkout_merge_sha": "f5f09dc8a43089bb4fa5a391b0ff5c76a0e66bf2",
+          "aggregate": {
+            "errors": 32,
+            "failures": 1,
+            "skipped": 1,
+            "tests": 7571
+          },
+          "android_compatibility": "skipped",
+          "class_summaries_count": 1081,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:39:32Z",
+          "conclusion": "failure",
+          "id": 117665313618,
+          "java_version_from_setup": "21.0.12+1",
+          "name": "build (21, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 32,
+            "failures": 1,
+            "line": 553,
+            "skipped": 0,
+            "tests": 48
+          },
+          "started_at": "2026-10-18T11:38:17Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124036186/job/117665313618"
+        },
+        {
+          "actual_checkout_merge_sha": "f5f09dc8a43089bb4fa5a391b0ff5c76a0e66bf2",
+          "aggregate": {
+            "errors": 32,
+            "failures": 1,
+            "skipped": 1,
+            "tests": 7571
+          },
+          "android_compatibility": "skipped",
+          "class_summaries_count": 1081,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:39:51Z",
+          "conclusion": "failure",
+          "id": 117665313774,
+          "java_version_from_setup": "25.0.4+1",
+          "name": "build (25, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 32,
+            "failures": 1,
+            "line": 557,
+            "skipped": 0,
+            "tests": 48
+          },
+          "started_at": "2026-10-18T11:38:18Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124036186/job/117665313774"
+        },
+        {
+          "actual_checkout_merge_sha": "f5f09dc8a43089bb4fa5a391b0ff5c76a0e66bf2",
+          "aggregate": {
+            "errors": 32,
+            "failures": 1,
+            "skipped": 1,
+            "tests": 7569
+          },
+          "android_compatibility": "skipped",
+          "class_summaries_count": 1080,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:39:57Z",
+          "conclusion": "failure",
+          "id": 117665313783,
+          "java_version_from_setup": "17.0.20+1",
+          "name": "build (17, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 32,
+            "failures": 1,
+            "line": 540,
+            "skipped": 0,
+            "tests": 48
+          },
+          "started_at": "2026-10-18T11:38:17Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124036186/job/117665313783"
+        },
+        {
+          "actual_checkout_merge_sha": "f5f09dc8a43089bb4fa5a391b0ff5c76a0e66bf2",
+          "aggregate": {
+            "errors": 32,
+            "failures": 1,
+            "skipped": 1,
+            "tests": 7569
+          },
+          "android_compatibility": "skipped",
+          "class_summaries_count": 1080,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:40:22Z",
+          "conclusion": "failure",
+          "id": 117665313857,
+          "java_version_from_setup": "17.0.20+101",
+          "name": "build (17, windows-latest, W)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 32,
+            "failures": 1,
+            "line": 1755,
+            "skipped": 0,
+            "tests": 48
+          },
+          "started_at": "2026-10-18T11:38:18Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124036186/job/117665313857"
+        }
+      ],
+      "result": "Each of four hosted builds has one failure and 32 StreamWrite errors in the 48-case regression class. The root case emits an empty string instead of an empty array; bean cases encounter invalid generator state. The other 15 invocations pass.",
+      "run_url": "https://github.com/agamal026/jackson-databind/actions/runs/39124036186",
+      "source_commit": "342f5dbae53a7b44ec7327fd6def30808f8a1047"
+    },
+    "exception_baseline": {
+      "actual_checkout_merge_sha": "16e6738a615d0e4a97dc2d058949aa6efb80aa91",
+      "aggregate": {
+        "errors": 0,
+        "failures": 5,
+        "line": 2687,
+        "skipped": 1,
+        "tests": 7576
+      },
+      "class_summaries_count": 1081,
+      "class_sums_equal_aggregate": true,
+      "decoded_log": {
+        "bytes": 370628,
+        "file": "exception-baseline/job-117666801298.log",
+        "format": "LF-normalized decoded public job log; original transport bytes unavailable.",
+        "sha256": "6837016e20ef02915c5d91192525893aba0e94c04bc925d405f2209ad6357ce9"
+      },
+      "failure_summary": [
+        "[ERROR]   JsonIncludeUnwrappedContainer6299Test.contentFilterException:263 Unexpected exception type thrown, expected: <tools.jackson.databind.DatabindException> but was: <java.lang.IllegalStateException>",
+        "[ERROR]   JsonIncludeUnwrappedContainer6299Test.contentFilterException:263 Unexpected exception type thrown, expected: <tools.jackson.databind.DatabindException> but was: <java.lang.IllegalStateException>",
+        "[ERROR]   JsonIncludeUnwrappedContainer6299Test.contentFilterException:263 Unexpected exception type thrown, expected: <tools.jackson.databind.DatabindException> but was: <java.lang.IllegalStateException>",
+        "[ERROR]   JsonIncludeUnwrappedContainer6299Test.contentFilterException:263 Unexpected exception type thrown, expected: <tools.jackson.databind.DatabindException> but was: <java.lang.IllegalStateException>",
+        "[ERROR]   JsonIncludeUnwrappedContainer6299Test.contentFilterException:263 Unexpected exception type thrown, expected: <tools.jackson.databind.DatabindException> but was: <java.lang.IllegalStateException>"
+      ],
+      "head_sha": "3da7256ce0a33801c7cc9166304c1fb9ec47f66e",
+      "java_version_from_setup": "21.0.12+1",
+      "job_id": 117666801298,
+      "job_url": "https://github.com/agamal026/jackson-databind/actions/runs/39124541594/job/117666801298",
+      "new_test_class": {
+        "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+        "errors": 0,
+        "failures": 5,
+        "line": 563,
+        "skipped": 0,
+        "tests": 53
+      },
+      "only_failing_class_is_6299": true,
+      "run_id": 39124541594
+    },
+    "final": {
+      "audited_at": "2026-10-18T11:55:09.017820+00:00",
+      "jobs": [
+        {
+          "actual_checkout_merge_sha": "ffdc7267fb85cc13bdf946840a2623ab898e0d35",
+          "aggregate": {
+            "errors": 0,
+            "failures": 0,
+            "line": 2586,
+            "skipped": 1,
+            "tests": 7576
+          },
+          "android_compatibility": {
+            "command": null,
+            "conclusion": "skipped",
+            "evidence_limit": "Step skipped by matrix condition."
+          },
+          "class_summaries_count": 1081,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:49:12Z",
+          "conclusion": "success",
+          "id": 117667201103,
+          "java_version_from_setup": "25.0.4+1",
+          "name": "build (25, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 0,
+            "failures": 0,
+            "line": 568,
+            "skipped": 0,
+            "tests": 53
+          },
+          "started_at": "2026-10-18T11:47:55Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124679661/job/117667201103"
+        },
+        {
+          "actual_checkout_merge_sha": "ffdc7267fb85cc13bdf946840a2623ab898e0d35",
+          "aggregate": {
+            "errors": 0,
+            "failures": 0,
+            "line": 2545,
+            "skipped": 1,
+            "tests": 7574
+          },
+          "android_compatibility": {
+            "command": null,
+            "conclusion": "skipped",
+            "evidence_limit": "Step skipped by matrix condition."
+          },
+          "class_summaries_count": 1080,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:50:11Z",
+          "conclusion": "success",
+          "id": 117667201282,
+          "java_version_from_setup": "17.0.20+101",
+          "name": "build (17, windows-latest, W)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 0,
+            "failures": 0,
+            "line": 1765,
+            "skipped": 0,
+            "tests": 53
+          },
+          "started_at": "2026-10-18T11:47:55Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124679661/job/117667201282"
+        },
+        {
+          "actual_checkout_merge_sha": "ffdc7267fb85cc13bdf946840a2623ab898e0d35",
+          "aggregate": {
+            "errors": 0,
+            "failures": 0,
+            "line": 2562,
+            "skipped": 1,
+            "tests": 7574
+          },
+          "android_compatibility": {
+            "command": "./mvnw -B -q -ff -ntp -DskipTests animal-sniffer:check",
+            "conclusion": "success",
+            "evidence_limit": "Quiet animal-sniffer command completed successfully according to job-step metadata; no separate test-suite result is asserted."
+          },
+          "class_summaries_count": 1080,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:49:33Z",
+          "conclusion": "success",
+          "id": 117667201285,
+          "java_version_from_setup": "17.0.20+1",
+          "name": "build (17, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 0,
+            "failures": 0,
+            "line": 554,
+            "skipped": 0,
+            "tests": 53
+          },
+          "started_at": "2026-10-18T11:47:56Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124679661/job/117667201285"
+        },
+        {
+          "actual_checkout_merge_sha": "ffdc7267fb85cc13bdf946840a2623ab898e0d35",
+          "aggregate": {
+            "errors": 0,
+            "failures": 0,
+            "line": 2567,
+            "skipped": 1,
+            "tests": 7576
+          },
+          "android_compatibility": {
+            "command": null,
+            "conclusion": "skipped",
+            "evidence_limit": "Step skipped by matrix condition."
+          },
+          "class_summaries_count": 1081,
+          "class_sums_equal_aggregate": true,
+          "command": "./mvnw -B -ff -ntp verify",
+          "completed_at": "2026-10-18T11:48:49Z",
+          "conclusion": "success",
+          "id": 117667201332,
+          "java_version_from_setup": "21.0.12+1",
+          "name": "build (21, ubuntu-24.04)",
+          "new_test_class": {
+            "class": "tools.jackson.databind.ser.filter.JsonIncludeUnwrappedContainer6299Test",
+            "errors": 0,
+            "failures": 0,
+            "line": 563,
+            "skipped": 0,
+            "tests": 53
+          },
+          "started_at": "2026-10-18T11:47:55Z",
+          "status": "completed",
+          "url": "https://github.com/agamal026/jackson-databind/actions/runs/39124679661/job/117667201332"
+        }
+      ],
+      "result": "All 53 regression invocations pass in all four hosted builds. Full-suite aggregates reconcile with per-class summaries and have zero failures or errors and one skipped test each.",
+      "run_url": "https://github.com/agamal026/jackson-databind/actions/runs/39124679661",
+      "skipped_test_class": "tools.jackson.databind.ser.jdk.JDKTypeSerializationTest",
+      "source_commit": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+      "suite_count_difference": "The JDK 21/25 profile adds the two-test Java21CollectionsTest: 7,576 aggregate tests versus 7,574 on JDK 17."
+    },
+    "limits": [
+      "Only the recorded hosted runs are execution evidence. A local build encountered dependency-host DNS resolution failure; its raw local log is excluded.",
+      "Decoded logs are retained, not original HTTP transport bytes. The exception log was LF-normalized. Baseline Windows replacement characters were already present in the decoded tool response.",
+      "Maven runtime version was not printed by these logs. Maven snapshot dependency artifact hashes were not pinned or captured. Exact source hashes do not pin dependency bytes.",
+      "Android compatibility is a successful quiet animal-sniffer step on Linux JDK 17, not Android device or emulator execution.",
+      "Automated review does not establish human review, upstream submission or acceptance, reward eligibility or payment, or CLA acceptance."
+    ],
+    "scope": "These are the recorded fork-hosted runs already completed and audited. They were not rerun by the hub editor. Focused reproduction commands in the packet are instructions for later reproduction, not additional executed evidence."
+  }
+}

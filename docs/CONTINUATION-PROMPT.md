@@ -11,10 +11,12 @@ Cadence belongs in the native schedule, not in a loop inside this guide.
 The user confirmed **hourly contributions** on October 18, 2026, Vienna time.
 Older dated entries describe earlier daily scheduling decisions.
 
-The [11:00 UTC October 18 checkpoint](../progress/2026-10-18-1100-continuation.md)
-records the latest follow-through and three newly excluded candidate issues.
-Read it before repeating screening. The campaign remains at one qualified
-submission; no new implementation was selected in that bounded session.
+The latest [Jackson #6302 submission checkpoint](../progress/2026-10-18-jackson-6302-submission.md)
+records the second qualified campaign submission, its exact source and passing
+fork validation, and pending upstream admission and review. Also retain the
+[11:00 UTC October 18 checkpoint](../progress/2026-10-18-1100-continuation.md)
+and its three excluded candidate issues. Read these before repeating screening
+or unchanged validation. The campaign now has two qualified submissions.
 
 ---
 
@@ -113,13 +115,38 @@ The workflow-admission follow-up was posted once at 10:13:18 UTC:
 https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643.
 Do not duplicate either comment without a reply or material change. Read the
 latest submission checkpoint, actual CI state and substantive feedback before
-acting. The campaign records one qualified submitted project, with no acceptance
-or realized benefit. H2 remains parked as above.
+acting. This was the first qualified campaign submission, with no acceptance
+or realized benefit established. H2 remains parked as above.
 Owned source/evidence writes succeeded through the connector; its upstream PR
 create request returned HTTP 403. The authorized authenticated connected browser
 completed this PR, followed by canonical read-back. That does not establish
 future connector or fork-creation permission. Before an implementation needing a
 new fork, verify a usable publication route; prefer existing writable forks.
+
+Jackson databind #6299 is submitted upstream as
+https://github.com/FasterXML/jackson-databind/pull/6302, created on October 18 at
+12:07:28 UTC. Recover the exact source at
+https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987
+and the immutable evidence packet at
+https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md.
+The fix writes `[]` when content filtering suppresses an unwrapped singleton and
+preserves configured exception wrapping. Two hosted baselines prove the invalid
+output and the independently identified exception regression. The final four
+fork builds pass all 53 new cases on Linux JDK 17/21/25 and Windows JDK 17; full
+suites report 7,574 or 7,576 tests, zero failures or errors, and one skip each.
+Linux JDK 17 also passes static Android API compatibility checking. Reuse this
+unchanged evidence; it does not establish Android device execution. At the
+12:11:13 UTC upstream observation, Gitar reported success with no issues and
+medium risk; its functional validation was not enabled. Build and Deploy
+Snapshot run 39125996146 required maintainer authorization, and its actual job
+list returned zero jobs. One admission follow-up is already posted at
+https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236.
+Do not duplicate it without a reply or material change. Read the latest
+submission checkpoint and canonical feedback before acting. CLA acceptance
+remains unverified and is required before upstream acceptance. The campaign now
+records two qualified submissions and no accepted campaign project or realized
+benefit. No issue bounty or patch-specific security-reward eligibility is
+established for this serialization correctness fix.
 
 Owned branch publication works, but external write access and future fork
 creation remain separate capabilities. Respect any remaining access block; do

@@ -13,18 +13,17 @@
     "started_at": "2026-10-18T09:42:53Z",
     "targeted_status_reads": "The existing npm runs remained action_required, the libavif CLA status remained failing, and libzip AppVeyor remained successful. These targeted reads do not replace the retained complete snapshot."
   },
-  "check_collection": "The six historical records retain their 70 previously collected check contexts. JavaParser records one AppVeyor StatusContext reporting success at 10:19:27 UTC. Its underlying AppVeyor logs were not inspected. Zero CheckRuns were returned in the initial 10:10:37 UTC observation; the two GitHub Actions job lists separately returned zero jobs at 10:19:27 UTC and approval remains pending. Workflow admission was not converted into check objects.",
+  "check_collection": "The six historical records retain their 70 previously collected check contexts. JavaParser retains its one AppVeyor StatusContext from 2026-10-18T10:19:27Z; its zero CheckRuns from 10:10:37 UTC and zero GitHub Actions jobs from 10:19:27 UTC were not refreshed. Jackson adds one Gitar CheckRun reporting success in the 2026-10-18T12:11:13Z packet, with zero StatusContexts. Gitar functional validation was not enabled. Its upstream workflow returned zero jobs and requires authorization; workflow admission and fork CI were not converted into upstream check objects.",
   "collected_with_live_cli": false,
-  "metadata_collection": "Six existing PR records remain unchanged from 2026-10-17T20:01:04Z. JavaParser #5175 was added from the coordinator-supplied 10:10:37 UTC read-back and updated with the 2026-10-18T10:19:27Z PR/commit-status observation.",
+  "metadata_collection": "The six historical PR records remain unchanged from 2026-10-17T20:01:04Z. The JavaParser PR row remains unchanged from 2026-10-18T10:19:27Z. Jackson #6302 was added from the coordinator-supplied canonical observation collected through 2026-10-18T12:11:13Z. Earlier metadata and check observations retain their individual dates.",
   "new_observation": {
-    "initial_observed_at": "2026-10-18T10:10:37Z",
-    "latest_scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
+    "latest_scope": "Jackson #6302 PR metadata, one successful Gitar CheckRun, zero StatusContexts, its bot comment and one admission follow-up. Gitar functional validation was not enabled. Upstream Build and Deploy Snapshot remained action_required and its actual job list returned zero jobs. No submitted reviews were returned.",
     "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
-    "observed_at": "2026-10-18T10:19:27Z",
-    "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
+    "observed_at": "2026-10-18T12:11:13Z",
+    "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
   },
   "observation_scope": "The snapshot observed_at is the latest included observation, not a fresh collection time for every record. Individual metadata/check observation dates are listed below.",
-  "observed_at": "2026-10-18T10:19:27Z",
+  "observed_at": "2026-10-18T12:11:13Z",
   "records": [
     {
       "base_sha": "66663952a677bb8a13ea1530d5694775d7d143d4",
@@ -118,8 +117,31 @@
       "review_decision": "",
       "review_decision_collection": "Not collected in the supplied REST observation; represented as not reported, without inferring approval or review requirements.",
       "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
+    },
+    {
+      "base_sha": "d2d5526ee317cbc0300c29e3257a6e9690774d96",
+      "check_contexts_returned": 1,
+      "check_runs_returned": 1,
+      "checks_observed_at": "2026-10-18T12:11:13Z",
+      "collection": "Coordinator-supplied canonical GitHub connector GET read-back collected through the stated observation time. Gitar reported success with functional validation not enabled. Upstream Build and Deploy Snapshot was action_required and its actual job list returned zero jobs. Successful fork validation is separate evidence.",
+      "head_sha": "de533c218b30a86ac9e74a6627b7224c2a0d2987",
+      "id": "jackson-databind-6302",
+      "metadata_observed_at": "2026-10-18T12:11:13Z",
+      "number": 6302,
+      "repository": "FasterXML/jackson-databind",
+      "review_decision": "",
+      "review_decision_collection": "No submitted reviews were returned; the Gitar bot comment is not a submitted approval. No GraphQL review decision was collected, so the normalized PR row leaves it unreported.",
+      "status_contexts_returned": 0,
+      "verification_file": "progress/2026-10-18-jackson-6302-submission-verification.json"
     }
   ],
+  "retained_javaparser_observation": {
+    "initial_observed_at": "2026-10-18T10:10:37Z",
+    "latest_scope": "AppVeyor's GitHub commit status reports success; underlying AppVeyor job logs were not inspected. Both GitHub Actions runs have zero jobs and still require maintainer approval.",
+    "method": "Coordinator-supplied canonical GitHub connector GET responses, transcribed into the existing public schema; oss_status.py refresh was not run for this update.",
+    "observed_at": "2026-10-18T10:19:27Z",
+    "verification_file": "progress/2026-10-18-javaparser-5175-submission-verification.json"
+  },
   "retained_observation": {
     "check_contexts_retained": 70,
     "command": "python3 tools/oss_status.py refresh --output <local-output>/github.json",
@@ -136,6 +158,6 @@
   },
   "schema_version": 1,
   "snapshot_file": "data/github.json",
-  "snapshot_sha256": "75cd2880d1ad12cfc9bac949c5d4758ef2285c35d9ccbde33dd174bb20aa11b6",
-  "source": "Composite reviewed snapshot: six retained historical CLI observations and one new JavaParser connector observation."
+  "snapshot_sha256": "1e7b5f70f17882b6682b8816419f564faf5fe1fac484e703cea7b67f8b74385f",
+  "source": "Composite reviewed snapshot: six retained historical CLI observations, the retained JavaParser connector observation, and one new Jackson databind connector observation. Not a full live snapshot refresh."
 }
