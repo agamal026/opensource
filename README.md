@@ -89,20 +89,20 @@ of an owned project is recorded separately from an external upstream merge.
 
 The registry covers historical work in libavif, libzip, npm, nginx and libevent,
 plus **five qualified campaign submissions**. The
-[latest verified checkpoint](progress/2026-10-18-commons-lang-1826.md) and
+[latest verified checkpoint](progress/2026-10-19-review-routing.md) and
 [current resume record](data/continuation.json) identify completed work and what
 can advance next. No current campaign project is recorded as accepted, and no
 realized benefit is established.
 
 | Campaign contribution | Current verified follow-through |
 | --- | --- |
-| [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) | Local validation complete; AppVeyor success; two Actions workflows await admission. |
+| [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) | Maintainer is investigating generic alignment; preserve our regression tests and keep the PR open. AppVeyor success; two Actions workflows await admission. |
 | [Jackson databind #6302](https://github.com/FasterXML/jackson-databind/pull/6302) | Requested 3.1 backport/helper work complete; upstream builds pass; CLA/acceptance pending. |
 | [LZ4 #1890](https://github.com/lz4/lz4/pull/1890) | Corrected source has 54 successful CheckRuns, including TSan; review pending. |
 | [Commons Compress #825](https://github.com/apache/commons-compress/pull/825) | 19 owned default Maven jobs pass; upstream admission pending; Jira backlink present. |
 | [Commons Lang #1826](https://github.com/apache/commons-lang/pull/1826) | Required default build and 18 ordinary hosted jobs pass; experimental Java 28 limitation documented; upstream admission pending; Jira backlink present. |
 
-These are October 18 observations. The [dated snapshot](data/snapshot-source.json)
+The JavaParser review update is from October 19; the remaining table entries retain their October 18 execution evidence. The [latest selected receipt](progress/2026-10-19-review-routing.json) records the bounded October 19 follow-through. The [dated snapshot](data/snapshot-source.json)
 records exact collection times and source coverage; earlier submission notes
 retain their original dates and limits. [Current status](progress/STATUS.md)
 links all registered upstream records and checks. Waiting for review does not

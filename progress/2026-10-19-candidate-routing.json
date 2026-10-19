@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-19",
+  "generated_at": "2026-10-19 19:33:09 UTC",
+  "hub": {
+    "repository": "agamal026/opensource",
+    "commit": "a2e315ab537731b05dff3f81a4b2746a96789040",
+    "files": [
+      "data/catalog.json",
+      "data/campaign.json",
+      "docs/ROADMAP.md",
+      "progress/2026-10-19-bounded-followthrough-screen.md"
+    ],
+    "source": "Remote files read at exact commit; stale local hub checkout was not edited."
+  },
+  "execution": {
+    "external_read_only": true,
+    "source_changes": false,
+    "new_tests_or_builds": false,
+    "prs_or_comments": false,
+    "automation_changes": false,
+    "main_checkout_changes": false
+  },
+  "budget": {
+    "requested_candidate_max": 3,
+    "targeted_distinct_issue_numbers": 18,
+    "inventory_repositories": 5,
+    "inventory_issue_entries": 63,
+    "compliant": false,
+    "note": "The small candidate budget was exceeded during screening. This selected receipt records the actual 18 targeted issue checks and the count of 63 returned inventory entries; it does not include those 63 individual records or relabel the run as a compliant three-candidate pass. Screening stopped when directed."
+  },
+  "source_heads": [
+    {
+      "repository": "pytest-dev/iniconfig",
+      "commit": "316fbfaf2752d89326e1e75b45cd070f5b5ace9a",
+      "tree": "aa54aaecaf1b811eb342ec0ca68ce3b71756d26c",
+      "url": "https://github.com/pytest-dev/iniconfig/commit/316fbfaf2752d89326e1e75b45cd070f5b5ace9a"
+    },
+    {
+      "repository": "npm/cli",
+      "commit": "ae98c62586b6fea44114f72e249e246a2981de70",
+      "tree": "9afbe218106c688fedf80376fe681989be744786",
+      "url": "https://github.com/npm/cli/commit/ae98c62586b6fea44114f72e249e246a2981de70"
+    },
+    {
+      "repository": "libevent/libevent",
+      "commit": "d82464a277d0f42703702c4dfd9af6af38595a83",
+      "tree": "f2f96f132b48032d36c8b91f1a8d11af98ca5c30",
+      "url": "https://github.com/libevent/libevent/commit/d82464a277d0f42703702c4dfd9af6af38595a83"
+    }
+  ],
+  "targeted_issue_checks": [
+    {
+      "repo": "pytest-dev/iniconfig",
+      "issue": 83,
+      "outcome": "autonomous_publication_parked_for_observed_ai_policy_enforcement",
+      "competing_prs": [
+        84,
+        85
+      ],
+      "note": "PR84 and85 are closed and unmerged, so they do not establish an incorporated or active competing fix. PR84 maintainer comment explicitly cites an AI violation. See policy_follow_up and remaining_technical_lead.",
+      "issue_url": "https://github.com/pytest-dev/iniconfig/issues/83",
+      "competing_pr_urls": [
+        "https://github.com/pytest-dev/iniconfig/pull/84",
+        "https://github.com/pytest-dev/iniconfig/pull/85"
+      ]
+    },
+    {
+      "repo": "libevent/libevent",
+      "issue": 1696,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        1903
+      ],
+      "note": "Exact issue and whitespace-header search found the existing leading-tab fix. Issue remains open; a contributor volunteered in comments. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/libevent/libevent/issues/1696",
+      "competing_pr_urls": [
+        "https://github.com/libevent/libevent/pull/1903"
+      ]
+    },
+    {
+      "repo": "libevent/libevent",
+      "issue": 1858,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        1924
+      ],
+      "note": "Issue-only search found no PR; limits.h and MbedTLS text searches found the exact existing include fix. Current source still lacks the direct include. Issue open, assigned to azat, zero comments. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/libevent/libevent/issues/1858",
+      "competing_pr_urls": [
+        "https://github.com/libevent/libevent/pull/1924"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9978,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9988
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9978",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9988"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9976,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9983
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9976",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9983"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9982,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9990
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9982",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9990"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9966,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9971
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9966",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9971"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9981,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9989
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9981",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9989"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9962,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9973
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9962",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9973"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9977,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9985
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9977",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9985"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9992,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        9993
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9992",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/9993"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 10125,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        10126
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/10125",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/10126"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 10014,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        10034
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/10014",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/10034"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9984,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        10053
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9984",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/10053"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 9996,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        10003
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/9996",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/10003"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 10043,
+      "outcome": "overlapping_pr_found_disposition_not_verified",
+      "competing_prs": [
+        10115
+      ],
+      "note": "Current all-state PR search returned a directly relevant fix; PR existence was verified, but its open/merged/closed disposition was not separately retrieved. This record is an overlap lead, not proof of a live competing fix, merge, or resolved issue.",
+      "issue_url": "https://github.com/npm/cli/issues/10043",
+      "competing_pr_urls": [
+        "https://github.com/npm/cli/pull/10115"
+      ]
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 10030,
+      "outcome": "not_selected_insufficient_bounded_reproduction",
+      "competing_prs": [],
+      "note": "No matching PR in the combined issue-number query. Guix/offline crash report is not yet reduced to an executable bounded source defect. Empty search does not establish novelty.",
+      "issue_url": "https://github.com/npm/cli/issues/10030",
+      "competing_pr_urls": []
+    },
+    {
+      "repo": "npm/cli",
+      "issue": 10054,
+      "outcome": "not_selected_resolver_scope_unresolved",
+      "competing_prs": [],
+      "note": "No matching PR in the combined issue-number query. Transitive Angular peer-resolution report requires broader dependency-resolution analysis; no narrow supported fix established.",
+      "issue_url": "https://github.com/npm/cli/issues/10054",
+      "competing_pr_urls": []
+    }
+  ],
+  "search_limitations": [
+    "All-state search returned related PRs. Without a fresh open/closed/merged disposition and relevant diff, their mere existence does not establish active competition or incorporation. The later iniconfig read showed both relevant PRs closed unmerged.",
+    "Issue-number search alone missed libevent PR #1924; a source-specific text query found it.",
+    "No tests, dependency installs, implementation, submission, or maintainer-contact action was performed.",
+    "Known parked items appearing in broad issue inventories were not reopened for route checks. IO-754 was excluded as already covered by apache/commons-io #893."
+  ],
+  "outcome_counts": {
+    "implementation_ready": 0,
+    "submitted": 0,
+    "accepted": 0
+  },
+  "conclusion": "No new implementation was selected. The iniconfig documentation lead is technically separate from the unresolved header behavior, but an actual maintainer AI-rejection comment leaves its autonomous contribution route unresolved. Other search matches require current PR disposition checks before declaring a live competing fix or incorporation.",
+  "policy_follow_up": {
+    "verified_at": "2026-10-19T19:37:04Z",
+    "repository": "pytest-dev/iniconfig",
+    "source_commit": "316fbfaf2752d89326e1e75b45cd070f5b5ace9a",
+    "comment_url": "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514",
+    "comment_created_at": "2026-10-07T20:33:49Z",
+    "author": "RonnyPfannschmidt",
+    "short_quote": "closing due to ai violation",
+    "pr84_state": "closed",
+    "pr84_merged": false,
+    "pr85_url": "https://github.com/pytest-dev/iniconfig/pull/85",
+    "pr85_state": "closed",
+    "pr85_merged": false,
+    "pr85_reason": "Not established by the returned discussion; do not infer its closure reason.",
+    "interpretation": "The initial repository-file policy scan was incomplete. An actual maintainer AI-rejection is relevant to this workflow, but the short comment does not define every permitted or prohibited use. Park autonomous AI-authored publication until current contributor expectations are established; the maintainer's own AI use is not blanket permission.",
+    "root_verification": "Coordinator independently read the full issue83, exact source _parse.py and __init__.py, complete source-tree paths, PR84 and85 canonical states, and all returned PR84 issue comments."
+  },
+  "remaining_technical_lead": {
+    "issue_url": "https://github.com/pytest-dev/iniconfig/issues/83",
+    "source_commit": "316fbfaf2752d89326e1e75b45cd070f5b5ace9a",
+    "source_refs": [
+      "https://github.com/pytest-dev/iniconfig/blob/316fbfaf2752d89326e1e75b45cd070f5b5ace9a/src/iniconfig/_parse.py",
+      "https://github.com/pytest-dev/iniconfig/blob/316fbfaf2752d89326e1e75b45cd070f5b5ace9a/src/iniconfig/__init__.py"
+    ],
+    "scope": "Three documentation statements incorrectly say strip_section_whitespace changes section and key names. Code applies the option only to sections and always strips keys. No corresponding documentation correction was found in the inspected PR84/85 diffs and one targeted search.",
+    "limits": "Static source comparison only. No reproduction, implementation, fork creation, upstream comment, PR or validation was performed. Header error-vs-warning compatibility remains a distinct maintainer decision."
+  },
+  "next_run_correction": "Coordinator assigns at most three explicit candidate IDs before delegation. The cap is global across all delegates; blocked or duplicate discoveries consume a slot. Check actual relevant PR disposition and policy-enforcement comments before selecting a source-writing task. No replacement candidate after all slots are consumed."
+}

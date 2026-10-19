@@ -2,7 +2,7 @@
   "schema_version": 1,
   "owner": "agamal026",
   "started_on": "2026-10-17",
-  "updated_on": "2026-10-18",
+  "updated_on": "2026-10-19",
   "target_count": 100,
   "historical_submissions": [
     {
@@ -301,7 +301,7 @@
       "repository": "pytest-dev/iniconfig",
       "batch": 1,
       "summary": "iniconfig: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Park autonomous AI-authored publication until current outside-contributor expectations are established: maintainer closure https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514 explicitly cites an AI violation. PR84 and85 are closed and unmerged, not proof that inline-comment fixes landed. The separate three-statement strip_section_whitespace documentation defect is supported by source at 316fbfaf2752d89326e1e75b45cd070f5b5ace9a but has no implementation or runtime validation. Header error-vs-warning behavior remains a maintainer decision. Read progress/2026-10-19-candidate-routing.json before revisiting.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -320,6 +320,16 @@
             "https://github.com/pytest-dev/iniconfig",
             "https://github.com/google/oss-fuzz/blob/master/projects/iniconfig/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-10-19",
+          "refs": [
+            "https://github.com/pytest-dev/iniconfig/issues/83",
+            "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514",
+            "https://github.com/pytest-dev/iniconfig/pull/85"
+          ],
+          "policy_ref": "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514"
         }
       ],
       "benefits": []
@@ -2224,7 +2234,7 @@
       "repository": "javaparser/javaparser",
       "batch": 7,
       "summary": "Fix #4074: preserve the existing separator before a class when removing the last of multiple imports with the lexical-preserving printer.",
-      "next_action": "Follow upstream PR #5175 at unchanged head 2a437e500bf54024772dd9f3d6d4149506defed2. The October 18 13:37-13:40 UTC follow-through found no new discussion or submitted review. AppVeyor still reports success without underlying log inspection; both formatting and Maven Actions runs remain action_required with zero actual jobs. Await admission and substantive feedback, then address concrete changes. Reuse the existing Linux/Java 17 validation and automated review for unchanged source. The admission request is already posted at https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643; do not repeat it without new evidence. Acceptance, issue bounty, reward qualification and realized benefits remain unverified.",
+      "next_action": "Keep upstream PR #5175 open at source 2a437e500bf54024772dd9f3d6d4149506defed2. The October 19 maintainer comment https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168 values the reproducing tests but objects to the import-specific workaround and requests waiting for the generic alignment correction. Related #5179 at b6c64e67f30ffedfe486b2904ac1680b4e0eccd5 changes CsmMix annotation handling; static source review does not establish a fix for plain import-list removal. Preserve the separable regression tests and adapt them only against an applicable exact-head patch or concrete requested revision. Reuse unchanged successful validation. Both upstream Actions workflows still require admission with zero actual jobs at the October 19 19:20 UTC collection; keep the single existing admission request. See progress/2026-10-19-review-routing.md. Acceptance and benefits remain unverified.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",

@@ -1,6 +1,6 @@
 # Contribution campaign
 
-Started: 2026-10-17. Records reviewed through: 2026-10-18.
+Started: 2026-10-17. Records reviewed through: 2026-10-19.
 
 **Goal progress: 5 / 100 distinct external repositories with qualified campaign submissions.**
 
@@ -14,8 +14,8 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 93 | 100 |
-| screened | 1 | 7 |
+| target | 92 | 100 |
+| screened | 2 | 8 |
 | selected | 0 | 6 |
 | reproduced | 0 | 6 |
 | validated | 1 | 6 |
@@ -26,7 +26,7 @@ This offline report checks record structure and consistency. Verify what the lin
 
 | Batch | Targets | Screened | Selected | Qualified submitted | Accepted |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| 1 | 10 | 1 | 1 | 0 | 0 |
+| 1 | 10 | 2 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 0 |
 | 3 | 10 | 1 | 1 | 1 | 0 |
 | 4 | 10 | 1 | 1 | 1 | 0 |
@@ -171,17 +171,18 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [pytest\-dev/iniconfig](<https://github.com/pytest-dev/iniconfig>)
 
-Batch 1 · current stage: **target**.
+Batch 1 · current stage: **screened**.
 
 iniconfig: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Park autonomous AI\-authored publication until current outside\-contributor expectations are established: maintainer closure https://github\.com/pytest\-dev/iniconfig/pull/84\#issuecomment\-6046327514 explicitly cites an AI violation\. PR84 and85 are closed and unmerged, not proof that inline\-comment fixes landed\. The separate three\-statement strip\_section\_whitespace documentation defect is supported by source at 316fbfaf2752d89326e1e75b45cd070f5b5ace9a but has no implementation or runtime validation\. Header error\-vs\-warning behavior remains a maintainer decision\. Read progress/2026\-10\-19\-candidate\-routing\.json before revisiting\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/iniconfig/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/pytest-dev/iniconfig>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/iniconfig/project.yaml>).
+- 2026-10-19 **screened**: [evidence 1](<https://github.com/pytest-dev/iniconfig/issues/83>); [evidence 2](<https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514>); [evidence 3](<https://github.com/pytest-dev/iniconfig/pull/85>); [policy\_ref](<https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514>).
 
 ### [rthalley/dnspython](<https://github.com/rthalley/dnspython>)
 
@@ -1057,7 +1058,7 @@ Batch 7 · current stage: **submitted**.
 
 Fix \#4074: preserve the existing separator before a class when removing the last of multiple imports with the lexical\-preserving printer\.
 
-Next action: Follow upstream PR \#5175 at unchanged head 2a437e500bf54024772dd9f3d6d4149506defed2\. The October 18 13:37\-13:40 UTC follow\-through found no new discussion or submitted review\. AppVeyor still reports success without underlying log inspection; both formatting and Maven Actions runs remain action\_required with zero actual jobs\. Await admission and substantive feedback, then address concrete changes\. Reuse the existing Linux/Java 17 validation and automated review for unchanged source\. The admission request is already posted at https://github\.com/javaparser/javaparser/pull/5175\#issuecomment\-6248629643; do not repeat it without new evidence\. Acceptance, issue bounty, reward qualification and realized benefits remain unverified\.
+Next action: Keep upstream PR \#5175 open at source 2a437e500bf54024772dd9f3d6d4149506defed2\. The October 19 maintainer comment https://github\.com/javaparser/javaparser/pull/5175\#issuecomment\-6274613168 values the reproducing tests but objects to the import\-specific workaround and requests waiting for the generic alignment correction\. Related \#5179 at b6c64e67f30ffedfe486b2904ac1680b4e0eccd5 changes CsmMix annotation handling; static source review does not establish a fix for plain import\-list removal\. Preserve the separable regression tests and adapt them only against an applicable exact\-head patch or concrete requested revision\. Reuse unchanged successful validation\. Both upstream Actions workflows still require admission with zero actual jobs at the October 19 19:20 UTC collection; keep the single existing admission request\. See progress/2026\-10\-19\-review\-routing\.md\. Acceptance and benefits remain unverified\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope was previously verified\. This formatting fix has no verified security\-reward eligibility, advertised issue bounty, award or payment; participant eligibility and upstream acceptance remain unverified\.
 

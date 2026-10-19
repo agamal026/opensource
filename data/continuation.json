@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-18T21:32:23.490080Z",
+  "updated_at": "2026-10-19T19:38:36.613486Z",
   "scope": "100 distinct external open-source projects; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-10-18-commons-lang-1826.md",
+  "latest_checkpoint": "progress/2026-10-19-review-routing.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -18,8 +18,8 @@
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
     "enabled_observed": true,
-    "observed_at": "2026-10-18T21:29:10Z",
-    "last_run_time_reported": "2026-10-18T21:06:08.837380+00:00",
+    "observed_at": "2026-10-19T19:18:02Z",
+    "last_run_time_reported": "2026-10-19T19:03:42.907592+00:00",
     "execution_limit": "Last-run metadata alone does not establish completion; no full native run history was exposed. Preserve schedule and other tasks."
   },
   "latest_completed_contribution": {
@@ -66,8 +66,12 @@
   "follow_through": [
     {
       "pr_url": "https://github.com/javaparser/javaparser/pull/5175",
-      "resume_when": "New substantive feedback or admitted workflow results",
-      "admission_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643"
+      "resume_when": "An applicable plain-list alignment correction or specific requested revision appears; also handle newly admitted execution results.",
+      "admission_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
+      "review_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168",
+      "related_pr_url": "https://github.com/javaparser/javaparser/pull/5179",
+      "related_head_reviewed": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+      "note": "Keep #5175 open at its existing source. The maintainer values the tests and is investigating a generic correction. Related #5179 currently changes CsmMix/annotation handling; static source review does not establish an import-list fix. Preserve the separable 20-case regression file and do not race the maintainer implementation."
     },
     {
       "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
@@ -101,18 +105,25 @@
       "work": "jsoup automated contributions",
       "resume_when": "A verified changed upstream policy permits this workflow",
       "note": "Known policy rejects AI-assisted code and AI-written submissions; do not post."
+    },
+    {
+      "work": "pytest-dev/iniconfig #83 autonomous AI-authored publication",
+      "resume_when": "Current outside-contributor expectations are established after the actual AI-rejection on PR84. Do not infer permission from maintainer AI use. Header compatibility is a separate unresolved choice.",
+      "policy_evidence": "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514",
+      "source_review_ref": "progress/2026-10-19-candidate-routing.json"
     }
   ],
   "next_action": {
-    "first": "Refresh the recorded Lang workflow IDs and substantive feedback across existing PRs; handle an actionable request before unrelated source work.",
-    "otherwise": "Screen at most three unblocked candidates from data/campaign.json using the retained screening exclusions; choose one useful cloud-testable fix with a supported publication route.",
-    "reserve": "Commons IO IO-754 has an earlier source-only reserve screen in progress/2026-10-18-1608-screen-followthrough.json; reproduction, current preflight and any deliberate target substitution are still required before counting.",
-    "do_not_repeat": "Do not recreate Lang PR #1826, duplicate admission comments, rerun unchanged passing matrices or rebuild orchestration.",
+    "first": "Reconcile this public checkpoint with any newer private OSS handoff, including pending operation IDs and denied routes. Then inspect the specific JavaParser maintainer direction and an applicable generic fix, plus substantive feedback or changed execution across existing PRs.",
+    "otherwise": "After existing follow-through, assign at most three explicit candidate IDs from data/campaign.json across all delegates; inspect current PR disposition and policy enforcement, confirm the publication route, then choose one distinct cloud-testable fix. Preserve the exclusions in progress/2026-10-19-candidate-routing.json without treating its unverified all-state matches as merged or actively competing.",
+    "reserve": "Withdrawn: Commons IO IO-754 is covered by another contributor's draft https://github.com/apache/commons-io/pull/893 at 318b0c88287b65a1bd965aae9bc2e5c39b6a233c. Do not duplicate without a distinct evidenced gap or maintainer invitation.",
+    "do_not_repeat": "Do not recreate existing PRs, duplicate admission comments, retry unchanged denied operations, rerun unchanged passing matrices, rebuild orchestration, or rediscover a candidate exclusion without changed evidence.",
     "budget": {
       "target_session_minutes_including_handoff": 40,
       "candidate_limit": 3,
       "focused_correction_cycle_limit": 3,
-      "main_implementation_writers": 1
+      "main_implementation_writers": 1,
+      "candidate_limit_scope": "Three distinct candidates across the entire coordinator and all delegates. Assign explicit candidate slots before delegation; duplicate discovery or a blocked candidate consumes its slot, and replacement requires another available slot."
     }
   },
   "dated_followups": [
@@ -131,5 +142,7 @@
     "delivered": false,
     "condition": "100 independently verified qualifying distinct external submissions; historical work and owned drafts excluded.",
     "afterwards": "Maintain portfolio and benefit follow-through without increasing the target."
-  }
+  },
+  "latest_selected_observation": "progress/2026-10-19-review-routing.json",
+  "latest_candidate_routing": "progress/2026-10-19-candidate-routing.json"
 }

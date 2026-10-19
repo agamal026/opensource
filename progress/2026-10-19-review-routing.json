@@ -1,0 +1,1059 @@
+{
+  "schema_version": 1,
+  "hub_base": "a2e315ab537731b05dff3f81a4b2746a96789040",
+  "scope": "Read-only audit of the five currently submitted campaign PRs. Historical six submissions are excluded and were not re-fetched in this audit. No root checkout or external state was modified.",
+  "audit_started_at": "2026-10-19T19:18:27.874Z",
+  "audit_completed_at": "2026-10-19T19:20:07.511Z",
+  "outcome": {
+    "current_submitted_campaign_projects": 5,
+    "current_open_prs": 5,
+    "newly_accepted_projects_verified": 0,
+    "current_campaign_merges_verified": 0,
+    "verified_realized_benefits": 0,
+    "new_substantive_feedback_records": 1,
+    "source_head_changes": 0,
+    "base_changes": 0,
+    "current_ci_metadata_changed_from_last_full_snapshot": 0,
+    "admission_gated_workflows": 8,
+    "fresh_actual_job_collections": 8,
+    "actual_jobs_in_those_collections": 0,
+    "historical_excluded_count": 6,
+    "historical_exclusions_changed": false
+  },
+  "projects": [
+    {
+      "id": "javaparser-5175",
+      "url": "https://github.com/javaparser/javaparser/pull/5175",
+      "metadata": {
+        "source_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175",
+        "initial_request_started_at": "2026-10-19T19:18:27.874Z",
+        "initial_observed_at": "2026-10-19T19:18:28.870Z",
+        "final_request_started_at": "2026-10-19T19:20:06.600Z",
+        "final_observed_at": "2026-10-19T19:20:07.478Z",
+        "state": "open",
+        "merged": false,
+        "merged_at": null,
+        "draft": false,
+        "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+        "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+        "base_branch": "master",
+        "updated_at": "2026-10-19T18:43:15Z",
+        "issue_comment_count": 2,
+        "inline_comment_count": 0,
+        "head_stable_across_collection": true,
+        "base_stable_across_collection": true
+      },
+      "discussion": {
+        "tool": "github_fetch_pr_comments",
+        "request_started_at": "2026-10-19T19:18:27.874Z",
+        "observed_at": "2026-10-19T19:18:28.427Z",
+        "scope": "Normalized issue-comment, inline-comment and submitted-review timeline. Issue/inline counts match the fresh PR metadata. This is not GraphQL reviewDecision.",
+        "counts": {
+          "issue_comments": 2,
+          "inline_comments": 0,
+          "submitted_reviews": 0
+        },
+        "source_urls": {
+          "issue_comments": "https://api.github.com/repos/javaparser/javaparser/issues/5175/comments",
+          "inline_comments": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/comments",
+          "submitted_reviews": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/reviews"
+        },
+        "records": [
+          {
+            "id": 6248629643,
+            "url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
+            "created_at": "2026-10-18T10:13:18Z",
+            "updated_at": "2026-10-18T10:13:18Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6274613168,
+            "url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168",
+            "created_at": "2026-10-19T18:43:15Z",
+            "updated_at": "2026-10-19T18:43:15Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          }
+        ],
+        "new_actionable_record_urls": [
+          "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168"
+        ],
+        "review_state_counts": {}
+      },
+      "ci": {
+        "scope": "Fresh current-head metadata only; no test execution, rerun, approval or full-log retrieval.",
+        "check_run_count": 0,
+        "check_run_conclusions": {},
+        "check_run_observed_at": "2026-10-19T19:19:16.410Z",
+        "legacy_statuses": {
+          "source_url": "https://api.github.com/repos/javaparser/javaparser/commits/2a437e500bf54024772dd9f3d6d4149506defed2/status?per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.412Z",
+          "total_count": 1,
+          "returned_count": 1,
+          "pages_read": 1,
+          "combined_state": "success",
+          "records": [
+            {
+              "id": 56626173328,
+              "context": "continuous-integration/appveyor/pr",
+              "state": "success",
+              "target_url": "https://ci.appveyor.com/project/ftomassetti/javaparser/builds/54919188"
+            }
+          ],
+          "limit": "An empty legacy collection's combined pending value does not establish pending Actions execution. External status provider logs were not inspected."
+        },
+        "workflows": {
+          "source_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs?head_sha=2a437e500bf54024772dd9f3d6d4149506defed2&event=pull_request&per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.463Z",
+          "total_count": 2,
+          "returned_count": 2,
+          "pages_read": 1,
+          "scope": "pull_request-triggered runs for the exact current head; workflow records are not synthesized as CheckRuns.",
+          "runs": [
+            {
+              "id": 39117999673,
+              "url": "https://github.com/javaparser/javaparser/actions/runs/39117999673",
+              "name": "Check codegen and formatting",
+              "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999673/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.287Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            },
+            {
+              "id": 39117999726,
+              "url": "https://github.com/javaparser/javaparser/actions/runs/39117999726",
+              "name": "Build and test (using maven)",
+              "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/javaparser/javaparser/actions/runs/39117999726/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.317Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "jackson-databind-6302",
+      "url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "metadata": {
+        "source_url": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302",
+        "initial_request_started_at": "2026-10-19T19:18:27.874Z",
+        "initial_observed_at": "2026-10-19T19:18:28.549Z",
+        "final_request_started_at": "2026-10-19T19:20:06.600Z",
+        "final_observed_at": "2026-10-19T19:20:07.354Z",
+        "state": "open",
+        "merged": false,
+        "merged_at": null,
+        "draft": false,
+        "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+        "base_sha": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+        "base_branch": "3.1",
+        "updated_at": "2026-10-18T15:24:42Z",
+        "issue_comment_count": 5,
+        "inline_comment_count": 2,
+        "head_stable_across_collection": true,
+        "base_stable_across_collection": true
+      },
+      "discussion": {
+        "tool": "github_fetch_pr_comments",
+        "request_started_at": "2026-10-19T19:18:27.874Z",
+        "observed_at": "2026-10-19T19:18:28.540Z",
+        "scope": "Normalized issue-comment, inline-comment and submitted-review timeline. Issue/inline counts match the fresh PR metadata. This is not GraphQL reviewDecision.",
+        "counts": {
+          "issue_comments": 5,
+          "inline_comments": 2,
+          "submitted_reviews": 2
+        },
+        "source_urls": {
+          "issue_comments": "https://api.github.com/repos/FasterXML/jackson-databind/issues/6302/comments",
+          "inline_comments": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/comments",
+          "submitted_reviews": "https://api.github.com/repos/FasterXML/jackson-databind/pulls/6302/reviews"
+        },
+        "records": [
+          {
+            "id": 6249752236,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6249752236",
+            "created_at": "2026-10-18T12:10:40Z",
+            "updated_at": "2026-10-18T12:10:40Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6250227789,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6250227789",
+            "created_at": "2026-10-18T13:01:39Z",
+            "updated_at": "2026-10-18T13:02:22Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6250307295,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6250307295",
+            "created_at": "2026-10-18T13:09:58Z",
+            "updated_at": "2026-10-18T13:09:58Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 4307148911,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#discussion_r4307148911",
+            "created_at": "2026-10-18T13:11:18Z",
+            "updated_at": "2026-10-18T13:11:18Z",
+            "review_state": null,
+            "kind": "inline_comment"
+          },
+          {
+            "id": 5563125328,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#pullrequestreview-5563125328",
+            "created_at": "2026-10-18T13:11:18Z",
+            "updated_at": null,
+            "review_state": "COMMENTED",
+            "kind": "submitted_review"
+          },
+          {
+            "id": 6251348082,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6251348082",
+            "created_at": "2026-10-18T14:55:09Z",
+            "updated_at": "2026-10-18T14:55:09Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 6251505409,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#issuecomment-6251505409",
+            "created_at": "2026-10-18T15:10:49Z",
+            "updated_at": "2026-10-18T15:10:49Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          },
+          {
+            "id": 4307557870,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#discussion_r4307557870",
+            "created_at": "2026-10-18T15:16:02Z",
+            "updated_at": "2026-10-18T15:16:03Z",
+            "review_state": null,
+            "kind": "inline_comment"
+          },
+          {
+            "id": 5563638447,
+            "url": "https://github.com/FasterXML/jackson-databind/pull/6302#pullrequestreview-5563638447",
+            "created_at": "2026-10-18T15:16:02Z",
+            "updated_at": null,
+            "review_state": "COMMENTED",
+            "kind": "submitted_review"
+          }
+        ],
+        "new_actionable_record_urls": [],
+        "review_state_counts": {
+          "COMMENTED": 2
+        }
+      },
+      "ci": {
+        "scope": "Fresh current-head metadata only; no test execution, rerun, approval or full-log retrieval.",
+        "check_run_count": 7,
+        "check_run_conclusions": {
+          "skipped": 2,
+          "success": 5
+        },
+        "check_run_observed_at": "2026-10-19T19:19:17.033Z",
+        "legacy_statuses": {
+          "source_url": "https://api.github.com/repos/FasterXML/jackson-databind/commits/38261628a27c109e6e49c916cdb0f7e8bf7bbf45/status?per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.911Z",
+          "total_count": 0,
+          "returned_count": 0,
+          "pages_read": 1,
+          "combined_state": "pending",
+          "records": [],
+          "limit": "An empty legacy collection's combined pending value does not establish pending Actions execution. External status provider logs were not inspected."
+        },
+        "workflows": {
+          "source_url": "https://api.github.com/repos/FasterXML/jackson-databind/actions/runs?head_sha=38261628a27c109e6e49c916cdb0f7e8bf7bbf45&event=pull_request&per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.464Z",
+          "total_count": 1,
+          "returned_count": 1,
+          "pages_read": 1,
+          "scope": "pull_request-triggered runs for the exact current head; workflow records are not synthesized as CheckRuns.",
+          "runs": [
+            {
+              "id": 39138054220,
+              "url": "https://github.com/FasterXML/jackson-databind/actions/runs/39138054220",
+              "name": "Build and Deploy Snapshot",
+              "head_sha": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 2,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lz4-1890",
+      "url": "https://github.com/lz4/lz4/pull/1890",
+      "metadata": {
+        "source_url": "https://api.github.com/repos/lz4/lz4/pulls/1890",
+        "initial_request_started_at": "2026-10-19T19:18:27.874Z",
+        "initial_observed_at": "2026-10-19T19:18:28.540Z",
+        "final_request_started_at": "2026-10-19T19:20:06.600Z",
+        "final_observed_at": "2026-10-19T19:20:07.286Z",
+        "state": "open",
+        "merged": false,
+        "merged_at": null,
+        "draft": false,
+        "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+        "base_sha": "e7c36223415219c0a18ea75e3fe2eb5d267ee667",
+        "base_branch": "dev",
+        "updated_at": "2026-10-18T14:41:45Z",
+        "issue_comment_count": 0,
+        "inline_comment_count": 0,
+        "head_stable_across_collection": true,
+        "base_stable_across_collection": true
+      },
+      "discussion": {
+        "tool": "github_fetch_pr_comments",
+        "request_started_at": "2026-10-19T19:18:27.874Z",
+        "observed_at": "2026-10-19T19:18:28.448Z",
+        "scope": "Normalized issue-comment, inline-comment and submitted-review timeline. Issue/inline counts match the fresh PR metadata. This is not GraphQL reviewDecision.",
+        "counts": {
+          "issue_comments": 0,
+          "inline_comments": 0,
+          "submitted_reviews": 0
+        },
+        "source_urls": {
+          "issue_comments": "https://api.github.com/repos/lz4/lz4/issues/1890/comments",
+          "inline_comments": "https://api.github.com/repos/lz4/lz4/pulls/1890/comments",
+          "submitted_reviews": "https://api.github.com/repos/lz4/lz4/pulls/1890/reviews"
+        },
+        "records": [],
+        "new_actionable_record_urls": [],
+        "review_state_counts": {}
+      },
+      "ci": {
+        "scope": "Fresh current-head metadata only; no test execution, rerun, approval or full-log retrieval.",
+        "check_run_count": 54,
+        "check_run_conclusions": {
+          "success": 54
+        },
+        "check_run_observed_at": "2026-10-19T19:19:16.655Z",
+        "legacy_statuses": {
+          "source_url": "https://api.github.com/repos/lz4/lz4/commits/0917e70420429ea2acab6aaac48cffdf4e827440/status?per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.415Z",
+          "total_count": 1,
+          "returned_count": 1,
+          "pages_read": 1,
+          "combined_state": "success",
+          "records": [
+            {
+              "id": 56632263515,
+              "context": "continuous-integration/appveyor/pr",
+              "state": "success",
+              "target_url": "https://ci.appveyor.com/project/YannCollet/lz4-1lndh/builds/54919870"
+            }
+          ],
+          "limit": "An empty legacy collection's combined pending value does not establish pending Actions execution. External status provider logs were not inspected."
+        },
+        "workflows": {
+          "source_url": "https://api.github.com/repos/lz4/lz4/actions/runs?head_sha=0917e70420429ea2acab6aaac48cffdf4e827440&event=pull_request&per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.940Z",
+          "observed_at": "2026-10-19T19:19:16.630Z",
+          "total_count": 9,
+          "returned_count": 9,
+          "pages_read": 1,
+          "scope": "pull_request-triggered runs for the exact current head; workflow records are not synthesized as CheckRuns.",
+          "runs": [
+            {
+              "id": 39133845170,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845170",
+              "name": "Sanitizers",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845143,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845143",
+              "name": "Build Systems",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845148,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845148",
+              "name": "Code Quality",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845146,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845146",
+              "name": "Cross Platform",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845159,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845159",
+              "name": "Compiler Tests",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845154,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845154",
+              "name": "Release & Environment",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845188,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845188",
+              "name": "Core Tests",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845224,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845224",
+              "name": "CMake Build Tests",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            },
+            {
+              "id": 39133845150,
+              "url": "https://github.com/lz4/lz4/actions/runs/39133845150",
+              "name": "OSS-Fuzz",
+              "head_sha": "0917e70420429ea2acab6aaac48cffdf4e827440",
+              "status": "completed",
+              "conclusion": "success",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "refreshed": false,
+                "scope": "Previously successful execution evidence is reused; no actual job or full-log refresh for this unchanged successful workflow."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "commons-compress-825",
+      "url": "https://github.com/apache/commons-compress/pull/825",
+      "metadata": {
+        "source_url": "https://api.github.com/repos/apache/commons-compress/pulls/825",
+        "initial_request_started_at": "2026-10-19T19:18:27.874Z",
+        "initial_observed_at": "2026-10-19T19:18:29.247Z",
+        "final_request_started_at": "2026-10-19T19:20:06.600Z",
+        "final_observed_at": "2026-10-19T19:20:07.510Z",
+        "state": "open",
+        "merged": false,
+        "merged_at": null,
+        "draft": false,
+        "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+        "base_sha": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+        "base_branch": "master",
+        "updated_at": "2026-10-18T17:18:39Z",
+        "issue_comment_count": 1,
+        "inline_comment_count": 0,
+        "head_stable_across_collection": true,
+        "base_stable_across_collection": true
+      },
+      "discussion": {
+        "tool": "github_fetch_pr_comments",
+        "request_started_at": "2026-10-19T19:18:27.874Z",
+        "observed_at": "2026-10-19T19:18:28.671Z",
+        "scope": "Normalized issue-comment, inline-comment and submitted-review timeline. Issue/inline counts match the fresh PR metadata. This is not GraphQL reviewDecision.",
+        "counts": {
+          "issue_comments": 1,
+          "inline_comments": 0,
+          "submitted_reviews": 0
+        },
+        "source_urls": {
+          "issue_comments": "https://api.github.com/repos/apache/commons-compress/issues/825/comments",
+          "inline_comments": "https://api.github.com/repos/apache/commons-compress/pulls/825/comments",
+          "submitted_reviews": "https://api.github.com/repos/apache/commons-compress/pulls/825/reviews"
+        },
+        "records": [
+          {
+            "id": 6252813089,
+            "url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
+            "created_at": "2026-10-18T17:18:39Z",
+            "updated_at": "2026-10-18T17:18:39Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          }
+        ],
+        "new_actionable_record_urls": [],
+        "review_state_counts": {}
+      },
+      "ci": {
+        "scope": "Fresh current-head metadata only; no test execution, rerun, approval or full-log retrieval.",
+        "check_run_count": 0,
+        "check_run_conclusions": {},
+        "check_run_observed_at": "2026-10-19T19:19:16.437Z",
+        "legacy_statuses": {
+          "source_url": "https://api.github.com/repos/apache/commons-compress/commits/7e6477880259d60d4dfa60a5e34e4ea7875176b1/status?per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.941Z",
+          "observed_at": "2026-10-19T19:19:16.384Z",
+          "total_count": 0,
+          "returned_count": 0,
+          "pages_read": 1,
+          "combined_state": "pending",
+          "records": [],
+          "limit": "An empty legacy collection's combined pending value does not establish pending Actions execution. External status provider logs were not inspected."
+        },
+        "workflows": {
+          "source_url": "https://api.github.com/repos/apache/commons-compress/actions/runs?head_sha=7e6477880259d60d4dfa60a5e34e4ea7875176b1&event=pull_request&per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.941Z",
+          "observed_at": "2026-10-19T19:19:16.515Z",
+          "total_count": 3,
+          "returned_count": 3,
+          "pages_read": 1,
+          "scope": "pull_request-triggered runs for the exact current head; workflow records are not synthesized as CheckRuns.",
+          "runs": [
+            {
+              "id": 39148712206,
+              "url": "https://github.com/apache/commons-compress/actions/runs/39148712206",
+              "name": "CodeQL",
+              "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712206/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.283Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            },
+            {
+              "id": 39148712273,
+              "url": "https://github.com/apache/commons-compress/actions/runs/39148712273",
+              "name": "Dependency Review",
+              "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712273/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.600Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            },
+            {
+              "id": 39148712364,
+              "url": "https://github.com/apache/commons-compress/actions/runs/39148712364",
+              "name": "Java CI",
+              "head_sha": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-compress/actions/runs/39148712364/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.267Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "commons-lang-1826",
+      "url": "https://github.com/apache/commons-lang/pull/1826",
+      "metadata": {
+        "source_url": "https://api.github.com/repos/apache/commons-lang/pulls/1826",
+        "initial_request_started_at": "2026-10-19T19:18:27.874Z",
+        "initial_observed_at": "2026-10-19T19:18:28.842Z",
+        "final_request_started_at": "2026-10-19T19:20:06.600Z",
+        "final_observed_at": "2026-10-19T19:20:07.355Z",
+        "state": "open",
+        "merged": false,
+        "merged_at": null,
+        "draft": false,
+        "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+        "base_sha": "c89cdf682fe21b0c39759cf58186ed5336a105d4",
+        "base_branch": "master",
+        "updated_at": "2026-10-18T21:18:33Z",
+        "issue_comment_count": 1,
+        "inline_comment_count": 0,
+        "head_stable_across_collection": true,
+        "base_stable_across_collection": true
+      },
+      "discussion": {
+        "tool": "github_fetch_pr_comments",
+        "request_started_at": "2026-10-19T19:18:27.874Z",
+        "observed_at": "2026-10-19T19:18:28.539Z",
+        "scope": "Normalized issue-comment, inline-comment and submitted-review timeline. Issue/inline counts match the fresh PR metadata. This is not GraphQL reviewDecision.",
+        "counts": {
+          "issue_comments": 1,
+          "inline_comments": 0,
+          "submitted_reviews": 0
+        },
+        "source_urls": {
+          "issue_comments": "https://api.github.com/repos/apache/commons-lang/issues/1826/comments",
+          "inline_comments": "https://api.github.com/repos/apache/commons-lang/pulls/1826/comments",
+          "submitted_reviews": "https://api.github.com/repos/apache/commons-lang/pulls/1826/reviews"
+        },
+        "records": [
+          {
+            "id": 6255266077,
+            "url": "https://github.com/apache/commons-lang/pull/1826#issuecomment-6255266077",
+            "created_at": "2026-10-18T21:18:33Z",
+            "updated_at": "2026-10-18T21:18:33Z",
+            "review_state": null,
+            "kind": "issue_comment"
+          }
+        ],
+        "new_actionable_record_urls": [],
+        "review_state_counts": {}
+      },
+      "ci": {
+        "scope": "Fresh current-head metadata only; no test execution, rerun, approval or full-log retrieval.",
+        "check_run_count": 0,
+        "check_run_conclusions": {},
+        "check_run_observed_at": "2026-10-19T19:19:16.464Z",
+        "legacy_statuses": {
+          "source_url": "https://api.github.com/repos/apache/commons-lang/commits/9f75a9a6c2fcbc3d287a170827f2efe861cbe90d/status?per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.941Z",
+          "observed_at": "2026-10-19T19:19:16.431Z",
+          "total_count": 0,
+          "returned_count": 0,
+          "pages_read": 1,
+          "combined_state": "pending",
+          "records": [],
+          "limit": "An empty legacy collection's combined pending value does not establish pending Actions execution. External status provider logs were not inspected."
+        },
+        "workflows": {
+          "source_url": "https://api.github.com/repos/apache/commons-lang/actions/runs?head_sha=9f75a9a6c2fcbc3d287a170827f2efe861cbe90d&event=pull_request&per_page=100&page=1",
+          "request_started_at": "2026-10-19T19:19:15.941Z",
+          "observed_at": "2026-10-19T19:19:16.738Z",
+          "total_count": 3,
+          "returned_count": 3,
+          "pages_read": 1,
+          "scope": "pull_request-triggered runs for the exact current head; workflow records are not synthesized as CheckRuns.",
+          "runs": [
+            {
+              "id": 39166682960,
+              "url": "https://github.com/apache/commons-lang/actions/runs/39166682960",
+              "name": "Java CI",
+              "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682960/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.264Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            },
+            {
+              "id": 39166682974,
+              "url": "https://github.com/apache/commons-lang/actions/runs/39166682974",
+              "name": "CodeQL",
+              "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682974/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.301Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            },
+            {
+              "id": 39166682962,
+              "url": "https://github.com/apache/commons-lang/actions/runs/39166682962",
+              "name": "Dependency Review",
+              "head_sha": "9f75a9a6c2fcbc3d287a170827f2efe861cbe90d",
+              "status": "completed",
+              "conclusion": "action_required",
+              "run_attempt": 1,
+              "actual_job_collection": {
+                "source_url": "https://api.github.com/repos/apache/commons-lang/actions/runs/39166682962/jobs?per_page=100&page=1",
+                "request_started_at": "2026-10-19T19:20:05.781Z",
+                "observed_at": "2026-10-19T19:20:06.464Z",
+                "total_count": 0,
+                "returned_count": 0,
+                "pages_read": 1,
+                "scope": "Fresh latest-attempt actual job list. Empty collections establish no jobs at the recorded time."
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "javaparser_follow_through": {
+    "audit_started_at": "2026-10-19T19:23:39.680Z",
+    "audit_completed_at": "2026-10-19T19:28:02.992Z",
+    "maintainer_coordination": {
+      "source_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168",
+      "author": "jlerbsc",
+      "created_at": "2026-10-19T18:43:15Z",
+      "inherited_from": "Freshly read in the companion audit completed 2026-10-19T19:20:07.511Z; not refetched for this supplement.",
+      "summary": "The maintainer values the reproducing tests, objects to the IMPORTS-specific post-processing, is examining a correction where list alignment is computed, and asks to keep the PR open. This is coordination feedback, not acceptance.",
+      "requested_state": "Keep the PR open."
+    },
+    "bounded_discovery": {
+      "recent_prs": {
+        "source_url": "https://api.github.com/repos/javaparser/javaparser/pulls?state=all&sort=updated&direction=desc&per_page=10&page=1",
+        "collection_started_at": "2026-10-19T19:23:39.681Z",
+        "observed_at": "2026-10-19T19:23:40.547Z",
+        "sort": "all states, updated descending",
+        "page": 1,
+        "per_page": 10,
+        "returned_count": 10,
+        "after_or_at_cutoff": [
+          {
+            "number": 5179,
+            "url": "https://github.com/javaparser/javaparser/pull/5179",
+            "author": "jlerbsc",
+            "title": "fix: match children before tokens in reshuffled differences",
+            "updated_at": "2026-10-19T19:21:17Z",
+            "head_sha": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5"
+          },
+          {
+            "number": 5175,
+            "url": "https://github.com/javaparser/javaparser/pull/5175",
+            "author": "agamal026",
+            "title": "Preserve spacing before the type when removing the last import",
+            "updated_at": "2026-10-19T18:43:15Z",
+            "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2"
+          }
+        ],
+        "first_older_record": {
+          "number": 4976,
+          "updated_at": "2026-10-19T15:59:37Z"
+        },
+        "pagination_reason": "The descending result crosses the cutoff at the third record; all PRs in the observed update window are included in this page. This is not a full open-PR inventory."
+      },
+      "default_branch_commits": {
+        "source_url": "https://api.github.com/repos/javaparser/javaparser/commits?since=2026-10-19T18%3A43%3A15Z&per_page=100&page=1",
+        "collection_started_at": "2026-10-19T19:23:39.681Z",
+        "observed_at": "2026-10-19T19:23:40.183Z",
+        "since": "2026-10-19T18:43:15Z",
+        "returned_count": 0,
+        "scope": "Default branch only, through this response's observation time; does not cover unpublished branches.",
+        "conclusion": "No newly landed default-branch commit was returned in the queried interval."
+      }
+    },
+    "source_call_path_analysis": {
+      "classification": "Static source reasoning at candidate head b6c64e67f30ffedfe486b2904ac1680b4e0eccd5; no runtime claim.",
+      "source_reads": [
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/ConcreteSyntaxModel.java",
+          "ref": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+          "source_url": "https://github.com/javaparser/javaparser/blob/b6c64e67f30ffedfe486b2904ac1680b4e0eccd5/javaparser-core/src/main/java/com/github/javaparser/printer/ConcreteSyntaxModel.java",
+          "collection_started_at": "2026-10-19T19:27:17.524Z",
+          "observed_at": "2026-10-19T19:27:17.926Z"
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+          "ref": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+          "source_url": "https://github.com/javaparser/javaparser/blob/b6c64e67f30ffedfe486b2904ac1680b4e0eccd5/javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+          "collection_started_at": "2026-10-19T19:26:44.787Z",
+          "observed_at": "2026-10-19T19:26:45.441Z"
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/DifferenceElementCalculator.java",
+          "ref": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+          "source_url": "https://github.com/javaparser/javaparser/blob/b6c64e67f30ffedfe486b2904ac1680b4e0eccd5/javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/DifferenceElementCalculator.java",
+          "collection_started_at": "2026-10-19T19:26:44.786Z",
+          "observed_at": "2026-10-19T19:26:45.229Z"
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+          "ref": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+          "source_url": "https://github.com/javaparser/javaparser/blob/b6c64e67f30ffedfe486b2904ac1680b4e0eccd5/javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/Difference.java",
+          "collection_started_at": "2026-10-19T19:26:44.787Z",
+          "observed_at": "2026-10-19T19:26:45.182Z"
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/ReshuffledDiffElementExtractor.java",
+          "ref": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+          "source_url": "https://github.com/javaparser/javaparser/blob/b6c64e67f30ffedfe486b2904ac1680b4e0eccd5/javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/ReshuffledDiffElementExtractor.java",
+          "collection_started_at": "2026-10-19T19:27:17.524Z",
+          "observed_at": "2026-10-19T19:27:17.933Z"
+        }
+      ],
+      "findings": [
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/ConcreteSyntaxModel.java",
+          "lines": {
+            "start": 1103,
+            "end": 1109
+          },
+          "finding": "CompilationUnit defines IMPORTS as a CsmList with a newline separator and two trailing newlines, within a sequence. This is the import-list shape described by the maintainer."
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+          "lines": {
+            "start": 233,
+            "end": 268
+          },
+          "finding": "The CsmList branch expands children and separators into the calculated element sequence."
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+          "lines": {
+            "start": 128,
+            "end": 135
+          },
+          "finding": "List removal still delegates the original/after models directly to DifferenceElementCalculator. This file is absent from #5179's changed-file list."
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/DifferenceElementCalculator.java",
+          "lines": {
+            "start": 344,
+            "end": 359
+          },
+          "finding": "A Reshuffled element is created only when both current elements are CsmMix and their contents differ. The following matching branch handles ordinary matching elements. This file is absent from #5179's changed-file list."
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/ReshuffledDiffElementExtractor.java",
+          "lines": {
+            "start": 57,
+            "end": 69
+          },
+          "finding": "The extractor's new correspondence calculation is reached only for a Reshuffled element, using its previous/next CsmMix values."
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/DifferenceElementCalculator.java",
+          "lines": {
+            "start": 90,
+            "end": 98
+          },
+          "finding": "Ordinary CsmToken matching still uses equals. #5179 instead changes CsmToken.isCorrespondingElement, whose relevant uses are in the reshuffled extractor."
+        }
+      ],
+      "conclusion": "No concrete correction to the ordinary import-list alignment was found in the fetched #5179 patch. It is related implementation work, but it does not establish that #4074 is fixed or that #5175's production workaround can now be dropped.",
+      "limit": "The Issue4074Test suite was not run against #5179. No passing/failing outcome for those 20 invocations on the candidate head is asserted."
+    },
+    "existing_submission_regression_path": {
+      "head_sha": "2a437e500bf54024772dd9f3d6d4149506defed2",
+      "base_sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+      "state_evidence": "The companion audit freshly bracketed the submission's unchanged open/unmerged head and base at 2026-10-19T19:20:07.510Z.",
+      "files_read": {
+        "source_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5175/files?per_page=100&page=1",
+        "collection_started_at": "2026-10-19T19:23:39.681Z",
+        "observed_at": "2026-10-19T19:23:40.219Z"
+      },
+      "changed_files": [
+        {
+          "path": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue4074Test.java",
+          "status": "added",
+          "blob_sha": "dbcb0c7de44f21e6f125fdab47e66e81afef638a",
+          "additions": 116,
+          "deletions": 0,
+          "source_url": "https://github.com/javaparser/javaparser/blob/2a437e500bf54024772dd9f3d6d4149506defed2/javaparser-core-testing%2Fsrc%2Ftest%2Fjava%2Fcom%2Fgithub%2Fjavaparser%2Fprinter%2Flexicalpreservation%2FIssue4074Test.java"
+        },
+        {
+          "path": "javaparser-core/src/main/java/com/github/javaparser/printer/lexicalpreservation/LexicalDifferenceCalculator.java",
+          "status": "modified",
+          "blob_sha": "cd6e1816894a0c8aebf269a852407c97da628b66",
+          "additions": 26,
+          "deletions": 1,
+          "source_url": "https://github.com/javaparser/javaparser/blob/2a437e500bf54024772dd9f3d6d4149506defed2/javaparser-core%2Fsrc%2Fmain%2Fjava%2Fcom%2Fgithub%2Fjavaparser%2Fprinter%2Flexicalpreservation%2FLexicalDifferenceCalculator.java"
+        }
+      ],
+      "regression_file": {
+        "path": "javaparser-core-testing/src/test/java/com/github/javaparser/printer/lexicalpreservation/Issue4074Test.java",
+        "status": "added",
+        "blob_sha": "dbcb0c7de44f21e6f125fdab47e66e81afef638a",
+        "additions": 116,
+        "deletions": 0,
+        "source_url": "https://github.com/javaparser/javaparser/blob/2a437e500bf54024772dd9f3d6d4149506defed2/javaparser-core-testing%2Fsrc%2Ftest%2Fjava%2Fcom%2Fgithub%2Fjavaparser%2Fprinter%2Flexicalpreservation%2FIssue4074Test.java"
+      },
+      "parameterized_test_methods": 7,
+      "parameter_invocations_by_static_source_count": 20,
+      "cases": [
+        {
+          "method": "removingLastImportPreservesBlankLineBeforeClass",
+          "invocations": 2,
+          "coverage": "LF and CRLF; removes the last of two imports and preserves one blank line before the class."
+        },
+        {
+          "method": "removingImportPreservesRemainingImportsAndBlankLine",
+          "invocations": 6,
+          "coverage": "LF and CRLF crossed with removing first, middle, or last of three imports; preserves the remaining imports and blank line."
+        },
+        {
+          "method": "removingLastImportPreservesOriginalClassSeparator",
+          "invocations": 4,
+          "coverage": "LF and CRLF crossed with no blank line or two blank lines; preserves the exact original separator."
+        },
+        {
+          "method": "removingLastImportPreservesWhitespaceOnBlankLine",
+          "invocations": 2,
+          "coverage": "LF and CRLF; preserves the space and tab on an otherwise blank line."
+        },
+        {
+          "method": "removingLastImportsSuccessivelyPreservesBlankLine",
+          "invocations": 2,
+          "coverage": "LF and CRLF; removes two trailing imports in sequence and preserves the class separator."
+        },
+        {
+          "method": "removingLastImportPreservesClassCommentAndBlankLine",
+          "invocations": 2,
+          "coverage": "LF and CRLF; preserves the class documentation comment and preceding blank line."
+        },
+        {
+          "method": "removingIndentedLastImportPreservesBlankLine",
+          "invocations": 2,
+          "coverage": "LF and CRLF; removes an indented final import while preserving the blank line."
+        }
+      ],
+      "separability": "The added Issue4074Test extends the existing AbstractLexicalPreservingTest and uses considerCode, NodeList import removals, LexicalPreservingPrinter.print, and exact assertions. It calls no new production helper and is separate from the single modified production file. Once an applicable generic fix is available, the complete production-file hunk can be omitted while retaining the test file.",
+      "applicability": "The no-blank-line, multiple-blank-line, whitespace-only-line, LF/CRLF, repeated removal, and comment cases directly exercise the actual-source alignment concerns described by the maintainer.",
+      "limits": [
+        "These are import behavior regressions, not a proof for every CsmList shape.",
+        "The file does not cover removing the sole remaining import or an independent non-import list with repeated trailing separators.",
+        "The existing annotation-focused tests added by #5179 do not replace these import-spacing assertions."
+      ],
+      "future_action": "When an applicable maintainer patch or explicit request appears, compare at its exact head, adapt these tests without duplicating the generic implementation, and perform only the focused verification needed to establish compatibility before any submission change."
+    },
+    "disposition": {
+      "decision": "Keep #5175 open; preserve the submitted production source and regression tests unchanged pending an applicable maintainer correction or request.",
+      "related_pr_to_monitor": "https://github.com/javaparser/javaparser/pull/5179",
+      "no_new_reply_posted_by_auditor": true,
+      "generic_import_fix_verified": false,
+      "landed_import_fix_verified": false,
+      "acceptance_verified": false,
+      "earnings_verified": false
+    },
+    "related_pr": {
+      "source_url": "https://api.github.com/repos/javaparser/javaparser/pulls/5179",
+      "collection_started_at": "2026-10-19T19:28:02.089Z",
+      "observed_at": "2026-10-19T19:28:02.992Z",
+      "number": 5179,
+      "url": "https://github.com/javaparser/javaparser/pull/5179",
+      "title": "fix: match children before tokens in reshuffled differences",
+      "author": "jlerbsc",
+      "state": "open",
+      "draft": false,
+      "merged": false,
+      "merged_at": null,
+      "head": {
+        "sha": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
+        "ref": "lpp-4074-diff",
+        "repository": "jlerbsc/javaparser"
+      },
+      "base": {
+        "sha": "dc6bc07155cb0d0d7a8a427b76411848eb862136",
+        "ref": "master",
+        "repository": "javaparser/javaparser"
+      },
+      "created_at": "2026-10-19T19:04:09Z",
+      "updated_at": "2026-10-19T19:26:54Z",
+      "issue_comments": 1,
+      "inline_review_comments": 0
+    }
+  },
+  "limits": [
+    "All latest collection total_count values equal the returned array lengths; no current check/status/workflow/job page was silently truncated.",
+    "CheckRuns use the REST endpoint's default latest filter; legacy status contexts are the combined endpoint's latest-per-context records. Historical attempts are not enumerated.",
+    "GraphQL reviewDecision and review-thread resolution state were not freshly queried. Submitted review states are from the normalized discussion timeline.",
+    "No full job logs were fetched. Fresh actual job lists were limited to the eight admission-gated runs; successful execution details remain attributed to earlier immutable evidence.",
+    "No upstream issue/backlink, historical PR, private email, legal document, benefit program or financial account was refreshed. No maintainer acceptance, award or payment is inferred.",
+    "The new JavaParser acknowledgement of useful tests is not acceptance of the proposed implementation or an incorporated upstream contribution.",
+    "Repository instructions and source records were read only at the coordinator-supplied pinned hub commit; publication and continuation updates remain the coordinator's responsibility."
+  ],
+  "coordinator_review": {
+    "scope": "The coordinator independently read maintainer comment 6274613168, PR5179 metadata and complete three-file diff, plus the exact-head ConcreteSyntaxModel, LexicalDifferenceCalculator, DifferenceElementCalculator and ReshuffledDiffElementExtractor. This is a source review, not execution on the maintainer branch.",
+    "reviewed_commit": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5"
+  }
+}
