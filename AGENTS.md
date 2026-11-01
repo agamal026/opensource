@@ -9,6 +9,37 @@ continuing work. For the continuous 100-project campaign, also read
 `docs/CLOUD-OPERATION.md`, `data/campaign.json`, and `progress/CAMPAIGN.md`.
 The default executor is a fresh GPT cloud session; the connected PC is optional.
 
+## Recovery and connection checks
+
+Recover the current private handoff from its latest Library metadata when that
+handoff is supplied. Read the exact returned backing file and version; a bare
+alias or an older conversation copy is not proof of the latest saved state.
+Keep private identifiers and recovery records out of this public repository.
+
+Discover the required connector action in the current session. If filtered
+lookup finds nothing, inspect the full connector action catalog once before
+reporting an action as unavailable. Do not carry an earlier session's tool list
+forward as current, or hard-code an expected action count.
+
+Treat these as separate observations: authenticated account, readable resource,
+available write action, successful owned-repository write, authorized upstream
+publication, browser context, and scheduled execution. None proves all the others.
+A browser-context failure does not require abandoning working connector actions
+or asking the user to sign in again. A discovered write action is not evidence
+that its provider will authorize the operation.
+
+Use the next substantive authorized operation, not a disposable permission probe.
+On a real access, approval, or safety gate, stop that operation and preserve its
+exact target, action, result, and resumption condition. Do not retry it through
+another provider, browser, machine, credential, head, or wrapper to bypass the
+gate. Continue independently permitted work; do not reset connections, broaden
+permissions, repeat successful tests, or create more handoff packets by default.
+
+For a scheduled task, match the result to its run ID and timestamps before
+reporting its outcome. An empty result requiring user action is not success.
+Do not repeatedly enable a paused task or claim that a prompt or connection
+change repairs recurrence without actual execution evidence.
+
 ## Work selection
 
 Use the goal and opportunity evidence to choose the next useful task. Keep at
