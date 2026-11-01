@@ -176,7 +176,8 @@ def validate_milestones(value: object, repo: str, started: date, updated: date, 
                     f"{location}.source_ref: expected a GitHub commit URL matching source_commit")
             validation = fields(item["validation"], {"command", "result", "ref"}, location + ".validation")
             text(validation["command"], location + ".validation.command")
-            require(validation["result"] == ("reproduced" if stage == "reproduced" else "passed"),
+            outcomes = ("reproduced", "characterized") if stage == "reproduced" else ("passed",)
+            require(validation["result"] in outcomes,
                     f"{location}.validation.result: does not establish this milestone")
             url(validation["ref"], location + ".validation.ref")
         if stage == "submitted":
@@ -313,6 +314,12 @@ def reached(project: dict, stage: str) -> bool:
     return len(project["milestones"]) > STAGES.index(stage)
 
 
+def stage_label(stage: str) -> str:
+    # Keep the stored schema key compatible while making test-only baseline
+    # evidence distinguishable from a reproduced production defect.
+    return "baseline assessed" if stage == "reproduced" else stage
+
+
 def paid_totals(projects: list[dict], started_on: str) -> dict[str, Decimal]:
     totals: dict[str, Decimal] = {}
     with localcontext() as context:
@@ -334,19 +341,21 @@ def render_campaign(data: dict, batch: int | None = None) -> str:
     projects = sorted((p for p in data["projects"] if batch is None or p["batch"] == batch),
                       key=lambda p: (p["batch"], p["repository"].casefold()))
     submitted = sum(reached(p, "submitted") for p in data["projects"])
+    accepted = sum(reached(p, "accepted") for p in data["projects"])
     history = data.get("historical_submissions", [])
     lines = ["# Contribution campaign", "",
-             f"Started: {data['started_on']}. Records reviewed through: {data['updated_on']}.", "",
-             f"**Goal progress: {submitted} / {data['target_count']} distinct external repositories with qualified campaign submissions.**", "",
+             f"Started: {data['started_on']}. Records last updated: {data['updated_on']}; individual evidence retains its original date.", "",
+             f"**Goal progress: {accepted} / {data['target_count']} distinct external repositories with accepted campaign contributions.**", "",
+             f"Qualified campaign submissions: {submitted} distinct repositories; submission alone does not count toward the goal.", "",
              f"Full research queue: {len(data['projects'])} repositories. Historical submissions: {len(history)}; excluded from this goal.", "",
-             "A qualified submission has the policy, selection, reproduction, exact source, passing validation, review and upstream PR evidence required by the schema. It does not establish acceptance or benefit eligibility.", "",
-             "This offline report checks record structure and consistency. Verify what the linked evidence establishes, current policies, ownership and benefit eligibility. This offline tool does not start background work.", ""]
+             "A qualified submission has the policy, selection, baseline assessment, exact source, passing validation, review and upstream PR evidence required by the schema. Acceptance requires an upstream merge or explicit incorporation with source linkage; it does not establish benefit eligibility.", "",
+             "Counts cover the evidence entered in this file, not a complete live PR inventory. This offline report checks record structure and consistency. Verify what the linked evidence establishes, current policies, ownership and benefit eligibility. This offline tool does not start background work.", ""]
     if batch is not None:
         lines += [f"## Batch {batch}", "", "Stage and benefit totals below cover this batch only; goal progress above covers the full campaign.", ""]
     lines += ["## Contribution stages", "", "| Stage | Currently at stage | Reached in displayed queue |", "| --- | ---: | ---: |"]
     current = Counter(p["milestones"][-1]["stage"] for p in projects)
     for stage in STAGES:
-        lines.append(f"| {stage} | {current[stage]} | {sum(reached(p, stage) for p in projects)} |")
+        lines.append(f"| {stage_label(stage)} | {current[stage]} | {sum(reached(p, stage) for p in projects)} |")
     lines += ["", "## Batches", "", "| Batch | Targets | Screened | Selected | Qualified submitted | Accepted |", "| --- | ---: | ---: | ---: | ---: | ---: |"]
     for number in sorted({p["batch"] for p in projects}):
         group = [p for p in projects if p["batch"] == number]
@@ -363,7 +372,7 @@ def render_campaign(data: dict, batch: int | None = None) -> str:
         repo = project["repository"]
         route = project["benefit_route"]
         lines += [f"### {link(repo, 'https://github.com/' + repo)}", "",
-                  f"Batch {project['batch']} · current stage: **{project['milestones'][-1]['stage']}**.", "",
+                  f"Batch {project['batch']} · current stage: **{stage_label(project['milestones'][-1]['stage'])}**.", "",
                   md(project["summary"]), "", "Next action: " + md(project["next_action"]), "",
                   f"Benefit route: **{route['kind']} / {route['qualification']}**, checked {route['checked_on']}. " + md(route["summary"]), ""]
         if route["refs"]:
@@ -377,7 +386,7 @@ def render_campaign(data: dict, batch: int | None = None) -> str:
                 evidence.append(link("source " + milestone["source_commit"], milestone["source_ref"]))
             elif "source_commit" in milestone:
                 evidence.append("validated source " + milestone["source_commit"])
-            lines.append(f"- {milestone['date']} **{milestone['stage']}**: " + "; ".join(evidence) + ".")
+            lines.append(f"- {milestone['date']} **{stage_label(milestone['stage'])}**: " + "; ".join(evidence) + ".")
             if "validation" in milestone:
                 validation = milestone["validation"]
                 lines.append("  Validation command: " + md(validation["command"]) + "; result: **" + validation["result"] + "**; " + link("validation record", validation["ref"]) + ".")
@@ -437,7 +446,8 @@ def main(argv: list[str] | None = None) -> int:
         data = load_campaign(args.input)
         if args.command == "validate":
             submitted = sum(reached(p, "submitted") for p in data["projects"])
-            print(f"Campaign is valid: {len(data['projects'])} targets; {submitted} / {data['target_count']} qualified submitted repositories.")
+            accepted = sum(reached(p, "accepted") for p in data["projects"])
+            print(f"Campaign is valid: {len(data['projects'])} targets; {accepted} / {data['target_count']} accepted repositories; {submitted} qualified submitted repositories.")
         else:
             content = render_campaign(data, args.batch)
             if args.output is None:

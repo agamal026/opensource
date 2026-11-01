@@ -1,8 +1,8 @@
 # Contribution campaign data
 
 `tools/contribution_campaign.py` validates a deliberately curated campaign and
-renders an offline Markdown report. The initial goal is **100 distinct external
-repositories with qualified submissions**. A target, a screened opportunity, a
+renders an offline Markdown report. The goal is **100 distinct external
+repositories with accepted contributions**. A target, a screened opportunity, a
 passing test, an accepted contribution and a paid benefit have separate counts.
 There is no requirement to fill the file with 100 entries before starting work.
 The goal is not a limit on the number of repositories that may be researched.
@@ -113,7 +113,7 @@ Dates cannot decrease, precede `started_on` or follow `updated_on`.
 | `target` | None | A real external repository and a plausible reason to investigate. |
 | `screened` | `policy_ref` | Applicable contribution and AI-use policy; an assessed task or gap. |
 | `selected` | `selection_ref` | A concrete useful task, current selectability and any required maintainer assignment or permission. |
-| `reproduced` | `source_commit`, `source_ref`, `validation` | A baseline defect or demonstrated shortfall in a supported workflow, at an exact revision. |
+| `reproduced` (displayed as baseline assessed) | `source_commit`, `source_ref`, `validation` | A baseline defect, demonstrated workflow shortfall, or characterization of a supported contract and coverage need, at an exact revision. |
 | `validated` | `source_commit`, `source_ref`, `validation`, `review_ref` | Meaningful passing validation and review of the proposed revision. |
 | `submitted` | `pr_url`, `source_commit` | An actual upstream PR containing the validated revision. |
 | `accepted` | `acceptance_ref` | Actual upstream acceptance, independently of tests or submission. |
@@ -134,8 +134,13 @@ The validator does not query the PR head.
 }
 ```
 
-Use `result: "reproduced"` for the baseline milestone and `result: "passed"` for
-the validated milestone. A reproduced wrong result need not have a nonzero
+Use `result: "reproduced"` for a reproduced baseline problem, or
+`result: "characterized"` for test-only evidence of an existing supported
+contract. Both use the legacy `reproduced` stage key; reports call this slot
+"baseline assessed" and show the actual result. Characterization does not claim
+a production failure, a fix, or upstream acceptance. The exact source, command,
+evidence and review requirements remain. Use only `result: "passed"` for the
+validated milestone. A reproduced wrong result need not have a nonzero
 process exit code. The linked record must describe the exact commands and
 configuration, revision, observed result, test counts, skips and remaining scope
 limits. Prefer immutable commit permalinks and exact run/attempt links.
@@ -152,12 +157,14 @@ The author must confirm that the link establishes acceptance; a PR link alone
 does not prove a merge. Partial incorporation must be described precisely and
 must not be labeled a full PR merge.
 
-**Goal credit is one per distinct repository reaching `submitted` during this
-campaign**, including those that later reach `accepted`. Qualified here means
+**Goal credit is one per distinct repository reaching `accepted` during this
+campaign**, supported by an upstream merge or explicit incorporation with source
+linkage. Submissions remain a separate measure. Qualified here means
 the recorded contribution evidence meets this schema. It does not mean the
 work earned money or that the benefit program found the contributor eligible.
 Additional PRs to the same repository do not increase the distinct-project
-numerator. Retain detailed follow-up work in dated progress records. Keep
+numerator. Partial incorporation must identify what was actually retained;
+closing an unmerged PR is not itself acceptance. Retain detailed follow-up work in dated progress records. Keep
 screened or parked targets with an accurate next action; research does not
 create submission credit.
 
@@ -175,7 +182,7 @@ reproduction, validation or review history. Each item requires `repository`,
 the acceptance date must lie between submission and `updated_on`.
 
 Historical PR URLs are unique and cannot also occur as new campaign
-submissions. They never count toward the campaign submission goal, even if
+submissions. They never count toward the campaign acceptance goal, even if
 accepted after the campaign starts. They remain visible in a separate report
 section, including in batch reports. An upstream may have both an older PR in
 history and a different new campaign PR. Existing catalog and baseline

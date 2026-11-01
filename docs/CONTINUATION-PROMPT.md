@@ -9,7 +9,7 @@ locations. This file is not a copy of those private instructions.
 
 ## Recover the current work
 
-Continue the user's goal of useful, validated contributions to 100 distinct
+Continue the user's goal of useful, validated, accepted contributions to 100 distinct
 external open-source projects, review and maintenance, verified benefits, and
 useful workflow improvements. Use the cloud environment and connected GitHub
 account. Recover source and evidence from their exact public revisions; temporary
@@ -35,13 +35,15 @@ content-publishing work separate.
    failures first. Pending external review or admission alone does not occupy
    the main implementation slot. Read the relevant discussion immediately before
    posting; reuse recorded comment URLs to avoid duplicate admission requests.
-3. **Select.** If no actionable source work remains, screen at most three suitable
-   candidates from the queue. Recheck policy, competing work, selection conditions,
+3. **Select.** If no actionable source work remains, screen suitable candidates
+   from the queue in sequential waves of at most three. This is a per-wave limit,
+   not a limit of three candidates for the entire session. Recheck policy, competing work, selection conditions,
    accepted submission channel, publication route and feasible cloud validation.
    Park a crowded unpaid proposal after its 30-minute timebox. An open issue or
    advertised reward is not a paid assignment.
-4. **Implement and validate.** Reproduce a supported failure, make a focused fix,
-   run meaningful before/after tests and required upstream gates, and independently
+4. **Implement and validate.** Reproduce a supported failure or characterize
+   supported behavior for a useful test contribution. Make a focused change,
+   run meaningful baseline/revision checks and required upstream gates, and independently
    review the exact result. Keep at most one source writer and one necessary
    owned-tool improvement. Use genuine native cloud specialists for independent
    read-only work and review when useful; do not recursively spawn more writers.
@@ -88,9 +90,12 @@ comment or account simply because the comments contain no link.
 
 Prefer useful, reproducible problems with attainable validation and responsive
 maintainers. Pursue sponsor-backed selectable paid work when terms and actual
-fit are verified. Recheck the retained libzip evidence at or after
-`2026-10-22T13:12:13Z` using current rules; the date itself establishes neither
-eligibility nor payment. Review outcomes every seven days, comparing measured
+fit are verified. Libzip's September crypto retention checkpoint was reviewed
+on October 22; the [current reconciliation](../progress/2026-11-01-accepted-accounting-and-libzip.md)
+extends that source check and distinguishes the later CI change's conditional
+November 22 checkpoint. Reuse the completed evidence and review only a concrete
+remaining requirement or changed source/rule; elapsed time alone establishes
+neither full eligibility nor payment. Review outcomes every seven days, comparing measured
 effort, submissions, acceptance, review burden and realized benefits. Unknown
 effort or costs remain unknown. Additional paid infrastructure, legal commitments
 and new credentials need their own authority.
@@ -98,7 +103,8 @@ and new credentials need their own authority.
 Keep researched targets, qualified submissions, upstream acceptance, applications,
 grants, activated access and actual payments distinct. Preserve historical
 exclusions. Report the 100-project completion only after independently verifying
-all qualifying upstream URLs and matching source/review evidence, and record that
+acceptance in all 100 distinct projects with matching upstream, source and review
+evidence, and record that
 the report was delivered. Until then, preserve intermediate results and nonurgent
 blockers in the handoff. After 100, maintain the portfolio and benefit follow-up
 without expanding the target or changing the schedule.

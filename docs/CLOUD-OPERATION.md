@@ -2,7 +2,7 @@
 
 ## Goal and durable state
 
-Complete useful, validated submissions to 100 distinct external projects, then
+Obtain accepted contributions to 100 distinct external projects, then
 continue their review, maintenance, and benefit follow-through. Start with
 [GOAL.md](../GOAL.md), [campaign progress](../progress/CAMPAIGN.md),
 [the queue](../data/campaign.json), [existing PR status](../progress/STATUS.md),
@@ -95,8 +95,9 @@ reasons unsuitable targets were parked.
 
 Keep submitted, accepted, granted, activated and paid states separate. Historical
 submissions do not become new campaign work. Count each external project once
-after its evidence-backed submitted milestone; later changes to that project
-are follow-through. After 100 submissions, maintain the portfolio instead of
+after an upstream merge or explicit incorporation with source linkage; submitted
+PRs are tracked separately. Later changes to that project are follow-through.
+After 100 accepted projects, maintain the portfolio instead of
 silently expanding the target.
 
 The [Google Patch Rewards rules](https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md)
@@ -106,13 +107,14 @@ automatically qualify. Reporting limits also prevent treating 100 projects as
 100 immediate applications. Keep specific patch and participant eligibility
 unverified until supported.
 
-Recheck the existing libzip integration at or after
-**2026-10-22T13:12:13Z**. Verify retention and terms before preparing the reward
-submission. Assess CodeSupply before its recorded deadline only if project and
-applicant fit can be supported. Preserve private application ownership and the
-October 13/November 12 planning anchors. Pursue subscriptions or compute for an
-actual workflow need; activated access is separate from cash. Record personal
-learning only when the person reviews or practices the work.
+The September libzip crypto incorporation already has a completed October 22
+age/retention review, extended through `729d89f` on November 1. The November 22
+conditional checkpoint belongs only to the later CI squash. Preserve both
+scopes and all remaining participant, application and reward conditions in the
+[latest correction](../progress/2026-11-01-accepted-accounting-and-libzip.md).
+Existing private application ownership and the October 13/November 12 planning
+anchors remain. No application or activated benefit is implied by source
+retention or a public program listing.
 
 ## Access checks and blocked actions
 
@@ -193,7 +195,7 @@ unblocked contribution, and publishes evidence and the next action. Follow the
 user's latest instruction: "Proceed with the first 100 contributions, self improve,
 report back only when done." Save intermediate results, blockers and nonurgent
 decisions in the durable handoff. Report campaign completion only after verifying
-the 100 qualifying submissions. Review the first few runs against actual tool
+the 100 qualifying accepted projects. Review the first few runs against actual tool
 access, then adjust the queue or procedure using the results. Do not create
 duplicate workers or modify other existing tasks or their schedules.
 

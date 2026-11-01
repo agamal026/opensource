@@ -8,8 +8,8 @@ to financial benefits, subscriptions, or compute credits while improving skills,
 workflows, and tools. Advertised benefits, eligibility, and realized outcomes are
 tracked separately.
 
-The current campaign aims for **100 distinct external projects with validated
-work submitted**, followed by review, maintenance, and benefit follow-through.
+The current campaign aims for **100 distinct external projects with accepted
+contributions**, followed by review, maintenance, and benefit follow-through.
 See the [campaign progress](progress/CAMPAIGN.md), [source-backed queue](data/campaign.json),
 and [cloud operating procedure](docs/CLOUD-OPERATION.md). GPT cloud sessions are
 the default executor; GitHub provides durable state between sessions.
@@ -87,32 +87,39 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The registry covers historical work in libavif, libzip, npm, nginx and libevent,
-plus **five qualified campaign submissions**. The
-[latest verified checkpoint](progress/2026-10-19-review-routing.md) and
-[current resume record](data/continuation.json) identify completed work and what
-can advance next. No current campaign project is recorded as accepted, and no
-realized benefit is established.
+The current accepted campaign count is **3 / 100**, independently checked on
+**November 1, 2026 (Europe/Vienna)**. The
+[accounting correction and current review](progress/2026-11-01-accepted-accounting-and-libzip.md)
+links the acceptance evidence, source identity, tests and remaining dependencies.
+Submissions, owned validation drafts, historical contributions and benefits
+remain separate. No campaign payment is established.
 
-| Campaign contribution | Current verified follow-through |
+| Accepted project | Exact acceptance |
 | --- | --- |
-| [JavaParser #5175](https://github.com/javaparser/javaparser/pull/5175) | Maintainer is investigating generic alignment; preserve our regression tests and keep the PR open. AppVeyor success; two Actions workflows await admission. |
-| [Jackson databind #6302](https://github.com/FasterXML/jackson-databind/pull/6302) | Requested 3.1 backport/helper work complete; upstream builds pass; CLA/acceptance pending. |
-| [LZ4 #1890](https://github.com/lz4/lz4/pull/1890) | Corrected source has 54 successful CheckRuns, including TSan; review pending. |
-| [Commons Compress #825](https://github.com/apache/commons-compress/pull/825) | 19 owned default Maven jobs pass; upstream admission pending; Jira backlink present. |
-| [Commons Lang #1826](https://github.com/apache/commons-lang/pull/1826) | Required default build and 18 ordinary hosted jobs pass; experimental Java 28 limitation documented; upstream admission pending; Jira backlink present. |
+| [Commons Lang #1826](https://github.com/apache/commons-lang/pull/1826) | Merged October 19 as `d6264649`; hash interoperability correction. |
+| [LZ4 #1890](https://github.com/lz4/lz4/pull/1890) | Both production fixes explicitly incorporated through maintainer #1905, merged October 20 as `4eba0114`; original #1890 closed unmerged. |
+| [Commons CSV #640](https://github.com/apache/commons-csv/pull/640) | Useful automatic-header tests adapted in `e9ed42a` on October 22; original #640 closed unmerged. The reported parser failure remains unreproduced. |
 
-The JavaParser review update is from October 19; the remaining table entries retain their October 18 execution evidence. The [latest selected receipt](progress/2026-10-19-review-routing.json) records the bounded October 19 follow-through. The [dated snapshot](data/snapshot-source.json)
-records exact collection times and source coverage; earlier submission notes
-retain their original dates and limits. [Current status](progress/STATUS.md)
-links all registered upstream records and checks. Waiting for review does not
-reserve an implementation writer or justify repeated unchanged tests.
+| Existing open contribution | Current dependency |
+| --- | --- |
+| [BeanUtils #444](https://github.com/apache/commons-beanutils/pull/444) | Source `51a346ab`; upstream Actions require admission. Its description still cites earlier proof, and the attempted description update was denied. |
+| [JavaParser #5188](https://github.com/javaparser/javaparser/pull/5188) | Source `07afbca4`; upstream Actions require admission. The rejected earlier #5175 receives no acceptance credit. |
+| [Commons Compress #825](https://github.com/apache/commons-compress/pull/825) | Source `7e647788`; upstream Actions require admission. Additional COMPRESS-729 source is complete in an owned validation draft, with upstream submission blocked. |
+| [Jackson #6302](https://github.com/FasterXML/jackson-databind/pull/6302) | Source `38261628`; four upstream builds passed historically. CLA and acceptance remain unresolved; newer owned validation is separate from the upstream head. |
 
-The prepared `pixi` patch remains in its original local worktree. Its contributor
-must personally review the exact code, fixture, tests, and PR text before
-submission under [AOMedia's contribution policy](https://aomedia.org/about/legal/).
-The [review guide](docs/LIBAVIF-2428-REVIEW.md) records the scope and retained
-evidence without republishing the patch.
+The [campaign report](progress/CAMPAIGN.md) is generated from reviewed milestone
+evidence. Its submission metric records the stage histories currently entered;
+it is not a live inventory of every later PR revision. The separate
+[registry snapshot](progress/STATUS.md) still describes October 18 observations
+and has not been relabeled as a fresh collection. The
+[current continuation record](data/continuation.json) identifies the selected
+November 1 evidence and preserves older checkpoints.
+
+Historical [libzip #576](https://github.com/nih-at/libzip/pull/576) remains
+excluded from campaign credit. Its September crypto incorporation and October
+CI merge have different acceptance and retention dates. The
+[opportunity review](docs/OPPORTUNITIES.md) records the corrected distinction;
+retention is not an award or payment.
 
 ## Repository map
 

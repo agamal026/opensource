@@ -1,6 +1,6 @@
 # Opportunities and next decisions
 
-**Checked: 2026-10-17.** Use this review with [the goal](../GOAL.md) and
+**Libzip refreshed: 2026-11-01; other program observations: 2026-10-17.** Use this review with [the goal](../GOAL.md) and
 [current contribution status](../progress/STATUS.md). The curated
 [opportunities registry](../data/opportunities.json) records advertised benefits,
 scoped eligibility, applications and outcomes separately. Recheck current terms
@@ -16,17 +16,34 @@ preserves the prepared contribution and its remaining personal/technical gates.
 
 | Opportunity | Advertised benefit | Current assessment and next action |
 | --- | --- | --- |
-| [Google Patch Rewards: libzip](https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md) | Tier 1 base awards of **$500 / $2,000 / $7,500 / $15,000**, at panel discretion. | **Project scope verified; full reward eligibility unverified.** Prioritize the existing accepted hardening. Recheck at **2026-10-22T13:12:13Z**; this checkpoint does not establish qualification or an award. |
+| [Google Patch Rewards: libzip](https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md) | Tier 1 base awards of **$500 / $2,000 / $7,500 / $15,000**, at panel discretion. | **Project scope and September-crypto retention supported; full reward eligibility unverified.** Reuse the completed October 22 review and November 1 source/history audit. The later CI squash has its own November 22 conditional date; no application or award is established. |
 | [NLnet CodeSupply](https://nlnet.nl/codesupply/) | **€5,000–€50,000** for a first project grant. | **Project/applicant fit unverified.** The call closes **2026-11-03 at 12:00 CET (11:00 UTC)**. Assess one original supply-chain metadata project before preparing an application. |
 | [Expensify/App #104027](https://github.com/Expensify/App/issues/104027) | **$175** advertised. | **Investigated; no distinct proposal justified.** There were **26 proposal comments** and no contractor selection observed. Park implementation; revisit only if selection or new evidence changes the opportunity. |
 
 Google requires acceptance followed by **one full month without reverts**;
 the [current rules](https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md)
-also limit eligible patch age and submission frequency. Keep the
-[accepted crypto-clearing commit](https://github.com/nih-at/libzip/commit/c3ba909e296e824f794e26d36379174524af74b8)
-and [maintainer acknowledgment](https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699)
-separate from the open CI remainder of PR #576. The published award categories
-are program terms; no amount has been established for this contribution.
+also limit patch age to twelve months and submissions to three per person per
+month. Rules blob `b0766c47f144066424e7303bb22e13dc993bf717` and scope blob
+`7a2db9a7d8e339545ca3341edf018b80a335b1b9` were checked during the November 1
+continuation; libzip remains Tier 1 under Other essential libraries.
+
+The [crypto-clearing commit](https://github.com/nih-at/libzip/commit/c3ba909e296e824f794e26d36379174524af74b8)
+was incorporated on September 22 and acknowledged by the
+[maintainer that day](https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699).
+Its October 22 retention review was already complete. Current main
+[`729d89f`](https://github.com/nih-at/libzip/commit/729d89f1a6cbeaebe9d4accad23fc65f5a93bcde)
+still retains the implementation, regression and build integration across the
+82 inspected revision snapshots. The volatile-store fallback and explicit
+clearing configuration support a source-based security rationale, but do not
+establish reward-panel qualification or a verified exploit.
+
+The [October 22 squash](https://github.com/nih-at/libzip/commit/2ff326957e9633d051cf398bba88d41564eaf0f8)
+contains five CI files. Its own conservative November 22 retention checkpoint
+must not reset the September crypto acceptance clock. Participant eligibility,
+frequency/application status and any award remain unverified. Keep personal
+application records private; this is a public technical review, not an
+application. The [complete correction](../progress/2026-11-01-accepted-accounting-and-libzip.md)
+retains both scopes and their limitations.
 
 CodeSupply requires relevant open deliverables and a
 [European dimension](https://nlnet.nl/codesupply/eligibility/); the usual route

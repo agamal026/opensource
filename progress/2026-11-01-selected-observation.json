@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "recorded_at_utc": "2026-10-31T23:19:59.970295+00:00",
+  "review_date_local": "2026-11-01",
+  "timezone": "Europe/Vienna",
+  "scope": "Selected existing PRs and acceptance records only; not a complete refresh of data/github.json. Read-only connector observations plus bounded public source-history verification.",
+  "accepted_count": 3,
+  "accepted_delta": 0,
+  "accepted": [
+    {
+      "repository": "apache/commons-lang",
+      "pr_url": "https://github.com/apache/commons-lang/pull/1826",
+      "original_pr_merged": true,
+      "kind": "merged",
+      "accepted_at": "2026-10-19T22:29:43Z",
+      "acceptance_commit": "d626464952b57e665a83bf556cd0f0e7fd9983fb",
+      "current_ref": "b8726053b685e80ea27f10a09fbb53f6022be46e"
+    },
+    {
+      "repository": "lz4/lz4",
+      "pr_url": "https://github.com/lz4/lz4/pull/1890",
+      "original_pr_merged": false,
+      "kind": "production_fixes_incorporated",
+      "acknowledgement": "https://github.com/lz4/lz4/pull/1890#issuecomment-6281751967",
+      "incorporating_pr": "https://github.com/lz4/lz4/pull/1905",
+      "accepted_at": "2026-10-20T03:33:12Z",
+      "acceptance_commit": "4eba01144bb54014d6adde134b6da2cf44c28885",
+      "current_ref": "0abbf9f346b029529a7bec7c9a2e7f5595e2b5e2"
+    },
+    {
+      "repository": "apache/commons-csv",
+      "pr_url": "https://github.com/apache/commons-csv/pull/640",
+      "original_pr_merged": false,
+      "kind": "adapted_test_coverage_incorporated",
+      "acknowledgement": "https://github.com/apache/commons-csv/pull/640#issuecomment-6339536042",
+      "accepted_commit_at": "2026-10-22T11:20:41Z",
+      "acknowledged_at": "2026-10-22T11:23:22Z",
+      "acceptance_commit": "e9ed42afa814b07ccf3be74ece6b25e16d59be54",
+      "current_ref": "7918b27424f4f6ba8e1864f5a17d6306295e29d1",
+      "qualification": "Three adapted automatic-header cases retained; original PR unmerged, reported exception unreproduced, no parser fix claimed."
+    }
+  ],
+  "open_prs": [
+    {
+      "repository": "apache/commons-beanutils",
+      "number": 444,
+      "head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+      "base": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+      "workflow_runs": [
+        41077699457,
+        41077699636
+      ],
+      "workflow_conclusion": "action_required",
+      "actual_jobs": 0,
+      "state": "open",
+      "merged": false,
+      "pr_url": "https://github.com/apache/commons-beanutils/pull/444"
+    },
+    {
+      "repository": "javaparser/javaparser",
+      "number": 5188,
+      "head": "07afbca4f037f8c6edea5b3a1aec450bb8df4d69",
+      "base": "6dc10fcd35fc40630239f7f84c8980f7ad8268d5",
+      "workflow_runs": [
+        39676014120,
+        39676014463
+      ],
+      "workflow_conclusion": "action_required",
+      "actual_jobs": 0,
+      "legacy_status": "AppVeyor success",
+      "state": "open",
+      "merged": false,
+      "pr_url": "https://github.com/javaparser/javaparser/pull/5188"
+    },
+    {
+      "repository": "apache/commons-compress",
+      "number": 825,
+      "head": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "base": "611cad06b66842692870c6ae98f50de7ce4f25d5",
+      "workflow_runs": [
+        39148712364,
+        39148712206,
+        39148712273
+      ],
+      "workflow_conclusion": "action_required",
+      "actual_jobs": 0,
+      "state": "open",
+      "merged": false,
+      "pr_url": "https://github.com/apache/commons-compress/pull/825"
+    },
+    {
+      "repository": "FasterXML/jackson-databind",
+      "number": 6302,
+      "head": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+      "base": "5d64697ef018099e3d5f951668752ec9d4ffabf9",
+      "workflow_runs": [
+        39138054220
+      ],
+      "workflow_conclusion": "success",
+      "actual_successful_build_jobs": 4,
+      "skipped_trigger_jobs": 2,
+      "qualification": "Historical execution, freshly read; not rerun. CLA remains unresolved.",
+      "state": "open",
+      "merged": false,
+      "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302"
+    }
+  ],
+  "new_candidates_allocated": 0,
+  "libzip": {
+    "historical_submission_excluded_from_campaign": true,
+    "crypto_commit": "c3ba909e296e824f794e26d36379174524af74b8",
+    "crypto_accepted_at": "2026-09-22T10:49:41Z",
+    "crypto_acknowledged_at": "2026-09-22T13:12:13Z",
+    "current_main": "729d89f1a6cbeaebe9d4accad23fc65f5a93bcde",
+    "ancestor_check_exit_code": 0,
+    "reachable_snapshots_inspected": 82,
+    "source_history_reversal_found": false,
+    "crypto_blob": "c2c521e599c61b06362f618eea65a759bdfde89d",
+    "separate_ci_commit": "2ff326957e9633d051cf398bba88d41564eaf0f8",
+    "ci_accepted_at": "2026-10-22T08:39:22Z",
+    "ci_conditional_recheck_not_before": "2026-11-22T08:39:23Z",
+    "prior_crypto_retention_review_completed_on": "2026-10-22",
+    "rules_blob": "b0766c47f144066424e7303bb22e13dc993bf717",
+    "scope_blob": "7a2db9a7d8e339545ca3341edf018b80a335b1b9",
+    "full_reward_eligibility": "unverified",
+    "application_status": "unverified",
+    "award_or_payment_verified": false,
+    "limits": "Source/history inspection, not new runtime tests, exploit proof, personal eligibility or application activity."
+  }
+}

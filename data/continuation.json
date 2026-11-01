@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19T19:38:36.613486Z",
-  "scope": "100 distinct external open-source projects; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-10-19-review-routing.md",
+  "updated_at": "2026-10-31T23:18:08.240439+00:00",
+  "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
+  "latest_checkpoint": "progress/2026-11-01-accepted-accounting-and-libzip.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -17,12 +17,121 @@
     "execution": "existing native task",
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
-    "enabled_observed": true,
-    "observed_at": "2026-10-19T19:18:02Z",
-    "last_run_time_reported": "2026-10-19T19:03:42.907592+00:00",
-    "execution_limit": "Last-run metadata alone does not establish completion; no full native run history was exposed. Preserve schedule and other tasks."
+    "enabled_observed": false,
+    "observation_date_utc": "2026-10-31",
+    "next_run_time_reported": null,
+    "execution_limit": "Observed paused with a last recorded result requiring user action but no explanatory content. No configuration mutation was performed. Enabled state or last-run metadata alone does not prove productive recurrence."
   },
   "latest_completed_contribution": {
+    "repository": "apache/commons-compress",
+    "issue_url": "https://issues.apache.org/jira/browse/COMPRESS-729",
+    "state": "owned_validation_complete_upstream_submission_blocked",
+    "source_commit": "f0ad0a114f71b3708806873db969966733f0f20f",
+    "upstream_base": "12b02d906b7945bccdcbdd2cf7b4523accd542da",
+    "source_ref": "https://github.com/agamal026/commons-compress/commit/f0ad0a114f71b3708806873db969966733f0f20f",
+    "owned_validation_pr": "https://github.com/agamal026/commons-compress/pull/2",
+    "evidence_ref": "https://github.com/agamal026/commons-compress/blob/46b6e4fe3ff023d54595c110bdf0aaecd4b06da7/contribution-review/COMPRESS-729/close-deflater-20261031/README.md",
+    "owned_validation_role": "Non-counting draft; no upstream PR or acceptance.",
+    "reusable_validation": [
+      "Five expected cleanup failures in test-only baseline; corrected focused class 11/11.",
+      "All 19 existing hosted default Maven jobs passed, 4,788 tests each, zero failures/errors; platform skips and coverage limitations retained.",
+      "Local default build test phase passed but final build failed because the installed Java lacked a Javadoc executable."
+    ],
+    "publication_gate": "Actual upstream PR-create operation returned HTTP 403 Resource not accessible by integration. Recover the exact prior operation and material supported authorization change before reconsideration. No alternate route or repeated write."
+  },
+  "follow_through": [
+    {
+      "pr_url": "https://github.com/apache/commons-beanutils/pull/444",
+      "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+      "resume_when": "Substantive review or actual admitted check failure; a supported repair of the denied description-update operation.",
+      "note": "Open/unmerged. Two Actions workflows require admission with zero jobs. Description still cites prior source; do not repeat the denied update."
+    },
+    {
+      "pr_url": "https://github.com/javaparser/javaparser/pull/5188",
+      "source_commit": "07afbca4f037f8c6edea5b3a1aec450bb8df4d69",
+      "resume_when": "Substantive review or actual admitted check failure.",
+      "note": "Open/unmerged; two Actions workflows require admission with zero jobs. Earlier #5175 rejected and excluded; do not reopen or resubmit."
+    },
+    {
+      "pr_url": "https://github.com/apache/commons-compress/pull/825",
+      "source_commit": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+      "resume_when": "Substantive review or actual admitted check failure.",
+      "note": "Open/unmerged; three upstream workflows require admission with zero jobs. Preserve the single earlier admission request and the separate COMPRESS-729 publication gate."
+    },
+    {
+      "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
+      "source_commit": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+      "resume_when": "Substantive review or actual CLA/acceptance evidence.",
+      "note": "Open/unmerged; four historical upstream builds passed. Helper discussion resolved. Newer owned draft #8 remains distinct from the submitted upstream head and personal legal resolution."
+    }
+  ],
+  "parked": [
+    {
+      "work": "h2database/h2database #4456",
+      "resume_when": "Truthful contributor statement and unresolved required validation are satisfied",
+      "evidence_ref": "https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md"
+    },
+    {
+      "work": "libavif human-review/CLA dependencies",
+      "resume_when": "Actual personal review or legal evidence becomes available through existing private records",
+      "public_guide": "docs/LIBAVIF-2428-REVIEW.md"
+    },
+    {
+      "work": "jsoup automated contributions",
+      "resume_when": "A verified changed upstream policy permits this workflow",
+      "note": "Known policy rejects AI-assisted code and AI-written submissions; do not post."
+    },
+    {
+      "work": "pytest-dev/iniconfig #83 autonomous AI-authored publication",
+      "resume_when": "Current outside-contributor expectations are established after the actual AI-rejection on PR84. Do not infer permission from maintainer AI use. Header compatibility is a separate unresolved choice.",
+      "policy_evidence": "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514",
+      "source_review_ref": "progress/2026-10-19-candidate-routing.json"
+    },
+    {
+      "work": "apache/commons-bcel #540 and javaparser/javaparser #5175",
+      "resume_when": "Only a concrete new application failure or explicit maintainer request for a genuinely distinct permitted task.",
+      "note": "Declined/rejected work receives no acceptance credit. Do not reopen, recreate, repackage, retest or ping the rejected submissions."
+    }
+  ],
+  "next_action": {
+    "first": "Recover this public checkpoint together with the latest private handoff and the exact applicable denials, exclusions, personal requirements and pending operations. The new accounting correction does not repair external GitHub permissions or erase earlier safety rejections.",
+    "otherwise": "Respond to a concrete maintainer request, or select one ordinary eligible task with a supported publication and full-validation route. Screen sequential bounded waves of at most three candidate IDs, allocating before queries and completing each wave before another. Do not stockpile patches behind an unresolved delivery gate.",
+    "do_not_repeat": "Do not recreate existing PRs, repeat admission comments, replay denied operations or the obsolete October 19 checkpoint, rerun unchanged passing matrices, or re-count accepted/historical work.",
+    "budget": {
+      "candidate_wave_limit": 3,
+      "focused_correction_cycle_limit": 3,
+      "main_implementation_writers": 1,
+      "owned_tool_corrections": 1,
+      "candidate_limit_scope": "At most three explicit IDs per sequential wave across all delegates; maintain the cumulative ledger through the invocation. There is no three-ID-per-invocation stop."
+    }
+  },
+  "dated_followups": [
+    {
+      "work": "September libzip crypto-clearing incorporation",
+      "status": "October 22 age/retention review already completed; extended through 729d89f on November 1.",
+      "required": "Resolve remaining patch-specific reward, participant, frequency and application conditions without inferring eligibility or submitting anything."
+    },
+    {
+      "work": "October 22 libzip CI-only squash",
+      "not_before": "2026-11-22T08:39:23Z",
+      "required": "Conditional reconsideration only; CI retention does not establish qualifying security scope or reset the older crypto acceptance clock."
+    }
+  ],
+  "completion_report": {
+    "delivered": false,
+    "condition": "100 independently verified qualifying distinct external projects with accepted contributions; historical work, open PRs and owned drafts excluded.",
+    "afterwards": "Maintain the accepted portfolio and permitted benefit follow-through without increasing the target."
+  },
+  "latest_selected_observation": "progress/2026-11-01-selected-observation.json",
+  "latest_candidate_routing": "progress/2026-10-19-candidate-routing.json",
+  "accepted_count": {
+    "count": 3,
+    "target": 100,
+    "accepted_delta_this_review": 0,
+    "definition": "Upstream merge or explicit incorporation with source linkage, once per eligible project; historical submissions excluded.",
+    "evidence": "progress/2026-11-01-selected-observation.json"
+  },
+  "previous_completed_contribution": {
     "repository": "apache/commons-lang",
     "issue_url": "https://issues.apache.org/jira/browse/LANG-1323",
     "pr_url": "https://github.com/apache/commons-lang/pull/1826",
@@ -61,88 +170,8 @@
       "Required default Maven build: 88,157 cases, zero failures/errors, 18 skips and all default gates completed",
       "18 ordinary hosted Java/OS jobs passed; experimental Java 28 failed and its 40 date-parser failures match the limited unchanged-base control",
       "Source review, failed attempts and full available logs retained in the evidence packet"
-    ]
-  },
-  "follow_through": [
-    {
-      "pr_url": "https://github.com/javaparser/javaparser/pull/5175",
-      "resume_when": "An applicable plain-list alignment correction or specific requested revision appears; also handle newly admitted execution results.",
-      "admission_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6248629643",
-      "review_comment_url": "https://github.com/javaparser/javaparser/pull/5175#issuecomment-6274613168",
-      "related_pr_url": "https://github.com/javaparser/javaparser/pull/5179",
-      "related_head_reviewed": "b6c64e67f30ffedfe486b2904ac1680b4e0eccd5",
-      "note": "Keep #5175 open at its existing source. The maintainer values the tests and is investigating a generic correction. Related #5179 currently changes CsmMix/annotation handling; static source review does not establish an import-list fix. Preserve the separable 20-case regression file and do not race the maintainer implementation."
-    },
-    {
-      "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
-      "resume_when": "New substantive feedback or actual CLA/acceptance evidence",
-      "note": "Current 3.1 builds passed; earlier admission and backport work are complete. Personal legal action remains separate."
-    },
-    {
-      "pr_url": "https://github.com/lz4/lz4/pull/1890",
-      "resume_when": "New substantive feedback or regression",
-      "note": "Current hosted TSan and all 54 CheckRuns passed; earlier TSan failure is historical."
-    },
-    {
-      "pr_url": "https://github.com/apache/commons-compress/pull/825",
-      "resume_when": "New substantive feedback or admitted workflow results",
-      "admission_comment_url": "https://github.com/apache/commons-compress/pull/825#issuecomment-6252813089",
-      "jira_backlink": "verified_present"
-    }
-  ],
-  "parked": [
-    {
-      "work": "h2database/h2database #4456",
-      "resume_when": "Truthful contributor statement and unresolved required validation are satisfied",
-      "evidence_ref": "https://github.com/agamal026/h2database/blob/f190120801a23792717d6a2f0690b61398a5bafc/contribution-review/4456-follow-up/README.md"
-    },
-    {
-      "work": "libavif human-review/CLA dependencies",
-      "resume_when": "Actual personal review or legal evidence becomes available through existing private records",
-      "public_guide": "docs/LIBAVIF-2428-REVIEW.md"
-    },
-    {
-      "work": "jsoup automated contributions",
-      "resume_when": "A verified changed upstream policy permits this workflow",
-      "note": "Known policy rejects AI-assisted code and AI-written submissions; do not post."
-    },
-    {
-      "work": "pytest-dev/iniconfig #83 autonomous AI-authored publication",
-      "resume_when": "Current outside-contributor expectations are established after the actual AI-rejection on PR84. Do not infer permission from maintainer AI use. Header compatibility is a separate unresolved choice.",
-      "policy_evidence": "https://github.com/pytest-dev/iniconfig/pull/84#issuecomment-6046327514",
-      "source_review_ref": "progress/2026-10-19-candidate-routing.json"
-    }
-  ],
-  "next_action": {
-    "first": "Reconcile this public checkpoint with any newer private OSS handoff, including pending operation IDs and denied routes. Then inspect the specific JavaParser maintainer direction and an applicable generic fix, plus substantive feedback or changed execution across existing PRs.",
-    "otherwise": "After existing follow-through, assign at most three explicit candidate IDs from data/campaign.json across all delegates; inspect current PR disposition and policy enforcement, confirm the publication route, then choose one distinct cloud-testable fix. Preserve the exclusions in progress/2026-10-19-candidate-routing.json without treating its unverified all-state matches as merged or actively competing.",
-    "reserve": "Withdrawn: Commons IO IO-754 is covered by another contributor's draft https://github.com/apache/commons-io/pull/893 at 318b0c88287b65a1bd965aae9bc2e5c39b6a233c. Do not duplicate without a distinct evidenced gap or maintainer invitation.",
-    "do_not_repeat": "Do not recreate existing PRs, duplicate admission comments, retry unchanged denied operations, rerun unchanged passing matrices, rebuild orchestration, or rediscover a candidate exclusion without changed evidence.",
-    "budget": {
-      "target_session_minutes_including_handoff": 40,
-      "candidate_limit": 3,
-      "focused_correction_cycle_limit": 3,
-      "main_implementation_writers": 1,
-      "candidate_limit_scope": "Three distinct candidates across the entire coordinator and all delegates. Assign explicit candidate slots before delegation; duplicate discovery or a blocked candidate consumes its slot, and replacement requires another available slot."
-    }
-  },
-  "dated_followups": [
-    {
-      "work": "Existing libzip retention/reward evidence",
-      "not_before": "2026-10-22T13:12:13Z",
-      "required": "Fresh upstream retention and current program/participant/patch eligibility; date alone is not eligibility or payment."
-    },
-    {
-      "work": "Seven-day campaign selection review",
-      "not_before": "2026-10-24",
-      "required": "Actual effort, submissions, acceptance, review burden and realized benefits; unknown amounts stay unknown."
-    }
-  ],
-  "completion_report": {
-    "delivered": false,
-    "condition": "100 independently verified qualifying distinct external submissions; historical work and owned drafts excluded.",
-    "afterwards": "Maintain portfolio and benefit follow-through without increasing the target."
-  },
-  "latest_selected_observation": "progress/2026-10-19-review-routing.json",
-  "latest_candidate_routing": "progress/2026-10-19-candidate-routing.json"
+    ],
+    "historical_snapshot_as_of": "2026-10-19T19:38:36.613486Z",
+    "current_acceptance_ref": "https://github.com/apache/commons-lang/commit/d626464952b57e665a83bf556cd0f0e7fd9983fb"
+  }
 }

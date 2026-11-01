@@ -1,0 +1,118 @@
+{
+  "recorded_at_utc": "2026-10-31T23:19:59.968981+00:00",
+  "base_commit": "d5ef9a8232de2933be0fb2af277e55e7f8eafd3b",
+  "source_equivalence": "Commands ran on this base plus the reviewed working-tree changes. Source hashes identify the bytes actually tested; a later publication commit is not claimed as the checked-out HEAD.",
+  "source_sha256": {
+    "tools/contribution_campaign.py": "cf60ca445494695e4608a4c1d98a037fa33f0a96c596d5a8d5285473f71a4287",
+    "tests/test_contribution_campaign.py": "e326f5d40a46736250213d50b4c2232b67c255d5ee620ef2720b568abdae6a54",
+    "data/campaign.json": "36fd7c78e1fe18f19d369eda610594d4d14f9d4fb8515b66dfd702d7bd47d3db",
+    "progress/CAMPAIGN.md": "0c7bf1c32593edb6fa2d662d90c3cf34e1b1e8975449ea034d0c1902869984c8"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "system": "Linux",
+    "machine": "x86_64"
+  },
+  "baseline": {
+    "scope": "Three preliminary targeted regressions, before the runtime correction",
+    "runtime_source_commit": "d5ef9a8232de2933be0fb2af277e55e7f8eafd3b",
+    "tests": 3,
+    "failures": 2,
+    "errors": 1,
+    "execution_timestamp": "Not separately recorded; executed in this manual continuation before the runtime edit.",
+    "raw_log_archived": false,
+    "qualification": "The final tests subsequently added accepted-history and current-stage controls; do not describe the preliminary baseline as execution of the final entire test file."
+  },
+  "final_unittest": {
+    "tests": 82,
+    "passed": 82,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "log": "unittest.log"
+  },
+  "required_commands": [
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "started_at": "2026-10-31T23:18:28.761060+00:00",
+      "finished_at": "2026-10-31T23:18:29.371043+00:00",
+      "exit_code": 0,
+      "log_sha256": "9a6cb1d7224764c13cad42af1321d97fe36c096612b3c155f6a44aef435e8c0f"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "validate"
+      ],
+      "started_at": "2026-10-31T23:18:29.371498+00:00",
+      "finished_at": "2026-10-31T23:18:29.422346+00:00",
+      "exit_code": 0,
+      "log_sha256": "85515fae53fc1fdceaf001eacd4213b88b809958cf4ed7bf254634f24e55c747"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/oss_status.py",
+        "render",
+        "--output",
+        "progress/STATUS.md",
+        "--check"
+      ],
+      "started_at": "2026-10-31T23:18:29.422693+00:00",
+      "finished_at": "2026-10-31T23:18:29.479980+00:00",
+      "exit_code": 0,
+      "log_sha256": "4aa513799fbe20045d91e1fb7859d85f5f2ac1cb9be510985e403a6c42f2e508"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "validate",
+        "--input",
+        "data/campaign.json"
+      ],
+      "started_at": "2026-10-31T23:18:29.480785+00:00",
+      "finished_at": "2026-10-31T23:18:29.560725+00:00",
+      "exit_code": 0,
+      "log_sha256": "733e0833075b77c82444c9432e472470d858a7da46629faf91fe29ebcbf4cc88"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/contribution_campaign.py",
+        "report",
+        "--input",
+        "data/campaign.json",
+        "--output",
+        "progress/CAMPAIGN.md",
+        "--check"
+      ],
+      "started_at": "2026-10-31T23:18:29.561031+00:00",
+      "finished_at": "2026-10-31T23:18:29.643685+00:00",
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_at": "2026-10-31T23:18:29.643963+00:00",
+      "finished_at": "2026-10-31T23:18:29.655697+00:00",
+      "exit_code": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "hosted_ci": "Not executed at receipt authoring; inspect the actual run for the published revision separately.",
+  "review": "Independent automated design review completed; final exact-source integration review is recorded in the native publication outcome. No human review or upstream acceptance inferred."
+}

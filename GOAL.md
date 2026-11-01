@@ -1,10 +1,12 @@
 # Goal: useful open-source work, verified benefits, and better skills
 
-Submit useful, validated contributions to **100 distinct external open-source
+Obtain accepted, useful contributions to **100 distinct external open-source
 projects**, follow through on their review and maintenance, and pursue evidenced
 financial or service benefits. This campaign starts on **2026-10-17**. Its
 [queue and evidence](data/campaign.json) and [generated progress](progress/CAMPAIGN.md)
-separate researched targets from qualified submissions. Earlier work remains in
+separate researched targets, qualified submissions and accepted work. Goal credit
+requires an upstream merge or explicit incorporation with source linkage, once
+per project. Earlier work remains in
 the historical contribution records and does not become a new submission.
 
 Find and contribute to open-source projects with a credible route to paid work,
@@ -41,13 +43,14 @@ failure, reproducing it, understanding the fix, or making a follow-up change.
 
 ## Current priorities
 
-1. **Recheck the existing libzip reward evidence.** The earliest conservative
-   recheck is **2026-10-22T13:12:13Z**, or **15:12 Europe/Vienna on October 22**.
-   Revisit the [maintainer acknowledgment](https://github.com/nih-at/libzip/pull/576#issuecomment-5777143699),
-   upstream retention, and current program requirements. This is a planning
-   checkpoint; a qualifying month of upstream retention and payout eligibility
-   have not been established. Keep the existing evidence and application records in their
-   original workspace.
+1. **Preserve the completed libzip retention review and resolve the remaining
+   reward questions.** The September crypto-clearing incorporation passed its
+   conservative October 22 age/retention checkpoint, and a November 1 source
+   review confirms retention through `729d89f`. The later CI-only squash has a
+   separate November 22 conditional checkpoint. Neither result establishes
+   reward eligibility, participant or application status, an award or payment.
+   See the [source-linked correction](progress/2026-11-01-accepted-accounting-and-libzip.md).
+   Keep private application records in their original workspace.
 2. **Investigate a selectable paid issue.** Confirm a current offer from the
    project or sponsor, its acceptance and payment conditions, and that the work
    is unassigned or explicitly open for selection. Read the current issue and
@@ -93,7 +96,7 @@ continuation uses the hosted task described in the cloud-operation record; a
 saved goal file alone does not start background execution. Each run must confirm
 what it actually executed and record any access or runtime block.
 
-After reaching 100 qualified submitted projects, continue reviews, maintenance,
+After reaching 100 accepted projects, continue reviews, maintenance,
 and benefit follow-through for that portfolio. Do not increase the target merely
 to generate more submissions. The target is a useful portfolio, not a daily PR
 quota; a patch must solve a supported problem and meet its upstream's rules.

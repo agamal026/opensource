@@ -78,13 +78,40 @@ class CampaignValidationTests(unittest.TestCase):
 
     def test_complete_history_counts_submission_and_acceptance_separately(self):
         data = fixture(project("submitted"), project("accepted", "other/project", 2), project("screened", "third/project", 2))
+        data["historical_submissions"] = [{
+            "repository": "history/library", "pr_url": "https://github.com/history/library/pull/1",
+            "submitted_on": "2026-10-01", "refs": [EVIDENCE], "accepted_on": "2026-10-18",
+            "acceptance_ref": "https://github.com/history/library/pull/1",
+        }]
         report = campaign.render_campaign(data)
-        self.assertIn("2 / 100 distinct external repositories", report)
+        self.assertIn("1 / 100 distinct external repositories with accepted campaign contributions", report)
+        self.assertIn("Qualified campaign submissions: 2 distinct repositories", report)
         self.assertIn("| submitted | 1 | 2 |", report)
         self.assertIn("| accepted | 1 | 1 |", report)
         self.assertIn(FIXED, report)
         self.assertIn(EVIDENCE + "#fixed", report)
         self.assertIn(EVIDENCE + "#review", report)
+
+    def test_supported_behavior_characterization_does_not_claim_a_reproduced_failure(self):
+        data = fixture(project("accepted"))
+        data["projects"][0]["summary"] = "Characterize an existing supported contract."
+        data["projects"][0]["milestones"][3]["validation"]["result"] = "characterized"
+        report = campaign.render_campaign(data)
+        self.assertIn("| baseline assessed | 0 | 1 |", report)
+        self.assertIn("**characterized**", report)
+        self.assertNotIn("**reproduced**", report)
+        self.assertIn("1 / 100 distinct external repositories", report)
+
+        baseline_only = copy.deepcopy(data)
+        baseline_only["projects"][0]["milestones"] = baseline_only["projects"][0]["milestones"][:4]
+        self.assertIn("current stage: **baseline assessed**", campaign.render_campaign(baseline_only))
+        del baseline_only["projects"][0]["milestones"][3]["source_ref"]
+        self.assert_invalid(baseline_only)
+
+        # Characterization is baseline evidence, never a substitute for passing
+        # validation of the proposed revision or for upstream acceptance.
+        data["projects"][0]["milestones"][4]["validation"]["result"] = "characterized"
+        self.assert_invalid(data, "does not establish")
 
     def test_case_insensitive_duplicate_targets_across_batches_are_rejected(self):
         self.assert_invalid(fixture(project(), project(repository="UPSTREAM/Library", batch=2)), "duplicate target")
@@ -234,10 +261,12 @@ class CampaignValidationTests(unittest.TestCase):
         self.assert_invalid(data, "duplicate benefit identifier")
 
     def test_batch_report_keeps_full_goal_and_validates_unshown_records(self):
-        data = fixture(project("submitted"), project("submitted", "other/project", 2))
+        data = fixture(project("submitted"), project("accepted", "other/project", 2))
         report = campaign.render_campaign(data, batch=1)
-        self.assertIn("2 / 100 distinct", report)
+        self.assertIn("1 / 100 distinct", report)
+        self.assertIn("Qualified campaign submissions: 2 distinct repositories", report)
         self.assertIn("| submitted | 1 | 1 |", report)
+        self.assertIn("| accepted | 0 | 0 |", report)
         self.assertNotIn("https://github.com/other/project", report)
         data["projects"][1]["milestones"][5]["refs"] = []
         with self.assertRaises(campaign.ValidationError):
@@ -381,7 +410,7 @@ class CampaignOutputTests(unittest.TestCase):
     def test_validate_and_stdout_report_are_offline_and_leave_no_files(self):
         result, stdout, stderr = self.invoke("validate", "--input", str(self.input))
         self.assertEqual((result, stderr), (0, ""))
-        self.assertIn("1 / 100 qualified submitted", stdout)
+        self.assertIn("0 / 100 accepted repositories; 1 qualified submitted", stdout)
         result, stdout, stderr = self.invoke("report", "--input", str(self.input))
         self.assertEqual((result, stderr), (0, ""))
         self.assertIn("# Contribution campaign", stdout)
