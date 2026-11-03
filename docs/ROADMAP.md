@@ -20,15 +20,15 @@ in [progress](../progress/) at the start of every resumed session.
 ## Next actions
 
 Current priorities and source evidence are in the
-[November 1 review](../progress/2026-11-01-accepted-accounting-and-libzip.md) and
+[November 3 acceptance review](../progress/2026-11-03-javaparser-accepted.md) and
 [continuation record](../data/continuation.json). Older dated entries remain
 historical evidence.
 
 | Priority | Action | Evidence needed to finish |
 | --- | --- | --- |
-| 1 | Follow substantive feedback on BeanUtils #444, JavaParser #5188, Compress #825 and Jackson #6302. | A concrete revision request or executed failing check. Admission with zero jobs is not a code failure. Preserve denied public actions and personal requirements. |
+| 1 | Follow substantive feedback on BeanUtils #444, Compress #825 and Jackson #6302. | A concrete revision request or executed failing check. Admission with zero jobs is not a code failure. Preserve denied public actions and personal requirements. |
 | 1 | Deliver the completed COMPRESS-729 correction when its actual publication gate is resolved. | Supported permission for the previously denied upstream PR-create operation, refreshed policy/base/discussion and unchanged-source proof from owned draft #2. |
-| 1 | Maintain the three accepted campaign projects. | New feedback or a reproduced regression; do not re-count revisions or rerun unchanged passing validation. |
+| 1 | Maintain the four accepted campaign projects, including JavaParser #5188. | New feedback or a reproduced regression; do not re-count revisions or rerun unchanged passing validation. |
 | 1 | Continue a new eligible contribution when its required route is available. | Current policy, unclaimed ordinary task, usable contributor fork and delivery path, complete validation and exact-source review. Screen sequential bounded waves; keep one source writer. |
 | 1 | Resolve the remaining libzip reward assessment questions. | Security impact and personal/frequency/application conditions remain unresolved. September crypto retention is already supported; November 22 is only the later CI change's conditional date. No application is authorized by this roadmap. |
 | 2 | Maintain owned tools when a concrete defect is reproduced. | Focused regression, relevant tests, independent review and verified publication. Accepted-count accounting is the correction prepared in the November 1 review. |

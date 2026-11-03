@@ -87,10 +87,11 @@ of an owned project is recorded separately from an external upstream merge.
 
 ## Upstream contributions
 
-The current accepted campaign count is **3 / 100**, independently checked on
-**November 1, 2026 (Europe/Vienna)**. The
-[accounting correction and current review](progress/2026-11-01-accepted-accounting-and-libzip.md)
-links the acceptance evidence, source identity, tests and remaining dependencies.
+The current accepted campaign count is **4 / 100**. JavaParser acceptance was
+rechecked on **November 3, 2026 (Europe/Vienna)** and is recorded in the
+[latest acceptance review](progress/2026-11-03-javaparser-accepted.md). The
+[November 1 baseline review](progress/2026-11-01-accepted-accounting-and-libzip.md)
+retains the other three projects and their original acceptance evidence.
 Submissions, owned validation drafts, historical contributions and benefits
 remain separate. No campaign payment is established.
 
@@ -99,11 +100,11 @@ remain separate. No campaign payment is established.
 | [Commons Lang #1826](https://github.com/apache/commons-lang/pull/1826) | Merged October 19 as `d6264649`; hash interoperability correction. |
 | [LZ4 #1890](https://github.com/lz4/lz4/pull/1890) | Both production fixes explicitly incorporated through maintainer #1905, merged October 20 as `4eba0114`; original #1890 closed unmerged. |
 | [Commons CSV #640](https://github.com/apache/commons-csv/pull/640) | Useful automatic-header tests adapted in `e9ed42a` on October 22; original #640 closed unmerged. The reported parser failure remains unreproduced. |
+| [JavaParser #5188](https://github.com/javaparser/javaparser/pull/5188) | Merged November 2 as `71544cb3`; helper delegation refactor. Final head `11f4b35d` passed upstream Maven and formatting workflows. Rejected #5175 remains excluded. |
 
 | Existing open contribution | Current dependency |
 | --- | --- |
 | [BeanUtils #444](https://github.com/apache/commons-beanutils/pull/444) | Source `51a346ab`; upstream Actions require admission. Its description still cites earlier proof, and the attempted description update was denied. |
-| [JavaParser #5188](https://github.com/javaparser/javaparser/pull/5188) | Source `07afbca4`; upstream Actions require admission. The rejected earlier #5175 receives no acceptance credit. |
 | [Commons Compress #825](https://github.com/apache/commons-compress/pull/825) | Source `7e647788`; upstream Actions require admission. Additional COMPRESS-729 source is complete in an owned validation draft, with upstream submission blocked. |
 | [Jackson #6302](https://github.com/FasterXML/jackson-databind/pull/6302) | Source `38261628`; four upstream builds passed historically. CLA and acceptance remain unresolved; newer owned validation is separate from the upstream head. |
 
@@ -113,7 +114,7 @@ it is not a live inventory of every later PR revision. The separate
 [registry snapshot](progress/STATUS.md) still describes October 18 observations
 and has not been relabeled as a fresh collection. The
 [current continuation record](data/continuation.json) identifies the selected
-November 1 evidence and preserves older checkpoints.
+November 3 acceptance evidence and preserves older checkpoints.
 
 Historical [libzip #576](https://github.com/nih-at/libzip/pull/576) remains
 excluded from campaign credit. Its September crypto incorporation and October
