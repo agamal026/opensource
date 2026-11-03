@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T23:18:08.240439+00:00",
+  "updated_at": "2026-11-03T00:01:31.473859+00:00",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-11-01-accepted-accounting-and-libzip.md",
+  "latest_checkpoint": "progress/2026-11-03-javaparser-accepted.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -18,9 +18,9 @@
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
     "enabled_observed": false,
-    "observation_date_utc": "2026-10-31",
+    "observation_date_utc": "2026-11-03",
     "next_run_time_reported": null,
-    "execution_limit": "Observed paused with a last recorded result requiring user action but no explanatory content. No configuration mutation was performed. Enabled state or last-run metadata alone does not prove productive recurrence."
+    "execution_limit": "Fresh read confirms paused, with no next run. The matching latest recorded run is completed but has an empty result and requires_user_action=true; its required action is not exposed. No re-enable or run-now was performed. Accounting updates do not prove recurrence or repair provider permissions."
   },
   "latest_completed_contribution": {
     "repository": "apache/commons-compress",
@@ -48,9 +48,12 @@
     },
     {
       "pr_url": "https://github.com/javaparser/javaparser/pull/5188",
-      "source_commit": "07afbca4f037f8c6edea5b3a1aec450bb8df4d69",
-      "resume_when": "Substantive review or actual admitted check failure.",
-      "note": "Open/unmerged; two Actions workflows require admission with zero jobs. Earlier #5175 rejected and excluded; do not reopen or resubmit."
+      "source_commit": "11f4b35dffc4211636db7526767fbc55a6185955",
+      "resume_when": "Substantive maintainer feedback or a reproduced regression in accepted work.",
+      "note": "Accepted once for this campaign. Final-head upstream Maven and code-generation/formatting workflows completed successfully; no job logs or final test counts were audited here. Earlier #5175 remains rejected and excluded. Initial 07afbca4 proof is historical.",
+      "state": "merged",
+      "merged_at": "2026-11-02T22:34:06Z",
+      "acceptance_ref": "https://github.com/javaparser/javaparser/commit/71544cb30b8857f32282d2edbd23e9d0a581d6a9"
     },
     {
       "pr_url": "https://github.com/apache/commons-compress/pull/825",
@@ -125,11 +128,12 @@
   "latest_selected_observation": "progress/2026-11-01-selected-observation.json",
   "latest_candidate_routing": "progress/2026-10-19-candidate-routing.json",
   "accepted_count": {
-    "count": 3,
+    "count": 4,
     "target": 100,
     "accepted_delta_this_review": 0,
     "definition": "Upstream merge or explicit incorporation with source linkage, once per eligible project; historical submissions excluded.",
-    "evidence": "progress/2026-11-01-selected-observation.json"
+    "evidence": "progress/2026-11-03-javaparser-accepted.md",
+    "newly_recorded_in_ledger": 1
   },
   "previous_completed_contribution": {
     "repository": "apache/commons-lang",
@@ -173,5 +177,6 @@
     ],
     "historical_snapshot_as_of": "2026-10-19T19:38:36.613486Z",
     "current_acceptance_ref": "https://github.com/apache/commons-lang/commit/d626464952b57e665a83bf556cd0f0e7fd9983fb"
-  }
+  },
+  "previous_checkpoint": "progress/2026-11-01-accepted-accounting-and-libzip.md"
 }
