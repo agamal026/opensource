@@ -1,10 +1,10 @@
 # Contribution campaign
 
-Started: 2026-10-17. Records last updated: 2026-11-03; individual evidence retains its original date.
+Started: 2026-10-17. Records last updated: 2026-11-07; individual evidence retains its original date.
 
 **Goal progress: 4 / 100 distinct external repositories with accepted campaign contributions.**
 
-Qualified campaign submissions: 6 distinct repositories; submission alone does not count toward the goal.
+Qualified campaign submissions: 7 distinct repositories; submission alone does not count toward the goal.
 
 Full research queue: 100 repositories. Historical submissions: 6; excluded from this goal.
 
@@ -16,12 +16,12 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 91 | 100 |
-| screened | 2 | 9 |
-| selected | 0 | 7 |
-| baseline assessed | 0 | 7 |
-| validated | 1 | 7 |
-| submitted | 2 | 6 |
+| target | 90 | 100 |
+| screened | 2 | 10 |
+| selected | 0 | 8 |
+| baseline assessed | 0 | 8 |
+| validated | 1 | 8 |
+| submitted | 3 | 7 |
 | accepted | 4 | 4 |
 
 ## Batches
@@ -30,7 +30,7 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1 | 10 | 2 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 1 |
-| 3 | 10 | 2 | 2 | 2 | 1 |
+| 3 | 10 | 3 | 3 | 3 | 1 |
 | 4 | 10 | 1 | 1 | 1 | 1 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 1 | 1 | 1 | 0 |
@@ -392,17 +392,24 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apa
 
 ### [apache/commons\-beanutils](<https://github.com/apache/commons-beanutils>)
 
-Batch 3 · current stage: **target**.
+Batch 3 · current stage: **submitted**.
 
-apache\-commons\-beanutils: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+PR \#444 for BEANUTILS\-417 was created October 22 on 1\.X\. DynaProperty writes default fields before custom metadata and uses a serializable marker to keep new readers compatible with historical data\. The final October 30 revision 51a346ab avoids a same\-package subclass method collision using a static accessor\. Complete local default validation and automated review are recorded; upstream CI admission and acceptance remain pending\. The new superclass remains an explicit serialization compatibility qualification\.
 
-Next action: Existing https://github\.com/apache/commons\-beanutils/pull/444 is open at 51a346ab12e0fd683df794ab40c9f18e58f92068 on 1\.X\. Its updated subclass\-collision fix has separate validation; upstream workflows still require admission with zero jobs\. The PR description still cites older 1d95c95 source\. The description\-update operation has an actual unresolved permission denial; do not repeat it without a supported authorization change\. Full milestone backfill is not part of this accepted\-count correction\.
+Next action: Follow substantive review or admitted checks on https://github\.com/apache/commons\-beanutils/pull/444 at 51a346ab12e0fd683df794ab40c9f18e58f92068\. Two upstream workflows require admission and have zero jobs; passing proof is local Linux/Java 17 execution, not hosted CI\. The PR body still cites initial 1d95c95c source and 1,293\-case results; final\-source proof is https://github\.com/agamal026/commons\-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution\-review/BEANUTILS\-417/static\-accessor\-validation\-20261030/README\.md\. Preserve the actual denied description\-update operation and its prepared text; resume only after supported authorization repair\. This November 7 reconciliation records the existing submission, with no new PR or acceptance\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-beanutils/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-beanutils>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-beanutils/project.yaml>).
+- 2026-10-22 **screened**: [evidence 1](<https://issues.apache.org/jira/browse/BEANUTILS-417>); [evidence 2](<https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637>); [evidence 3](<https://www.apache.org/legal/generative-tooling.html>); [evidence 4](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md>); [evidence 5](<https://github.com/apache/commons-beanutils/blob/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff/CONTRIBUTING.md>); [evidence 6](<https://github.com/apache/commons-beanutils/pull/444>); [policy\_ref](<https://github.com/apache/commons-beanutils/blob/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff/CONTRIBUTING.md>).
+- 2026-10-22 **selected**: [evidence 1](<https://issues.apache.org/jira/browse/BEANUTILS-417>); [evidence 2](<https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637>); [evidence 3](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md>); [evidence 4](<https://github.com/apache/commons-beanutils/pull/430#issuecomment-5499734362>); [selection\_ref](<https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637>).
+- 2026-10-22 **baseline assessed**: [evidence 1](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md>); [evidence 2](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/baseline-tests.patch>); [evidence 3](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/validation.json>); [evidence 4](<https://github.com/apache/commons-beanutils/commit/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff>); [source 22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff](<https://github.com/apache/commons-beanutils/commit/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff>).
+  Validation command: &quot;$\{MAVEN\_HOME\}/bin/mvn&quot; \-\-settings &quot;$\{MAVEN\_SETTINGS\}&quot; \-\-errors \-\-show\-version \-\-batch\-mode \-\-no\-transfer\-progress &quot;\-Dmaven\.repo\.local=$\{MAVEN\_REPO\_LOCAL\}&quot; \-DtrimStackTrace=false &\#x27;\-Dtest=DynaProperty\*&\#x27; clean test; result: **reproduced**; [validation record](<https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/validation.json>).
+- 2026-10-30 **validated**: [evidence 1](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/README.md>); [evidence 2](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/source-identity.json>); [evidence 3](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/validation.json>); [evidence 4](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/test-results.json>); [evidence 5](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/review.md>); [review\_ref](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/review.md>); [source 51a346ab12e0fd683df794ab40c9f18e58f92068](<https://github.com/agamal026/commons-beanutils/commit/51a346ab12e0fd683df794ab40c9f18e58f92068>).
+  Validation command: &quot;$MAVEN\_HOME/bin/mvn&quot; \-B \-ntp \-l &quot;$EVIDENCE/fixed\-default\.log&quot; \-s &quot;$MAVEN\_SETTINGS&quot; &quot;\-Dmaven\.repo\.local=$MAVEN\_REPO&quot;; result: **passed**; [validation record](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/validation.json>).
+- 2026-10-30 **submitted**: [evidence 1](<https://github.com/apache/commons-beanutils/pull/444>); [evidence 2](<https://github.com/agamal026/commons-beanutils/commit/51a346ab12e0fd683df794ab40c9f18e58f92068>); [evidence 3](<https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/publication.json>); [pr\_url](<https://github.com/apache/commons-beanutils/pull/444>); validated source 51a346ab12e0fd683df794ab40c9f18e58f92068.
 
 ### [apache/commons\-cli](<https://github.com/apache/commons-cli>)
 

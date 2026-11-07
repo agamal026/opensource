@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T00:01:31.473859+00:00",
+  "updated_at": "2026-11-07T10:07:36.311466+00:00",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-11-03-javaparser-accepted.md",
+  "latest_checkpoint": "progress/2026-11-07-beanutils-evidence-reconciliation.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -18,9 +18,9 @@
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
     "enabled_observed": false,
-    "observation_date_utc": "2026-11-03",
+    "observation_date_utc": "2026-11-07",
     "next_run_time_reported": null,
-    "execution_limit": "Fresh read confirms paused, with no next run. The matching latest recorded run is completed but has an empty result and requires_user_action=true; its required action is not exposed. No re-enable or run-now was performed. Accounting updates do not prove recurrence or repair provider permissions."
+    "execution_limit": "Observed paused with no next run. The latest recorded November 6 run is now completed and its matching, nontruncated result is empty with requires_user_action=true; the actual action and pause cause remain unexposed. No schedule edit, re-enable or run-now was performed. This manual evidence reconciliation does not establish recurring execution or repair provider permissions."
   },
   "latest_completed_contribution": {
     "repository": "apache/commons-compress",
@@ -44,7 +44,8 @@
       "pr_url": "https://github.com/apache/commons-beanutils/pull/444",
       "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068",
       "resume_when": "Substantive review or actual admitted check failure; a supported repair of the denied description-update operation.",
-      "note": "Open/unmerged. Two Actions workflows require admission with zero jobs. Description still cites prior source; do not repeat the denied update."
+      "note": "Open/unmerged at the unchanged October 30 source. The complete local-validation and submission history is now reconciled in the campaign ledger. Two upstream workflows require admission with zero jobs; no owned hosted success is asserted. The description still cites earlier source, and its denied update remains parked.",
+      "validation_evidence_ref": "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/README.md"
     },
     {
       "pr_url": "https://github.com/javaparser/javaparser/pull/5188",
@@ -133,7 +134,7 @@
     "accepted_delta_this_review": 0,
     "definition": "Upstream merge or explicit incorporation with source linkage, once per eligible project; historical submissions excluded.",
     "evidence": "progress/2026-11-03-javaparser-accepted.md",
-    "newly_recorded_in_ledger": 1
+    "newly_recorded_in_ledger": 0
   },
   "previous_completed_contribution": {
     "repository": "apache/commons-lang",
@@ -178,5 +179,24 @@
     "historical_snapshot_as_of": "2026-10-19T19:38:36.613486Z",
     "current_acceptance_ref": "https://github.com/apache/commons-lang/commit/d626464952b57e665a83bf556cd0f0e7fd9983fb"
   },
-  "previous_checkpoint": "progress/2026-11-01-accepted-accounting-and-libzip.md"
+  "previous_checkpoint": "progress/2026-11-03-javaparser-accepted.md",
+  "latest_record_reconciliation": {
+    "repository": "apache/commons-beanutils",
+    "recorded_on": "2026-11-07",
+    "original_pr_created_on": "2026-10-22",
+    "final_revision_submitted_on": "2026-10-30",
+    "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+    "qualified_submitted_projects": 7,
+    "accepted_projects": 4,
+    "new_submission_this_review": false,
+    "new_acceptance_this_review": false,
+    "evidence": "progress/2026-11-07-beanutils-evidence-reconciliation.md"
+  },
+  "latest_owned_tool_change": {
+    "pr_url": "https://github.com/agamal026/opensource/pull/4",
+    "source_commit": "820f14b44a8a953b845205881f85fadcd8281aef",
+    "merge_commit": "ad1cad934e19cde1a3370a7bb74aed9eb031adc8",
+    "merged_at": "2026-11-07T09:48:53Z",
+    "summary": "Status commands reject output aliases of their catalog/snapshot inputs before retrieval or writing. Six regressions passed on all four hosted platforms. Owned maintenance adds no external campaign credit."
+  }
 }
