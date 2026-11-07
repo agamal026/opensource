@@ -445,6 +445,75 @@ class RefreshTests(unittest.TestCase):
                 self.assertNotIn("PRIVATE", str(raised.exception))
 
 
+class OutputSafetyTests(unittest.TestCase):
+    def setUp(self):
+        directory = tempfile.TemporaryDirectory()
+        self.addCleanup(directory.cleanup)
+        self.root = Path(directory.name)
+        self.catalog_path = self.root / "catalog.json"
+        self.snapshot_path = self.root / "github.json"
+        self.catalog_bytes = (json.dumps(catalog()) + "\n").encode("utf-8")
+        self.snapshot_bytes = (json.dumps(snapshot()) + "\n").encode("utf-8")
+        self.catalog_path.write_bytes(self.catalog_bytes)
+        self.snapshot_path.write_bytes(self.snapshot_bytes)
+
+    def invoke(self, command, output):
+        args = [command, "--catalog", str(self.catalog_path), "--output", str(output)]
+        if command == "render":
+            args.extend(["--snapshot", str(self.snapshot_path)])
+        stdout, stderr = io.StringIO(), io.StringIO()
+        with contextlib.redirect_stdout(stdout), contextlib.redirect_stderr(stderr):
+            result = status.main(args)
+        return result, stdout.getvalue(), stderr.getvalue()
+
+    def assert_rejected(self, command, output):
+        with mock.patch.object(status, "fetch_pr", return_value=snapshot()["pull_requests"][0]) as fetch:
+            result, stdout, stderr = self.invoke(command, output)
+        self.assertEqual(result, 2, stderr)
+        self.assertEqual(stdout, "")
+        self.assertIn("output must not overwrite", stderr)
+        self.assertEqual(self.catalog_path.read_bytes(), self.catalog_bytes)
+        self.assertEqual(self.snapshot_path.read_bytes(), self.snapshot_bytes)
+        fetch.assert_not_called()
+
+    def test_render_preserves_catalog_when_it_is_the_output(self):
+        self.assert_rejected("render", self.catalog_path)
+
+    def test_render_preserves_snapshot_when_it_is_the_output(self):
+        self.assert_rejected("render", self.snapshot_path)
+
+    def test_refresh_rejects_catalog_output_before_querying_github(self):
+        self.assert_rejected("refresh", self.catalog_path)
+
+    def test_render_rejects_output_through_symlinked_parent(self):
+        alias = self.root / "alias"
+        try:
+            alias.symlink_to(self.root, target_is_directory=True)
+        except (NotImplementedError, OSError) as exc:
+            self.skipTest(f"Directory symlinks are unavailable: {exc}")
+        self.assert_rejected("render", alias / self.snapshot_path.name)
+        self.assertTrue(alias.is_symlink())
+
+    def test_refresh_rejects_hard_link_to_catalog(self):
+        alias = self.root / "catalog-alias.json"
+        try:
+            alias.hardlink_to(self.catalog_path)
+        except (NotImplementedError, OSError) as exc:
+            self.skipTest(f"Hard links are unavailable: {exc}")
+        self.assert_rejected("refresh", alias)
+        self.assertTrue(alias.samefile(self.catalog_path))
+
+    def test_refresh_can_replace_distinct_snapshot_and_preserves_catalog(self):
+        observed = snapshot()["pull_requests"][0]
+        observed["title"] = "Updated observation"
+        with mock.patch.object(status, "fetch_pr", return_value=observed) as fetch:
+            result, _, stderr = self.invoke("refresh", self.snapshot_path)
+        self.assertEqual(result, 0, stderr)
+        fetch.assert_called_once_with(catalog()["contributions"][0])
+        self.assertEqual(status.read_json(self.snapshot_path)["pull_requests"], [observed])
+        self.assertEqual(self.catalog_path.read_bytes(), self.catalog_bytes)
+
+
 class RenderingTests(unittest.TestCase):
     def test_report_is_deterministic_under_input_order_changes(self):
         data = two_contributions()

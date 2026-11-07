@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Reject status output paths that alias the input catalog or snapshot before
+  writing or querying GitHub, preserving curated records and existing links.
 - Reject duplicate workspace configuration keys, including nested keys, before
   inspecting Git. A later key can no longer silently hide or redirect a checkout.
 - Preserve the previous checkpoint file on every configuration error and report
