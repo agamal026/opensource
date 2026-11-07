@@ -59,6 +59,8 @@ The refresh writes an ignored local candidate snapshot. Review it before replaci
 the tracked snapshot. See the [continuation guide](docs/CONTINUING.md) for the
 publication commands and failure behavior. Refreshing makes read-only GitHub
 queries; it does not submit or change a pull request.
+Both status commands reject output paths that alias their input files, including
+symbolic links and hard links. Refresh can still replace a distinct snapshot.
 
 ### Inspect local workspaces
 

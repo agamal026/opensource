@@ -551,6 +551,15 @@ def main(argv: list[str] | None = None) -> int:
     if args.command == "render" and args.check and args.output is None:
         parser.error("render --check requires --output")
     try:
+        if args.command in ("refresh", "render") and args.output is not None:
+            inputs = [("catalog", args.catalog)]
+            if args.command == "render":
+                inputs.append(("snapshot", args.snapshot))
+            for name, path in inputs:
+                same_path = args.output.resolve() == path.resolve()
+                if args.output.exists() and path.exists():
+                    same_path = same_path or args.output.samefile(path)
+                require(not same_path, f"{args.command}: output must not overwrite {name} input")
         catalog = validate_catalog(read_json(args.catalog))
         if args.command == "refresh":
             snapshot = refresh(catalog, args.output)
