@@ -2,7 +2,7 @@
   "schema_version": 1,
   "owner": "agamal026",
   "started_on": "2026-10-17",
-  "updated_on": "2026-11-03",
+  "updated_on": "2026-11-07",
   "target_count": 100,
   "historical_submissions": [
     {
@@ -817,8 +817,8 @@
     {
       "repository": "apache/commons-beanutils",
       "batch": 3,
-      "summary": "apache-commons-beanutils: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Existing https://github.com/apache/commons-beanutils/pull/444 is open at 51a346ab12e0fd683df794ab40c9f18e58f92068 on 1.X. Its updated subclass-collision fix has separate validation; upstream workflows still require admission with zero jobs. The PR description still cites older 1d95c95 source. The description-update operation has an actual unresolved permission denial; do not repeat it without a supported authorization change. Full milestone backfill is not part of this accepted-count correction.",
+      "summary": "PR #444 for BEANUTILS-417 was created October 22 on 1.X. DynaProperty writes default fields before custom metadata and uses a serializable marker to keep new readers compatible with historical data. The final October 30 revision 51a346ab avoids a same-package subclass method collision using a static accessor. Complete local default validation and automated review are recorded; upstream CI admission and acceptance remain pending. The new superclass remains an explicit serialization compatibility qualification.",
+      "next_action": "Follow substantive review or admitted checks on https://github.com/apache/commons-beanutils/pull/444 at 51a346ab12e0fd683df794ab40c9f18e58f92068. Two upstream workflows require admission and have zero jobs; passing proof is local Linux/Java 17 execution, not hosted CI. The PR body still cites initial 1d95c95c source and 1,293-case results; final-source proof is https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/README.md. Preserve the actual denied description-update operation and its prepared text; resume only after supported authorization repair. This November 7 reconciliation records the existing submission, with no new PR or acceptance.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -837,6 +837,77 @@
             "https://github.com/apache/commons-beanutils",
             "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-beanutils/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-10-22",
+          "refs": [
+            "https://issues.apache.org/jira/browse/BEANUTILS-417",
+            "https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637",
+            "https://www.apache.org/legal/generative-tooling.html",
+            "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md",
+            "https://github.com/apache/commons-beanutils/blob/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff/CONTRIBUTING.md",
+            "https://github.com/apache/commons-beanutils/pull/444"
+          ],
+          "policy_ref": "https://github.com/apache/commons-beanutils/blob/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff/CONTRIBUTING.md"
+        },
+        {
+          "stage": "selected",
+          "date": "2026-10-22",
+          "refs": [
+            "https://issues.apache.org/jira/browse/BEANUTILS-417",
+            "https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637",
+            "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md",
+            "https://github.com/apache/commons-beanutils/pull/430#issuecomment-5499734362"
+          ],
+          "selection_ref": "https://github.com/apache/commons-beanutils/pull/430#issuecomment-5105326637"
+        },
+        {
+          "stage": "reproduced",
+          "date": "2026-10-22",
+          "refs": [
+            "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/README.md",
+            "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/baseline-tests.patch",
+            "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/validation.json",
+            "https://github.com/apache/commons-beanutils/commit/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff"
+          ],
+          "source_commit": "22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+          "source_ref": "https://github.com/apache/commons-beanutils/commit/22354f22fb150f82ae8cb7d4e444d2bf0d2bb1ff",
+          "validation": {
+            "command": "\"${MAVEN_HOME}/bin/mvn\" --settings \"${MAVEN_SETTINGS}\" --errors --show-version --batch-mode --no-transfer-progress \"-Dmaven.repo.local=${MAVEN_REPO_LOCAL}\" -DtrimStackTrace=false '-Dtest=DynaProperty*' clean test",
+            "result": "reproduced",
+            "ref": "https://github.com/agamal026/commons-beanutils/blob/cf4a3bcc5b8646fe71638b1d8f7112774b44aed4/contribution-review/BEANUTILS-417/validation.json"
+          }
+        },
+        {
+          "stage": "validated",
+          "date": "2026-10-30",
+          "refs": [
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/README.md",
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/source-identity.json",
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/validation.json",
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/test-results.json",
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/review.md"
+          ],
+          "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+          "source_ref": "https://github.com/agamal026/commons-beanutils/commit/51a346ab12e0fd683df794ab40c9f18e58f92068",
+          "validation": {
+            "command": "\"$MAVEN_HOME/bin/mvn\" -B -ntp -l \"$EVIDENCE/fixed-default.log\" -s \"$MAVEN_SETTINGS\" \"-Dmaven.repo.local=$MAVEN_REPO\"",
+            "result": "passed",
+            "ref": "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/validation.json"
+          },
+          "review_ref": "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/review.md"
+        },
+        {
+          "stage": "submitted",
+          "date": "2026-10-30",
+          "refs": [
+            "https://github.com/apache/commons-beanutils/pull/444",
+            "https://github.com/agamal026/commons-beanutils/commit/51a346ab12e0fd683df794ab40c9f18e58f92068",
+            "https://github.com/agamal026/commons-beanutils/blob/8686e6f615c3eee822ef5325ddf56e3aaf8b27eb/contribution-review/BEANUTILS-417/static-accessor-validation-20261030/publication.json"
+          ],
+          "pr_url": "https://github.com/apache/commons-beanutils/pull/444",
+          "source_commit": "51a346ab12e0fd683df794ab40c9f18e58f92068"
         }
       ],
       "benefits": []
