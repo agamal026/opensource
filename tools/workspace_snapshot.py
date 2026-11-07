@@ -83,10 +83,13 @@ def load_config(config_path: Path) -> list[tuple[str, Path]]:
     return workspaces
 
 
-def _git(path: Path, *arguments: str) -> subprocess.CompletedProcess[bytes]:
+def _git(path: Path, *arguments: str, input_bytes: bytes | None = None) -> subprocess.CompletedProcess[bytes]:
     # Inherited GIT_DIR/GIT_WORK_TREE/etc. must not redirect a configured workspace.
     environment = {key: value for key, value in os.environ.items() if not key.startswith("GIT_")}
-    environment.update(GIT_OPTIONAL_LOCKS="0", GIT_TERMINAL_PROMPT="0", LC_ALL="C")
+    environment.update(
+        GIT_OPTIONAL_LOCKS="0", GIT_TERMINAL_PROMPT="0", GIT_NO_LAZY_FETCH="1",
+        GIT_ALLOW_PROTOCOL="", LC_ALL="C",
+    )
     command = [
         "git",
         "-c", "core.fsmonitor=false",
@@ -98,7 +101,8 @@ def _git(path: Path, *arguments: str) -> subprocess.CompletedProcess[bytes]:
     try:
         return subprocess.run(
             command,
-            stdin=subprocess.DEVNULL,
+            stdin=subprocess.DEVNULL if input_bytes is None else None,
+            input=input_bytes,
             stdout=subprocess.PIPE,
             stderr=subprocess.DEVNULL,
             env=environment,
@@ -111,6 +115,73 @@ def _git(path: Path, *arguments: str) -> subprocess.CompletedProcess[bytes]:
         raise SnapshotError("git_timeout") from None
     except OSError:
         raise SnapshotError("git_failed") from None
+
+
+def _check_status_safety(path: Path) -> None:
+    """Reject status operations that could execute repository content filters.
+
+    The caller must supply the worktree root: status scans the whole repository,
+    whereas ls-files from a nested directory only lists that subtree. Git itself
+    resolves attributes, including macros and worktree/info/global overrides.
+    """
+    index = _git(path, "ls-files", "--stage", "-z")
+    if index.returncode != 0:
+        raise SnapshotError("git_failed")
+    if not index.stdout:
+        return
+    if not index.stdout.endswith(b"\x00"):
+        raise SnapshotError("invalid_git_output")
+    paths: dict[bytes, None] = {}
+    for record in index.stdout[:-1].split(b"\x00"):
+        metadata, separator, name = record.partition(b"\t")
+        fields = metadata.split(b" ")
+        if (
+            not separator or not name or len(fields) != 3
+            or fields[0] not in (b"100644", b"100755", b"120000", b"160000")
+            or not HEAD_SHA.fullmatch(fields[1]) or fields[2] not in (b"0", b"1", b"2", b"3")
+        ):
+            raise SnapshotError("invalid_git_output")
+        if fields[0] == b"160000":
+            # Recursive status can execute a child's filters. Do not hide dirty
+            # submodules or claim safe recursion without inspecting their config.
+            raise SnapshotError("unsupported_submodules")
+        paths[name] = None
+
+    configuration = _git(path, "config", "--null", "--get-regexp", r"^filter\..*\.(clean|process)$")
+    if configuration.returncode == 1 and not configuration.stdout:
+        return  # No configured command can be selected by a filter attribute.
+    if configuration.returncode != 0:
+        raise SnapshotError("git_failed")
+    if not configuration.stdout.endswith(b"\x00"):
+        raise SnapshotError("invalid_git_output")
+    commands: dict[bytes, bytes] = {}
+    for record in configuration.stdout[:-1].split(b"\x00"):
+        key, separator, value = record.partition(b"\n")
+        if not separator or not re.fullmatch(rb"filter\..*\.(clean|process)", key):
+            raise SnapshotError("invalid_git_output")
+        commands[key] = value  # Git uses the last value, including an empty one.
+    drivers = {key[7:key.rfind(b".")] for key, value in commands.items() if value}
+    if not drivers:
+        return
+
+    attributes = _git(path, "check-attr", "-z", "--stdin", "--all", input_bytes=b"\x00".join(paths) + b"\x00")
+    if attributes.returncode != 0:
+        raise SnapshotError("git_failed")
+    if not attributes.stdout:
+        return
+    if not attributes.stdout.endswith(b"\x00"):
+        raise SnapshotError("invalid_git_output")
+    fields = attributes.stdout[:-1].split(b"\x00")
+    if len(fields) % 3:
+        raise SnapshotError("invalid_git_output")
+    for index in range(0, len(fields), 3):
+        name, attribute, value = fields[index:index + 3]
+        if name not in paths or not attribute:
+            raise SnapshotError("invalid_git_output")
+        # --all omits unspecified attributes. Literal driver names "set" and
+        # "unset" are ambiguous with boolean states, so block conservatively.
+        if attribute == b"filter" and value in drivers:
+            raise SnapshotError("unsafe_content_filter")
 
 
 def count_changes(porcelain: bytes) -> dict[str, int]:
@@ -166,6 +237,15 @@ def inspect_workspace(workspace_id: str, path: Path) -> dict[str, Any]:
         inside = _git(path, "rev-parse", "--is-inside-work-tree")
         if inside.returncode != 0 or inside.stdout.strip() != b"true":
             raise SnapshotError("not_git_work_tree")
+
+        root = _git(path, "rev-parse", "--show-toplevel")
+        if root.returncode != 0:
+            raise SnapshotError("git_failed")
+        if not root.stdout.endswith(b"\n") or not root.stdout[:-1] or b"\x00" in root.stdout:
+            raise SnapshotError("invalid_git_output")
+        # Remove only Git's terminator; a worktree path may itself end in LF.
+        path = Path(os.fsdecode(root.stdout[:-1]))
+        _check_status_safety(path)
 
         symbolic = _git(path, "symbolic-ref", "--quiet", "--short", "HEAD")
         if symbolic.returncode not in (0, 1):
