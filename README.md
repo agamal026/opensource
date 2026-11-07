@@ -75,6 +75,9 @@ python3 tools/workspace_snapshot.py --config .local/workspaces.json --output .lo
 Paths are resolved relative to the configuration file, and `~` expands to your
 home directory. The output records counts and revisions, including detached HEADs
 and unavailable checkouts. Keep the configuration local.
+Workspaces with active content filters or indexed submodules return a sanitized
+error and an incomplete snapshot so inspection does not execute filter commands.
+See [the workspace data rules](docs/DATA.md#reports-and-checkpoints) for details.
 
 ## Original projects
 

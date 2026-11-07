@@ -8,9 +8,11 @@ import io
 import json
 import os
 from pathlib import Path
+import shlex
 import shutil
 import stat
 import subprocess
+import sys
 import tempfile
 import unittest
 from unittest import mock
@@ -259,6 +261,167 @@ class WorkspaceSnapshotTests(unittest.TestCase):
         self.assertEqual(data["workspaces"][0]["tracked_change_count"], 1)
         self.assertEqual((index.read_bytes(), index.stat().st_mtime_ns), before)
         self.assertFalse((self.repo / ".git" / "index.lock").exists())
+
+    def configure_filter(
+        self, kind: str = "clean", repo: Path | None = None, driver: str = "private-fixture",
+    ) -> Path:
+        """Configure a real command whose harmless side effect must not occur."""
+        marker = self.root / "private-filter-executed"
+        script = self.root / "private filter command.py"
+        script.write_text(
+            "from pathlib import Path\n"
+            "import sys\n"
+            "Path(sys.argv[1]).write_text('called\\n', encoding='utf-8')\n"
+            "if sys.argv[2] == 'clean':\n"
+            "    sys.stdout.buffer.write(sys.stdin.buffer.read())\n",
+            encoding="utf-8",
+        )
+        command = " ".join(shlex.quote(str(value).replace("\\", "/")) for value in (
+            sys.executable, script, marker, kind,
+        ))
+        self.git("-C", str(repo or self.repo), "config", f"filter.{driver}.{kind}", command)
+        return marker
+
+    def assert_inspection_blocked(self, marker: Path, category: str = "unsafe_content_filter") -> dict:
+        code, text, stderr = self.run_cli()
+        self.assertFalse(marker.exists(), "Snapshot inspection executed a configured Git command")
+        self.assertEqual((code, stderr), (1, ""))
+        data = json.loads(text)
+        self.assertFalse(data["complete"])
+        self.assertEqual(data["workspaces"][0], {"id": "example", "status": "error", "error": category})
+        self.assert_no_private_details(text + stderr)
+        self.assertNotIn("private-fixture", text)
+        self.assertNotIn("private filter command", text)
+        return data
+
+    def test_active_clean_filter_is_blocked_without_side_effects(self) -> None:
+        marker = self.configure_filter()
+        (self.repo / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        # Equal length forces Git to compare content rather than only file size.
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        index = self.repo / ".git" / "index"
+        before = (index.read_bytes(), index.stat().st_mtime_ns)
+        self.assert_inspection_blocked(marker)
+        self.assertEqual((index.read_bytes(), index.stat().st_mtime_ns), before)
+        self.assertFalse((self.repo / ".git" / "index.lock").exists())
+
+    def test_active_process_filter_is_blocked_before_handshake(self) -> None:
+        marker = self.configure_filter("process")
+        (self.repo / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        self.assert_inspection_blocked(marker)
+
+    def test_unused_disabled_and_untracked_only_filters_are_allowed(self) -> None:
+        marker = self.configure_filter()
+        command = self.git("config", "--get", "filter.private-fixture.clean").stdout.decode().rstrip("\n")
+        self.git("config", "--unset", "filter.private-fixture.clean")
+        global_home = self.root / "private global settings"
+        global_config = global_home / "git" / "config"
+        global_config.parent.mkdir(parents=True)
+        self.git("config", "--file", str(global_config), "filter.private-fixture.clean", command)
+        self.git("config", "--file", str(global_config), "filter.lfs.process", "git-lfs filter-process")
+        self.git("config", "--file", str(global_config), "filter.lfs.required", "true")
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        (self.repo / "untracked.bin").write_bytes(b"private draft\n")
+        with mock.patch.dict(os.environ, {
+            "XDG_CONFIG_HOME": str(global_home), "HOME": str(global_home), "USERPROFILE": str(global_home),
+        }):
+            for attributes in ("", "tracked.txt -filter\n", "untracked.bin filter=private-fixture\n"):
+                with self.subTest(attributes=attributes):
+                    (self.repo / ".gitattributes").write_text(attributes, encoding="utf-8")
+                    data, code = snapshot.capture(self.config)
+                    self.assertEqual(code, 0)
+                    self.assertTrue(data["complete"])
+                    self.assertEqual(data["workspaces"][0]["tracked_change_count"], 1)
+                    self.assertEqual(data["workspaces"][0]["untracked_count"], 2)
+                    self.assertFalse(marker.exists())
+
+    def test_empty_effective_clean_and_smudge_only_filters_are_allowed(self) -> None:
+        marker = self.configure_filter()
+        self.git("config", "--add", "filter.private-fixture.clean", "")
+        self.configure_filter("smudge")
+        (self.repo / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        data, code = snapshot.capture(self.config)
+        self.assertEqual(code, 0)
+        self.assertTrue(data["complete"])
+        self.assertEqual(data["workspaces"][0]["tracked_change_count"], 1)
+        self.assertFalse(marker.exists())
+
+    def test_later_nonempty_command_and_literal_state_driver_names_are_blocked(self) -> None:
+        for driver in ("set", "unset", "unspecified"):
+            with self.subTest(driver=driver):
+                marker = self.configure_filter(driver=driver)
+                command = self.git("config", "--get", f"filter.{driver}.clean").stdout.decode().rstrip("\n")
+                self.git("config", f"filter.{driver}.clean", "")
+                self.git("config", "--add", f"filter.{driver}.clean", command)
+                (self.repo / ".gitattributes").write_text(f"tracked.txt filter={driver}\n", encoding="utf-8")
+                (self.repo / "tracked.txt").write_bytes(b"modified\n")
+                self.assert_inspection_blocked(marker)
+
+    def test_worktree_macro_and_info_attributes_are_checked(self) -> None:
+        attributes = self.repo / ".gitattributes"
+        attributes.write_text("tracked.txt -filter\n", encoding="utf-8")
+        self.git("add", ".gitattributes")
+        self.git("commit", "-m", "Track a disabled filter attribute")
+        marker = self.configure_filter()
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        attributes.write_text(
+            "[attr]private-macro filter=private-fixture\ntracked.txt private-macro\n", encoding="utf-8",
+        )
+        self.assert_inspection_blocked(marker)
+        attributes.write_text("tracked.txt -filter\n", encoding="utf-8")
+        (self.repo / ".git" / "info" / "attributes").write_text(
+            "tracked.txt filter=private-fixture\n", encoding="utf-8",
+        )
+        self.assert_inspection_blocked(marker)
+
+    def test_missing_worktree_attributes_fall_back_to_index(self) -> None:
+        attributes = self.repo / ".gitattributes"
+        attributes.write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        self.git("add", ".gitattributes")
+        self.git("commit", "-m", "Track attributes before configuring their driver")
+        attributes.unlink()
+        marker = self.configure_filter()
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        self.assert_inspection_blocked(marker)
+
+    def test_filter_error_preserves_other_workspace_observations(self) -> None:
+        marker = self.configure_filter()
+        (self.repo / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        safe = self.root / "private safe workspace"
+        safe.mkdir()
+        self.git("-C", str(safe), "init", "-b", "main")
+        self.write_config([{"id": "example", "path": str(self.repo)}, {"id": "safe", "path": str(safe)}])
+        data = self.assert_inspection_blocked(marker)
+        self.assertEqual(data["workspaces"][1]["status"], "ok")
+        self.assertEqual(data["workspaces"][1]["tracked_change_count"], 0)
+
+    def test_nested_workspace_checks_filters_in_the_whole_repository(self) -> None:
+        nested = self.repo / "private nested directory"
+        nested.mkdir()
+        self.write_config([{"id": "example", "path": str(nested)}])
+        marker = self.configure_filter()
+        (self.repo / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        (self.repo / "tracked.txt").write_bytes(b"modified\n")
+        self.assert_inspection_blocked(marker)
+
+    def test_submodule_status_cannot_execute_a_child_filter(self) -> None:
+        child = self.repo / "private submodule"
+        child.mkdir()
+        self.git("-C", str(child), "init", "-b", "main")
+        self.git("-C", str(child), "config", "user.name", "Private Test Identity")
+        self.git("-C", str(child), "config", "user.email", "private-test@example.invalid")
+        (child / "tracked.txt").write_bytes(b"baseline\n")
+        self.git("-C", str(child), "add", "tracked.txt")
+        self.git("-C", str(child), "commit", "-m", "Submodule fixture")
+        head = self.git("-C", str(child), "rev-parse", "HEAD").stdout.decode("ascii").strip()
+        self.git("update-index", "--add", "--cacheinfo", f"160000,{head},{child.name}")
+        marker = self.configure_filter(repo=child)
+        (child / ".gitattributes").write_text("tracked.txt filter=private-fixture\n", encoding="utf-8")
+        (child / "tracked.txt").write_bytes(b"modified\n")
+        self.assert_inspection_blocked(marker, "unsupported_submodules")
 
     @unittest.skipIf(os.name == "nt", "Execution proof uses a POSIX shell hook")
     def test_posix_fsmonitor_hook_is_not_called(self) -> None:

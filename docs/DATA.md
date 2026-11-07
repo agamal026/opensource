@@ -74,6 +74,24 @@ error category to stderr. When `--output` is omitted or set to `-`, it emits
 the diagnostic JSON on stdout. A valid configuration with an unavailable
 checkout still writes its partial snapshot with `complete: false` and returns 1.
 
+Before collecting change counts, the workspace tool checks the whole repository's
+tracked paths and effective Git attributes. If a tracked path selects a configured
+nonempty `clean` or `process` filter, it reports `unsafe_content_filter` without
+running `git status`. Filters can execute arbitrary commands, including creating
+Git LFS objects; turning them off and reporting ordinary change counts could
+misrepresent the working tree. Unused drivers, empty effective commands, and
+smudge-only filters remain allowed. Git's attribute output cannot distinguish
+boolean states from literal drivers named `set` or `unset`, so matching configured
+drivers with those names are conservatively blocked.
+
+An indexed submodule reports `unsupported_submodules`, even if uninitialized.
+Recursive status could execute a child's filters, and this tool does not yet
+preflight submodule repositories. These errors omit paths, filenames, and filter
+commands; other safe workspaces in the same configuration still produce results.
+Missing objects are not fetched, fsmonitor is disabled, and optional index locks
+remain disabled. Use an idle checkout: the separate Git reads are not an atomic
+snapshot and cannot guard against concurrent changes to configuration or files.
+
 ## Curated opportunities: `data/opportunities.json`
 
 This separate, manually reviewed registry records current program terms and
