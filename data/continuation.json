@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T10:07:36.311466+00:00",
+  "updated_at": "2026-11-12T18:55:00Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-11-07-beanutils-evidence-reconciliation.md",
+  "latest_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -18,9 +18,9 @@
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
     "enabled_observed": false,
-    "observation_date_utc": "2026-11-07",
-    "next_run_time_reported": null,
-    "execution_limit": "Observed paused with no next run. The latest recorded November 6 run is now completed and its matching, nontruncated result is empty with requires_user_action=true; the actual action and pause cause remain unexposed. No schedule edit, re-enable or run-now was performed. This manual evidence reconciliation does not establish recurring execution or repair provider permissions."
+    "observation_date_utc": "2026-11-12",
+    "next_run_time_reported": "2026-11-12T19:00:00+01:00",
+    "execution_limit": "Fresh November 12 inspection still reports the task disabled. The next-run display is explicitly the next configured occurrence even while paused, not execution evidence. The matching latest actual November 7 run completed with empty, nontruncated output and requires_user_action=true; no requested action or cause is exposed. No resume, forced run, prompt edit or duplicate task occurred."
   },
   "latest_completed_contribution": {
     "repository": "apache/commons-compress",
@@ -95,10 +95,20 @@
       "work": "apache/commons-bcel #540 and javaparser/javaparser #5175",
       "resume_when": "Only a concrete new application failure or explicit maintainer request for a genuinely distinct permitted task.",
       "note": "Declined/rejected work receives no acceptance credit. Do not reopen, recreate, repackage, retest or ping the rejected submissions."
+    },
+    {
+      "work": "apache/commons-bcel BCEL-378 upstream PR creation",
+      "state": "validated_upstream_submission_blocked",
+      "source_commit": "1898aae527b9511385c0d81eab7276ed4444b254",
+      "source_ref": "https://github.com/agamal026/commons-bcel/commit/1898aae527b9511385c0d81eab7276ed4444b254",
+      "owned_validation_pr": "https://github.com/agamal026/commons-bcel/pull/1",
+      "evidence_ref": "progress/2026-11-12-bcel-378-validation.md",
+      "resume_when": "A material supported authorization change applies to the exact denied create-pull-request operation for apache/commons-bcel:master from agamal026:BCEL-378-bootstrap-methods.",
+      "note": "The normal operation returned HTTP 403 Resource not accessible by integration on November 12 at18:43:42 UTC. No upstream PR or acceptance. Local full default Maven validation and13Linux/Windows jobs passed; fourmacOS jobs were cancelled before execution and two queued at18:48:47 UTC. Dependency Review could not evaluate the fork. Preserve all earlier #540 exclusions; do not reroute the denied operation."
     }
   ],
   "next_action": {
-    "first": "Recover this public checkpoint together with the latest private handoff and the exact applicable denials, exclusions, personal requirements and pending operations. The new accounting correction does not repair external GitHub permissions or erase earlier safety rejections.",
+    "first": "Recover this public checkpoint with the latest private handoff and exact applicable denials, exclusions, personal requirements and pending operations. BCEL-378 is a validated owned candidate blocked by the actual upstream PR-create403; it is not an eighth qualified upstream submission. This record does not repair GitHub access or recurring execution.",
     "otherwise": "Respond to a concrete maintainer request, or select one ordinary eligible task with a supported publication and full-validation route. Screen sequential bounded waves of at most three candidate IDs, allocating before queries and completing each wave before another. Do not stockpile patches behind an unresolved delivery gate.",
     "do_not_repeat": "Do not recreate existing PRs, repeat admission comments, replay denied operations or the obsolete October 19 checkpoint, rerun unchanged passing matrices, or re-count accepted/historical work.",
     "budget": {
@@ -179,7 +189,7 @@
     "historical_snapshot_as_of": "2026-10-19T19:38:36.613486Z",
     "current_acceptance_ref": "https://github.com/apache/commons-lang/commit/d626464952b57e665a83bf556cd0f0e7fd9983fb"
   },
-  "previous_checkpoint": "progress/2026-11-03-javaparser-accepted.md",
+  "previous_checkpoint": "progress/2026-11-07-beanutils-evidence-reconciliation.md",
   "latest_record_reconciliation": {
     "repository": "apache/commons-beanutils",
     "recorded_on": "2026-11-07",

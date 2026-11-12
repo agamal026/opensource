@@ -1,6 +1,6 @@
 # Contribution campaign
 
-Started: 2026-10-17. Records last updated: 2026-11-07; individual evidence retains its original date.
+Started: 2026-10-17. Records last updated: 2026-11-12; individual evidence retains its original date.
 
 **Goal progress: 4 / 100 distinct external repositories with accepted campaign contributions.**
 
@@ -16,11 +16,11 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 90 | 100 |
-| screened | 2 | 10 |
-| selected | 0 | 8 |
-| baseline assessed | 0 | 8 |
-| validated | 1 | 8 |
+| target | 89 | 100 |
+| screened | 2 | 11 |
+| selected | 0 | 9 |
+| baseline assessed | 0 | 9 |
+| validated | 2 | 9 |
 | submitted | 3 | 7 |
 | accepted | 4 | 4 |
 
@@ -30,7 +30,7 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1 | 10 | 2 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 1 |
-| 3 | 10 | 3 | 3 | 3 | 1 |
+| 3 | 10 | 4 | 4 | 3 | 1 |
 | 4 | 10 | 1 | 1 | 1 | 1 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
 | 6 | 10 | 1 | 1 | 1 | 0 |
@@ -378,17 +378,23 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/avr
 
 ### [apache/commons\-bcel](<https://github.com/apache/commons-bcel>)
 
-Batch 3 · current stage: **target**.
+Batch 3 · current stage: **validated**.
 
-apache\-commons\-bcel: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
+BCEL\-378 lambda regeneration is validated at owned source 1898aae527b9511385c0d81eab7276ed4444b254\. BCELifier preserves typed constant pools and bootstrap metadata and uses bounded generated initializers\. The full local default Maven goal and 13 Linux/Windows CI jobs passed; macOS validation and the fork Dependency Review result are unavailable\. The normal upstream PR\-create operation returned HTTP 403 on November 12; no upstream PR or acceptance exists\.
 
-Next action: PR \#540 was declined and closed\. Do not reopen, recreate, repackage, retest, expand or ping absent a concrete new application failure or explicit maintainer request\. No acceptance credit\.
+Next action: Preserve owned verification https://github\.com/agamal026/commons\-bcel/pull/1 and validated source 1898aae527b9511385c0d81eab7276ed4444b254\. The November 12 18:43:42 UTC upstream create\-pull\-request operation for apache/commons\-bcel:master from agamal026:BCEL\-378\-bootstrap\-methods returned 403 Resource not accessible by integration\. Resume only after a material supported authorization change applies to that exact operation; no alternate provider, browser, machine, credential, head, wrapper, issue or comment route\. At 18:48:47 UTC, four macOS jobs were cancelled before execution and two remained queued; cancellation cause is unconfirmed\. The fork Dependency Review capability is unavailable\. Prior PR \#540 was declined and closed\. Do not reopen, recreate, repackage, retest, expand or ping that rejected work absent a concrete new application failure or explicit maintainer request\. BCEL\-378 is a distinct task and adds no submission or acceptance credit\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-bcel/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-bcel>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-bcel/project.yaml>).
+- 2026-11-12 **screened**: [evidence 1](<https://issues.apache.org/jira/browse/BCEL-378>); [evidence 2](<https://github.com/apache/commons-bcel/blob/0d7e5bbd561e138f8feb9852b7972e6af413f185/CONTRIBUTING.md>); [evidence 3](<https://www.apache.org/legal/generative-tooling.html>); [policy\_ref](<https://github.com/apache/commons-bcel/blob/0d7e5bbd561e138f8feb9852b7972e6af413f185/CONTRIBUTING.md>).
+- 2026-11-12 **selected**: [evidence 1](<https://issues.apache.org/jira/browse/BCEL-378>); [evidence 2](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#selected-defect-and-source>); [selection\_ref](<https://issues.apache.org/jira/browse/BCEL-378>).
+- 2026-11-12 **baseline assessed**: [evidence 1](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#baseline-reproduction>); [source 0d7e5bbd561e138f8feb9852b7972e6af413f185](<https://github.com/apache/commons-bcel/commit/0d7e5bbd561e138f8feb9852b7972e6af413f185>).
+  Validation command: mvn \-B \-ntp &\#x27;\-Dtest=BCELifierTest\#testLambdaRoundTrip&\#x27; test; result: **reproduced**; [validation record](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#baseline-reproduction>).
+- 2026-11-12 **validated**: [evidence 1](<https://github.com/agamal026/commons-bcel/commit/1898aae527b9511385c0d81eab7276ed4444b254>); [evidence 2](<https://github.com/agamal026/commons-bcel/pull/1>); [evidence 3](<https://github.com/agamal026/commons-bcel/actions/runs/43280663437>); [evidence 4](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#validation>); [review\_ref](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#independent-review>); [source 1898aae527b9511385c0d81eab7276ed4444b254](<https://github.com/agamal026/commons-bcel/commit/1898aae527b9511385c0d81eab7276ed4444b254>).
+  Validation command: mvn \-B \-ntp &quot;\-Dmaven\.surefire\.debug=\-javaagent:$MOCKITO\_JAR&quot; \-DadditionalJOption=\-J\-Djavax\.net\.ssl\.trustStore=/etc/ssl/certs/java/cacerts; result: **passed**; [validation record](<https://github.com/agamal026/opensource/blob/main/progress/2026-11-12-bcel-378-validation.md#validation>).
 
 ### [apache/commons\-beanutils](<https://github.com/apache/commons-beanutils>)
 
