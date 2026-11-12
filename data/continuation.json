@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T18:55:00Z",
+  "updated_at": "2026-11-12T19:07:11Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
   "campaign_ledger": "data/campaign.json",
@@ -104,7 +104,7 @@
       "owned_validation_pr": "https://github.com/agamal026/commons-bcel/pull/1",
       "evidence_ref": "progress/2026-11-12-bcel-378-validation.md",
       "resume_when": "A material supported authorization change applies to the exact denied create-pull-request operation for apache/commons-bcel:master from agamal026:BCEL-378-bootstrap-methods.",
-      "note": "The normal operation returned HTTP 403 Resource not accessible by integration on November 12 at18:43:42 UTC. No upstream PR or acceptance. Local full default Maven validation and13Linux/Windows jobs passed; fourmacOS jobs were cancelled before execution and two queued at18:48:47 UTC. Dependency Review could not evaluate the fork. Preserve all earlier #540 exclusions; do not reroute the denied operation."
+      "note": "The normal operation returned HTTP 403 Resource not accessible by integration on November 12 at18:43:42 UTC. No upstream PR or acceptance. Local full default Maven validation and 13 Linux/Windows jobs passed. The Java workflow completed at 18:56:15 UTC with overall conclusion failure; all six macOS jobs were cancelled without a runner or recorded steps, and their cancellation cause is unconfirmed. Dependency Review could not evaluate the fork. Preserve all earlier #540 exclusions; do not reroute the denied operation."
     }
   ],
   "next_action": {

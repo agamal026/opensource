@@ -90,10 +90,13 @@ full suites report 3,275 and 3,274 tests respectively, each with 16 existing
 skips. This verifies the restored Java 8 fixture comparisons on newer JDKs.
 Their tested PR merge tree exactly matches the proposed source tree above.
 
-At 18:48:47 UTC, macOS Java 8, 11, 25 and 27 jobs had been cancelled before
-receiving a runner or recording any steps; macOS Java 17 and 21 remained
-queued. The cancellation cause was unavailable. No macOS validation or test
-failure is established, and no rerun or cancellation was requested.
+The Java workflow's first attempt finished at 18:56:15 UTC with overall
+conclusion `failure`: 13 Linux/Windows jobs succeeded and all six macOS jobs
+were cancelled. Every macOS job has runner ID zero, an empty runner name and
+no recorded steps. Java 8, 11, 25 and 27 were cancelled at 18:46:14 UTC,
+Java 17 at 18:51:14 UTC, and Java 21 at 18:56:15 UTC. The cancellation cause
+was unavailable. No macOS validation or executed test failure is established,
+and no rerun or cancellation was requested.
 
 The separate [Dependency Review run](https://github.com/agamal026/commons-bcel/actions/runs/43280663482)
 failed because the fork's Dependency graph capability was unavailable. It
