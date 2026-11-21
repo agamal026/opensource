@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T18:18:27.813Z",
+  "updated_at": "2026-11-21T18:20:07.147Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -329,7 +329,7 @@
     "run_id": null,
     "started_at": null,
     "started_at_note": "The host did not expose a start timestamp or scheduled run identity for this manual continuation.",
-    "checkpointed_at": "2026-11-21T18:18:27.813Z",
+    "checkpointed_at": "2026-11-21T18:20:07.147Z",
     "recovered_public_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
     "material_work": [
       "Verified Jackson Databind #6454 merged on 2026-11-16; merge commit b63b8749041d31159c24d46018559bdcc23dc3a9 and based-on commit e9547600a3e0498f0733ff1be7d06402b62327bc provide explicit source linkage to #6302.",
@@ -340,14 +340,26 @@
       "BeanUtils #444 head 51a346ab: GitHub check-runs total 0; combined status pending with zero contexts; no admitted failure.",
       "Commons Compress #825 head 7e647788: GitHub check-runs total 0; combined status pending with zero contexts; no admitted failure.",
       "Hub campaign report generator port matched the current Python-generated report byte-for-byte before the update; regenerated report from updated campaign data.",
-      "External candidate tests were not run because no implementation was selected."
+      "External candidate tests were not run because no implementation was selected.",
+      "Hub CI run 44934806967 completed with success: Python 3.10/3.12/3.14 on Ubuntu and Python 3.12 on Windows; each job ran unit tests, public-record validation, status report check, campaign validation/report check and git diff --check."
     ],
-    "publication_state": "Owned hub PR #8 opened at https://github.com/agamal026/opensource/pull/8; CI pending. No external source, PR, comment or review was published.",
+    "publication_state": "Hub PR #8 open; GitHub Actions run 44934806967 completed successfully across all four matrix jobs; the final receipt update will be validated on the new PR head.",
     "accepted_delta": 1,
     "accepted_total": 5,
     "qualified_submitted_projects": 7,
     "remaining_dependency": "New external implementation requires an existing contributor fork or a supported fork-creation action plus project-specific permission. No such route was available for the screened candidates.",
     "private_library_save": "Not attempted; a current-version-safe write target for the canonical private handoff could not be established. The public hub checkpoint is the persisted record.",
-    "scheduler": "No schedule edit, resume, forced run or replacement task. Scheduler state was not rechecked in this manual continuation; the last recorded observation remains unchanged."
+    "scheduler": "No schedule edit, resume, forced run or replacement task. Scheduler state was not rechecked in this manual continuation; the last recorded observation remains unchanged.",
+    "hub_ci_run": {
+      "id": 44934806967,
+      "conclusion": "success",
+      "jobs": [
+        "Python 3.10 on ubuntu-latest",
+        "Python 3.12 on ubuntu-latest",
+        "Python 3.14 on ubuntu-latest",
+        "Python 3.12 on windows-latest"
+      ],
+      "checks": "Each job ran offline regression tests, public record validation, generated status check, contribution campaign validation, generated campaign check and git diff --check."
+    }
   }
 }
