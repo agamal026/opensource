@@ -2,7 +2,7 @@
   "schema_version": 1,
   "owner": "agamal026",
   "started_on": "2026-10-17",
-  "updated_on": "2026-11-12",
+  "updated_on": "2026-11-21",
   "target_count": 100,
   "historical_submissions": [
     {
@@ -967,7 +967,7 @@
       "repository": "apache/commons-cli",
       "batch": 3,
       "summary": "apache-commons-cli: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: PR #452 is an active competing fix and no recent unclaimed issue was selected. CONTRIBUTING.md calls for a JIRA issue and contributor fork; small bug fixes may not require an ICLA. No existing contributor fork or supported fork-creation action is available. Maven tests were not run.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -986,6 +986,16 @@
             "https://github.com/apache/commons-cli",
             "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-cli/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/apache/commons-cli/pull/452",
+            "https://github.com/apache/commons-cli/issues",
+            "https://github.com/apache/commons-cli"
+          ],
+          "policy_ref": "https://github.com/apache/commons-cli/blob/master/CONTRIBUTING.md"
         }
       ],
       "benefits": []
@@ -1394,7 +1404,7 @@
       "repository": "apache/commons-net",
       "batch": 4,
       "summary": "apache-commons-net: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: no recent unclaimed issue was selected; PRs #419, #420, #421, #423 and #424 are active. CONTRIBUTING.md calls for a JIRA issue and contributor fork; small bug fixes may not require an ICLA. No existing fork or supported fork-creation action is available. Maven tests were not run.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -1413,6 +1423,19 @@
             "https://github.com/apache/commons-net",
             "https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-net/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/apache/commons-net/pull/419",
+            "https://github.com/apache/commons-net/pull/420",
+            "https://github.com/apache/commons-net/pull/421",
+            "https://github.com/apache/commons-net/pull/423",
+            "https://github.com/apache/commons-net/pull/424",
+            "https://github.com/apache/commons-net/issues"
+          ],
+          "policy_ref": "https://github.com/apache/commons-net/blob/master/CONTRIBUTING.md"
         }
       ],
       "benefits": []
@@ -1960,8 +1983,8 @@
     {
       "repository": "FasterXML/jackson-databind",
       "batch": 6,
-      "summary": "Fix #6299: write a valid empty array when content inclusion suppresses the sole element of an unwrapped container, preserving configured content-filter exception wrapping.",
-      "next_action": "Upstream #6302 remains open/unmerged on 3.1 at 38261628a27c109e6e49c916cdb0f7e8bf7bbf45. The historical upstream run 39138054220 has four successful build jobs; the helper review is resolved. Personal CLA resolution remains separate. The improved iterator/subclass-compatibility revision is preserved in owned draft https://github.com/agamal026/jackson-databind/pull/8; it is not the upstream head or acceptance. Reuse unchanged validation and honor the existing public-write and personal gates.",
+      "summary": "Fix #6299: write a valid empty array when content inclusion suppresses the sole element of an unwrapped container, preserving configured content-filter exception wrapping. The maintainer's merged #6454 implementation is explicitly based on #6302.",
+      "next_action": "Accepted through maintainer PR #6454, merged 2026-11-16. Its distinct implementation commit e9547600a3e0498f0733ff1be7d06402b62327bc says it is based on #6302 by @agamal026, and the merge adds release-note credit. Original #6302 closed unmerged. This is one explicit source-linked incorporation; no personal CLA action, benefit eligibility, application, award or payment is claimed. Owned draft #8 remains non-counting; follow regressions only.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2041,6 +2064,19 @@
           ],
           "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
           "source_commit": "de533c218b30a86ac9e74a6627b7224c2a0d2987"
+        },
+        {
+          "stage": "accepted",
+          "date": "2026-11-16",
+          "refs": [
+            "https://github.com/FasterXML/jackson-databind/pull/6302",
+            "https://github.com/FasterXML/jackson-databind/pull/6454",
+            "https://github.com/FasterXML/jackson-databind/commit/e9547600a3e0498f0733ff1be7d06402b62327bc",
+            "https://github.com/FasterXML/jackson-databind/blob/b63b8749041d31159c24d46018559bdcc23dc3a9/release-notes/CREDITS",
+            "https://github.com/FasterXML/jackson-databind/blob/b63b8749041d31159c24d46018559bdcc23dc3a9/release-notes/VERSION",
+            "https://github.com/agamal026/jackson-databind/commit/38261628a27c109e6e49c916cdb0f7e8bf7bbf45"
+          ],
+          "acceptance_ref": "https://github.com/FasterXML/jackson-databind/commit/b63b8749041d31159c24d46018559bdcc23dc3a9"
         }
       ],
       "benefits": []
@@ -2591,7 +2627,7 @@
       "repository": "joomla/joomla-cms",
       "batch": 8,
       "summary": "Joomla: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: issue #48883 already has competing PR #48884. Joomla permits AI assistance only with contributor understanding, review and validation; the full Cypress system run remains pending in that PR. No existing contributor fork or supported fork-creation action is available. Do not duplicate or prepare a patch.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2610,6 +2646,15 @@
             "https://github.com/joomla/joomla-cms",
             "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/joomla/joomla-cms/issues/48883",
+            "https://github.com/joomla/joomla-cms/pull/48884"
+          ],
+          "policy_ref": "https://developer.joomla.org/generative-ai-policy.html"
         }
       ],
       "benefits": []
@@ -2618,7 +2663,7 @@
       "repository": "jquery/jquery",
       "batch": 8,
       "summary": "jQuery: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: CONTRIBUTING.md explicitly excludes auto-generated issues and pull requests; no genuine user-originated use case or maintainer-requested task was established. The Node test route is documented, but no existing contributor fork or supported fork-creation action is available. Do not submit autonomous work.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2637,6 +2682,15 @@
             "https://github.com/jquery/jquery",
             "https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/jquery/jquery/issues",
+            "https://github.com/jquery/jquery/pulls"
+          ],
+          "policy_ref": "https://github.com/jquery/jquery/blob/main/CONTRIBUTING.md"
         }
       ],
       "benefits": []
@@ -2645,7 +2699,7 @@
       "repository": "keycloak/keycloak",
       "batch": 8,
       "summary": "keycloak: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: the contribution workflow requires a DCO sign-off on each commit; no personal sign-off is authorized. AI assistance also requires disclosure and contributor understanding/review. No existing contributor fork or supported fork-creation action is available. No task selected.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2664,6 +2718,16 @@
             "https://github.com/keycloak/keycloak",
             "https://github.com/google/oss-fuzz/blob/master/projects/keycloak/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/keycloak/keycloak/blob/main/AGENTS.md",
+            "https://github.com/keycloak/keycloak/blob/main/PR-CHECKLIST.md",
+            "https://github.com/keycloak/keycloak/pulls"
+          ],
+          "policy_ref": "https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md"
         }
       ],
       "benefits": []
@@ -2699,7 +2763,7 @@
       "repository": "libgit2/libgit2",
       "batch": 8,
       "summary": "libgit2: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: issue #7487 already has competing PRs #7488 and #7489, issue #7467 has PR #7493, and #7480 is security-related. The documented route requires a contributor fork and PR; validation uses CMake, Python and the libgit2_tests binary. No existing contributor fork or supported fork-creation action is available.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2718,6 +2782,20 @@
             "https://github.com/libgit2/libgit2",
             "https://github.com/google/oss-fuzz/blob/master/projects/libgit2/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/libgit2/libgit2/blob/main/README.md",
+            "https://github.com/libgit2/libgit2/issues/7487",
+            "https://github.com/libgit2/libgit2/pull/7488",
+            "https://github.com/libgit2/libgit2/pull/7489",
+            "https://github.com/libgit2/libgit2/issues/7467",
+            "https://github.com/libgit2/libgit2/pull/7493",
+            "https://github.com/libgit2/libgit2/issues/7480"
+          ],
+          "policy_ref": "https://github.com/libgit2/libgit2/blob/main/docs/contributing.md"
         }
       ],
       "benefits": []
@@ -2780,7 +2858,7 @@
       "repository": "lxml/lxml",
       "batch": 8,
       "summary": "lxml: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: no explicit AI-use policy was located in the repository root; the recent defect queue is already represented by active PRs #564, #563, #561 and #559, and no distinct unclaimed task was established. The documented tox route builds extensions and runs make test across Python 3.9–3.14 and PyPy 3. No existing contributor fork or supported fork-creation action is available.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2799,6 +2877,18 @@
             "https://github.com/lxml/lxml",
             "https://github.com/google/oss-fuzz/blob/master/projects/lxml/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/lxml/lxml/blob/master/tox.ini",
+            "https://github.com/lxml/lxml/pull/564",
+            "https://github.com/lxml/lxml/pull/563",
+            "https://github.com/lxml/lxml/pull/561",
+            "https://github.com/lxml/lxml/pull/559"
+          ],
+          "policy_ref": "https://github.com/lxml/lxml/blob/master/README.rst"
         }
       ],
       "benefits": []
@@ -2834,7 +2924,7 @@
       "repository": "netty/netty",
       "batch": 9,
       "summary": "netty: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected.",
-      "next_action": "Read current contribution and AI-use policies, inspect actual maintenance activity and competing fixes, then select one cloud-testable problem with a supported benefit route.",
+      "next_action": "Parked: AGENTS.md restricts agents to trivial text drafting; code changes are security-sensitive and the project requires a contributor CLA. Issues #18481 and #18483 already have competing PRs #18493, #18487 and #18492. No existing contributor fork or supported fork-creation action is available. Do not implement.",
       "benefit_route": {
         "kind": "cash",
         "qualification": "conditional",
@@ -2853,6 +2943,21 @@
             "https://github.com/netty/netty",
             "https://github.com/google/oss-fuzz/blob/master/projects/netty/project.yaml"
           ]
+        },
+        {
+          "stage": "screened",
+          "date": "2026-11-21",
+          "refs": [
+            "https://github.com/netty/netty/blob/4.2/CONTRIBUTING.md",
+            "https://github.com/netty/netty/issues/18463",
+            "https://github.com/netty/netty/issues/18481",
+            "https://github.com/netty/netty/issues/18483",
+            "https://github.com/netty/netty/pull/18493",
+            "https://github.com/netty/netty/pull/18487",
+            "https://github.com/netty/netty/pull/18492",
+            "https://netty.io/wiki/developer-guide.html"
+          ],
+          "policy_ref": "https://github.com/netty/netty/blob/4.2/AGENTS.md"
         }
       ],
       "benefits": []

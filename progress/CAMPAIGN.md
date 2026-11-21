@@ -1,8 +1,8 @@
 # Contribution campaign
 
-Started: 2026-10-17. Records last updated: 2026-11-12; individual evidence retains its original date.
+Started: 2026-10-17. Records last updated: 2026-11-21; individual evidence retains its original date.
 
-**Goal progress: 4 / 100 distinct external repositories with accepted campaign contributions.**
+**Goal progress: 5 / 100 distinct external repositories with accepted campaign contributions.**
 
 Qualified campaign submissions: 7 distinct repositories; submission alone does not count toward the goal.
 
@@ -16,13 +16,13 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 
 | Stage | Currently at stage | Reached in displayed queue |
 | --- | ---: | ---: |
-| target | 89 | 100 |
-| screened | 2 | 11 |
+| target | 81 | 100 |
+| screened | 10 | 19 |
 | selected | 0 | 9 |
 | baseline assessed | 0 | 9 |
 | validated | 2 | 9 |
-| submitted | 3 | 7 |
-| accepted | 4 | 4 |
+| submitted | 2 | 7 |
+| accepted | 5 | 5 |
 
 ## Batches
 
@@ -30,13 +30,13 @@ Counts cover the evidence entered in this file, not a complete live PR inventory
 | --- | ---: | ---: | ---: | ---: | ---: |
 | 1 | 10 | 2 | 1 | 0 | 0 |
 | 2 | 10 | 1 | 1 | 1 | 1 |
-| 3 | 10 | 4 | 4 | 3 | 1 |
-| 4 | 10 | 1 | 1 | 1 | 1 |
+| 3 | 10 | 5 | 4 | 3 | 1 |
+| 4 | 10 | 2 | 1 | 1 | 1 |
 | 5 | 10 | 0 | 0 | 0 | 0 |
-| 6 | 10 | 1 | 1 | 1 | 0 |
+| 6 | 10 | 1 | 1 | 1 | 1 |
 | 7 | 10 | 1 | 1 | 1 | 1 |
-| 8 | 10 | 1 | 0 | 0 | 0 |
-| 9 | 10 | 0 | 0 | 0 | 0 |
+| 8 | 10 | 6 | 0 | 0 | 0 |
+| 9 | 10 | 1 | 0 | 0 | 0 |
 | 10 | 10 | 0 | 0 | 0 | 0 |
 
 ## Benefits
@@ -419,17 +419,18 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apa
 
 ### [apache/commons\-cli](<https://github.com/apache/commons-cli>)
 
-Batch 3 · current stage: **target**.
+Batch 3 · current stage: **screened**.
 
 apache\-commons\-cli: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: PR \#452 is an active competing fix and no recent unclaimed issue was selected\. CONTRIBUTING\.md calls for a JIRA issue and contributor fork; small bug fixes may not require an ICLA\. No existing contributor fork or supported fork\-creation action is available\. Maven tests were not run\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-cli/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-cli>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-cli/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/apache/commons-cli/pull/452>); [evidence 2](<https://github.com/apache/commons-cli/issues>); [evidence 3](<https://github.com/apache/commons-cli>); [policy\_ref](<https://github.com/apache/commons-cli/blob/master/CONTRIBUTING.md>).
 
 ### [apache/commons\-collections](<https://github.com/apache/commons-collections>)
 
@@ -554,17 +555,18 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apa
 
 ### [apache/commons\-net](<https://github.com/apache/commons-net>)
 
-Batch 4 · current stage: **target**.
+Batch 4 · current stage: **screened**.
 
 apache\-commons\-net: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: no recent unclaimed issue was selected; PRs \#419, \#420, \#421, \#423 and \#424 are active\. CONTRIBUTING\.md calls for a JIRA issue and contributor fork; small bug fixes may not require an ICLA\. No existing fork or supported fork\-creation action is available\. Maven tests were not run\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-net/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/apache/commons-net>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/apache-commons-net/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/apache/commons-net/pull/419>); [evidence 2](<https://github.com/apache/commons-net/pull/420>); [evidence 3](<https://github.com/apache/commons-net/pull/421>); [evidence 4](<https://github.com/apache/commons-net/pull/423>); [evidence 5](<https://github.com/apache/commons-net/pull/424>); [evidence 6](<https://github.com/apache/commons-net/issues>); [policy\_ref](<https://github.com/apache/commons-net/blob/master/CONTRIBUTING.md>).
 
 ### [apache/commons\-text](<https://github.com/apache/commons-text>)
 
@@ -848,11 +850,11 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jac
 
 ### [FasterXML/jackson\-databind](<https://github.com/FasterXML/jackson-databind>)
 
-Batch 6 · current stage: **submitted**.
+Batch 6 · current stage: **accepted**.
 
-Fix \#6299: write a valid empty array when content inclusion suppresses the sole element of an unwrapped container, preserving configured content\-filter exception wrapping\.
+Fix \#6299: write a valid empty array when content inclusion suppresses the sole element of an unwrapped container, preserving configured content\-filter exception wrapping\. The maintainer&\#x27;s merged \#6454 implementation is explicitly based on \#6302\.
 
-Next action: Upstream \#6302 remains open/unmerged on 3\.1 at 38261628a27c109e6e49c916cdb0f7e8bf7bbf45\. The historical upstream run 39138054220 has four successful build jobs; the helper review is resolved\. Personal CLA resolution remains separate\. The improved iterator/subclass\-compatibility revision is preserved in owned draft https://github\.com/agamal026/jackson\-databind/pull/8; it is not the upstream head or acceptance\. Reuse unchanged validation and honor the existing public\-write and personal gates\.
+Next action: Accepted through maintainer PR \#6454, merged 2026\-11\-16\. Its distinct implementation commit e9547600a3e0498f0733ff1be7d06402b62327bc says it is based on \#6302 by @agamal026, and the merge adds release\-note credit\. Original \#6302 closed unmerged\. This is one explicit source\-linked incorporation; no personal CLA action, benefit eligibility, application, award or payment is claimed\. Owned draft \#8 remains non\-counting; follow regressions only\.
 
 Benefit route: **cash / conditional**, checked 2026-10-18. Tier 2 project scope checked on October 18\. This serialization correctness fix has no verified issue bounty or patch\-specific security\-reward qualification; participant eligibility, upstream acceptance, award and payment remain unverified\.
 
@@ -866,6 +868,7 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jac
 - 2026-10-18 **validated**: [evidence 1](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md>); [evidence 2](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/VALIDATION.json>); [evidence 3](<https://github.com/agamal026/jackson-databind/actions/runs/39124679661>); [review\_ref](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/AUTOMATED_REVIEW.md>); [source de533c218b30a86ac9e74a6627b7224c2a0d2987](<https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987>).
   Validation command: \./mvnw \-B \-ff \-ntp verify; result: **passed**; [validation record](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md#before-and-after>).
 - 2026-10-18 **submitted**: [evidence 1](<https://github.com/FasterXML/jackson-databind/pull/6302>); [evidence 2](<https://github.com/agamal026/jackson-databind/commit/de533c218b30a86ac9e74a6627b7224c2a0d2987>); [evidence 3](<https://github.com/agamal026/jackson-databind/blob/942fb1328e72dd76cf58a32b194d9d3783baad16/contribution-review/6299/README.md>); [pr\_url](<https://github.com/FasterXML/jackson-databind/pull/6302>); validated source de533c218b30a86ac9e74a6627b7224c2a0d2987.
+- 2026-11-16 **accepted**: [evidence 1](<https://github.com/FasterXML/jackson-databind/pull/6302>); [evidence 2](<https://github.com/FasterXML/jackson-databind/pull/6454>); [evidence 3](<https://github.com/FasterXML/jackson-databind/commit/e9547600a3e0498f0733ff1be7d06402b62327bc>); [evidence 4](<https://github.com/FasterXML/jackson-databind/blob/b63b8749041d31159c24d46018559bdcc23dc3a9/release-notes/CREDITS>); [evidence 5](<https://github.com/FasterXML/jackson-databind/blob/b63b8749041d31159c24d46018559bdcc23dc3a9/release-notes/VERSION>); [evidence 6](<https://github.com/agamal026/jackson-databind/commit/38261628a27c109e6e49c916cdb0f7e8bf7bbf45>); [acceptance\_ref](<https://github.com/FasterXML/jackson-databind/commit/b63b8749041d31159c24d46018559bdcc23dc3a9>).
 
 ### [git/git](<https://github.com/git/git>)
 
@@ -1116,45 +1119,48 @@ Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/jso
 
 ### [joomla/joomla\-cms](<https://github.com/joomla/joomla-cms>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 Joomla: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: issue \#48883 already has competing PR \#48884\. Joomla permits AI assistance only with contributor understanding, review and validation; the full Cypress system run remains pending in that PR\. No existing contributor fork or supported fork\-creation action is available\. Do not duplicate or prepare a patch\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 1 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/joomla/joomla-cms>); [evidence 2](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/joomla/joomla-cms/issues/48883>); [evidence 2](<https://github.com/joomla/joomla-cms/pull/48884>); [policy\_ref](<https://developer.joomla.org/generative-ai-policy.html>).
 
 ### [jquery/jquery](<https://github.com/jquery/jquery>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 jQuery: a canonical upstream in the researched Tier 1 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: CONTRIBUTING\.md explicitly excludes auto\-generated issues and pull requests; no genuine user\-originated use case or maintainer\-requested task was established\. The Node test route is documented, but no existing contributor fork or supported fork\-creation action is available\. Do not submit autonomous work\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 1 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/jquery/jquery>); [evidence 2](<https://github.com/google/bughunters/blob/main/patch-rewards-program/scope.md>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/jquery/jquery/issues>); [evidence 2](<https://github.com/jquery/jquery/pulls>); [policy\_ref](<https://github.com/jquery/jquery/blob/main/CONTRIBUTING.md>).
 
 ### [keycloak/keycloak](<https://github.com/keycloak/keycloak>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 keycloak: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: the contribution workflow requires a DCO sign\-off on each commit; no personal sign\-off is authorized\. AI assistance also requires disclosure and contributor understanding/review\. No existing contributor fork or supported fork\-creation action is available\. No task selected\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/keycloak/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/keycloak/keycloak>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/keycloak/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/keycloak/keycloak/blob/main/AGENTS.md>); [evidence 2](<https://github.com/keycloak/keycloak/blob/main/PR-CHECKLIST.md>); [evidence 3](<https://github.com/keycloak/keycloak/pulls>); [policy\_ref](<https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md>).
 
 ### [knockout/knockout](<https://github.com/knockout/knockout>)
 
@@ -1172,17 +1178,18 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [libgit2/libgit2](<https://github.com/libgit2/libgit2>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 libgit2: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: issue \#7487 already has competing PRs \#7488 and \#7489, issue \#7467 has PR \#7493, and \#7480 is security\-related\. The documented route requires a contributor fork and PR; validation uses CMake, Python and the libgit2\_tests binary\. No existing contributor fork or supported fork\-creation action is available\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/libgit2/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/libgit2/libgit2>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/libgit2/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/libgit2/libgit2/blob/main/README.md>); [evidence 2](<https://github.com/libgit2/libgit2/issues/7487>); [evidence 3](<https://github.com/libgit2/libgit2/pull/7488>); [evidence 4](<https://github.com/libgit2/libgit2/pull/7489>); [evidence 5](<https://github.com/libgit2/libgit2/issues/7467>); [evidence 6](<https://github.com/libgit2/libgit2/pull/7493>); [evidence 7](<https://github.com/libgit2/libgit2/issues/7480>); [policy\_ref](<https://github.com/libgit2/libgit2/blob/main/docs/contributing.md>).
 
 ### [libjpeg\-turbo/libjpeg\-turbo](<https://github.com/libjpeg-turbo/libjpeg-turbo>)
 
@@ -1214,17 +1221,18 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [lxml/lxml](<https://github.com/lxml/lxml>)
 
-Batch 8 · current stage: **target**.
+Batch 8 · current stage: **screened**.
 
 lxml: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: no explicit AI\-use policy was located in the repository root; the recent defect queue is already represented by active PRs \#564, \#563, \#561 and \#559, and no distinct unclaimed task was established\. The documented tox route builds extensions and runs make test across Python 3\.9–3\.14 and PyPy 3\. No existing contributor fork or supported fork\-creation action is available\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/lxml/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/lxml/lxml>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/lxml/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/lxml/lxml/blob/master/tox.ini>); [evidence 2](<https://github.com/lxml/lxml/pull/564>); [evidence 3](<https://github.com/lxml/lxml/pull/563>); [evidence 4](<https://github.com/lxml/lxml/pull/561>); [evidence 5](<https://github.com/lxml/lxml/pull/559>); [policy\_ref](<https://github.com/lxml/lxml/blob/master/README.rst>).
 
 ### [magento/magento2](<https://github.com/magento/magento2>)
 
@@ -1242,17 +1250,18 @@ Route evidence: [1](<https://github.com/google/bughunters/blob/main/patch-reward
 
 ### [netty/netty](<https://github.com/netty/netty>)
 
-Batch 9 · current stage: **target**.
+Batch 9 · current stage: **screened**.
 
 netty: a canonical upstream in the researched Tier 2 project pool; a specific contribution is not yet selected\.
 
-Next action: Read current contribution and AI\-use policies, inspect actual maintenance activity and competing fixes, then select one cloud\-testable problem with a supported benefit route\.
+Next action: Parked: AGENTS\.md restricts agents to trivial text drafting; code changes are security\-sensitive and the project requires a contributor CLA\. Issues \#18481 and \#18483 already have competing PRs \#18493, \#18487 and \#18492\. No existing contributor fork or supported fork\-creation action is available\. Do not implement\.
 
 Benefit route: **cash / conditional**, checked 2026-10-17. Tier 2 project scope verified\. Patch\-specific security value, participant eligibility, acceptance, award and payment remain unverified\.
 
 Route evidence: [1](<https://github.com/google/oss-fuzz/blob/master/projects/netty/project.yaml>), [2](<https://github.com/google/bughunters/blob/main/bughunters/articles/about/rules/open-source/patch-rewards-program-rules.md>).
 
 - 2026-10-17 **target**: [evidence 1](<https://github.com/netty/netty>); [evidence 2](<https://github.com/google/oss-fuzz/blob/master/projects/netty/project.yaml>).
+- 2026-11-21 **screened**: [evidence 1](<https://github.com/netty/netty/blob/4.2/CONTRIBUTING.md>); [evidence 2](<https://github.com/netty/netty/issues/18463>); [evidence 3](<https://github.com/netty/netty/issues/18481>); [evidence 4](<https://github.com/netty/netty/issues/18483>); [evidence 5](<https://github.com/netty/netty/pull/18493>); [evidence 6](<https://github.com/netty/netty/pull/18487>); [evidence 7](<https://github.com/netty/netty/pull/18492>); [evidence 8](<https://netty.io/wiki/developer-guide.html>); [policy\_ref](<https://github.com/netty/netty/blob/4.2/AGENTS.md>).
 
 ### [ntp\-project/ntp](<https://github.com/ntp-project/ntp>)
 
