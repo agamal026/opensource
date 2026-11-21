@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T19:07:11Z",
+  "updated_at": "2026-11-21T18:18:27.813Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
-  "latest_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
+  "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
   "campaign_report": "progress/CAMPAIGN.md",
   "pr_snapshot": "data/github.json",
@@ -61,12 +61,6 @@
       "source_commit": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
       "resume_when": "Substantive review or actual admitted check failure.",
       "note": "Open/unmerged; three upstream workflows require admission with zero jobs. Preserve the single earlier admission request and the separate COMPRESS-729 publication gate."
-    },
-    {
-      "pr_url": "https://github.com/FasterXML/jackson-databind/pull/6302",
-      "source_commit": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
-      "resume_when": "Substantive review or actual CLA/acceptance evidence.",
-      "note": "Open/unmerged; four historical upstream builds passed. Helper discussion resolved. Newer owned draft #8 remains distinct from the submitted upstream head and personal legal resolution."
     }
   ],
   "parked": [
@@ -108,9 +102,9 @@
     }
   ],
   "next_action": {
-    "first": "Recover this public checkpoint with the latest private handoff and exact applicable denials, exclusions, personal requirements and pending operations. BCEL-378 is a validated owned candidate blocked by the actual upstream PR-create403; it is not an eighth qualified upstream submission. This record does not repair GitHub access or recurring execution.",
-    "otherwise": "Respond to a concrete maintainer request, or select one ordinary eligible task with a supported publication and full-validation route. Screen sequential bounded waves of at most three candidate IDs, allocating before queries and completing each wave before another. Do not stockpile patches behind an unresolved delivery gate.",
-    "do_not_repeat": "Do not recreate existing PRs, repeat admission comments, replay denied operations or the obsolete October 19 checkpoint, rerun unchanged passing matrices, or re-count accepted/historical work.",
+    "first": "Jackson Databind is now accepted through maintainer PR #6454, merged November 16 and explicitly based on #6302. BeanUtils #444 and Commons Compress #825 remain unchanged; their current heads have zero check runs and pending combined status with no contexts, so no admitted failure was found. Do not repeat admission requests.",
+    "otherwise": "No new candidate was selected after three bounded waves. Continue read-only monitoring of BeanUtils #444 and Commons Compress #825; choose a new implementation only when a project-permitted task has an existing contributor fork or a supported fork-creation route. Do not prepare patches behind a blocked delivery path.",
+    "do_not_repeat": "Do not recreate PRs, repeat admission comments, replay denied operations, rescreen the eight new candidates without material evidence, or rerun unchanged successful matrices. Preserve the prior Commons Validator screen and all recorded safety, legal and approval gates.",
     "budget": {
       "candidate_wave_limit": 3,
       "focused_correction_cycle_limit": 3,
@@ -138,14 +132,7 @@
   },
   "latest_selected_observation": "progress/2026-11-01-selected-observation.json",
   "latest_candidate_routing": "progress/2026-10-19-candidate-routing.json",
-  "accepted_count": {
-    "count": 4,
-    "target": 100,
-    "accepted_delta_this_review": 0,
-    "definition": "Upstream merge or explicit incorporation with source linkage, once per eligible project; historical submissions excluded.",
-    "evidence": "progress/2026-11-03-javaparser-accepted.md",
-    "newly_recorded_in_ledger": 0
-  },
+  "accepted_count": 5,
   "previous_completed_contribution": {
     "repository": "apache/commons-lang",
     "issue_url": "https://issues.apache.org/jira/browse/LANG-1323",
@@ -208,5 +195,159 @@
     "merge_commit": "ad1cad934e19cde1a3370a7bb74aed9eb031adc8",
     "merged_at": "2026-11-07T09:48:53Z",
     "summary": "Status commands reject output aliases of their catalog/snapshot inputs before retrieval or writing. Six regressions passed on all four hosted platforms. Owned maintenance adds no external campaign credit."
+  },
+  "qualified_submitted_projects": 7,
+  "latest_acceptance": {
+    "repository": "FasterXML/jackson-databind",
+    "accepted_on": "2026-11-16",
+    "original_submission_pr": "https://github.com/FasterXML/jackson-databind/pull/6302",
+    "original_submission_state": "closed_unmerged",
+    "incorporation_pr": "https://github.com/FasterXML/jackson-databind/pull/6454",
+    "incorporation_state": "merged",
+    "incorporation_commit": "b63b8749041d31159c24d46018559bdcc23dc3a9",
+    "source_link_commit": "e9547600a3e0498f0733ff1be7d06402b62327bc",
+    "submitted_source_head": "38261628a27c109e6e49c916cdb0f7e8bf7bbf45",
+    "attribution": "The merged maintainer implementation explicitly says it is based on #6302 by @agamal026; release-notes/CREDITS and release-notes/VERSION also credit @agamal026.",
+    "acceptance_ref": "https://github.com/FasterXML/jackson-databind/commit/b63b8749041d31159c24d46018559bdcc23dc3a9",
+    "benefit_state": "No eligibility, application, award or payment established; no personal CLA action claimed."
+  },
+  "candidate_wave_history": [
+    {
+      "date": "2026-11-21",
+      "wave": 1,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "joomla/joomla-cms",
+          "state": "screened_parked",
+          "policy_ref": "https://developer.joomla.org/generative-ai-policy.html",
+          "task": "Issue #48883: empty-name validation in Media Manager Rename.",
+          "competing_work": "Open PR #48884 resolves #48883; its full Cypress system run remains pending.",
+          "validation_route": "Configured Joomla installation plus Cypress system spec; the PR reports Vue compile/lint and isolated checks, but full browser/system validation is still pending.",
+          "publishing": "No existing contributor fork and no supported fork-creation action; project policy requires contributor understanding, review and validation."
+        },
+        {
+          "repository": "jquery/jquery",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/jquery/jquery/blob/main/CONTRIBUTING.md",
+          "task": "No task selected; no genuine user-originated use case established.",
+          "competing_work": "No distinct maintainer-requested task selected.",
+          "validation_route": "Node-based project test suite; not run because policy excludes auto-generated issues/PRs.",
+          "publishing": "No existing contributor fork and no supported fork-creation action."
+        },
+        {
+          "repository": "keycloak/keycloak",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/keycloak/keycloak/blob/main/CONTRIBUTING.md",
+          "task": "No task selected because the required per-commit DCO sign-off is personal.",
+          "competing_work": "Active PR queue; no distinct issue selected.",
+          "validation_route": "Project Maven build and required integration checks; not run.",
+          "publishing": "No existing contributor fork; no personal sign-off or fork creation attempted."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "wave": 2,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "netty/netty",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/netty/netty/blob/4.2/AGENTS.md",
+          "task": "Potential issue #18463; #18481 and #18483 already have competing fixes.",
+          "competing_work": "PR #18493 addresses #18481; #18487 and #18492 address #18483.",
+          "validation_route": "Maven verification and leak checks; changes are security-sensitive.",
+          "publishing": "Agent guidance limits AI to trivial text drafting; CLA required; no existing contributor fork or fork-creation action."
+        },
+        {
+          "repository": "lxml/lxml",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/lxml/lxml/blob/master/README.rst",
+          "task": "No distinct unclaimed task established.",
+          "competing_work": "Recent defects are represented by active PRs #564, #563, #561 and #559.",
+          "validation_route": "tox: setup.py clean, build_ext --inplace, then make test across Python 3.9–3.14 and PyPy 3.",
+          "publishing": "No existing contributor fork or fork-creation action; no explicit AI-use policy located in the repository root."
+        },
+        {
+          "repository": "libgit2/libgit2",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/libgit2/libgit2/blob/main/docs/contributing.md",
+          "task": "Issue #7487 has competing fixes; #7467 has an existing PR; #7480 is security-related.",
+          "competing_work": "PRs #7488 and #7489 address #7487; PR #7493 addresses #7467.",
+          "validation_route": "CMake build with C compiler and Python test framework; run libgit2_tests for unit coverage.",
+          "publishing": "Contribution guide requires a fork and PR; no existing contributor fork or fork-creation action."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "wave": 3,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "apache/commons-cli",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/apache/commons-cli/blob/master/CONTRIBUTING.md",
+          "task": "No recent unclaimed issue selected.",
+          "competing_work": "Active PR #452.",
+          "validation_route": "JIRA-backed task and Maven test/build route.",
+          "publishing": "Small bug fixes may not require ICLA, but normal flow requires a contributor fork; none exists and no fork-creation action is exposed."
+        },
+        {
+          "repository": "apache/commons-net",
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/apache/commons-net/blob/master/CONTRIBUTING.md",
+          "task": "No recent unclaimed issue selected.",
+          "competing_work": "Active PRs #419, #420, #421, #423 and #424.",
+          "validation_route": "JIRA-backed task and Maven test/build route.",
+          "publishing": "Small bug fixes may not require ICLA, but normal flow requires a contributor fork; none exists and no fork-creation action is exposed."
+        },
+        {
+          "repository": "apache/commons-validator",
+          "state": "prior_screen_preserved",
+          "task": "Prior private screening already found no contributor fork and no supported fork-creation route.",
+          "competing_work": "No new task selected.",
+          "validation_route": "No new validation run.",
+          "publishing": "No route change; no new patch prepared."
+        }
+      ]
+    }
+  ],
+  "candidate_wave_summary": {
+    "newly_screened": 8,
+    "previously_screened_not_repeated": [
+      "apache/commons-validator"
+    ],
+    "selected": 0,
+    "implemented": 0,
+    "submitted": 0,
+    "reason": "Every newly screened target had a project-specific policy/competing-work gate or no existing contributor fork; the current GitHub connector exposes no fork-creation action."
+  },
+  "last_execution_receipt": {
+    "origin": "manual user-requested continuation",
+    "run_id": null,
+    "started_at": null,
+    "started_at_note": "The host did not expose a start timestamp or scheduled run identity for this manual continuation.",
+    "checkpointed_at": "2026-11-21T18:18:27.813Z",
+    "recovered_public_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
+    "material_work": [
+      "Verified Jackson Databind #6454 merged on 2026-11-16; merge commit b63b8749041d31159c24d46018559bdcc23dc3a9 and based-on commit e9547600a3e0498f0733ff1be7d06402b62327bc provide explicit source linkage to #6302.",
+      "Advanced campaign acceptance from 4/100 to 5/100; qualified submitted projects remain 7.",
+      "Screened eight new candidates in three sequential waves; recorded project-specific policies, competing work, validation routes and publication gates."
+    ],
+    "executed_checks": [
+      "BeanUtils #444 head 51a346ab: GitHub check-runs total 0; combined status pending with zero contexts; no admitted failure.",
+      "Commons Compress #825 head 7e647788: GitHub check-runs total 0; combined status pending with zero contexts; no admitted failure.",
+      "Hub campaign report generator port matched the current Python-generated report byte-for-byte before the update; regenerated report from updated campaign data.",
+      "External candidate tests were not run because no implementation was selected."
+    ],
+    "publication_state": "Owned hub PR #8 opened at https://github.com/agamal026/opensource/pull/8; CI pending. No external source, PR, comment or review was published.",
+    "accepted_delta": 1,
+    "accepted_total": 5,
+    "qualified_submitted_projects": 7,
+    "remaining_dependency": "New external implementation requires an existing contributor fork or a supported fork-creation action plus project-specific permission. No such route was available for the screened candidates.",
+    "private_library_save": "Not attempted; a current-version-safe write target for the canonical private handoff could not be established. The public hub checkpoint is the persisted record.",
+    "scheduler": "No schedule edit, resume, forced run or replacement task. Scheduler state was not rechecked in this manual continuation; the last recorded observation remains unchanged."
   }
 }
