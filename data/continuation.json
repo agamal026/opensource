@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T18:20:07.147Z",
+  "updated_at": "2026-11-21T18:22:02.990Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -20,7 +20,15 @@
     "enabled_observed": false,
     "observation_date_utc": "2026-11-12",
     "next_run_time_reported": "2026-11-12T19:00:00+01:00",
-    "execution_limit": "Fresh November 12 inspection still reports the task disabled. The next-run display is explicitly the next configured occurrence even while paused, not execution evidence. The matching latest actual November 7 run completed with empty, nontruncated output and requires_user_action=true; no requested action or cause is exposed. No resume, forced run, prompt edit or duplicate task occurred."
+    "execution_limit": "Fresh November 12 inspection still reports the task disabled. The next-run display is explicitly the next configured occurrence even while paused, not execution evidence. The matching latest actual November 7 run completed with empty, nontruncated output and requires_user_action=true; no requested action or cause is exposed. No resume, forced run, prompt edit or duplicate task occurred.",
+    "latest_read_attempt": {
+      "date_utc": "2026-11-21T18:22:02.990Z",
+      "kind": "read_only_task_lookup",
+      "result": "NOT_FOUND: HTTP 404 Action not found",
+      "state_retrieved": false,
+      "mutation_attempted": false,
+      "retry_attempted": false
+    }
   },
   "latest_completed_contribution": {
     "repository": "apache/commons-compress",
@@ -329,7 +337,7 @@
     "run_id": null,
     "started_at": null,
     "started_at_note": "The host did not expose a start timestamp or scheduled run identity for this manual continuation.",
-    "checkpointed_at": "2026-11-21T18:20:07.147Z",
+    "checkpointed_at": "2026-11-21T18:22:02.990Z",
     "recovered_public_checkpoint": "progress/2026-11-12-bcel-378-validation.md",
     "material_work": [
       "Verified Jackson Databind #6454 merged on 2026-11-16; merge commit b63b8749041d31159c24d46018559bdcc23dc3a9 and based-on commit e9547600a3e0498f0733ff1be7d06402b62327bc provide explicit source linkage to #6302.",
@@ -341,15 +349,16 @@
       "Commons Compress #825 head 7e647788: GitHub check-runs total 0; combined status pending with zero contexts; no admitted failure.",
       "Hub campaign report generator port matched the current Python-generated report byte-for-byte before the update; regenerated report from updated campaign data.",
       "External candidate tests were not run because no implementation was selected.",
-      "Hub CI run 44934806967 completed with success: Python 3.10/3.12/3.14 on Ubuntu and Python 3.12 on Windows; each job ran unit tests, public-record validation, status report check, campaign validation/report check and git diff --check."
+      "Hub CI run 44934806967 completed with success: Python 3.10/3.12/3.14 on Ubuntu and Python 3.12 on Windows; each job ran unit tests, public-record validation, status report check, campaign validation/report check and git diff --check.",
+      "Final-head hub CI run 44934956333: all four jobs completed successfully; each ran 98 tests, Windows had 2 platform skips and zero failures; oss_status validate/render --check, contribution_campaign validate/report --check and git diff --check passed."
     ],
-    "publication_state": "Hub PR #8 open; GitHub Actions run 44934806967 completed successfully across all four matrix jobs; the final receipt update will be validated on the new PR head.",
+    "publication_state": "Hub PR #8 merged as 97ebf9926918469fe5e517027a3496bb711155da. Final-head GitHub Actions run 44934956333 completed successfully across all four matrix jobs.",
     "accepted_delta": 1,
     "accepted_total": 5,
     "qualified_submitted_projects": 7,
     "remaining_dependency": "New external implementation requires an existing contributor fork or a supported fork-creation action plus project-specific permission. No such route was available for the screened candidates.",
     "private_library_save": "Not attempted; a current-version-safe write target for the canonical private handoff could not be established. The public hub checkpoint is the persisted record.",
-    "scheduler": "No schedule edit, resume, forced run or replacement task. Scheduler state was not rechecked in this manual continuation; the last recorded observation remains unchanged.",
+    "scheduler": "No schedule edit, resume, forced run or replacement task. Read-only task lookup returned HTTP 404 'Action not found'; no task state was retrieved. The last saved scheduler observation remains the November 12 observation and is not treated as current.",
     "hub_ci_run": {
       "id": 44934806967,
       "conclusion": "success",
@@ -360,6 +369,22 @@
         "Python 3.12 on windows-latest"
       ],
       "checks": "Each job ran offline regression tests, public record validation, generated status check, contribution campaign validation, generated campaign check and git diff --check."
-    }
+    },
+    "ended_at": "2026-11-21T18:22:02.990Z",
+    "hub_ci_runs": [
+      {
+        "id": 44934806967,
+        "head_sha": "7a81e55392ce380b8a1f2bb9149584872291ae02",
+        "conclusion": "success",
+        "url": "https://github.com/agamal026/opensource/actions/runs/44934806967"
+      },
+      {
+        "id": 44934956333,
+        "head_sha": "58890c63ae059c30577bddaa56bdb10a224e77d3",
+        "conclusion": "success",
+        "url": "https://github.com/agamal026/opensource/actions/runs/44934956333"
+      }
+    ],
+    "hub_merge_commit": "97ebf9926918469fe5e517027a3496bb711155da"
   }
 }
