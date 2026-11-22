@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T18:22:02.990Z",
+  "updated_at": "2026-11-22T11:04:22.042Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -386,5 +386,103 @@
       }
     ],
     "hub_merge_commit": "97ebf9926918469fe5e517027a3496bb711155da"
+  },
+  "latest_follow_through_observation": {
+    "observed_at": "2026-11-22T11:04:22.042Z",
+    "run_id": "35382ab6-c978-8328-ae3a-26b8de81ae1f",
+    "origin": "scheduled_task",
+    "source_writer": "coordinator",
+    "public_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
+    "ownership_preflight": {
+      "active_implementation": null,
+      "active_source_writer": null,
+      "open_hub_pull_requests": 0,
+      "main_branch": "8c840f7fe8a1672ce4b1da76d64eee34b83152d3"
+    },
+    "active_submissions": {
+      "apache/commons-beanutils#444": {
+        "head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
+        "last_pr_update": "2026-10-30T15:06:53Z",
+        "new_workflow_runs": [
+          {
+            "id": 41077699457,
+            "name": "Java CI",
+            "conclusion": "action_required",
+            "jobs": 0
+          },
+          {
+            "id": 41077699636,
+            "name": "CodeQL",
+            "conclusion": "action_required",
+            "jobs": 0
+          }
+        ],
+        "combined_status_contexts": 0,
+        "disposition": "no admitted test failure or changed maintainer request; do not repeat admission request"
+      },
+      "apache/commons-compress#825": {
+        "head": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
+        "last_pr_update": "2026-10-22T06:13:32Z",
+        "workflow_runs": [
+          {
+            "id": 39148712364,
+            "name": "Java CI",
+            "conclusion": "failure",
+            "previously_verified_jobs": 0
+          },
+          {
+            "id": 39148712273,
+            "name": "Dependency Review",
+            "conclusion": "failure",
+            "previously_verified_jobs": 0
+          },
+          {
+            "id": 39148712206,
+            "name": "CodeQL",
+            "conclusion": "failure",
+            "previously_verified_jobs": 0
+          }
+        ],
+        "combined_status_contexts": 0,
+        "disposition": "unchanged unadmitted workflows; reuse prior zero-job evidence"
+      },
+      "FasterXML/jackson-databind#6302": {
+        "state": "closed_unmerged",
+        "incorporated_by": "FasterXML/jackson-databind#6454",
+        "merged_at": "2026-11-16T03:06:29Z",
+        "merge_commit": "b63b8749041d31159c24d46018559bdcc23dc3a9",
+        "disposition": "already counted once in accepted baseline; no new delta"
+      }
+    },
+    "libzip_retention": {
+      "repository": "nih-at/libzip",
+      "observed_default_branch_head": "eef39b420aef6c0e4ae4260a03149565c5565c80",
+      "head_committed_at": "2026-11-21T19:09:13Z",
+      "october_ci_squash": "2ff326957e9633d051cf398bba88d41564eaf0f8",
+      "ci_squash_ancestor": true,
+      "commits_after_ci_squash": 87,
+      "ci_configuration_still_present": {
+        "vcpkg_snapshot": "f3e10653cc27d62a37a3763cd84b38bca07c6075",
+        "arm_sdk": "10.0.19041.0"
+      },
+      "september_crypto_commit": "c3ba909e296e824f794e26d36379174524af74b8",
+      "current_crypto_source_blob": "c2c521e599c61b06362f618eea65a759bdfde89d",
+      "current_fallback": "volatile unsigned-byte stores remain",
+      "regression_migration": {
+        "old_test": "regress/crypto_clear.test",
+        "old_test_state": "removed",
+        "current_test": "regress/programs/crypto_clear.c",
+        "current_test_blob": "cc24d0b35fcb6b3107d699f5e173901c590cac6e",
+        "registration": "regress/CMakeLists.txt adds crypto_clear when CMOCKA_FOUND"
+      },
+      "validation_scope": "read-only source/history inspection; no runtime tests executed",
+      "reward_assessment": "The September crypto change remains a plausible security-hardening candidate but panel qualification and participant/application conditions remain unverified. The October 22 change is CI-only and does not independently establish qualifying security impact; its retention date does not reset the September acceptance clock.",
+      "application_submitted": false,
+      "award_or_payment": false
+    },
+    "publication": "No external source, issue, comment, review, or PR published in this invocation.",
+    "accepted_delta": 0,
+    "qualified_submission_delta": 0,
+    "next_step": "Continue read-only monitoring of BeanUtils #444 and Commons Compress #825. Resume a new external implementation only after a permitted task and supported contributor-fork/publication route are established; do not replay denied operations."
   }
 }
