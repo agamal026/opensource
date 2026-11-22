@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T11:04:22.042Z",
+  "updated_at": "2026-11-22T12:01:34.021Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -130,7 +130,29 @@
     {
       "work": "October 22 libzip CI-only squash",
       "not_before": "2026-11-22T08:39:23Z",
-      "required": "Conditional reconsideration only; CI retention does not establish qualifying security scope or reset the older crypto acceptance clock."
+      "required": "No separate reward submission for the CI-only change. Keep September crypto-clearing reward assessment separate; patch-specific panel qualification, personal eligibility, application, award and payment remain unverified.",
+      "status": "retention_checked_2026-11-22; CI-only change not independently reward-qualifying",
+      "checked_at": "2026-11-22T12:01:34.021Z",
+      "evidence": {
+        "squash_commit": "2ff326957e9633d051cf398bba88d41564eaf0f8",
+        "merged_at": "2026-10-22T08:39:23Z",
+        "current_main_commit": "eef39b420aef6c0e4ae4260a03149565c5565c80",
+        "current_main_committed_at": "2026-11-21T19:09:13Z",
+        "ancestry": {
+          "status": "ahead",
+          "ahead_by": 87,
+          "behind_by": 0,
+          "merge_base": "2ff326957e9633d051cf398bba88d41564eaf0f8"
+        },
+        "retained_source_blobs": {
+          "lib/zip_crypto.c": "c2c521e599c61b06362f618eea65a759bdfde89d",
+          "regress/programs/crypto_clear.c": "cc24d0b35fcb6b3107d699f5e173901c590cac6e",
+          "regress/CMakeLists.txt": "53b6c574d55983788e1103939b2d05256c18a3f8",
+          "appveyor.yml": "1960530c3f7d73439b1d181b2d37d63b7aff47bb"
+        },
+        "source_observation": "Current main retains the volatile-store crypto-clearing implementation, the CMocka crypto_clear test and its conditional CMake registration, plus the AppVeyor vcpkg snapshot and ARM SDK configuration.",
+        "qualification": "The October squash is CI-only; no separate security impact is established. It does not reset the September crypto-clearing acceptance clock."
+      }
     }
   ],
   "completion_report": {
@@ -484,5 +506,25 @@
     "accepted_delta": 0,
     "qualified_submission_delta": 0,
     "next_step": "Continue read-only monitoring of BeanUtils #444 and Commons Compress #825. Resume a new external implementation only after a permitted task and supported contributor-fork/publication route are established; do not replay denied operations."
+  },
+  "latest_public_followthrough": {
+    "observed_at": "2026-11-22T12:01:34.021Z",
+    "recovered_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
+    "work": "Completed the November 22 conditional libzip CI-retention check using current upstream main and source files; rechecked existing BeanUtils/Commons Compress PR metadata and workflow jobs.",
+    "checks": [
+      "libzip current main is 87 commits ahead of and zero commits behind the October 22 squash; merge base is the squash itself.",
+      "Current libzip source retains the crypto-clearing fallback, CMocka regression and CMake registration, and AppVeyor configuration.",
+      "BeanUtils #444 and Commons Compress #825 remain open at their recorded source heads; the inspected workflow runs have no jobs, so no admitted test failure was established.",
+      "Jackson Databind #6454 remains merged and explicitly incorporates the #6302 contribution."
+    ],
+    "campaign": {
+      "accepted_count": 5,
+      "target_count": 100,
+      "qualified_submitted_projects": 7,
+      "accepted_delta": 0
+    },
+    "candidate_routing": "No new wave allocated: the connected account inventory contains only previously allocated, submitted or parked external forks; no GitHub fork-creation action is exposed. The unchanged November 21 candidate wave was not repeated.",
+    "publication": "No external PR, comment or review. This update records a completed dated follow-up in the existing continuation file.",
+    "remaining_dependency": "A new contribution requires an unallocated project-permitted task and an existing contributor fork or supported fork-creation capability; existing upstream PRs still depend on maintainer feedback or workflow admission."
   }
 }
