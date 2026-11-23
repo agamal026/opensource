@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T02:01:24.849Z",
+  "updated_at": "2026-11-23T04:10:39.438Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -19,11 +19,11 @@
     "timezone": "Europe/Vienna",
     "enabled_observed": true,
     "observation_date_utc": "2026-11-23",
-    "execution_limit": "Read-only native task peek at 2026-11-23T01:09:31.392Z confirmed the existing task enabled=true. The 00:00Z occurrence completed at 00:10:46.723Z; the 01:00Z occurrence started at 01:04:17.216Z and was still in_progress at the observation. Two consecutive hourly occurrences are observed, not proof of long-term sustained recurrence or uninterrupted execution. No task or schedule mutation occurred; the task API exposes no session-duration setting.",
+    "execution_limit": "The current scheduled occurrence started at 2026-11-23T04:03:35.315378Z. The task API exposes no session-duration setting. No schedule edit, forced run, resume, duplicate task or connection mutation occurred.",
     "latest_read_attempt": {
-      "date_utc": "2026-11-23T01:09:31.392Z",
+      "date_utc": "2026-11-23T04:03:35.315378Z",
       "kind": "read_only_task_peek",
-      "result": "FOUND: existing task enabled=true; current scheduled occurrence in_progress",
+      "result": "FOUND the existing task enabled=true; scheduled run f547258b-15c4-832f-bf8f-e1c277775f21 was in_progress at the start of this invocation.",
       "state_retrieved": true,
       "mutation_attempted": false,
       "retry_attempted": false
@@ -118,8 +118,8 @@
     }
   ],
   "next_action": {
-    "first": "No changed maintainer feedback, admitted check failures or new acceptance was found since the November 21 checkpoint. BeanUtils #444 remains open at 51a346ab12e0fd683df794ab40c9f18e58f92068 with no comments/reviews and zero check runs. Commons Compress #825 remains open at 7e6477880259d60d4dfa60a5e34e4ea7875176b1 with only the existing October 18 author admission comment, no reviews and zero check runs. Jackson Databind remains accepted through maintainer #6454.",
-    "otherwise": "Candidate waves 1–10 are recorded. Wave 10 screened curl/curl, apache/httpd and django/django; none had a contributor fork or direct push permission, and no fork-creation action is exposed. curl issue #24096's reported cooldown is already changed on upstream main by maintainer commit 37ea0951. Continue read-only follow-through on BeanUtils #444 and Commons Compress #825; select another implementation only after an existing contributor fork or supported fork-creation route and applicable project/private requirements are established.",
+    "first": "No changed maintainer feedback, admitted check failure or new acceptance was found since the November 22 observation. BeanUtils #444 remains open at 51a346ab12e0fd683df794ab40c9f18e58f92068 with unchanged metadata, no reviews or review threads, and zero status contexts. Commons Compress #825 remains open at 7e6477880259d60d4dfa60a5e34e4ea7875176b1 with no reviews or review threads and zero status contexts; its three current workflow runs conclude failure but each has zero jobs, so no admitted test failure is established. Jackson Databind #6454 remains merged and its incorporation of #6302 is already counted once.",
+    "otherwise": "Candidate wave 11 was allocated before querying and screened libexpat, libarchive and libssh2. libarchive #3867 is the only promising ordinary unclaimed issue, but no contributor fork or GitHub fork-creation action is available. libexpat's visible issues are security-sensitive or wontfix; libssh2 #1810 already has open fix #1811. Do not start an implementation or allocate another wave until a supported contributor-fork route and the canonical private handoff are available. Continue monitoring BeanUtils #444 and Commons Compress #825.",
     "do_not_repeat": "Do not rescreen waves 1–10 or the unchanged earlier candidate waves; do not replay any known HTTP 403 operation; do not repeat successful matrices or admission requests. Preserve all prior AI, private, security, legal, CLA, nginx/F5 and contributor-statement gates.",
     "budget": {
       "candidate_wave_limit": 3,
@@ -685,26 +685,60 @@
       "projects": [
         {
           "repository": "libexpat/libexpat",
-          "state": "allocated_pending_screen",
-          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
-          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
-          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/libexpat/libexpat/blob/master/CONTRIBUTING.md",
+          "policy": "The current guide describes Expat as maintenance-mode, unfunded and understaffed; welcomes only small, low-risk, easy-to-review changes with green CI in a public fork. New and changed C code must be C99 and pass existing CI including ASan, UBSan, clang-format, Cppcheck and codespell; API/ABI breaks, unsupported environments and new features without prior discussion are not welcome.",
+          "task": "No ordinary unclaimed task selected. Issue #1419 is a parser-state differential/markup-smuggling report with denial-of-service behavior; #1160 aggregates non-public security issues and #1076 describes a DoS report with an NDA request; #501 is marked wontfix.",
+          "competing_work": "The active PR queue includes release preparation #1494 and refactors #1482 and #1478. The only prominent open bug candidates found in the bounded screen were security-related or wontfix; no low-risk ordinary defect was established.",
+          "validation_route": "Any future C change requires C99 and the full existing GitHub Actions checks, including sanitizer and static-analysis/formatting jobs. No task-specific validation was selected and no tests were run.",
+          "publishing": "Upstream permissions.push=false; no agamal026/libexpat contributor fork appears in the 26-repository owned inventory; no GitHub fork-creation action is exposed. No branch or upstream operation was attempted.",
+          "selected": false,
+          "source_refs": [
+            "https://github.com/libexpat/libexpat/issues/1419",
+            "https://github.com/libexpat/libexpat/issues/1160",
+            "https://github.com/libexpat/libexpat/issues/1076",
+            "https://github.com/libexpat/libexpat/issues/501",
+            "https://github.com/libexpat/libexpat/pull/1494",
+            "https://github.com/libexpat/libexpat/pull/1482",
+            "https://github.com/libexpat/libexpat/pull/1478"
+          ]
         },
         {
           "repository": "libarchive/libarchive",
-          "state": "allocated_pending_screen",
-          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
-          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
-          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/libarchive/libarchive/blob/master/CONTRIBUTING.md",
+          "policy": "The contribution guide welcomes focused single-issue changes with detailed reproduction instructions and a test case, using existing BSD KNF style and a GitHub pull request. No AI-specific rule was found in the checked CONTRIBUTING.md/README.md; AGENTS.md is absent at the repository root, so no broader permission is inferred.",
+          "task": "Issue #3867 (opened 2026-11-19) is a promising ordinary performance regression: the reporter measured libarchive 3.8.11 at 1.43x slower than 3.8.8 and counted 29,735 reads of /proc/self/status while extracting an archive. The issue suggests an opt-in cached-umask flag; correctness under concurrent umask changes would need careful characterization.",
+          "competing_work": "No open PR search match for #3867 or the umask regression was found. The open PR queue is active (14 recent PRs inspected), but the returned umask matches #3792 and #3665 are unrelated. Issue #3867 has zero comments and its author says they may provide a PR.",
+          "validation_route": "Reproduce the benchmark on the cited 3.8.8 and 3.8.11 revisions, inspect the change introduced by 065488cd, characterize umask/thread-safety behavior, add a focused regression or benchmark, then run the project build and full test suite via CMake or Autotools. The exact full-suite command was not established in this read-only screen; no tests were run.",
+          "publishing": "Upstream permissions.push=false; no agamal026/libarchive contributor fork appears in the owned inventory; no GitHub fork-creation action is exposed. No source, branch, comment or PR was created.",
+          "selected": false,
+          "source_refs": [
+            "https://github.com/libarchive/libarchive/issues/3867",
+            "https://github.com/libarchive/libarchive/blob/master/CONTRIBUTING.md",
+            "https://github.com/libarchive/libarchive/blob/master/README.md",
+            "https://github.com/libarchive/libarchive/pulls"
+          ]
         },
         {
           "repository": "libssh2/libssh2",
-          "state": "allocated_pending_screen",
-          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
-          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
-          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+          "state": "screened_parked",
+          "policy_ref": "https://github.com/libssh2/libssh2/blob/master/README.md",
+          "policy": "The README identifies the BSD-3-Clause license and links to the project website and mailing list. No root CONTRIBUTING.md or AGENTS.md was found; the checked .github directory contains a security policy and pull-request template but no contribution policy. AI-use permission is therefore not established.",
+          "task": "Issue #1810 concerns the first keepalive being sent immediately during SSH authentication. No new task was selected because the issue already has an open fix.",
+          "competing_work": "Open PR #1811, 'fix: initializing keepalive_last_sent to now', explicitly fixes #1810; no duplicate is warranted.",
+          "validation_route": "The repository contains CMake and Autotools build definitions plus a tests directory. A future distinct issue would require the project's supported build/test route; no tests were run for this already-addressed issue.",
+          "publishing": "Upstream permissions.push=false; no agamal026/libssh2 contributor fork appears in the owned inventory; no GitHub fork-creation action is exposed. No source or public operation was attempted.",
+          "selected": false,
+          "source_refs": [
+            "https://github.com/libssh2/libssh2/issues/1810",
+            "https://github.com/libssh2/libssh2/pull/1811",
+            "https://github.com/libssh2/libssh2/blob/master/README.md"
+          ]
         }
-      ]
+      ],
+      "screened_at": "2026-11-23T04:10:39.438Z",
+      "screening_method": "Serial read-only connected GitHub screening; no independent agents were available or claimed."
     }
   ],
   "candidate_wave_summary": {
@@ -773,8 +807,8 @@
     "hub_merge_commit": "97ebf9926918469fe5e517027a3496bb711155da"
   },
   "latest_follow_through_observation": {
-    "observed_at": "2026-11-22T11:04:22.042Z",
-    "run_id": "35382ab6-c978-8328-ae3a-26b8de81ae1f",
+    "observed_at": "2026-11-23T04:10:39.438Z",
+    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
     "origin": "scheduled_task",
     "source_writer": "coordinator",
     "public_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
@@ -782,93 +816,71 @@
       "active_implementation": null,
       "active_source_writer": null,
       "open_hub_pull_requests": 0,
-      "main_branch": "8c840f7fe8a1672ce4b1da76d64eee34b83152d3"
+      "main_branch": "a2c72e6ab7f693610b361198901b58bcdbde6a83"
     },
     "active_submissions": {
       "apache/commons-beanutils#444": {
         "head": "51a346ab12e0fd683df794ab40c9f18e58f92068",
         "last_pr_update": "2026-10-30T15:06:53Z",
-        "new_workflow_runs": [
+        "reviews": 0,
+        "review_threads": 0,
+        "combined_status_contexts": 0,
+        "workflow_runs": [
           {
             "id": 41077699457,
             "name": "Java CI",
             "conclusion": "action_required",
-            "jobs": 0
+            "jobs": 0,
+            "job_count_provenance": "unchanged prior observation"
           },
           {
             "id": 41077699636,
             "name": "CodeQL",
             "conclusion": "action_required",
-            "jobs": 0
+            "jobs": 0,
+            "job_count_provenance": "unchanged prior observation"
           }
         ],
-        "combined_status_contexts": 0,
-        "disposition": "no admitted test failure or changed maintainer request; do not repeat admission request"
+        "disposition": "No changed maintainer request or admitted failure; preserve the denied PR-description update gate and do not repeat admission requests."
       },
       "apache/commons-compress#825": {
         "head": "7e6477880259d60d4dfa60a5e34e4ea7875176b1",
         "last_pr_update": "2026-10-22T06:13:32Z",
+        "reviews": 0,
+        "review_threads": 0,
+        "combined_status_contexts": 0,
         "workflow_runs": [
           {
             "id": 39148712364,
             "name": "Java CI",
             "conclusion": "failure",
-            "previously_verified_jobs": 0
+            "jobs": 0
           },
           {
             "id": 39148712273,
             "name": "Dependency Review",
             "conclusion": "failure",
-            "previously_verified_jobs": 0
+            "jobs": 0
           },
           {
             "id": 39148712206,
             "name": "CodeQL",
             "conclusion": "failure",
-            "previously_verified_jobs": 0
+            "jobs": 0
           }
         ],
-        "combined_status_contexts": 0,
-        "disposition": "unchanged unadmitted workflows; reuse prior zero-job evidence"
+        "disposition": "All three current run job endpoints return total_count=0; the failure conclusions are not admitted test failures. Reuse the existing evidence; do not rerun or repeat admission requests."
       },
       "FasterXML/jackson-databind#6302": {
         "state": "closed_unmerged",
         "incorporated_by": "FasterXML/jackson-databind#6454",
-        "merged_at": "2026-11-16T03:06:29Z",
         "merge_commit": "b63b8749041d31159c24d46018559bdcc23dc3a9",
-        "disposition": "already counted once in accepted baseline; no new delta"
+        "merged_at": "2026-11-16T03:06:29Z",
+        "disposition": "Explicit source-linked maintainer incorporation; already counted once."
       }
     },
-    "libzip_retention": {
-      "repository": "nih-at/libzip",
-      "observed_default_branch_head": "eef39b420aef6c0e4ae4260a03149565c5565c80",
-      "head_committed_at": "2026-11-21T19:09:13Z",
-      "october_ci_squash": "2ff326957e9633d051cf398bba88d41564eaf0f8",
-      "ci_squash_ancestor": true,
-      "commits_after_ci_squash": 87,
-      "ci_configuration_still_present": {
-        "vcpkg_snapshot": "f3e10653cc27d62a37a3763cd84b38bca07c6075",
-        "arm_sdk": "10.0.19041.0"
-      },
-      "september_crypto_commit": "c3ba909e296e824f794e26d36379174524af74b8",
-      "current_crypto_source_blob": "c2c521e599c61b06362f618eea65a759bdfde89d",
-      "current_fallback": "volatile unsigned-byte stores remain",
-      "regression_migration": {
-        "old_test": "regress/crypto_clear.test",
-        "old_test_state": "removed",
-        "current_test": "regress/programs/crypto_clear.c",
-        "current_test_blob": "cc24d0b35fcb6b3107d699f5e173901c590cac6e",
-        "registration": "regress/CMakeLists.txt adds crypto_clear when CMOCKA_FOUND"
-      },
-      "validation_scope": "read-only source/history inspection; no runtime tests executed",
-      "reward_assessment": "The September crypto change remains a plausible security-hardening candidate but panel qualification and participant/application conditions remain unverified. The October 22 change is CI-only and does not independently establish qualifying security impact; its retention date does not reset the September acceptance clock.",
-      "application_submitted": false,
-      "award_or_payment": false
-    },
-    "publication": "No external source, issue, comment, review, or PR published in this invocation.",
     "accepted_delta": 0,
-    "qualified_submission_delta": 0,
-    "next_step": "Continue read-only monitoring of BeanUtils #444 and Commons Compress #825. Resume a new external implementation only after a permitted task and supported contributor-fork/publication route are established; do not replay denied operations."
+    "publication": "No external source, issue, comment, review or PR was published."
   },
   "latest_public_followthrough": {
     "observed_at": "2026-11-22T12:01:34.021Z",
@@ -891,63 +903,71 @@
     "remaining_dependency": "A new contribution requires an unallocated project-permitted task and an existing contributor fork or supported fork-creation capability; existing upstream PRs still depend on maintainer feedback or workflow admission."
   },
   "latest_screening_observation": {
-    "date_utc": "2026-11-23T01:09:31.392Z",
+    "date_utc": "2026-11-23",
+    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
+    "method": "Serial read-only connected GitHub screening; no independent agents were available or claimed.",
     "waves_recorded": [
       4,
       5,
       6,
       7,
       8,
-      9
+      9,
+      10,
+      11
     ],
-    "method": "Serial read-only connected GitHub screening; no independent agents were available or claimed.",
-    "result": "Eighteen additional candidates screened across six sequential waves. No new target had both a suitable unclaimed task and a supported publication route. No implementation, source edit, external submission, comment, review, test run, CLA attestation or benefit application was performed.",
+    "result": "Wave 11 was allocated before querying. libarchive #3867 is a reproducible-looking performance regression with no matching open PR; libexpat's visible candidates are security-sensitive or wontfix; libssh2 #1810 already has open fix #1811. No target has an established contributor-fork route.",
     "accepted_delta": 0,
-    "next": "Monitor BeanUtils #444 and Commons Compress #825 for substantive feedback or genuinely admitted checks. Select new work only when a permitted task and an existing contributor fork or supported fork-creation route are established."
+    "next": "Hold libarchive #3867 as the best technical lead, but do not reproduce into an implementation or publish until an existing contributor fork or supported GitHub fork-creation action and the applicable private handoff are available."
   },
   "latest_execution_observation": {
     "date_utc": "2026-11-23",
     "origin": "scheduled",
-    "started_at": "2026-11-23T01:04:17.215620Z",
-    "last_observed_at": "2026-11-23T01:09:31.392Z",
-    "state_at_last_observation": "in_progress",
+    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
+    "started_at": "2026-11-23T04:03:35.315378Z",
+    "last_observed_at": "2026-11-23T04:10:39.438Z",
+    "state_at_last_observation": "work_complete; host run finalization not yet observed",
     "project_test_suites_executed": 0,
     "external_publication": "none",
     "accepted_delta": 0,
-    "durable_update": "data/continuation.json updated using the fetched current blob SHA; no private identifiers or handoff contents included."
+    "durable_update": "data/continuation.json updated after current-blob and main-branch preflight; post-write read-back verified."
   },
   "latest_execution": {
-    "origin": "scheduled",
-    "run_id": null,
-    "run_id_status": "not exposed in this invocation",
-    "started_at": "2026-11-23T01:55:54Z",
-    "ended_at": "2026-11-23T02:01:24.849Z",
+    "origin": "scheduled_task",
+    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
+    "run_id_status": "exposed_by_read_only_task_peek",
+    "started_at": "2026-11-23T04:03:35.315378Z",
+    "ended_at": "2026-11-23T04:10:39.438Z",
     "recovered_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
-    "hub_main_before": "f0068e7fe25cf0eb4859de7ae1fda70880c5c8f5",
+    "hub_main_before": "a2c72e6ab7f693610b361198901b58bcdbde6a83",
     "ownership_before": {
       "active_source_writer": null,
       "active_implementation": null,
-      "open_hub_prs": 0
+      "open_hub_pull_requests": 0
     },
-    "private_history": "The requested current private handoff could not be retrieved from the available Files surface. The exact backing-file read returned not visible; no target-specific implementation or publication was attempted.",
+    "private_history": "The /opensource Library folder listing returned no items; the exact backing-file read returned not visible; exact-name search surfaced only an older version-1 copy modified November 12. The canonical current handoff was not recovered, and the older copy was not substituted.",
     "material_work": [
-      "Rechecked BeanUtils #444 and Commons Compress #825 metadata, comments, reviews and check runs; no changed maintainer feedback or executed check runs.",
-      "Confirmed no user-authored PR updates or merges since 2026-11-21 in the connected GitHub search.",
-      "Allocated and screened candidate wave 10: curl/curl, apache/httpd, django/django.",
-      "Verified no direct upstream push permission or matching contributor fork for any wave-10 candidate; the GitHub action catalog exposes no fork-creation operation.",
-      "Confirmed curl #24096's reported Dependabot cooldown is already changed on upstream main by commit 37ea0951."
+      "Rechecked BeanUtils #444 and Commons Compress #825 metadata, reviews, review threads, combined status and workflow runs. Both remain open at unchanged heads with no new reviews or review threads.",
+      "Confirmed the three Commons Compress #825 workflow runs currently have zero jobs each; their failure conclusions are not admitted test failures. BeanUtils' two action_required workflows retain the previously observed zero-job evidence.",
+      "Reconfirmed Jackson Databind #6454 is merged on November 16 as b63b8749041d31159c24d46018559bdcc23dc3a9; #6302 remains closed unmerged and counts once through explicit source-linked incorporation. JavaParser #5188 remains merged.",
+      "Allocated candidate wave 11 in the public continuation file before querying; screened libexpat/libexpat, libarchive/libarchive and libssh2/libssh2.",
+      "Identified libarchive #3867 as the strongest ordinary candidate: a reported 1.43x slowdown and 29,735 /proc/self/status reads per extraction; no matching open PR was found. The issue needs a reproducible benchmark, concurrency/umask characterization and a focused regression test.",
+      "Parked libexpat because visible candidate issues are security-sensitive or wontfix; parked libssh2 #1810 because open PR #1811 already addresses it.",
+      "Confirmed all three upstream repositories deny direct push, none has a matching agamal026 contributor fork in the current 26-repository inventory, and the current full connector catalog exposes no GitHub fork-creation action."
     ],
     "executed_checks": [
-      "Read-only GitHub PR metadata/timeline/review/check-run inspection for apache/commons-beanutils #444 and apache/commons-compress #825.",
-      "Read-only current policy, repository metadata, issue/PR queue and validation-route inspection for curl/curl, apache/httpd and django/django.",
-      "Read-only owned-hub branch and open-PR inspection before updating this file."
+      "GitHub PR metadata, reviews, review threads, combined statuses and workflow-run metadata for apache/commons-beanutils #444 and apache/commons-compress #825.",
+      "Read-only GET of all three Commons Compress workflow-run job collections: total_count=0 for Java CI, Dependency Review and CodeQL.",
+      "Read-only current metadata for FasterXML/jackson-databind #6454 and javaparser/javaparser #5188.",
+      "Read-only contribution-policy, issue-queue, competing-PR and repository-permission screening for libexpat, libarchive and libssh2.",
+      "Owned-hub main-branch, open-PR and ownership preflight before the continuation update."
     ],
     "tests_executed": [],
-    "publication_state": "No external source, issue, comment, review or PR was published. This update changes only the user's owned campaign continuation record.",
+    "publication_state": "No external source, issue, comment, review or PR was published. Only the existing owned-hub data/continuation.json record was updated.",
     "accepted_delta": 0,
     "accepted_total": 5,
     "qualified_submitted_projects": 7,
-    "remaining_dependency": "An existing contributor fork or a supported fork-creation action is required before a new external implementation; applicable private target restrictions must also be recoverable. Existing BeanUtils and Commons Compress submissions remain dependent on maintainer feedback or admitted checks.",
-    "save_result": "This execution receipt is included in the owned-hub continuation update; the invocation result records the returned commit and read-back verification."
+    "remaining_dependency": "libarchive #3867 is the best technical lead, but a new implementation requires an existing contributor fork or a supported GitHub fork-creation action. The canonical private handoff must also be recovered before target-specific implementation or publication. Until then, continue monitoring BeanUtils #444 and Commons Compress #825 without repeating unchanged operations.",
+    "save_result": "The existing data/continuation.json file was updated on main using its fetched current blob SHA; the returned commit and subsequent read-back are available in this run result. No private Library save was possible because the canonical file was not visible."
   }
 }
