@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T12:01:34.021Z",
+  "updated_at": "2026-11-23T01:09:31.392Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -17,18 +17,26 @@
     "execution": "existing native task",
     "cadence": "hourly",
     "timezone": "Europe/Vienna",
-    "enabled_observed": false,
-    "observation_date_utc": "2026-11-12",
-    "next_run_time_reported": "2026-11-12T19:00:00+01:00",
-    "execution_limit": "Fresh November 12 inspection still reports the task disabled. The next-run display is explicitly the next configured occurrence even while paused, not execution evidence. The matching latest actual November 7 run completed with empty, nontruncated output and requires_user_action=true; no requested action or cause is exposed. No resume, forced run, prompt edit or duplicate task occurred.",
+    "enabled_observed": true,
+    "observation_date_utc": "2026-11-23",
+    "execution_limit": "Read-only native task peek at 2026-11-23T01:09:31.392Z confirmed the existing task enabled=true. The 00:00Z occurrence completed at 00:10:46.723Z; the 01:00Z occurrence started at 01:04:17.216Z and was still in_progress at the observation. Two consecutive hourly occurrences are observed, not proof of long-term sustained recurrence or uninterrupted execution. No task or schedule mutation occurred; the task API exposes no session-duration setting.",
     "latest_read_attempt": {
+      "date_utc": "2026-11-23T01:09:31.392Z",
+      "kind": "read_only_task_peek",
+      "result": "FOUND: existing task enabled=true; current scheduled occurrence in_progress",
+      "state_retrieved": true,
+      "mutation_attempted": false,
+      "retry_attempted": false
+    },
+    "previous_read_attempt": {
       "date_utc": "2026-11-21T18:22:02.990Z",
       "kind": "read_only_task_lookup",
       "result": "NOT_FOUND: HTTP 404 Action not found",
       "state_retrieved": false,
       "mutation_attempted": false,
       "retry_attempted": false
-    }
+    },
+    "last_run_time_reported": "2026-11-23T00:10:50.724622Z"
   },
   "latest_completed_contribution": {
     "repository": "apache/commons-compress",
@@ -110,9 +118,9 @@
     }
   ],
   "next_action": {
-    "first": "Jackson Databind is now accepted through maintainer PR #6454, merged November 16 and explicitly based on #6302. BeanUtils #444 and Commons Compress #825 remain unchanged; their current heads have zero check runs and pending combined status with no contexts, so no admitted failure was found. Do not repeat admission requests.",
-    "otherwise": "No new candidate was selected after three bounded waves. Continue read-only monitoring of BeanUtils #444 and Commons Compress #825; choose a new implementation only when a project-permitted task has an existing contributor fork or a supported fork-creation route. Do not prepare patches behind a blocked delivery path.",
-    "do_not_repeat": "Do not recreate PRs, repeat admission comments, replay denied operations, rescreen the eight new candidates without material evidence, or rerun unchanged successful matrices. Preserve the prior Commons Validator screen and all recorded safety, legal and approval gates.",
+    "first": "No changed maintainer feedback or new acceptance was found. BeanUtils #444 remains at 51a346ab12e0fd683df794ab40c9f18e58f92068 with two action_required workflow records and zero jobs. Commons Compress #825 remains at 7e6477880259d60d4dfa60a5e34e4ea7875176b1; three workflow records report failure-like conclusions but each returned zero jobs, so no admitted test failure is evidenced. Do not rerun or repeat admission requests. Jackson Databind remains accepted through maintainer #6454.",
+    "otherwise": "Candidate waves 4–9 are recorded. None produced a new implementation candidate with an established delivery route. Continue read-only follow-through on BeanUtils #444 and Commons Compress #825; select another implementation only after an existing contributor fork or supported fork-creation route and applicable project/private requirements are established.",
+    "do_not_repeat": "Do not rescreen waves 4–9 or the unchanged earlier candidate waves; do not replay any known HTTP 403 operation; do not repeat successful matrices or admission requests. Preserve all prior AI, private, security, legal, CLA, nginx/F5 and contributor-statement gates.",
     "budget": {
       "candidate_wave_limit": 3,
       "focused_correction_cycle_limit": 3,
@@ -342,6 +350,279 @@
           "publishing": "No route change; no new patch prepared."
         }
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 4,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "apache/commons-jxpath",
+          "state": "screened_parked",
+          "task": "No distinct unclaimed task selected.",
+          "competing_work": "Active PRs #305 and #304 plus other current work.",
+          "validation_route": "Apache/JIRA contribution process and Maven validation were identified in the prior screen; no new build run.",
+          "publishing": "No direct upstream push permission; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/commons-jxpath/pulls/305",
+            "https://github.com/apache/commons-jxpath/pulls/304"
+          ]
+        },
+        {
+          "repository": "apache/commons-fileupload",
+          "state": "screened_parked",
+          "task": "No distinct unclaimed task selected.",
+          "competing_work": "Active PRs #486 and #483.",
+          "validation_route": "Apache/JIRA contribution process and Maven validation; no new build run.",
+          "publishing": "No direct upstream push permission; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/commons-fileupload/pulls/486",
+            "https://github.com/apache/commons-fileupload/pulls/483"
+          ]
+        },
+        {
+          "repository": "apache/commons-imaging",
+          "state": "screened_parked",
+          "task": "No distinct unclaimed task selected.",
+          "competing_work": "Crowded active defect-fix queue including PRs #579 through #572.",
+          "validation_route": "Apache/JIRA contribution process and Maven validation; no new build run.",
+          "publishing": "No direct upstream push permission; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/commons-imaging/pulls"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 5,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "nginx/nginx-tests",
+          "state": "screened_parked",
+          "task": "No new task selected; existing nginx/F5 source-write restrictions remain.",
+          "competing_work": "Prior campaign and private gate history retained.",
+          "validation_route": "Not run; applicable private restriction remains unresolved.",
+          "publishing": "Existing user-owned fork is writable, but the prior source-write gate blocks work; no attempt made.",
+          "source_refs": [
+            "https://github.com/nginx/nginx-tests"
+          ]
+        },
+        {
+          "repository": "nginx/nginx.org",
+          "state": "screened_parked",
+          "task": "Issue #359 documents inconsistent CVE prefix casing in xml/en/security_advisories.xml; prior read-only inspection counted 77 CVE attributes with one uppercase CVE- prefix.",
+          "competing_work": "No matching open PR was found in the prior screen; issue remained open without comments.",
+          "validation_route": "Read-only XML attribute consistency inspection; no source change or test run.",
+          "publishing": "Existing user-owned fork is writable, but the prior nginx/F5 gate blocks implementation/publication; no attempt made.",
+          "source_refs": [
+            "https://github.com/nginx/nginx.org/issues/359",
+            "https://github.com/nginx/nginx.org/blob/main/xml/en/security_advisories.xml"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 6,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "google/gson",
+          "state": "screened_parked",
+          "task": "Issue #3179 was considered but not selected.",
+          "competing_work": "Open PR #3181 already addresses #3179.",
+          "validation_route": "Not run; competing implementation makes a duplicate unnecessary.",
+          "publishing": "No matching user-owned fork or direct push permission; no fork-creation action.",
+          "source_refs": [
+            "https://github.com/google/gson/issues/3179",
+            "https://github.com/google/gson/pull/3181"
+          ]
+        },
+        {
+          "repository": "FasterXML/jackson-core",
+          "state": "screened_parked",
+          "task": "Issue #1833 concerns missing line/column information in textual-input error locations.",
+          "competing_work": "No matching open PR was found in the prior screen.",
+          "validation_route": "Not run; no contributor fork or delivery route.",
+          "publishing": "No direct push permission and no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/FasterXML/jackson-core/issues/1833"
+          ]
+        },
+        {
+          "repository": "apache/commons-text",
+          "state": "screened_parked",
+          "task": "No distinct unclaimed GitHub issue selected.",
+          "competing_work": "Numerous active PRs; no GitHub issues returned in the prior screen.",
+          "validation_route": "No task-specific validation selected.",
+          "publishing": "No direct push permission and no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/commons-text/pulls"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 7,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "apache/avro",
+          "state": "screened_parked",
+          "task": "No GitHub issue candidate returned; no task selected.",
+          "competing_work": "Active PR #4100 (AVRO-4362) and #4099 (C++ schema JSON escaping), alongside dependency updates.",
+          "validation_route": "Root CONTRIBUTING.md and AGENTS.md were not found; no task-specific build route established and no tests run.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/avro/pull/4100",
+            "https://github.com/apache/avro/pull/4099",
+            "https://github.com/apache/avro/pulls"
+          ]
+        },
+        {
+          "repository": "apache/poi",
+          "state": "screened_parked",
+          "task": "Potential issue #1180 (Java 25 Unsafe.invokeCleaner warning) or #1018 (Zip64 extra-field behavior) was observed; neither was selected.",
+          "competing_work": "Issue #1554 already has follow-up PRs #1555 and #1571; #1570 is also active. Other open PRs crowd the queue.",
+          "validation_route": "Root CONTRIBUTING.md and AGENTS.md were not found in this screen; no task-specific validation route established and no tests run.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/apache/poi/issues/1180",
+            "https://github.com/apache/poi/issues/1018",
+            "https://github.com/apache/poi/issues/1554",
+            "https://github.com/apache/poi/pull/1555",
+            "https://github.com/apache/poi/pull/1571",
+            "https://github.com/apache/poi/pull/1570"
+          ]
+        },
+        {
+          "repository": "apache/tika",
+          "state": "screened_parked",
+          "task": "No GitHub issue returned; project requires a JIRA issue before a PR.",
+          "competing_work": "Active PRs include #3655, #3654 and #3648.",
+          "validation_route": "CONTRIBUTING.md requires ./mvnw clean install and ASF Generative Tooling Guidance; AGENTS.md says agents must never commit, push or write to GitHub.",
+          "publishing": "permissions.push=false; explicit agent no-write instruction; no matching user-owned fork or fork-creation action.",
+          "policy_ref": "https://github.com/apache/tika/blob/main/CONTRIBUTING.md",
+          "agent_ref": "https://github.com/apache/tika/blob/main/AGENTS.md",
+          "source_refs": [
+            "https://github.com/apache/tika/pulls/3655",
+            "https://github.com/apache/tika/pulls/3654",
+            "https://github.com/apache/tika/pulls/3648"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 8,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "apache/cxf",
+          "state": "screened_parked",
+          "task": "No GitHub issue returned; no task selected.",
+          "competing_work": "Active PRs #3754, #3753, #3752 and #3741; some touch security-sensitive deserialization and WS-Security behavior.",
+          "validation_route": "AGENTS.md requires consulting SECURITY.md and THREAT_MODEL.md before security findings; no ordinary task/build route selected.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action.",
+          "agent_ref": "https://github.com/apache/cxf/blob/main/AGENTS.md",
+          "source_refs": [
+            "https://github.com/apache/cxf/pulls/3754",
+            "https://github.com/apache/cxf/pulls/3753",
+            "https://github.com/apache/cxf/pulls/3752",
+            "https://github.com/apache/cxf/pulls/3741"
+          ]
+        },
+        {
+          "repository": "apache/shiro",
+          "state": "screened_parked",
+          "task": "No task selected; #2962 and #2958 already have fixes.",
+          "competing_work": "PR #2963 addresses #2962; PR #2959 addresses #2958; #2953 is a broader Quarkus extension request.",
+          "validation_route": "CONTRIBUTING.md requires a contributor fork and ./mvnw verify.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action.",
+          "policy_ref": "https://github.com/apache/shiro/blob/main/CONTRIBUTING.md",
+          "source_refs": [
+            "https://github.com/apache/shiro/issues/2962",
+            "https://github.com/apache/shiro/pull/2963",
+            "https://github.com/apache/shiro/issues/2958",
+            "https://github.com/apache/shiro/pull/2959",
+            "https://github.com/apache/shiro/issues/2953"
+          ]
+        },
+        {
+          "repository": "auth0/java-jwt",
+          "state": "screened_parked",
+          "task": "Issue #821 (reject empty HMAC secrets) was observed but not selected; #824 is a CVE-related security report.",
+          "competing_work": "Issue #782 is already addressed by PR #817; other security-sensitive work is active.",
+          "validation_route": "Root CONTRIBUTING.md and AGENTS.md were not found in this screen; no task-specific validation route established and no tests run.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action.",
+          "source_refs": [
+            "https://github.com/auth0/java-jwt/issues/821",
+            "https://github.com/auth0/java-jwt/issues/824",
+            "https://github.com/auth0/java-jwt/issues/782",
+            "https://github.com/auth0/java-jwt/pull/817"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 9,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "apache/wicket",
+          "state": "screened_parked",
+          "task": "Issue #1970 (Windows path separator failure in ExampleTitlesTest) was observed; no change selected.",
+          "competing_work": "#1947 has PR #1990; #1951 has #1988; #1952 has #1986 and #1977; #1955 has #1978.",
+          "validation_route": "AGENTS.md requires full mvn clean verify -Pjs-test; code must be prepared and stopped until a committer instructs publication.",
+          "publishing": "permissions.push=false; explicit AGENTS.md prohibition on opening PRs/pushing unless told by a committer; no fork-creation action.",
+          "agent_ref": "https://github.com/apache/wicket/blob/master/AGENTS.md",
+          "source_refs": [
+            "https://github.com/apache/wicket/issues/1970",
+            "https://github.com/apache/wicket/issues/1947",
+            "https://github.com/apache/wicket/pull/1990",
+            "https://github.com/apache/wicket/issues/1951",
+            "https://github.com/apache/wicket/pull/1988",
+            "https://github.com/apache/wicket/issues/1952",
+            "https://github.com/apache/wicket/pull/1986",
+            "https://github.com/apache/wicket/pull/1977"
+          ]
+        },
+        {
+          "repository": "google/guava",
+          "state": "screened_parked",
+          "task": "Recent issues #8855, #8857 and #8859 describe potential collection-view/cache behavior defects; no issue was selected.",
+          "competing_work": "Current open PR queue is dominated by hash-table performance work (#8880–#8886); no matching fix for those three issues was established.",
+          "validation_route": "CONTRIBUTING.md requires tests for significant changes and a Google CLA for code contributions.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action; Google CLA status not established and no personal signature attempted.",
+          "policy_ref": "https://github.com/google/guava/blob/master/CONTRIBUTING.md",
+          "source_refs": [
+            "https://github.com/google/guava/issues/8855",
+            "https://github.com/google/guava/issues/8857",
+            "https://github.com/google/guava/issues/8859",
+            "https://github.com/google/guava/pulls"
+          ]
+        },
+        {
+          "repository": "google/flatbuffers",
+          "state": "screened_parked",
+          "task": "Issue #9498 (immutable releases) and #9497 (Python generated-code performance) were observed; no task selected.",
+          "competing_work": "Active PRs include #9476, #9491 and #9305; other verifier/security issues were not selected.",
+          "validation_route": "CONTRIBUTING.md requires building flatc, regenerating goldens and running tests/TestAll.sh; Google CLA required before merge.",
+          "publishing": "permissions.push=false; no matching user-owned fork or fork-creation action; Google CLA status not established and no personal signature attempted.",
+          "policy_ref": "https://github.com/google/flatbuffers/blob/master/CONTRIBUTING.md",
+          "source_refs": [
+            "https://github.com/google/flatbuffers/issues/9498",
+            "https://github.com/google/flatbuffers/issues/9497",
+            "https://github.com/google/flatbuffers/pull/9476",
+            "https://github.com/google/flatbuffers/pull/9491",
+            "https://github.com/google/flatbuffers/pull/9305"
+          ]
+        }
+      ]
     }
   ],
   "candidate_wave_summary": {
@@ -526,5 +807,31 @@
     "candidate_routing": "No new wave allocated: the connected account inventory contains only previously allocated, submitted or parked external forks; no GitHub fork-creation action is exposed. The unchanged November 21 candidate wave was not repeated.",
     "publication": "No external PR, comment or review. This update records a completed dated follow-up in the existing continuation file.",
     "remaining_dependency": "A new contribution requires an unallocated project-permitted task and an existing contributor fork or supported fork-creation capability; existing upstream PRs still depend on maintainer feedback or workflow admission."
+  },
+  "latest_screening_observation": {
+    "date_utc": "2026-11-23T01:09:31.392Z",
+    "waves_recorded": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "method": "Serial read-only connected GitHub screening; no independent agents were available or claimed.",
+    "result": "Eighteen additional candidates screened across six sequential waves. No new target had both a suitable unclaimed task and a supported publication route. No implementation, source edit, external submission, comment, review, test run, CLA attestation or benefit application was performed.",
+    "accepted_delta": 0,
+    "next": "Monitor BeanUtils #444 and Commons Compress #825 for substantive feedback or genuinely admitted checks. Select new work only when a permitted task and an existing contributor fork or supported fork-creation route are established."
+  },
+  "latest_execution_observation": {
+    "date_utc": "2026-11-23",
+    "origin": "scheduled",
+    "started_at": "2026-11-23T01:04:17.215620Z",
+    "last_observed_at": "2026-11-23T01:09:31.392Z",
+    "state_at_last_observation": "in_progress",
+    "project_test_suites_executed": 0,
+    "external_publication": "none",
+    "accepted_delta": 0,
+    "durable_update": "data/continuation.json updated using the fetched current blob SHA; no private identifiers or handoff contents included."
   }
 }
