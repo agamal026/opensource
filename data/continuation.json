@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T04:10:39.438Z",
+  "updated_at": "2026-11-23T12:08:48.876Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -918,56 +918,69 @@
     ],
     "result": "Wave 11 was allocated before querying. libarchive #3867 is a reproducible-looking performance regression with no matching open PR; libexpat's visible candidates are security-sensitive or wontfix; libssh2 #1810 already has open fix #1811. No target has an established contributor-fork route.",
     "accepted_delta": 0,
-    "next": "Hold libarchive #3867 as the best technical lead, but do not reproduce into an implementation or publish until an existing contributor fork or supported GitHub fork-creation action and the applicable private handoff are available."
+    "next": "Hold libarchive #3867 as the best technical lead, but do not reproduce into an implementation or publish until an existing contributor fork or supported GitHub fork-creation action and the applicable private handoff are available.",
+    "follow_up": {
+      "observed_at": "2026-11-23T12:08:48.876Z",
+      "run_id": null,
+      "repository": "libarchive/libarchive",
+      "issue": 3867,
+      "issue_state": "open",
+      "issue_updated_at": "2026-11-19T14:33:47Z",
+      "issue_comments": 0,
+      "competing_work": "No matching open PR found in the current 20-result open-PR search; the issue author says they may provide a PR.",
+      "source_observation": "Current master archive_write_disk_posix.c still calls __archive_get_umask() in _archive_write_disk_header for each entry.",
+      "policy": "CONTRIBUTING.md requires a focused single-issue change, detailed reproduction instructions and a test case, using BSD KNF and a GitHub PR. No AI-specific rule was found in CONTRIBUTING.md/README.md; no root AGENTS.md was found.",
+      "validation_route": "Reproduce the cited 3.8.8 versus 3.8.11 benchmark; characterize concurrent umask changes and the opt-in cache semantics; add a focused regression/benchmark; then run the project's full CMake or Autotools test suite. The exact full-suite command remains unestablished; no tests were run.",
+      "publishing": "Upstream permissions.push=false; no agamal026/libarchive fork in the 26-repository owned inventory; no GitHub fork-creation action is exposed.",
+      "disposition": "Retain as the best technical lead, but do not reproduce into an implementation or publish until a supported contributor-fork route and the canonical private handoff are available."
+    }
   },
   "latest_execution_observation": {
     "date_utc": "2026-11-23",
-    "origin": "scheduled",
-    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
-    "started_at": "2026-11-23T04:03:35.315378Z",
-    "last_observed_at": "2026-11-23T04:10:39.438Z",
-    "state_at_last_observation": "work_complete; host run finalization not yet observed",
+    "origin": "scheduled_automation",
+    "run_id": null,
+    "run_id_status": "not_exposed_in_this_invocation",
+    "started_at": "2026-11-23T12:01:12Z",
+    "last_observed_at": "2026-11-23T12:08:48.876Z",
+    "state_at_last_observation": "read_only_follow_through_complete",
     "project_test_suites_executed": 0,
     "external_publication": "none",
     "accepted_delta": 0,
-    "durable_update": "data/continuation.json updated after current-blob and main-branch preflight; post-write read-back verified."
+    "durable_update": "Existing data/continuation.json updated on main using the fetched current blob SHA; post-write read-back verification follows."
   },
   "latest_execution": {
-    "origin": "scheduled_task",
-    "run_id": "f547258b-15c4-832f-bf8f-e1c277775f21",
-    "run_id_status": "exposed_by_read_only_task_peek",
-    "started_at": "2026-11-23T04:03:35.315378Z",
-    "ended_at": "2026-11-23T04:10:39.438Z",
+    "origin": "scheduled_automation",
+    "run_id": null,
+    "run_id_status": "not_exposed_in_this_invocation",
+    "started_at": "2026-11-23T12:01:12Z",
+    "checkpointed_at": "2026-11-23T12:08:48.876Z",
     "recovered_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
-    "hub_main_before": "a2c72e6ab7f693610b361198901b58bcdbde6a83",
+    "hub_main_before": "dc7090a87c3ac63d6e06245adcd1f140b1282516",
     "ownership_before": {
       "active_source_writer": null,
       "active_implementation": null,
       "open_hub_pull_requests": 0
     },
-    "private_history": "The /opensource Library folder listing returned no items; the exact backing-file read returned not visible; exact-name search surfaced only an older version-1 copy modified November 12. The canonical current handoff was not recovered, and the older copy was not substituted.",
+    "private_history": "The canonical current private handoff was not recoverable through the current Library surface: the /opensource listing was empty, the supplied backing-file reference was not visible, and exact-title search returned a different copy that was not treated as authoritative.",
     "material_work": [
-      "Rechecked BeanUtils #444 and Commons Compress #825 metadata, reviews, review threads, combined status and workflow runs. Both remain open at unchanged heads with no new reviews or review threads.",
-      "Confirmed the three Commons Compress #825 workflow runs currently have zero jobs each; their failure conclusions are not admitted test failures. BeanUtils' two action_required workflows retain the previously observed zero-job evidence.",
-      "Reconfirmed Jackson Databind #6454 is merged on November 16 as b63b8749041d31159c24d46018559bdcc23dc3a9; #6302 remains closed unmerged and counts once through explicit source-linked incorporation. JavaParser #5188 remains merged.",
-      "Allocated candidate wave 11 in the public continuation file before querying; screened libexpat/libexpat, libarchive/libarchive and libssh2/libssh2.",
-      "Identified libarchive #3867 as the strongest ordinary candidate: a reported 1.43x slowdown and 29,735 /proc/self/status reads per extraction; no matching open PR was found. The issue needs a reproducible benchmark, concurrency/umask characterization and a focused regression test.",
-      "Parked libexpat because visible candidate issues are security-sensitive or wontfix; parked libssh2 #1810 because open PR #1811 already addresses it.",
-      "Confirmed all three upstream repositories deny direct push, none has a matching agamal026 contributor fork in the current 26-repository inventory, and the current full connector catalog exposes no GitHub fork-creation action."
+      "Recovered the current public continuation, linked November 21 checkpoint, AGENTS.md, GOAL.md, README.md, opportunity notes, roadmap, cloud-operation guide, continuation guide, campaign ledger and campaign report.",
+      "Rechecked BeanUtils #444 and Commons Compress #825: both remain open at unchanged heads with no reviews or inline review threads. BeanUtils Java CI and CodeQL remain action_required with zero jobs; all three Commons Compress workflows conclude failure but their job endpoints return zero jobs, so no admitted test failure is established.",
+      "Confirmed Jackson Databind #6454 remains merged on November 16 as b63b8749041d31159c24d46018559bdcc23dc3a9, explicitly based on #6302; #6302 remains closed unmerged and the project counts once. No merged PR involving agamal026 was found after November 21.",
+      "Followed up the already allocated wave-11 libarchive lead: #3867 remains open with zero comments; no matching open PR was found; current source still refreshes umask once per archive entry. The contribution guide requires a focused change, detailed reproduction and test. Upstream push is false, no owned fork exists, and no fork-creation action is exposed."
     ],
     "executed_checks": [
-      "GitHub PR metadata, reviews, review threads, combined statuses and workflow-run metadata for apache/commons-beanutils #444 and apache/commons-compress #825.",
-      "Read-only GET of all three Commons Compress workflow-run job collections: total_count=0 for Java CI, Dependency Review and CodeQL.",
-      "Read-only current metadata for FasterXML/jackson-databind #6454 and javaparser/javaparser #5188.",
-      "Read-only contribution-policy, issue-queue, competing-PR and repository-permission screening for libexpat, libarchive and libssh2.",
-      "Owned-hub main-branch, open-PR and ownership preflight before the continuation update."
+      "Read-only GitHub PR metadata, reviews, review threads, combined statuses and workflow-run metadata for apache/commons-beanutils #444 and apache/commons-compress #825.",
+      "Read-only GET of all five relevant workflow job collections: BeanUtils Java CI and CodeQL, and Commons Compress Java CI, Dependency Review and CodeQL; every collection returned zero jobs.",
+      "Read-only metadata for FasterXML/jackson-databind #6454 and global merged-PR search involving agamal026 since 2026-11-21; no new acceptance found.",
+      "Read-only current issue, open-PR search, repository permissions, contribution policy and source inspection for libarchive/libarchive #3867.",
+      "Hub ownership preflight: main was dc7090a87c3ac63d6e06245adcd1f140b1282516, there were zero open hub PRs, and the recorded source writer/implementation fields were null."
     ],
     "tests_executed": [],
-    "publication_state": "No external source, issue, comment, review or PR was published. Only the existing owned-hub data/continuation.json record was updated.",
+    "publication_state": "No external source, issue, comment, review or PR was published. Only the existing owned-hub continuation record is being updated.",
     "accepted_delta": 0,
     "accepted_total": 5,
     "qualified_submitted_projects": 7,
-    "remaining_dependency": "libarchive #3867 is the best technical lead, but a new implementation requires an existing contributor fork or a supported GitHub fork-creation action. The canonical private handoff must also be recovered before target-specific implementation or publication. Until then, continue monitoring BeanUtils #444 and Commons Compress #825 without repeating unchanged operations.",
-    "save_result": "The existing data/continuation.json file was updated on main using its fetched current blob SHA; the returned commit and subsequent read-back are available in this run result. No private Library save was possible because the canonical file was not visible."
+    "remaining_dependency": "A new external implementation requires an existing contributor fork or supported GitHub fork-creation capability, plus recovery of the canonical private handoff before target-specific implementation/publication. BeanUtils #444 and Commons Compress #825 still depend on maintainer feedback or workflow admission.",
+    "scheduler_observation": "A read-only task peek/get attempt returned HTTP 404 Action not found; no current run identity was exposed. No schedule edit, resume, forced run, duplicate task, connection mutation or retry was performed."
   }
 }
