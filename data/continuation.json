@@ -677,6 +677,34 @@
         }
       ],
       "outcome": "Three projects screened serially; zero implementation-ready candidates and zero tests executed. All three lack an established publishing route; curl's observed issue appears already addressed by upstream main."
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 11,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "libexpat/libexpat",
+          "state": "allocated_pending_screen",
+          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
+          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
+          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+        },
+        {
+          "repository": "libarchive/libarchive",
+          "state": "allocated_pending_screen",
+          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
+          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
+          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+        },
+        {
+          "repository": "libssh2/libssh2",
+          "state": "allocated_pending_screen",
+          "task": "Find one current unclaimed ordinary defect with a reproducible failure path; no issue or patch selected yet.",
+          "screening_scope": "Read current contributor and AI-use policies, inspect open issue candidates and competing PRs, establish the required validation route, and verify the actual publication capability.",
+          "publishing": "No matching contributor fork is present in the current owned-repository inventory; no GitHub fork-creation action is exposed. Confirm direct upstream permission during screening."
+        }
+      ]
     }
   ],
   "candidate_wave_summary": {
