@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T01:09:31.392Z",
+  "updated_at": "2026-11-23T02:01:24.849Z",
   "scope": "100 distinct external open-source projects with accepted contributions; review, maintenance and verified benefit follow-through",
   "latest_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
   "campaign_ledger": "data/campaign.json",
@@ -118,9 +118,9 @@
     }
   ],
   "next_action": {
-    "first": "No changed maintainer feedback or new acceptance was found. BeanUtils #444 remains at 51a346ab12e0fd683df794ab40c9f18e58f92068 with two action_required workflow records and zero jobs. Commons Compress #825 remains at 7e6477880259d60d4dfa60a5e34e4ea7875176b1; three workflow records report failure-like conclusions but each returned zero jobs, so no admitted test failure is evidenced. Do not rerun or repeat admission requests. Jackson Databind remains accepted through maintainer #6454.",
-    "otherwise": "Candidate waves 4–9 are recorded. None produced a new implementation candidate with an established delivery route. Continue read-only follow-through on BeanUtils #444 and Commons Compress #825; select another implementation only after an existing contributor fork or supported fork-creation route and applicable project/private requirements are established.",
-    "do_not_repeat": "Do not rescreen waves 4–9 or the unchanged earlier candidate waves; do not replay any known HTTP 403 operation; do not repeat successful matrices or admission requests. Preserve all prior AI, private, security, legal, CLA, nginx/F5 and contributor-statement gates.",
+    "first": "No changed maintainer feedback, admitted check failures or new acceptance was found since the November 21 checkpoint. BeanUtils #444 remains open at 51a346ab12e0fd683df794ab40c9f18e58f92068 with no comments/reviews and zero check runs. Commons Compress #825 remains open at 7e6477880259d60d4dfa60a5e34e4ea7875176b1 with only the existing October 18 author admission comment, no reviews and zero check runs. Jackson Databind remains accepted through maintainer #6454.",
+    "otherwise": "Candidate waves 1–10 are recorded. Wave 10 screened curl/curl, apache/httpd and django/django; none had a contributor fork or direct push permission, and no fork-creation action is exposed. curl issue #24096's reported cooldown is already changed on upstream main by maintainer commit 37ea0951. Continue read-only follow-through on BeanUtils #444 and Commons Compress #825; select another implementation only after an existing contributor fork or supported fork-creation route and applicable project/private requirements are established.",
+    "do_not_repeat": "Do not rescreen waves 1–10 or the unchanged earlier candidate waves; do not replay any known HTTP 403 operation; do not repeat successful matrices or admission requests. Preserve all prior AI, private, security, legal, CLA, nginx/F5 and contributor-statement gates.",
     "budget": {
       "candidate_wave_limit": 3,
       "focused_correction_cycle_limit": 3,
@@ -623,6 +623,60 @@
           ]
         }
       ]
+    },
+    {
+      "date": "2026-11-23",
+      "wave": 10,
+      "allocated_before_query": true,
+      "projects": [
+        {
+          "repository": "curl/curl",
+          "state": "screened_parked",
+          "task": "Issue #24096 reports an insufficient Dependabot cooldown (semver-patch-days 3). Current main already changes semver-patch-days from 3 to 7 and semver-minor-days from 7 to 10 in maintainer commit 37ea0951b601765d3622f87ba38f85ee110fc0e0; #24096 remains open but the reported configuration is no longer current.",
+          "policy_ref": "https://github.com/curl/curl/blob/master/docs/CONTRIBUTE.md",
+          "policy": "Code contributions may use AI assistance but must be high-quality, clear, documented and tested. AI-found reports must disclose AI use, be carefully verified and written by the contributor in their own voice. Contributors should provide their full real name.",
+          "competing_work": "Maintainer commit 37ea0951b601765d3622f87ba38f85ee110fc0e0 adjusts the same cooldown configuration; issue #24098 is closed by that commit. Earlier PR #19216 was closed unmerged, while its cooldown work had already landed in a separate maintainer commit. No new distinct fix was established.",
+          "validation_route": "For an applicable C change, run make checksrc and relevant tests through make test/runtests.pl; project CI runs additional checks. Not run because current source already contains the apparent fix and no contribution was selected.",
+          "publishing": "permissions.push=false; no agamal026/curl contributor fork in the accessible repository inventory; no GitHub fork-creation action is exposed. No branch, issue, comment or PR was created.",
+          "source_refs": [
+            "https://github.com/curl/curl/issues/24096",
+            "https://github.com/curl/curl/commit/37ea0951b601765d3622f87ba38f85ee110fc0e0",
+            "https://github.com/curl/curl/blob/master/.github/dependabot.yml",
+            "https://github.com/curl/curl/blob/master/docs/runtests.md"
+          ]
+        },
+        {
+          "repository": "apache/httpd",
+          "state": "screened_parked",
+          "task": "No GitHub issue candidate: repository metadata has has_issues=false. The README directs concrete bug reports to the Apache HTTP Server bug-reporting process; no specific unclaimed issue was selected.",
+          "policy_ref": "https://github.com/apache/httpd/blob/trunk/AGENTS.md",
+          "policy": "C89 source compatibility; APR/APR-util dual-version considerations; user-visible changes need concise CHANGES entries. Tests use pyhttpd where possible. Before creating a PR, show the subject and description and wait for approval; publish the branch to a contributor-owned fork, never the upstream remote.",
+          "competing_work": "The current open PR queue includes #1073 and #1072 on trunk and backport PRs #682, #773 and #1011; no distinct issue-level task was established.",
+          "validation_route": "Generate build files with buildconf, configure --enable-maintainer-mode against APR/APR-util, build with make, then run make check-pytest for the affected test directory; also run relevant documentation/CHANGES checks. Not run.",
+          "publishing": "permissions.push=false; no agamal026/httpd fork in the accessible repository inventory; no GitHub fork-creation action is exposed. The required PR-description approval was not requested. No source or public operation attempted.",
+          "source_refs": [
+            "https://github.com/apache/httpd/blob/trunk/AGENTS.md",
+            "https://github.com/apache/httpd/blob/trunk/README.md",
+            "https://github.com/apache/httpd/pulls"
+          ]
+        },
+        {
+          "repository": "django/django",
+          "state": "screened_parked",
+          "task": "No GitHub issue candidate: repository metadata has has_issues=false. Django uses Trac; non-trivial PRs without Trac tickets are closed. No new Trac ticket was selected.",
+          "policy_ref": "https://github.com/django/django/blob/main/docs/internals/contributing/writing-code/submitting-patches.txt",
+          "policy": "AI assistance must be disclosed and all AI output manually reviewed and verified; automated AI reviews must not be requested on upstream PRs. Regression tests and full relevant checks are required.",
+          "competing_work": "Current open PR queue includes #22319, #22291, #22266, #21974 and #21462. No distinct unclaimed ticket or non-overlapping task was established.",
+          "validation_route": "A non-trivial change requires an accepted Trac ticket, regression test, Django test suite and relevant documentation build (make html); no task was selected and no tests were run.",
+          "publishing": "permissions.push=false; no agamal026/django contributor fork in the accessible repository inventory; no GitHub fork-creation action is exposed. The required manual verification and Trac selection steps remain unmet. No source or public operation attempted.",
+          "source_refs": [
+            "https://github.com/django/django/blob/main/CONTRIBUTING.rst",
+            "https://github.com/django/django/blob/main/docs/internals/contributing/writing-code/submitting-patches.txt",
+            "https://github.com/django/django/pulls"
+          ]
+        }
+      ],
+      "outcome": "Three projects screened serially; zero implementation-ready candidates and zero tests executed. All three lack an established publishing route; curl's observed issue appears already addressed by upstream main."
     }
   ],
   "candidate_wave_summary": {
@@ -833,5 +887,39 @@
     "external_publication": "none",
     "accepted_delta": 0,
     "durable_update": "data/continuation.json updated using the fetched current blob SHA; no private identifiers or handoff contents included."
+  },
+  "latest_execution": {
+    "origin": "scheduled",
+    "run_id": null,
+    "run_id_status": "not exposed in this invocation",
+    "started_at": "2026-11-23T01:55:54Z",
+    "ended_at": "2026-11-23T02:01:24.849Z",
+    "recovered_checkpoint": "progress/2026-11-21-jackson-6299-accepted.md",
+    "hub_main_before": "f0068e7fe25cf0eb4859de7ae1fda70880c5c8f5",
+    "ownership_before": {
+      "active_source_writer": null,
+      "active_implementation": null,
+      "open_hub_prs": 0
+    },
+    "private_history": "The requested current private handoff could not be retrieved from the available Files surface. The exact backing-file read returned not visible; no target-specific implementation or publication was attempted.",
+    "material_work": [
+      "Rechecked BeanUtils #444 and Commons Compress #825 metadata, comments, reviews and check runs; no changed maintainer feedback or executed check runs.",
+      "Confirmed no user-authored PR updates or merges since 2026-11-21 in the connected GitHub search.",
+      "Allocated and screened candidate wave 10: curl/curl, apache/httpd, django/django.",
+      "Verified no direct upstream push permission or matching contributor fork for any wave-10 candidate; the GitHub action catalog exposes no fork-creation operation.",
+      "Confirmed curl #24096's reported Dependabot cooldown is already changed on upstream main by commit 37ea0951."
+    ],
+    "executed_checks": [
+      "Read-only GitHub PR metadata/timeline/review/check-run inspection for apache/commons-beanutils #444 and apache/commons-compress #825.",
+      "Read-only current policy, repository metadata, issue/PR queue and validation-route inspection for curl/curl, apache/httpd and django/django.",
+      "Read-only owned-hub branch and open-PR inspection before updating this file."
+    ],
+    "tests_executed": [],
+    "publication_state": "No external source, issue, comment, review or PR was published. This update changes only the user's owned campaign continuation record.",
+    "accepted_delta": 0,
+    "accepted_total": 5,
+    "qualified_submitted_projects": 7,
+    "remaining_dependency": "An existing contributor fork or a supported fork-creation action is required before a new external implementation; applicable private target restrictions must also be recoverable. Existing BeanUtils and Commons Compress submissions remain dependent on maintainer feedback or admitted checks.",
+    "save_result": "This execution receipt is included in the owned-hub continuation update; the invocation result records the returned commit and read-back verification."
   }
 }
